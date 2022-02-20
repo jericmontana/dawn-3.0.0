@@ -3196,6 +3196,44 @@ html {
   stroke: rgb(var(--color-base-text));
 }
 
+/* Unavailable Variant*/
+label.unavailable {
+  text-decoration: line-through !important;
+  -webkit-text-decoration-color: rgba(255, 0, 0, 0.5) !important;
+          text-decoration-color: rgba(255, 0, 0, 0.5) !important;
+  text-decoration-thickness: 2px !important;
+  opacity: 0.5;
+  -webkit-filter: blur(2px);
+          filter: blur(2px);
+}
+
+/* For Color */
+.option-labels {
+  position: relative;
+}
+
+.option-labels--color {
+  display: block !important;
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  left: 4px;
+  top: 4px;
+  border-radius: 50%;
+}
+
+/* For Reusable Classes Colors
+.color--{
+
+    &green{
+        background-color: #b76e79;
+    }
+
+    &red{
+        background-image: linear-gradient(to top right, #a4a4a3, #f0f0f0);
+    }
+}
+*/
 /* Device Sizes | Mobile - Default */
 /* For @include*/
 @-webkit-keyframes shine {
@@ -3397,6 +3435,20 @@ html {
   --color-loader: var(--color-base-accent-1);
 }
 
+/* Wishlist z-index */
+#shopify-section-header {
+  z-index: 4;
+}
+
+.facets__display {
+  z-index: 4 !important;
+}
+
+/* Wishlist position */
+.grid__item.product__media-wrapper {
+  position: relative;
+}
+
 .header__icon--wishlist .icon.icon-heart {
   fill: rgb(var(--color-foreground));
   stroke: transparent;
@@ -3407,7 +3459,7 @@ html {
   top: 0;
   right: 0;
   margin: 0.8rem;
-  z-index: 2;
+  z-index: 3;
 }
 .card__icon .button-wishlist {
   position: relative;
