@@ -59,6 +59,11 @@
 
             if (recommendations && recommendations.innerHTML.trim().length) {
               this.innerHTML = recommendations.innerHTML;
+
+              const event = new CustomEvent('product-recommendations:loaded', {
+              });
+              document.dispatchEvent(event);
+
             }
 
             if (html.querySelector('.grid__item')) {

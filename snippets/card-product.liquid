@@ -143,6 +143,9 @@
             <span class="badge badge--bottom-left color-{{ settings.sale_badge_color_scheme }}">{{ 'products.product.on_sale' | t }}</span>
           {%- endif -%}
         </div>
+        <div class="card__icon card__icon-wishlist">
+          {% render 'button-wishlist', product: card_product %}
+        </div>
       </div>
     </div>
   </div>

@@ -1,0 +1,16 @@
+{
+    "sections": {
+        "product-grid": {
+            "type": "main-collection-product-grid-wishlist",
+            "settings": {
+                "image_ratio": "adapt",
+                "show_secondary_image": true,
+                "show_vendor": true,
+                "show_rating": false
+            }
+        }
+    },
+    "order": [
+        "product-grid"
+    ]
+}

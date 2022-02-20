@@ -1143,5 +1143,94 @@
         "default": true
       }
     ]
+  },
+  {
+    "name":"🔰 Shop Now Banner",
+    "settings":[
+      {
+        "type":"header",
+        "content": "Text"
+      },
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Title",
+        "default": "Visit Our Store"
+      },
+      {
+        "type": "checkbox",
+        "id": "title_uppercase",
+        "label": "Uppercase",
+        "default": false
+      },
+      {
+        "type": "textarea",
+        "id": "subtitle",
+        "label": "Subtitle",
+        "default": "Mus mauris vitae ultricies leo. Ac feugiat sed lectus vestibulum lacus laoreet non curabitur."
+      },
+      {
+        "type":"header",
+        "content": "Banner Background"
+      },
+      {
+        "type": "color",
+        "id": "banner_bg_color",
+        "label": "Color"
+      },
+      {
+        "type": "image_picker",
+        "id": "banner_bg_image",
+        "label": "Image"
+      },
+      {
+        "type": "select",
+        "id": "banner_bg_blend",
+        "label": "Blend Mode",
+        "options": [
+            {
+            "value": "normal",
+            "label": "Normal"
+            },
+            {
+            "value": "multiply",
+            "label": "Multiply"
+            },
+            {
+            "value": "screen",
+            "label": "Screen"
+            },
+            {
+            "value": "overlay",
+            "label": "Overlay"
+            },
+            {
+            "value": "darken",
+            "label": "Darken"
+            },
+            {
+            "value": "lighten",
+            "label": "Lighten"
+            },
+            {
+            "value": "color-dodge",
+            "label": "Color Dodge"
+            },
+            {
+            "value": "saturation",
+            "label": "Saturation"
+            },
+            {
+            "value": "color",
+            "label": "Color"
+            },
+            {
+            "value": "luminosity",
+            "label": "Luminosity"
+            }
+        ],
+        "default": "normal"
+      }
+    ]
   }
 ]

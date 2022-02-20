@@ -1,0 +1,34 @@
+{
+  "sections": {
+    "product_grid": {
+      "type": "main-wishlist-product-grid",
+      "settings": {
+      }
+    },
+    "shopnow_banner": {
+      "type": "shopnow-banner",
+      "settings": {
+      },
+      "blocks":{
+        "header":{
+          "type":"header"
+        },
+        "button":{
+          "type":"button",
+          "settings":{
+            "btn_size":"medium",
+            "hover_effect":"slide"
+          }
+        }
+      },
+      "block_order":[
+        "header",
+        "button"
+      ]
+    }
+  },
+  "order": [
+    "product_grid",
+    "shopnow_banner"
+  ]
+}
