@@ -3507,14 +3507,13 @@ label.unavailable {
 
 .wishlist__container {
   position: relative;
+  height: auto;
 }
 
 .wishlist__loader--removed {
-  position: absolute;
   background-color: #ffffff;
   height: 100%;
-  top: 0;
-  left: 0;
+  min-height: 280px;
   z-index: 888;
 }
 

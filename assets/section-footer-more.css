@@ -95,7 +95,8 @@ footer.footer .footer-block--email-signup {
 }
 @media screen and (min-width: 750px) {
   footer.footer .footer-block--email-signup {
-    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 footer.footer .footer-block--email-signup .footer-block__details-content {

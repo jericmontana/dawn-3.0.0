@@ -27,25 +27,29 @@
           "type": "footer",
           "blocks": {
             "footer-0": {
-              "type": "link_list"
+              "type": "image"
             },
             "footer-1": {
               "type": "link_list",
               "settings": {
-                "heading": "Info"
+                "heading": "Quick Links"
               }
             },
             "footer-2": {
-              "type": "text",
+              "type": "link_list",
               "settings": {
-                "heading": "Our mission"
+                "heading": "Customer Service"
               }
+            },
+            "footer-3": {
+              "type": "email_signup"
             }
           },
           "block_order": [
             "footer-0",
             "footer-1",
-            "footer-2"
+            "footer-2",
+            "footer-3"
           ],
           "settings": {
             "show_social": true,

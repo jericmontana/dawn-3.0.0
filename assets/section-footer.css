@@ -412,9 +412,9 @@ noscript .localization-selector.link {
     display: inline;
   }
 
-  .footer-block__details-content > li:not(:last-child) {
+  /* .footer-block__details-content > li:not(:last-child) {
     margin-right: 1.5rem;
-  }
+  } */
 }
 
 .footer-block__details-content .list-menu__item--link,

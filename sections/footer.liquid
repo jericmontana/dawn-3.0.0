@@ -90,7 +90,8 @@
                             required
                           >
                           <label class="field__label" for="NewsletterForm--{{ section.id }}">
-                            {{ 'newsletter.label' | t }}
+                            {% comment %} {{ 'newsletter.label' | t }} {% endcomment %}
+                           Active Email Address...
                           </label>
                           <button type="submit" class="newsletter-form__button field__button" name="commit" id="Subscribe" aria-label="{{ 'newsletter.button_label' | t }}">
                             {% render 'icon-arrow' %}
@@ -687,16 +688,10 @@
   "default": {
     "blocks": [
       {
-        "type": "image"
-      },
-      {
         "type": "link_list"
       },
       {
-        "type": "link_list"
-      },
-      {
-        "type": "email_signup"
+        "type": "text"
       }
     ]
   }
