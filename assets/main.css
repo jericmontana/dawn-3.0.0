@@ -3196,6 +3196,11 @@ html {
   stroke: rgb(var(--color-base-text));
 }
 
+/*Hide captcha badge for email signup*/
+.grecaptcha-badge {
+  visibility: hidden;
+}
+
 /* Unavailable Variant*/
 label.unavailable {
   text-decoration: line-through !important;
