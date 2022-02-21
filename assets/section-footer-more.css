@@ -1,8 +1,5 @@
 @charset "UTF-8";
 /* Device Sizes | Mobile - Default */
-footer.footer {
-  /*Email Signup*/
-}
 footer.footer .link-list--toggle {
   display: none;
 }
