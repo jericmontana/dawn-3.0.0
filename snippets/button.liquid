@@ -139,14 +139,17 @@
         {%- assign btn_he_class = "btn-he--shine" -%}
 {% endcase %}
 
+{%- liquid
+    if btn_link contains 'collections'
+        assign link_title = btn_link | split: '/' | last | append: ' collections' | strip
+    else
+        assign link_title = btn_link | split: '/' | last | strip
+    endif
+-%}
 <a class="btn {{btn_size_class}} {% if btn_link != blank %}{{btn_he_class}}{% else %}btn--disbaled{% endif %} {% if shadow_effect %}btn-bs{% endif %} {% if auto_width %}btn-auto-width{% endif %}"
     {% if btn_link != blank %}
         href="{{ btn_link }}"
-        title="{% if btn_link contains 'collections' %}
-                {{ btn_link | split: '/' | last | append: ' collections' }}
-            {% else %}
-                {{ btn_link | split: '/' | last }}
-            {% endif %}"
+        title="{{ link_title }}"
     {% endif %}
     role="button">
     {{ btn_label | escape }}
