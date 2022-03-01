@@ -1,0 +1,7 @@
+/* Device Sizes | Mobile - Default */
+.section--featured-collection .section__slider .slider-button {
+  margin-bottom: 8rem;
+}
+.section--featured-collection .card-wrapper {
+  height: auto;
+}
