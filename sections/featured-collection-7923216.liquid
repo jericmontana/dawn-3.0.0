@@ -46,14 +46,11 @@
       {%- assign header = section.blocks | where: 'type', 'header' -%}
       {%- for block in header -%}
         {% if block.settings.title != blank or block.settings.subtitle != blank%}
-          <div class="section__header center">
-              {% unless block.settings.title == blank %}
-              <h2 class="section__header--title {% if block.settings.title_uppercase%}uppercase{% endif %}">{{ block.settings.title | escape }}</h2>
-              {% endunless %}
-              {% unless block.settings.subtitle == blank %}
-              <p class="section__header--subtitle">{{ block.settings.subtitle | escape }}</p>
-              {% endunless%}
-          </div>
+          {%- render 'section-header',
+            title: block.settings.title,
+            subtitle: block.settings.subtitle,
+            uppercase: block.settings.title_uppercase
+          -%}
         {%- endif -%}
       {%- endfor -%}
 
