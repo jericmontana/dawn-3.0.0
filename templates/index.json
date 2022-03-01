@@ -19,6 +19,131 @@
         "auto_width": false
       }
     },
+    "16461506879c7fe7ec": {
+      "type": "featured-collection-7923216",
+      "blocks": {
+        "1646150686f0f5db4f-0": {
+          "type": "header",
+          "settings": {
+            "title": "Featured Collection",
+            "title_uppercase": false,
+            "subtitle": "Mus mauris vitae ultricies leo. Ac feugiat sed lectus vestibulum lacus laoreet non curabitur."
+          }
+        },
+        "1646150686f0f5db4f-1": {
+          "type": "slider",
+          "settings": {
+            "collection": "",
+            "products_to_show": 4,
+            "show_add_to_cart_button": false,
+            "columns_desktop": 4,
+            "columns_tablet": 3,
+            "columns_mobile": 2,
+            "slider": "slide-me-not",
+            "image_ratio": "adapt",
+            "show_secondary_image": false,
+            "show_vendor": false,
+            "show_rating": false,
+            "show_description": false,
+            "description": "<p>Vel aenean ipsum interdum ridiculus nullam efficitur porttitor leo convallis consectetuer hac ad nascetur.<\/p>"
+          }
+        },
+        "1646150686f0f5db4f-2": {
+          "type": "button",
+          "settings": {
+            "btn_label": "View All",
+            "btn_link": "shopify:\/\/collections\/all",
+            "btn_size": "default",
+            "hover_effect": "shine",
+            "icon_type": "arrow",
+            "shadow_effect": true,
+            "auto_width": false
+          }
+        }
+      },
+      "block_order": [
+        "1646150686f0f5db4f-0",
+        "1646150686f0f5db4f-1",
+        "1646150686f0f5db4f-2"
+      ],
+      "settings": {
+        "color_scheme": "background-1",
+        "use_as_default_bg": false,
+        "fg_color": "#121212",
+        "bg_color": "#ffffff",
+        "bg_blend": "normal",
+        "use_as_default_padding": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "16461507015bd670f1": {
+      "type": "collection-list-7923216",
+      "blocks": {
+        "1646150701cd4490fc-0": {
+          "type": "heading",
+          "settings": {
+            "title": "Collection List",
+            "title_uppercase": false,
+            "subtitle": "Mus mauris vitae ultricies leo. Ac feugiat sed lectus vestibulum lacus laoreet non curabitur."
+          }
+        },
+        "1646150701cd4490fc-1": {
+          "type": "slideshow",
+          "settings": {
+            "collections_to_show": 4,
+            "columns_desktop": 2,
+            "columns_tablet": 2,
+            "columns_mobile": 1,
+            "slider": "slide-me-not"
+          }
+        },
+        "1646150701cd4490fc-2": {
+          "type": "collection",
+          "settings": {
+            "featured_collection": ""
+          }
+        },
+        "1646150701cd4490fc-3": {
+          "type": "collection",
+          "settings": {
+            "featured_collection": ""
+          }
+        },
+        "1646150701cd4490fc-4": {
+          "type": "collection",
+          "settings": {
+            "featured_collection": ""
+          }
+        },
+        "1646150701cd4490fc-5": {
+          "type": "collection",
+          "settings": {
+            "featured_collection": ""
+          }
+        }
+      },
+      "block_order": [
+        "1646150701cd4490fc-0",
+        "1646150701cd4490fc-1",
+        "1646150701cd4490fc-2",
+        "1646150701cd4490fc-3",
+        "1646150701cd4490fc-4",
+        "1646150701cd4490fc-5"
+      ],
+      "settings": {
+        "color_scheme": "background-1",
+        "use_as_default_bg": false,
+        "fg_color": "#121212",
+        "bg_color": "#ffffff",
+        "bg_blend": "normal",
+        "use_as_default_padding": false,
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "cc_bg_color": "#334FB4",
+        "cc_border_radius": 0
+      }
+    },
     "rich_text": {
       "type": "rich-text",
       "blocks": {
@@ -150,6 +275,8 @@
   },
   "order": [
     "16458763677060d6c8",
+    "16461506879c7fe7ec",
+    "16461507015bd670f1",
     "rich_text",
     "collage",
     "video",
