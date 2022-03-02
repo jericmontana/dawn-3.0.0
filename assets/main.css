@@ -3108,7 +3108,7 @@ html {
 }
 
 ::-webkit-scrollbar {
-  width: 0.4411rem;
+  width: 0.7rem;
 }
 ::-webkit-scrollbar-thumb {
   background-color: var(--color-scrollbar-thumb-bg);
@@ -3458,6 +3458,33 @@ label.unavailable {
           animation: fade-in 2.3s ease;
 }
 
+/*For Pulse Effect*/
+@-webkit-keyframes pulse-effect {
+  0% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+  }
+}
+@keyframes pulse-effect {
+  0% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+  }
+}
 :root {
   --color-btn-wishlist-fill: var(--color-base-accent-1);
   --color-btn-wishlist-stroke: var(--color-base-accent-1);
@@ -3694,6 +3721,20 @@ label.unavailable {
           animation: fade-in 2.3s ease;
 }
 
+/*For Pulse Effect*/
+@keyframes pulse-effect {
+  0% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+  }
+}
 :root {
   --color-btn-bg: var(--color-base-accent-1);
   --color-btn-lbl: var(--color-base-solid-button-labels);
@@ -3877,6 +3918,7 @@ label.unavailable {
   height: 100%;
   width: calc(100% + 20px);
   margin-left: -10px;
+  pointer-events: none;
 }
 .section .section__slider .slider-button {
   position: relative;
@@ -3884,6 +3926,7 @@ label.unavailable {
   width: 38px;
   border-radius: 50%;
   z-index: 2;
+  pointer-events: auto;
 }
 .section .section__slider .slider-button:not([disabled]) {
   -webkit-box-shadow: 0px 0px 14px -4px rgba(0, 0, 0, 0.75);
