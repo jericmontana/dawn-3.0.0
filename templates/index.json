@@ -140,8 +140,173 @@
         "use_as_default_padding": false,
         "padding_top": 36,
         "padding_bottom": 36,
-        "cc_bg_color": "#334FB4",
+        "cc_bg_color": "#334fb4",
         "cc_border_radius": 0
+      }
+    },
+    "164629419235587b19": {
+      "type": "logo-with-text",
+      "blocks": {
+        "1646294192d48bac15-0": {
+          "type": "heading",
+          "settings": {
+            "title": "Why Choose Us",
+            "title_uppercase": false,
+            "subtitle": "Mus mauris vitae ultricies leo. Ac feugiat sed lectus vestibulum lacus laoreet non curabitur."
+          }
+        },
+        "1646294192d48bac15-1": {
+          "type": "image_with_text",
+          "settings": {
+            "logo_svg": "high-quality",
+            "logo_title": "Arcu rutrum"
+          }
+        },
+        "1646294192d48bac15-2": {
+          "type": "image_with_text",
+          "settings": {
+            "logo_svg": "substantial",
+            "logo_title": "Arcu rutrum"
+          }
+        },
+        "1646294192d48bac15-3": {
+          "type": "image_with_text",
+          "settings": {
+            "logo_svg": "loved-by-hundreds",
+            "logo_title": "Arcu rutrum"
+          }
+        },
+        "1646294192d48bac15-4": {
+          "type": "image_with_text",
+          "settings": {
+            "logo_svg": "free-shipping",
+            "logo_title": "Arcu rutrum"
+          }
+        }
+      },
+      "block_order": [
+        "1646294192d48bac15-0",
+        "1646294192d48bac15-1",
+        "1646294192d48bac15-2",
+        "1646294192d48bac15-3",
+        "1646294192d48bac15-4"
+      ],
+      "settings": {
+        "color_scheme": "background-1",
+        "use_as_default_bg": false,
+        "fg_color": "#121212",
+        "bg_color": "#ffffff",
+        "bg_blend": "normal",
+        "columns_desktop": 4,
+        "columns_tablet": 4,
+        "columns_mobile": 1,
+        "use_as_default_padding": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "1646294267406b368a": {
+      "type": "image-with-product",
+      "blocks": {
+        "1646294267d4b6aea4-0": {
+          "type": "heading",
+          "settings": {
+            "title": "Shop the look",
+            "title_uppercase": false,
+            "subtitle": "Mus mauris vitae ultricies leo. Ac feugiat sed lectus vestibulum lacus laoreet non curabitur."
+          }
+        },
+        "1646294267d4b6aea4-1": {
+          "type": "slideshow",
+          "settings": {
+            "items_to_show": 4,
+            "columns_desktop": 4,
+            "columns_tablet": 2,
+            "columns_mobile": 1,
+            "slider": "slide-me-not"
+          }
+        },
+        "1646294267d4b6aea4-2": {
+          "type": "image_with_product_card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/5.png",
+            "product": "meow",
+            "x_pos": 51,
+            "y_pos": 48,
+            "color": "#334FB4",
+            "image_ratio": "adapt",
+            "show_secondary_image": false,
+            "show_vendor": false,
+            "show_rating": false,
+            "show_description": false,
+            "description": "<p>Vel aenean ipsum interdum ridiculus nullam efficitur porttitor leo convallis consectetuer hac ad nascetur.<\/p>"
+          }
+        },
+        "1646294267d4b6aea4-3": {
+          "type": "image_with_product_card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/6.png",
+            "product": "t-shirt",
+            "x_pos": 37,
+            "y_pos": 55,
+            "color": "#334FB4",
+            "image_ratio": "adapt",
+            "show_secondary_image": false,
+            "show_vendor": false,
+            "show_rating": false,
+            "show_description": false,
+            "description": "<p>Vel aenean ipsum interdum ridiculus nullam efficitur porttitor leo convallis consectetuer hac ad nascetur.<\/p>"
+          }
+        },
+        "1646294267d4b6aea4-4": {
+          "type": "image_with_product_card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/8.png",
+            "product": "shoe",
+            "x_pos": 57,
+            "y_pos": 78,
+            "color": "#334FB4",
+            "image_ratio": "adapt",
+            "show_secondary_image": false,
+            "show_vendor": false,
+            "show_rating": false,
+            "show_description": false,
+            "description": "<p>Vel aenean ipsum interdum ridiculus nullam efficitur porttitor leo convallis consectetuer hac ad nascetur.<\/p>"
+          }
+        },
+        "1646294267d4b6aea4-5": {
+          "type": "image_with_product_card",
+          "settings": {
+            "product": "",
+            "x_pos": 0,
+            "y_pos": 0,
+            "color": "#334FB4",
+            "image_ratio": "adapt",
+            "show_secondary_image": false,
+            "show_vendor": false,
+            "show_rating": false,
+            "show_description": false,
+            "description": "<p>Vel aenean ipsum interdum ridiculus nullam efficitur porttitor leo convallis consectetuer hac ad nascetur.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "1646294267d4b6aea4-0",
+        "1646294267d4b6aea4-1",
+        "1646294267d4b6aea4-2",
+        "1646294267d4b6aea4-3",
+        "1646294267d4b6aea4-4",
+        "1646294267d4b6aea4-5"
+      ],
+      "settings": {
+        "color_scheme": "background-1",
+        "use_as_default_bg": false,
+        "fg_color": "#121212",
+        "bg_color": "#ffffff",
+        "bg_blend": "normal",
+        "use_as_default_padding": false,
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     },
     "rich_text": {
@@ -277,6 +442,8 @@
     "16458763677060d6c8",
     "16461506879c7fe7ec",
     "16461507015bd670f1",
+    "164629419235587b19",
+    "1646294267406b368a",
     "rich_text",
     "collage",
     "video",
