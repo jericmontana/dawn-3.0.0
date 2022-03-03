@@ -3907,8 +3907,8 @@ label.unavailable {
 }
 .section .section__slider ul.slider {
   position: relative;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 .section .section__slider .slider-buttons {
   position: absolute;
