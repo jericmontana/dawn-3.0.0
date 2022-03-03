@@ -98,8 +98,8 @@
                                         {%- if featured_image.width >= 3000 -%}{{ featured_image | image_url: width: 3000 }} 3000w,{%- endif -%}
                                         {{ featured_image | image_url }} {{ featured_image.width }}w"
                                     src="{{ featured_image | image_url }}"
-                                    alt="{{ featured_image.title | escape }}"
-                                    title="{{ featured_image.title | escape }}"
+                                    alt="{{ featured_product.title | escape }}"
+                                    title="{{ featured_product.title | escape }}"
                                     height="{{ featured_image.height }}"
                                     width="{{ featured_image.width }}"
                                     loading="lazy"
