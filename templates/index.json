@@ -147,6 +147,12 @@
     "164629419235587b19": {
       "type": "logo-with-text",
       "blocks": {
+        "2aeabb46-d263-4133-9180-0360aa582de5": {
+          "type": "heading_support",
+          "settings": {
+            "title_support": "<p>Consectetur letius torquent nunc lacus volutpat<\/p><p><strong>asdjsghggsadb<\/strong> lshd <\/p><p>lsadhk<\/p>"
+          }
+        },
         "1646294192d48bac15-0": {
           "type": "heading",
           "settings": {
@@ -185,6 +191,7 @@
         }
       },
       "block_order": [
+        "2aeabb46-d263-4133-9180-0360aa582de5",
         "1646294192d48bac15-0",
         "1646294192d48bac15-1",
         "1646294192d48bac15-2",
