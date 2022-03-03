@@ -277,9 +277,10 @@
         "1646294267d4b6aea4-5": {
           "type": "image_with_product_card",
           "settings": {
-            "product": "",
-            "x_pos": 0,
-            "y_pos": 0,
+            "image": "shopify:\/\/shop_images\/7.png",
+            "product": "cap",
+            "x_pos": 78,
+            "y_pos": 74,
             "color": "#334FB4",
             "image_ratio": "adapt",
             "show_secondary_image": false,
