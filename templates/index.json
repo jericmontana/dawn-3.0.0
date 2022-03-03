@@ -240,7 +240,7 @@
             "product": "meow",
             "x_pos": 51,
             "y_pos": 48,
-            "color": "#334FB4",
+            "color": "#334fb4",
             "image_ratio": "adapt",
             "show_secondary_image": false,
             "show_vendor": false,
@@ -256,7 +256,7 @@
             "product": "t-shirt",
             "x_pos": 37,
             "y_pos": 55,
-            "color": "#334FB4",
+            "color": "#334fb4",
             "image_ratio": "adapt",
             "show_secondary_image": false,
             "show_vendor": false,
@@ -272,7 +272,7 @@
             "product": "shoe",
             "x_pos": 57,
             "y_pos": 78,
-            "color": "#334FB4",
+            "color": "#334fb4",
             "image_ratio": "adapt",
             "show_secondary_image": false,
             "show_vendor": false,
@@ -288,7 +288,7 @@
             "product": "cap",
             "x_pos": 78,
             "y_pos": 74,
-            "color": "#334FB4",
+            "color": "#334fb4",
             "image_ratio": "adapt",
             "show_secondary_image": false,
             "show_vendor": false,
@@ -305,6 +305,39 @@
         "1646294267d4b6aea4-3",
         "1646294267d4b6aea4-4",
         "1646294267d4b6aea4-5"
+      ],
+      "settings": {
+        "color_scheme": "background-1",
+        "use_as_default_bg": false,
+        "fg_color": "#121212",
+        "bg_color": "#ffffff",
+        "bg_blend": "normal",
+        "use_as_default_padding": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "1646313626697ca18a": {
+      "type": "email-signup-7923216",
+      "blocks": {
+        "1646313626f6c8e863-0": {
+          "type": "heading",
+          "settings": {
+            "title": "Join our VIP Club",
+            "title_uppercase": false,
+            "subtitle": "Mus mauris vitae ultricies leo. Ac feugiat sed lectus vestibulum lacus laoreet non curabitur."
+          }
+        },
+        "1646313626f6c8e863-1": {
+          "type": "email_signup_form",
+          "settings": {
+            "placeholder": "Email Address..."
+          }
+        }
+      },
+      "block_order": [
+        "1646313626f6c8e863-0",
+        "1646313626f6c8e863-1"
       ],
       "settings": {
         "color_scheme": "background-1",
@@ -452,6 +485,7 @@
     "16461507015bd670f1",
     "164629419235587b19",
     "1646294267406b368a",
+    "1646313626697ca18a",
     "rich_text",
     "collage",
     "video",
