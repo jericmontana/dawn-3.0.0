@@ -3263,6 +3263,10 @@ label.unavailable {
     }
 }
 */
+.privy-button__trigger {
+  opacity: 0;
+}
+
 /* Device Sizes | Mobile - Default */
 /* For @include*/
 @-webkit-keyframes shine {
