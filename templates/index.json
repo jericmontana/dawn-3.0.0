@@ -3,18 +3,19 @@
     "16458763677060d6c8": {
       "type": "image-banner",
       "settings": {
-        "heading": "<p>Heading! <strong>with<\/strong> Tagline!<\/p>",
+        "heading": "<p>lash-game <strong>with<\/strong> AVACLUXE.<\/p>",
         "heading_center": false,
         "heading_base_fontsize": 1,
-        "subheading": "In consequat, quam id sodales hendrerit, eros mi lacinia risus neque tristique augueproin tempus urna congue. elementum.",
-        "kicker": "We have the best product.",
+        "subheading": "",
+        "kicker": "setting up your",
+        "image": "shopify:\/\/shop_images\/AVACLUXE_Banner_Image.png",
         "bg_color": "",
         "bg_blend": "normal",
         "btn_label": "Shop Now",
         "btn_link": "shopify:\/\/collections\/all",
         "btn_size": "default",
         "hover_effect": "shine",
-        "icon_type": "arrow",
+        "icon_type": "none",
         "shadow_effect": true,
         "auto_width": false
       }
