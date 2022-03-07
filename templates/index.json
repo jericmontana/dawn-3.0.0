@@ -34,8 +34,8 @@
         "1646150686f0f5db4f-1": {
           "type": "slider",
           "settings": {
-            "collection": "frontpage",
-            "products_to_show": 4,
+            "collection": "",
+            "products_to_show": 5,
             "show_add_to_cart_button": true,
             "columns_desktop": 4,
             "columns_tablet": 3,
