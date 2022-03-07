@@ -3826,6 +3826,7 @@ label.unavailable {
   width: calc(100% + 2px);
   height: calc(100% + 2px);
   pointer-events: none;
+  border-radius: inherit;
 }
 .btn-he--slide::after {
   z-index: -2;
@@ -3899,6 +3900,10 @@ label.unavailable {
 .btn-bs {
   -webkit-box-shadow: 6px 8px 22px -2px rgba(0, 0, 0, 0.74) !important;
           box-shadow: 6px 8px 22px -2px rgba(0, 0, 0, 0.74) !important;
+}
+.btn--round-corner {
+  border-radius: 4px;
+  overflow: hidden;
 }
 
 /* Device Sizes | Mobile - Default */
