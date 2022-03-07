@@ -1,3 +1,9 @@
+.section--collection-list .section__collection {
+  max-width: 530px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1rem;
+}
 .section--collection-list .section__collection--image {
   height: 280px !important;
   position: relative;

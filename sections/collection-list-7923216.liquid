@@ -85,24 +85,29 @@
                 {%- for featured_collection_block in featured_collection_blocks limit: block.settings.collections_to_show -%}
                 <li id="Slide-{{ section.id }}-{{ forloop.index }}" class="grid__item {% if slider_mode != 'slide-me-not' and block.settings.collections_to_show > 1 %} slider__slide{% endif %}">
                   {% assign featured_collection = featured_collection_block.settings.featured_collection %}
+                  {% if featured_collection_block.settings.use_custom_image %}
+                    {% assign featured_collection_image = featured_collection_block.settings.featured_collection_image %}
+                  {% else %}
+                    {% assign featured_collection_image = featured_collection.featured_image %}
+                  {% endif %}
                   <a {% if featured_collection != blank %}href="{{featured_collection.url}}" title="{{featured_collection.title}}" {% endif %}>
                     <div class="section__collection">
                       <div class="section__collection--image">
                           {%- if featured_collection.featured_image -%}
                             <img
-                              srcset="{%- if featured_collection.featured_image.width >= 165 -%}{{ featured_collection.featured_image | image_url: width: 165 }} 165w,{%- endif -%}
-                                {%- if featured_collection.featured_image.width >= 330 -%}{{ featured_collection.featured_image | image_url: width: 330 }} 330w,{%- endif -%}
-                                {%- if featured_collection.featured_image.width >= 535 -%}{{ featured_collection.featured_image | image_url: width: 535 }} 535w,{%- endif -%}
-                                {%- if featured_collection.featured_image.width >= 750 -%}{{ featured_collection.featured_image | image_url: width: 750 }} 750w,{%- endif -%}
-                                {%- if featured_collection.featured_image.width >= 1000 -%}{{ featured_collection.featured_image | image_url: width: 1000 }} 1000w,{%- endif -%}
-                                {%- if featured_collection.featured_image.width >= 1500 -%}{{ featured_collection.featured_image | image_url: width: 1500 }} 1500w,{%- endif -%}
-                                {%- if featured_collection.featured_image.width >= 3000 -%}{{ featured_collection.featured_image | image_url: width: 3000 }} 3000w,{%- endif -%}
-                                {{ featured_collection.featured_image | image_url }} {{ featured_collection.featured_image.width }}w"
-                              src="{{ featured_collection.featured_image | image_url }}"
+                              srcset="{%- if featured_collection_image.width >= 165 -%}{{ featured_collection_image | image_url: width: 165 }} 165w,{%- endif -%}
+                                {%- if featured_collection_image.width >= 330 -%}{{ featured_collection_image | image_url: width: 330 }} 330w,{%- endif -%}
+                                {%- if featured_collection_image.width >= 535 -%}{{ featured_collection_image | image_url: width: 535 }} 535w,{%- endif -%}
+                                {%- if featured_collection_image.width >= 750 -%}{{ featured_collection_image | image_url: width: 750 }} 750w,{%- endif -%}
+                                {%- if featured_collection_image.width >= 1000 -%}{{ featured_collection_image | image_url: width: 1000 }} 1000w,{%- endif -%}
+                                {%- if featured_collection_image.width >= 1500 -%}{{ featured_collection_image | image_url: width: 1500 }} 1500w,{%- endif -%}
+                                {%- if featured_collection_image.width >= 3000 -%}{{ featured_collection_image | image_url: width: 3000 }} 3000w,{%- endif -%}
+                                {{ featured_collection_image | image_url }} {{ featured_collection_image.width }}w"
+                              src="{{ featured_collection_image | image_url }}"
                               alt="{{ featured_collection.title | escape }}"
                               title="{{ featured_collection.title | escape }}"
-                              height="{{ featured_collection.featured_image.height }}"
-                              width="{{ featured_collection.featured_image.width }}"
+                              height="{{ featured_collection_image.height }}"
+                              width="{{ featured_collection_image.width }}"
                               loading="lazy"
                               class="motion-reduce"
                             >
@@ -413,6 +418,17 @@
           "id": "featured_collection",
           "label": "Collection",
           "info": "Slider Block is required | Background Color and Border Radius @ Section Settings"
+        },
+        {
+          "type": "image_picker",
+          "id": "featured_collection_image",
+          "label": "Custom Image"
+        },
+        {
+          "type": "checkbox",
+          "id": "use_custom_image",
+          "label": "Use Custom Image",
+          "default": true
         }
       ]
     }
