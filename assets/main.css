@@ -3132,6 +3132,19 @@ html {
 .section {
   position: relative;
 }
+.section .page-width--round-corner {
+  background-color: #FFECF8;
+  border-radius: 4rem;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+@media screen and (max-width: 749px) {
+  .section .page-width--round-corner {
+    border-radius: 3rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+}
 
 .section__bg-container {
   position: relative;
@@ -3897,6 +3910,12 @@ label.unavailable {
             animation: shine 1.8s infinite forwards;
   }
 }
+@media screen and (min-width: 990px) {
+  .btn-he--bs:hover {
+    -webkit-box-shadow: 6px 8px 22px -2px rgba(0, 0, 0, 0.74) !important;
+            box-shadow: 6px 8px 22px -2px rgba(0, 0, 0, 0.74) !important;
+  }
+}
 .btn-bs {
   -webkit-box-shadow: 6px 8px 22px -2px rgba(0, 0, 0, 0.74) !important;
           box-shadow: 6px 8px 22px -2px rgba(0, 0, 0, 0.74) !important;
@@ -3907,6 +3926,11 @@ label.unavailable {
 }
 
 /* Device Sizes | Mobile - Default */
+:root {
+  --color-slider-control-bg: var(--color-base-accent-1);
+  --color-slider-control-icon: var(--color-base-solid-button-labels);
+}
+
 /* For Slider Buttons */
 .section .section__slider ul.slider {
   position: relative;
@@ -3936,12 +3960,12 @@ label.unavailable {
 .section .section__slider .slider-button:not(.slider-button[disabled]) {
   -webkit-box-shadow: 0px 0px 14px -4px rgba(0, 0, 0, 0.75);
           box-shadow: 0px 0px 14px -4px rgba(0, 0, 0, 0.75);
-  background-color: rgb(var(--color-foreground));
+  background-color: rgb(var(--color-slider-control-bg));
 }
 .section .section__slider .slider-button .icon {
   height: auto;
   width: 75%;
-  color: rgb(var(--color-background));
+  color: rgb(var(--color-slider-control-icon));
   stroke-width: 2;
 }
 .section .section__slider .slider-button[disabled] {

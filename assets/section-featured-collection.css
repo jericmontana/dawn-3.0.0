@@ -2,6 +2,37 @@
 .section--featured-collection .section__slider .slider-button {
   margin-bottom: 8rem;
 }
+.section--featured-collection .grid__item--featured-collection {
+  padding: 1rem;
+}
 .section--featured-collection .card-wrapper {
   height: auto;
+}
+.section--featured-collection .card-information {
+  height: 100%;
+}
+.section--featured-collection .card-information * {
+  text-align: center;
+}
+.section--featured-collection .card-information p {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.section--featured-collection .card-information .price span {
+  display: inline-block;
+}
+.section--featured-collection .full-unstyled-link {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.section--featured-collection .product-form__submit.button {
+  width: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media screen and (min-width: 990px) {
+  .section--featured-collection .product-form__buttons {
+    margin-bottom: 2rem;
+  }
 }
