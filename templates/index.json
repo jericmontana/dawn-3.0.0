@@ -128,7 +128,7 @@
         "use_as_default_padding": false,
         "padding_top": 36,
         "padding_bottom": 36,
-        "cc_bg_color": "#334fb4",
+        "cc_bg_color": "#ff66c4",
         "cc_border_radius": 3
       }
     },
@@ -224,11 +224,11 @@
         "1646294267d4b6aea4-2": {
           "type": "image_with_product_card",
           "settings": {
-            "image": "shopify:\/\/shop_images\/5.png",
+            "image": "shopify:\/\/shop_images\/1_ec67b939-a1ec-4662-8c4b-3fee9b4b1d6d.png",
             "product": "meow",
-            "x_pos": 51,
-            "y_pos": 48,
-            "color": "#334fb4",
+            "x_pos": 43,
+            "y_pos": 66,
+            "color": "#ff66c4",
             "image_ratio": "adapt",
             "show_secondary_image": false,
             "show_vendor": false,
@@ -240,11 +240,11 @@
         "1646294267d4b6aea4-3": {
           "type": "image_with_product_card",
           "settings": {
-            "image": "shopify:\/\/shop_images\/6.png",
+            "image": "shopify:\/\/shop_images\/2_911cb5fb-8712-439a-8992-621e9c69e369.png",
             "product": "t-shirt",
-            "x_pos": 37,
-            "y_pos": 55,
-            "color": "#334fb4",
+            "x_pos": 59,
+            "y_pos": 80,
+            "color": "#ff66c4",
             "image_ratio": "adapt",
             "show_secondary_image": false,
             "show_vendor": false,
@@ -256,11 +256,11 @@
         "1646294267d4b6aea4-4": {
           "type": "image_with_product_card",
           "settings": {
-            "image": "shopify:\/\/shop_images\/8.png",
+            "image": "shopify:\/\/shop_images\/3_89c37462-f941-48b5-995c-283c1218273b.png",
             "product": "shoe",
-            "x_pos": 57,
-            "y_pos": 78,
-            "color": "#334fb4",
+            "x_pos": 38,
+            "y_pos": 60,
+            "color": "#ff66c4",
             "image_ratio": "adapt",
             "show_secondary_image": false,
             "show_vendor": false,
@@ -272,11 +272,11 @@
         "1646294267d4b6aea4-5": {
           "type": "image_with_product_card",
           "settings": {
-            "image": "shopify:\/\/shop_images\/7.png",
+            "image": "shopify:\/\/shop_images\/4_fc1e6bc2-8dc1-431a-a310-2c079bab71fb.png",
             "product": "cap",
-            "x_pos": 78,
-            "y_pos": 74,
-            "color": "#334fb4",
+            "x_pos": 63,
+            "y_pos": 75,
+            "color": "#ff66c4",
             "image_ratio": "adapt",
             "show_secondary_image": false,
             "show_vendor": false,
