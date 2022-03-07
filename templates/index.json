@@ -33,18 +33,18 @@
         "1646150686f0f5db4f-1": {
           "type": "slider",
           "settings": {
-            "collection": "",
+            "collection": "frontpage",
             "products_to_show": 4,
-            "show_add_to_cart_button": false,
+            "show_add_to_cart_button": true,
             "columns_desktop": 4,
             "columns_tablet": 3,
             "columns_mobile": 2,
             "slider": "slide-me-not",
             "image_ratio": "adapt",
-            "show_secondary_image": false,
+            "show_secondary_image": true,
             "show_vendor": false,
             "show_rating": false,
-            "show_description": false,
+            "show_description": true,
             "description": "<p>Vel aenean ipsum interdum ridiculus nullam efficitur porttitor leo convallis consectetuer hac ad nascetur.<\/p>"
           }
         }
