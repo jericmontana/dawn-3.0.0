@@ -3945,6 +3945,8 @@ label.unavailable {
   color: rgb(var(--color-background));
   stroke-width: 2;
 }
-.section .section__slider .slider-button[disabled] .icon {
-  display: none;
+.section .section__slider .slider-button[disabled] {
+  display: none !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
 }
