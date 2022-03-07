@@ -3903,6 +3903,11 @@ label.unavailable {
 
 /* Device Sizes | Mobile - Default */
 /* For Slider Buttons */
+.section .section__slider ul.slider {
+  position: relative;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
 .section .section__slider .slider-buttons {
   position: absolute;
   top: 0;

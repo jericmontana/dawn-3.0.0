@@ -2,12 +2,6 @@
 {{ 'component-price.css' | asset_url | stylesheet_tag }}
 {{ 'section-featured-collection.css' | asset_url | stylesheet_tag }}
 
-{% comment %} 
-<link rel="stylesheet" href="{{ 'component-slider.css' | asset_url }}" media="print" onload="this.media='all'">
-<link rel="stylesheet" href="{{ 'template-collection.css' | asset_url }}" media="print" onload="this.media='all'">
-
-<noscript>{{ 'component-slider.css' | asset_url | stylesheet_tag }}</noscript>
-<noscript>{{ 'template-collection.css' | asset_url | stylesheet_tag }}</noscript> {% endcomment %}
 
 {% assign use_as_default_padding = section.settings.use_as_default_padding %}
 {% assign use_as_default_bg = section.settings.use_as_default_bg %}
