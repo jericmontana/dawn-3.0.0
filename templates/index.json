@@ -216,8 +216,8 @@
             "items_to_show": 4,
             "columns_desktop": 4,
             "columns_tablet": 2,
-            "columns_mobile": 1,
-            "slider": "everywhere"
+            "columns_mobile": 2,
+            "slider": "medium-down"
           }
         },
         "1646294267d4b6aea4-2": {
