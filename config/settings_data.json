@@ -1,5 +1,104 @@
 {
-  "current": "Default",
+  "current": {
+    "colors_accent_1": "#121212",
+    "colors_accent_2": "#ff66c4",
+    "colors_text": "#121212",
+    "colors_outline_button_labels": "#121212",
+    "sections": {
+      "announcement-bar": {
+        "type": "announcement-bar",
+        "blocks": {
+          "announcement-bar-0": {
+            "type": "announcement",
+            "settings": {
+              "text": "Welcome to our store",
+              "color_scheme": "background-1",
+              "link": ""
+            }
+          }
+        },
+        "block_order": [
+          "announcement-bar-0"
+        ],
+        "settings": {
+        }
+      },
+      "header": {
+        "type": "header",
+        "settings": {
+          "color_scheme": "background-1",
+          "logo_width": 90,
+          "logo_position": "middle-left",
+          "menu": "main-menu",
+          "show_line_separator": true,
+          "enable_sticky_header": true,
+          "margin_bottom": 0
+        }
+      },
+      "footer": {
+        "type": "footer",
+        "blocks": {
+          "footer-0": {
+            "type": "image",
+            "settings": {
+              "image_width": 100,
+              "alignment": "center"
+            }
+          },
+          "footer-1": {
+            "type": "link_list",
+            "settings": {
+              "heading": "Quick Links",
+              "menu": "footer"
+            }
+          },
+          "footer-2": {
+            "type": "link_list",
+            "settings": {
+              "heading": "Customer Service",
+              "menu": "footer"
+            }
+          },
+          "footer-3": {
+            "type": "email_signup",
+            "settings": {
+              "heading": "Join The VIP List",
+              "subtext": "<p>Be the first one to know about our latest promotions and exclusive offers.<\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "footer-0",
+          "footer-1",
+          "footer-2",
+          "footer-3"
+        ],
+        "settings": {
+          "color_scheme": "background-1",
+          "show_social": true,
+          "enable_country_selector": false,
+          "enable_language_selector": false,
+          "payment_enable": true,
+          "margin_top": 48,
+          "padding_top": 36,
+          "padding_bottom": 36
+        }
+      },
+      "main-password-header": {
+        "type": "main-password-header",
+        "settings": {
+        }
+      },
+      "main-password-footer": {
+        "type": "main-password-footer",
+        "settings": {
+        }
+      }
+    },
+    "content_for_index": [
+
+    ]
+  },
   "presets": {
     "Default": {
       "sections": {
@@ -15,7 +114,9 @@
           },
           "block_order": [
             "announcement-bar-0"
-          ]
+          ],
+          "settings": {
+          }
         },
         "header": {
           "type": "header",
@@ -27,7 +128,9 @@
           "type": "footer",
           "blocks": {
             "footer-0": {
-              "type": "image"
+              "type": "image",
+              "settings": {
+              }
             },
             "footer-1": {
               "type": "link_list",
@@ -42,7 +145,9 @@
               }
             },
             "footer-3": {
-              "type": "email_signup"
+              "type": "email_signup",
+              "settings": {
+              }
             }
           },
           "block_order": [
@@ -59,10 +164,14 @@
           }
         },
         "main-password-header": {
-          "type": "main-password-header"
+          "type": "main-password-header",
+          "settings": {
+          }
         },
         "main-password-footer": {
-          "type": "main-password-footer"
+          "type": "main-password-footer",
+          "settings": {
+          }
         }
       }
     }
