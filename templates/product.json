@@ -143,12 +143,21 @@
         "show_secondary_image": true,
         "padding_bottom": 28
       }
+    },
+    "wave": {
+      "type": "wave",
+      "settings": {
+        "color_scheme": "accent-2",
+        "bg_color_top": "#ffffff",
+        "padding_top": 36
+      }
     }
   },
   "order": [
     "main",
     "image-with-text",
     "multicolumn",
-    "product-recommendations"
+    "product-recommendations",
+    "wave"
   ]
 }

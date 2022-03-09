@@ -8,10 +8,19 @@
       "settings": {
         "heading": ""
       }
+    },
+    "wave": {
+      "type": "wave",
+      "settings": {
+        "color_scheme": "accent-2",
+        "bg_color_top": "#ffffff",
+        "padding_top": 36
+      }
     }
   },
   "order": [
     "main",
-    "form"
+    "form",
+    "wave"
   ]
 }

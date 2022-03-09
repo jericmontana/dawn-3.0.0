@@ -25,10 +25,19 @@
         "header",
         "button"
       ]
+    },
+    "wave": {
+      "type": "wave",
+      "settings": {
+        "color_scheme": "accent-2",
+        "bg_color_top": "#ffffff",
+        "padding_top": 36
+      }
     }
   },
   "order": [
     "product_grid",
-    "shopnow_banner"
+    "shopnow_banner",
+    "wave"
   ]
 }

@@ -5,10 +5,19 @@
     },
     "product-grid": {
       "type": "main-collection-product-grid"
+    },
+    "wave": {
+      "type": "wave",
+      "settings": {
+        "color_scheme": "accent-2",
+        "bg_color_top": "#ffffff",
+        "padding_top": 36
+      }
     }
   },
   "order": [
     "banner",
-    "product-grid"
+    "product-grid",
+    "wave"
   ]
 }
