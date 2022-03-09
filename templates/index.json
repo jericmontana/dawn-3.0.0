@@ -8,7 +8,6 @@
         "heading_base_fontsize": 1,
         "subheading": "",
         "kicker": "setting up your",
-        "image": "shopify:\/\/shop_images\/AVACLUXE_Banner_Image.png",
         "bg_color": "",
         "bg_blend": "normal",
         "btn_label": "Shop Now",
@@ -17,6 +16,7 @@
         "hover_effect": "shine",
         "icon_type": "none",
         "shadow_effect": true,
+        "round_corner": true,
         "auto_width": false
       }
     },
@@ -89,25 +89,29 @@
         "1646150701cd4490fc-2": {
           "type": "collection",
           "settings": {
-            "featured_collection": ""
+            "featured_collection": "",
+            "use_custom_image": true
           }
         },
         "1646150701cd4490fc-3": {
           "type": "collection",
           "settings": {
-            "featured_collection": ""
+            "featured_collection": "",
+            "use_custom_image": true
           }
         },
         "1646150701cd4490fc-4": {
           "type": "collection",
           "settings": {
-            "featured_collection": ""
+            "featured_collection": "",
+            "use_custom_image": true
           }
         },
         "1646150701cd4490fc-5": {
           "type": "collection",
           "settings": {
-            "featured_collection": ""
+            "featured_collection": "",
+            "use_custom_image": true
           }
         }
       },
@@ -224,7 +228,6 @@
         "1646294267d4b6aea4-2": {
           "type": "image_with_product_card",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Snow_Angel.png",
             "product": "meow",
             "x_pos": 43,
             "y_pos": 66,
@@ -240,7 +243,6 @@
         "1646294267d4b6aea4-3": {
           "type": "image_with_product_card",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Lowkey.png",
             "product": "t-shirt",
             "x_pos": 59,
             "y_pos": 80,
@@ -256,7 +258,6 @@
         "1646294267d4b6aea4-4": {
           "type": "image_with_product_card",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Envy.png",
             "product": "shoe",
             "x_pos": 38,
             "y_pos": 60,
@@ -272,7 +273,6 @@
         "1646294267d4b6aea4-5": {
           "type": "image_with_product_card",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Rich.png",
             "product": "cap",
             "x_pos": 63,
             "y_pos": 75,
@@ -288,11 +288,10 @@
         "9d424643-3ba1-478d-aa38-e9e5343e743b": {
           "type": "image_with_product_card",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Chloe.png",
             "product": "meow",
             "x_pos": 55,
             "y_pos": 80,
-            "color": "#334FB4",
+            "color": "#334fb4",
             "image_ratio": "adapt",
             "show_secondary_image": false,
             "show_vendor": false,
@@ -304,11 +303,10 @@
         "0af2009f-cf0e-4193-89f8-068fee057a47": {
           "type": "image_with_product_card",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Milly.png",
             "product": "shoe",
             "x_pos": 79,
             "y_pos": 49,
-            "color": "#334FB4",
+            "color": "#334fb4",
             "image_ratio": "adapt",
             "show_secondary_image": false,
             "show_vendor": false,
@@ -320,11 +318,10 @@
         "0d806d52-70d4-4323-a181-5c56be1e9565": {
           "type": "image_with_product_card",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Barbie_Pink.png",
             "product": "cap",
             "x_pos": 33,
             "y_pos": 57,
-            "color": "#334FB4",
+            "color": "#334fb4",
             "image_ratio": "adapt",
             "show_secondary_image": false,
             "show_vendor": false,
@@ -388,6 +385,14 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "1646848339941da1e7": {
+      "type": "wave",
+      "settings": {
+        "color_scheme": "accent-2",
+        "bg_color_top": "#FFFFFF",
+        "padding_top": 36
+      }
     }
   },
   "order": [
@@ -396,6 +401,7 @@
     "16461507015bd670f1",
     "164629419235587b19",
     "1646294267406b368a",
-    "1646313626697ca18a"
+    "1646313626697ca18a",
+    "1646848339941da1e7"
   ]
 }
