@@ -260,6 +260,22 @@
             "description": "<p>Vel aenean ipsum interdum ridiculus nullam efficitur porttitor leo convallis consectetuer hac ad nascetur.<\/p>"
           }
         },
+        "0d806d52-70d4-4323-a181-5c56be1e9565": {
+          "type": "image_with_product_card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Rich.png",
+            "product": "rich",
+            "x_pos": 34,
+            "y_pos": 83,
+            "color": "#ff66c4",
+            "image_ratio": "adapt",
+            "show_secondary_image": false,
+            "show_vendor": false,
+            "show_rating": false,
+            "show_description": false,
+            "description": "<p>Vel aenean ipsum interdum ridiculus nullam efficitur porttitor leo convallis consectetuer hac ad nascetur.<\/p>"
+          }
+        },
         "1646294267d4b6aea4-4": {
           "type": "image_with_product_card",
           "settings": {
@@ -323,21 +339,6 @@
             "show_description": false,
             "description": "<p>Vel aenean ipsum interdum ridiculus nullam efficitur porttitor leo convallis consectetuer hac ad nascetur.<\/p>"
           }
-        },
-        "0d806d52-70d4-4323-a181-5c56be1e9565": {
-          "type": "image_with_product_card",
-          "settings": {
-            "product": "",
-            "x_pos": 33,
-            "y_pos": 57,
-            "color": "#334fb4",
-            "image_ratio": "adapt",
-            "show_secondary_image": false,
-            "show_vendor": false,
-            "show_rating": false,
-            "show_description": false,
-            "description": "<p>Vel aenean ipsum interdum ridiculus nullam efficitur porttitor leo convallis consectetuer hac ad nascetur.<\/p>"
-          }
         }
       },
       "block_order": [
@@ -345,11 +346,11 @@
         "1646294267d4b6aea4-1",
         "1646294267d4b6aea4-2",
         "1646294267d4b6aea4-3",
+        "0d806d52-70d4-4323-a181-5c56be1e9565",
         "1646294267d4b6aea4-4",
         "1646294267d4b6aea4-5",
         "9d424643-3ba1-478d-aa38-e9e5343e743b",
-        "0af2009f-cf0e-4193-89f8-068fee057a47",
-        "0d806d52-70d4-4323-a181-5c56be1e9565"
+        "0af2009f-cf0e-4193-89f8-068fee057a47"
       ],
       "settings": {
         "color_scheme": "background-1",
