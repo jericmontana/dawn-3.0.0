@@ -214,8 +214,8 @@
           "type": "heading",
           "settings": {
             "title": "Shop the look",
-            "title_uppercase": false,
-            "subtitle": "Mus mauris vitae ultricies leo. Ac feugiat sed lectus vestibulum lacus laoreet non curabitur."
+            "title_uppercase": true,
+            "subtitle": ""
           }
         },
         "1646294267d4b6aea4-1": {
@@ -231,12 +231,13 @@
         "1646294267d4b6aea4-2": {
           "type": "image_with_product_card",
           "settings": {
-            "product": "",
-            "x_pos": 43,
+            "image": "shopify:\/\/shop_images\/Snow_Angel.png",
+            "product": "snow-angel",
+            "x_pos": 64,
             "y_pos": 66,
             "color": "#ff66c4",
             "image_ratio": "adapt",
-            "show_secondary_image": false,
+            "show_secondary_image": true,
             "show_vendor": false,
             "show_rating": false,
             "show_description": false,
@@ -246,7 +247,8 @@
         "1646294267d4b6aea4-3": {
           "type": "image_with_product_card",
           "settings": {
-            "product": "",
+            "image": "shopify:\/\/shop_images\/Barbie_Pink.png",
+            "product": "barbie-pink",
             "x_pos": 59,
             "y_pos": 80,
             "color": "#ff66c4",
