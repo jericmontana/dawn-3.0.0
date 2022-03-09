@@ -72,9 +72,9 @@
         "1646150701cd4490fc-0": {
           "type": "heading",
           "settings": {
-            "title": "Collection List",
+            "title": "- shop by categories -",
             "title_uppercase": false,
-            "subtitle": "Mus mauris vitae ultricies leo. Ac feugiat sed lectus vestibulum lacus laoreet non curabitur."
+            "subtitle": ""
           }
         },
         "1646150701cd4490fc-1": {
@@ -90,14 +90,16 @@
         "1646150701cd4490fc-2": {
           "type": "collection",
           "settings": {
-            "featured_collection": "",
+            "featured_collection": "lashes-and-eyeliners",
+            "featured_collection_image": "shopify:\/\/shop_images\/2_fdce6f40-b92d-401f-9484-5e80bd8ecbf2.png",
             "use_custom_image": true
           }
         },
         "1646150701cd4490fc-3": {
           "type": "collection",
           "settings": {
-            "featured_collection": "",
+            "featured_collection": "lippies",
+            "featured_collection_image": "shopify:\/\/shop_images\/1_ccd4e1bf-ca4a-48b8-bf5e-58145c8816e3.png",
             "use_custom_image": true
           }
         },
