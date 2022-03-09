@@ -311,10 +311,11 @@
         "0af2009f-cf0e-4193-89f8-068fee057a47": {
           "type": "image_with_product_card",
           "settings": {
-            "product": "",
-            "x_pos": 79,
-            "y_pos": 49,
-            "color": "#334fb4",
+            "image": "shopify:\/\/shop_images\/Chloe.png",
+            "product": "chloe",
+            "x_pos": 33,
+            "y_pos": 75,
+            "color": "#ff66c4",
             "image_ratio": "adapt",
             "show_secondary_image": false,
             "show_vendor": false,
