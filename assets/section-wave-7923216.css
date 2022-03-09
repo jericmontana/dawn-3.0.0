@@ -1,0 +1,26 @@
+.section__content-wave {
+  display: grid;
+  position: relative;
+  overflow: hidden;
+  margin-left: auto;
+  margin-right: auto;
+}
+.section__content-wave .section__content-wave--back, .section__content-wave .section__content-wave--front {
+  grid-area: 1/1;
+}
+.section__content-wave .section__content-wave--back svg, .section__content-wave .section__content-wave--front svg {
+  width: 100%;
+  height: 100%;
+  fill: rgb(var(--color-background));
+}
+.section__content-wave .section__content-wave--front {
+  z-index: 1;
+}
+.section__content-wave .section__content-wave--back {
+  z-index: 0;
+  padding-left: 3vw;
+  margin-top: -2vw;
+}
+.section__content-wave .section__content-wave--back svg {
+  opacity: 0.5;
+}
