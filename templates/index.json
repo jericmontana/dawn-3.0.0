@@ -27,15 +27,15 @@
         "1646150686f0f5db4f-0": {
           "type": "header",
           "settings": {
-            "title": "Featured Collection",
+            "title": "- all time best-sellers -",
             "title_uppercase": false,
-            "subtitle": "Mus mauris vitae ultricies leo. Ac feugiat sed lectus vestibulum lacus laoreet non curabitur."
+            "subtitle": ""
           }
         },
         "1646150686f0f5db4f-1": {
           "type": "slider",
           "settings": {
-            "collection": "frontpage",
+            "collection": "best-sellers",
             "products_to_show": 5,
             "show_add_to_cart_button": true,
             "columns_desktop": 4,
