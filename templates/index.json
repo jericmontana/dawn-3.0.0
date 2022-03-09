@@ -295,10 +295,11 @@
         "9d424643-3ba1-478d-aa38-e9e5343e743b": {
           "type": "image_with_product_card",
           "settings": {
-            "product": "",
-            "x_pos": 55,
-            "y_pos": 80,
-            "color": "#334fb4",
+            "image": "shopify:\/\/shop_images\/Lowkey.png",
+            "product": "lowkey",
+            "x_pos": 51,
+            "y_pos": 66,
+            "color": "#ff66c4",
             "image_ratio": "adapt",
             "show_secondary_image": false,
             "show_vendor": false,
