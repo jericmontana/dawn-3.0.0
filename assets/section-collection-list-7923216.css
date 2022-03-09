@@ -3,6 +3,7 @@
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 1rem;
+  overflow: hidden;
 }
 .section--collection-list .section__collection--image {
   height: 280px !important;

@@ -35,6 +35,13 @@
     background-color: {{section.settings.cc_bg_color}};
   }
 
+  
+  {% case section.settings.color_scheme %}
+      {% when 'background-1' %}
+      .section--collection-list-{{section.id}} .section__header--title{
+          color: rgb({{ settings.colors_accent_2.red }}, {{ settings.colors_accent_2.green }}, {{ settings.colors_accent_2.blue }});
+      }
+  {% endcase %}
 {%- endstyle -%}
 
 <div class="section section--collection-list section--collection-list-{{section.id}} {% unless use_as_default_bg %}color-{{ section.settings.color_scheme }}{% endunless %}">

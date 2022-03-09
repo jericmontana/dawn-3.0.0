@@ -32,6 +32,19 @@
     background-color: {{section.settings.cc_bg_color}};
   }
 
+{% case section.settings.color_scheme %}
+    {% when 'background-1' %}
+        .section--email-signup-{{section.id}} .section__header--title{
+            color: rgb({{ settings.colors_accent_2.red }}, {{ settings.colors_accent_2.green }}, {{ settings.colors_accent_2.blue }});
+        }
+        .section--email-signup-{{section.id}} .newsletter-form__button{
+            background-color: rgb({{ settings.colors_accent_2.red }}, {{ settings.colors_accent_2.green }}, {{ settings.colors_accent_2.blue }}) !important;
+        }
+        .section--email-signup-{{section.id}} .newsletter-form__field-wrapper .field__input{
+            border-color: rgb({{ settings.colors_accent_2.red }}, {{ settings.colors_accent_2.green }}, {{ settings.colors_accent_2.blue }}) !important;
+        }
+{% endcase %}
+
 {%- endstyle -%}
 
 <div class="section section--email-signup section--email-signup-{{section.id}} {% unless use_as_default_bg %}color-{{ section.settings.color_scheme }}{% endunless %}">

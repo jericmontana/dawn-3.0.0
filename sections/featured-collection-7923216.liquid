@@ -34,9 +34,22 @@
     }
   {%- endif -%}
 
+  {% case section.settings.color_scheme %}
+      {% when 'background-1' %}
+      .section--featured-collection-{{section.id}} .section__header--title{
+          color: rgb({{ settings.colors_accent_2.red }}, {{ settings.colors_accent_2.green }}, {{ settings.colors_accent_2.blue }});
+      }
+      .section--featured-collection-{{section.id}}  .full-unstyled-link{
+          color: rgb({{ settings.colors_accent_2.red }}, {{ settings.colors_accent_2.green }}, {{ settings.colors_accent_2.blue }});
+      }
+      .section--featured-collection-{{section.id}} .price-item{
+          color: rgb({{ settings.colors_accent_2.red }}, {{ settings.colors_accent_2.green }}, {{ settings.colors_accent_2.blue }});
+      }
+  {% endcase %}
+
 {%- endstyle -%}
 
-<div class="section section--featured-collection {% unless use_as_default_bg %}color-{{ section.settings.color_scheme }}{% endunless %}">
+<div class="section section--featured-collection section--featured-collection-{{section.id}} {% unless use_as_default_bg %}color-{{ section.settings.color_scheme }}{% endunless %}">
   <div class="section__bg-container section-{{ section.id }}-bg-contaier section-{{ section.id }}-padding">
     <div class="page-width page-width--round-corner">
 

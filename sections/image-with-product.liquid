@@ -10,34 +10,41 @@
 {% assign use_as_default_padding = section.settings.use_as_default_padding %}
 {% assign use_as_default_bg = section.settings.use_as_default_bg %}
 {%- style -%}
-  {%- if use_as_default_padding -%}
-    .section--image-with-product .section-{{ section.id }}-padding {
-      padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px !important;
-      padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px !important;
+    {%- if use_as_default_padding -%}
+        .section--image-with-product .section-{{ section.id }}-padding {
+            padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px !important;
+            padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px !important;
+        }
+
+        @media screen and (min-width: 750px) {
+            .section--image-with-product .section-{{ section.id }}-padding {
+                padding-top: {{ section.settings.padding_top }}px !important;
+                padding-bottom: {{ section.settings.padding_bottom }}px !important;
+            }
+        }
+    {%- endif -%}
+
+    {%- if  use_as_default_bg -%}
+        .section--image-with-product .section-{{ section.id }}-bg-contaier {
+            --color-foreground: {{section.settings.fg_color.red}},{{section.settings.fg_color.green}},{{section.settings.fg_color.blue}};
+            --color-background: {{section.settings.bg_color.red}},{{section.settings.bg_color.green}},{{section.settings.bg_color.blue}};
+            background-image: url('{{section.settings.bg_image | image_url}}');
+            background-color: {{ section.settings.bg_color }};
+            background-blend-mode: {{ section.settings.bg_blend }};
+        }
+    {%- endif -%}
+
+    .section--image-with-product-{{section.id}} .section__image-with-product-card{
+        border-radius: {{section.settings.cc_border_radius}}rem;
+        background-color: {{section.settings.cc_bg_color}};
     }
 
-    @media screen and (min-width: 750px) {
-      .section--image-with-product .section-{{ section.id }}-padding {
-        padding-top: {{ section.settings.padding_top }}px !important;
-        padding-bottom: {{ section.settings.padding_bottom }}px !important;
-      }
-    }
-  {%- endif -%}
-
-  {%- if  use_as_default_bg -%}
-    .section--image-with-product .section-{{ section.id }}-bg-contaier {
-      --color-foreground: {{section.settings.fg_color.red}},{{section.settings.fg_color.green}},{{section.settings.fg_color.blue}};
-      --color-background: {{section.settings.bg_color.red}},{{section.settings.bg_color.green}},{{section.settings.bg_color.blue}};
-      background-image: url('{{section.settings.bg_image | image_url}}');
-      background-color: {{ section.settings.bg_color }};
-      background-blend-mode: {{ section.settings.bg_blend }};
-    }
-  {%- endif -%}
-
-  .section--image-with-product-{{section.id}} .section__image-with-product-card{
-    border-radius: {{section.settings.cc_border_radius}}rem;
-    background-color: {{section.settings.cc_bg_color}};
-  }
+    {% case section.settings.color_scheme %}
+        {% when 'background-1' %}
+        .section--image-with-product-{{section.id}} .section__header--title{
+            color: rgb({{ settings.colors_accent_2.red }}, {{ settings.colors_accent_2.green }}, {{ settings.colors_accent_2.blue }});
+        }
+    {% endcase %}
 
 {%- endstyle -%}
 
