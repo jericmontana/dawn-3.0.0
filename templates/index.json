@@ -370,8 +370,8 @@
           "type": "heading",
           "settings": {
             "title": "Join our VIP Club",
-            "title_uppercase": false,
-            "subtitle": "Mus mauris vitae ultricies leo. Ac feugiat sed lectus vestibulum lacus laoreet non curabitur."
+            "title_uppercase": true,
+            "subtitle": "Be the first one to get notified of our exclusive offers, discounts and new product releases."
           }
         },
         "1646313626f6c8e863-1": {
