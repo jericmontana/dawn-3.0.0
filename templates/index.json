@@ -279,9 +279,10 @@
         "1646294267d4b6aea4-5": {
           "type": "image_with_product_card",
           "settings": {
-            "product": "",
-            "x_pos": 63,
-            "y_pos": 75,
+            "image": "shopify:\/\/shop_images\/Envy.png",
+            "product": "envy",
+            "x_pos": 34,
+            "y_pos": 85,
             "color": "#ff66c4",
             "image_ratio": "adapt",
             "show_secondary_image": false,
