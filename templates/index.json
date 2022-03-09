@@ -263,7 +263,8 @@
         "1646294267d4b6aea4-4": {
           "type": "image_with_product_card",
           "settings": {
-            "product": "",
+            "image": "shopify:\/\/shop_images\/Milly.png",
+            "product": "milly",
             "x_pos": 38,
             "y_pos": 60,
             "color": "#ff66c4",
