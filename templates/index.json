@@ -36,11 +36,11 @@
           "type": "slider",
           "settings": {
             "collection": "best-sellers",
-            "products_to_show": 5,
+            "products_to_show": 12,
             "show_add_to_cart_button": true,
             "columns_desktop": 4,
             "columns_tablet": 3,
-            "columns_mobile": 2,
+            "columns_mobile": 1,
             "slider": "everywhere",
             "image_ratio": "adapt",
             "show_secondary_image": true,
