@@ -159,29 +159,25 @@
         "1646294192d48bac15-1": {
           "type": "image_with_text",
           "settings": {
-            "logo_svg": "high-quality",
-            "title": "high-quality"
+            "logo_svg": "high-quality"
           }
         },
         "1646294192d48bac15-2": {
           "type": "image_with_text",
           "settings": {
-            "logo_svg": "substantial",
-            "title": "substantial"
+            "logo_svg": "substantial"
           }
         },
         "1646294192d48bac15-3": {
           "type": "image_with_text",
           "settings": {
-            "logo_svg": "loved-by-hundreds",
-            "title": "loved by hundreds"
+            "logo_svg": "loved-by-hundreds"
           }
         },
         "1646294192d48bac15-4": {
           "type": "image_with_text",
           "settings": {
-            "logo_svg": "free-shipping",
-            "title": "free shipping"
+            "logo_svg": "free-shipping"
           }
         }
       },
@@ -363,6 +359,29 @@
         "padding_bottom": 36
       }
     },
+    "16469040093fa15a8d": {
+      "type": "app-block-7923216",
+      "blocks": {
+        "1646904009d21bef04-0": {
+          "type": "heading",
+          "settings": {
+            "title": "- see what our customers are telling us -",
+            "title_uppercase": false,
+            "subtitle": "Mus mauris vitae ultricies leo. Ac feugiat sed lectus vestibulum lacus laoreet non curabitur."
+          }
+        }
+      },
+      "block_order": [
+        "1646904009d21bef04-0"
+      ],
+      "settings": {
+        "round_corner_background": true,
+        "color_scheme": "background-1",
+        "use_as_default_padding": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "1646313626697ca18a": {
       "type": "email-signup-7923216",
       "blocks": {
@@ -411,6 +430,7 @@
     "16461507015bd670f1",
     "164629419235587b19",
     "1646294267406b368a",
+    "16469040093fa15a8d",
     "1646313626697ca18a",
     "1646848339941da1e7"
   ]
