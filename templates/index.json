@@ -415,6 +415,29 @@
         "padding_bottom": 36
       }
     },
+    "1646904089b7a2f60f": {
+      "type": "app-block-7923216",
+      "blocks": {
+        "1646904089da9d3c29-0": {
+          "type": "heading",
+          "settings": {
+            "title": "- follow us on instagram @avaluxe -",
+            "title_uppercase": false,
+            "subtitle": "Mus mauris vitae ultricies leo. Ac feugiat sed lectus vestibulum lacus laoreet non curabitur."
+          }
+        }
+      },
+      "block_order": [
+        "1646904089da9d3c29-0"
+      ],
+      "settings": {
+        "round_corner_background": false,
+        "color_scheme": "background-1",
+        "use_as_default_padding": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "1646848339941da1e7": {
       "type": "wave",
       "settings": {
@@ -432,6 +455,7 @@
     "1646294267406b368a",
     "16469040093fa15a8d",
     "1646313626697ca18a",
+    "1646904089b7a2f60f",
     "1646848339941da1e7"
   ]
 }
