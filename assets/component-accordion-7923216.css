@@ -17,6 +17,9 @@
   -webkit-transform: rotate(-180deg);
           transform: rotate(-180deg);
 }
+.accordion details[open] > summary {
+  border-bottom: 0.1rem solid rgb(var(--color-foreground));
+}
 .accordion details[open] + .accordion__box-shadow {
   display: block;
 }
@@ -51,6 +54,7 @@
 }
 .accordion summary .accordion__icon .icon-caret path {
   fill: rgb(var(--color-foreground));
+  stroke: rgb(var(--color-foreground));
 }
 .accordion:not(:last-child) {
   margin-bottom: 4px;
