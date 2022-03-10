@@ -5,3 +5,6 @@
   text-transform: uppercase;
   font-weight: 700 !important;
 }
+.header__inline-menu .header__submenu li * {
+  text-align: left;
+}
