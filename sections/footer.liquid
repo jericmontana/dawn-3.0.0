@@ -120,22 +120,27 @@
                   {%- endif -%}
                 {%- when 'image' -%}
                   <div class="footer-block__details-content footer-block-image {{ block.settings.alignment }}">
-                    {%- if block.settings.image != blank -%}
-                    {%- assign image_size = block.settings.image_width -%}
-                      {%- assign image_size_scale_by_two = block.settings.image_width | times: 2 -%}
-                      <img
-                        srcset= "{{ block.settings.image | image_url: width: image_size }}, {{ block.settings.image | image_url: width: image_size_scale_by_two }} 2x"
-                        src="{{ block.settings.image | image_url: width: 400 }}"
-                        alt="{{ block.settings.image.alt | escape }}"
-                        loading="lazy"
-                        width="{{ block.settings.image.width }}"
-                        height="{{ block.settings.image.height }}"
-                        style="max-width: min(100%, {{ block.settings.image_width }}px);"
-                        title="{{shop.name}}"
-                      >
+                    {%- unless block.settings.use_custom_snippet -%}
+                      {%- if block.settings.image != blank -%}
+                      {%- assign image_size = block.settings.image_width -%}
+                        {%- assign image_size_scale_by_two = block.settings.image_width | times: 2 -%}
+                        <img
+                          srcset= "{{ block.settings.image | image_url: width: image_size }}, {{ block.settings.image | image_url: width: image_size_scale_by_two }} 2x"
+                          src="{{ block.settings.image | image_url: width: 400 }}"
+                          alt="{{ block.settings.image.alt | escape }}"
+                          loading="lazy"
+                          width="{{ block.settings.image.width }}"
+                          height="{{ block.settings.image.height }}"
+                          style="max-width: min(100%, {{ block.settings.image_width }}px);"
+                          title="{{shop.name}}"
+                        >
+                      {%- else -%}
+                        {{ 'image' | placeholder_svg_tag: 'placeholder-svg placeholder' }}
+                      {%- endif -%}
                     {%- else -%}
-                      {{ 'image' | placeholder_svg_tag: 'placeholder-svg placeholder' }}
-                    {%- endif -%}
+                      {%- render 'logo-footer' -%}
+                    {%- endunless -%}
+                    
                     
                     {%- if section.settings.show_social -%}
                         <ul class="footer__list-social list-unstyled list-social small-hide" role="list">
@@ -531,6 +536,12 @@
       "type": "image",
       "name": "Image",
       "settings": [
+        {
+          "type": "checkbox",
+          "id": "use_custom_snippet",
+          "label": "Use Custom Snippet",
+          "default": true
+        },
         {
           "type": "image_picker",
           "id": "image",

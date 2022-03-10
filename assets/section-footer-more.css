@@ -73,6 +73,10 @@ footer.footer .footer-block-image {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  position: relative;
+}
+footer.footer .footer-block-image svg {
+  max-width: 70%;
 }
 footer.footer .list-menu__item--link {
   padding: 0;
