@@ -1145,6 +1145,80 @@
     ]
   },
   {
+    "name":"🔰 Page Banner",
+    "settings":[
+      {
+        "type":"header",
+        "content": "Banner Background"
+      },
+      {
+        "type": "color",
+        "id": "fg_color",
+        "label": "Foreground Color",
+        "default": "#121212"
+      },
+      {
+        "type": "color",
+        "id": "bg_color",
+        "label": "Background Color",
+        "default": "#ffffff"
+      },
+      {
+          "type": "image_picker",
+          "id": "bg_image",
+          "label": "Background Image"
+      },
+      {
+          "type": "select",
+          "id": "bg_blend",
+          "label": "Blend Mode",
+          "options": [
+              {
+              "value": "normal",
+              "label": "Normal"
+              },
+              {
+              "value": "multiply",
+              "label": "Multiply"
+              },
+              {
+              "value": "screen",
+              "label": "Screen"
+              },
+              {
+              "value": "overlay",
+              "label": "Overlay"
+              },
+              {
+              "value": "darken",
+              "label": "Darken"
+              },
+              {
+              "value": "lighten",
+              "label": "Lighten"
+              },
+              {
+              "value": "color-dodge",
+              "label": "Color Dodge"
+              },
+              {
+              "value": "saturation",
+              "label": "Saturation"
+              },
+              {
+              "value": "color",
+              "label": "Color"
+              },
+              {
+              "value": "luminosity",
+              "label": "Luminosity"
+              }
+          ],
+          "default": "normal"
+      }
+    ]
+  },
+  {
     "name":"🔰 Shop Now Banner",
     "settings":[
       {

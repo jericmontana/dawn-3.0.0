@@ -3972,3 +3972,51 @@ label.unavailable {
   opacity: 0 !important;
   pointer-events: none !important;
 }
+
+/* Device Sizes | Mobile - Default */
+.breadcrumbs {
+  margin: 0.5em 0;
+}
+
+.breadcrumbs__list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.breadcrumbs__item {
+  display: inline-block;
+  text-transform: uppercase;
+  color: rgb(var(--color-foreground));
+}
+
+.breadcrumbs__item:not(:last-child):after {
+  border-style: solid;
+  border-width: 0.1em 0.1em 0 0;
+  content: "";
+  display: inline-block;
+  height: 0.38em;
+  margin: 0 0.3em 0.1em 0.2em;
+  position: relative;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  vertical-align: middle;
+  width: 0.38em;
+  border-color: rgb(var(--color-foreground));
+}
+
+.breadcrumbs__item:not(:first-child) {
+  margin-left: 0.2em;
+}
+
+.breadcrumbs__link {
+  text-decoration: none;
+  color: var(--color-primary-dark);
+  font-weight: 600;
+}
+
+.breadcrumbs__link[aria-current=page] {
+  color: inherit;
+  font-weight: normal;
+  text-decoration: none;
+}
