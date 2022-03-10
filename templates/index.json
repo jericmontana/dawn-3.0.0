@@ -160,25 +160,29 @@
         "1646294192d48bac15-1": {
           "type": "image_with_text",
           "settings": {
-            "logo_svg": "high-quality"
+            "logo_svg": "high-quality",
+            "title": "Arcu rutrum"
           }
         },
         "1646294192d48bac15-2": {
           "type": "image_with_text",
           "settings": {
-            "logo_svg": "substantial"
+            "logo_svg": "substantial",
+            "title": "Arcu rutrum"
           }
         },
         "1646294192d48bac15-3": {
           "type": "image_with_text",
           "settings": {
-            "logo_svg": "loved-by-hundreds"
+            "logo_svg": "loved-by-hundreds",
+            "title": "Arcu rutrum"
           }
         },
         "1646294192d48bac15-4": {
           "type": "image_with_text",
           "settings": {
-            "logo_svg": "free-shipping"
+            "logo_svg": "free-shipping",
+            "title": "Arcu rutrum"
           }
         }
       },
