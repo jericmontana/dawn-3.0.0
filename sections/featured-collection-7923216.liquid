@@ -51,7 +51,7 @@
 
 <div class="section section--featured-collection section--featured-collection-{{section.id}} {% unless use_as_default_bg %}color-{{ section.settings.color_scheme }}{% endunless %}">
   <div class="section__bg-container section-{{ section.id }}-bg-contaier section-{{ section.id }}-padding">
-    <div class="page-width page-width--round-corner">
+    <div class="page-width {% if section.settings.round_corner_background %}page-width--round-corner{% endif %}">
 
       {% comment %} For Section Header {% endcomment %}
       {%- assign header = section.blocks | where: 'type', 'header' -%}
@@ -155,6 +155,12 @@
   "name": "🔰 Featured Collection",
   "tag": "section",
   "settings": [
+    {
+      "type": "checkbox",
+      "id": "round_corner_background",
+      "label": "Round Corner Background",
+      "default": false
+    },
     {
       "type": "header",
       "content": "Default Background"

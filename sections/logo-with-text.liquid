@@ -89,7 +89,7 @@
                                     {%- render 'logo-svg', logo_svg:image_with_text_block.settings.logo_svg -%}
                                 </div>
                                 <div class="section__logo-and-text--text">
-                                    <h3 class="h3 center">{{ image_with_text_block.settings.logo_title | escape }}</h3>
+                                    <h3 class="h3 center">{{ image_with_text_block.settings.title | escape }}</h3>
                                 </div>
                             </li>
                         {%- endfor -%}
@@ -356,7 +356,7 @@
                 },
                 {
                     "type": "text",
-                    "id": "logo_title",
+                    "id": "title",
                     "label": "Title",
                     "default": "Arcu rutrum"
                 }

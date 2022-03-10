@@ -160,28 +160,28 @@
           "type": "image_with_text",
           "settings": {
             "logo_svg": "high-quality",
-            "logo_title": "high-quality"
+            "title": "high-quality"
           }
         },
         "1646294192d48bac15-2": {
           "type": "image_with_text",
           "settings": {
             "logo_svg": "substantial",
-            "logo_title": "substantial"
+            "title": "substantial"
           }
         },
         "1646294192d48bac15-3": {
           "type": "image_with_text",
           "settings": {
             "logo_svg": "loved-by-hundreds",
-            "logo_title": "loved by hundreds"
+            "title": "loved by hundreds"
           }
         },
         "1646294192d48bac15-4": {
           "type": "image_with_text",
           "settings": {
             "logo_svg": "free-shipping",
-            "logo_title": "free shipping"
+            "title": "free shipping"
           }
         }
       },
