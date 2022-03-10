@@ -1,0 +1,206 @@
+{{ 'component-accordion-7923216.css' | asset_url | stylesheet_tag }}
+{{ 'section-accordion-image-7923216.css' | asset_url | stylesheet_tag }}
+
+{% assign use_as_default_padding = section.settings.use_as_default_padding %}
+{%- style -%}
+    {%- if use_as_default_padding -%}
+        .section--accordion-with-image .section-{{ section.id }}-padding {
+            padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px !important;
+            padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px !important;
+        }
+
+        @media screen and (min-width: 750px) {
+            .section--accordion-with-image .section-{{ section.id }}-padding {
+                padding-top: {{ section.settings.padding_top }}px !important;
+                padding-bottom: {{ section.settings.padding_bottom }}px !important;
+            }
+        }
+    {%- endif -%}
+
+    {% case section.settings.color_scheme %}
+        {% when 'background-1' %}
+        .section--accordion-with-image-{{section.id}} .section__header--title{
+            color: rgb({{ settings.colors_accent_2.red }}, {{ settings.colors_accent_2.green }}, {{ settings.colors_accent_2.blue }});
+        }
+
+        .section--accordion-with-image-{{section.id}} .summary__title{
+            background-color: rgb({{ settings.colors_accent_2.red }}, {{ settings.colors_accent_2.green }}, {{ settings.colors_accent_2.blue }});
+        }
+
+       .section--accordion-with-image-{{section.id}} .accordion__content{
+           color: rgb({{ settings.colors_accent_2.red }}, {{ settings.colors_accent_2.green }}, {{ settings.colors_accent_2.blue }});
+       }
+
+    {% endcase %}
+
+{%- endstyle -%}
+
+<div class="section section--accordion-with-image section--accordion-with-image-{{section.id}} color-{{ section.settings.color_scheme }}">
+    <div class="section__bg-container section-{{ section.id }}-bg-contaier section-{{ section.id }}-padding">
+        <div class="page-width">
+
+            {%- assign header = section.blocks | where: 'type', 'heading' -%}
+            {%- for block in header -%}
+                {%- if block.settings.title != blank or block.settings.subtitle != blank -%}
+                    {%- render 'section-header',
+                        title: block.settings.title,
+                        subtitle: block.settings.subtitle,
+                        uppercase: block.settings.title_uppercase
+                    -%}
+                {%- endif -%}
+            {%- endfor -%}
+
+            {%- assign accordion = section.blocks | where: 'type', 'accordion' -%}
+            <div class="section__accordion section__accordion--max-width">
+            {%- for block in accordion -%}
+                {%- render 'accordion-7923216',
+                    accordion_content: block.settings.accordion_content,
+                    accordion_title: block.settings.title
+                -%}
+            {%- endfor -%}
+            </div>
+        </div>
+    </div>
+</div>
+
+{% schema %}
+    {
+        "name": "🔰 Accordion with Image",
+        "tag": "section",
+        "settings":[
+            {
+                "type": "select",
+                "id": "color_scheme",
+                "options": [
+                    {
+                    "value": "accent-1",
+                    "label": "Accent 1"
+                    },
+                    {
+                    "value": "accent-2",
+                    "label": "Accent 2"
+                    },
+                    {
+                    "value": "background-1",
+                    "label": "Background 1"
+                    },
+                    {
+                    "value": "background-2",
+                    "label": "Background 2"
+                    },
+                    {
+                    "value": "inverse",
+                    "label": "Inverse"
+                    }
+                ],
+                "default": "background-1",
+                "label": "Color Scheme",
+                "info": "To change the card color scheme, update your theme settings."
+            },
+            {
+                "type": "header",
+                "content": "Accordion Settings"
+            },
+            {
+                "type": "header",
+                "content": "Section Padding"
+            },
+            {
+                "type": "checkbox",
+                "id": "use_as_default_padding",
+                "label": "Set as default",
+                "default": false
+            },
+            {
+                "type": "range",
+                "id": "padding_top",
+                "min": 0,
+                "max": 100,
+                "step": 4,
+                "unit": "px",
+                "label": "Padding Top",
+                "default": 36,
+                "info":"Default Value is 36"
+            },
+            {
+                "type": "range",
+                "id": "padding_bottom",
+                "min": 0,
+                "max": 100,
+                "step": 4,
+                "unit": "px",
+                "label": "Padding Bottom",
+                "default": 36,
+                "info":"Default Value is 36"
+            }
+        ],
+        "blocks": [
+            {
+                "type": "heading",
+                "name": "Header",
+                "limit": 1,
+                "settings": [
+                    {
+                    "type": "header",
+                    "content": "Header Settings"
+                    },
+                    {
+                    "type": "text",
+                    "id": "title",
+                    "label": "Title",
+                    "default": "Frequently Asked Questions"
+                    },
+                    {
+                    "type": "checkbox",
+                    "id": "title_uppercase",
+                    "label": "Uppercase",
+                    "default": false
+                    },
+                    {
+                    "type": "textarea",
+                    "id": "subtitle",
+                    "label": "Subtitle",
+                    "default": "Quickly find out if we've already addressed your query."
+                    }
+                ]
+            },
+            {
+                "type": "accordion",
+                "name": "Accordion Item",
+                "settings": [
+                    {
+                        "type": "text",
+                        "id": "title",
+                        "label": "Accordion Title",
+                        "default": "Magnis tempor parturient vitae vel ac proin consectetuer fermentum fringilla porttitor?"
+                    },
+                    {
+                        "type": "richtext",
+                        "id": "accordion_content",
+                        "label": "Accordion Content",
+                        "default": "<p>Sociosqu volutpat vel tristique quam lorem fusce hac quisque iaculis orci ornare nascetur nostra odio malesuada eu mollis rutrum faucibus urna tellus class blandit interdum pharetra tincidunt adipiscing laoreet leo.</p>"
+                    }
+                ]
+            }
+        ],
+        "presets":[
+            {
+                "name": "🔰 Accordion with Image",
+                "blocks":[
+                    {
+                        "type": "heading"
+                    },
+                    {
+                        "type": "accordion"
+                    },
+                    {
+                        "type": "accordion"
+                    },
+                    {
+                        "type": "accordion"
+                    }
+                ]
+            } 
+        ]
+    }
+{% endschema %}

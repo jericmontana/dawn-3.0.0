@@ -1,0 +1,69 @@
+.accordion {
+  position: relative;
+  width: 100%;
+}
+.accordion details {
+  position: relative;
+}
+.accordion details > summary .icon-caret {
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+.accordion details[open] {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.accordion details[open] > summary .icon-caret {
+  -webkit-transform: rotate(-180deg);
+          transform: rotate(-180deg);
+}
+.accordion details[open] + .accordion__box-shadow {
+  display: block;
+}
+.accordion details .accordion__content {
+  padding: 0.8rem 1.2rem;
+}
+.accordion details .accordion__content p {
+  margin: 0;
+  text-align: justify;
+  word-break: break-word;
+}
+.accordion summary {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  line-height: 1;
+  padding: 1.3rem 0;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  text-align: justify;
+  background-color: rgb(var(--color-background));
+}
+.accordion summary .accordion__title {
+  display: inline-block;
+  max-width: calc(100% - 5rem);
+  margin: 0;
+  padding-left: 1rem;
+  word-break: break-word;
+  font-weight: 400;
+}
+.accordion summary .accordion__icon .icon-caret path {
+  fill: rgb(var(--color-foreground));
+}
+.accordion:not(:last-child) {
+  margin-bottom: 4px;
+}
+.accordion .accordion__box-shadow {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  -webkit-box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.14);
+          box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.14);
+  display: none;
+  z-index: 0;
+}
