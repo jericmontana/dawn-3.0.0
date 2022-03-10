@@ -1,0 +1,7 @@
+.header__inline-menu {
+  text-align: center;
+}
+.header__inline-menu .header__menu-item span {
+  text-transform: uppercase;
+  font-weight: 700 !important;
+}
