@@ -68,6 +68,13 @@
             "title": "Do you offer returns?",
             "accordion_content": "<p><strong>We do not accept returns, exchanges or refunds.<\/strong> All sales are final. Please note, AvaCLuxe reserves the right to refuse all returns.<\/p>"
           }
+        },
+        "d8277af3-9601-429f-9687-a48c044f21ae": {
+          "type": "accordion",
+          "settings": {
+            "title": "Can I change my order once I've placed it?",
+            "accordion_content": "<p>No, once an order is placed it's final.<\/p>"
+          }
         }
       },
       "block_order": [
@@ -76,7 +83,8 @@
         "1647026021b2e62b4e-3",
         "371d79de-6922-47df-9098-810ca502e350",
         "7258c48d-dc7b-497e-98ae-7bcdaa313926",
-        "f8c5eaa2-0048-464c-aed7-708e8d28e704"
+        "f8c5eaa2-0048-464c-aed7-708e8d28e704",
+        "d8277af3-9601-429f-9687-a48c044f21ae"
       ],
       "settings": {
         "color_scheme": "background-1",
