@@ -47,12 +47,20 @@
             "title": "I placed an order. When will my package arrive?",
             "accordion_content": "<p>All packages <strong>ship via USPS<\/strong>.<\/p><p>The <strong>processing time for orders is 3-5 business days. <\/strong>After that, <strong>delivery time within the United States is 3-6 days, and 10-15 business days internationally.<\/strong> Please <strong>keep in mind that during holidays or limited edition launches, this time may vary.<\/strong> Thank you for your patience.<\/p><p>Please refer to our shipping policy.<\/p>"
           }
+        },
+        "371d79de-6922-47df-9098-810ca502e350": {
+          "type": "accordion",
+          "settings": {
+            "title": "How can I get in touch with customer service team?",
+            "accordion_content": "<p>Please email <strong>avacluxe@gmail.com<\/strong> any concerns.<\/p>"
+          }
         }
       },
       "block_order": [
         "1647026021b2e62b4e-1",
         "1647026021b2e62b4e-2",
-        "1647026021b2e62b4e-3"
+        "1647026021b2e62b4e-3",
+        "371d79de-6922-47df-9098-810ca502e350"
       ],
       "settings": {
         "color_scheme": "background-1",
