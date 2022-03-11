@@ -4,8 +4,8 @@
     "theme_name": "Dawn",
     "theme_version": "3.0.0",
     "theme_author": "Shopify",
-    "theme_documentation_url": "https://help.shopify.com/en/manual/online-store/themes",
-    "theme_support_url": "https://support.shopify.com/"
+    "theme_documentation_url": "https:\/\/help.shopify.com\/en\/manual\/online-store\/themes",
+    "theme_support_url": "https:\/\/support.shopify.com\/"
   },
   {
     "name": "t:settings_schema.colors.name",
@@ -1145,10 +1145,10 @@
     ]
   },
   {
-    "name":"🔰 Page Banner",
-    "settings":[
+    "name": "🔰 Page Banner",
+    "settings": [
       {
-        "type":"header",
+        "type": "header",
         "content": "Banner Background"
       },
       {
@@ -1164,57 +1164,57 @@
         "default": "#ffffff"
       },
       {
-          "type": "image_picker",
-          "id": "bg_image",
-          "label": "Background Image"
+        "type": "image_picker",
+        "id": "bg_image",
+        "label": "Background Image"
       },
       {
-          "type": "select",
-          "id": "bg_blend",
-          "label": "Blend Mode",
-          "options": [
-              {
-              "value": "normal",
-              "label": "Normal"
-              },
-              {
-              "value": "multiply",
-              "label": "Multiply"
-              },
-              {
-              "value": "screen",
-              "label": "Screen"
-              },
-              {
-              "value": "overlay",
-              "label": "Overlay"
-              },
-              {
-              "value": "darken",
-              "label": "Darken"
-              },
-              {
-              "value": "lighten",
-              "label": "Lighten"
-              },
-              {
-              "value": "color-dodge",
-              "label": "Color Dodge"
-              },
-              {
-              "value": "saturation",
-              "label": "Saturation"
-              },
-              {
-              "value": "color",
-              "label": "Color"
-              },
-              {
-              "value": "luminosity",
-              "label": "Luminosity"
-              }
-          ],
-          "default": "normal"
+        "type": "select",
+        "id": "bg_blend",
+        "label": "Blend Mode",
+        "options": [
+          {
+            "value": "normal",
+            "label": "Normal"
+          },
+          {
+            "value": "multiply",
+            "label": "Multiply"
+          },
+          {
+            "value": "screen",
+            "label": "Screen"
+          },
+          {
+            "value": "overlay",
+            "label": "Overlay"
+          },
+          {
+            "value": "darken",
+            "label": "Darken"
+          },
+          {
+            "value": "lighten",
+            "label": "Lighten"
+          },
+          {
+            "value": "color-dodge",
+            "label": "Color Dodge"
+          },
+          {
+            "value": "saturation",
+            "label": "Saturation"
+          },
+          {
+            "value": "color",
+            "label": "Color"
+          },
+          {
+            "value": "luminosity",
+            "label": "Luminosity"
+          }
+        ],
+        "default": "normal"
       },
       {
         "type": "header",
@@ -1235,7 +1235,7 @@
         "unit": "px",
         "label": "Padding Top",
         "default": 36,
-        "info":"Default Value is 36"
+        "info": "Default Value is 36"
       },
       {
         "type": "range",
@@ -1246,15 +1246,15 @@
         "unit": "px",
         "label": "Padding Bottom",
         "default": 36,
-        "info":"Default Value is 36"
+        "info": "Default Value is 36"
       }
     ]
   },
   {
-    "name":"🔰 Shop Now Banner",
-    "settings":[
+    "name": "🔰 Shop Now Banner",
+    "settings": [
       {
-        "type":"header",
+        "type": "header",
         "content": "Text"
       },
       {
@@ -1276,7 +1276,7 @@
         "default": "Mus mauris vitae ultricies leo. Ac feugiat sed lectus vestibulum lacus laoreet non curabitur."
       },
       {
-        "type":"header",
+        "type": "header",
         "content": "Banner Background"
       },
       {
@@ -1294,46 +1294,46 @@
         "id": "banner_bg_blend",
         "label": "Blend Mode",
         "options": [
-            {
+          {
             "value": "normal",
             "label": "Normal"
-            },
-            {
+          },
+          {
             "value": "multiply",
             "label": "Multiply"
-            },
-            {
+          },
+          {
             "value": "screen",
             "label": "Screen"
-            },
-            {
+          },
+          {
             "value": "overlay",
             "label": "Overlay"
-            },
-            {
+          },
+          {
             "value": "darken",
             "label": "Darken"
-            },
-            {
+          },
+          {
             "value": "lighten",
             "label": "Lighten"
-            },
-            {
+          },
+          {
             "value": "color-dodge",
             "label": "Color Dodge"
-            },
-            {
+          },
+          {
             "value": "saturation",
             "label": "Saturation"
-            },
-            {
+          },
+          {
             "value": "color",
             "label": "Color"
-            },
-            {
+          },
+          {
             "value": "luminosity",
             "label": "Luminosity"
-            }
+          }
         ],
         "default": "normal"
       }

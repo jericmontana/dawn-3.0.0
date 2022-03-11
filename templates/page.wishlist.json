@@ -20,11 +20,16 @@
       "block_order": [
         "16469786612d2c6734-0",
         "16469786612d2c6734-1"
-      ]
+      ],
+      "settings": {
+      }
     },
     "product_grid": {
       "type": "main-wishlist-product-grid",
       "settings": {
+        "use_as_default_padding": true,
+        "padding_top": 48,
+        "padding_bottom": 48
       }
     },
     "shopnow_banner": {
