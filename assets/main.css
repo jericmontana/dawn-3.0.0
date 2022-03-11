@@ -4004,6 +4004,10 @@ label.unavailable {
   border-color: rgba(var(--color-foreground), 0.75);
 }
 
+.breadcrumbs__item:last-child {
+  pointer-events: none;
+}
+
 .breadcrumbs__item:not(:first-child) {
   margin-left: 0.2em;
 }
