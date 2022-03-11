@@ -3987,7 +3987,7 @@ label.unavailable {
 .breadcrumbs__item {
   display: inline-block;
   text-transform: uppercase;
-  color: rgb(var(--color-foreground));
+  color: rgba(var(--color-foreground), 0.75);
 }
 
 .breadcrumbs__item:not(:last-child):after {
@@ -4002,7 +4002,7 @@ label.unavailable {
           transform: rotate(45deg);
   vertical-align: middle;
   width: 0.38em;
-  border-color: rgb(var(--color-foreground));
+  border-color: rgba(var(--color-foreground), 0.75);
 }
 
 .breadcrumbs__item:not(:first-child) {
