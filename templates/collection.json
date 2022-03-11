@@ -1,7 +1,28 @@
 {
   "sections": {
-    "banner": {
-      "type": "main-collection-banner"
+    "page_banner": {
+      "type": "page-banner-7923216",
+      "blocks": {
+        "16469786612d2c6734-0": {
+          "type": "heading",
+          "settings": {
+            "title": "",
+            "title_uppercase": true,
+            "subtitle": ""
+          }
+        },
+        "16469786612d2c6734-1": {
+          "type": "breadcrumb",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "16469786612d2c6734-0",
+        "16469786612d2c6734-1"
+      ],
+      "settings": {
+      }
     },
     "product-grid": {
       "type": "main-collection-product-grid"
@@ -16,7 +37,7 @@
     }
   },
   "order": [
-    "banner",
+    "page_banner",
     "product-grid",
     "wave"
   ]

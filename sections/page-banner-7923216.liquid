@@ -33,14 +33,15 @@
                     {%- render 'breadcrumb-7923216' -%}
                 </div>
             {%- endfor -%}
-
+            
             {%- assign header = section.blocks | where: 'type', 'heading' -%}
             {%- for block in header -%}
+                {% assign dynamic_title = template.name[title] | escape %}
                 <div class="section__header center">
                     {% if block.settings.title != blank %}
                         <h1 class="h1 section__header--title {% if block.settings.title_uppercase %}uppercase{% endif %}">{{ block.settings.title | escape }}</h1>
                     {% else %}
-                        <h1 class="h1 section__header--title {% if block.settings.title_uppercase %}uppercase{% endif %}">{{ page.title | escape }}</h1>
+                        <h1 class="h1 section__header--title {% if block.settings.title_uppercase %}uppercase{% endif %}">{{ dynamic_title }}</h1>
                     {% endif %}
 
                     {% unless block.settings.subtitle == blank %}
