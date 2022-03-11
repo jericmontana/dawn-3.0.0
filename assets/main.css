@@ -3791,7 +3791,6 @@ label.unavailable {
   max-width: none !important;
 }
 .btn.btn--default {
-  -size: 16px;
   padding: 7px 10px;
   font-weight: 400;
   max-width: 180px;
