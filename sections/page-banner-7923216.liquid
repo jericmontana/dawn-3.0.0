@@ -36,12 +36,22 @@
             
             {%- assign header = section.blocks | where: 'type', 'heading' -%}
             {%- for block in header -%}
-                {% assign dynamic_title = template.name[title] | escape %}
+                {% assign template_name = template.name | strip | escape %}
+                {% case template_name %}
+                    {% when 'page' %}
+                        {% assign dynamic_title = page.title %}
+                    {% when 'product' %}
+                        {% assign dynamic_title = product.title %}
+                    {% when 'collection' %}
+                        {% assign dynamic_title = collection.title %}
+                    {% when 'blog' %}
+                        {% assign dynamic_title = blog.title %}
+                {% endcase %}
                 <div class="section__header center">
                     {% if block.settings.title != blank %}
                         <h1 class="h1 section__header--title {% if block.settings.title_uppercase %}uppercase{% endif %}">{{ block.settings.title | escape }}</h1>
                     {% else %}
-                        <h1 class="h1 section__header--title {% if block.settings.title_uppercase %}uppercase{% endif %}">{{ dynamic_title }}</h1>
+                        <h1 class="h1 section__header--title {% if block.settings.title_uppercase %}uppercase{% endif %}">{{dynamic_title}}</h1>
                     {% endif %}
 
                     {% unless block.settings.subtitle == blank %}
