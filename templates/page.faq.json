@@ -31,21 +31,21 @@
           "type": "accordion",
           "settings": {
             "title": "Are AVACLUXE Products sold at any other retailers?",
-            "accordion_content": "<p>Yes AVACLUXE is also available at DOLLD.<\/p>"
+            "accordion_content": "<p>Yes AVACLUXE is <strong>also available at DOLLD.<\/strong><\/p>"
           }
         },
         "1647026021b2e62b4e-2": {
           "type": "accordion",
           "settings": {
-            "title": "Magnis tempor parturient vitae vel ac proin consectetuer fermentum fringilla porttitor?",
-            "accordion_content": "<p>Sociosqu volutpat vel tristique quam lorem fusce hac quisque iaculis orci ornare nascetur nostra odio malesuada eu mollis rutrum faucibus urna tellus class blandit interdum pharetra tincidunt adipiscing laoreet leo.<\/p>"
+            "title": "How often do restock?",
+            "accordion_content": "<p>We aim for <strong>monthly restocks.<\/strong><\/p>"
           }
         },
         "1647026021b2e62b4e-3": {
           "type": "accordion",
           "settings": {
-            "title": "Magnis tempor parturient vitae vel ac proin consectetuer fermentum fringilla porttitor?",
-            "accordion_content": "<p>Sociosqu volutpat vel tristique quam lorem fusce hac quisque iaculis orci ornare nascetur nostra odio malesuada eu mollis rutrum faucibus urna tellus class blandit interdum pharetra tincidunt adipiscing laoreet leo.<\/p>"
+            "title": "I placed an order. When will my package arrive?",
+            "accordion_content": "<p>All packages <strong>ship via USPS<\/strong>.<\/p><p>The <strong>processing time for orders is 3-5 business days. <\/strong>After that, <strong>delivery time within the United States is 3-6 days, and 10-15 business days internationally.<\/strong> Please <strong>keep in mind that during holidays or limited edition launches, this time may vary.<\/strong> Thank you for your patience.<\/p><p>Please refer to our shipping policy.<\/p>"
           }
         }
       },
