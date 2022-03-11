@@ -61,6 +61,13 @@
             "title": "How long does it take for customer service to contact me back?",
             "accordion_content": "<p>Please allow <strong>48 hours<\/strong> for our customer service team to reach back to you. <strong>Times vary during sales and major holidays. <\/strong><\/p>"
           }
+        },
+        "f8c5eaa2-0048-464c-aed7-708e8d28e704": {
+          "type": "accordion",
+          "settings": {
+            "title": "Do you offer returns?",
+            "accordion_content": "<p><strong>We do not accept returns, exchanges or refunds.<\/strong> All sales are final. Please note, AvaCLuxe reserves the right to refuse all returns.<\/p>"
+          }
         }
       },
       "block_order": [
@@ -68,7 +75,8 @@
         "1647026021b2e62b4e-2",
         "1647026021b2e62b4e-3",
         "371d79de-6922-47df-9098-810ca502e350",
-        "7258c48d-dc7b-497e-98ae-7bcdaa313926"
+        "7258c48d-dc7b-497e-98ae-7bcdaa313926",
+        "f8c5eaa2-0048-464c-aed7-708e8d28e704"
       ],
       "settings": {
         "color_scheme": "background-1",
