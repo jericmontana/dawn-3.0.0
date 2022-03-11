@@ -24,6 +24,43 @@
       "settings": {
       }
     },
+    "164702602169907f6d": {
+      "type": "accordion-with-image-7923216",
+      "blocks": {
+        "1647026021b2e62b4e-1": {
+          "type": "accordion",
+          "settings": {
+            "title": "Are AVACLUXE Products sold at any other retailers?",
+            "accordion_content": "<p>Yes AVACLUXE is also available at DOLLD.<\/p>"
+          }
+        },
+        "1647026021b2e62b4e-2": {
+          "type": "accordion",
+          "settings": {
+            "title": "Magnis tempor parturient vitae vel ac proin consectetuer fermentum fringilla porttitor?",
+            "accordion_content": "<p>Sociosqu volutpat vel tristique quam lorem fusce hac quisque iaculis orci ornare nascetur nostra odio malesuada eu mollis rutrum faucibus urna tellus class blandit interdum pharetra tincidunt adipiscing laoreet leo.<\/p>"
+          }
+        },
+        "1647026021b2e62b4e-3": {
+          "type": "accordion",
+          "settings": {
+            "title": "Magnis tempor parturient vitae vel ac proin consectetuer fermentum fringilla porttitor?",
+            "accordion_content": "<p>Sociosqu volutpat vel tristique quam lorem fusce hac quisque iaculis orci ornare nascetur nostra odio malesuada eu mollis rutrum faucibus urna tellus class blandit interdum pharetra tincidunt adipiscing laoreet leo.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "1647026021b2e62b4e-1",
+        "1647026021b2e62b4e-2",
+        "1647026021b2e62b4e-3"
+      ],
+      "settings": {
+        "color_scheme": "background-1",
+        "use_as_default_padding": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "shopnow_banner": {
       "type": "shopnow-banner",
       "blocks": {
@@ -72,6 +109,7 @@
   },
   "order": [
     "page_banner",
+    "164702602169907f6d",
     "shopnow_banner",
     "wave"
   ]
