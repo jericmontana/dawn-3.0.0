@@ -21,7 +21,7 @@
             {%- assign lazy_load = true -%}
           {%- endif -%}
 
-          <li class="grid__item {{ 'grid__item--' | append: product.title | handleize }}">
+          <li class="grid__item {{ 'grid__item--' | append: product.handle | handleize }}">
             {% render 'card-product',
               card_product: product,
               media_aspect_ratio: section.settings.image_ratio,
