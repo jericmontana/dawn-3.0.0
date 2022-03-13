@@ -48,12 +48,14 @@
           <div class="slideshow__controls slider-buttons no-js-hidden">
             <button type="button" class="slider-button slider-button--prev" name="previous" aria-label="{{ 'sections.slideshow.previous_slideshow' | t }}" aria-controls="Slider-{{ section.id }}">{% render 'icon-caret' %}</button>
             
+            {%- if section.settings.show_counter -%}
             <div class="slider-counter">
                 <span class="slider-counter--current">1</span>
                 <span class="hidden" aria-hidden="true"> / </span>
                 <span class="hidden">{{ 'general.slider.of' | t }}</span>
                 <span class="slider-counter--total hidden">{{ section.blocks.size }}</span>
             </div>
+            {%- endif -%}
             
             {%- if section.settings.auto_rotate -%}
               <button type="button" class="slideshow__autoplay slider-button no-js-hidden{% if section.settings.auto_rotate == false %} slideshow__autoplay--paused{% endif %}" aria-label="{{ 'sections.slideshow.pause_slideshow' | t }}">
@@ -112,6 +114,12 @@
       "type": "checkbox",
       "id": "auto_rotate",
       "label": "Auto Rotate",
+      "default": false
+    },
+    {
+      "type": "checkbox",
+      "id": "show_counter",
+      "label": "Show Counter",
       "default": false
     },
     {
