@@ -7,11 +7,44 @@
   margin: auto;
   padding-left: 40px;
   padding-right: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
-.section--announcement-bar .section__announcement p {
+.section--announcement-bar .section__announcement-text p {
   text-align: center;
   line-height: 1.9rem;
   margin: 1rem 0;
+  color: rgb(var(--color-foreground));
+}
+.section--announcement-bar .section__announcement-button {
+  margin-left: 0.8rem;
+}
+.section--announcement-bar .section__announcement-button .btn-bs {
+  -webkit-box-shadow: 0px 0px 8px -2px rgba(0, 0, 0, 0.5) !important;
+          box-shadow: 0px 0px 8px -2px rgba(0, 0, 0, 0.5) !important;
+}
+.section--announcement-bar .section__announcement-button .btn--signup {
+  font-size: 12px !important;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+.section--announcement-bar .section__announcement-button .btn--signup svg {
+  width: 12px;
+  height: auto;
+}
+.section--announcement-bar .slider--everywhere {
+  margin-bottom: 0rem !important;
 }
 .section--announcement-bar .slideshow__controls {
   border: none !important;

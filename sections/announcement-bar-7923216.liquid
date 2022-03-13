@@ -18,6 +18,18 @@
             }
         }
     {%- endif -%}
+
+    {% case section.settings.color_scheme %}
+        {% when 'accent-2' %}
+        .section--announcement-bar-{{section.id}}{
+          --color-btn-bg: var(--color-base-solid-button-labels);
+          --color-btn-lbl: var(--color-base-accent-1);
+
+          --color-slider-control-icon: var(--color-base-accent-1);
+          --color-slider-control-bg: var(--color-base-solid-button-labels);
+        }
+    {% endcase %}
+
 {%- endstyle -%}
 <div class="section section--announcement-bar section--announcement-bar-{{section.id}} color-{{ section.settings.color_scheme }}">
   <div class="section-{{ section.id }}-padding">
@@ -38,7 +50,24 @@
             role="group"
             tabindex="-1">
               <div class="section__announcement">
-                <p>{{block.settings.text | escape }}</p>
+                <div class="section__announcement-text">
+                  <p>{{block.settings.text | escape }}</p>
+                </div>
+
+                {% if block.settings.show_btn %}
+                <div class="section__announcement-button">
+                  {% render 'button-signup-7923216',
+                    btn_action: block.settings.btn_action,
+                    btn_label: block.settings.btn_label,
+                    btn_link: block.settings.btn_link,
+                    hover_effect: block.settings.hover_effect,
+                    icon_type: block.settings.icon_type,
+                    round_corner: block.settings.round_corner,
+                    shadow_effect: block.settings.shadow_effect,
+                    auto_width: block.settings.auto_width
+                  %}
+                </div>
+                {% endif %}
               </div>
             </div>
           {%- endfor -%}
@@ -48,17 +77,17 @@
           <div class="slideshow__controls slider-buttons no-js-hidden">
             <button type="button" class="slider-button slider-button--prev" name="previous" aria-label="{{ 'sections.slideshow.previous_slideshow' | t }}" aria-controls="Slider-{{ section.id }}">{% render 'icon-caret' %}</button>
             
-            {%- if section.settings.show_counter -%}
+            {% comment %} {%- if section.settings.show_counter -%}
             <div class="slider-counter">
                 <span class="slider-counter--current">1</span>
                 <span class="hidden" aria-hidden="true"> / </span>
                 <span class="hidden">{{ 'general.slider.of' | t }}</span>
                 <span class="slider-counter--total hidden">{{ section.blocks.size }}</span>
             </div>
-            {%- endif -%}
+            {%- endif -%} {% endcomment %}
             
             {%- if section.settings.auto_rotate -%}
-              <button type="button" class="slideshow__autoplay slider-button no-js-hidden{% if section.settings.auto_rotate == false %} slideshow__autoplay--paused{% endif %}" aria-label="{{ 'sections.slideshow.pause_slideshow' | t }}">
+              <button type="button" class="slideshow__autoplay slider-button hidden no-js-hidden{% if section.settings.auto_rotate == false %} slideshow__autoplay--paused{% endif %}" aria-label="{{ 'sections.slideshow.pause_slideshow' | t }}">
                 {%- render 'icon-pause' -%}
                 {%- render 'icon-play' -%}
               </button>
@@ -117,12 +146,6 @@
       "default": false
     },
     {
-      "type": "checkbox",
-      "id": "show_counter",
-      "label": "Show Counter",
-      "default": false
-    },
-    {
       "type": "range",
       "id": "change_slides_speed",
       "min": 3,
@@ -175,6 +198,106 @@
           "id": "text",
           "default": "Welcome to our store",
           "label": "Text"
+        },
+        {
+          "type": "header",
+          "content": "Button Settings"
+        },
+        {
+          "type": "checkbox",
+          "id": "show_btn",
+          "label": "Show Button",
+          "default": false
+        },
+        {
+          "type": "checkbox",
+          "id": "round_corner",
+          "label": "Round Corner",
+          "default": false
+        },
+        {
+          "type": "select",
+          "id": "btn_action",
+          "label": "Button Action",
+          "options": [
+            {
+            "value": "redirect-link",
+            "label": "Redirect to a link"
+            },
+            {
+            "value": "open-popup",
+            "label": "Open a popup"
+            }
+          ],
+          "default": "open-popup"
+        },
+        {
+          "type":"text",
+          "id":"btn_label",
+          "label":"Label",
+          "default":"Shop Now"
+        },
+        {
+          "type": "url",
+          "id": "btn_link",
+          "label": "Link",
+          "default": "/collections/all"
+        },
+        {
+          "type": "select",
+          "id": "hover_effect",
+          "label": "Hover Effect",
+          "options": [
+            {
+            "value": "lighten",
+            "label": "Lighten Effect"
+            },
+            {
+            "value": "color-switch",
+            "label": "Color Switch Effect"
+            },
+            {
+            "value": "slide",
+            "label": "Slide Effect"
+            },
+            {
+            "value": "shine",
+            "label": "Shine Effect"
+            }
+          ],
+          "default": "shine"
+        },
+        {
+          "type": "select",
+          "id": "icon_type",
+          "label": "Button Icon",
+          "options": [
+            {
+            "value": "none",
+            "label": "None"
+            },
+            {
+            "value": "arrow",
+            "label": "Arrow"
+            },
+            {
+            "value": "send",
+            "label": "Send"
+            }
+          ],
+          "default": "send"
+        },
+        {
+          "type": "checkbox",
+          "id": "shadow_effect",
+          "label": "Enable Shadow Effect",
+          "default": true
+        },
+        {
+          "type": "checkbox",
+          "id": "auto_width",
+          "label": "Enable Auto Width",
+          "default": false
         }
       ]
     }
