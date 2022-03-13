@@ -30,8 +30,8 @@
         "16471946157a16cfe6-0": {
           "type": "heading",
           "settings": {
-            "title": "Shop the look",
-            "title_uppercase": false,
+            "title": "Our Story",
+            "title_uppercase": true,
             "subtitle": "Mus mauris vitae ultricies leo. Ac feugiat sed lectus vestibulum lacus laoreet non curabitur."
           }
         },
