@@ -30,7 +30,7 @@
     <div class="section__bg-container section-{{ section.id }}-bg-contaier section-{{ section.id }}-padding">
         <div class="page-width">
 
-            <div class="grid grid--1-col grid--2-col-desktop image-first">
+            <div class="grid grid--1-col grid--2-col-desktop {% if section.settings.image_first %}image-first{% endif %}">
                 <div class="grid__item">
                     <div class="section__information">
                         {%- assign header = section.blocks | where: 'type', 'heading' -%}
@@ -170,7 +170,7 @@
         "blocks": [
             {
                 "type": "image",
-                "name": "Imge",
+                "name": "Image",
                 "limit": 1,
                 "settings": [
                     {
