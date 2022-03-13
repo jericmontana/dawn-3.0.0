@@ -2,28 +2,11 @@
 .section--announcement-bar {
   position: relative;
 }
-@media screen and (max-width: 749px) {
-  .section--announcement-bar div.slider, .section--announcement-bar ul.slider {
-    padding-left: 0rem !important;
-    padding-right: 0rem !important;
-  }
-  .section--announcement-bar .slideshow__controls {
-    position: relative !important;
-    margin-top: -0.5rem;
-    padding-bottom: 1rem;
-  }
-}
 .section--announcement-bar .section__announcement {
   width: 100%;
   margin: auto;
   padding-left: 40px;
   padding-right: 40px;
-}
-@media screen and (max-width: 749px) {
-  .section--announcement-bar .section__announcement {
-    padding-left: 0px;
-    padding-right: 0px;
-  }
 }
 .section--announcement-bar .section__announcement p {
   text-align: center;
