@@ -3931,7 +3931,7 @@ label.unavailable {
 }
 
 /* For Slider Buttons */
-.section .section__slider ul.slider {
+.section .section__slider div.slider, .section .section__slider ul.slider {
   position: relative;
   padding-left: 2rem;
   padding-right: 2rem;

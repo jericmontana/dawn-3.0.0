@@ -10,20 +10,7 @@
     "padding_top": 36,
     "sections": {
       "announcement-bar": {
-        "type": "announcement-bar",
-        "blocks": {
-          "announcement-bar-0": {
-            "type": "announcement",
-            "settings": {
-              "text": "FREE SHIPPING ON ALL DOMESTIC ORDERS",
-              "color_scheme": "accent-2",
-              "link": ""
-            }
-          }
-        },
-        "block_order": [
-          "announcement-bar-0"
-        ],
+        "type": "announcement-bar-7923216",
         "settings": {
         }
       },
@@ -108,18 +95,7 @@
     "Default": {
       "sections": {
         "announcement-bar": {
-          "type": "announcement-bar",
-          "blocks": {
-            "announcement-bar-0": {
-              "type": "announcement",
-              "settings": {
-                "color_scheme": "background-1"
-              }
-            }
-          },
-          "block_order": [
-            "announcement-bar-0"
-          ],
+          "type": "announcement-bar-7923216",
           "settings": {
           }
         },

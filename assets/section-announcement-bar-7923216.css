@@ -1,0 +1,89 @@
+/* Device Sizes | Mobile - Default */
+.section--announcement-bar {
+  position: relative;
+}
+@media screen and (max-width: 749px) {
+  .section--announcement-bar div.slider, .section--announcement-bar ul.slider {
+    padding-left: 0rem !important;
+    padding-right: 0rem !important;
+  }
+  .section--announcement-bar .slideshow__controls {
+    position: relative !important;
+    margin-top: -0.5rem;
+    padding-bottom: 1rem;
+  }
+}
+.section--announcement-bar .section__announcement {
+  width: 100%;
+  margin: auto;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+@media screen and (max-width: 749px) {
+  .section--announcement-bar .section__announcement {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
+.section--announcement-bar .section__announcement p {
+  text-align: center;
+  line-height: 1.9rem;
+  margin: 1rem 0;
+}
+.section--announcement-bar .slideshow__controls {
+  border: none !important;
+}
+.section--announcement-bar .section__slider .slider-button, .section--announcement-bar .section__slider .slideshow__autoplay {
+  background-color: rgb(var(--color-slider-control-bg));
+  -webkit-box-shadow: 0px 0px 15px -5px rgba(0, 0, 0, 0.5) !important;
+          box-shadow: 0px 0px 15px -5px rgba(0, 0, 0, 0.5) !important;
+  height: 25px;
+  width: 25px;
+}
+.section--announcement-bar .section__slider .slider-button .icon {
+  height: 90% !important;
+  width: auto !important;
+  fill: rgb(var(--color-slider-control-icon));
+}
+.section--announcement-bar .section__slider .slideshow__autoplay {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  margin-right: 33px;
+}
+.section--announcement-bar .section__slider .slideshow__autoplay .icon {
+  height: 50% !important;
+  width: auto !important;
+}
+.section--announcement-bar .section__slider .slideshow__autoplay .icon path {
+  fill: rgb(var(--color-slider-control-icon));
+}
+.section--announcement-bar .section__slider .slider-counter {
+  background-color: rgb(var(--color-slider-control-bg));
+  -webkit-box-shadow: 0px 0px 15px -5px rgba(0, 0, 0, 0.5) !important;
+          box-shadow: 0px 0px 15px -5px rgba(0, 0, 0, 0.5) !important;
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  height: 25px !important;
+  width: 25px !important;
+  min-width: 25px !important;
+  margin-left: 33px;
+  border-radius: 50%;
+  overflow: hidden;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.section--announcement-bar .section__slider .slider-counter span {
+  padding: 0 !important;
+  margin: 0 !important;
+  grid-area: 1/1 !important;
+  color: rgb(var(--color-slider-control-icon));
+  line-height: 0;
+  font-size: 12px;
+}
