@@ -98,7 +98,7 @@
           "announcement-bar-7923216-0": {
             "type": "announcement_bar",
             "settings": {
-              "text": "Welcome to our store",
+              "text": "FREE SHIPPING ON ALL DOMESTIC ORDERS",
               "show_btn": false,
               "round_corner": false,
               "btn_action": "open-popup",
@@ -113,11 +113,11 @@
           "announcement-bar-7923216-1": {
             "type": "announcement_bar",
             "settings": {
-              "text": "Welcome to our store",
-              "show_btn": false,
-              "round_corner": false,
+              "text": "GET 10% OFF AT YOUR FIRST PURCHASE",
+              "show_btn": true,
+              "round_corner": true,
               "btn_action": "open-popup",
-              "btn_label": "Shop Now",
+              "btn_label": "Subscribe",
               "btn_link": "shopify:\/\/collections\/all",
               "hover_effect": "shine",
               "icon_type": "send",
@@ -131,7 +131,7 @@
           "announcement-bar-7923216-1"
         ],
         "settings": {
-          "color_scheme": "background-1",
+          "color_scheme": "accent-2",
           "auto_rotate": false,
           "change_slides_speed": 5,
           "use_as_default_padding": false,
