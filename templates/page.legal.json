@@ -24,6 +24,10 @@
       "settings": {
       }
     },
+    "page_content":{
+      "type": "page-content-7923216",
+      "settings":{}
+    },
     "shopnow_banner": {
       "type": "shopnow-banner",
       "blocks": {
@@ -72,6 +76,7 @@
   },
   "order": [
     "page_banner",
+    "page_content",
     "shopnow_banner",
     "wave"
   ]
