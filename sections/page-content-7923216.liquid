@@ -21,6 +21,10 @@
         .section--page-content-{{section.id}} h2{
             color: rgb({{ settings.colors_accent_2.red }}, {{ settings.colors_accent_2.green }}, {{ settings.colors_accent_2.blue }});
         }
+
+        .section--page-content-{{section.id}} strong{
+            color: rgba({{ settings.colors_accent_2.red }}, {{ settings.colors_accent_2.green }}, {{ settings.colors_accent_2.blue }},.8);
+        }
     {% endcase %}
 
 {%- endstyle -%}
