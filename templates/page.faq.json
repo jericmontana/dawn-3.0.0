@@ -124,6 +124,7 @@
       ],
       "settings": {
         "bg_color": "",
+        "bg_image": "shopify:\/\/shop_images\/Silk.png",
         "bg_blend": "normal",
         "apply_general_settings_bg": true,
         "banner_bg_color": "",
