@@ -24,9 +24,10 @@
       "settings": {
       }
     },
-    "page_content":{
+    "page_content": {
       "type": "page-content-7923216",
-      "settings":{}
+      "settings": {
+      }
     },
     "shopnow_banner": {
       "type": "shopnow-banner",
