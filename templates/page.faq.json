@@ -96,7 +96,7 @@
     "shopnow_banner": {
       "type": "shopnow-banner",
       "blocks": {
-        "c457cdf1-f76b-4a13-8490-70fcf86b7721": {
+        "header": {
           "type": "header",
           "settings": {
             "apply_general_settings_header": true,
@@ -105,7 +105,7 @@
             "subtitle": "Mus mauris vitae ultricies leo. Ac feugiat sed lectus vestibulum lacus laoreet non curabitur."
           }
         },
-        "98b5c615-01fa-479c-88ba-5a40326659b9": {
+        "button": {
           "type": "button",
           "settings": {
             "apply_general_settings_btn": true,
@@ -120,8 +120,8 @@
         }
       },
       "block_order": [
-        "c457cdf1-f76b-4a13-8490-70fcf86b7721",
-        "98b5c615-01fa-479c-88ba-5a40326659b9"
+        "header",
+        "button"
       ],
       "settings": {
       }
