@@ -24,6 +24,48 @@
       "settings": {
       }
     },
+    "1647194615797a7527": {
+      "type": "image-with-text-7923216",
+      "blocks": {
+        "16471946157a16cfe6-0": {
+          "type": "heading",
+          "settings": {
+            "title": "Our Story",
+            "title_uppercase": true,
+            "subtitle": "Mus mauris vitae ultricies leo. Ac feugiat sed lectus vestibulum lacus laoreet non curabitur."
+          }
+        },
+        "16471946157a16cfe6-1": {
+          "type": "button",
+          "settings": {
+            "btn_label": "Shop Now",
+            "btn_link": "shopify:\/\/collections\/all",
+            "btn_size": "default",
+            "hover_effect": "shine",
+            "icon_type": "arrow",
+            "shadow_effect": true,
+            "auto_width": false
+          }
+        },
+        "16471946157a16cfe6-2": {
+          "type": "image",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "16471946157a16cfe6-0",
+        "16471946157a16cfe6-1",
+        "16471946157a16cfe6-2"
+      ],
+      "settings": {
+        "color_scheme": "background-1",
+        "image_first": false,
+        "use_as_default_padding": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "shopnow_banner": {
       "type": "shopnow-banner",
       "blocks": {
@@ -72,6 +114,7 @@
   },
   "order": [
     "page_banner",
+    "1647194615797a7527",
     "shopnow_banner",
     "wave"
   ]
