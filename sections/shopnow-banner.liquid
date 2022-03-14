@@ -1,6 +1,6 @@
 {{ 'section-shopnow-banner.css' | asset_url | stylesheet_tag }}
 
-<div class="section section--shopnow-banner wishlist-empty {% if page.template_suffix == 'wishlist' %}wishlist-empty{% endif %}" style="background-color: {{section.settings.bg_color}}">
+<div class="section section--shopnow-banner {% if page.template_suffix == 'wishlist' %}wishlist-empty{% endif %}" style="background-color: {{section.settings.bg_color}}">
     <div class="section__bg-container">
 
         <div class="page-width">
