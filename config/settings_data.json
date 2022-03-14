@@ -137,7 +137,7 @@
         ],
         "settings": {
           "color_scheme": "accent-2",
-          "auto_rotate": false,
+          "auto_rotate": true,
           "change_slides_speed": 5,
           "use_as_default_padding": false,
           "padding_top": 36,
