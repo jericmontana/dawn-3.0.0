@@ -13,6 +13,7 @@
     "use_as_default_padding": true,
     "padding_top": 36,
     "subtitle": "Setting up your LASH-GAME with AVACLUXE.",
+    "banner_bg_image": "shopify:\/\/shop_images\/Silk.png",
     "checkout_logo_image": "shopify:\/\/shop_images\/E3DAEC60-BACD-4863-A537-8653D6752B9D_0fd7b8ff-361d-4cea-977f-b6781e49bb65.png",
     "checkout_logo_position": "center",
     "checkout_logo_size": "small",
