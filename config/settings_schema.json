@@ -1395,7 +1395,7 @@
             "label": "Shine Effect"
           }
         ],
-        "default": "shine"
+        "default": "lighten"
       },
       {
         "type": "select",
