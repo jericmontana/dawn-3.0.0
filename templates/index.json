@@ -372,10 +372,20 @@
             "title_uppercase": false,
             "subtitle": "Mus mauris vitae ultricies leo. Ac feugiat sed lectus vestibulum lacus laoreet non curabitur."
           }
+        },
+        "45420896-5b00-4e41-a7bd-948c1e078bc1": {
+          "type": "shopify:\/\/apps\/judge-me-product-reviews\/blocks\/featured_carousel\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+            "maxwidth": 3000,
+            "show_header": false,
+            "enable_link": true,
+            "all_reviews_link": "pages\/reviews"
+          }
         }
       },
       "block_order": [
-        "1646904009d21bef04-0"
+        "1646904009d21bef04-0",
+        "45420896-5b00-4e41-a7bd-948c1e078bc1"
       ],
       "settings": {
         "round_corner_background": true,
