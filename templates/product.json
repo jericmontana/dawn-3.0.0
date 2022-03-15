@@ -233,6 +233,52 @@
         "padding_bottom": 36
       }
     },
+    "16473869788a0fd14c": {
+      "type": "featured-collection-7923216",
+      "blocks": {
+        "164738697862f527e4-0": {
+          "type": "header",
+          "settings": {
+            "title": "- all time best-sellers -",
+            "title_uppercase": false,
+            "subtitle": "top sales of the week"
+          }
+        },
+        "164738697862f527e4-1": {
+          "type": "slider",
+          "settings": {
+            "collection": "best-sellers",
+            "products_to_show": 8,
+            "show_add_to_cart_button": true,
+            "columns_desktop": 4,
+            "columns_tablet": 3,
+            "columns_mobile": 2,
+            "slider": "everywhere",
+            "image_ratio": "adapt",
+            "show_secondary_image": false,
+            "show_vendor": false,
+            "show_rating": false,
+            "show_description": true,
+            "description": "<p>Vel aenean ipsum interdum ridiculus nullam efficitur porttitor leo convallis consectetuer hac ad nascetur.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "164738697862f527e4-0",
+        "164738697862f527e4-1"
+      ],
+      "settings": {
+        "round_corner_background": true,
+        "color_scheme": "background-1",
+        "use_as_default_bg": false,
+        "fg_color": "#121212",
+        "bg_color": "#ffffff",
+        "bg_blend": "normal",
+        "use_as_default_padding": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "16473868467db45e69": {
       "type": "email-signup-7923216",
       "blocks": {
@@ -273,60 +319,14 @@
         "bg_color_top": "#ffffff",
         "padding_top": 36
       }
-    },
-    "16473869788a0fd14c": {
-      "type": "featured-collection-7923216",
-      "blocks": {
-        "164738697862f527e4-0": {
-          "type": "header",
-          "settings": {
-            "title": "- all time best-sellers -",
-            "title_uppercase": false,
-            "subtitle": "top sales of the week"
-          }
-        },
-        "164738697862f527e4-1": {
-          "type": "slider",
-          "settings": {
-            "collection": "best-sellers",
-            "products_to_show": 8,
-            "show_add_to_cart_button": true,
-            "columns_desktop": 4,
-            "columns_tablet": 3,
-            "columns_mobile": 2,
-            "slider": "everywhere",
-            "image_ratio": "adapt",
-            "show_secondary_image": false,
-            "show_vendor": false,
-            "show_rating": false,
-            "show_description": true,
-            "description": "<p>Vel aenean ipsum interdum ridiculus nullam efficitur porttitor leo convallis consectetuer hac ad nascetur.<\/p>"
-          }
-        }
-      },
-      "block_order": [
-        "164738697862f527e4-0",
-        "164738697862f527e4-1"
-      ],
-      "settings": {
-        "round_corner_background": false,
-        "color_scheme": "background-1",
-        "use_as_default_bg": false,
-        "fg_color": "#121212",
-        "bg_color": "#ffffff",
-        "bg_blend": "normal",
-        "use_as_default_padding": false,
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
     }
   },
   "order": [
     "main",
     "shop_the_look",
     "16473869247629a557",
+    "16473869788a0fd14c",
     "16473868467db45e69",
-    "wave",
-    "16473869788a0fd14c"
+    "wave"
   ]
 }
