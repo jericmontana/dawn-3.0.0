@@ -55,19 +55,160 @@
         "padding_bottom": 12
       }
     },
-    "product-recommendations": {
-      "type": "product-recommendations",
-      "disabled": true,
+    "shop_the_look": {
+      "type": "image-with-product",
+      "blocks": {
+        "1646294267d4b6aea4-0": {
+          "type": "heading",
+          "settings": {
+            "title": "Shop the look",
+            "title_uppercase": true,
+            "subtitle": ""
+          }
+        },
+        "1646294267d4b6aea4-1": {
+          "type": "slideshow",
+          "settings": {
+            "items_to_show": 6,
+            "columns_desktop": 4,
+            "columns_tablet": 2,
+            "columns_mobile": 2,
+            "slider": "everywhere"
+          }
+        },
+        "1646294267d4b6aea4-2": {
+          "type": "image_with_product_card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Snow_Angel.png",
+            "product": "snow-angel",
+            "x_pos": 64,
+            "y_pos": 66,
+            "color": "#ff66c4",
+            "image_ratio": "adapt",
+            "show_secondary_image": true,
+            "show_vendor": false,
+            "show_rating": false,
+            "show_description": false,
+            "description": "<p>Vel aenean ipsum interdum ridiculus nullam efficitur porttitor leo convallis consectetuer hac ad nascetur.<\/p>"
+          }
+        },
+        "1646294267d4b6aea4-3": {
+          "type": "image_with_product_card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Barbie_Pink.png",
+            "product": "barbie-pink",
+            "x_pos": 59,
+            "y_pos": 80,
+            "color": "#ff66c4",
+            "image_ratio": "adapt",
+            "show_secondary_image": false,
+            "show_vendor": false,
+            "show_rating": false,
+            "show_description": false,
+            "description": "<p>Vel aenean ipsum interdum ridiculus nullam efficitur porttitor leo convallis consectetuer hac ad nascetur.<\/p>"
+          }
+        },
+        "9d424643-3ba1-478d-aa38-e9e5343e743b": {
+          "type": "image_with_product_card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Lowkey.png",
+            "product": "lowkey",
+            "x_pos": 51,
+            "y_pos": 66,
+            "color": "#ff66c4",
+            "image_ratio": "adapt",
+            "show_secondary_image": false,
+            "show_vendor": false,
+            "show_rating": false,
+            "show_description": false,
+            "description": "<p>Vel aenean ipsum interdum ridiculus nullam efficitur porttitor leo convallis consectetuer hac ad nascetur.<\/p>"
+          }
+        },
+        "0d806d52-70d4-4323-a181-5c56be1e9565": {
+          "type": "image_with_product_card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Rich.png",
+            "product": "rich",
+            "x_pos": 34,
+            "y_pos": 83,
+            "color": "#ff66c4",
+            "image_ratio": "adapt",
+            "show_secondary_image": false,
+            "show_vendor": false,
+            "show_rating": false,
+            "show_description": false,
+            "description": "<p>Vel aenean ipsum interdum ridiculus nullam efficitur porttitor leo convallis consectetuer hac ad nascetur.<\/p>"
+          }
+        },
+        "0af2009f-cf0e-4193-89f8-068fee057a47": {
+          "type": "image_with_product_card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Chloe.png",
+            "product": "chloe",
+            "x_pos": 33,
+            "y_pos": 75,
+            "color": "#ff66c4",
+            "image_ratio": "adapt",
+            "show_secondary_image": false,
+            "show_vendor": false,
+            "show_rating": false,
+            "show_description": false,
+            "description": "<p>Vel aenean ipsum interdum ridiculus nullam efficitur porttitor leo convallis consectetuer hac ad nascetur.<\/p>"
+          }
+        },
+        "1646294267d4b6aea4-4": {
+          "type": "image_with_product_card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Milly.png",
+            "product": "milly",
+            "x_pos": 38,
+            "y_pos": 60,
+            "color": "#ff66c4",
+            "image_ratio": "adapt",
+            "show_secondary_image": false,
+            "show_vendor": false,
+            "show_rating": false,
+            "show_description": false,
+            "description": "<p>Vel aenean ipsum interdum ridiculus nullam efficitur porttitor leo convallis consectetuer hac ad nascetur.<\/p>"
+          }
+        },
+        "1646294267d4b6aea4-5": {
+          "type": "image_with_product_card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Envy.png",
+            "product": "envy",
+            "x_pos": 34,
+            "y_pos": 85,
+            "color": "#ff66c4",
+            "image_ratio": "adapt",
+            "show_secondary_image": false,
+            "show_vendor": false,
+            "show_rating": false,
+            "show_description": false,
+            "description": "<p>Vel aenean ipsum interdum ridiculus nullam efficitur porttitor leo convallis consectetuer hac ad nascetur.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "1646294267d4b6aea4-0",
+        "1646294267d4b6aea4-1",
+        "1646294267d4b6aea4-2",
+        "1646294267d4b6aea4-3",
+        "9d424643-3ba1-478d-aa38-e9e5343e743b",
+        "0d806d52-70d4-4323-a181-5c56be1e9565",
+        "0af2009f-cf0e-4193-89f8-068fee057a47",
+        "1646294267d4b6aea4-4",
+        "1646294267d4b6aea4-5"
+      ],
       "settings": {
-        "heading": "You may also like",
-        "columns_desktop": 4,
         "color_scheme": "background-1",
-        "image_ratio": "square",
-        "show_secondary_image": true,
-        "show_vendor": false,
-        "show_rating": false,
+        "use_as_default_bg": false,
+        "fg_color": "#121212",
+        "bg_color": "#ffffff",
+        "bg_blend": "normal",
+        "use_as_default_padding": false,
         "padding_top": 36,
-        "padding_bottom": 28
+        "padding_bottom": 36
       }
     },
     "wave": {
@@ -81,7 +222,7 @@
   },
   "order": [
     "main",
-    "product-recommendations",
+    "shop_the_look",
     "wave"
   ]
 }
