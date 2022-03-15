@@ -1,3 +1,7 @@
+#shopify-section-header {
+  z-index: 5 !important;
+}
+
 .header {
   padding-top: 0.4rem !important;
   padding-bottom: 0.4rem !important;

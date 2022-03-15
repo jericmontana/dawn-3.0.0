@@ -221,7 +221,7 @@
             transform: scale(1.5);
   }
 }
-.section--email-signup .newsletter-form__button {
+.section--intelligent-search .search__button {
   width: 100%;
   height: 100%;
   text-transform: uppercase;
@@ -236,31 +236,30 @@
           align-items: center;
   padding: 9px 10px;
   max-width: 130px;
+  top: 0 !important;
+  bottom: 0 !important;
   color: rgb(var(--color-background)) !important;
   background-color: rgb(var(--color-foreground)) !important;
 }
 @media screen and (min-width: 990px) {
-  .section--email-signup .newsletter-form__button:hover {
+  .section--intelligent-search .search__button:hover {
     opacity: 0.8;
   }
 }
-.section--email-signup .newsletter-form__button svg {
+.section--intelligent-search .search__button svg {
   margin-right: 5px;
   stroke: rgb(var(--color-background)) !important;
   stroke-width: 2;
 }
-.section--email-signup .newsletter-form__field-wrapper {
+.section--intelligent-search .search-form__field-wrapper {
   max-width: 500px;
   margin-left: auto;
   margin-right: auto;
 }
-.section--email-signup .newsletter-form__field-wrapper .field {
-  position: relative;
-}
-.section--email-signup .newsletter-form__field-wrapper .field::before, .section--email-signup .newsletter-form__field-wrapper .field::after {
+.section--intelligent-search .search-form__field-wrapper .field::before, .section--intelligent-search .search-form__field-wrapper .field::after {
   display: none !important;
 }
-.section--email-signup .newsletter-form__field-wrapper .field__input {
+.section--intelligent-search .search-form__field-wrapper .field__input {
   padding-right: 14rem;
   height: 100%;
   margin: 0;
@@ -270,15 +269,15 @@
   -webkit-box-shadow: 6px 8px 22px -2px rgba(0, 0, 0, 0.74) !important;
           box-shadow: 6px 8px 22px -2px rgba(0, 0, 0, 0.74) !important;
 }
-.section--email-signup .newsletter-form__field-wrapper .field__input:focus {
+.section--intelligent-search .search-form__field-wrapper .field__input:focus {
   -webkit-box-shadow: none;
           box-shadow: none;
 }
-.section--email-signup .newsletter-form {
-  max-width: 100%;
-}
-.section--email-signup .section__header--subtitle {
-  max-width: 500px;
-  margin-left: auto;
-  margin-right: auto;
+.section--intelligent-search .predictive-search {
+  -webkit-box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.14);
+          box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.14);
+  width: 100%;
+  max-width: 100% !important;
+  min-width: 100% !important;
+  z-index: 4;
 }
