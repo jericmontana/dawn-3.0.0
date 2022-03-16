@@ -107,8 +107,8 @@ modal-dialog.image-with-product-popup-modal .product-popup-modal__content-info {
 }
 modal-dialog.image-with-product-popup-modal .product-popup-modal__toggle {
   position: absolute;
-  width: 30px;
-  height: 30px;
+  width: 30px !important;
+  height: 30px !important;
   border-radius: 50%;
   outline: none;
   background-color: #ffffff;
