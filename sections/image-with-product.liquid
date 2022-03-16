@@ -132,7 +132,7 @@
                                 {% if featured_product != blank %}
 
                                 <modal-dialog id="PopupModal-{{ forloop.index0 }}" class="image-with-product-popup-modal">
-                                <div role="dialog" aria-label="{{ block.settings.text }}" aria-modal="true" class="product-popup-modal__content" tabindex="-1">
+                                <div role="dialog" aria-label="{{ block.settings.text }}" aria-modal="true" class="product-popup-modal__content--image-with-product" tabindex="-1">
                                     <button id="ModalClose-{{ forloop.index0 }}" type="button" class="product-popup-modal__toggle" aria-label="{{ 'accessibility.close' | t }}">{% render 'icon-close' %}</button>
                                     <div class="product-popup-modal__content-info">
                                         {% render 'card-product',

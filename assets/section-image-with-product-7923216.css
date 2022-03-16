@@ -89,7 +89,7 @@ modal-dialog.image-with-product-popup-modal {
       -ms-flex-align: center;
           align-items: center;
 }
-modal-dialog.image-with-product-popup-modal .product-popup-modal__content {
+modal-dialog.image-with-product-popup-modal .product-popup-modal__content--image-with-product {
   width: calc(100% - 4rem);
   max-width: 500px;
   margin: auto;
