@@ -24,8 +24,18 @@
       "settings": {
       }
     },
+    "1647430526fb2ad951": {
+      "type": "page-content-7923216",
+      "settings": {
+        "color_scheme": "background-1",
+        "use_as_default_padding": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "1647194615797a7527": {
       "type": "image-with-text-7923216",
+      "disabled": true,
       "blocks": {
         "16471946157a16cfe6-0": {
           "type": "heading",
@@ -110,6 +120,7 @@
   },
   "order": [
     "page_banner",
+    "1647430526fb2ad951",
     "1647194615797a7527",
     "shopnow_banner",
     "wave"
