@@ -94,10 +94,13 @@ modal-dialog.image-with-product-popup-modal .product-popup-modal__content {
   max-width: 500px;
   margin: auto;
   background-color: #ffffff;
-  position: relative;
+  position: relative !important;
+  -webkit-transform: none;
+          transform: none;
   padding: 2rem;
   border-radius: 2rem;
   overflow: hidden;
+  left: 0;
 }
 modal-dialog.image-with-product-popup-modal .product-popup-modal__toggle {
   position: absolute;
