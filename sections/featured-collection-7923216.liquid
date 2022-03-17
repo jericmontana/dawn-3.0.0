@@ -44,7 +44,16 @@
       }
       .section--featured-collection-{{section.id}} .price-item{
           color: rgb({{ settings.colors_accent_2.red }}, {{ settings.colors_accent_2.green }}, {{ settings.colors_accent_2.blue }});
-      }
+      } 
+
+      .section--featured-collection-{{section.id}} .price__sale .price-item--regular{
+          color: rgba({{ settings.colors_accent_2.red }}, {{ settings.colors_accent_2.green }}, {{ settings.colors_accent_2.blue }},0.75);
+      } 
+
+      .section--featured-collection-{{section.id}} .loading-overlay__spinner circle{
+          stroke: rgba(255,255,255,0.75);
+      } 
+      
   {% endcase %}
 
 {%- endstyle -%}
