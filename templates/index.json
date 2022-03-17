@@ -45,9 +45,7 @@
             "image_ratio": "adapt",
             "show_secondary_image": true,
             "show_vendor": false,
-            "show_rating": false,
-            "show_description": true,
-            "description": "<p>Vel aenean ipsum interdum ridiculus nullam efficitur porttitor leo convallis consectetuer hac ad nascetur.<\/p>"
+            "show_rating": false
           }
         }
       },
@@ -240,9 +238,7 @@
             "image_ratio": "adapt",
             "show_secondary_image": true,
             "show_vendor": false,
-            "show_rating": false,
-            "show_description": false,
-            "description": "<p>Vel aenean ipsum interdum ridiculus nullam efficitur porttitor leo convallis consectetuer hac ad nascetur.<\/p>"
+            "show_rating": false
           }
         },
         "1646294267d4b6aea4-3": {
@@ -256,9 +252,7 @@
             "image_ratio": "adapt",
             "show_secondary_image": false,
             "show_vendor": false,
-            "show_rating": false,
-            "show_description": false,
-            "description": "<p>Vel aenean ipsum interdum ridiculus nullam efficitur porttitor leo convallis consectetuer hac ad nascetur.<\/p>"
+            "show_rating": false
           }
         },
         "9d424643-3ba1-478d-aa38-e9e5343e743b": {
@@ -272,9 +266,7 @@
             "image_ratio": "adapt",
             "show_secondary_image": false,
             "show_vendor": false,
-            "show_rating": false,
-            "show_description": false,
-            "description": "<p>Vel aenean ipsum interdum ridiculus nullam efficitur porttitor leo convallis consectetuer hac ad nascetur.<\/p>"
+            "show_rating": false
           }
         },
         "0d806d52-70d4-4323-a181-5c56be1e9565": {
@@ -288,9 +280,7 @@
             "image_ratio": "adapt",
             "show_secondary_image": false,
             "show_vendor": false,
-            "show_rating": false,
-            "show_description": false,
-            "description": "<p>Vel aenean ipsum interdum ridiculus nullam efficitur porttitor leo convallis consectetuer hac ad nascetur.<\/p>"
+            "show_rating": false
           }
         },
         "0af2009f-cf0e-4193-89f8-068fee057a47": {
@@ -304,9 +294,7 @@
             "image_ratio": "adapt",
             "show_secondary_image": false,
             "show_vendor": false,
-            "show_rating": false,
-            "show_description": false,
-            "description": "<p>Vel aenean ipsum interdum ridiculus nullam efficitur porttitor leo convallis consectetuer hac ad nascetur.<\/p>"
+            "show_rating": false
           }
         },
         "1646294267d4b6aea4-4": {
@@ -320,9 +308,7 @@
             "image_ratio": "adapt",
             "show_secondary_image": false,
             "show_vendor": false,
-            "show_rating": false,
-            "show_description": false,
-            "description": "<p>Vel aenean ipsum interdum ridiculus nullam efficitur porttitor leo convallis consectetuer hac ad nascetur.<\/p>"
+            "show_rating": false
           }
         },
         "1646294267d4b6aea4-5": {
@@ -336,9 +322,7 @@
             "image_ratio": "adapt",
             "show_secondary_image": false,
             "show_vendor": false,
-            "show_rating": false,
-            "show_description": false,
-            "description": "<p>Vel aenean ipsum interdum ridiculus nullam efficitur porttitor leo convallis consectetuer hac ad nascetur.<\/p>"
+            "show_rating": false
           }
         }
       },

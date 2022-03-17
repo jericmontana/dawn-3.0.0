@@ -102,9 +102,7 @@
                     media_aspect_ratio: block.settings.image_ratio,
                     show_secondary_image: block.settings.show_secondary_image,
                     show_vendor: block.settings.show_vendor,
-                    show_rating: block.settings.show_rating,
-                    show_description: block.settings.show_description,
-                    description: block.settings.description
+                    show_rating: block.settings.show_rating
                     %}
 
                     {% if block.settings.show_add_to_cart_button%}
@@ -457,18 +455,6 @@
           "default": false,
           "label": "Show product rating",
           "info": "To display a rating, add a product rating app. [Learn more](https://help.shopify.com/en/manual/online-store/themes/theme-structure/theme-features#featured-collection-show-product-rating)"
-        },
-        {
-          "type": "checkbox",
-          "id": "show_description",
-          "label": "Show Desciption",
-          "default": false
-        },
-        {
-          "type": "richtext",
-          "id": "description",
-          "label": "Description",
-          "default": "<p>Vel aenean ipsum interdum ridiculus nullam efficitur porttitor leo convallis consectetuer hac ad nascetur.</p>"
         }
       ]
     },
