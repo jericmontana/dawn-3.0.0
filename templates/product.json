@@ -255,7 +255,7 @@
             "columns_mobile": 2,
             "slider": "everywhere",
             "image_ratio": "adapt",
-            "show_secondary_image": false,
+            "show_secondary_image": true,
             "show_vendor": false,
             "show_rating": false,
             "show_description": true,
