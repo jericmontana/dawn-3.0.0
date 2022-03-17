@@ -92,6 +92,7 @@
           "type": "collection",
           "settings": {
             "featured_collection": "lashes-and-eyeliners",
+            "featured_collection_image": "shopify:\/\/shop_images\/2_fdce6f40-b92d-401f-9484-5e80bd8ecbf2.png",
             "use_custom_image": true
           }
         },
@@ -99,6 +100,7 @@
           "type": "collection",
           "settings": {
             "featured_collection": "lippies",
+            "featured_collection_image": "shopify:\/\/shop_images\/1_ccd4e1bf-ca4a-48b8-bf5e-58145c8816e3.png",
             "use_custom_image": true
           }
         },
