@@ -55,6 +55,35 @@
         "padding_bottom": 12
       }
     },
+    "1647517959e543d7ce": {
+      "type": "app-block-7923216",
+      "blocks": {
+        "1647517959ed5f6b5a-0": {
+          "type": "heading",
+          "settings": {
+            "title": "- see what our customers are telling us -",
+            "title_uppercase": false,
+            "subtitle": ""
+          }
+        },
+        "2d2a32b7-c9c2-45ed-a9f9-676c748094be": {
+          "type": "shopify:\/\/apps\/judge-me-product-reviews\/blocks\/review_widget\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "1647517959ed5f6b5a-0",
+        "2d2a32b7-c9c2-45ed-a9f9-676c748094be"
+      ],
+      "settings": {
+        "round_corner_background": false,
+        "color_scheme": "background-1",
+        "use_as_default_padding": true,
+        "padding_top": 40,
+        "padding_bottom": 36
+      }
+    },
     "shop_the_look": {
       "type": "image-with-product",
       "blocks": {
@@ -263,35 +292,6 @@
         "padding_bottom": 36
       }
     },
-    "1647517959e543d7ce": {
-      "type": "app-block-7923216",
-      "blocks": {
-        "1647517959ed5f6b5a-0": {
-          "type": "heading",
-          "settings": {
-            "title": "- see what our customers are telling us -",
-            "title_uppercase": false,
-            "subtitle": ""
-          }
-        },
-        "2d2a32b7-c9c2-45ed-a9f9-676c748094be": {
-          "type": "shopify:\/\/apps\/judge-me-product-reviews\/blocks\/review_widget\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
-          "settings": {
-          }
-        }
-      },
-      "block_order": [
-        "1647517959ed5f6b5a-0",
-        "2d2a32b7-c9c2-45ed-a9f9-676c748094be"
-      ],
-      "settings": {
-        "round_corner_background": false,
-        "color_scheme": "background-1",
-        "use_as_default_padding": false,
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
     "16473868467db45e69": {
       "type": "email-signup-7923216",
       "blocks": {
@@ -336,10 +336,10 @@
   },
   "order": [
     "main",
+    "1647517959e543d7ce",
     "shop_the_look",
     "16473869247629a557",
     "16473869788a0fd14c",
-    "1647517959e543d7ce",
     "16473868467db45e69",
     "wave"
   ]
