@@ -18,7 +18,6 @@
 }
 .section--image-with-product .section__image-with-product-card {
   display: grid;
-  max-width: 200px;
   height: auto;
   margin: auto;
 }
