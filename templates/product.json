@@ -84,6 +84,74 @@
         "padding_bottom": 36
       }
     },
+    "logo_with_text": {
+      "type": "logo-with-text",
+      "blocks": {
+        "2aeabb46-d263-4133-9180-0360aa582de5": {
+          "type": "heading_support",
+          "settings": {
+            "title_support": "<p>World's most comfortable high-quality lashes.<\/p><p>Elevating your look..<\/p><p>IN SECONDS.<\/p>"
+          }
+        },
+        "1646294192d48bac15-0": {
+          "type": "heading",
+          "settings": {
+            "title": "Why Choose Us",
+            "title_uppercase": false,
+            "subtitle": "Mus mauris vitae ultricies leo. Ac feugiat sed lectus vestibulum lacus laoreet non curabitur."
+          }
+        },
+        "1646294192d48bac15-1": {
+          "type": "image_with_text",
+          "settings": {
+            "logo_svg": "high-quality",
+            "title": "high quality"
+          }
+        },
+        "1646294192d48bac15-2": {
+          "type": "image_with_text",
+          "settings": {
+            "logo_svg": "substantial",
+            "title": "substantial"
+          }
+        },
+        "1646294192d48bac15-3": {
+          "type": "image_with_text",
+          "settings": {
+            "logo_svg": "loved-by-hundreds",
+            "title": "loved by hundreds"
+          }
+        },
+        "1646294192d48bac15-4": {
+          "type": "image_with_text",
+          "settings": {
+            "logo_svg": "free-shipping",
+            "title": "free shipping"
+          }
+        }
+      },
+      "block_order": [
+        "2aeabb46-d263-4133-9180-0360aa582de5",
+        "1646294192d48bac15-0",
+        "1646294192d48bac15-1",
+        "1646294192d48bac15-2",
+        "1646294192d48bac15-3",
+        "1646294192d48bac15-4"
+      ],
+      "settings": {
+        "color_scheme": "background-1",
+        "use_as_default_bg": false,
+        "fg_color": "#121212",
+        "bg_color": "#ffffff",
+        "bg_blend": "normal",
+        "columns_desktop": 4,
+        "columns_tablet": 4,
+        "columns_mobile": 2,
+        "use_as_default_padding": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "shop_the_look": {
       "type": "image-with-product",
       "blocks": {
@@ -337,6 +405,7 @@
   "order": [
     "main",
     "1647517959e543d7ce",
+    "logo_with_text",
     "shop_the_look",
     "16473869247629a557",
     "16473869788a0fd14c",

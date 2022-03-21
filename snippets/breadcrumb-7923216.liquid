@@ -17,6 +17,9 @@
           </li>
         {%- endif -%}
         <li class="breadcrumbs__item">
+          <a class="breadcrumbs__link" href="/collections/all" aria-current="page">Products</a>
+        </li>
+        <li class="breadcrumbs__item">
           <a class="breadcrumbs__link" href="{{ product.url }}" aria-current="page">{{ product.title }}</a>
         </li>
       {%- when 'collection' and collection.handle -%}

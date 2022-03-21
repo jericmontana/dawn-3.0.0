@@ -17,7 +17,7 @@
     .section--page-banner .section-{{ section.id }}-bg-contaier {
         --color-foreground: {{settings.fg_color.red}},{{settings.fg_color.green}},{{settings.fg_color.blue}};
         --color-background: {{settings.bg_color.red}},{{settings.bg_color.green}},{{settings.bg_color.blue}};
-        background-image: url('{{settings.bg_image | image_url}}');
+        {% if settings.bg_image != blank %}background-image: url('{{settings.bg_image | image_url}}');{% endif %}
         background-color: {{ settings.bg_color }};
         background-blend-mode: {{ settings.bg_blend }};
     }

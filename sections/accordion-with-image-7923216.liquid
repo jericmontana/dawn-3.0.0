@@ -53,9 +53,11 @@
             {%- assign accordion = section.blocks | where: 'type', 'accordion' -%}
             <div class="section__accordion section__accordion--max-width">
             {%- for block in accordion -%}
+                {%assign number = forloop.index %}
                 {%- render 'accordion-7923216',
                     accordion_content: block.settings.accordion_content,
-                    accordion_title: block.settings.title
+                    accordion_title: block.settings.title,
+                    number: number
                 -%}
             {%- endfor -%}
             </div>
