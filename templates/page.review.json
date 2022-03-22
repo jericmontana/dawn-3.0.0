@@ -30,7 +30,7 @@
         "5db358d3-014c-4403-a53d-26bfd5da14e9": {
           "type": "shopify:\/\/apps\/judge-me-product-reviews\/blocks\/all_reviews_page\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
           "settings": {
-            "extra_wrapper_classes": "page-width page-width--narrow"
+            "extra_wrapper_classes": ""
           }
         }
       },
