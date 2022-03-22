@@ -24,39 +24,6 @@
       "settings": {
       }
     },
-    "1647907953a43fcb9f": {
-      "type": "gallery-7923216",
-      "blocks": {
-        "16479079535af314b3-1": {
-          "type": "video",
-          "settings": {
-            "title": "How to apply 25MM Lashes",
-            "image": "shopify:\/\/shop_images\/How_to_apply_lashes.png",
-            "video_type": "youtube",
-            "video_id": "iFF7CBdKwPc"
-          }
-        },
-        "3a91e6d6-9a1f-42b3-86a1-2c00d1a438ba": {
-          "type": "video",
-          "settings": {
-            "title": "How to clean your lashes with our lash care kit",
-            "image": "shopify:\/\/shop_images\/How_to_clean_lashes.png",
-            "video_type": "youtube",
-            "video_id": "U3TO_HvMSBs"
-          }
-        }
-      },
-      "block_order": [
-        "16479079535af314b3-1",
-        "3a91e6d6-9a1f-42b3-86a1-2c00d1a438ba"
-      ],
-      "settings": {
-        "color_scheme": "background-1",
-        "use_as_default_padding": false,
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
     "shopnow_banner": {
       "type": "shopnow-banner",
       "blocks": {
@@ -97,77 +64,11 @@
         "bg_color_top": "#ffffff",
         "padding_top": 36
       }
-    },
-    "16479082555fc7b991": {
-      "type": "product-guide-7923216",
-      "blocks": {
-        "1647908255a7f3d6b8-0": {
-          "type": "heading",
-          "settings": {
-            "title": "Lash Guide",
-            "title_uppercase": false,
-            "subtitle": "Accumsan lorem vivamus condimentum iaculis commodo quis finibus non penatibus at rhoncus fames dui"
-          }
-        },
-        "1647908255a7f3d6b8-1": {
-          "type": "product_guide",
-          "settings": {
-            "product": "badass",
-            "round_corner": true,
-            "btn_label": "View More Details",
-            "btn_size": "default",
-            "hover_effect": "shine",
-            "icon_type": "none",
-            "shadow_effect": true,
-            "auto_width": false
-          }
-        },
-        "1647908255a7f3d6b8-2": {
-          "type": "product_guide",
-          "settings": {
-            "product": "dreamer",
-            "round_corner": true,
-            "btn_label": "View More Details",
-            "btn_size": "default",
-            "hover_effect": "shine",
-            "icon_type": "none",
-            "shadow_effect": true,
-            "auto_width": false
-          }
-        },
-        "1647908255a7f3d6b8-3": {
-          "type": "product_guide",
-          "settings": {
-            "product": "barbie-pink",
-            "round_corner": true,
-            "btn_label": "View More Details",
-            "btn_size": "default",
-            "hover_effect": "shine",
-            "icon_type": "none",
-            "shadow_effect": true,
-            "auto_width": false
-          }
-        }
-      },
-      "block_order": [
-        "1647908255a7f3d6b8-0",
-        "1647908255a7f3d6b8-1",
-        "1647908255a7f3d6b8-2",
-        "1647908255a7f3d6b8-3"
-      ],
-      "settings": {
-        "color_scheme": "background-1",
-        "use_as_default_padding": false,
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
     }
   },
   "order": [
     "page_banner",
-    "1647907953a43fcb9f",
     "shopnow_banner",
-    "wave",
-    "16479082555fc7b991"
+    "wave"
   ]
 }
