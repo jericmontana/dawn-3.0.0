@@ -1,5 +1,35 @@
 {
   "sections": {
+    "16479299538402a3cf": {
+      "type": "email-signup-v2-7923216",
+      "blocks": {
+        "164792995390f38330-0": {
+          "type": "heading",
+          "settings": {
+            "title": "Join our VIP Club",
+            "title_uppercase": false,
+            "subtitle": "Mus mauris vitae ultricies leo. Ac feugiat sed lectus vestibulum lacus laoreet non curabitur."
+          }
+        },
+        "164792995390f38330-1": {
+          "type": "email_signup_form",
+          "settings": {
+            "placeholder": "Email Address*",
+            "btn_lbl": "Yes! Let me in!"
+          }
+        }
+      },
+      "block_order": [
+        "164792995390f38330-0",
+        "164792995390f38330-1"
+      ],
+      "settings": {
+        "color_scheme": "background-1",
+        "use_as_default_padding": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "shopnow_banner": {
       "type": "shopnow-banner",
       "blocks": {
@@ -43,6 +73,7 @@
     }
   },
   "order": [
+    "16479299538402a3cf",
     "shopnow_banner",
     "wave"
   ]
