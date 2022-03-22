@@ -96,6 +96,9 @@
 
                     {%- if form.posted_successfully? -%}
                         <h3 class="newsletter-form__message newsletter-form__message--success form__message" id="Newsletter-success--{{ section.id }}" tabindex="-1" autofocus>{% render 'icon-success' %}{{ 'newsletter.success' | t }}</h3>
+                        <script>
+                            console.log("SUCCESS!!!");
+                        </script>                    
                     {%- endif -%}
                 </div>
                 {% endform %}
