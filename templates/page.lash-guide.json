@@ -39,9 +39,10 @@
         "3a91e6d6-9a1f-42b3-86a1-2c00d1a438ba": {
           "type": "video",
           "settings": {
-            "title": "Video Title",
+            "title": "How to clean your lashes with our lash care kit",
+            "image": "shopify:\/\/shop_images\/How_to_clean_lashes.png",
             "video_type": "youtube",
-            "video_id": "_9VUPq3SxOc"
+            "video_id": "U3TO_HvMSBs"
           }
         }
       },
