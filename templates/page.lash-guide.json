@@ -24,6 +24,38 @@
       "settings": {
       }
     },
+    "1647907953a43fcb9f": {
+      "type": "gallery-7923216",
+      "blocks": {
+        "16479079535af314b3-1": {
+          "type": "video",
+          "settings": {
+            "title": "How to apply 25MM Lashes",
+            "image": "shopify:\/\/shop_images\/How_to_apply_lashes.png",
+            "video_type": "youtube",
+            "video_id": "iFF7CBdKwPc"
+          }
+        },
+        "3a91e6d6-9a1f-42b3-86a1-2c00d1a438ba": {
+          "type": "video",
+          "settings": {
+            "title": "Video Title",
+            "video_type": "youtube",
+            "video_id": "_9VUPq3SxOc"
+          }
+        }
+      },
+      "block_order": [
+        "16479079535af314b3-1",
+        "3a91e6d6-9a1f-42b3-86a1-2c00d1a438ba"
+      ],
+      "settings": {
+        "color_scheme": "background-1",
+        "use_as_default_padding": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "shopnow_banner": {
       "type": "shopnow-banner",
       "blocks": {
@@ -68,6 +100,7 @@
   },
   "order": [
     "page_banner",
+    "1647907953a43fcb9f",
     "shopnow_banner",
     "wave"
   ]
