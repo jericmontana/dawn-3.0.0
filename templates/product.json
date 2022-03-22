@@ -152,6 +152,39 @@
         "padding_bottom": 36
       }
     },
+    "16479084561f7da0ff": {
+      "type": "gallery-7923216",
+      "blocks": {
+        "16479084563ebb5e7e-1": {
+          "type": "video",
+          "settings": {
+            "title": "HOW TO APPLY OUR25MM LASHES",
+            "image": "shopify:\/\/shop_images\/How_to_apply_lashes.png",
+            "video_type": "youtube",
+            "video_id": "_9VUPq3SxOc"
+          }
+        },
+        "17442b3a-bdfd-4950-a18c-46efd8face11": {
+          "type": "video",
+          "settings": {
+            "title": "HOW TO CLEAN YOUR LASHESWITH OUR LASH CARE KIT",
+            "image": "shopify:\/\/shop_images\/How_to_clean_lashes.png",
+            "video_type": "youtube",
+            "video_id": "_9VUPq3SxOc"
+          }
+        }
+      },
+      "block_order": [
+        "16479084563ebb5e7e-1",
+        "17442b3a-bdfd-4950-a18c-46efd8face11"
+      ],
+      "settings": {
+        "color_scheme": "background-1",
+        "use_as_default_padding": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "shop_the_look": {
       "type": "image-with-product",
       "blocks": {
@@ -406,6 +439,7 @@
     "main",
     "1647517959e543d7ce",
     "logo_with_text",
+    "16479084561f7da0ff",
     "shop_the_look",
     "16473869247629a557",
     "16473869788a0fd14c",
