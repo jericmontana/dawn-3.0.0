@@ -185,6 +185,70 @@
         "padding_bottom": 36
       }
     },
+    "1648049167fa6650ff": {
+      "type": "product-guide-7923216",
+      "blocks": {
+        "164804916787683c8a-0": {
+          "type": "heading",
+          "settings": {
+            "title": "Volume Lash",
+            "title_uppercase": true,
+            "subtitle": ""
+          }
+        },
+        "164804916787683c8a-1": {
+          "type": "product_guide",
+          "settings": {
+            "product": "",
+            "round_corner": true,
+            "btn_label": "View More Details",
+            "btn_size": "default",
+            "hover_effect": "shine",
+            "icon_type": "none",
+            "shadow_effect": true,
+            "auto_width": false
+          }
+        },
+        "164804916787683c8a-2": {
+          "type": "product_guide",
+          "settings": {
+            "product": "",
+            "round_corner": true,
+            "btn_label": "View More Details",
+            "btn_size": "default",
+            "hover_effect": "shine",
+            "icon_type": "none",
+            "shadow_effect": true,
+            "auto_width": false
+          }
+        },
+        "164804916787683c8a-3": {
+          "type": "product_guide",
+          "settings": {
+            "product": "",
+            "round_corner": true,
+            "btn_label": "View More Details",
+            "btn_size": "default",
+            "hover_effect": "shine",
+            "icon_type": "none",
+            "shadow_effect": true,
+            "auto_width": false
+          }
+        }
+      },
+      "block_order": [
+        "164804916787683c8a-0",
+        "164804916787683c8a-1",
+        "164804916787683c8a-2",
+        "164804916787683c8a-3"
+      ],
+      "settings": {
+        "color_scheme": "background-1",
+        "use_as_default_padding": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "wave": {
       "type": "wave",
       "settings": {
@@ -199,6 +263,7 @@
     "1647931260439e83bf",
     "16480488435f906854",
     "164804905575546c9f",
+    "1648049167fa6650ff",
     "wave"
   ]
 }
