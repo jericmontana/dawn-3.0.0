@@ -24,7 +24,7 @@
         "164792995390f38330-1"
       ],
       "settings": {
-        "color_scheme": "accent-2",
+        "color_scheme": "background-1",
         "use_as_default_padding": true,
         "padding_top": 52,
         "padding_bottom": 52
@@ -36,6 +36,7 @@
         "164804860518860218-2": {
           "type": "image",
           "settings": {
+            "image": "shopify:\/\/shop_images\/ENVY_1080.png"
           }
         },
         "f19cb32d-20cd-4b1e-a370-d6a83bd00609": {
@@ -50,7 +51,7 @@
         "f19cb32d-20cd-4b1e-a370-d6a83bd00609"
       ],
       "settings": {
-        "color_scheme": "background-1",
+        "color_scheme": "accent-2",
         "image_first": true,
         "use_as_default_padding": false,
         "padding_top": 36,
