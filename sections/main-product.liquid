@@ -7,6 +7,8 @@
 {{ 'component-rating.css' | asset_url | stylesheet_tag }}
 {{ 'component-loading-overlay.css' | asset_url | stylesheet_tag }}
 
+{{ 'section-main-product-7923216.css' | asset_url | stylesheet_tag }}
+
 <link rel="stylesheet" href="{{ 'component-deferred-media.css' | asset_url }}" media="print" onload="this.media='all'">
 
 {%- style -%}
@@ -32,12 +34,34 @@
   <link id="ModelViewerOverride" rel="stylesheet" href="{{ 'component-model-viewer-ui.css' | asset_url }}" media="print" onload="this.media='all'">
 {%- endif -%}
 
-<section class="page-width section-{{ section.id }}-padding">
+{% comment %} Get all Tags BEG{% endcomment %}
+{%- for tag in product.tags -%}
+  {%- assign product_tag_handleize = tag | handleize | append: '+' | prepend: '+' -%}
+
+  {%- if product_tag_string contains product_tag_handleize -%}{%- continue -%}{%- endif -%}
+  {%- if forloop.first -%}
+    {%- assign product_tag_string = product_tag_string | append: product_tag_handleize -%}
+  {%- else -%}
+    {%- assign product_tag_string = product_tag_string | append: ',' | append: product_tag_handleize -%}
+  {%- endif -%}
+
+{%- endfor -%}
+
+{%- assign product_tags = product_tag_string | split: ',' -%}
+
+{% comment %} Get all Tags END{% endcomment %}
+
+<section class="page-width section-{{ section.id }}-padding section--product-box">
   <div class="section__breadcrumb">
       {%- render 'breadcrumb-7923216' -%}
   </div>
   <div class="product product--{{ section.settings.media_size }} product--{{ section.settings.gallery_layout }} grid grid--1-col {% if product.media.size > 0 %}grid--2-col-tablet{% else %}product--no-media{% endif %}">
     <div class="grid__item product__media-wrapper">
+      <div class="card__badge card__badge--bestseller">
+        {%- if product_tags contains '+best-seller+' or product_tags contains '+best-sellers+' or product_tags contains '+bestseller+'  or product_tags contains '+bestsellers+' -%}
+          <span class="best-seller--badge"> Best Seller </span>
+        {%- endif -%}
+      </div>
       <div class="card__icon card__icon-wishlist">
         {% render 'button-wishlist', product: product %}
       </div>

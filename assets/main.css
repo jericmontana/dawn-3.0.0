@@ -4072,6 +4072,10 @@ label.unavailable {
   text-decoration: none;
 }
 
+.section--product-box .section__breadcrumb {
+  margin-bottom: 3rem;
+}
+
 /* Device Sizes | Mobile - Default */
 /* For videoPopup */
 :root {
