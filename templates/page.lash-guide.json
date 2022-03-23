@@ -225,7 +225,7 @@
         "164804916787683c8a-3": {
           "type": "product_guide",
           "settings": {
-            "product": "",
+            "product": "rich",
             "round_corner": true,
             "btn_label": "View More Details",
             "btn_size": "default",
