@@ -1,4 +1,8 @@
 /* Device Sizes | Mobile - Default */
+.section--accordion-with-image .accordion {
+  border-top: none;
+  border-bottom: none;
+}
 .section--accordion-with-image .section__accordion--max-width {
   max-width: 800px;
   margin-left: auto;
