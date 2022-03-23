@@ -55,35 +55,6 @@
         "padding_bottom": 12
       }
     },
-    "1647517959e543d7ce": {
-      "type": "app-block-7923216",
-      "blocks": {
-        "1647517959ed5f6b5a-0": {
-          "type": "heading",
-          "settings": {
-            "title": "- see what our customers are telling us -",
-            "title_uppercase": false,
-            "subtitle": ""
-          }
-        },
-        "2d2a32b7-c9c2-45ed-a9f9-676c748094be": {
-          "type": "shopify:\/\/apps\/judge-me-product-reviews\/blocks\/review_widget\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
-          "settings": {
-          }
-        }
-      },
-      "block_order": [
-        "1647517959ed5f6b5a-0",
-        "2d2a32b7-c9c2-45ed-a9f9-676c748094be"
-      ],
-      "settings": {
-        "round_corner_background": false,
-        "color_scheme": "background-1",
-        "use_as_default_padding": true,
-        "padding_top": 40,
-        "padding_bottom": 36
-      }
-    },
     "logo_with_text": {
       "type": "logo-with-text",
       "blocks": {
@@ -149,6 +120,26 @@
         "columns_mobile": 2,
         "use_as_default_padding": false,
         "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "1647517959e543d7ce": {
+      "type": "app-block-7923216",
+      "blocks": {
+        "2d2a32b7-c9c2-45ed-a9f9-676c748094be": {
+          "type": "shopify:\/\/apps\/judge-me-product-reviews\/blocks\/review_widget\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "2d2a32b7-c9c2-45ed-a9f9-676c748094be"
+      ],
+      "settings": {
+        "round_corner_background": false,
+        "color_scheme": "background-1",
+        "use_as_default_padding": true,
+        "padding_top": 40,
         "padding_bottom": 36
       }
     },
@@ -329,6 +320,7 @@
     },
     "16473869247629a557": {
       "type": "intelligent-search-7923216",
+      "disabled": true,
       "blocks": {
         "1647386924381e42d8-0": {
           "type": "heading",
@@ -351,6 +343,7 @@
     },
     "16473869788a0fd14c": {
       "type": "featured-collection-7923216",
+      "disabled": true,
       "blocks": {
         "164738697862f527e4-0": {
           "type": "header",
@@ -395,6 +388,7 @@
     },
     "16473868467db45e69": {
       "type": "email-signup-7923216",
+      "disabled": true,
       "blocks": {
         "1647386846df5c0304-0": {
           "type": "heading",
@@ -437,8 +431,8 @@
   },
   "order": [
     "main",
-    "1647517959e543d7ce",
     "logo_with_text",
+    "1647517959e543d7ce",
     "16479084561f7da0ff",
     "shop_the_look",
     "16473869247629a557",
