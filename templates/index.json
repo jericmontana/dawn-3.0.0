@@ -306,7 +306,7 @@
             "y_pos": 60,
             "color": "#ff66c4",
             "image_ratio": "adapt",
-            "show_secondary_image": false,
+            "show_secondary_image": true,
             "show_vendor": false,
             "show_rating": false
           }
