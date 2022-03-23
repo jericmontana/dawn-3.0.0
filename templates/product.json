@@ -491,9 +491,9 @@
         "91820ace-c056-4df4-8903-49b660533174": {
           "type": "button",
           "settings": {
-            "button_on_bottom_of_accordion": false,
+            "button_on_bottom_of_accordion": true,
             "btn_label": "Learn More",
-            "btn_link": "shopify:\/\/collections\/all",
+            "btn_link": "shopify:\/\/pages\/faq",
             "btn_size": "default",
             "hover_effect": "shine",
             "icon_type": "arrow",
