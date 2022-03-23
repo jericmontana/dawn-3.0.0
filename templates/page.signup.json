@@ -30,37 +30,62 @@
         "padding_bottom": 36
       }
     },
-    "shopnow_banner": {
-      "type": "shopnow-banner",
+    "1648048605d5c124b8": {
+      "type": "image-with-text-7923216",
       "blocks": {
-        "header": {
-          "type": "header",
+        "164804860518860218-2": {
+          "type": "image",
           "settings": {
-            "apply_general_settings_header": true,
-            "title": "Visit Our Store",
-            "title_uppercase": false,
-            "subtitle": "Mus mauris vitae ultricies leo. Ac feugiat sed lectus vestibulum lacus laoreet non curabitur."
+            "image": "shopify:\/\/shop_images\/AVACLUXE_1080.png"
           }
         },
-        "button": {
-          "type": "button",
+        "f19cb32d-20cd-4b1e-a370-d6a83bd00609": {
+          "type": "richtext",
           "settings": {
-            "apply_general_settings_btn": true,
-            "btn_label": "Shop Now",
-            "btn_link": "shopify:\/\/collections\/all",
-            "btn_size": "default",
-            "hover_effect": "shine",
-            "icon_type": "arrow",
-            "shadow_effect": true,
-            "auto_width": false
+            "richtext": "<p>Nisi per leo mauris consectetur sodales fringilla congue urna tincidunt dis lacus natoque interdum.<\/p>"
           }
         }
       },
       "block_order": [
-        "header",
-        "button"
+        "164804860518860218-2",
+        "f19cb32d-20cd-4b1e-a370-d6a83bd00609"
       ],
       "settings": {
+        "color_scheme": "background-1",
+        "image_first": false,
+        "use_as_default_padding": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "1648048613f51d9e18": {
+      "type": "email-signup-v2-7923216",
+      "blocks": {
+        "1648048613ba9410db-0": {
+          "type": "heading",
+          "settings": {
+            "title": "",
+            "title_uppercase": false,
+            "subtitle": "Mus mauris vitae ultricies leo. Ac feugiat sed lectus vestibulum lacus laoreet non curabitur."
+          }
+        },
+        "1648048613ba9410db-1": {
+          "type": "email_signup_form",
+          "settings": {
+            "placeholder": "Email Address*",
+            "btn_lbl": "Yes! Let me in!"
+          }
+        }
+      },
+      "block_order": [
+        "1648048613ba9410db-0",
+        "1648048613ba9410db-1"
+      ],
+      "settings": {
+        "color_scheme": "background-1",
+        "use_as_default_padding": false,
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     },
     "wave": {
@@ -74,7 +99,8 @@
   },
   "order": [
     "16479299538402a3cf",
-    "shopnow_banner",
+    "1648048605d5c124b8",
+    "1648048613f51d9e18",
     "wave"
   ]
 }
