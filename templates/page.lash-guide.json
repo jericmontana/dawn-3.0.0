@@ -199,7 +199,7 @@
         "164804916787683c8a-1": {
           "type": "product_guide",
           "settings": {
-            "product": "",
+            "product": "doll",
             "round_corner": true,
             "btn_label": "View More Details",
             "btn_size": "default",
@@ -212,7 +212,7 @@
         "164804916787683c8a-2": {
           "type": "product_guide",
           "settings": {
-            "product": "",
+            "product": "chloe",
             "round_corner": true,
             "btn_label": "View More Details",
             "btn_size": "default",
