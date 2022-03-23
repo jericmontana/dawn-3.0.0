@@ -53,9 +53,9 @@
       "settings": {
         "color_scheme": "accent-2",
         "image_first": true,
-        "use_as_default_padding": false,
-        "padding_top": 36,
-        "padding_bottom": 36
+        "use_as_default_padding": true,
+        "padding_top": 44,
+        "padding_bottom": 44
       }
     },
     "1648048613f51d9e18": {
@@ -83,9 +83,9 @@
       ],
       "settings": {
         "color_scheme": "background-1",
-        "use_as_default_padding": false,
-        "padding_top": 36,
-        "padding_bottom": 36
+        "use_as_default_padding": true,
+        "padding_top": 44,
+        "padding_bottom": 44
       }
     },
     "wave": {
