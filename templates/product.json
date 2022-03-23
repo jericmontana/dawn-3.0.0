@@ -517,9 +517,9 @@
       ],
       "settings": {
         "color_scheme": "background-1",
-        "use_as_default_padding": true,
-        "padding_top": 80,
-        "padding_bottom": 80
+        "use_as_default_padding": false,
+        "padding_top": 0,
+        "padding_bottom": 0
       }
     },
     "wave": {
