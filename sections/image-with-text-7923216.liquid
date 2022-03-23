@@ -44,6 +44,13 @@
                             {%- endif -%}
                         {%- endfor -%}
 
+                        {%- assign richtext = section.blocks | where: 'type', 'richtext' -%}
+                        {%- for block in richtext -%}
+                            <div class="section__richtext">
+                            {{ block.settings.richtext }}
+                            </div>
+                        {%- endfor -%}
+
                         {%- assign button = section.blocks | where: 'type', 'button' -%}
                         {%- for block in button -%}
                             <div class="section__button">
@@ -297,6 +304,19 @@
                         "id": "auto_width",
                         "label": "Enable Auto Width",
                         "default": false
+                    }
+                ]
+            },
+            {
+                "type": "richtext",
+                "name": "Richtext",
+                "limit": 1,
+                "settings": [
+                    {
+                        "type": "richtext",
+                        "id": "richtext",
+                        "label": "Richtext",
+                        "default": "<p>Nisi per leo mauris consectetur sodales fringilla congue urna tincidunt dis lacus natoque interdum.</p>"
                     }
                 ]
             }
