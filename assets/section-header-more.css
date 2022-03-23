@@ -17,3 +17,7 @@
 .header__inline-menu .header__submenu li * {
   text-align: left;
 }
+.header__inline-menu .header__active-menu-item {
+  color: rgb(var(--color-base-accent-1));
+  text-decoration: none;
+}
