@@ -453,6 +453,7 @@
         },
         "7258c48d-dc7b-497e-98ae-7bcdaa313926": {
           "type": "accordion",
+          "disabled": true,
           "settings": {
             "title": "How long does it take for customer service to contact me back?",
             "accordion_content": "<p>Please allow <strong>48 hours<\/strong> for our customer service team to reach back to you. <strong>Times vary during sales and major holidays. <\/strong><\/p>"
