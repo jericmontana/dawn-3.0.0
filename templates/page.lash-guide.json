@@ -121,37 +121,68 @@
         "padding_bottom": 36
       }
     },
-    "shopnow_banner": {
-      "type": "shopnow-banner",
+    "164804905575546c9f": {
+      "type": "product-guide-7923216",
       "blocks": {
-        "header": {
-          "type": "header",
+        "16480490551719b641-0": {
+          "type": "heading",
           "settings": {
-            "apply_general_settings_header": true,
-            "title": "Visit Our Store",
-            "title_uppercase": false,
-            "subtitle": "Mus mauris vitae ultricies leo. Ac feugiat sed lectus vestibulum lacus laoreet non curabitur."
+            "title": "Most Fluffy",
+            "title_uppercase": true,
+            "subtitle": ""
           }
         },
-        "button": {
-          "type": "button",
+        "16480490551719b641-1": {
+          "type": "product_guide",
           "settings": {
-            "apply_general_settings_btn": true,
-            "btn_label": "Shop Now",
-            "btn_link": "shopify:\/\/collections\/all",
+            "product": "fendi",
+            "round_corner": true,
+            "btn_label": "View More Details",
             "btn_size": "default",
             "hover_effect": "shine",
-            "icon_type": "arrow",
+            "icon_type": "none",
+            "shadow_effect": true,
+            "auto_width": false
+          }
+        },
+        "16480490551719b641-2": {
+          "type": "product_guide",
+          "settings": {
+            "product": "",
+            "round_corner": true,
+            "btn_label": "View More Details",
+            "btn_size": "default",
+            "hover_effect": "shine",
+            "icon_type": "none",
+            "shadow_effect": true,
+            "auto_width": false
+          }
+        },
+        "16480490551719b641-3": {
+          "type": "product_guide",
+          "settings": {
+            "product": "",
+            "round_corner": true,
+            "btn_label": "View More Details",
+            "btn_size": "default",
+            "hover_effect": "shine",
+            "icon_type": "none",
             "shadow_effect": true,
             "auto_width": false
           }
         }
       },
       "block_order": [
-        "header",
-        "button"
+        "16480490551719b641-0",
+        "16480490551719b641-1",
+        "16480490551719b641-2",
+        "16480490551719b641-3"
       ],
       "settings": {
+        "color_scheme": "background-1",
+        "use_as_default_padding": false,
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     },
     "wave": {
@@ -167,7 +198,7 @@
     "page_banner",
     "1647931260439e83bf",
     "16480488435f906854",
-    "shopnow_banner",
+    "164804905575546c9f",
     "wave"
   ]
 }
