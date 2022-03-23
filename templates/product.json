@@ -460,6 +460,7 @@
         },
         "f8c5eaa2-0048-464c-aed7-708e8d28e704": {
           "type": "accordion",
+          "disabled": true,
           "settings": {
             "title": "Do you offer returns?",
             "accordion_content": "<p><strong>We do not accept returns, exchanges or refunds.<\/strong> All sales are final. Please note, AvaCLuxe reserves the right to refuse all returns.<\/p>"
@@ -467,9 +468,37 @@
         },
         "d8277af3-9601-429f-9687-a48c044f21ae": {
           "type": "accordion",
+          "disabled": true,
           "settings": {
             "title": "Can I change my order once I've placed it?",
             "accordion_content": "<p>No, once an order is placed it's final.<\/p>"
+          }
+        },
+        "bf1de6fd-0cb8-4b56-9b56-f4dad7862a4b": {
+          "type": "image",
+          "settings": {
+          }
+        },
+        "7106355c-73ab-4e66-bd7e-85578353962a": {
+          "type": "heading",
+          "settings": {
+            "title": "Frequently Asked Questions",
+            "title_uppercase": false,
+            "subtitle": "",
+            "header_on_top_of_accordion": true
+          }
+        },
+        "91820ace-c056-4df4-8903-49b660533174": {
+          "type": "button",
+          "settings": {
+            "button_on_bottom_of_accordion": false,
+            "btn_label": "Learn More",
+            "btn_link": "shopify:\/\/collections\/all",
+            "btn_size": "default",
+            "hover_effect": "shine",
+            "icon_type": "arrow",
+            "shadow_effect": true,
+            "auto_width": false
           }
         }
       },
@@ -480,7 +509,10 @@
         "371d79de-6922-47df-9098-810ca502e350",
         "7258c48d-dc7b-497e-98ae-7bcdaa313926",
         "f8c5eaa2-0048-464c-aed7-708e8d28e704",
-        "d8277af3-9601-429f-9687-a48c044f21ae"
+        "d8277af3-9601-429f-9687-a48c044f21ae",
+        "bf1de6fd-0cb8-4b56-9b56-f4dad7862a4b",
+        "7106355c-73ab-4e66-bd7e-85578353962a",
+        "91820ace-c056-4df4-8903-49b660533174"
       ],
       "settings": {
         "color_scheme": "background-1",
