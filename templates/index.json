@@ -220,7 +220,7 @@
         "1646294267d4b6aea4-1": {
           "type": "slideshow",
           "settings": {
-            "items_to_show": 6,
+            "items_to_show": 8,
             "columns_desktop": 4,
             "columns_tablet": 2,
             "columns_mobile": 2,
