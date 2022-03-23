@@ -52,6 +52,3 @@
 .section--image-with-text .section__richtext {
   text-align: justify;
 }
-.section--image-with-text .section__richtext p {
-  font-weight: 600;
-}
