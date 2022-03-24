@@ -1428,6 +1428,113 @@
     ]
   },
   {
+    "name": "🔰 Thankyou Popup",
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "ty_image",
+        "label": "Image"
+      },
+      {
+        "type": "text",
+        "id": "ty_title",
+        "label": "Title",
+        "default": "Thank you!"
+      },
+      {
+        "type": "richtext",
+        "id": "ty_richtext",
+        "label": "Richtext",
+        "default": "<p>Use the code below to get a discount on your first purchase:</p>"
+      },
+      {
+        "type": "text",
+        "id": "ty_discount_code",
+        "label": "Discount Code",
+        "default": "DISCOUNTCODE"
+      },
+      {
+        "type": "header",
+        "content": "Button Settings"
+      },
+      {
+        "type": "text",
+        "id": "ty_btn_label",
+        "label": "Label",
+        "default": "Shop Now"
+      },
+      {
+        "type": "url",
+        "id": "ty_btn_link",
+        "label": "URL",
+        "default": "\/collections\/all"
+      },
+      {
+        "type": "header",
+        "content": "Background Settings"
+      },
+      {
+        "type": "color",
+        "id": "ty_bg_color",
+        "label": "Color",
+        "default":"#ffffff"
+      },
+      {
+        "type": "image_picker",
+        "id": "ty_bg_image",
+        "label": "Image"
+      },
+      {
+        "type": "select",
+        "id": "ty_bg_blend",
+        "label": "Blend Mode",
+        "options": [
+          {
+            "value": "normal",
+            "label": "Normal"
+          },
+          {
+            "value": "multiply",
+            "label": "Multiply"
+          },
+          {
+            "value": "screen",
+            "label": "Screen"
+          },
+          {
+            "value": "overlay",
+            "label": "Overlay"
+          },
+          {
+            "value": "darken",
+            "label": "Darken"
+          },
+          {
+            "value": "lighten",
+            "label": "Lighten"
+          },
+          {
+            "value": "color-dodge",
+            "label": "Color Dodge"
+          },
+          {
+            "value": "saturation",
+            "label": "Saturation"
+          },
+          {
+            "value": "color",
+            "label": "Color"
+          },
+          {
+            "value": "luminosity",
+            "label": "Luminosity"
+          }
+        ],
+        "default": "normal"
+      }
+    ]
+  },
+  {
     "name": "🔰 Reusable Classes",
     "settings": [
       {
