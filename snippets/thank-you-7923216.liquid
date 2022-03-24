@@ -1,4 +1,4 @@
-<div class="">
+<div class="hidden">
     <modal-opener class="popupmodal--thankyou__opener-{{ section.id }}" data-modal="#PopupModal-{{ section.id }}">
         <button id="ProductPopup-{{ section.id }}" type="button" aria-haspopup="dialog"></button>
     </modal-opener>
@@ -14,6 +14,5 @@
 <script>
 document.addEventListener('DOMContentLoaded', () => {
     document.querySelector(`#${localStorage.getItem('activated-ty-modalpopup')}`).click();
-    console.log('✅');
 })
 </script>
