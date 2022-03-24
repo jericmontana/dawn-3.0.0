@@ -121,7 +121,7 @@
               "text": "GET 10% OFF AT YOUR FIRST PURCHASE",
               "show_btn": true,
               "round_corner": true,
-              "btn_action": "redirect-link",
+              "btn_action": "open-popup",
               "btn_label": "Subscribe",
               "btn_link": "shopify:\/\/pages\/lash-guide",
               "hover_effect": "shine",
