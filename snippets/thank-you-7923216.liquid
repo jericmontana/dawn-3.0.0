@@ -12,9 +12,7 @@
     </div>
 </modal-dialog>
 <script>
-    const event = new CustomEvent('newsletter: posted_successfully', {
+    let event = new CustomEvent('newsletter: posted_successfully', {
     });
-    if(!event){
-        document.dispatchEvent(event);
-    }
+    document.dispatchEvent(event);
 </script>
