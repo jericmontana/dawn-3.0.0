@@ -12,7 +12,9 @@
     </div>
 </modal-dialog>
 <script>
-    const tyModalOpener = document.querySelectorAll('.popupmodal--thankyou__opener-{{ section.id }}');
+    if(!tyModalOpener){
+        const tyModalOpener = document.querySelectorAll('.popupmodal--thankyou__opener-{{ section.id }}');
+    }
     if(tyModalOpener){
         tyModalOpener.forEach(e => e.click());
     }
