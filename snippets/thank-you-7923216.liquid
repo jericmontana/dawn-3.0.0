@@ -11,3 +11,10 @@
         </div>
     </div>
 </modal-dialog>
+<script>
+    const event = new CustomEvent('newsletter: posted_successfully', {
+    });
+    if(!event){
+        document.dispatchEvent(event);
+    }
+</script>
