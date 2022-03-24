@@ -12,10 +12,7 @@
     </div>
 </modal-dialog>
 <script>
-    if(!tyModalOpener){
-        const tyModalOpener = document.querySelectorAll('.popupmodal--thankyou__opener-{{ section.id }}');
-    }
-    if(tyModalOpener){
-        tyModalOpener.forEach(e => e.click());
-    }
+    const event = new CustomEvent('newsletter: posted_successfully', {
+    });
+    document.dispatchEvent(event);
 </script>
