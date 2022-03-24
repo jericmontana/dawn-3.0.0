@@ -55,7 +55,7 @@
             {%- assign email_signup_form = section.blocks | where: 'type', 'email_signup_form' -%}
             {%- for block in email_signup_form -%}
             <div class="section__signup-form">
-                {% form 'customer', class: 'newsletter-form' %}
+                {% form 'customer--{{ section.id }}', class: 'newsletter-form' %}
                 <input type="hidden" name="contact[tags]" value="newsletter">
                 <div class="newsletter-form__field-wrapper center">
                     <div class="field">
