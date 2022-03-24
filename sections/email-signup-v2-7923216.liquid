@@ -84,15 +84,15 @@
                         </label>
                     </div>
 
+                    {%- if form.errors -%}
+                    <small class="newsletter-form__message form__message center" id="Newsletter-error--{{ section.id }}">{% render 'icon-error' %}{{ form.errors.translated_fields['email'] | capitalize }} {{ form.errors.messages['email'] }}</small>
+                    {%- endif -%}
+
                     <div class="field">
                         <button type="submit" class="field__button btn btn--medium btn-he--lighten btn-bs btn--round-corner" name="commit" id="Subscribe">
                             {{block.settings.btn_lbl | escape}}
                         </button>
                     </div>
-
-                    {%- if form.errors -%}
-                    <small class="newsletter-form__message form__message" id="Newsletter-error--{{ section.id }}">{% render 'icon-error' %}{{ form.errors.translated_fields['email'] | capitalize }} {{ form.errors.messages['email'] }}</small>
-                    {%- endif -%}
 
                     {%- if form.posted_successfully? -%}
                         {%- render 'thank-you-7923216'-%}                       
