@@ -1445,7 +1445,7 @@
         "type": "richtext",
         "id": "ty_richtext",
         "label": "Richtext",
-        "default": "<p>Use the code below to get a discount on your first purchase:</p>"
+        "default": "<p>Use the code below to get a discount on your first purchase:<\/p>"
       },
       {
         "type": "text",
@@ -1477,7 +1477,7 @@
         "type": "color",
         "id": "ty_bg_color",
         "label": "Color",
-        "default":"#ffffff"
+        "default": "#ffffff"
       },
       {
         "type": "image_picker",
