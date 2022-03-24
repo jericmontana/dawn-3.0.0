@@ -12,9 +12,5 @@
     </div>
 </modal-dialog>
 <script>
-    if(!true){
-        const event = new CustomEvent('newsletter: posted_successfully', {
-        });
-        document.dispatchEvent(event);
-    }
+    document.getElementsByClassName(localStorage.setItem('activated-ty-modalpopup', `${e.dataset.targetopener}`)).click();
 </script>
