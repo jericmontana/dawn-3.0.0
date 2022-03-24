@@ -89,7 +89,7 @@
                     {%- endif -%}
 
                     <div class="field">
-                        <button type="submit" class="field__button btn btn--medium btn-he--lighten btn-bs btn--round-corner" name="commit" id="Subscribe">
+                        <button type="submit" data-targetopener="popupmodal--thankyou__opener-{{ section.id }}" class="field__button field__button--with-ty btn btn--medium btn-he--lighten btn-bs btn--round-corner" name="commit" id="Subscribe">
                             {{block.settings.btn_lbl | escape}}
                         </button>
                     </div>
