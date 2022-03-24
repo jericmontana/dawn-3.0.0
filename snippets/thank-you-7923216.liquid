@@ -1,8 +1,19 @@
-<modal-dialog id="PopupModal-{{ block.id }}" class="popupmodal--thankyou">
-    <div role="dialog" aria-label="{{ block.settings.text }}" aria-modal="true" class="popupmodal--thankyou__content" tabindex="-1">
-        <button id="ModalClose-{{ block.id }}" type="button" class="popupmodal--thankyou__toggle" aria-label="{{ 'accessibility.close' | t }}">{% render 'icon-close' %}</button>
+<div class="hidden">
+    <modal-opener class="popupmodal--thankyou__opener-{{ section.id }}" data-modal="#PopupModal-{{ section.id }}">
+        <button id="ProductPopup-{{ section.id }}" type="button" aria-haspopup="dialog"></button>
+    </modal-opener>
+</div>
+<modal-dialog id="PopupModal-{{ section.id }}" class="popupmodal--thankyou">
+    <div role="dialog" aria-modal="true" class="popupmodal--thankyou__content" tabindex="-1">
+        <button id="ModalClose-{{ section.id }}" type="button" class="popupmodal--thankyou__toggle" aria-label="{{ 'accessibility.close' | t }}">{% render 'icon-close' %}</button>
         <div class="popupmodal--thankyou__content-info">
             <h1>Thank You!!!</h1>
         </div>
     </div>
 </modal-dialog>
+<script>
+    const tyModalOpener = document.querySelectorAll('.popupmodal--thankyou__opener-{{ section.id }}');
+    if(tyModalOpener){
+        tyModalOpener.forEach(e => e.click());
+    }
+</script>
