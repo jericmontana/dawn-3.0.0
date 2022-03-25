@@ -73,8 +73,6 @@
                             autofocus
                             aria-invalid="true"
                             aria-describedby="Newsletter-error--{{ section.id }}"
-                            {% elsif form.posted_successfully? %}
-                            aria-describedby="Newsletter-success--{{ section.id }}"
                             {% endif %}
                             placeholder="{{ block.settings.placeholder | escape }}"
                             required
