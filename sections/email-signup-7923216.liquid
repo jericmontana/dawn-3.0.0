@@ -101,10 +101,10 @@
 
                     {%- if form.errors -%}
                         <small class="newsletter-form__message form__message" id="Newsletter-error--{{ section.id }}">{% render 'icon-error' %}{{ form.errors.translated_fields['email'] | capitalize }} {{ form.errors.messages['email'] }}</small>
-                    {%- elsif form.posted_successfully? -%}
-                        {%- render 'thank-you-7923216'-%}
-                    {%- else -%} 
-                        <small class="newsletter-form__message form__message" id="Newsletter-error--{{ section.id }}">{% render 'icon-error' %}Email already exists.</small>                     
+                    {%- endif -%}
+
+                    {%- if form.posted_successfully? -%}
+                        {%- render 'thank-you-7923216'-%}                       
                     {%- endif -%}
                 </div>
                 {% endform %}
