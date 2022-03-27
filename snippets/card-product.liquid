@@ -68,20 +68,6 @@
                 height="{{ card_product.featured_media.height }}"
               >
 
-              {% comment %} <img
-                srcset="{%- if card_product.featured_media.width >= 165 -%}{{ card_product.featured_media | image_url: width: 165, height: 165, crop: 'center' }} 165w,{%- endif -%}
-                  {%- if card_product.featured_media.width >= 360 -%}{{ card_product.featured_media | image_url: width: 360, height: 360, crop: 'center' }} 360w,{%- endif -%}
-                  {%- if card_product.featured_media.width >= 533 -%}{{ card_product.featured_media | image_url: width: 533, height: 533, crop: 'center' }} 533w,{%- endif -%}
-                  {%- if card_product.featured_media.width >= 720 -%}{{ card_product.featured_media | image_url: width: 720, height: 720, crop: 'center' }} 720w,{%- endif -%}
-                  {%- if card_product.featured_media.width >= 940 -%}{{ card_product.featured_media | image_url: width: 940, height: 940, crop: 'center'}} 940w,{%- endif -%}
-                  {%- if card_product.featured_media.width >= 1066 -%}{{ card_product.featured_media | image_url: width: 1066, height: 1066, crop: 'center' }} 1066w,{%- endif -%}"
-                src="{{ card_product.featured_media | image_url: width: 533, height: 533, crop: 'center' }}"
-                alt="{{ image_alt | escape }}"
-                title="{{ image_alt | escape }}"
-                class="motion-reduce"
-                loading="lazy"
-              > {% endcomment %}
-
               {%- if card_product.media[1] != nil and show_secondary_image -%}
                 {%- liquid
                   if card_product.media[1].alt == blank
