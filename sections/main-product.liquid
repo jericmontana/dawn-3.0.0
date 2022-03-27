@@ -222,6 +222,15 @@
           {%- case block.type -%}
           {%- when '@app' -%}
             {% render block %}
+          {%- when 'usp' -%}
+            <div class="products__usp">
+              <div class="products__usp--icon" title="{{ block.settings.usp_icon | escape }}">
+                {% render 'product-box-usp', icon: block.settings.usp_icon -%}
+              </div>
+              <div class="products__usp--text">
+                <h2 class="h3">{{block.settings.title | escape }}</h2>
+              </div>
+            </div>
           {%- when 'text' -%}
             <p class="product__text{% if block.settings.text_style == 'uppercase' %} caption-with-letter-spacing{% elsif block.settings.text_style == 'subtitle' %} subtitle{% endif %}" {{ block.shopify_attributes }}>
               {{- block.settings.text -}}
@@ -630,6 +639,54 @@
   "blocks": [
     {
       "type": "@app"
+    },
+    {
+      "type": "usp",
+      "name": "USP",
+      "settings": [
+        {
+          "type": "select",
+          "id": "usp_icon",
+          "label": "Icon",
+          "options": [
+            {
+              "value": "money-back-guarantee",
+              "label": "Money Back Guarantee"
+            },
+            {
+              "value": "easy-to-apply",
+              "label": "Easy to apply"
+            },
+            {
+              "value": "handmade",
+              "label": "Handmade"
+            },
+            {
+              "value": "lightweight",
+              "label": "Lightweight"
+            },
+            {
+              "value": "longlasting",
+              "label": "Longlasting"
+            },
+            {
+              "value": "multiple-use",
+              "label": "Multiple Use"
+            },
+            {
+              "value": "natural",
+              "label": "Natural"
+            }
+          ],
+          "default": "natural"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Text",
+          "default": "Tortor aptent sagittis lectus"
+        }
+      ]
     },
     {
       "type": "text",

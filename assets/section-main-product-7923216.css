@@ -113,3 +113,40 @@ modal-opener.product-popup-modal__opener {
 .section--product-box .product-form__buttons .loading-overlay__spinner svg {
   color: #ffffff;
 }
+.section--product-box .products__usp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.section--product-box .products__usp--icon {
+  width: 100%;
+  height: 100%;
+  max-width: 4rem;
+  max-height: 4rem;
+  padding: 0.5rem;
+  margin-right: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: var(--gradient-base-accent-1);
+  -webkit-box-shadow: 0px 0px 12px -4px rgba(var(--color-base-accent-1), 0.75);
+          box-shadow: 0px 0px 12px -4px rgba(var(--color-base-accent-1), 0.75);
+}
+.section--product-box .products__usp--text h2 {
+  margin-top: 0rem;
+  margin-bottom: 0rem;
+}
