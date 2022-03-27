@@ -45,6 +45,34 @@
             "title": "Ultra-natural Looking"
           }
         },
+        "6b4f1a86-00b6-4381-b279-3e287bd10386": {
+          "type": "usp",
+          "settings": {
+            "usp_icon": "lightweight",
+            "title": "Lightweight & Comfortable"
+          }
+        },
+        "52729db1-d743-4d31-8a9b-09990082856a": {
+          "type": "usp",
+          "settings": {
+            "usp_icon": "multiple-use",
+            "title": "Multiple Wears"
+          }
+        },
+        "1bde4e8e-f60f-4057-9213-41821144cdfe": {
+          "type": "usp",
+          "settings": {
+            "usp_icon": "handmade",
+            "title": "100% Handmade"
+          }
+        },
+        "229bc4a5-eb43-44a2-a834-300890d04993": {
+          "type": "usp",
+          "settings": {
+            "usp_icon": "longlasting",
+            "title": "15x Wears with proper care"
+          }
+        },
         "description": {
           "type": "description",
           "disabled": true,
@@ -71,6 +99,10 @@
         "f8b97ee0-3cf9-4858-91c3-8ecc55aafc9f",
         "3ee7ac2b-3431-4efc-962b-fdd4f48f3d40",
         "3e664966-73af-4197-b649-13115bfe128d",
+        "6b4f1a86-00b6-4381-b279-3e287bd10386",
+        "52729db1-d743-4d31-8a9b-09990082856a",
+        "1bde4e8e-f60f-4057-9213-41821144cdfe",
+        "229bc4a5-eb43-44a2-a834-300890d04993",
         "description",
         "quantity_selector",
         "buy_buttons"
