@@ -24,6 +24,27 @@
             "picker_type": "button"
           }
         },
+        "f8b97ee0-3cf9-4858-91c3-8ecc55aafc9f": {
+          "type": "usp",
+          "settings": {
+            "usp_icon": "money-back-guarantee",
+            "title": "60 Day Money Back Guarantee"
+          }
+        },
+        "3ee7ac2b-3431-4efc-962b-fdd4f48f3d40": {
+          "type": "usp",
+          "settings": {
+            "usp_icon": "easy-to-apply",
+            "title": "Easy To Apply"
+          }
+        },
+        "3e664966-73af-4197-b649-13115bfe128d": {
+          "type": "usp",
+          "settings": {
+            "usp_icon": "natural",
+            "title": "Ultra-natural Looking"
+          }
+        },
         "description": {
           "type": "description",
           "disabled": true,
@@ -47,6 +68,9 @@
         "805fb50f-3e5f-4272-9b05-4a75bb375e1e",
         "price",
         "variant_picker",
+        "f8b97ee0-3cf9-4858-91c3-8ecc55aafc9f",
+        "3ee7ac2b-3431-4efc-962b-fdd4f48f3d40",
+        "3e664966-73af-4197-b649-13115bfe128d",
         "description",
         "quantity_selector",
         "buy_buttons"
