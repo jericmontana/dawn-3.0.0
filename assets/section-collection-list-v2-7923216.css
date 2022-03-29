@@ -15,6 +15,7 @@
 }
 .section--collection-list-v2 .section__collection .section__collection--image {
   position: relative;
+  min-height: 300px;
 }
 .section--collection-list-v2 .section__collection .section__collection--image img {
   height: 100%;
