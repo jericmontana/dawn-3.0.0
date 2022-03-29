@@ -170,16 +170,18 @@
         "16485172155d486ace-3": {
           "type": "collection",
           "settings": {
-            "featured_collection": "",
+            "featured_collection": "eyeshadow-palettes",
             "title": "",
+            "featured_collection_image": "shopify:\/\/shop_images\/EYESHADOW_PALETTES.png",
             "use_custom_image": true
           }
         },
         "16485172155d486ace-4": {
           "type": "collection",
           "settings": {
-            "featured_collection": "",
+            "featured_collection": "accessories",
             "title": "",
+            "featured_collection_image": "shopify:\/\/shop_images\/ACCESSORIES.png",
             "use_custom_image": true
           }
         }
