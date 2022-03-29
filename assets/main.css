@@ -4321,10 +4321,6 @@ modal-dialog.popupmodal--thankyou .popupmodal--thankyou__content-info .popupmoda
       -ms-flex-align: center;
           align-items: center;
 }
-modal-dialog.popupmodal--thankyou .popupmodal--thankyou__content-info .popupmodal--thankyou__image img {
-  width: auto;
-  max-height: 333px;
-}
 modal-dialog.popupmodal--thankyou .popupmodal--thankyou__content-info .popupmodal--thankyou__copy {
   padding-left: 1rem;
   display: -webkit-box;
