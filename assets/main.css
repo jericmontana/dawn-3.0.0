@@ -3854,6 +3854,14 @@ label.unavailable {
   width: auto !important;
   max-width: none !important;
 }
+.btn.btn--xs {
+  padding: 5px 8px;
+  font-weight: 400;
+  max-width: 120px;
+}
+.btn.btn--xs svg {
+  margin-left: 1rem;
+}
 .btn.btn--default {
   padding: 7px 10px;
   font-weight: 400;
