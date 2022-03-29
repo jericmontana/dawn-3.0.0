@@ -161,8 +161,9 @@
         "16485172155d486ace-2": {
           "type": "collection",
           "settings": {
-            "featured_collection": "",
+            "featured_collection": "lippies",
             "title": "",
+            "featured_collection_image": "shopify:\/\/shop_images\/AVACLUXE_LIPPIES.png",
             "use_custom_image": true
           }
         },
