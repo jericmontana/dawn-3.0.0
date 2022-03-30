@@ -18,6 +18,12 @@
           "settings": {
           }
         },
+        "ad499205-b507-49e5-9d94-d1ebda366e84": {
+          "type": "popup_description",
+          "settings": {
+            "text": "Popup Description"
+          }
+        },
         "variant_picker": {
           "type": "variant_picker",
           "settings": {
@@ -95,6 +101,7 @@
         "title",
         "805fb50f-3e5f-4272-9b05-4a75bb375e1e",
         "price",
+        "ad499205-b507-49e5-9d94-d1ebda366e84",
         "variant_picker",
         "f8b97ee0-3cf9-4858-91c3-8ecc55aafc9f",
         "3ee7ac2b-3431-4efc-962b-fdd4f48f3d40",
