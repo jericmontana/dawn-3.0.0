@@ -59,14 +59,14 @@
             "type": "link_list",
             "settings": {
               "heading": "Quick Links",
-              "menu": "footer"
+              "menu": "quick-links-fo"
             }
           },
           "footer-2": {
             "type": "link_list",
             "settings": {
               "heading": "Customer Service",
-              "menu": "footer"
+              "menu": "customer-service-fo"
             }
           },
           "footer-3": {
