@@ -23,3 +23,6 @@
 .section--app-block .jdgm-carousel__arrows {
   display: none !important;
 }
+.section--app-block .jdgm-carousel-wrapper {
+  padding: 1rem 0 !important;
+}
