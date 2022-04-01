@@ -3293,6 +3293,14 @@ label.unavailable {
   display: none !important;
 }
 
+.privy-tab {
+  background-color: rgb(var(--color-base-solid-button-labels)) !important;
+}
+.privy-tab * {
+  font-family: inherit !important;
+  color: rgb(var(--color-base-accent-1)) !important;
+}
+
 /* Device Sizes | Mobile - Default */
 .pagination__list li {
   position: relative;
