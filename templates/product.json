@@ -95,6 +95,11 @@
           "settings": {
             "show_dynamic_checkout": false
           }
+        },
+        "b6e55219-193b-43de-a589-16941fc78044": {
+          "type": "wishlist_button",
+          "settings": {
+          }
         }
       },
       "block_order": [
@@ -112,7 +117,8 @@
         "229bc4a5-eb43-44a2-a834-300890d04993",
         "description",
         "quantity_selector",
-        "buy_buttons"
+        "buy_buttons",
+        "b6e55219-193b-43de-a589-16941fc78044"
       ],
       "settings": {
         "enable_sticky_info": true,
