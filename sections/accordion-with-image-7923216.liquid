@@ -7,6 +7,8 @@
 {%- assign button = section.blocks | where: 'type', 'button' -%}
 
 {% assign use_as_default_padding = section.settings.use_as_default_padding %}
+{% assign accordion_default_color = section.settings.accordion_default_color %}
+
 {%- style -%}
     {%- if use_as_default_padding -%}
         .section--accordion-with-image .section-{{ section.id }}-padding {
@@ -19,6 +21,12 @@
                 padding-top: {{ section.settings.padding_top }}px !important;
                 padding-bottom: {{ section.settings.padding_bottom }}px !important;
             }
+        }
+    {%- endif -%}
+
+    {%- if accordion_default_color -%}
+        .section--accordion-with-image-{{section.id}} .summary__title{
+            background-color: {{ section.settings.accordion_color }} !important;
         }
     {%- endif -%}
 
@@ -224,6 +232,17 @@
             {
                 "type": "header",
                 "content": "Accordion Settings"
+            },
+            {
+                "type": "checkbox",
+                "id": "accordion_default_color",
+                "label": "Set as default color",
+                "default": false
+            },
+            {
+                "type": "color",
+                "id": "accordion_color",
+                "label": "Color"
             },
             {
                 "type": "header",
