@@ -26,3 +26,6 @@
 .section--app-block .jdgm-carousel-wrapper {
   padding: 1rem 0 !important;
 }
+.section--app-block .jdgm-branding-footer {
+  display: none !important;
+}
