@@ -434,7 +434,7 @@
                       type="search"
                       name="q"
                       value="{{ search.terms | escape }}"
-                      placeholder="Type keyword here.."
+                      placeholder="Search..."
                       {%- if settings.predictive_search_enabled -%}
                           role="combobox"
                           aria-expanded="false"
@@ -448,7 +448,7 @@
                           spellcheck="false"
                       {%- endif -%}
                       >
-                      <label class="field__label" for="Search-In-Template">Type keyword here..</label>
+                      <label class="field__label" for="Search-In-Template">Search...</label>
                       <input name="options[prefix]" type="hidden" value="last">
 
                       {%- if settings.predictive_search_enabled -%}

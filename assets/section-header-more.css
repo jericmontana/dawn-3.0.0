@@ -64,7 +64,8 @@
     stroke-width: 2;
   }
   .header__inline-menu--with-predictive-search .search-form__field-wrapper {
-    max-width: 500px;
+    width: 100%;
+    max-width: 210px;
     margin-left: auto;
     margin-right: auto;
   }
