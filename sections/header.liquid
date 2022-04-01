@@ -77,6 +77,17 @@
       margin-bottom: {{ section.settings.margin_bottom }}px;
     }
   }
+
+
+  {% case section.settings.color_scheme %}
+    {% when 'background-1' %}
+    .header .section__search .search__button{
+        background-color: rgb({{ settings.colors_accent_2.red }}, {{ settings.colors_accent_2.green }}, {{ settings.colors_accent_2.blue }}) !important;
+    }
+    .header .section__search .search-form__field-wrapper .field__input{
+        border-color: rgb({{ settings.colors_accent_2.red }}, {{ settings.colors_accent_2.green }}, {{ settings.colors_accent_2.blue }}) !important;
+    }
+  {% endcase %}
 {%- endstyle -%}
 
 <script src="{{ 'details-disclosure.js' | asset_url }}" defer="defer"></script>
@@ -363,7 +374,7 @@
     {%- endif -%}
 
     {%- if section.settings.menu != blank -%}
-      <nav class="header__inline-menu">
+      <nav class="header__inline-menu header__inline-menu--with-predictive-search">
         <ul class="list-menu list-menu--inline" role="list">
           {%- for link in section.settings.menu.links -%}
             <li>
@@ -411,11 +422,60 @@
             </li>
           {%- endfor -%}
         </ul>
+
+        <div class="section__search medium-hide small-hide">
+          <predictive-search data-loading-text="{{ 'accessibility.loading' | t }}">
+              <form action="{{ routes.search_url }}" method="get" role="search" class="search">
+              <div class="search-form__field-wrapper">
+                  <div class="field">
+                      <input
+                      class="search__input field__input"
+                      id="Search-In-Template"
+                      type="search"
+                      name="q"
+                      value="{{ search.terms | escape }}"
+                      placeholder="Type keyword here.."
+                      {%- if settings.predictive_search_enabled -%}
+                          role="combobox"
+                          aria-expanded="false"
+                          aria-owns="predictive-search-results-list"
+                          aria-controls="predictive-search-results-list"
+                          aria-haspopup="listbox"
+                          aria-autocomplete="list" 
+                          autocorrect="off"
+                          autocomplete="off"
+                          autocapitalize="off"
+                          spellcheck="false"
+                      {%- endif -%}
+                      >
+                      <label class="field__label" for="Search-In-Template">Type keyword here..</label>
+                      <input name="options[prefix]" type="hidden" value="last">
+
+                      {%- if settings.predictive_search_enabled -%}
+                      <div class="predictive-search" tabindex="-1" data-predictive-search>
+                          <div class="predictive-search__loading-state">
+                          <svg aria-hidden="true" focusable="false" role="presentation" class="spinner" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
+                              <circle class="path" fill="none" stroke-width="6" cx="33" cy="33" r="30"></circle>
+                          </svg>
+                          </div>
+                      </div>
+          
+                      <span class="predictive-search-status visually-hidden" role="status" aria-hidden="true"></span> 
+                      {%- endif -%}
+                          
+                      <button type="submit" class="search__button field__button">
+                          {% render 'icon-search'%}
+                      </button>
+                  </div>
+              </div>
+              </form>
+          </predictive-search>
+        </div>
       </nav>
     {%- endif -%}
 
     <div class="header__icons">
-      <details-modal class="header__search">
+      <details-modal class="header__search large-up-hide">
         <details>
           <summary class="header__icon header__icon--search header__icon--summary link focus-inset modal__toggle" aria-haspopup="dialog" aria-label="{{ 'general.search.search' | t }}">
             <span>
