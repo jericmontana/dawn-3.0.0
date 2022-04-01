@@ -1,0 +1,25 @@
+.section--app-block .jdgm-rev__buyer-badge {
+  background-color: rgb(var(--color-base-accent-1)) !important;
+  color: rgb(var(--color-base-solid-button-labels)) !important;
+}
+.section--app-block .jdgm-rev__icon::after {
+  background-color: rgb(var(--color-base-accent-1)) !important;
+  color: rgb(var(--color-base-solid-button-labels)) !important;
+}
+.section--app-block .jdgm-star {
+  color: rgb(var(--color-base-accent-1)) !important;
+}
+.section--app-block .jdgm-histogram .jdgm-histogram__bar-content {
+  background-color: rgb(var(--color-base-accent-1)) !important;
+  background: rgb(var(--color-base-accent-1)) !important;
+}
+.section--app-block .jdgm-ask-question-btn, .section--app-block .jdgm-write-rev-link {
+  border-color: rgb(var(--color-base-accent-1)) !important;
+  color: rgb(var(--color-base-accent-1)) !important;
+}
+.section--app-block .jdgm-carousel-item__product-title {
+  color: rgb(var(--color-base-accent-1)) !important;
+}
+.section--app-block .jdgm-carousel__arrows {
+  display: none !important;
+}
