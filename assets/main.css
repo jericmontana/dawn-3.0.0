@@ -4548,14 +4548,14 @@ modal-dialog.popupmodal--thankyou .popupmodal--thankyou__toggle {
   position: relative;
   background-color: #ffffff;
   color: rgb(var(--color-btn-lbl));
-  padding: 2rem 1rem;
+  padding: 2rem 0.5rem;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
   -webkit-box-shadow: 0px 0px 10px -3px rgba(0, 0, 0, 0.75);
           box-shadow: 0px 0px 10px -3px rgba(0, 0, 0, 0.75);
 }
 .section__tab--control .icon {
-  width: 23px;
+  width: 20px;
   height: auto;
   fill: #ffffff !important;
   stroke: rgba(var(--color-btn-bg), 0.8);
