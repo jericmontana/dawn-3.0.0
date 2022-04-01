@@ -3281,6 +3281,18 @@ label.unavailable {
   opacity: 0;
 }
 
+#privy-widget * {
+  font-family: inherit !important;
+}
+#privy-widget [data-testid=privy-links-container] {
+  opacity: 0 !important;
+  display: none !important;
+}
+#privy-widget [data-testid=privy-links-container] * {
+  opacity: 0 !important;
+  display: none !important;
+}
+
 /* Device Sizes | Mobile - Default */
 .pagination__list li {
   position: relative;
