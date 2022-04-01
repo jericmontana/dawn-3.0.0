@@ -3295,6 +3295,9 @@ label.unavailable {
 
 .privy-tab {
   background-color: rgb(var(--color-base-solid-button-labels)) !important;
+  border: 2px solid rgb(var(--color-base-accent-1)) !important;
+  -webkit-box-shadow: 8px 0px 38px -10px rgba(0, 0, 0, 0.75);
+          box-shadow: 8px 0px 38px -10px rgba(0, 0, 0, 0.75);
 }
 .privy-tab * {
   font-family: inherit !important;
