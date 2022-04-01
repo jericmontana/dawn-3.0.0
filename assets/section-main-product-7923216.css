@@ -106,6 +106,8 @@ modal-opener.product-popup-modal__opener {
   color: #FFFFFF;
   -webkit-box-shadow: 2px 5px 18px -10px rgba(0, 0, 0, 0.74);
           box-shadow: 2px 5px 18px -10px rgba(0, 0, 0, 0.74);
+  margin-left: auto;
+  margin-right: auto;
 }
 .section--product-box .product-form__buttons button:first-of-type {
   margin-bottom: 2rem;
@@ -149,4 +151,19 @@ modal-opener.product-popup-modal__opener {
 .section--product-box .products__usp--text h2 {
   margin-top: 0rem;
   margin-bottom: 0rem;
+}
+.section--product-box .product-form__buttons .button-wishlist svg {
+  width: 18px;
+  height: auto;
+  margin-right: 1rem;
+}
+.section--product-box .product-form__buttons .icon.icon-heart {
+  fill: transparent;
+  -webkit-transition: fill 0.3s ease;
+  transition: fill 0.3s ease;
+  stroke-width: 2;
+  stroke: #FFFFFF;
+}
+.section--product-box .product-form__buttons .active .icon.icon-heart {
+  fill: #FFFFFF;
 }

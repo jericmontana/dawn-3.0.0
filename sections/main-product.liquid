@@ -62,9 +62,9 @@
           <span class="best-seller--badge"> Best Seller </span>
         {%- endif -%}
       </div>
-      <div class="card__icon card__icon-wishlist">
+      {% comment %} <div class="card__icon card__icon-wishlist">
         {% render 'button-wishlist', product: product %}
-      </div>
+      </div> {% endcomment %}
       <media-gallery id="MediaGallery-{{ section.id }}" role="region" {% if section.settings.enable_sticky_info %}class="product__media-gallery"{% endif %} aria-label="{{ 'products.product.media.gallery_viewer' | t }}" data-desktop-layout="{{ section.settings.gallery_layout }}">
         <div id="GalleryStatus-{{ section.id }}" class="visually-hidden" role="status"></div>
         <slider-component id="GalleryViewer-{{ section.id }}" class="slider-mobile-gutter">
@@ -383,6 +383,12 @@
                 </div>
               </div>
             </noscript>
+          {%- when 'wishlist_button' -%}
+            <div class="product-form__buttons">
+              <button title="Add/Remove {{ product.title | escape }} to your wishlist" type="button" aria-label="Add to wishlist" class="button-wishlist button button--full-width btn--round-corner" button-wishlist data-product-handle="{{ product.handle }}">
+                {%- render 'icon-heart' -%}<span>Add to wishlist</span>
+              </button>
+            </div>
           {%- when 'buy_buttons' -%}
             <div {{ block.shopify_attributes }}>
               <product-form class="product-form">
@@ -776,6 +782,12 @@
           "label": "t:sections.main-product.blocks.variant_picker.settings.picker_type.label"
         }
       ]
+    },
+    {
+      "type": "wishlist_button",
+      "name": "Wishlist Button",
+      "limit": 1,
+      "settings":[]
     },
     {
       "type": "buy_buttons",
