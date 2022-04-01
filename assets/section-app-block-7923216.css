@@ -17,7 +17,7 @@
   border-color: rgb(var(--color-base-accent-1)) !important;
   color: rgb(var(--color-base-accent-1)) !important;
 }
-.section--app-block .jdgm-carousel-item__product-title {
+.section--app-block .jdgm-carousel-item__product-title, .section--app-block .jdgm-rev__prod-link {
   color: rgb(var(--color-base-accent-1)) !important;
 }
 .section--app-block .jdgm-carousel__arrows {
