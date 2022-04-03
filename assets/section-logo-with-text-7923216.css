@@ -14,7 +14,7 @@
   position: relative;
   width: 100%;
 }
-.section--logo-with-text .section__logo-and-text--logo svg {
+.section--logo-with-text .section__logo-and-text--logo svg, .section--logo-with-text .section__logo-and-text--logo img {
   max-height: 100px;
   width: auto;
 }

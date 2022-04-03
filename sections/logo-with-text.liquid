@@ -86,7 +86,40 @@
                         {%- for image_with_text_block in image_with_text_blocks -%}
                             <li class="grid__item" title="{{image_with_text_block.settings.logo_svg}}">
                                 <div class="section__logo-and-text--logo">
+                                {%- if image_with_text_block.settings.use_image -%}
+                                    {%- if image_with_text_block.settings.image == blank -%}
+                                        {% render 'no-image'%}
+                                    {%- else -%}
+                                        {%- liquid
+                                            if image_with_text_block.settings.image.alt == blank
+                                                assign image_alt = image_with_text_block.settings.title
+                                                assign image_title = image_with_text_block.settings.title
+                                            else
+                                                assign image_alt = image_with_text_block.settings.image.alt
+                                                assign image_title = image_with_text_block.settings.image.alt
+                                            endif
+                                        -%}
+                                        <img
+                                            srcset="{%- if image_with_text_block.settings.image.width >= 165 -%}{{ image_with_text_block.settings.image | image_url: width: 165 }} 165w,{%- endif -%}
+                                            {%- if image_with_text_block.settings.image.width >= 360 -%}{{ image_with_text_block.settings.image | image_url: width: 360 }} 360w,{%- endif -%}
+                                            {%- if image_with_text_block.settings.image.width >= 533 -%}{{ image_with_text_block.settings.image | image_url: width: 533 }} 533w,{%- endif -%}
+                                            {%- if image_with_text_block.settings.image.width >= 720 -%}{{ image_with_text_block.settings.image | image_url: width: 720 }} 720w,{%- endif -%}
+                                            {%- if image_with_text_block.settings.image.width >= 940 -%}{{ image_with_text_block.settings.image | image_url: width: 940 }} 940w,{%- endif -%}
+                                            {%- if image_with_text_block.settings.image.width >= 1066 -%}{{ image_with_text_block.settings.image | image_url: width: 1066 }} 1066w,{%- endif -%}
+                                            {{ image_with_text_block.settings.image | image_url }} {{ image_with_text_block.settings.image.width }}w"
+                                            src="{{ image_with_text_block.settings.image | image_url: width: 165 }}"
+                                            sizes="(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 130 | divided_by: 4 }}px, (min-width: 990px) calc((100vw - 130px) / 4), (min-width: 750px) calc((100vw - 120px) / 3), calc((100vw - 35px) / 2)"
+                                            alt="{{ image_alt | escape }}"
+                                            title="{{ image_alt | escape }}"
+                                            class="motion-reduce"
+                                            loading="lazy"
+                                            width="{{ image_with_text_block.settings.image.width }}"
+                                            height="{{ image_with_text_block.settings.image.height }}"
+                                        >
+                                    {%- endif -%}
+                                {%- else -%}
                                     {%- render 'logo-svg', logo_svg:image_with_text_block.settings.logo_svg -%}
+                                {%- endif -%}
                                 </div>
                                 <div class="section__logo-and-text--text">
                                     <h3 class="h3 center">{{ image_with_text_block.settings.title | escape }}</h3>
@@ -353,6 +386,17 @@
                         }
                     ],
                     "default": "loved-by-hundreds"
+                },
+                {
+                    "type": "checkbox",
+                    "id": "use_image",
+                    "label": "Use Image",
+                    "default": true
+                },
+                {
+                    "type": "image_picker",
+                    "id": "image",
+                    "label": "Image"
                 },
                 {
                     "type": "text",
