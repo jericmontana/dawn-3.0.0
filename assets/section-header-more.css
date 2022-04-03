@@ -28,12 +28,16 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+  .header__inline-menu--with-predictive-search .list-menu--inline {
+    margin-left: auto;
+    margin-right: auto;
   }
   .header__inline-menu--with-predictive-search .section__search {
     padding-left: 2rem;
