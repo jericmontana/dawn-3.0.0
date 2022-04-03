@@ -152,6 +152,8 @@
           "type": "image_with_text",
           "settings": {
             "logo_svg": "high-quality",
+            "use_image": true,
+            "image": "shopify:\/\/shop_images\/High-Quality.png",
             "title": "high quality"
           }
         },
@@ -159,6 +161,8 @@
           "type": "image_with_text",
           "settings": {
             "logo_svg": "substantial",
+            "use_image": true,
+            "image": "shopify:\/\/shop_images\/Substantial.png",
             "title": "substantial"
           }
         },
@@ -166,6 +170,8 @@
           "type": "image_with_text",
           "settings": {
             "logo_svg": "loved-by-hundreds",
+            "use_image": true,
+            "image": "shopify:\/\/shop_images\/Loved-by-hundreds.png",
             "title": "loved by hundreds"
           }
         },
@@ -173,6 +179,8 @@
           "type": "image_with_text",
           "settings": {
             "logo_svg": "free-shipping",
+            "use_image": true,
+            "image": "shopify:\/\/shop_images\/Free-Shipping.png",
             "title": "free shipping"
           }
         }
