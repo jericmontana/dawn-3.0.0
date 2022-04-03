@@ -61,6 +61,9 @@
     margin-right: auto;
   }
 }
+.section--hb__button .btn--default {
+  max-width: 230px;
+}
 .section--hb__kicker, .section--hb__heading, .section--hb__subheading, .section--hb__button {
   width: 100%;
 }
