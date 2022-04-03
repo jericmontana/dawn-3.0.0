@@ -152,6 +152,11 @@ modal-opener.product-popup-modal__opener {
   margin-top: 0rem;
   margin-bottom: 0rem;
 }
+.section--product-box .product-form__buttons .button-wishlist {
+  border: 3px solid rgb(var(--color-btn-bg));
+  background-color: #FFFFFF;
+  color: rgb(var(--color-btn-bg));
+}
 .section--product-box .product-form__buttons .button-wishlist svg {
   width: 18px;
   height: auto;
@@ -162,8 +167,8 @@ modal-opener.product-popup-modal__opener {
   -webkit-transition: fill 0.3s ease;
   transition: fill 0.3s ease;
   stroke-width: 2;
-  stroke: #FFFFFF;
+  stroke: rgb(var(--color-btn-bg));
 }
 .section--product-box .product-form__buttons .active .icon.icon-heart {
-  fill: #FFFFFF;
+  fill: rgb(var(--color-btn-bg));
 }
