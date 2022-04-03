@@ -90,10 +90,48 @@ modal-opener.product-popup-modal__opener {
 }
 @media screen and (min-width: 750px) {
   .section--product-box .product__description {
-    max-height: 220px;
+    max-height: 280px;
     overflow: scroll;
     padding-right: 1rem;
   }
+}
+.section--product-box .product-popup-modal-container {
+  position: relative;
+  padding: 1rem;
+  padding-left: 0;
+}
+.section--product-box .product-popup-modal-container .product-popup-modal__description {
+  text-align: justify;
+}
+@media screen and (min-width: 750px) {
+  .section--product-box .product-popup-modal-container .product-popup-modal__description {
+    max-height: 280px;
+    overflow: scroll;
+    padding-right: 1rem;
+  }
+}
+.section--product-box .product-popup-modal-container .product-popup-modal__opener--description {
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
+  margin-bottom: 1rem;
+}
+.section--product-box .product-popup-modal-container .product-popup-modal__opener--description button::after {
+  display: none;
+}
+.section--product-box .product-popup-modal-container .product-popup-modal__opener--description button svg {
+  width: 20px;
+  height: auto;
+  margin-left: 1rem;
+  background-color: var(--gradient-base-accent-1);
+  border-radius: 4px;
+  padding: 2px;
+  color: #FFFFFF;
+  -webkit-box-shadow: 2px 5px 18px -10px rgba(0, 0, 0, 0.74);
+          box-shadow: 2px 5px 18px -10px rgba(0, 0, 0, 0.74);
+}
+.section--product-box .product-popup-modal-container .product-popup-modal__opener--description .product-popup-modal__button {
+  padding-right: 0;
+  height: auto;
 }
 .section--product-box .product-form__buttons button:after {
   display: none !important;
