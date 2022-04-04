@@ -7,18 +7,12 @@
   padding: 1rem;
 }
 .section--featured-blog .section__article--image {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   margin-bottom: 1rem;
   overflow: hidden;
   max-height: 200px;
+  position: relative;
+  height: 0;
+  padding-bottom: 100%;
 }
 .section--featured-blog .section__article--image img {
   height: auto;
