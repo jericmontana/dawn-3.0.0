@@ -485,6 +485,36 @@
         "padding_bottom": 36
       }
     },
+    "164904944832e938ee": {
+      "type": "featured-blog-7923216",
+      "blocks": {
+        "1649049448180c2887-0": {
+          "type": "heading",
+          "settings": {
+            "title": "Check out our most popular blog posts.",
+            "title_uppercase": false,
+            "subtitle": "Mus mauris vitae ultricies leo. Ac feugiat sed lectus vestibulum lacus laoreet non curabitur."
+          }
+        },
+        "1649049448180c2887-1": {
+          "type": "blog",
+          "settings": {
+            "blog": "news",
+            "post_limit": 4
+          }
+        }
+      },
+      "block_order": [
+        "1649049448180c2887-0",
+        "1649049448180c2887-1"
+      ],
+      "settings": {
+        "color_scheme": "background-1",
+        "use_as_default_padding": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "1646904089b7a2f60f": {
       "type": "app-block-7923216",
       "blocks": {
@@ -536,6 +566,7 @@
     "1646294267406b368a",
     "16469040093fa15a8d",
     "1646313626697ca18a",
+    "164904944832e938ee",
     "1646904089b7a2f60f",
     "1646848339941da1e7"
   ]
