@@ -1,0 +1,17 @@
+.section--featured-blog .section__article--image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 1rem;
+}
+.section--featured-blog .section__article--info h3 {
+  margin-top: 0;
+  text-align: center;
+  font-weight: 600;
+}
