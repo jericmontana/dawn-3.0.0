@@ -9,7 +9,7 @@
 
 {{ 'section-main-product-7923216.css' | asset_url | stylesheet_tag }}
 
-<link rel="stylesheet" href="{{ 'component-deferred-media.css' | asset_url }}" media="print" onload="this.media='all'">
+{{ 'component-deferred-media.css' | asset_url | stylesheet_tag }}
 
 {%- style -%}
   .section-{{ section.id }}-padding {
