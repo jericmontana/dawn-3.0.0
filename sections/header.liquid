@@ -594,9 +594,7 @@
   </header>
 </{% if section.settings.enable_sticky_header %}sticky-header{% else %}div{% endif %}>
 
-{%- unless template.name == 'product' -%}
-  {%- render 'cart-notification', color_scheme: section.settings.color_scheme -%}
-{%- endunless -%}
+{%- render 'cart-notification', color_scheme: section.settings.color_scheme -%}
 
 {% javascript %}
   class StickyHeader extends HTMLElement {
