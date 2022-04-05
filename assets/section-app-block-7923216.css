@@ -21,7 +21,8 @@
   color: rgb(var(--color-base-accent-1)) !important;
 }
 .section--app-block .jdgm-carousel-wrapper {
-  padding: 1rem 0 !important;
+  padding: 1rem 2rem !important;
+  width: 100% !important;
   position: relative;
 }
 .section--app-block .jdgm-carousel-wrapper .jdgm-carousel__arrows {
