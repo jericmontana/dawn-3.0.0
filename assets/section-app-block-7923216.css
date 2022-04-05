@@ -74,10 +74,10 @@
   top: 0;
 }
 .section--app-block .jdgm-carousel-wrapper .jdgm-carousel__right-arrow::before {
-  content: "\e000" !important;
+  content: "<<<";
 }
 .section--app-block .jdgm-carousel-wrapper .jdgm-carousel__left-arrow::before {
-  content: "\e000" !important;
+  content: "<<<";
 }
 .section--app-block .jdgm-carousel-wrapper .jdgm-carousel--aligned-theme .jdgm-carousel-item__product-image {
   vertical-align: top;
