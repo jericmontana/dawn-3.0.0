@@ -66,11 +66,15 @@
 }
 .section--app-block .jdgm-carousel-wrapper .jdgm-carousel__right-arrow::after {
   grid-area: 1/1;
-  content: "a" !important;
+  display: block !important;
+  content: "\e000" !important;
+  color: rgb(var(--color-slider-control-icon)) !important;
 }
 .section--app-block .jdgm-carousel-wrapper .jdgm-carousel__left-arrow::after {
   grid-area: 1/1;
-  content: "a" !important;
+  display: block !important;
+  content: "\e000" !important;
+  color: rgb(var(--color-slider-control-icon)) !important;
 }
 .section--app-block .jdgm-carousel-wrapper .jdgm-carousel--aligned-theme .jdgm-carousel-item__product-image {
   vertical-align: top;
