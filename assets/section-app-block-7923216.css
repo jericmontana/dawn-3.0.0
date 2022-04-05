@@ -22,6 +22,12 @@
 }
 .section--app-block .jdgm-carousel-wrapper {
   padding: 1rem 0 !important;
+  position: relative;
+}
+.section--app-block .jdgm-carousel-wrapper .jdgm-carousel__arrows {
+  position: absolute;
+  top: 50%;
+  bottom: 50%;
 }
 .section--app-block .jdgm-branding-footer {
   display: none !important;
