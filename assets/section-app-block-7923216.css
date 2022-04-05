@@ -62,6 +62,7 @@
           box-shadow: 0px 0px 14px -4px rgba(0, 0, 0, 0.75);
   background-color: rgb(var(--color-slider-control-bg));
   border-radius: 50%;
+  color: rgb(var(--color-slider-control-icon)) !important;
 }
 .section--app-block .jdgm-carousel-wrapper .jdgm-carousel__right-arrow::after {
   grid-area: 1/1;
