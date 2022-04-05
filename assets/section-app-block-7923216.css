@@ -41,12 +41,14 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 100%;
 }
 .section--app-block .jdgm-carousel-wrapper .jdgm-carousel__right-arrow, .section--app-block .jdgm-carousel-wrapper .jdgm-carousel__left-arrow {
   border: none !important;
   border-style: none !important;
   -webkit-transform: none !important;
           transform: none !important;
+  margin: 0 !important;
   position: relative;
   height: 38px;
   width: 38px;
