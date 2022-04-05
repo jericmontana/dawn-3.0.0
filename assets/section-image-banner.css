@@ -107,6 +107,11 @@
   width: 100%;
   max-width: 550px;
 }
+@media screen and (max-width: 989px) {
+  .section--hb__image {
+    margin-top: -3.5rem;
+  }
+}
 @media screen and (min-width: 990px) {
   .section--hb .section__bg-container {
     padding-top: 50px;
