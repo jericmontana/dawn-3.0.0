@@ -51,10 +51,25 @@
   position: relative;
   height: 38px;
   width: 38px;
+  display: grid !important;
+  -webkit-box-pack: center !important;
+      -ms-flex-pack: center !important;
+          justify-content: center !important;
+  -webkit-box-align: center !important;
+      -ms-flex-align: center !important;
+          align-items: center !important;
   -webkit-box-shadow: 0px 0px 14px -4px rgba(0, 0, 0, 0.75);
           box-shadow: 0px 0px 14px -4px rgba(0, 0, 0, 0.75);
   background-color: rgb(var(--color-slider-control-bg));
   border-radius: 50%;
+}
+.section--app-block .jdgm-carousel-wrapper .jdgm-carousel__right-arrow::after {
+  grid-area: 1/1;
+  content: "a" !important;
+}
+.section--app-block .jdgm-carousel-wrapper .jdgm-carousel__left-arrow::after {
+  grid-area: 1/1;
+  content: "a" !important;
 }
 .section--app-block .jdgm-carousel-wrapper .jdgm-carousel--aligned-theme .jdgm-carousel-item__product-image {
   vertical-align: top;
