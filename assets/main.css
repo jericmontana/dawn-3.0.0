@@ -3179,6 +3179,11 @@ html {
   margin-bottom: 1rem;
   color: rgb(var(--color-foreground));
 }
+@media screen and (max-width: 749px) {
+  .section__header--title {
+    font-size: calc(var(--font-heading-scale) * 1.7rem);
+  }
+}
 .section__header--subtitle {
   font-size: 17px;
   margin: 0px;
