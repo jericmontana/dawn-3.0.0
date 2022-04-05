@@ -1,4 +1,3 @@
-@charset "UTF-8";
 .section--app-block .jdgm-rev__buyer-badge {
   background-color: rgb(var(--color-base-accent-1)) !important;
   color: rgb(var(--color-base-solid-button-labels)) !important;
@@ -44,20 +43,9 @@
           align-items: center;
 }
 .section--app-block .jdgm-carousel-wrapper .jdgm-carousel__right-arrow, .section--app-block .jdgm-carousel-wrapper .jdgm-carousel__left-arrow {
-  display: block !important;
-  border: none !important;
   width: 20px;
   height: 20px;
   position: relative;
-}
-.section--app-block .jdgm-carousel-wrapper .jdgm-carousel__right-arrow::before, .section--app-block .jdgm-carousel-wrapper .jdgm-carousel__left-arrow::before {
-  position: absolute;
-}
-.section--app-block .jdgm-carousel-wrapper .jdgm-carousel__left-arrow::before {
-  content: "‹";
-}
-.section--app-block .jdgm-carousel-wrapper .jdgm-carousel__right-arrow::before {
-  content: "›";
 }
 .section--app-block .jdgm-branding-footer {
   display: none !important;
