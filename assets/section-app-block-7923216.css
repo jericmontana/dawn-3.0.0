@@ -30,8 +30,8 @@
   top: 50%;
   bottom: 50%;
   left: 0;
-  margin-left: -2rem;
-  margin-right: -2rem;
+  margin-left: -1rem;
+  margin-right: -1rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -46,6 +46,9 @@
   width: 20px;
   height: 20px;
   position: relative;
+  -webkit-box-shadow: 0px 0px 14px -4px rgba(0, 0, 0, 0.75);
+          box-shadow: 0px 0px 14px -4px rgba(0, 0, 0, 0.75);
+  border-radius: 50%;
 }
 .section--app-block .jdgm-branding-footer {
   display: none !important;
