@@ -43,7 +43,6 @@
           align-items: center;
 }
 .section--app-block .jdgm-carousel-wrapper .jdgm-carousel__right-arrow, .section--app-block .jdgm-carousel-wrapper .jdgm-carousel__left-arrow {
-  border: 4px none rgb(var(--color-slider-control-icon));
   width: 20px;
   height: 20px;
 }
