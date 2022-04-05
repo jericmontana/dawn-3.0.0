@@ -28,6 +28,18 @@
   position: absolute;
   top: 50%;
   bottom: 50%;
+  left: 0;
+  margin-left: -2rem;
+  margin-right: -2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .section--app-block .jdgm-branding-footer {
   display: none !important;
