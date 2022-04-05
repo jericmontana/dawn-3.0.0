@@ -1,5 +1,9 @@
 @charset "UTF-8";
 /* Device Sizes | Mobile - Default */
+cart-notification {
+  display: none;
+}
+
 .product-form__input input[type=radio] + label {
   text-transform: uppercase;
   display: inline-block;
