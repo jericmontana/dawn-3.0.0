@@ -39,7 +39,8 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: calc(100% + 4rem);
+  width: calc(100% + 3.6rem);
+  margin-left: -1.8rem;
 }
 .section--app-block .jdgm-carousel-wrapper .jdgm-carousel__right-arrow, .section--app-block .jdgm-carousel-wrapper .jdgm-carousel__left-arrow {
   border: none !important;
