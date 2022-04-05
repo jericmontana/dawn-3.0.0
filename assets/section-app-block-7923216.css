@@ -65,7 +65,7 @@
   background-color: rgb(var(--color-slider-control-bg));
   border-radius: 50%;
 }
-.section--app-block .jdgm-carousel-wrapper .jdgm-carousel__right-arrow::before, .section--app-block .jdgm-carousel-wrapper .jdgm-carousel__left-arrow::before {
+.section--app-block .jdgm-carousel-wrapper .jdgm-carousel__right-arrow::after, .section--app-block .jdgm-carousel-wrapper .jdgm-carousel__left-arrow::after {
   color: rgb(var(--color-slider-control-icon)) !important;
   position: absolute;
   width: 100%;
@@ -73,10 +73,10 @@
   left: 0;
   top: 0;
 }
-.section--app-block .jdgm-carousel-wrapper .jdgm-carousel__right-arrow::before {
+.section--app-block .jdgm-carousel-wrapper .jdgm-carousel__right-arrow::after {
   content: "<<<";
 }
-.section--app-block .jdgm-carousel-wrapper .jdgm-carousel__left-arrow::before {
+.section--app-block .jdgm-carousel-wrapper .jdgm-carousel__left-arrow::after {
   content: "<<<";
 }
 .section--app-block .jdgm-carousel-wrapper .jdgm-carousel--aligned-theme .jdgm-carousel-item__product-image {
