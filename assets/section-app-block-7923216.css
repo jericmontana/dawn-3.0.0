@@ -30,8 +30,7 @@
   top: 50%;
   bottom: 50%;
   left: 0;
-  margin-left: -1rem;
-  margin-right: -1rem;
+  margin-left: -2rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -41,7 +40,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 100%;
+  width: calc(100% + 2rem);
 }
 .section--app-block .jdgm-carousel-wrapper .jdgm-carousel__right-arrow, .section--app-block .jdgm-carousel-wrapper .jdgm-carousel__left-arrow {
   border: none !important;
