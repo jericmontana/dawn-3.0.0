@@ -56,6 +56,9 @@
   background-color: rgb(var(--color-slider-control-bg));
   border-radius: 50%;
 }
+.section--app-block .jdgm-carousel-wrapper .jdgm-carousel--aligned-theme .jdgm-carousel-item__product-image {
+  vertical-align: top;
+}
 .section--app-block .jdgm-branding-footer {
   display: none !important;
 }
