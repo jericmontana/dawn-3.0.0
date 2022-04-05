@@ -6,6 +6,11 @@
 .section--hb .section__bg-container {
   padding-top: 60px;
 }
+@media screen and (max-width: 989px) {
+  .section--hb .section__bg-container {
+    padding-top: 10px;
+  }
+}
 .section--hb__kicker {
   margin-top: 0;
   text-align: center;
