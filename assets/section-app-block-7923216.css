@@ -74,8 +74,9 @@
   height: 100%;
   left: 0;
   top: 0;
-  font-size: 30px;
+  font-size: 50px;
   line-height: 30px;
+  font-weight: 400;
 }
 .section--app-block .jdgm-carousel-wrapper .jdgm-carousel__right-arrow::after {
   content: "›";
