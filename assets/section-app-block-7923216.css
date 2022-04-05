@@ -86,6 +86,7 @@
 }
 .section--app-block .jdgm-carousel-wrapper .jdgm-carousel--aligned-theme .jdgm-carousel-item__product-image {
   vertical-align: top;
+  width: 25%;
 }
 .section--app-block .jdgm-branding-footer {
   display: none !important;
