@@ -210,12 +210,16 @@
   </head>
 
   <body class="gradient">
+
+    {% render 'loader-7923216' %}
+    
     <a class="skip-to-content-link button visually-hidden" href="#MainContent">
       {{ "accessibility.skip_to_text" | t }}
     </a>
 
-    {% section 'announcement-bar' %}
+    {% section 'announcement-bar-7923216' %}
     {% section 'header' %}
+    {% section 'tab-7923216' %}
     <main id="MainContent" class="content-for-layout focus-none" role="main" tabindex="-1">
       {{ content_for_layout }}
     </main>
@@ -227,7 +231,7 @@
     </ul>
 
     <script>
-      window.shopUrl = '{{ shop.url }}';
+      window.shopUrl = '{{ request.origin }}';
       window.routes = {
         cart_add_url: '{{ routes.cart_add_url }}',
         cart_change_url: '{{ routes.cart_change_url }}',
@@ -258,6 +262,8 @@
       <script src="{{ 'predictive-search.js' | asset_url }}" defer="defer"></script>
     {%- endif -%}
 
-      <script src="{{ 'main.js' | asset_url }}" defer="defer"></script>
+    <script src="{{ 'vendor-wishlist.js' | asset_url }}" defer="defer"></script>
+    <script src="{{ 'vendor-bigpicture.js' | asset_url }}" defer="defer"></script>
+    <script src="{{ 'main.js' | asset_url }}" defer="defer"></script>
   </body>
 </html>

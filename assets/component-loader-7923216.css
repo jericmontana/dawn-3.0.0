@@ -1,0 +1,301 @@
+/* Device Sizes | Mobile - Default */
+/* For @include*/
+@-webkit-keyframes shine {
+  0% {
+    left: 0%;
+    opacity: 0;
+  }
+  45% {
+    opacity: 0.38;
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    left: 90%;
+  }
+}
+@keyframes shine {
+  0% {
+    left: 0%;
+    opacity: 0;
+  }
+  45% {
+    opacity: 0.38;
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    left: 90%;
+  }
+}
+@-webkit-keyframes loading {
+  0% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  50% {
+    -webkit-transform: translate(0, 15px);
+            transform: translate(0, 15px);
+  }
+  100% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+}
+@keyframes loading {
+  0% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  50% {
+    -webkit-transform: translate(0, 15px);
+            transform: translate(0, 15px);
+  }
+  100% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+}
+@-webkit-keyframes loading-dots-fadein {
+  100% {
+    opacity: 1;
+    -webkit-filter: none;
+            filter: none;
+  }
+}
+@keyframes loading-dots-fadein {
+  100% {
+    opacity: 1;
+    -webkit-filter: none;
+            filter: none;
+  }
+}
+@-webkit-keyframes loading-dots-first-dot {
+  100% {
+    -webkit-transform: translate(1em);
+            transform: translate(1em);
+    opacity: 1;
+    -webkit-filter: none;
+            filter: none;
+  }
+}
+@keyframes loading-dots-first-dot {
+  100% {
+    -webkit-transform: translate(1em);
+            transform: translate(1em);
+    opacity: 1;
+    -webkit-filter: none;
+            filter: none;
+  }
+}
+@-webkit-keyframes loading-dots-middle-dots {
+  100% {
+    -webkit-transform: translate(1em);
+            transform: translate(1em);
+  }
+}
+@keyframes loading-dots-middle-dots {
+  100% {
+    -webkit-transform: translate(1em);
+            transform: translate(1em);
+  }
+}
+@-webkit-keyframes loading-dots-last-dot {
+  100% {
+    -webkit-transform: translate(2em);
+            transform: translate(2em);
+    opacity: 0;
+    filter: alpha(opacity=0);
+  }
+}
+@keyframes loading-dots-last-dot {
+  100% {
+    -webkit-transform: translate(2em);
+            transform: translate(2em);
+    opacity: 0;
+    filter: alpha(opacity=0);
+  }
+}
+@-webkit-keyframes loading-square {
+  0% {
+    -webkit-transform: translate(0, 0) rotate(0deg);
+            transform: translate(0, 0) rotate(0deg);
+  }
+  50% {
+    -webkit-transform: translate(68px, 0) rotate(360deg);
+            transform: translate(68px, 0) rotate(360deg);
+  }
+  100% {
+    -webkit-transform: translate(0, 0) rotate(0deg);
+            transform: translate(0, 0) rotate(0deg);
+  }
+}
+@keyframes loading-square {
+  0% {
+    -webkit-transform: translate(0, 0) rotate(0deg);
+            transform: translate(0, 0) rotate(0deg);
+  }
+  50% {
+    -webkit-transform: translate(68px, 0) rotate(360deg);
+            transform: translate(68px, 0) rotate(360deg);
+  }
+  100% {
+    -webkit-transform: translate(0, 0) rotate(0deg);
+            transform: translate(0, 0) rotate(0deg);
+  }
+}
+@-webkit-keyframes fade-out {
+  0% {
+    opacity: 100%;
+  }
+  100% {
+    opacity: 0%;
+    display: none;
+  }
+}
+@keyframes fade-out {
+  0% {
+    opacity: 100%;
+  }
+  100% {
+    opacity: 0%;
+    display: none;
+  }
+}
+/* Reusable Classes */
+.fade-out {
+  -webkit-animation: fade-out 2.3s forwards;
+          animation: fade-out 2.3s forwards;
+}
+
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+@-webkit-keyframes fade-in-out {
+  0% {
+    opacity: 0%;
+  }
+  50% {
+    opacity: 100%;
+  }
+  100% {
+    opacity: 0%;
+  }
+}
+@keyframes fade-in-out {
+  0% {
+    opacity: 0%;
+  }
+  50% {
+    opacity: 100%;
+  }
+  100% {
+    opacity: 0%;
+  }
+}
+/* Reusable Classes */
+.fade-in {
+  -webkit-animation: fade-in 2.3s ease;
+          animation: fade-in 2.3s ease;
+}
+
+/*For Pulse Effect*/
+@-webkit-keyframes pulse-effect {
+  0% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+  }
+}
+@keyframes pulse-effect {
+  0% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+  }
+}
+#loader {
+  width: 100%;
+  height: 100vh;
+  position: sticky;
+  top: 0%;
+  left: 0;
+  z-index: 8000;
+  background-color: #ffffff;
+}
+
+.loading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  place-items: center;
+  place-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  overflow: hidden;
+}
+.loading .loader__content .loading-dots {
+  margin-left: -1.5em;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-animation: loading-dots-fadein 0.5s linear forwards;
+          animation: loading-dots-fadein 0.5s linear forwards;
+}
+.loading .loader__content .loading-dots__wrapper {
+  text-align: center;
+  max-width: 100%;
+  margin: auto;
+}
+.loading .loader__content .loading-dots .dots {
+  width: 0.5em;
+  height: 0.5em;
+  display: inline-block;
+  vertical-align: middle;
+  background: rgb(var(--color-base-accent-2));
+  border-radius: 50%;
+  margin: 0 0.125em;
+  -webkit-animation: loading-dots-middle-dots 0.5s linear infinite;
+          animation: loading-dots-middle-dots 0.5s linear infinite;
+}
+.loading .loader__content .loading-dots .dots:first-of-type {
+  -webkit-animation: loading-dots-first-dot 0.5s linear infinite;
+          animation: loading-dots-first-dot 0.5s linear infinite;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-transform: translate(-1em);
+          transform: translate(-1em);
+}
+.loading .loader__content .loading-dots .dots:last-of-type {
+  -webkit-animation: loading-dots-last-dot 0.5s linear infinite;
+          animation: loading-dots-last-dot 0.5s linear infinite;
+}

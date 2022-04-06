@@ -1,0 +1,19 @@
+{% comment %} 
+    render section header
+
+    {%- render 'section-header',
+        title: block.settings.title,
+        subtitle: block.settings.subtitle,
+        uppercase: block.settings.title_uppercase
+    -%}
+
+{% endcomment %}
+
+<div class="section__header center">
+    {% unless title == blank %}
+    <h2 class="h2 section__header--title {% if uppercase%}uppercase{% endif %}">{{ title | escape }}</h2>
+    {% endunless %}
+    {% unless subtitle == blank %}
+    <p class="section__header--subtitle">{{ subtitle | escape }}</p>
+    {% endunless%}
+</div>

@@ -16,6 +16,7 @@
         btn_size: section.settings.btn_size,
         hover_effect: section.settings.hover_effect,
         icon_type: section.settings.icon_type,
+        round_corner: section.settings.round_corner,
         shadow_effect: section.settings.shadow_effect,
         auto_width: section.settings.auto_width
     %}
@@ -139,14 +140,17 @@
         {%- assign btn_he_class = "btn-he--shine" -%}
 {% endcase %}
 
-<a class="btn {{btn_size_class}} {% if btn_link != blank %}{{btn_he_class}}{% else %}btn--disbaled{% endif %} {% if shadow_effect %}btn-bs{% endif %} {% if auto_width %}btn-auto-width{% endif %}"
+{%- liquid
+    if btn_link contains 'collections'
+        assign link_title = btn_link | split: '/' | last | append: ' collections' | strip
+    else
+        assign link_title = btn_link | split: '/' | last | strip
+    endif
+-%}
+<a class="btn {{btn_size_class}} {% if round_corner %}btn--round-corner{% endif %} {% if btn_link != blank %}{{btn_he_class}}{% else %}btn--disbaled{% endif %} {% if shadow_effect %}btn-bs{% endif %} {% if auto_width %}btn-auto-width{% endif %}"
     {% if btn_link != blank %}
         href="{{ btn_link }}"
-        title="{% if btn_link contains 'collections' %}
-                {{ btn_link | split: '/' | last | append: ' collections' }}
-            {% else %}
-                {{ btn_link | split: '/' | last }}
-            {% endif %}"
+        title="{{ link_title }}"
     {% endif %}
     role="button">
     {{ btn_label | escape }}

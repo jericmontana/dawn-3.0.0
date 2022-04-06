@@ -1,0 +1,121 @@
+{% assign use_as_default_padding = settings.use_as_default_padding %}
+{%- style -%}
+    {%- if use_as_default_padding -%}
+        .section--page-banner .section-{{ section.id }}-padding {
+            padding-top: {{ settings.padding_top | times: 0.75 | round: 0 }}px !important;
+            padding-bottom: {{ settings.padding_bottom | times: 0.75 | round: 0 }}px !important;
+        }
+
+        @media screen and (min-width: 750px) {
+            .section--page-banner .section-{{ section.id }}-padding {
+                padding-top: {{ settings.padding_top }}px !important;
+                padding-bottom: {{ settings.padding_bottom }}px !important;
+            }
+        }
+    {%- endif -%}
+
+    .section--page-banner .section-{{ section.id }}-bg-contaier {
+        --color-foreground: {{settings.fg_color.red}},{{settings.fg_color.green}},{{settings.fg_color.blue}};
+        --color-background: {{settings.bg_color.red}},{{settings.bg_color.green}},{{settings.bg_color.blue}};
+        {% if settings.bg_image != blank %}background-image: url('{{settings.bg_image | image_url}}');{% endif %}
+        background-color: {{ settings.bg_color }};
+        background-blend-mode: {{ settings.bg_blend }};
+    }
+{%- endstyle -%}
+
+<div class="section section--page-banner section--page-banner-{{section.id}}">
+    <div class="section__bg-container section-{{ section.id }}-bg-contaier section-{{ section.id }}-padding">
+        <div class="page-width">
+
+            {%- assign breadcrumb = section.blocks | where: 'type', 'breadcrumb' -%}
+            {%- for block in breadcrumb -%}
+                <div class="section__breadcrumb center">
+                    {%- render 'breadcrumb-7923216' -%}
+                </div>
+            {%- endfor -%}
+            
+            {%- assign header = section.blocks | where: 'type', 'heading' -%}
+            {%- for block in header -%}
+                {% assign template_name = template.name | strip | escape %}
+                {% case template_name %}
+                    {% when 'page' %}
+                        {% assign dynamic_title = page.title %}
+                    {% when 'product' %}
+                        {% assign dynamic_title = product.title %}
+                    {% when 'collection' %}
+                        {% assign dynamic_title = collection.title %}
+                    {% when 'blog' %}
+                        {% assign dynamic_title = blog.title %}
+                {% endcase %}
+                <div class="section__header center">
+                    {% if block.settings.title != blank %}
+                        <h1 class="h1 section__header--title {% if block.settings.title_uppercase %}uppercase{% endif %}">{{ block.settings.title | escape }}</h1>
+                    {% else %}
+                        <h1 class="h1 section__header--title {% if block.settings.title_uppercase %}uppercase{% endif %}">{{dynamic_title}}</h1>
+                    {% endif %}
+
+                    {% unless block.settings.subtitle == blank %}
+                        <p class="section__header--subtitle">{{ block.settings.subtitle | escape }}</p>
+                    {% endunless%}
+                </div>
+            {%- endfor -%}
+        </div>
+    </div>
+</div>
+
+{% schema %}
+    {
+        "name": "🔰 Page Banner",
+        "tag": "section",
+        "settings": [
+        ],
+        "blocks":[
+            {
+                "type": "heading",
+                "name": "Header",
+                "limit": 1,
+                "settings": [
+                    {
+                        "type": "header",
+                        "content": "Header Settings"
+                    },
+                    {
+                        "type": "text",
+                        "id": "title",
+                        "label": "Title"
+                    },
+                    {
+                        "type": "checkbox",
+                        "id": "title_uppercase",
+                        "label": "Uppercase",
+                        "default": false
+                    },
+                    {
+                        "type": "textarea",
+                        "id": "subtitle",
+                        "label": "Subtitle",
+                        "default": "Mus mauris vitae ultricies leo. Ac feugiat sed lectus vestibulum lacus laoreet non curabitur."
+                    }
+                ]
+            },
+            {
+                "type": "breadcrumb",
+                "name": "Breadcrumb",
+                "limit": 1
+            }
+        ],
+        "presets":[
+            {
+                "name": "🔰 Page Banner",
+                "blocks":[
+                    {
+                        "type": "heading"
+                    },
+                    {
+                        "type": "breadcrumb"
+                    }
+                ]
+            }
+        ]
+    }
+{% endschema %}

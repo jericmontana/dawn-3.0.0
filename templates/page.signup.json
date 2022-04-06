@@ -1,0 +1,106 @@
+{
+  "sections": {
+    "16479299538402a3cf": {
+      "type": "email-signup-v2-7923216",
+      "blocks": {
+        "164792995390f38330-0": {
+          "type": "heading",
+          "settings": {
+            "title": "You’re invited to join the AVACLUXE VIP Club!",
+            "title_uppercase": false,
+            "subtitle": "Be the first one to know about our latest promotions and exclusive offers and get a 10% discount on your first purchase.\n(Hurry, limited discount codes only!)"
+          }
+        },
+        "164792995390f38330-1": {
+          "type": "email_signup_form",
+          "settings": {
+            "placeholder": "Email Address*",
+            "btn_lbl": "Yes! Let me in!"
+          }
+        }
+      },
+      "block_order": [
+        "164792995390f38330-0",
+        "164792995390f38330-1"
+      ],
+      "settings": {
+        "color_scheme": "background-1",
+        "use_as_default_padding": true,
+        "padding_top": 52,
+        "padding_bottom": 52
+      }
+    },
+    "1648048605d5c124b8": {
+      "type": "image-with-text-7923216",
+      "blocks": {
+        "164804860518860218-2": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/AVACLUXE_1080.png"
+          }
+        },
+        "f19cb32d-20cd-4b1e-a370-d6a83bd00609": {
+          "type": "richtext",
+          "settings": {
+            "richtext": "<p>We carry a wide range of <strong>products that are all cruelty free and paraben free<\/strong>.<\/p><p>Our products include <strong>lashes, cosmetics and cosmetic accessories.<\/strong> We have a Luxury Lash line with hand crafted Lashes. Some of <strong>our best sellers<\/strong> have been our beautiful “Luxury” lashes, lip glosses and our Makeup Palettes.<\/p><p>We introduce new products and new collections at least four times a Year.<\/p><p>As a company, <strong>we work hard to reach all of our goals and to maintain a great company.<\/strong> Whether you are a beginner or an expert at makeup our company takes pride in each and every single customer to make them feel confident when shopping with AvaCLuxe. <\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "164804860518860218-2",
+        "f19cb32d-20cd-4b1e-a370-d6a83bd00609"
+      ],
+      "settings": {
+        "color_scheme": "background-1",
+        "image_first": true,
+        "use_as_default_padding": true,
+        "padding_top": 44,
+        "padding_bottom": 44
+      }
+    },
+    "1648048613f51d9e18": {
+      "type": "email-signup-v2-7923216",
+      "blocks": {
+        "1648048613ba9410db-0": {
+          "type": "heading",
+          "settings": {
+            "title": "Enter your email to join our VIP Club now!",
+            "title_uppercase": false,
+            "subtitle": ""
+          }
+        },
+        "1648048613ba9410db-1": {
+          "type": "email_signup_form",
+          "settings": {
+            "placeholder": "Email Address*",
+            "btn_lbl": "Yes! Let me in!"
+          }
+        }
+      },
+      "block_order": [
+        "1648048613ba9410db-0",
+        "1648048613ba9410db-1"
+      ],
+      "settings": {
+        "color_scheme": "background-1",
+        "use_as_default_padding": true,
+        "padding_top": 44,
+        "padding_bottom": 44
+      }
+    },
+    "wave": {
+      "type": "wave",
+      "settings": {
+        "color_scheme": "accent-2",
+        "bg_color_top": "#ffffff",
+        "padding_top": 36
+      }
+    }
+  },
+  "order": [
+    "16479299538402a3cf",
+    "1648048605d5c124b8",
+    "1648048613f51d9e18",
+    "wave"
+  ]
+}

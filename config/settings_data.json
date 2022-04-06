@@ -1,21 +1,196 @@
 {
-  "current": "Default",
+  "current": {
+    "colors_accent_1": "#ff66c4",
+    "colors_accent_2": "#ff66c4",
+    "colors_text": "#121212",
+    "colors_outline_button_labels": "#121212",
+    "social_twitter_link": "https:\/\/twitter.com\/AvaCLuxe",
+    "social_facebook_link": "https:\/\/www.facebook.com\/avacluxe",
+    "social_instagram_link": "https:\/\/www.instagram.com\/AvaCLuxe\/",
+    "social_youtube_link": "https:\/\/www.youtube.com\/channel\/UC5Kx_HN72_cUpucD50iNaSQ",
+    "favicon": "shopify:\/\/shop_images\/output-onlinepngtools_3_1.png",
+    "fg_color": "#FFFFFF",
+    "bg_color": "#ff7bcc",
+    "use_as_default_padding": true,
+    "padding_top": 36,
+    "subtitle": "Setting up your LASH-GAME with AVACLUXE.",
+    "banner_bg_color": "#ff66c4",
+    "banner_bg_image": "shopify:\/\/shop_images\/Silk.png",
+    "banner_bg_blend": "luminosity",
+    "banner_btn_label": "Shop Now",
+    "banner_hover_effect": "shine",
+    "wave_desktop_image": "shopify:\/\/shop_images\/Wave_2880x250_e34c55cd-59dc-486c-b379-2d2b33b535ed.png",
+    "ty_image": "shopify:\/\/shop_images\/Envy.png",
+    "ty_discount_code": "AVACLUXE10-OFF",
+    "ty_bg_color": "#ff66c4",
+    "ty_bg_image": "shopify:\/\/shop_images\/Marble_White.png",
+    "ty_bg_blend": "luminosity",
+    "checkout_logo_image": "shopify:\/\/shop_images\/E3DAEC60-BACD-4863-A537-8653D6752B9D_0fd7b8ff-361d-4cea-977f-b6781e49bb65.png",
+    "checkout_logo_position": "center",
+    "checkout_logo_size": "small",
+    "checkout_sidebar_background_color": "#ff66c4",
+    "checkout_accent_color": "#ff66c4",
+    "checkout_button_color": "#ff66c4",
+    "sections": {
+      "header": {
+        "type": "header",
+        "settings": {
+          "color_scheme": "background-1",
+          "logo": "shopify:\/\/shop_images\/AVACLUXE.png",
+          "logo_width": 100,
+          "logo_position": "middle-left",
+          "menu": "main-menu-fo",
+          "show_line_separator": true,
+          "enable_sticky_header": true,
+          "margin_bottom": 0
+        }
+      },
+      "footer": {
+        "type": "footer",
+        "blocks": {
+          "footer-0": {
+            "type": "image",
+            "settings": {
+              "use_custom_snippet": true,
+              "image_width": 100,
+              "alignment": "center"
+            }
+          },
+          "footer-1": {
+            "type": "link_list",
+            "settings": {
+              "heading": "Quick Links",
+              "menu": "quick-links-fo"
+            }
+          },
+          "footer-2": {
+            "type": "link_list",
+            "settings": {
+              "heading": "Customer Service",
+              "menu": "customer-service-fo"
+            }
+          },
+          "footer-3": {
+            "type": "email_signup",
+            "settings": {
+              "heading": "Join The VIP List",
+              "subtext": "<p>Be the first one to know about our latest promotions and exclusive offers and get a 10% discount on your first purchase.<\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "footer-0",
+          "footer-1",
+          "footer-2",
+          "footer-3"
+        ],
+        "settings": {
+          "color_scheme": "accent-2",
+          "show_social": true,
+          "enable_country_selector": false,
+          "enable_language_selector": false,
+          "payment_enable": true,
+          "margin_top": 0,
+          "padding_top": 36,
+          "padding_bottom": 36
+        }
+      },
+      "main-password-header": {
+        "type": "main-password-header",
+        "settings": {
+        }
+      },
+      "main-password-footer": {
+        "type": "main-password-footer",
+        "settings": {
+        }
+      },
+      "announcement-bar-7923216": {
+        "type": "announcement-bar-7923216",
+        "blocks": {
+          "announcement-bar-7923216-0": {
+            "type": "announcement_bar",
+            "settings": {
+              "text": "FREE SHIPPING ON ALL DOMESTIC ORDERS",
+              "show_btn": false,
+              "round_corner": false,
+              "btn_action": "open-popup",
+              "btn_label": "Shop Now",
+              "btn_link": "shopify:\/\/collections\/all",
+              "hover_effect": "shine",
+              "icon_type": "send",
+              "shadow_effect": true,
+              "auto_width": false
+            }
+          },
+          "announcement-bar-7923216-1": {
+            "type": "announcement_bar",
+            "settings": {
+              "text": "GET 10% OFF AT YOUR FIRST PURCHASE",
+              "show_btn": true,
+              "round_corner": true,
+              "btn_action": "open-popup",
+              "btn_label": "Subscribe",
+              "btn_link": "shopify:\/\/pages\/lash-guide",
+              "hover_effect": "shine",
+              "icon_type": "send",
+              "shadow_effect": true,
+              "auto_width": false
+            }
+          }
+        },
+        "block_order": [
+          "announcement-bar-7923216-0",
+          "announcement-bar-7923216-1"
+        ],
+        "settings": {
+          "color_scheme": "accent-2",
+          "auto_rotate": true,
+          "change_slides_speed": 5,
+          "use_as_default_padding": false,
+          "padding_top": 36,
+          "padding_bottom": 36
+        }
+      },
+      "tab-7923216": {
+        "type": "tab-7923216",
+        "settings": {
+          "w_btn_label": "Wishlist",
+          "w_btn_link": "shopify:\/\/pages\/faqs",
+          "r_btn_label": "Reviews",
+          "r_btn_link": "shopify:\/\/pages\/lash-guide",
+          "s_btn_action": "open-popup",
+          "s_btn_label": "Get 10% Off",
+          "s_btn_link": "shopify:\/\/pages\/privacy-policy"
+        }
+      }
+    },
+    "content_for_index": [
+
+    ],
+    "blocks": {
+      "14060646107696862457": {
+        "type": "shopify:\/\/apps\/judge-me-product-reviews\/blocks\/judgeme_core\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+        "disabled": false,
+        "settings": {
+        }
+      },
+      "12120936241911852800": {
+        "type": "shopify:\/\/apps\/judge-me-product-reviews\/blocks\/reviews_tab\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+        "disabled": true,
+        "settings": {
+          "position": "right"
+        }
+      }
+    }
+  },
   "presets": {
     "Default": {
       "sections": {
         "announcement-bar": {
-          "type": "announcement-bar",
-          "blocks": {
-            "announcement-bar-0": {
-              "type": "announcement",
-              "settings": {
-                "color_scheme": "background-1"
-              }
-            }
-          },
-          "block_order": [
-            "announcement-bar-0"
-          ]
+          "type": "announcement-bar-7923216",
+          "settings": {
+          }
         },
         "header": {
           "type": "header",
@@ -27,7 +202,9 @@
           "type": "footer",
           "blocks": {
             "footer-0": {
-              "type": "image"
+              "type": "image",
+              "settings": {
+              }
             },
             "footer-1": {
               "type": "link_list",
@@ -42,7 +219,9 @@
               }
             },
             "footer-3": {
-              "type": "email_signup"
+              "type": "email_signup",
+              "settings": {
+              }
             }
           },
           "block_order": [
@@ -59,10 +238,14 @@
           }
         },
         "main-password-header": {
-          "type": "main-password-header"
+          "type": "main-password-header",
+          "settings": {
+          }
         },
         "main-password-footer": {
-          "type": "main-password-footer"
+          "type": "main-password-footer",
+          "settings": {
+          }
         }
       }
     }

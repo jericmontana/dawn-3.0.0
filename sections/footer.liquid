@@ -35,6 +35,15 @@
       padding-bottom: {{ section.settings.padding_bottom }}px;
     }
   }
+
+  {% case section.settings.color_scheme %}
+      {% when 'accent-2' %}
+          .footer .newsletter-form__field-wrapper .btn{
+            color: rgb(var(--color-btn-bg));
+            background-color: rgb(var(--color-btn-lbl));
+            border: 2px solid rgb(var(--color-btn-lbl));
+          }
+  {% endcase %}
 {%- endstyle -%}
 
 <footer class="footer color-{{ section.settings.color_scheme }} gradient section-{{ section.id }}-padding">
@@ -91,18 +100,27 @@
                           >
                           <label class="field__label" for="NewsletterForm--{{ section.id }}">
                             {% comment %} {{ 'newsletter.label' | t }} {% endcomment %}
-                           Active Email Address...
+                           Email Address*
                           </label>
-                          <button type="submit" class="newsletter-form__button field__button" name="commit" id="Subscribe" aria-label="{{ 'newsletter.button_label' | t }}">
+
+                          {% comment %} <button type="submit" class="newsletter-form__button field__button" name="commit" id="Subscribe" aria-label="{{ 'newsletter.button_label' | t }}">
                             {% render 'icon-arrow' %}
+                          </button> {% endcomment %}
+                        </div>
+
+                        {%- if form.errors -%}
+                            <small class="newsletter-form__message form__message" id="ContactFooter-error">{% render 'icon-error' %}{{ form.errors.translated_fields['email'] | capitalize }} {{ form.errors.messages['email'] }}</small>
+                        {%- endif -%}
+
+                        <div class="field field--btn">
+                          <button type="submit" data-targetopener="TYPopup-{{ section.id }}" class="field__button field__button--with-ty btn btn--default btn-he--lighten btn-bs btn--round-corner" name="commit" id="Subscribe" aria-label="{{ 'newsletter.button_label' | t }}">
+                              Subscribe
                           </button>
                         </div>
-                        {%- if form.errors -%}
-                          <small class="newsletter-form__message form__message" id="ContactFooter-error">{% render 'icon-error' %}{{ form.errors.translated_fields['email'] | capitalize }} {{ form.errors.messages['email'] }}</small>
-                        {%- endif -%}
+                        
                       </div>
                       {%- if form.posted_successfully? -%}
-                        <h3 class="newsletter-form__message newsletter-form__message--success form__message" id="ContactFooter-success" tabindex="-1" autofocus>{% render 'icon-success' %}{{ 'newsletter.success' | t }}</h3>
+                        {%- render 'thank-you-7923216'-%}  
                       {%- endif -%}
                     {%- endform -%}
                   </div>
@@ -120,22 +138,27 @@
                   {%- endif -%}
                 {%- when 'image' -%}
                   <div class="footer-block__details-content footer-block-image {{ block.settings.alignment }}">
-                    {%- if block.settings.image != blank -%}
-                    {%- assign image_size = block.settings.image_width -%}
-                      {%- assign image_size_scale_by_two = block.settings.image_width | times: 2 -%}
-                      <img
-                        srcset= "{{ block.settings.image | image_url: width: image_size }}, {{ block.settings.image | image_url: width: image_size_scale_by_two }} 2x"
-                        src="{{ block.settings.image | image_url: width: 400 }}"
-                        alt="{{ block.settings.image.alt | escape }}"
-                        loading="lazy"
-                        width="{{ block.settings.image.width }}"
-                        height="{{ block.settings.image.height }}"
-                        style="max-width: min(100%, {{ block.settings.image_width }}px);"
-                        title="{{shop.name}}"
-                      >
+                    {%- unless block.settings.use_custom_snippet -%}
+                      {%- if block.settings.image != blank -%}
+                      {%- assign image_size = block.settings.image_width -%}
+                        {%- assign image_size_scale_by_two = block.settings.image_width | times: 2 -%}
+                        <img
+                          srcset= "{{ block.settings.image | image_url: width: image_size }}, {{ block.settings.image | image_url: width: image_size_scale_by_two }} 2x"
+                          src="{{ block.settings.image | image_url: width: 400 }}"
+                          alt="{{ block.settings.image.alt | escape }}"
+                          loading="lazy"
+                          width="{{ block.settings.image.width }}"
+                          height="{{ block.settings.image.height }}"
+                          style="max-width: min(100%, {{ block.settings.image_width }}px);"
+                          title="{{shop.name}}"
+                        >
+                      {%- else -%}
+                        {{ 'image' | placeholder_svg_tag: 'placeholder-svg placeholder' }}
+                      {%- endif -%}
                     {%- else -%}
-                      {{ 'image' | placeholder_svg_tag: 'placeholder-svg placeholder' }}
-                    {%- endif -%}
+                      {%- render 'logo-footer' -%}
+                    {%- endunless -%}
+                    
                     
                     {%- if section.settings.show_social -%}
                         <ul class="footer__list-social list-unstyled list-social small-hide" role="list">
@@ -531,6 +554,12 @@
       "type": "image",
       "name": "Image",
       "settings": [
+        {
+          "type": "checkbox",
+          "id": "use_custom_snippet",
+          "label": "Use Custom Snippet",
+          "default": true
+        },
         {
           "type": "image_picker",
           "id": "image",

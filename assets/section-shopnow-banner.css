@@ -25,6 +25,9 @@
 }
 @media screen and (min-width: 750px) {
   .section--shopnow-banner .section__button {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
     margin-top: 0;
   }
 }
