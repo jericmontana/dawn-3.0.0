@@ -222,6 +222,8 @@
           "type": "image_with_text",
           "settings": {
             "logo_svg": "high-quality",
+            "use_image": true,
+            "image": "shopify:\/\/shop_images\/High-Quality.png",
             "title": "high quality"
           }
         },
@@ -229,6 +231,8 @@
           "type": "image_with_text",
           "settings": {
             "logo_svg": "substantial",
+            "use_image": true,
+            "image": "shopify:\/\/shop_images\/Substantial.png",
             "title": "substantial"
           }
         },
@@ -236,6 +240,8 @@
           "type": "image_with_text",
           "settings": {
             "logo_svg": "loved-by-hundreds",
+            "use_image": true,
+            "image": "shopify:\/\/shop_images\/Loved-by-hundreds.png",
             "title": "loved by hundreds"
           }
         },
@@ -243,6 +249,8 @@
           "type": "image_with_text",
           "settings": {
             "logo_svg": "free-shipping",
+            "use_image": true,
+            "image": "shopify:\/\/shop_images\/Free-Shipping.png",
             "title": "free shipping"
           }
         }
@@ -422,7 +430,7 @@
             "subtitle": ""
           }
         },
-        "8306fee4-7024-46b4-8aec-9e9fc7949328": {
+        "e2786029-b04d-424a-a1ca-2d8af70a1196": {
           "type": "shopify:\/\/apps\/judge-me-product-reviews\/blocks\/featured_carousel\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
           "settings": {
             "maxwidth": 3000,
@@ -434,7 +442,7 @@
       },
       "block_order": [
         "1646904009d21bef04-0",
-        "8306fee4-7024-46b4-8aec-9e9fc7949328"
+        "e2786029-b04d-424a-a1ca-2d8af70a1196"
       ],
       "settings": {
         "round_corner_background": true,
@@ -472,6 +480,36 @@
         "fg_color": "#121212",
         "bg_color": "#ffffff",
         "bg_blend": "normal",
+        "use_as_default_padding": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "164904944832e938ee": {
+      "type": "featured-blog-7923216",
+      "blocks": {
+        "1649049448180c2887-0": {
+          "type": "heading",
+          "settings": {
+            "title": "Check out our most popular blog posts.",
+            "title_uppercase": false,
+            "subtitle": ""
+          }
+        },
+        "1649049448180c2887-1": {
+          "type": "blog",
+          "settings": {
+            "blog": "news",
+            "post_limit": 4
+          }
+        }
+      },
+      "block_order": [
+        "1649049448180c2887-0",
+        "1649049448180c2887-1"
+      ],
+      "settings": {
+        "color_scheme": "background-1",
         "use_as_default_padding": false,
         "padding_top": 36,
         "padding_bottom": 36
@@ -528,6 +566,7 @@
     "1646294267406b368a",
     "16469040093fa15a8d",
     "1646313626697ca18a",
+    "164904944832e938ee",
     "1646904089b7a2f60f",
     "1646848339941da1e7"
   ]

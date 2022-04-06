@@ -1428,6 +1428,21 @@
     ]
   },
   {
+    "name": "🔰 Wave Images",
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "wave_desktop_image",
+        "label": "Desktop"
+      },
+      {
+        "type": "image_picker",
+        "id": "wave_mobile_image",
+        "label": "Mobile"
+      }
+    ]
+  },
+  {
     "name": "🔰 Thankyou Popup",
     "settings": [
       {

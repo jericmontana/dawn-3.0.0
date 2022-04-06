@@ -17,12 +17,20 @@
 
 <div class="section section--wave section--wave-{{section.id}} color-{{ section.settings.color_scheme }}">
     <div class="section__content-wave section-{{ section.id }}-style">
-        <div class="section__content-wave--front">
+        {%- if settings.wave_desktop_image != blank and settings.wave_mobile_image != blank-%}
+            <div class="section__content-wave--desktop small-hide medium-hide">
+                <img src="{{ settings.wave_desktop_image | img_url: 'master' }}">
+            </div>
+            <div class="section__content-wave--desktop large-up-hide">
+                <img src="{{ settings.wave_mobile_image | img_url: 'master' }}">
+            </div>
+        {%- endif -%}
+        {% comment %} <div class="section__content-wave--front">
             {%- render 'component-wave' -%}
         </div>
         <div class="section__content-wave--back">
             {%- render 'component-wave' -%}
-        </div>
+        </div> {% endcomment %}
     </div>
 </div>
 

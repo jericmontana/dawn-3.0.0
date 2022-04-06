@@ -6,6 +6,11 @@
 .section--hb .section__bg-container {
   padding-top: 60px;
 }
+@media screen and (max-width: 989px) {
+  .section--hb .section__bg-container {
+    padding-top: 20px;
+  }
+}
 .section--hb__kicker {
   margin-top: 0;
   text-align: center;
@@ -42,7 +47,6 @@
 @media screen and (max-width: 989px) {
   .section--hb__heading {
     padding-top: 1rem;
-    padding-bottom: 2rem;
   }
 }
 .section--hb__subheading {
@@ -60,6 +64,9 @@
     margin-left: auto;
     margin-right: auto;
   }
+}
+.section--hb__button .btn--default {
+  max-width: 230px;
 }
 .section--hb__kicker, .section--hb__heading, .section--hb__subheading, .section--hb__button {
   width: 100%;
@@ -98,6 +105,11 @@
 .section--hb__image img {
   width: 100%;
   max-width: 550px;
+}
+@media screen and (max-width: 989px) {
+  .section--hb__image {
+    margin-top: -3.5rem;
+  }
 }
 @media screen and (min-width: 990px) {
   .section--hb .section__bg-container {

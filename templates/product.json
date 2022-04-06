@@ -18,71 +18,10 @@
           "settings": {
           }
         },
-        "ad499205-b507-49e5-9d94-d1ebda366e84": {
-          "type": "popup_description",
-          "settings": {
-            "text": "DETAILS & DESCRIPTION"
-          }
-        },
         "variant_picker": {
           "type": "variant_picker",
           "settings": {
             "picker_type": "button"
-          }
-        },
-        "f8b97ee0-3cf9-4858-91c3-8ecc55aafc9f": {
-          "type": "usp",
-          "settings": {
-            "usp_icon": "money-back-guarantee",
-            "title": "60 Day Money Back Guarantee"
-          }
-        },
-        "3ee7ac2b-3431-4efc-962b-fdd4f48f3d40": {
-          "type": "usp",
-          "settings": {
-            "usp_icon": "easy-to-apply",
-            "title": "Easy To Apply"
-          }
-        },
-        "3e664966-73af-4197-b649-13115bfe128d": {
-          "type": "usp",
-          "settings": {
-            "usp_icon": "natural",
-            "title": "Ultra-natural Looking"
-          }
-        },
-        "6b4f1a86-00b6-4381-b279-3e287bd10386": {
-          "type": "usp",
-          "settings": {
-            "usp_icon": "lightweight",
-            "title": "Lightweight & Comfortable"
-          }
-        },
-        "52729db1-d743-4d31-8a9b-09990082856a": {
-          "type": "usp",
-          "settings": {
-            "usp_icon": "multiple-use",
-            "title": "Multiple Wears"
-          }
-        },
-        "1bde4e8e-f60f-4057-9213-41821144cdfe": {
-          "type": "usp",
-          "settings": {
-            "usp_icon": "handmade",
-            "title": "100% Handmade"
-          }
-        },
-        "229bc4a5-eb43-44a2-a834-300890d04993": {
-          "type": "usp",
-          "settings": {
-            "usp_icon": "longlasting",
-            "title": "15x Wears with proper care"
-          }
-        },
-        "description": {
-          "type": "description",
-          "disabled": true,
-          "settings": {
           }
         },
         "quantity_selector": {
@@ -100,25 +39,23 @@
           "type": "wishlist_button",
           "settings": {
           }
+        },
+        "ad499205-b507-49e5-9d94-d1ebda366e84": {
+          "type": "popup_description",
+          "settings": {
+            "text": "DETAILS & DESCRIPTION"
+          }
         }
       },
       "block_order": [
         "title",
         "805fb50f-3e5f-4272-9b05-4a75bb375e1e",
         "price",
-        "ad499205-b507-49e5-9d94-d1ebda366e84",
         "variant_picker",
-        "f8b97ee0-3cf9-4858-91c3-8ecc55aafc9f",
-        "3ee7ac2b-3431-4efc-962b-fdd4f48f3d40",
-        "3e664966-73af-4197-b649-13115bfe128d",
-        "6b4f1a86-00b6-4381-b279-3e287bd10386",
-        "52729db1-d743-4d31-8a9b-09990082856a",
-        "1bde4e8e-f60f-4057-9213-41821144cdfe",
-        "229bc4a5-eb43-44a2-a834-300890d04993",
-        "description",
         "quantity_selector",
         "buy_buttons",
-        "b6e55219-193b-43de-a589-16941fc78044"
+        "b6e55219-193b-43de-a589-16941fc78044",
+        "ad499205-b507-49e5-9d94-d1ebda366e84"
       ],
       "settings": {
         "enable_sticky_info": true,
@@ -152,6 +89,8 @@
           "type": "image_with_text",
           "settings": {
             "logo_svg": "high-quality",
+            "use_image": true,
+            "image": "shopify:\/\/shop_images\/High-Quality.png",
             "title": "high quality"
           }
         },
@@ -159,6 +98,8 @@
           "type": "image_with_text",
           "settings": {
             "logo_svg": "substantial",
+            "use_image": true,
+            "image": "shopify:\/\/shop_images\/Substantial.png",
             "title": "substantial"
           }
         },
@@ -166,6 +107,8 @@
           "type": "image_with_text",
           "settings": {
             "logo_svg": "loved-by-hundreds",
+            "use_image": true,
+            "image": "shopify:\/\/shop_images\/Loved-by-hundreds.png",
             "title": "loved by hundreds"
           }
         },
@@ -173,6 +116,8 @@
           "type": "image_with_text",
           "settings": {
             "logo_svg": "free-shipping",
+            "use_image": true,
+            "image": "shopify:\/\/shop_images\/Free-Shipping.png",
             "title": "free shipping"
           }
         }
