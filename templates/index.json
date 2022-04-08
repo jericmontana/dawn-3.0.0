@@ -171,10 +171,9 @@
         "16485172155d486ace-3": {
           "type": "collection",
           "settings": {
-            "featured_collection": "eyeshadow-palettes",
+            "featured_collection": "lash-bundles",
             "title": "",
-            "featured_collection_image": "shopify:\/\/shop_images\/EYESHADOW_PALETTES_4b5cb013-ccf8-4d8a-b50b-bbffcc47f67f.png",
-            "use_custom_image": true
+            "use_custom_image": false
           }
         },
         "16485172155d486ace-4": {
