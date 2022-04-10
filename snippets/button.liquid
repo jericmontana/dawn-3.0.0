@@ -147,7 +147,7 @@
         assign link_title = btn_link | split: '/' | last | strip
     endif
 -%}
-<a class="btn {{btn_size_class}} {% if round_corner %}btn--round-corner{% endif %} {% if btn_link != blank %}{{btn_he_class}}{% else %}btn--disbaled{% endif %} {% if shadow_effect %}btn-bs{% endif %} {% if auto_width %}btn-auto-width{% endif %}"
+<a class="btn {{ btn_size_class }} {% if round_corner %}btn--round-corner{% endif %} {% if btn_link != blank %}{{ btn_he_class }}{% else %}btn--disbaled{% endif %} {% if shadow_effect %}btn-bs{% endif %} {% if auto_width %}btn-auto-width{% endif %}"
     {% if btn_link != blank %}
         href="{{ btn_link }}"
         title="{{ link_title }}"
@@ -155,7 +155,7 @@
     role="button">
     {{ btn_label | escape }}
     {% render 'icon-button', icon_type: icon_type %}
-    {% if hover_effect == 'shine'%}
+    {% if hover_effect == 'shine' %}
     <span></span>
     {% endif %}
 </a>

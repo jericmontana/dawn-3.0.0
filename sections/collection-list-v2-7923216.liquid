@@ -19,29 +19,29 @@
   
   {% case section.settings.color_scheme %}
       {% when 'background-1' %}
-      .section--collection-list-v2-{{section.id}} .section__header--title{
+      .section--collection-list-v2-{{ section.id }} .section__header--title{
         color: rgb({{ settings.colors_accent_2.red }}, {{ settings.colors_accent_2.green }}, {{ settings.colors_accent_2.blue }});
       }
 
-      .section--collection-list-v2-{{section.id}} .section__collection--information__title h3{
+      .section--collection-list-v2-{{ section.id }} .section__collection--information__title h3{
         color: #ffffff;
       }
 
-      .section--collection-list-v2-{{section.id}} .section__collection{
+      .section--collection-list-v2-{{ section.id }} .section__collection{
         background-color: rgb({{ settings.colors_accent_2.red }}, {{ settings.colors_accent_2.green }}, {{ settings.colors_accent_2.blue }});
       }
 
   {% endcase %}
 {%- endstyle -%}
 
-<div class="section section--collection-list-v2 section--collection-list-v2-{{section.id}} color-{{ section.settings.color_scheme }}">
+<div class="section section--collection-list-v2 section--collection-list-v2-{{ section.id }} color-{{ section.settings.color_scheme }}">
   <div class="section__bg-container section-{{ section.id }}-bg-contaier section-{{ section.id }}-padding">
     <div class="page-width">
     
       {% comment %} For Section Header {% endcomment %}
       {%- assign header = section.blocks | where: 'type', 'heading' -%}
       {%- for block in header -%}
-        {% if block.settings.title != blank or block.settings.subtitle != blank%}
+        {% if block.settings.title != blank or block.settings.subtitle != blank %}
           {%- render 'section-header',
             title: block.settings.title,
             subtitle: block.settings.subtitle,
@@ -61,7 +61,7 @@
           {% else %}
             {% assign featured_collection_image = featured_collection.featured_image %}
           {% endif %}
-          <a {% if featured_collection != blank %}href="{{featured_collection.url}}" title="{{featured_collection.title}}" {% endif %}>
+          <a {% if featured_collection != blank %}href="{{ featured_collection.url }}" title="{{ featured_collection.title }}" {% endif %}>
             <div class="section__collection">
 
               <div class="section__collection--image">
@@ -84,7 +84,7 @@
                         class="motion-reduce"
                       >
                   {%- else -%}
-                      {% render 'no-image'%}
+                      {% render 'no-image' %}
                   {%- endif -%}
               </div>
 
@@ -172,7 +172,7 @@
       "unit": "px",
       "label": "Padding Top",
       "default": 36,
-      "info":"Default Value is 36"
+      "info": "Default Value is 36"
     },
     {
       "type": "range",
@@ -183,7 +183,7 @@
       "unit": "px",
       "label": "Padding Bottom",
       "default": 36,
-      "info":"Default Value is 36"
+      "info": "Default Value is 36"
     }
   ],
   "blocks": [
@@ -220,7 +220,7 @@
       "type": "collection",
       "name": "Featured Collection",
       "limit": 8,
-      "settings":[
+      "settings": [
         {
           "type": "collection",
           "id": "featured_collection",

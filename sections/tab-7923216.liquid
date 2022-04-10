@@ -25,73 +25,73 @@
 
 
 {% schema %}
+{
+  "name": "🔰 Tab",
+  "settings": [
     {
-        "name": "🔰 Tab",
-        "settings": [
-            {
-                "type": "header",
-                "content": "Wishlist Button"
-            },
-            {
-                "type":"text",
-                "id":"w_btn_label",
-                "label":"Label",
-                "default":"Wishlist"
-            },
-            {
-                "type": "url",
-                "id": "w_btn_link",
-                "label": "Link",
-                "default": "/collections/all"
-            },
-            {
-                "type": "header",
-                "content": "Review Button"
-            },
-            {
-                "type":"text",
-                "id":"r_btn_label",
-                "label":"Label",
-                "default":"Reviews"
-            },
-            {
-                "type": "url",
-                "id": "r_btn_link",
-                "label": "Link",
-                "default": "/collections/all"
-            },
-            {
-                "type": "header",
-                "content": "Signup Button"
-            },
-            {
-                "type": "select",
-                "id": "s_btn_action",
-                "label": "Button Action",
-                "options": [
-                    {
-                        "value": "redirect-link",
-                        "label": "Redirect to a link"
-                    },
-                    {
-                        "value": "open-popup",
-                        "label": "Open a popup"
-                    }
-                ],
-                "default": "open-popup"
-            },
-            {
-                "type":"text",
-                "id":"s_btn_label",
-                "label":"Label",
-                "default":"Get 10% Off"
-            },
-            {
-                "type": "url",
-                "id": "s_btn_link",
-                "label": "Link",
-                "default": "/collections/all"
-            }
-        ]
+      "type": "header",
+      "content": "Wishlist Button"
+    },
+    {
+      "type": "text",
+      "id": "w_btn_label",
+      "label": "Label",
+      "default": "Wishlist"
+    },
+    {
+      "type": "url",
+      "id": "w_btn_link",
+      "label": "Link",
+      "default": "/collections/all"
+    },
+    {
+      "type": "header",
+      "content": "Review Button"
+    },
+    {
+      "type": "text",
+      "id": "r_btn_label",
+      "label": "Label",
+      "default": "Reviews"
+    },
+    {
+      "type": "url",
+      "id": "r_btn_link",
+      "label": "Link",
+      "default": "/collections/all"
+    },
+    {
+      "type": "header",
+      "content": "Signup Button"
+    },
+    {
+      "type": "select",
+      "id": "s_btn_action",
+      "label": "Button Action",
+      "options": [
+        {
+          "value": "redirect-link",
+          "label": "Redirect to a link"
+        },
+        {
+          "value": "open-popup",
+          "label": "Open a popup"
+        }
+      ],
+      "default": "open-popup"
+    },
+    {
+      "type": "text",
+      "id": "s_btn_label",
+      "label": "Label",
+      "default": "Get 10% Off"
+    },
+    {
+      "type": "url",
+      "id": "s_btn_link",
+      "label": "Link",
+      "default": "/collections/all"
     }
+  ]
+}
 {% endschema %}

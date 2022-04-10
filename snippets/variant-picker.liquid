@@ -18,13 +18,13 @@
 {% for product_option in product.options_with_values %}
     {% if forloop.index0 == 0 %}
         {% assign first_category_values = product_option.values %}
-        {% assign first_category_size = product_option.values | size %}
+        
     {% elsif forloop.index0 == 1 %}
         {% assign second_category_values = product_option.values %}
-        {% assign second_category_size = product_option.values | size %}
+        
     {% elsif forloop.index0 == 2 %}
-        {% assign third_category_values = product_option.values %}
-        {% assign third_category_size = product_option.values | size %}
+        
+        
     {% endif %}
 {% endfor %}
 
@@ -55,12 +55,12 @@
                 {% for value in option.values %}
 
                     {% comment %} For Colors {% endcomment %}
-                    {% if option.name == 'Color'%}
+                    {% if option.name == 'Color' %}
                         {% assign color_name = value | append: '+' | prepend: '+' | strip | escape %}
                         {% assign color_name_handleize = color_name | handleize %}
                         {% capture color_style_class %}
                             {% if reusable_classes_colors_new_string contains color_name %}
-                                class="option-labels--color {{'color--' | append: color_name_handleize }} "
+                                class="option-labels--color {{ 'color--' | append: color_name_handleize }} "
                             {% else %}"
                                 class="option-labels--color" style="background-color:{{ color_name_handleize }};" 
                             {% endif %}
@@ -68,7 +68,7 @@
                     {% endif %}
 
                     {% comment %} Validate all of the available variants and generate classes {% endcomment %}
-                    {% if product_options_size > 1%}
+                    {% if product_options_size > 1 %}
                         {% for first_category_value in first_category_values %}
                             {% for second_category_value in second_category_values %}
 
@@ -83,9 +83,9 @@
                                 {% unless master_variant_titles contains target_category %}
                                     {% if product_options_size == 2 or product_options_size == 3 %}
                                         {% if category == 1 %}
-                                            {% assign option_class = first_category_value | handleize | append: '-x '%}
+                                            {% assign option_class = first_category_value | handleize | append: '-x ' %}
                                         {% elsif category == 2 %}
-                                            {% assign option_class = first_category_value | handleize | append: '-' | append: second_category_value | handleize | append: '-x '%}
+                                            {% assign option_class = first_category_value | handleize | append: '-' | append: second_category_value | handleize | append: '-x ' %}
                                         {% endif %}
                                     {% endif %}
 
@@ -108,24 +108,24 @@
                     {% case product_options_size %}
                         {% when 1 %}
                             <label for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}" class="option-labels">
-                            {{value}}
-                            {% if option.name == 'Color'%}
-                                <span {{color_style_class}}></span>
+                            {{ value }}
+                            {% if option.name == 'Color' %}
+                                <span {{ color_style_class }}></span>
                             {% endif %}
                             </label>
                         {% when 2 %}
                             {% if category == 0 %}
                                 <label for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}" class="option-labels option-labels-first-cat" data-selectedoptfirstcat="{{ value | handleize }}">
-                                {{value}}
-                                {% if option.name == 'Color'%}
-                                    <span {{color_style_class}}></span>
+                                {{ value }}
+                                {% if option.name == 'Color' %}
+                                    <span {{ color_style_class }}></span>
                                 {% endif %}
                                 </label>
                             {% elsif category == 1 %}
-                                <label for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}" class="option-labels {{option_classes}} option-labels-second-cat">
-                                {{value}}
-                                {% if option.name == 'Color'%}
-                                    <span {{color_style_class}}></span>
+                                <label for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}" class="option-labels {{ option_classes }} option-labels-second-cat">
+                                {{ value }}
+                                {% if option.name == 'Color' %}
+                                    <span {{ color_style_class }}></span>
                                 {% endif %}
                                 </label>
                                 {% assign option_classes = '' %}
@@ -133,24 +133,24 @@
                         {% when 3 %}
                             {% if category == 0 %}
                                 <label for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}" class="option-labels option-labels-first-cat" data-selectedoptfirstcat="{{ value | handleize }}">
-                                {{value}}
-                                {% if option.name == 'Color'%}
-                                    <span {{color_style_class}}></span>
+                                {{ value }}
+                                {% if option.name == 'Color' %}
+                                    <span {{ color_style_class }}></span>
                                 {% endif %}
                                 </label>
                             {% elsif category == 1 %}
-                                <label for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}" class="option-labels {{option_classes}} option-labels-second-cat" data-selectedoptsecondcat="{{ value | handleize }}">
-                                {{value}}
-                                {% if option.name == 'Color'%}
-                                    <span {{color_style_class}}></span>
+                                <label for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}" class="option-labels {{ option_classes }} option-labels-second-cat" data-selectedoptsecondcat="{{ value | handleize }}">
+                                {{ value }}
+                                {% if option.name == 'Color' %}
+                                    <span {{ color_style_class }}></span>
                                 {% endif %}
                                 </label>
                                 {% assign option_classes = '' %}
                             {% elsif category == 2 %}
-                                <label for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}" class="option-labels {{option_classes}}">
-                                {{value}}
-                                {% if option.name == 'Color'%}
-                                    <span {{color_style_class}}></span>
+                                <label for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}" class="option-labels {{ option_classes }}">
+                                {{ value }}
+                                {% if option.name == 'Color' %}
+                                    <span {{ color_style_class }}></span>
                                 {% endif %}
                                 </label>
                                 {% assign option_classes = '' %}
@@ -195,7 +195,7 @@
 {% endif %}
 
 {% comment %} First Available Variant when Reload *this is also applicable for URL with '?variant='{% endcomment %}
-{% if product_options_size > 1%}
+{% if product_options_size > 1 %}
     {% assign selected_variant = product.selected_or_first_available_variant.title | escape | replace: ' / ', '+' %}
     {% assign selected_variant = selected_variant | replace: ' ', '-' | downcase %}
     {% assign selected_variant_array = selected_variant | split: '+' %}

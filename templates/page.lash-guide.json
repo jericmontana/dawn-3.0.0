@@ -31,7 +31,7 @@
           "type": "video",
           "settings": {
             "title": "HOW TO APPLY OUR 25MM LASHES",
-            "image": "shopify:\/\/shop_images\/How_to_apply_lashes.png",
+            "image": "shopify://shop_images/How_to_apply_lashes.png",
             "video_type": "youtube",
             "video_id": "iFF7CBdKwPc"
           }
@@ -40,7 +40,7 @@
           "type": "video",
           "settings": {
             "title": "HOW TO CLEAN YOUR LASHESWITH OUR LASH CARE KIT",
-            "image": "shopify:\/\/shop_images\/How_to_clean_lashes.png",
+            "image": "shopify://shop_images/How_to_clean_lashes.png",
             "video_type": "youtube",
             "video_id": "U3TO_HvMSBs"
           }

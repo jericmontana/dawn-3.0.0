@@ -26,29 +26,29 @@
 
     {%- if  use_as_default_bg -%}
         .section--image-with-product .section-{{ section.id }}-bg-contaier {
-            --color-foreground: {{section.settings.fg_color.red}},{{section.settings.fg_color.green}},{{section.settings.fg_color.blue}};
-            --color-background: {{section.settings.bg_color.red}},{{section.settings.bg_color.green}},{{section.settings.bg_color.blue}};
-            background-image: url('{{section.settings.bg_image | image_url}}');
+            --color-foreground: {{ section.settings.fg_color.red }},{{ section.settings.fg_color.green }},{{ section.settings.fg_color.blue }};
+            --color-background: {{ section.settings.bg_color.red }},{{ section.settings.bg_color.green }},{{ section.settings.bg_color.blue }};
+            background-image: url('{{ section.settings.bg_image | image_url }}');
             background-color: {{ section.settings.bg_color }};
             background-blend-mode: {{ section.settings.bg_blend }};
         }
     {%- endif -%}
 
-    .section--image-with-product-{{section.id}} .section__image-with-product-card{
-        border-radius: {{section.settings.cc_border_radius}}rem;
-        background-color: {{section.settings.cc_bg_color}};
+    .section--image-with-product-{{ section.id }} .section__image-with-product-card{
+        border-radius: {{ section.settings.cc_border_radius }}rem;
+        background-color: {{ section.settings.cc_bg_color }};
     }
 
     {% case section.settings.color_scheme %}
         {% when 'background-1' %}
-        .section--image-with-product-{{section.id}} .section__header--title{
+        .section--image-with-product-{{ section.id }} .section__header--title{
             color: rgb({{ settings.colors_accent_2.red }}, {{ settings.colors_accent_2.green }}, {{ settings.colors_accent_2.blue }});
         }
     {% endcase %}
 
 {%- endstyle -%}
 
-<div class="section section--image-with-product section--image-with-product-{{section.id}} {% unless use_as_default_bg %}color-{{ section.settings.color_scheme }}{% endunless %}">
+<div class="section section--image-with-product section--image-with-product-{{ section.id }} {% unless use_as_default_bg %}color-{{ section.settings.color_scheme }}{% endunless %}">
     <div class="section__bg-container section-{{ section.id }}-bg-contaier section-{{ section.id }}-padding">
         <div class="page-width">
             
@@ -118,9 +118,9 @@
                                     class="motion-reduce"
                                     >
                                     {% if featured_product != blank %}
-                                    <div class="section__image-with-product-card--mark" style="top: {{image_with_product_card_block.settings.y_pos | minus: 100 | abs }}%;left: {{image_with_product_card_block.settings.x_pos}}%;">
+                                    <div class="section__image-with-product-card--mark" style="top: {{ image_with_product_card_block.settings.y_pos | minus: 100 | abs }}%;left: {{ image_with_product_card_block.settings.x_pos }}%;">
                                         <modal-opener class="product-popup-modal__opener no-js-hidden" data-modal="#PopupModal-{{ forloop.index0 }}">
-                                            <button style="background-color:{{image_with_product_card_block.settings.color}};" id="ProductPopup-{{ forloop.index0 }}" class="image-with-text-product-popup-modal__button link" type="button" aria-haspopup="dialog"></button>
+                                            <button style="background-color:{{ image_with_product_card_block.settings.color }};" id="ProductPopup-{{ forloop.index0 }}" class="image-with-text-product-popup-modal__button link" type="button" aria-haspopup="dialog"></button>
                                         </modal-opener>
                                         <a href="{{ featured_product.url }}" title="{{ featured_product.title }}" class="product-popup-modal__button link no-js">{{ featured_product.title }}</a>
                                     </div>
@@ -165,368 +165,368 @@
 </div>
 
 {% schema %}
+{
+  "name": "🔰 Image with product",
+  "tag": "section",
+  "settings": [
     {
-        "name": "🔰 Image with product",
-        "tag": "section",
-        "settings": [
-            {
-                "type": "header",
-                "content": "Default Background"
-            },
-            {
-                "type": "select",
-                "id": "color_scheme",
-                "options": [
-                    {
-                    "value": "accent-1",
-                    "label": "Accent 1"
-                    },
-                    {
-                    "value": "accent-2",
-                    "label": "Accent 2"
-                    },
-                    {
-                    "value": "background-1",
-                    "label": "Background 1"
-                    },
-                    {
-                    "value": "background-2",
-                    "label": "Background 2"
-                    },
-                    {
-                    "value": "inverse",
-                    "label": "Inverse"
-                    }
-                ],
-                "default": "background-1",
-                "label": "Color Scheme",
-                "info": "To change the card color scheme, update your theme settings."
-            },
-            {
-                "type": "header",
-                "content": "Custom Color Scheme"
-            },
-            {
-                "type": "checkbox",
-                "id": "use_as_default_bg",
-                "label": "Set as default",
-                "default": false
-            },
-            {
-                "type": "color",
-                "id": "fg_color",
-                "label": "Foreground Color",
-                "default": "#121212"
-            },
-            {
-                "type": "color",
-                "id": "bg_color",
-                "label": "Background Color",
-                "default": "#ffffff"
-            },
-            {
-                "type": "image_picker",
-                "id": "bg_image",
-                "label": "Background Image"
-            },
-            {
-                "type": "select",
-                "id": "bg_blend",
-                "label": "Blend Mode",
-                "options": [
-                    {
-                    "value": "normal",
-                    "label": "Normal"
-                    },
-                    {
-                    "value": "multiply",
-                    "label": "Multiply"
-                    },
-                    {
-                    "value": "screen",
-                    "label": "Screen"
-                    },
-                    {
-                    "value": "overlay",
-                    "label": "Overlay"
-                    },
-                    {
-                    "value": "darken",
-                    "label": "Darken"
-                    },
-                    {
-                    "value": "lighten",
-                    "label": "Lighten"
-                    },
-                    {
-                    "value": "color-dodge",
-                    "label": "Color Dodge"
-                    },
-                    {
-                    "value": "saturation",
-                    "label": "Saturation"
-                    },
-                    {
-                    "value": "color",
-                    "label": "Color"
-                    },
-                    {
-                    "value": "luminosity",
-                    "label": "Luminosity"
-                    }
-                ],
-                "default": "normal"
-            },
-            {
-                "type": "header",
-                "content": "Section Padding"
-            },
-            {
-                "type": "checkbox",
-                "id": "use_as_default_padding",
-                "label": "Set as default",
-                "default": false
-            },
-            {
-                "type": "range",
-                "id": "padding_top",
-                "min": 0,
-                "max": 100,
-                "step": 4,
-                "unit": "px",
-                "label": "Padding Top",
-                "default": 36,
-                "info":"Default Value is 36"
-            },
-            {
-                "type": "range",
-                "id": "padding_bottom",
-                "min": 0,
-                "max": 100,
-                "step": 4,
-                "unit": "px",
-                "label": "Padding Bottom",
-                "default": 36,
-                "info":"Default Value is 36"
-            }
-        ],
-        "blocks": [
-            {
-                "type": "heading",
-                "name": "Header",
-                "limit": 1,
-                "settings": [
-                    {
-                    "type": "header",
-                    "content": "Header Settings"
-                    },
-                    {
-                    "type": "text",
-                    "id": "title",
-                    "label": "Title",
-                    "default": "Shop the look"
-                    },
-                    {
-                    "type": "checkbox",
-                    "id": "title_uppercase",
-                    "label": "Uppercase",
-                    "default": false
-                    },
-                    {
-                    "type": "textarea",
-                    "id": "subtitle",
-                    "label": "Subtitle",
-                    "default": "Mus mauris vitae ultricies leo. Ac feugiat sed lectus vestibulum lacus laoreet non curabitur."
-                    }
-                ]
-            },
-            {
-                "type": "slideshow",
-                "name": "Slider",
-                "limit": 1,
-                "settings":[
-                    {
-                    "type": "header",
-                    "content": "Slider Settings"
-                    },
-                    {
-                    "type": "range",
-                    "id": "items_to_show",
-                    "min": 2,
-                    "max": 8,
-                    "step": 1,
-                    "default": 4,
-                    "label": "Items to show"
-                    },
-                    {
-                    "type": "header",
-                    "content": "Grid Settings"
-                    },
-                    {
-                    "type": "range",
-                    "id": "columns_desktop",
-                    "min": 2,
-                    "max": 5,
-                    "step": 1,
-                    "default": 4,
-                    "label": "Columns on Desktop",
-                    "info": "Default Value is 4"
-                    },
-                    {
-                    "type": "range",
-                    "id": "columns_tablet",
-                    "min": 1,
-                    "max": 3,
-                    "step": 1,
-                    "default": 2,
-                    "label": "Columns on Tablet",
-                    "info": "Default Value is 2"
-                    },
-                    {
-                    "type": "range",
-                    "id": "columns_mobile",
-                    "min": 1,
-                    "max": 3,
-                    "step": 1,
-                    "default": 1,
-                    "label": "Columns on Mobile",
-                    "info": "Default Value is 1"
-                    },
-                    {
-                    "type": "select",
-                    "id": "slider",
-                    "label": "Slider",
-                    "options": [
-                        {
-                        "value": "slide-me-not",
-                        "label": "None"
-                        },
-                        {
-                        "value": "everywhere",
-                        "label": "Everywhere"
-                        },
-                        {
-                        "value": "medium-down",
-                        "label": "Medium Down"
-                        }
-                    ],
-                    "default": "slide-me-not"
-                    }
-                ]
-            },
-            {
-                "type": "image_with_product_card",
-                "name": "Image with product card",
-                "limit": 8,
-                "settings":[
-                    {
-                        "type": "image_picker",
-                        "id": "image",
-                        "label": "Image"
-                    },
-                    {
-                        "type": "product",
-                        "id": "product",
-                        "label": "Product"
-                    },
-                    {
-                        "type": "header",
-                        "content": "Marking Settings"
-                    },
-                    {
-                        "type": "range",
-                        "id": "x_pos",
-                        "min": 0,
-                        "max": 100,
-                        "step": 1,
-                        "label": "X-axis",
-                        "default": 0
-                    },
-                    {
-                        "type": "range",
-                        "id": "y_pos",
-                        "min": 0,
-                        "max": 100,
-                        "step": 1,
-                        "label": "Y-axis",
-                        "default": 0
-                    },
-                    {
-                        "type": "color",
-                        "id": "color",
-                        "label": "Color",
-                        "default": "#334FB4"
-                    },
-                    {
-                        "type": "header",
-                        "content": "Product Card"
-                    },
-                    {
-                        "type": "select",
-                        "id": "image_ratio",
-                        "options": [
-                            {
-                            "value": "adapt",
-                            "label": "Adapt to Image"
-                            },
-                            {
-                            "value": "portrait",
-                            "label": "Portrait"
-                            },
-                            {
-                            "value": "square",
-                            "label": "Square"
-                            }
-                        ],
-                        "default": "adapt",
-                        "label": "Image Ratio"
-                    },
-                    {
-                        "type": "checkbox",
-                        "id": "show_secondary_image",
-                        "default": false,
-                        "label": "Show second image on hover"
-                    },
-                    {
-                        "type": "checkbox",
-                        "id": "show_vendor",
-                        "default": false,
-                        "label": "Show vendor"
-                    },
-                    {
-                        "type": "checkbox",
-                        "id": "show_rating",
-                        "default": false,
-                        "label": "Show product rating",
-                        "info": "To display a rating, add a product rating app. [Learn more](https://help.shopify.com/en/manual/online-store/themes/theme-structure/theme-features#featured-collection-show-product-rating)"
-                    }
-                ]
-            }
-        ],
-        "presets": [
-            {
-                "name": "🔰 Image with product",
-                "blocks":[
-                    {
-                        "type": "heading"
-                    },
-                    {
-                        "type": "slideshow"
-                    },
-                    {
-                        "type": "image_with_product_card"
-                    },
-                    {
-                        "type": "image_with_product_card"
-                    },
-                    {
-                        "type": "image_with_product_card"
-                    },
-                    {
-                        "type": "image_with_product_card"
-                    }
-                ]
-            }
-        ]
+      "type": "header",
+      "content": "Default Background"
+    },
+    {
+      "type": "select",
+      "id": "color_scheme",
+      "options": [
+        {
+          "value": "accent-1",
+          "label": "Accent 1"
+        },
+        {
+          "value": "accent-2",
+          "label": "Accent 2"
+        },
+        {
+          "value": "background-1",
+          "label": "Background 1"
+        },
+        {
+          "value": "background-2",
+          "label": "Background 2"
+        },
+        {
+          "value": "inverse",
+          "label": "Inverse"
+        }
+      ],
+      "default": "background-1",
+      "label": "Color Scheme",
+      "info": "To change the card color scheme, update your theme settings."
+    },
+    {
+      "type": "header",
+      "content": "Custom Color Scheme"
+    },
+    {
+      "type": "checkbox",
+      "id": "use_as_default_bg",
+      "label": "Set as default",
+      "default": false
+    },
+    {
+      "type": "color",
+      "id": "fg_color",
+      "label": "Foreground Color",
+      "default": "#121212"
+    },
+    {
+      "type": "color",
+      "id": "bg_color",
+      "label": "Background Color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "image_picker",
+      "id": "bg_image",
+      "label": "Background Image"
+    },
+    {
+      "type": "select",
+      "id": "bg_blend",
+      "label": "Blend Mode",
+      "options": [
+        {
+          "value": "normal",
+          "label": "Normal"
+        },
+        {
+          "value": "multiply",
+          "label": "Multiply"
+        },
+        {
+          "value": "screen",
+          "label": "Screen"
+        },
+        {
+          "value": "overlay",
+          "label": "Overlay"
+        },
+        {
+          "value": "darken",
+          "label": "Darken"
+        },
+        {
+          "value": "lighten",
+          "label": "Lighten"
+        },
+        {
+          "value": "color-dodge",
+          "label": "Color Dodge"
+        },
+        {
+          "value": "saturation",
+          "label": "Saturation"
+        },
+        {
+          "value": "color",
+          "label": "Color"
+        },
+        {
+          "value": "luminosity",
+          "label": "Luminosity"
+        }
+      ],
+      "default": "normal"
+    },
+    {
+      "type": "header",
+      "content": "Section Padding"
+    },
+    {
+      "type": "checkbox",
+      "id": "use_as_default_padding",
+      "label": "Set as default",
+      "default": false
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Padding Top",
+      "default": 36,
+      "info": "Default Value is 36"
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Padding Bottom",
+      "default": 36,
+      "info": "Default Value is 36"
     }
+  ],
+  "blocks": [
+    {
+      "type": "heading",
+      "name": "Header",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "header",
+          "content": "Header Settings"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title",
+          "default": "Shop the look"
+        },
+        {
+          "type": "checkbox",
+          "id": "title_uppercase",
+          "label": "Uppercase",
+          "default": false
+        },
+        {
+          "type": "textarea",
+          "id": "subtitle",
+          "label": "Subtitle",
+          "default": "Mus mauris vitae ultricies leo. Ac feugiat sed lectus vestibulum lacus laoreet non curabitur."
+        }
+      ]
+    },
+    {
+      "type": "slideshow",
+      "name": "Slider",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "header",
+          "content": "Slider Settings"
+        },
+        {
+          "type": "range",
+          "id": "items_to_show",
+          "min": 2,
+          "max": 8,
+          "step": 1,
+          "default": 4,
+          "label": "Items to show"
+        },
+        {
+          "type": "header",
+          "content": "Grid Settings"
+        },
+        {
+          "type": "range",
+          "id": "columns_desktop",
+          "min": 2,
+          "max": 5,
+          "step": 1,
+          "default": 4,
+          "label": "Columns on Desktop",
+          "info": "Default Value is 4"
+        },
+        {
+          "type": "range",
+          "id": "columns_tablet",
+          "min": 1,
+          "max": 3,
+          "step": 1,
+          "default": 2,
+          "label": "Columns on Tablet",
+          "info": "Default Value is 2"
+        },
+        {
+          "type": "range",
+          "id": "columns_mobile",
+          "min": 1,
+          "max": 3,
+          "step": 1,
+          "default": 1,
+          "label": "Columns on Mobile",
+          "info": "Default Value is 1"
+        },
+        {
+          "type": "select",
+          "id": "slider",
+          "label": "Slider",
+          "options": [
+            {
+              "value": "slide-me-not",
+              "label": "None"
+            },
+            {
+              "value": "everywhere",
+              "label": "Everywhere"
+            },
+            {
+              "value": "medium-down",
+              "label": "Medium Down"
+            }
+          ],
+          "default": "slide-me-not"
+        }
+      ]
+    },
+    {
+      "type": "image_with_product_card",
+      "name": "Image with product card",
+      "limit": 8,
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "product",
+          "id": "product",
+          "label": "Product"
+        },
+        {
+          "type": "header",
+          "content": "Marking Settings"
+        },
+        {
+          "type": "range",
+          "id": "x_pos",
+          "min": 0,
+          "max": 100,
+          "step": 1,
+          "label": "X-axis",
+          "default": 0
+        },
+        {
+          "type": "range",
+          "id": "y_pos",
+          "min": 0,
+          "max": 100,
+          "step": 1,
+          "label": "Y-axis",
+          "default": 0
+        },
+        {
+          "type": "color",
+          "id": "color",
+          "label": "Color",
+          "default": "#334FB4"
+        },
+        {
+          "type": "header",
+          "content": "Product Card"
+        },
+        {
+          "type": "select",
+          "id": "image_ratio",
+          "options": [
+            {
+              "value": "adapt",
+              "label": "Adapt to Image"
+            },
+            {
+              "value": "portrait",
+              "label": "Portrait"
+            },
+            {
+              "value": "square",
+              "label": "Square"
+            }
+          ],
+          "default": "adapt",
+          "label": "Image Ratio"
+        },
+        {
+          "type": "checkbox",
+          "id": "show_secondary_image",
+          "default": false,
+          "label": "Show second image on hover"
+        },
+        {
+          "type": "checkbox",
+          "id": "show_vendor",
+          "default": false,
+          "label": "Show vendor"
+        },
+        {
+          "type": "checkbox",
+          "id": "show_rating",
+          "default": false,
+          "label": "Show product rating",
+          "info": "To display a rating, add a product rating app. [Learn more](https://help.shopify.com/en/manual/online-store/themes/theme-structure/theme-features#featured-collection-show-product-rating)"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "🔰 Image with product",
+      "blocks": [
+        {
+          "type": "heading"
+        },
+        {
+          "type": "slideshow"
+        },
+        {
+          "type": "image_with_product_card"
+        },
+        {
+          "type": "image_with_product_card"
+        },
+        {
+          "type": "image_with_product_card"
+        },
+        {
+          "type": "image_with_product_card"
+        }
+      ]
+    }
+  ]
+}
 {% endschema %}

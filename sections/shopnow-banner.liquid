@@ -1,20 +1,20 @@
 {{ 'section-shopnow-banner.css' | asset_url | stylesheet_tag }}
 
-<div class="section section--shopnow-banner {% if page.template_suffix == 'wishlist' %}wishlist-empty{% endif %}" style="background-color: {{section.settings.bg_color}}">
+<div class="section section--shopnow-banner {% if page.template_suffix == 'wishlist' %}wishlist-empty{% endif %}" style="background-color: {{ section.settings.bg_color }}">
     <div class="section__bg-container">
 
         <div class="page-width">
 
             <div class="section--shopnow-banner-wrapper grid grid--gapless grid--1-col grid--2-col-desktop grid--2-col-tablet"
-                style="{% unless settings.banner_bg_image == blank %}background-image: url('{{settings.banner_bg_image | image_url}}');{% endunless %}
+                style="{% unless settings.banner_bg_image == blank %}background-image: url('{{ settings.banner_bg_image | image_url }}');{% endunless %}
                     {% unless settings.banner_bg_color == blank %}background-color: {{ settings.banner_bg_color }};{% endunless %}
-                    background-blend-mode: {{settings.banner_bg_blend}};">
+                    background-blend-mode: {{ settings.banner_bg_blend }};">
                 
                 
                 {%- assign header = section.blocks | where: 'type', 'header' -%}
                 {%- for block in header -%}
                 {%- if block.settings.apply_general_settings_header -%}
-                    {% if settings.title != blank or settings.subtitle != blank%}
+                    {% if settings.title != blank or settings.subtitle != blank %}
                     <div class="grid__item">
                         <div class="section__header">
                             {% unless settings.title == blank %}
@@ -22,20 +22,20 @@
                             {% endunless %}
                             {% unless settings.subtitle == blank %}
                             <p class="section__header--subtitle">{{ settings.subtitle | escape }}</p>
-                            {% endunless%}
+                            {% endunless %}
                         </div>
                     </div>
                     {% endif %}
                 {%- else -%}
-                    {% if block.settings.title != blank or block.settings.subtitle != blank%}
+                    {% if block.settings.title != blank or block.settings.subtitle != blank %}
                     <div class="grid__item">
                         <div class="section__header">
                             {% unless block.settings.title == blank %}
-                            <h2 class="section__header--title {% if block.settings.title_uppercase%}uppercase{% endif %}">{{ block.settings.title | escape }}</h2>
+                            <h2 class="section__header--title {% if block.settings.title_uppercase %}uppercase{% endif %}">{{ block.settings.title | escape }}</h2>
                             {% endunless %}
                             {% unless block.settings.subtitle == blank %}
                             <p class="section__header--subtitle">{{ block.settings.subtitle | escape }}</p>
-                            {% endunless%}
+                            {% endunless %}
                         </div>
                     </div>
                     {% endif %}
@@ -80,154 +80,155 @@
 </div>
 
 {% schema %}
+{
+  "name": "🔰 Shop Now Banner",
+  "tag": "section",
+  "settings": [
+
+  ],
+  "blocks": [
     {
-        "name": "🔰 Shop Now Banner",
-        "tag": "section",
-        "settings": [
-        ],
-        "blocks": [
+      "type": "header",
+      "name": "Header",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "checkbox",
+          "id": "apply_general_settings_header",
+          "label": "Apply General Settings",
+          "default": true
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title",
+          "default": "Visit Our Store"
+        },
+        {
+          "type": "checkbox",
+          "id": "title_uppercase",
+          "label": "Uppercase",
+          "default": false
+        },
+        {
+          "type": "textarea",
+          "id": "subtitle",
+          "label": "Subtitle",
+          "default": "Mus mauris vitae ultricies leo. Ac feugiat sed lectus vestibulum lacus laoreet non curabitur."
+        }
+      ]
+    },
+    {
+      "type": "button",
+      "name": "Button",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "checkbox",
+          "id": "apply_general_settings_btn",
+          "label": "Apply General Settings",
+          "default": true
+        },
+        {
+          "type": "text",
+          "id": "btn_label",
+          "label": "Label",
+          "default": "Shop Now"
+        },
+        {
+          "type": "url",
+          "id": "btn_link",
+          "label": "Link",
+          "default": "/collections/all"
+        },
+        {
+          "type": "select",
+          "id": "btn_size",
+          "label": "Button Size",
+          "options": [
             {
-                "type": "header",
-                "name": "Header",
-                "limit": 1,
-                "settings": [
-                    {
-                        "type": "checkbox",
-                        "id": "apply_general_settings_header",
-                        "label": "Apply General Settings",
-                        "default": true
-                    },
-                    {
-                        "type": "text",
-                        "id": "title",
-                        "label": "Title",
-                        "default": "Visit Our Store"
-                    },
-                    {
-                        "type": "checkbox",
-                        "id": "title_uppercase",
-                        "label": "Uppercase",
-                        "default": false
-                    },
-                    {
-                        "type": "textarea",
-                        "id": "subtitle",
-                        "label": "Subtitle",
-                        "default": "Mus mauris vitae ultricies leo. Ac feugiat sed lectus vestibulum lacus laoreet non curabitur."
-                    }
-                ]
+              "value": "default",
+              "label": "Default"
             },
             {
-                "type": "button",
-                "name": "Button",
-                "limit": 1,
-                "settings":[
-                    {
-                        "type": "checkbox",
-                        "id": "apply_general_settings_btn",
-                        "label": "Apply General Settings",
-                        "default": true
-                    },
-                    {
-                        "type":"text",
-                        "id":"btn_label",
-                        "label":"Label",
-                        "default":"Shop Now"
-                    },
-                    {
-                        "type": "url",
-                        "id": "btn_link",
-                        "label": "Link",
-                        "default": "/collections/all"
-                    },
-                    {
-                        "type": "select",
-                        "id": "btn_size",
-                        "label": "Button Size",
-                        "options": [
-                            {
-                            "value": "default",
-                            "label": "Default"
-                            },
-                            {
-                            "value": "medium",
-                            "label": "Medium"
-                            },
-                            {
-                            "value": "large",
-                            "label": "Large"
-                            }
-                        ],
-                        "default": "default"
-                    },
-                    {
-                        "type": "select",
-                        "id": "hover_effect",
-                        "label": "Hover Effect",
-                        "options": [
-                            {
-                            "value": "lighten",
-                            "label": "Lighten Effect"
-                            },
-                            {
-                            "value": "color-switch",
-                            "label": "Color Switch Effect"
-                            },
-                            {
-                            "value": "slide",
-                            "label": "Slide Effect"
-                            },
-                            {
-                            "value": "shine",
-                            "label": "Shine Effect"
-                            }
-                        ],
-                        "default": "shine"
-                    },
-                    {
-                        "type": "select",
-                        "id": "icon_type",
-                        "label": "Button Icon",
-                        "options": [
-                            {
-                            "value": "none",
-                            "label": "None"
-                            },
-                            {
-                            "value": "arrow",
-                            "label": "Arrow"
-                            }
-                        ],
-                        "default": "arrow"
-                    },
-                    {
-                        "type": "checkbox",
-                        "id": "shadow_effect",
-                        "label": "Enable Shadow Effect",
-                        "default": true
-                    },
-                    {
-                        "type": "checkbox",
-                        "id": "auto_width",
-                        "label": "Enable Auto Width",
-                        "default": false
-                    }
-                ]
-            }
-        ],
-        "presets":[
+              "value": "medium",
+              "label": "Medium"
+            },
             {
-                "name": "🔰 Shop Now Banner",
-                "category": "Custom Section",
-                "blocks":[
-                    {
-                        "type":"header"
-                    },
-                    {
-                        "type":"button"
-                    }
-                ]
-            } 
-        ]
+              "value": "large",
+              "label": "Large"
+            }
+          ],
+          "default": "default"
+        },
+        {
+          "type": "select",
+          "id": "hover_effect",
+          "label": "Hover Effect",
+          "options": [
+            {
+              "value": "lighten",
+              "label": "Lighten Effect"
+            },
+            {
+              "value": "color-switch",
+              "label": "Color Switch Effect"
+            },
+            {
+              "value": "slide",
+              "label": "Slide Effect"
+            },
+            {
+              "value": "shine",
+              "label": "Shine Effect"
+            }
+          ],
+          "default": "shine"
+        },
+        {
+          "type": "select",
+          "id": "icon_type",
+          "label": "Button Icon",
+          "options": [
+            {
+              "value": "none",
+              "label": "None"
+            },
+            {
+              "value": "arrow",
+              "label": "Arrow"
+            }
+          ],
+          "default": "arrow"
+        },
+        {
+          "type": "checkbox",
+          "id": "shadow_effect",
+          "label": "Enable Shadow Effect",
+          "default": true
+        },
+        {
+          "type": "checkbox",
+          "id": "auto_width",
+          "label": "Enable Auto Width",
+          "default": false
+        }
+      ]
     }
+  ],
+  "presets": [
+    {
+      "name": "🔰 Shop Now Banner",
+      "category": "Custom Section",
+      "blocks": [
+        {
+          "type": "header"
+        },
+        {
+          "type": "button"
+        }
+      ]
+    }
+  ]
+}
 {% endschema %}
