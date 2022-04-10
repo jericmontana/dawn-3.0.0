@@ -36,13 +36,13 @@
         "164804860518860218-2": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/AVACLUXE_1080.png"
+            "image": "shopify://shop_images/AVACLUXE_1080.png"
           }
         },
         "f19cb32d-20cd-4b1e-a370-d6a83bd00609": {
           "type": "richtext",
           "settings": {
-            "richtext": "<p>We carry a wide range of <strong>products that are all cruelty free and paraben free<\/strong>.<\/p><p>Our products include <strong>lashes, cosmetics and cosmetic accessories.<\/strong> We have a Luxury Lash line with hand crafted Lashes. Some of <strong>our best sellers<\/strong> have been our beautiful “Luxury” lashes, lip glosses and our Makeup Palettes.<\/p><p>We introduce new products and new collections at least four times a Year.<\/p><p>As a company, <strong>we work hard to reach all of our goals and to maintain a great company.<\/strong> Whether you are a beginner or an expert at makeup our company takes pride in each and every single customer to make them feel confident when shopping with AvaCLuxe. <\/p>"
+            "richtext": "<p>We carry a wide range of <strong>products that are all cruelty free and paraben free</strong>.</p><p>Our products include <strong>lashes, cosmetics and cosmetic accessories.</strong> We have a Luxury Lash line with hand crafted Lashes. Some of <strong>our best sellers</strong> have been our beautiful “Luxury” lashes, lip glosses and our Makeup Palettes.</p><p>We introduce new products and new collections at least four times a Year.</p><p>As a company, <strong>we work hard to reach all of our goals and to maintain a great company.</strong> Whether you are a beginner or an expert at makeup our company takes pride in each and every single customer to make them feel confident when shopping with AvaCLuxe. </p>"
           }
         }
       },

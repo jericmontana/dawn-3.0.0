@@ -15,15 +15,15 @@
     {%- endif -%}
 
     .section--page-banner .section-{{ section.id }}-bg-contaier {
-        --color-foreground: {{settings.fg_color.red}},{{settings.fg_color.green}},{{settings.fg_color.blue}};
-        --color-background: {{settings.bg_color.red}},{{settings.bg_color.green}},{{settings.bg_color.blue}};
-        {% if settings.bg_image != blank %}background-image: url('{{settings.bg_image | image_url}}');{% endif %}
+        --color-foreground: {{ settings.fg_color.red }},{{ settings.fg_color.green }},{{ settings.fg_color.blue }};
+        --color-background: {{ settings.bg_color.red }},{{ settings.bg_color.green }},{{ settings.bg_color.blue }};
+        {% if settings.bg_image != blank %}background-image: url('{{ settings.bg_image | image_url }}');{% endif %}
         background-color: {{ settings.bg_color }};
         background-blend-mode: {{ settings.bg_blend }};
     }
 {%- endstyle -%}
 
-<div class="section section--page-banner section--page-banner-{{section.id}}">
+<div class="section section--page-banner section--page-banner-{{ section.id }}">
     <div class="section__bg-container section-{{ section.id }}-bg-contaier section-{{ section.id }}-padding">
         <div class="page-width">
 
@@ -51,12 +51,12 @@
                     {% if block.settings.title != blank %}
                         <h1 class="h1 section__header--title {% if block.settings.title_uppercase %}uppercase{% endif %}">{{ block.settings.title | escape }}</h1>
                     {% else %}
-                        <h1 class="h1 section__header--title {% if block.settings.title_uppercase %}uppercase{% endif %}">{{dynamic_title}}</h1>
+                        <h1 class="h1 section__header--title {% if block.settings.title_uppercase %}uppercase{% endif %}">{{ dynamic_title }}</h1>
                     {% endif %}
 
                     {% unless block.settings.subtitle == blank %}
                         <p class="section__header--subtitle">{{ block.settings.subtitle | escape }}</p>
-                    {% endunless%}
+                    {% endunless %}
                 </div>
             {%- endfor -%}
         </div>
@@ -64,58 +64,59 @@
 </div>
 
 {% schema %}
+{
+  "name": "🔰 Page Banner",
+  "tag": "section",
+  "settings": [
+
+  ],
+  "blocks": [
     {
-        "name": "🔰 Page Banner",
-        "tag": "section",
-        "settings": [
-        ],
-        "blocks":[
-            {
-                "type": "heading",
-                "name": "Header",
-                "limit": 1,
-                "settings": [
-                    {
-                        "type": "header",
-                        "content": "Header Settings"
-                    },
-                    {
-                        "type": "text",
-                        "id": "title",
-                        "label": "Title"
-                    },
-                    {
-                        "type": "checkbox",
-                        "id": "title_uppercase",
-                        "label": "Uppercase",
-                        "default": false
-                    },
-                    {
-                        "type": "textarea",
-                        "id": "subtitle",
-                        "label": "Subtitle",
-                        "default": "Mus mauris vitae ultricies leo. Ac feugiat sed lectus vestibulum lacus laoreet non curabitur."
-                    }
-                ]
-            },
-            {
-                "type": "breadcrumb",
-                "name": "Breadcrumb",
-                "limit": 1
-            }
-        ],
-        "presets":[
-            {
-                "name": "🔰 Page Banner",
-                "blocks":[
-                    {
-                        "type": "heading"
-                    },
-                    {
-                        "type": "breadcrumb"
-                    }
-                ]
-            }
-        ]
+      "type": "heading",
+      "name": "Header",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "header",
+          "content": "Header Settings"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title"
+        },
+        {
+          "type": "checkbox",
+          "id": "title_uppercase",
+          "label": "Uppercase",
+          "default": false
+        },
+        {
+          "type": "textarea",
+          "id": "subtitle",
+          "label": "Subtitle",
+          "default": "Mus mauris vitae ultricies leo. Ac feugiat sed lectus vestibulum lacus laoreet non curabitur."
+        }
+      ]
+    },
+    {
+      "type": "breadcrumb",
+      "name": "Breadcrumb",
+      "limit": 1
     }
+  ],
+  "presets": [
+    {
+      "name": "🔰 Page Banner",
+      "blocks": [
+        {
+          "type": "heading"
+        },
+        {
+          "type": "breadcrumb"
+        }
+      ]
+    }
+  ]
+}
 {% endschema %}

@@ -49,7 +49,7 @@
           "type": "button",
           "settings": {
             "btn_label": "Shop Now",
-            "btn_link": "shopify:\/\/collections\/all",
+            "btn_link": "shopify://collections/all",
             "btn_size": "default",
             "hover_effect": "shine",
             "icon_type": "arrow",
@@ -93,7 +93,7 @@
           "settings": {
             "apply_general_settings_btn": true,
             "btn_label": "Shop Now",
-            "btn_link": "shopify:\/\/collections\/all",
+            "btn_link": "shopify://collections/all",
             "btn_size": "default",
             "hover_effect": "shine",
             "icon_type": "arrow",

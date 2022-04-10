@@ -28,7 +28,7 @@
       "type": "app-block-7923216",
       "blocks": {
         "5db358d3-014c-4403-a53d-26bfd5da14e9": {
-          "type": "shopify:\/\/apps\/judge-me-product-reviews\/blocks\/all_reviews_page\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "type": "shopify://apps/judge-me-product-reviews/blocks/all_reviews_page/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
           "settings": {
             "extra_wrapper_classes": ""
           }
@@ -62,7 +62,7 @@
           "settings": {
             "apply_general_settings_btn": true,
             "btn_label": "Shop Now",
-            "btn_link": "shopify:\/\/collections\/all",
+            "btn_link": "shopify://collections/all",
             "btn_size": "default",
             "hover_effect": "shine",
             "icon_type": "arrow",

@@ -55,9 +55,9 @@
           {%- for block in section.blocks -%}
             <div class="footer-block grid__item{% if block.type == 'link_list' and block.settings.heading != blank %} footer-block--menu{% endif %}{% if block.type == 'email_signup' %} footer-block--email-signup{% endif %}" {{ block.shopify_attributes }}>
               {%- if block.settings.heading != blank -%}
-                {%- if block.type == 'link_list'-%}
-                  <input type="checkbox" id="link-list-{{section.id}}-{{forloop.index0}}" {% if link_list_count == 1 %}checked{% endif %} class="link-list--toggle">
-                  <label class="link-list--label" for="link-list-{{section.id}}-{{forloop.index0}}"><h2 class="footer-block__heading">{{- block.settings.heading | escape -}}</h2></label>
+                {%- if block.type == 'link_list' -%}
+                  <input type="checkbox" id="link-list-{{ section.id }}-{{ forloop.index0 }}" {% if link_list_count == 1 %}checked{% endif %} class="link-list--toggle">
+                  <label class="link-list--label" for="link-list-{{ section.id }}-{{ forloop.index0 }}"><h2 class="footer-block__heading">{{- block.settings.heading | escape -}}</h2></label>
                 {%- else -%}
                   <h2 class="footer-block__heading">{{- block.settings.heading | escape -}}</h2>
                 {%- endif -%}
@@ -120,7 +120,7 @@
                         
                       </div>
                       {%- if form.posted_successfully? -%}
-                        {%- render 'thank-you-7923216'-%}  
+                        {%- render 'thank-you-7923216' -%}  
                       {%- endif -%}
                     {%- endform -%}
                   </div>
@@ -150,7 +150,7 @@
                           width="{{ block.settings.image.width }}"
                           height="{{ block.settings.image.height }}"
                           style="max-width: min(100%, {{ block.settings.image_width }}px);"
-                          title="{{shop.name}}"
+                          title="{{ shop.name }}"
                         >
                       {%- else -%}
                         {{ 'image' | placeholder_svg_tag: 'placeholder-svg placeholder' }}

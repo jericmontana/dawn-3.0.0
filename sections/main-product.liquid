@@ -228,7 +228,7 @@
                 {% render 'product-box-usp', icon: block.settings.usp_icon -%}
               </div>
               <div class="products__usp--text">
-                <h2 class="h3">{{block.settings.title | escape }}</h2>
+                <h2 class="h3">{{ block.settings.title | escape }}</h2>
               </div>
             </div>
           {%- when 'text' -%}
@@ -795,7 +795,9 @@
       "type": "wishlist_button",
       "name": "Wishlist Button",
       "limit": 1,
-      "settings":[]
+      "settings": [
+
+      ]
     },
     {
       "type": "buy_buttons",
@@ -1035,7 +1037,7 @@
             {
               "value": "truck",
               "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__43.label"
-            },      
+            },
             {
               "value": "washing",
               "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__44.label"
@@ -1125,9 +1127,9 @@
           "value": "thumbnail_slider",
           "label": "t:sections.main-product.settings.gallery_layout.options__3.label"
         }
-    ],
-    "default": "stacked",
-    "label": "t:sections.main-product.settings.gallery_layout.label"
+      ],
+      "default": "stacked",
+      "label": "t:sections.main-product.settings.gallery_layout.label"
     },
     {
       "type": "select",

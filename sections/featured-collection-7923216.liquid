@@ -26,9 +26,9 @@
 
   {%- if  use_as_default_bg -%}
     .section--featured-collection .section-{{ section.id }}-bg-contaier {
-      --color-foreground: {{section.settings.fg_color.red}},{{section.settings.fg_color.green}},{{section.settings.fg_color.blue}};
-      --color-background: {{section.settings.bg_color.red}},{{section.settings.bg_color.green}},{{section.settings.bg_color.blue}};
-      background-image: url('{{section.settings.bg_image | image_url}}');
+      --color-foreground: {{ section.settings.fg_color.red }},{{ section.settings.fg_color.green }},{{ section.settings.fg_color.blue }};
+      --color-background: {{ section.settings.bg_color.red }},{{ section.settings.bg_color.green }},{{ section.settings.bg_color.blue }};
+      background-image: url('{{ section.settings.bg_image | image_url }}');
       background-color: {{ section.settings.bg_color }};
       background-blend-mode: {{ section.settings.bg_blend }};
     }
@@ -36,21 +36,21 @@
 
   {% case section.settings.color_scheme %}
       {% when 'background-1' %}
-      .section--featured-collection-{{section.id}} .section__header--title{
+      .section--featured-collection-{{ section.id }} .section__header--title{
           color: rgb({{ settings.colors_accent_2.red }}, {{ settings.colors_accent_2.green }}, {{ settings.colors_accent_2.blue }});
       }
-      .section--featured-collection-{{section.id}}  .full-unstyled-link{
+      .section--featured-collection-{{ section.id }}  .full-unstyled-link{
           color: rgb({{ settings.colors_accent_2.red }}, {{ settings.colors_accent_2.green }}, {{ settings.colors_accent_2.blue }});
       }
-      .section--featured-collection-{{section.id}} .price-item{
+      .section--featured-collection-{{ section.id }} .price-item{
           color: rgb({{ settings.colors_accent_2.red }}, {{ settings.colors_accent_2.green }}, {{ settings.colors_accent_2.blue }});
       } 
 
-      .section--featured-collection-{{section.id}} .price__sale .price-item--regular{
+      .section--featured-collection-{{ section.id }} .price__sale .price-item--regular{
           color: rgba({{ settings.colors_accent_2.red }}, {{ settings.colors_accent_2.green }}, {{ settings.colors_accent_2.blue }},0.75);
       } 
 
-      .section--featured-collection-{{section.id}} .loading-overlay__spinner circle{
+      .section--featured-collection-{{ section.id }} .loading-overlay__spinner circle{
           stroke: rgba(255,255,255,0.75);
       } 
       
@@ -58,14 +58,14 @@
 
 {%- endstyle -%}
 
-<div class="section section--featured-collection section--featured-collection-{{section.id}} {% unless use_as_default_bg %}color-{{ section.settings.color_scheme }}{% endunless %}">
+<div class="section section--featured-collection section--featured-collection-{{ section.id }} {% unless use_as_default_bg %}color-{{ section.settings.color_scheme }}{% endunless %}">
   <div class="section__bg-container section-{{ section.id }}-bg-contaier section-{{ section.id }}-padding">
     <div class="page-width {% if section.settings.round_corner_background %}page-width--round-corner{% endif %}">
 
       {% comment %} For Section Header {% endcomment %}
       {%- assign header = section.blocks | where: 'type', 'header' -%}
       {%- for block in header -%}
-        {% if block.settings.title != blank or block.settings.subtitle != blank%}
+        {% if block.settings.title != blank or block.settings.subtitle != blank %}
           {%- render 'section-header',
             title: block.settings.title,
             subtitle: block.settings.subtitle,
@@ -102,7 +102,7 @@
         <div class="section__slider">
           <slider-component>
             <ul id="Slider-{{ section.id }}"
-                class="grid {{grid_device_class | strip }} gridproduct-grid contains-card{% if settings.card_style == 'standard' %} contains-card--standard{% endif %} {% if products_to_display > 2 and slider_mode != 'slide-me-not' %}{{ slider_class | strip }}{% endif %}"
+                class="grid {{ grid_device_class | strip }} gridproduct-grid contains-card{% if settings.card_style == 'standard' %} contains-card--standard{% endif %} {% if products_to_display > 2 and slider_mode != 'slide-me-not' %}{{ slider_class | strip }}{% endif %}"
                 role="list">
                 {%- for product in block.settings.collection.products limit: block.settings.products_to_show -%}
                 <li id="Slide-{{ section.id }}-{{ forloop.index }}" class="grid__item grid__item--featured-collection {% if block.settings.collection.all_products_count > 2 and slider_mode != 'slide-me-not' and block.settings.products_to_show > 2 %} slider__slide{% endif %}">
@@ -114,7 +114,7 @@
                     show_rating: block.settings.show_rating
                     %}
 
-                    {% if block.settings.show_add_to_cart_button%}
+                    {% if block.settings.show_add_to_cart_button %}
                       {% render 'button-add-to-cart', product: product %}
                     {% endif %}
                 </li>
@@ -234,44 +234,44 @@
       "label": "Blend Mode",
       "options": [
         {
-        "value": "normal",
-        "label": "Normal"
+          "value": "normal",
+          "label": "Normal"
         },
         {
-        "value": "multiply",
-        "label": "Multiply"
+          "value": "multiply",
+          "label": "Multiply"
         },
         {
-        "value": "screen",
-        "label": "Screen"
+          "value": "screen",
+          "label": "Screen"
         },
         {
-        "value": "overlay",
-        "label": "Overlay"
+          "value": "overlay",
+          "label": "Overlay"
         },
         {
-        "value": "darken",
-        "label": "Darken"
+          "value": "darken",
+          "label": "Darken"
         },
         {
-        "value": "lighten",
-        "label": "Lighten"
+          "value": "lighten",
+          "label": "Lighten"
         },
         {
-        "value": "color-dodge",
-        "label": "Color Dodge"
+          "value": "color-dodge",
+          "label": "Color Dodge"
         },
         {
-        "value": "saturation",
-        "label": "Saturation"
+          "value": "saturation",
+          "label": "Saturation"
         },
         {
-        "value": "color",
-        "label": "Color"
+          "value": "color",
+          "label": "Color"
         },
         {
-        "value": "luminosity",
-        "label": "Luminosity"
+          "value": "luminosity",
+          "label": "Luminosity"
         }
       ],
       "default": "normal"
@@ -295,7 +295,7 @@
       "unit": "px",
       "label": "Padding Top",
       "default": 36,
-      "info":"Default Value is 36"
+      "info": "Default Value is 36"
     },
     {
       "type": "range",
@@ -306,7 +306,7 @@
       "unit": "px",
       "label": "Padding Bottom",
       "default": 36,
-      "info":"Default Value is 36"
+      "info": "Default Value is 36"
     }
   ],
   "blocks": [
@@ -343,7 +343,7 @@
       "type": "slider",
       "name": "Collection",
       "limit": 1,
-      "settings":[
+      "settings": [
         {
           "type": "header",
           "content": "Slider Settings"
@@ -408,16 +408,16 @@
           "label": "Slider",
           "options": [
             {
-            "value": "slide-me-not",
-            "label": "None"
+              "value": "slide-me-not",
+              "label": "None"
             },
             {
-            "value": "everywhere",
-            "label": "Everywhere"
+              "value": "everywhere",
+              "label": "Everywhere"
             },
             {
-            "value": "medium-down",
-            "label": "Medium Down"
+              "value": "medium-down",
+              "label": "Medium Down"
             }
           ],
           "default": "slide-me-not"
@@ -471,12 +471,12 @@
       "type": "button",
       "name": "Button",
       "limit": 1,
-      "settings":[
+      "settings": [
         {
-          "type":"text",
-          "id":"btn_label",
-          "label":"Label",
-          "default":"View All"
+          "type": "text",
+          "id": "btn_label",
+          "label": "Label",
+          "default": "View All"
         },
         {
           "type": "url",
@@ -490,16 +490,16 @@
           "label": "Button Size",
           "options": [
             {
-            "value": "default",
-            "label": "Default"
+              "value": "default",
+              "label": "Default"
             },
             {
-            "value": "medium",
-            "label": "Medium"
+              "value": "medium",
+              "label": "Medium"
             },
             {
-            "value": "large",
-            "label": "Large"
+              "value": "large",
+              "label": "Large"
             }
           ],
           "default": "default"
@@ -510,20 +510,20 @@
           "label": "Hover Effect",
           "options": [
             {
-            "value": "lighten",
-            "label": "Lighten Effect"
+              "value": "lighten",
+              "label": "Lighten Effect"
             },
             {
-            "value": "color-switch",
-            "label": "Color Switch Effect"
+              "value": "color-switch",
+              "label": "Color Switch Effect"
             },
             {
-            "value": "slide",
-            "label": "Slide Effect"
+              "value": "slide",
+              "label": "Slide Effect"
             },
             {
-            "value": "shine",
-            "label": "Shine Effect"
+              "value": "shine",
+              "label": "Shine Effect"
             }
           ],
           "default": "shine"
@@ -534,12 +534,12 @@
           "label": "Button Icon",
           "options": [
             {
-            "value": "none",
-            "label": "None"
+              "value": "none",
+              "label": "None"
             },
             {
-            "value": "arrow",
-            "label": "Arrow"
+              "value": "arrow",
+              "label": "Arrow"
             }
           ],
           "default": "arrow"
@@ -562,7 +562,7 @@
   "presets": [
     {
       "name": "🔰 Featured Collection",
-      "blocks":[
+      "blocks": [
         {
           "type": "header"
         },
