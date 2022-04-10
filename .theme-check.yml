@@ -6,3 +6,6 @@ LiquidTag:
 
 ImgLazyLoading:
   enabled: false
+
+TemplateLength:
+  enabled: false
