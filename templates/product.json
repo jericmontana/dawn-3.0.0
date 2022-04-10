@@ -9,7 +9,7 @@
           }
         },
         "805fb50f-3e5f-4272-9b05-4a75bb375e1e": {
-          "type": "shopify:\/\/apps\/judge-me-product-reviews\/blocks\/preview_badge\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "type": "shopify://apps/judge-me-product-reviews/blocks/preview_badge/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
           "settings": {
           }
         },
@@ -74,7 +74,7 @@
         "2aeabb46-d263-4133-9180-0360aa582de5": {
           "type": "heading_support",
           "settings": {
-            "title_support": "<p>World's most comfortable high-quality lashes.<\/p><p>Elevating your look..<\/p><p>IN SECONDS.<\/p>"
+            "title_support": "<p>World's most comfortable high-quality lashes.</p><p>Elevating your look..</p><p>IN SECONDS.</p>"
           }
         },
         "1646294192d48bac15-0": {
@@ -90,7 +90,7 @@
           "settings": {
             "logo_svg": "high-quality",
             "use_image": true,
-            "image": "shopify:\/\/shop_images\/High-Quality.png",
+            "image": "shopify://shop_images/High-Quality.png",
             "title": "high quality"
           }
         },
@@ -99,7 +99,7 @@
           "settings": {
             "logo_svg": "substantial",
             "use_image": true,
-            "image": "shopify:\/\/shop_images\/Substantial.png",
+            "image": "shopify://shop_images/Substantial.png",
             "title": "substantial"
           }
         },
@@ -108,7 +108,7 @@
           "settings": {
             "logo_svg": "loved-by-hundreds",
             "use_image": true,
-            "image": "shopify:\/\/shop_images\/Loved-by-hundreds.png",
+            "image": "shopify://shop_images/Loved-by-hundreds.png",
             "title": "loved by hundreds"
           }
         },
@@ -117,7 +117,7 @@
           "settings": {
             "logo_svg": "free-shipping",
             "use_image": true,
-            "image": "shopify:\/\/shop_images\/Free-Shipping.png",
+            "image": "shopify://shop_images/Free-Shipping.png",
             "title": "free shipping"
           }
         }
@@ -148,7 +148,7 @@
       "type": "app-block-7923216",
       "blocks": {
         "2d2a32b7-c9c2-45ed-a9f9-676c748094be": {
-          "type": "shopify:\/\/apps\/judge-me-product-reviews\/blocks\/review_widget\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "type": "shopify://apps/judge-me-product-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
           "settings": {
           }
         }
@@ -171,7 +171,7 @@
           "type": "video",
           "settings": {
             "title": "HOW TO APPLY OUR 25MM LASHES",
-            "image": "shopify:\/\/shop_images\/How_to_apply_lashes.png",
+            "image": "shopify://shop_images/How_to_apply_lashes.png",
             "video_type": "youtube",
             "video_id": "iFF7CBdKwPc"
           }
@@ -180,7 +180,7 @@
           "type": "video",
           "settings": {
             "title": "HOW TO CLEAN YOUR LASHES WITH OUR LASH CARE KIT",
-            "image": "shopify:\/\/shop_images\/How_to_clean_lashes.png",
+            "image": "shopify://shop_images/How_to_clean_lashes.png",
             "video_type": "youtube",
             "video_id": "U3TO_HvMSBs"
           }
@@ -221,7 +221,7 @@
         "1646294267d4b6aea4-2": {
           "type": "image_with_product_card",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Snow_Angel.png",
+            "image": "shopify://shop_images/Snow_Angel.png",
             "product": "snow-angel",
             "x_pos": 64,
             "y_pos": 66,
@@ -235,7 +235,7 @@
         "1646294267d4b6aea4-3": {
           "type": "image_with_product_card",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Barbie_Pink.png",
+            "image": "shopify://shop_images/Barbie_Pink.png",
             "product": "barbie-pink",
             "x_pos": 59,
             "y_pos": 80,
@@ -249,7 +249,7 @@
         "9d424643-3ba1-478d-aa38-e9e5343e743b": {
           "type": "image_with_product_card",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Lowkey.png",
+            "image": "shopify://shop_images/Lowkey.png",
             "product": "lowkey",
             "x_pos": 51,
             "y_pos": 66,
@@ -263,7 +263,7 @@
         "0d806d52-70d4-4323-a181-5c56be1e9565": {
           "type": "image_with_product_card",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Rich.png",
+            "image": "shopify://shop_images/Rich.png",
             "product": "rich",
             "x_pos": 34,
             "y_pos": 83,
@@ -277,7 +277,7 @@
         "0af2009f-cf0e-4193-89f8-068fee057a47": {
           "type": "image_with_product_card",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Chloe.png",
+            "image": "shopify://shop_images/Chloe.png",
             "product": "chloe",
             "x_pos": 33,
             "y_pos": 75,
@@ -291,7 +291,7 @@
         "1646294267d4b6aea4-4": {
           "type": "image_with_product_card",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Milly.png",
+            "image": "shopify://shop_images/Milly.png",
             "product": "milly",
             "x_pos": 38,
             "y_pos": 60,
@@ -305,7 +305,7 @@
         "1646294267d4b6aea4-5": {
           "type": "image_with_product_card",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Envy.png",
+            "image": "shopify://shop_images/Envy.png",
             "product": "envy",
             "x_pos": 34,
             "y_pos": 85,
@@ -448,35 +448,35 @@
           "type": "accordion",
           "settings": {
             "title": "Are AVACLUXE Products sold at any other retailers?",
-            "accordion_content": "<p>Yes AVACLUXE is <strong>also available at DOLLD.<\/strong><\/p>"
+            "accordion_content": "<p>Yes AVACLUXE is <strong>also available at DOLLD.</strong></p>"
           }
         },
         "1647026021b2e62b4e-2": {
           "type": "accordion",
           "settings": {
             "title": "How often do restock?",
-            "accordion_content": "<p>We aim for <strong>monthly restocks.<\/strong><\/p>"
+            "accordion_content": "<p>We aim for <strong>monthly restocks.</strong></p>"
           }
         },
         "1647026021b2e62b4e-3": {
           "type": "accordion",
           "settings": {
             "title": "I placed an order. When will my package arrive?",
-            "accordion_content": "<p>All packages <strong>ship via USPS<\/strong>.<\/p><p>The <strong>processing time for orders is 3-5 business days. <\/strong>After that, <strong>delivery time within the United States is 3-6 days, and 10-15 business days internationally.<\/strong> Please <strong>keep in mind that during holidays or limited edition launches, this time may vary.<\/strong> Thank you for your patience.<\/p><p>Please refer to our shipping policy.<\/p>"
+            "accordion_content": "<p>All packages <strong>ship via USPS</strong>.</p><p>The <strong>processing time for orders is 3-5 business days. </strong>After that, <strong>delivery time within the United States is 3-6 days, and 10-15 business days internationally.</strong> Please <strong>keep in mind that during holidays or limited edition launches, this time may vary.</strong> Thank you for your patience.</p><p>Please refer to our shipping policy.</p>"
           }
         },
         "371d79de-6922-47df-9098-810ca502e350": {
           "type": "accordion",
           "settings": {
             "title": "How can I get in touch with customer service team?",
-            "accordion_content": "<p>Please email <strong>avacluxe@gmail.com<\/strong> any concerns.<\/p>"
+            "accordion_content": "<p>Please email <strong>avacluxe@gmail.com</strong> any concerns.</p>"
           }
         },
         "7258c48d-dc7b-497e-98ae-7bcdaa313926": {
           "type": "accordion",
           "settings": {
             "title": "How long does it take for customer service to contact me back?",
-            "accordion_content": "<p>Please allow <strong>48 hours<\/strong> for our customer service team to reach back to you. <strong>Times vary during sales and major holidays. <\/strong><\/p>"
+            "accordion_content": "<p>Please allow <strong>48 hours</strong> for our customer service team to reach back to you. <strong>Times vary during sales and major holidays. </strong></p>"
           }
         },
         "f8c5eaa2-0048-464c-aed7-708e8d28e704": {
@@ -484,7 +484,7 @@
           "disabled": true,
           "settings": {
             "title": "Do you offer returns?",
-            "accordion_content": "<p><strong>We do not accept returns, exchanges or refunds.<\/strong> All sales are final. Please note, AvaCLuxe reserves the right to refuse all returns.<\/p>"
+            "accordion_content": "<p><strong>We do not accept returns, exchanges or refunds.</strong> All sales are final. Please note, AvaCLuxe reserves the right to refuse all returns.</p>"
           }
         },
         "d8277af3-9601-429f-9687-a48c044f21ae": {
@@ -492,13 +492,13 @@
           "disabled": true,
           "settings": {
             "title": "Can I change my order once I've placed it?",
-            "accordion_content": "<p>No, once an order is placed it's final.<\/p>"
+            "accordion_content": "<p>No, once an order is placed it's final.</p>"
           }
         },
         "bf1de6fd-0cb8-4b56-9b56-f4dad7862a4b": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/FAQ_1080.png"
+            "image": "shopify://shop_images/FAQ_1080.png"
           }
         },
         "7106355c-73ab-4e66-bd7e-85578353962a": {
@@ -515,7 +515,7 @@
           "settings": {
             "button_on_bottom_of_accordion": true,
             "btn_label": "Learn More",
-            "btn_link": "shopify:\/\/pages\/faq",
+            "btn_link": "shopify://pages/faq",
             "btn_size": "default",
             "hover_effect": "shine",
             "icon_type": "arrow",

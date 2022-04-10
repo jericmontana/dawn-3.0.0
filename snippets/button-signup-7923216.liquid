@@ -164,13 +164,13 @@
 -%}
 
 {%- if btn_action == 'open-popup' -%}
-<div class="btn {{btn_size_class}} btn--signup btn--signup-popup {% if round_corner %}btn--round-corner{% endif %} {{btn_he_class}} {% if shadow_effect %}btn-bs{% endif %} {% if auto_width %}btn-auto-width{% endif %}" role="button">
+<div class="btn {{ btn_size_class }} btn--signup btn--signup-popup {% if round_corner %}btn--round-corner{% endif %} {{ btn_he_class }} {% if shadow_effect %}btn-bs{% endif %} {% if auto_width %}btn-auto-width{% endif %}" role="button">
 {%- else -%}
-<a class="btn {{btn_size_class}} btn--signup btn--signup-link {% if round_corner %}btn--round-corner{% endif %} {% if btn_link != blank %}{{btn_he_class}}{% else %}btn--disbaled{% endif %} {% if shadow_effect %}btn-bs{% endif %} {% if auto_width %}btn-auto-width{% endif %}" {% if btn_link != blank %} href="{{ btn_link }}" title="{{ link_title }}" {% endif %} role="button">
+<a class="btn {{ btn_size_class }} btn--signup btn--signup-link {% if round_corner %}btn--round-corner{% endif %} {% if btn_link != blank %}{{ btn_he_class }}{% else %}btn--disbaled{% endif %} {% if shadow_effect %}btn-bs{% endif %} {% if auto_width %}btn-auto-width{% endif %}" {% if btn_link != blank %} href="{{ btn_link }}" title="{{ link_title }}" {% endif %} role="button">
 {%- endif -%}
     {{ btn_label | escape }}
     {% render 'icon-button', icon_type: icon_type %}
-    {% if hover_effect == 'shine'%}
+    {% if hover_effect == 'shine' %}
     <span></span>
     {% endif %}
 {%- if btn_action == 'open-popup' -%}

@@ -4,8 +4,8 @@
     "theme_name": "Dawn",
     "theme_version": "3.0.0",
     "theme_author": "Shopify",
-    "theme_documentation_url": "https:\/\/help.shopify.com\/en\/manual\/online-store\/themes",
-    "theme_support_url": "https:\/\/support.shopify.com\/"
+    "theme_documentation_url": "https://help.shopify.com/en/manual/online-store/themes",
+    "theme_support_url": "https://support.shopify.com/"
   },
   {
     "name": "t:settings_schema.colors.name",
@@ -1351,7 +1351,7 @@
         "type": "url",
         "id": "banner_btn_link",
         "label": "Link",
-        "default": "\/collections\/all"
+        "default": "/collections/all"
       },
       {
         "type": "select",
@@ -1460,7 +1460,7 @@
         "type": "richtext",
         "id": "ty_richtext",
         "label": "Richtext",
-        "default": "<p>Use the code below to get a discount on your first purchase:<\/p>"
+        "default": "<p>Use the code below to get a discount on your first purchase:</p>"
       },
       {
         "type": "text",
@@ -1482,7 +1482,7 @@
         "type": "url",
         "id": "ty_btn_link",
         "label": "URL",
-        "default": "\/collections\/all"
+        "default": "/collections/all"
       },
       {
         "type": "header",

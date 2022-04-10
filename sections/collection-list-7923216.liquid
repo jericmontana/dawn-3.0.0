@@ -22,36 +22,36 @@
 
   {%- if  use_as_default_bg -%}
     .section--collection-list .section-{{ section.id }}-bg-contaier {
-      --color-foreground: {{section.settings.fg_color.red}},{{section.settings.fg_color.green}},{{section.settings.fg_color.blue}};
-      --color-background: {{section.settings.bg_color.red}},{{section.settings.bg_color.green}},{{section.settings.bg_color.blue}};
-      background-image: url('{{section.settings.bg_image | image_url}}');
+      --color-foreground: {{ section.settings.fg_color.red }},{{ section.settings.fg_color.green }},{{ section.settings.fg_color.blue }};
+      --color-background: {{ section.settings.bg_color.red }},{{ section.settings.bg_color.green }},{{ section.settings.bg_color.blue }};
+      background-image: url('{{ section.settings.bg_image | image_url }}');
       background-color: {{ section.settings.bg_color }};
       background-blend-mode: {{ section.settings.bg_blend }};
     }
   {%- endif -%}
 
-  .section--collection-list-{{section.id}} .section__collection{
-    border-radius: {{section.settings.cc_border_radius}}rem;
-    background-color: {{section.settings.cc_bg_color}};
+  .section--collection-list-{{ section.id }} .section__collection{
+    border-radius: {{ section.settings.cc_border_radius }}rem;
+    background-color: {{ section.settings.cc_bg_color }};
   }
 
   
   {% case section.settings.color_scheme %}
       {% when 'background-1' %}
-      .section--collection-list-{{section.id}} .section__header--title{
+      .section--collection-list-{{ section.id }} .section__header--title{
           color: rgb({{ settings.colors_accent_2.red }}, {{ settings.colors_accent_2.green }}, {{ settings.colors_accent_2.blue }});
       }
   {% endcase %}
 {%- endstyle -%}
 
-<div class="section section--collection-list section--collection-list-{{section.id}} {% unless use_as_default_bg %}color-{{ section.settings.color_scheme }}{% endunless %}">
+<div class="section section--collection-list section--collection-list-{{ section.id }} {% unless use_as_default_bg %}color-{{ section.settings.color_scheme }}{% endunless %}">
   <div class="section__bg-container section-{{ section.id }}-bg-contaier section-{{ section.id }}-padding">
     <div class="page-width">
     
       {% comment %} For Section Header {% endcomment %}
       {%- assign header = section.blocks | where: 'type', 'heading' -%}
       {%- for block in header -%}
-        {% if block.settings.title != blank or block.settings.subtitle != blank%}
+        {% if block.settings.title != blank or block.settings.subtitle != blank %}
           {%- render 'section-header',
             title: block.settings.title,
             subtitle: block.settings.subtitle,
@@ -97,7 +97,7 @@
                   {% else %}
                     {% assign featured_collection_image = featured_collection.featured_image %}
                   {% endif %}
-                  <a {% if featured_collection != blank %}href="{{featured_collection.url}}" title="{{featured_collection.title}}" {% endif %}>
+                  <a {% if featured_collection != blank %}href="{{ featured_collection.url }}" title="{{ featured_collection.title }}" {% endif %}>
                     <div class="section__collection">
                       <div class="section__collection--image">
                           {%- if featured_collection.featured_image -%}
@@ -217,44 +217,44 @@
       "label": "Blend Mode",
       "options": [
         {
-        "value": "normal",
-        "label": "Normal"
+          "value": "normal",
+          "label": "Normal"
         },
         {
-        "value": "multiply",
-        "label": "Multiply"
+          "value": "multiply",
+          "label": "Multiply"
         },
         {
-        "value": "screen",
-        "label": "Screen"
+          "value": "screen",
+          "label": "Screen"
         },
         {
-        "value": "overlay",
-        "label": "Overlay"
+          "value": "overlay",
+          "label": "Overlay"
         },
         {
-        "value": "darken",
-        "label": "Darken"
+          "value": "darken",
+          "label": "Darken"
         },
         {
-        "value": "lighten",
-        "label": "Lighten"
+          "value": "lighten",
+          "label": "Lighten"
         },
         {
-        "value": "color-dodge",
-        "label": "Color Dodge"
+          "value": "color-dodge",
+          "label": "Color Dodge"
         },
         {
-        "value": "saturation",
-        "label": "Saturation"
+          "value": "saturation",
+          "label": "Saturation"
         },
         {
-        "value": "color",
-        "label": "Color"
+          "value": "color",
+          "label": "Color"
         },
         {
-        "value": "luminosity",
-        "label": "Luminosity"
+          "value": "luminosity",
+          "label": "Luminosity"
         }
       ],
       "default": "normal"
@@ -278,7 +278,7 @@
       "unit": "px",
       "label": "Padding Top",
       "default": 36,
-      "info":"Default Value is 36"
+      "info": "Default Value is 36"
     },
     {
       "type": "range",
@@ -289,7 +289,7 @@
       "unit": "px",
       "label": "Padding Bottom",
       "default": 36,
-      "info":"Default Value is 36"
+      "info": "Default Value is 36"
     },
     {
       "type": "header",
@@ -345,7 +345,7 @@
       "type": "slideshow",
       "name": "🎠 Slider",
       "limit": 1,
-      "settings":[
+      "settings": [
         {
           "type": "header",
           "content": "Slider Settings"
@@ -399,16 +399,16 @@
           "label": "Slider",
           "options": [
             {
-            "value": "slide-me-not",
-            "label": "None"
+              "value": "slide-me-not",
+              "label": "None"
             },
             {
-            "value": "everywhere",
-            "label": "Everywhere"
+              "value": "everywhere",
+              "label": "Everywhere"
             },
             {
-            "value": "medium-down",
-            "label": "Medium Down"
+              "value": "medium-down",
+              "label": "Medium Down"
             }
           ],
           "default": "slide-me-not"
@@ -419,7 +419,7 @@
       "type": "collection",
       "name": "Featured Collection",
       "limit": 8,
-      "settings":[
+      "settings": [
         {
           "type": "collection",
           "id": "featured_collection",

@@ -19,26 +19,26 @@
 
     {%- if  use_as_default_bg -%}
         .section--logo-with-text .section-{{ section.id }}-bg-contaier {
-            --color-foreground: {{section.settings.fg_color.red}},{{section.settings.fg_color.green}},{{section.settings.fg_color.blue}};
-            --color-background: {{section.settings.bg_color.red}},{{section.settings.bg_color.green}},{{section.settings.bg_color.blue}};
-            background-image: url('{{section.settings.bg_image | image_url}}');
+            --color-foreground: {{ section.settings.fg_color.red }},{{ section.settings.fg_color.green }},{{ section.settings.fg_color.blue }};
+            --color-background: {{ section.settings.bg_color.red }},{{ section.settings.bg_color.green }},{{ section.settings.bg_color.blue }};
+            background-image: url('{{ section.settings.bg_image | image_url }}');
             background-color: {{ section.settings.bg_color }};
             background-blend-mode: {{ section.settings.bg_blend }};
         }
     {%- endif -%}
 
-    .section--logo-with-text-{{section.id}} .section__collection{
-        border-radius: {{section.settings.cc_border_radius}}rem;
-        background-color: {{section.settings.cc_bg_color}};
+    .section--logo-with-text-{{ section.id }} .section__collection{
+        border-radius: {{ section.settings.cc_border_radius }}rem;
+        background-color: {{ section.settings.cc_bg_color }};
     }
 
     {% case section.settings.color_scheme %}
         {% when 'background-1' %}
-        .section--logo-with-text-{{section.id}} .section__header--title{
+        .section--logo-with-text-{{ section.id }} .section__header--title{
             color: rgb({{ settings.colors_accent_2.red }}, {{ settings.colors_accent_2.green }}, {{ settings.colors_accent_2.blue }});
         }
 
-        .section--logo-with-text-{{section.id}} .section__logo-and-text--text .h3{
+        .section--logo-with-text-{{ section.id }} .section__logo-and-text--text .h3{
             color: rgb({{ settings.colors_accent_2.red }}, {{ settings.colors_accent_2.green }}, {{ settings.colors_accent_2.blue }});
         }
     {% endcase %}
@@ -48,7 +48,7 @@
     grid--{{ section.settings.columns_mobile }}-col grid--{{ section.settings.columns_desktop }}-col-desktop grid--{{ section.settings.columns_tablet }}-col-tablet
 {% endcapture %}
 
-<div class="section section--logo-with-text section--logo-with-text-{{section.id}} {% unless use_as_default_bg %}color-{{ section.settings.color_scheme }}{% endunless %}">
+<div class="section section--logo-with-text section--logo-with-text-{{ section.id }} {% unless use_as_default_bg %}color-{{ section.settings.color_scheme }}{% endunless %}">
     <div class="section__bg-container section-{{ section.id }}-bg-contaier section-{{ section.id }}-padding">
         <div class="page-width">
 
@@ -67,7 +67,7 @@
                 -%}
                 {%- endif -%}
             {%- endfor -%}
-            {%- endif  -%}
+            {%- endif -%}
 
             {% comment %} For Section Header Support {% endcomment %}
             {%- for block in header_support -%}
@@ -84,11 +84,11 @@
                 <div class="section__logo-and-text">
                     <ul class="grid {{ grid_device_class }}">
                         {%- for image_with_text_block in image_with_text_blocks -%}
-                            <li class="grid__item" title="{{image_with_text_block.settings.logo_svg}}">
+                            <li class="grid__item" title="{{ image_with_text_block.settings.logo_svg }}">
                                 <div class="section__logo-and-text--logo">
                                 {%- if image_with_text_block.settings.use_image -%}
                                     {%- if image_with_text_block.settings.image == blank -%}
-                                        {% render 'no-image'%}
+                                        {% render 'no-image' %}
                                     {%- else -%}
                                         {%- liquid
                                             if image_with_text_block.settings.image.alt == blank
@@ -96,7 +96,6 @@
                                                 assign image_title = image_with_text_block.settings.title
                                             else
                                                 assign image_alt = image_with_text_block.settings.image.alt
-                                                assign image_title = image_with_text_block.settings.image.alt
                                             endif
                                         -%}
                                         <img
@@ -118,7 +117,7 @@
                                         >
                                     {%- endif -%}
                                 {%- else -%}
-                                    {%- render 'logo-svg', logo_svg:image_with_text_block.settings.logo_svg -%}
+                                    {%- render 'logo-svg', logo_svg: image_with_text_block.settings.logo_svg -%}
                                 {%- endif -%}
                                 </div>
                                 <div class="section__logo-and-text--text">
@@ -136,298 +135,298 @@
 
 {% schema %}
 {
-    "name": "🔰 Logo with text",
-    "tag": "section",
-    "settings":[
+  "name": "🔰 Logo with text",
+  "tag": "section",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Default Background"
+    },
+    {
+      "type": "select",
+      "id": "color_scheme",
+      "options": [
         {
-            "type": "header",
-            "content": "Default Background"
+          "value": "accent-1",
+          "label": "Accent 1"
         },
         {
-            "type": "select",
-            "id": "color_scheme",
-            "options": [
-                {
-                "value": "accent-1",
-                "label": "Accent 1"
-                },
-                {
-                "value": "accent-2",
-                "label": "Accent 2"
-                },
-                {
-                "value": "background-1",
-                "label": "Background 1"
-                },
-                {
-                "value": "background-2",
-                "label": "Background 2"
-                },
-                {
-                "value": "inverse",
-                "label": "Inverse"
-                }
-            ],
-            "default": "background-1",
-            "label": "Color Scheme",
-            "info": "To change the card color scheme, update your theme settings."
+          "value": "accent-2",
+          "label": "Accent 2"
         },
         {
-            "type": "header",
-            "content": "Custom Color Scheme"
+          "value": "background-1",
+          "label": "Background 1"
         },
         {
-            "type": "checkbox",
-            "id": "use_as_default_bg",
-            "label": "Set as default",
-            "default": false
+          "value": "background-2",
+          "label": "Background 2"
         },
         {
-            "type": "color",
-            "id": "fg_color",
-            "label": "Foreground Color",
-            "default": "#121212"
-        },
-        {
-            "type": "color",
-            "id": "bg_color",
-            "label": "Background Color",
-            "default": "#ffffff"
-        },
-        {
-            "type": "image_picker",
-            "id": "bg_image",
-            "label": "Background Image"
-        },
-        {
-            "type": "select",
-            "id": "bg_blend",
-            "label": "Blend Mode",
-            "options": [
-                {
-                "value": "normal",
-                "label": "Normal"
-                },
-                {
-                "value": "multiply",
-                "label": "Multiply"
-                },
-                {
-                "value": "screen",
-                "label": "Screen"
-                },
-                {
-                "value": "overlay",
-                "label": "Overlay"
-                },
-                {
-                "value": "darken",
-                "label": "Darken"
-                },
-                {
-                "value": "lighten",
-                "label": "Lighten"
-                },
-                {
-                "value": "color-dodge",
-                "label": "Color Dodge"
-                },
-                {
-                "value": "saturation",
-                "label": "Saturation"
-                },
-                {
-                "value": "color",
-                "label": "Color"
-                },
-                {
-                "value": "luminosity",
-                "label": "Luminosity"
-                }
-            ],
-            "default": "normal"
-        },
-        {
-            "type": "header",
-            "content": "Grid Settings"
-        },
-        {
-            "type": "range",
-            "id": "columns_desktop",
-            "min": 3,
-            "max": 8,
-            "step": 1,
-            "default": 4,
-            "label": "Columns on Desktop",
-            "info": "Default Value is 4"
-        },
-        {
-            "type": "range",
-            "id": "columns_tablet",
-            "min": 2,
-            "max": 4,
-            "step": 1,
-            "default": 4,
-            "label": "Columns on Tablet",
-            "info": "Default Value is 4"
-        },
-        {
-            "type": "range",
-            "id": "columns_mobile",
-            "min": 1,
-            "max": 4,
-            "step": 1,
-            "default": 1,
-            "label": "Columns on Mobile",
-            "info": "Default Value is 2"
-        },
-        {
-            "type": "header",
-            "content": "Section Padding"
-        },
-        {
-            "type": "checkbox",
-            "id": "use_as_default_padding",
-            "label": "Set as default",
-            "default": false
-        },
-        {
-            "type": "range",
-            "id": "padding_top",
-            "min": 0,
-            "max": 100,
-            "step": 4,
-            "unit": "px",
-            "label": "Padding Top",
-            "default": 36,
-            "info":"Default Value is 36"
-        },
-        {
-            "type": "range",
-            "id": "padding_bottom",
-            "min": 0,
-            "max": 100,
-            "step": 4,
-            "unit": "px",
-            "label": "Padding Bottom",
-            "default": 36,
-            "info":"Default Value is 36"
+          "value": "inverse",
+          "label": "Inverse"
         }
-    ],
-    "blocks": [
+      ],
+      "default": "background-1",
+      "label": "Color Scheme",
+      "info": "To change the card color scheme, update your theme settings."
+    },
+    {
+      "type": "header",
+      "content": "Custom Color Scheme"
+    },
+    {
+      "type": "checkbox",
+      "id": "use_as_default_bg",
+      "label": "Set as default",
+      "default": false
+    },
+    {
+      "type": "color",
+      "id": "fg_color",
+      "label": "Foreground Color",
+      "default": "#121212"
+    },
+    {
+      "type": "color",
+      "id": "bg_color",
+      "label": "Background Color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "image_picker",
+      "id": "bg_image",
+      "label": "Background Image"
+    },
+    {
+      "type": "select",
+      "id": "bg_blend",
+      "label": "Blend Mode",
+      "options": [
         {
-            "type": "heading",
-            "name": "Header",
-            "limit": 1,
-            "settings": [
-                {
-                "type": "header",
-                "content": "Header Settings"
-                },
-                {
-                "type": "text",
-                "id": "title",
-                "label": "Title",
-                "default": "Why Choose Us"
-                },
-                {
-                "type": "checkbox",
-                "id": "title_uppercase",
-                "label": "Uppercase",
-                "default": false
-                },
-                {
-                "type": "textarea",
-                "id": "subtitle",
-                "label": "Subtitle",
-                "default": "Mus mauris vitae ultricies leo. Ac feugiat sed lectus vestibulum lacus laoreet non curabitur."
-                }
-            ]
+          "value": "normal",
+          "label": "Normal"
         },
         {
-            "type": "heading_support",
-            "name": "Support Title",
-            "limit": 1,
-            "settings":[
-                {
-                    "type": "richtext",
-                    "id": "title_support",
-                    "label": "Title Support",
-                    "default": "<p>Consectetur letius torquent nunc lacus volutpat</p>",
-                    "info": "Header Block will be disregarded."
-                }
-            ]
+          "value": "multiply",
+          "label": "Multiply"
         },
         {
-            "type": "image_with_text",
-            "name": "Image with text",
-            "limit": 8,
-            "settings":[
-                {
-                    "type": "select",
-                    "id": "logo_svg",
-                    "label": "SVG",
-                    "options": [
-                        {
-                        "value": "free-shipping",
-                        "label": "Free Shipping"
-                        },
-                        {
-                        "value": "high-quality",
-                        "label": "High Quality"
-                        },
-                        {
-                        "value": "loved-by-hundreds",
-                        "label": "Loved By Hundreds"
-                        },
-                        {
-                        "value": "substantial",
-                        "label": "Substantial"
-                        }
-                    ],
-                    "default": "loved-by-hundreds"
-                },
-                {
-                    "type": "checkbox",
-                    "id": "use_image",
-                    "label": "Use Image",
-                    "default": true
-                },
-                {
-                    "type": "image_picker",
-                    "id": "image",
-                    "label": "Image"
-                },
-                {
-                    "type": "text",
-                    "id": "title",
-                    "label": "Title",
-                    "default": "Arcu rutrum"
-                }
-            ]
-        }
-    ],
-    "presets":[
+          "value": "screen",
+          "label": "Screen"
+        },
         {
-            "name": "🔰 Logo with text",
-            "blocks":[
-                {
-                    "type": "heading"
-                },
-                {
-                    "type": "image_with_text"
-                },
-                {
-                    "type": "image_with_text"
-                },
-                {
-                    "type": "image_with_text"
-                },
-                {
-                    "type": "image_with_text"
-                }
-            ]
+          "value": "overlay",
+          "label": "Overlay"
+        },
+        {
+          "value": "darken",
+          "label": "Darken"
+        },
+        {
+          "value": "lighten",
+          "label": "Lighten"
+        },
+        {
+          "value": "color-dodge",
+          "label": "Color Dodge"
+        },
+        {
+          "value": "saturation",
+          "label": "Saturation"
+        },
+        {
+          "value": "color",
+          "label": "Color"
+        },
+        {
+          "value": "luminosity",
+          "label": "Luminosity"
         }
-    ]
+      ],
+      "default": "normal"
+    },
+    {
+      "type": "header",
+      "content": "Grid Settings"
+    },
+    {
+      "type": "range",
+      "id": "columns_desktop",
+      "min": 3,
+      "max": 8,
+      "step": 1,
+      "default": 4,
+      "label": "Columns on Desktop",
+      "info": "Default Value is 4"
+    },
+    {
+      "type": "range",
+      "id": "columns_tablet",
+      "min": 2,
+      "max": 4,
+      "step": 1,
+      "default": 4,
+      "label": "Columns on Tablet",
+      "info": "Default Value is 4"
+    },
+    {
+      "type": "range",
+      "id": "columns_mobile",
+      "min": 1,
+      "max": 4,
+      "step": 1,
+      "default": 1,
+      "label": "Columns on Mobile",
+      "info": "Default Value is 2"
+    },
+    {
+      "type": "header",
+      "content": "Section Padding"
+    },
+    {
+      "type": "checkbox",
+      "id": "use_as_default_padding",
+      "label": "Set as default",
+      "default": false
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Padding Top",
+      "default": 36,
+      "info": "Default Value is 36"
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Padding Bottom",
+      "default": 36,
+      "info": "Default Value is 36"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "heading",
+      "name": "Header",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "header",
+          "content": "Header Settings"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title",
+          "default": "Why Choose Us"
+        },
+        {
+          "type": "checkbox",
+          "id": "title_uppercase",
+          "label": "Uppercase",
+          "default": false
+        },
+        {
+          "type": "textarea",
+          "id": "subtitle",
+          "label": "Subtitle",
+          "default": "Mus mauris vitae ultricies leo. Ac feugiat sed lectus vestibulum lacus laoreet non curabitur."
+        }
+      ]
+    },
+    {
+      "type": "heading_support",
+      "name": "Support Title",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "richtext",
+          "id": "title_support",
+          "label": "Title Support",
+          "default": "<p>Consectetur letius torquent nunc lacus volutpat</p>",
+          "info": "Header Block will be disregarded."
+        }
+      ]
+    },
+    {
+      "type": "image_with_text",
+      "name": "Image with text",
+      "limit": 8,
+      "settings": [
+        {
+          "type": "select",
+          "id": "logo_svg",
+          "label": "SVG",
+          "options": [
+            {
+              "value": "free-shipping",
+              "label": "Free Shipping"
+            },
+            {
+              "value": "high-quality",
+              "label": "High Quality"
+            },
+            {
+              "value": "loved-by-hundreds",
+              "label": "Loved By Hundreds"
+            },
+            {
+              "value": "substantial",
+              "label": "Substantial"
+            }
+          ],
+          "default": "loved-by-hundreds"
+        },
+        {
+          "type": "checkbox",
+          "id": "use_image",
+          "label": "Use Image",
+          "default": true
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title",
+          "default": "Arcu rutrum"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "🔰 Logo with text",
+      "blocks": [
+        {
+          "type": "heading"
+        },
+        {
+          "type": "image_with_text"
+        },
+        {
+          "type": "image_with_text"
+        },
+        {
+          "type": "image_with_text"
+        },
+        {
+          "type": "image_with_text"
+        }
+      ]
+    }
+  ]
 }
 {% endschema %}

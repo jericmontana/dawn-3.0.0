@@ -19,14 +19,14 @@
 
     {% case section.settings.color_scheme %}
         {% when 'background-1' %}
-        .section--image-with-text-{{section.id}} .section__header--title{
+        .section--image-with-text-{{ section.id }} .section__header--title{
             color: rgb({{ settings.colors_accent_2.red }}, {{ settings.colors_accent_2.green }}, {{ settings.colors_accent_2.blue }});
         }
     {% endcase %}
 
 {%- endstyle -%}
 
-<div class="section section--image-with-text section--image-with-text-{{section.id}} color-{{ section.settings.color_scheme }}">
+<div class="section section--image-with-text section--image-with-text-{{ section.id }} color-{{ section.settings.color_scheme }}">
     <div class="section__bg-container section-{{ section.id }}-bg-contaier section-{{ section.id }}-padding">
         <div class="page-width">
 
@@ -101,242 +101,242 @@
 </div>
 
 {% schema %}
+{
+  "name": "🔰 Image with text",
+  "tag": "section",
+  "settings": [
     {
-        "name": "🔰 Image with text",
-        "tag": "section",
-        "settings": [
-            {
-                "type": "select",
-                "id": "color_scheme",
-                "options": [
-                    {
-                    "value": "accent-1",
-                    "label": "Accent 1"
-                    },
-                    {
-                    "value": "accent-2",
-                    "label": "Accent 2"
-                    },
-                    {
-                    "value": "background-1",
-                    "label": "Background 1"
-                    },
-                    {
-                    "value": "background-2",
-                    "label": "Background 2"
-                    },
-                    {
-                    "value": "inverse",
-                    "label": "Inverse"
-                    }
-                ],
-                "default": "background-1",
-                "label": "Color Scheme",
-                "info": "To change the card color scheme, update your theme settings."
-            },
-            {
-                "type": "checkbox",
-                "id": "image_first",
-                "label": "Image First",
-                "default": false,
-                "info": "Desktop Only"
-            },
-            {
-                "type": "header",
-                "content": "Section Padding"
-            },
-            {
-                "type": "checkbox",
-                "id": "use_as_default_padding",
-                "label": "Set as default",
-                "default": false
-            },
-            {
-                "type": "range",
-                "id": "padding_top",
-                "min": 0,
-                "max": 100,
-                "step": 4,
-                "unit": "px",
-                "label": "Padding Top",
-                "default": 36,
-                "info":"Default Value is 36"
-            },
-            {
-                "type": "range",
-                "id": "padding_bottom",
-                "min": 0,
-                "max": 100,
-                "step": 4,
-                "unit": "px",
-                "label": "Padding Bottom",
-                "default": 36,
-                "info":"Default Value is 36"
-            }
-        ],
-        "blocks": [
-            {
-                "type": "image",
-                "name": "Image",
-                "limit": 1,
-                "settings": [
-                    {
-                        "type": "image_picker",
-                        "id": "image",
-                        "label": "Image"
-                    }
-                ]
-            },
-            {
-                "type": "heading",
-                "name": "Header",
-                "limit": 1,
-                "settings": [
-                    {
-                    "type": "header",
-                    "content": "Header Settings"
-                    },
-                    {
-                    "type": "text",
-                    "id": "title",
-                    "label": "Title",
-                    "default": "Shop the look"
-                    },
-                    {
-                    "type": "checkbox",
-                    "id": "title_uppercase",
-                    "label": "Uppercase",
-                    "default": false
-                    },
-                    {
-                    "type": "textarea",
-                    "id": "subtitle",
-                    "label": "Subtitle",
-                    "default": "Mus mauris vitae ultricies leo. Ac feugiat sed lectus vestibulum lacus laoreet non curabitur."
-                    }
-                ]
-            },
-            {
-                "type": "button",
-                "name": "Button",
-                "limit": 1,
-                "settings":[
-                    {
-                        "type":"text",
-                        "id":"btn_label",
-                        "label":"Label",
-                        "default":"Shop Now"
-                    },
-                    {
-                        "type": "url",
-                        "id": "btn_link",
-                        "label": "Link",
-                        "default": "/collections/all"
-                    },
-                    {
-                        "type": "select",
-                        "id": "btn_size",
-                        "label": "Button Size",
-                        "options": [
-                            {
-                            "value": "default",
-                            "label": "Default"
-                            },
-                            {
-                            "value": "medium",
-                            "label": "Medium"
-                            },
-                            {
-                            "value": "large",
-                            "label": "Large"
-                            }
-                        ],
-                        "default": "default"
-                    },
-                    {
-                        "type": "select",
-                        "id": "hover_effect",
-                        "label": "Hover Effect",
-                        "options": [
-                            {
-                            "value": "lighten",
-                            "label": "Lighten Effect"
-                            },
-                            {
-                            "value": "color-switch",
-                            "label": "Color Switch Effect"
-                            },
-                            {
-                            "value": "slide",
-                            "label": "Slide Effect"
-                            },
-                            {
-                            "value": "shine",
-                            "label": "Shine Effect"
-                            }
-                        ],
-                        "default": "shine"
-                    },
-                    {
-                        "type": "select",
-                        "id": "icon_type",
-                        "label": "Button Icon",
-                        "options": [
-                            {
-                            "value": "none",
-                            "label": "None"
-                            },
-                            {
-                            "value": "arrow",
-                            "label": "Arrow"
-                            }
-                        ],
-                        "default": "arrow"
-                    },
-                    {
-                        "type": "checkbox",
-                        "id": "shadow_effect",
-                        "label": "Enable Shadow Effect",
-                        "default": true
-                    },
-                    {
-                        "type": "checkbox",
-                        "id": "auto_width",
-                        "label": "Enable Auto Width",
-                        "default": false
-                    }
-                ]
-            },
-            {
-                "type": "richtext",
-                "name": "Richtext",
-                "limit": 1,
-                "settings": [
-                    {
-                        "type": "richtext",
-                        "id": "richtext",
-                        "label": "Richtext",
-                        "default": "<p>Nisi per leo mauris consectetur sodales fringilla congue urna tincidunt dis lacus natoque interdum.</p>"
-                    }
-                ]
-            }
-        ],
-        "presets": [
-            {
-                "name": "🔰 Image with text",
-                "category": "Custom Section",
-                "blocks": [
-                    {
-                        "type": "heading"
-                    },
-                    {
-                        "type": "button"
-                    },
-                    {
-                        "type": "image"
-                    }
-                ]
-            }
-        ]
+      "type": "select",
+      "id": "color_scheme",
+      "options": [
+        {
+          "value": "accent-1",
+          "label": "Accent 1"
+        },
+        {
+          "value": "accent-2",
+          "label": "Accent 2"
+        },
+        {
+          "value": "background-1",
+          "label": "Background 1"
+        },
+        {
+          "value": "background-2",
+          "label": "Background 2"
+        },
+        {
+          "value": "inverse",
+          "label": "Inverse"
+        }
+      ],
+      "default": "background-1",
+      "label": "Color Scheme",
+      "info": "To change the card color scheme, update your theme settings."
+    },
+    {
+      "type": "checkbox",
+      "id": "image_first",
+      "label": "Image First",
+      "default": false,
+      "info": "Desktop Only"
+    },
+    {
+      "type": "header",
+      "content": "Section Padding"
+    },
+    {
+      "type": "checkbox",
+      "id": "use_as_default_padding",
+      "label": "Set as default",
+      "default": false
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Padding Top",
+      "default": 36,
+      "info": "Default Value is 36"
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Padding Bottom",
+      "default": 36,
+      "info": "Default Value is 36"
     }
+  ],
+  "blocks": [
+    {
+      "type": "image",
+      "name": "Image",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "name": "Header",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "header",
+          "content": "Header Settings"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title",
+          "default": "Shop the look"
+        },
+        {
+          "type": "checkbox",
+          "id": "title_uppercase",
+          "label": "Uppercase",
+          "default": false
+        },
+        {
+          "type": "textarea",
+          "id": "subtitle",
+          "label": "Subtitle",
+          "default": "Mus mauris vitae ultricies leo. Ac feugiat sed lectus vestibulum lacus laoreet non curabitur."
+        }
+      ]
+    },
+    {
+      "type": "button",
+      "name": "Button",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "text",
+          "id": "btn_label",
+          "label": "Label",
+          "default": "Shop Now"
+        },
+        {
+          "type": "url",
+          "id": "btn_link",
+          "label": "Link",
+          "default": "/collections/all"
+        },
+        {
+          "type": "select",
+          "id": "btn_size",
+          "label": "Button Size",
+          "options": [
+            {
+              "value": "default",
+              "label": "Default"
+            },
+            {
+              "value": "medium",
+              "label": "Medium"
+            },
+            {
+              "value": "large",
+              "label": "Large"
+            }
+          ],
+          "default": "default"
+        },
+        {
+          "type": "select",
+          "id": "hover_effect",
+          "label": "Hover Effect",
+          "options": [
+            {
+              "value": "lighten",
+              "label": "Lighten Effect"
+            },
+            {
+              "value": "color-switch",
+              "label": "Color Switch Effect"
+            },
+            {
+              "value": "slide",
+              "label": "Slide Effect"
+            },
+            {
+              "value": "shine",
+              "label": "Shine Effect"
+            }
+          ],
+          "default": "shine"
+        },
+        {
+          "type": "select",
+          "id": "icon_type",
+          "label": "Button Icon",
+          "options": [
+            {
+              "value": "none",
+              "label": "None"
+            },
+            {
+              "value": "arrow",
+              "label": "Arrow"
+            }
+          ],
+          "default": "arrow"
+        },
+        {
+          "type": "checkbox",
+          "id": "shadow_effect",
+          "label": "Enable Shadow Effect",
+          "default": true
+        },
+        {
+          "type": "checkbox",
+          "id": "auto_width",
+          "label": "Enable Auto Width",
+          "default": false
+        }
+      ]
+    },
+    {
+      "type": "richtext",
+      "name": "Richtext",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "richtext",
+          "id": "richtext",
+          "label": "Richtext",
+          "default": "<p>Nisi per leo mauris consectetur sodales fringilla congue urna tincidunt dis lacus natoque interdum.</p>"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "🔰 Image with text",
+      "category": "Custom Section",
+      "blocks": [
+        {
+          "type": "heading"
+        },
+        {
+          "type": "button"
+        },
+        {
+          "type": "image"
+        }
+      ]
+    }
+  ]
+}
 {% endschema %}

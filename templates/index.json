@@ -3,16 +3,16 @@
     "16458763677060d6c8": {
       "type": "image-banner",
       "settings": {
-        "heading": "<p>lash-game <strong>with<\/strong> AVACLUXE.<\/p>",
+        "heading": "<p>lash-game <strong>with</strong> AVACLUXE.</p>",
         "heading_center": false,
         "heading_base_fontsize": 1,
         "subheading": "",
         "kicker": "setting up your",
-        "image": "shopify:\/\/shop_images\/Banner_1080.png",
+        "image": "shopify://shop_images/Banner_1080.png",
         "bg_color": "",
         "bg_blend": "normal",
         "btn_label": "Shop Now",
-        "btn_link": "shopify:\/\/collections\/all",
+        "btn_link": "shopify://collections/all",
         "btn_size": "default",
         "hover_effect": "shine",
         "icon_type": "none",
@@ -91,7 +91,7 @@
           "type": "collection",
           "settings": {
             "featured_collection": "lashes-and-eyeliners",
-            "featured_collection_image": "shopify:\/\/shop_images\/2_fdce6f40-b92d-401f-9484-5e80bd8ecbf2.png",
+            "featured_collection_image": "shopify://shop_images/2_fdce6f40-b92d-401f-9484-5e80bd8ecbf2.png",
             "use_custom_image": true
           }
         },
@@ -99,7 +99,7 @@
           "type": "collection",
           "settings": {
             "featured_collection": "lippies",
-            "featured_collection_image": "shopify:\/\/shop_images\/1_ccd4e1bf-ca4a-48b8-bf5e-58145c8816e3.png",
+            "featured_collection_image": "shopify://shop_images/1_ccd4e1bf-ca4a-48b8-bf5e-58145c8816e3.png",
             "use_custom_image": true
           }
         },
@@ -155,7 +155,7 @@
           "settings": {
             "featured_collection": "lashes-and-eyeliners",
             "title": "Lashes & Eyeliners",
-            "featured_collection_image": "shopify:\/\/shop_images\/LASHES_AND_EYELINERS_145aa2d7-f8b2-4067-a125-a23a79f43cdb.png",
+            "featured_collection_image": "shopify://shop_images/LASHES_AND_EYELINERS_145aa2d7-f8b2-4067-a125-a23a79f43cdb.png",
             "use_custom_image": true
           }
         },
@@ -164,7 +164,7 @@
           "settings": {
             "featured_collection": "lippies",
             "title": "AVACLUXE LIPPIES",
-            "featured_collection_image": "shopify:\/\/shop_images\/AVACLUXE_LIPPIES_0b4972ca-1a68-48e0-ad2e-25c591dced5c.png",
+            "featured_collection_image": "shopify://shop_images/AVACLUXE_LIPPIES_0b4972ca-1a68-48e0-ad2e-25c591dced5c.png",
             "use_custom_image": true
           }
         },
@@ -173,7 +173,7 @@
           "settings": {
             "featured_collection": "lash-bundles",
             "title": "",
-            "featured_collection_image": "shopify:\/\/shop_images\/Lash_Books.png",
+            "featured_collection_image": "shopify://shop_images/Lash_Books.png",
             "use_custom_image": true
           }
         },
@@ -182,7 +182,7 @@
           "settings": {
             "featured_collection": "accessories",
             "title": "",
-            "featured_collection_image": "shopify:\/\/shop_images\/ACCESSORIES_7a476eb8-0b1f-4460-a666-edd37321a10e.png",
+            "featured_collection_image": "shopify://shop_images/ACCESSORIES_7a476eb8-0b1f-4460-a666-edd37321a10e.png",
             "use_custom_image": true
           }
         }
@@ -207,7 +207,7 @@
         "2aeabb46-d263-4133-9180-0360aa582de5": {
           "type": "heading_support",
           "settings": {
-            "title_support": "<p>World's most comfortable high-quality lashes.<\/p><p>Elevating your look..<\/p><p>IN SECONDS.<\/p>"
+            "title_support": "<p>World's most comfortable high-quality lashes.</p><p>Elevating your look..</p><p>IN SECONDS.</p>"
           }
         },
         "1646294192d48bac15-0": {
@@ -223,7 +223,7 @@
           "settings": {
             "logo_svg": "high-quality",
             "use_image": true,
-            "image": "shopify:\/\/shop_images\/High-Quality.png",
+            "image": "shopify://shop_images/High-Quality.png",
             "title": "high quality"
           }
         },
@@ -232,7 +232,7 @@
           "settings": {
             "logo_svg": "substantial",
             "use_image": true,
-            "image": "shopify:\/\/shop_images\/Substantial.png",
+            "image": "shopify://shop_images/Substantial.png",
             "title": "substantial"
           }
         },
@@ -241,7 +241,7 @@
           "settings": {
             "logo_svg": "loved-by-hundreds",
             "use_image": true,
-            "image": "shopify:\/\/shop_images\/Loved-by-hundreds.png",
+            "image": "shopify://shop_images/Loved-by-hundreds.png",
             "title": "loved by hundreds"
           }
         },
@@ -250,7 +250,7 @@
           "settings": {
             "logo_svg": "free-shipping",
             "use_image": true,
-            "image": "shopify:\/\/shop_images\/Free-Shipping.png",
+            "image": "shopify://shop_images/Free-Shipping.png",
             "title": "free shipping"
           }
         }
@@ -301,7 +301,7 @@
         "1646294267d4b6aea4-2": {
           "type": "image_with_product_card",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Snow_Angel.png",
+            "image": "shopify://shop_images/Snow_Angel.png",
             "product": "snow-angel",
             "x_pos": 64,
             "y_pos": 66,
@@ -315,7 +315,7 @@
         "1646294267d4b6aea4-3": {
           "type": "image_with_product_card",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Barbie_Pink.png",
+            "image": "shopify://shop_images/Barbie_Pink.png",
             "product": "barbie-pink",
             "x_pos": 59,
             "y_pos": 80,
@@ -329,7 +329,7 @@
         "9d424643-3ba1-478d-aa38-e9e5343e743b": {
           "type": "image_with_product_card",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Lowkey.png",
+            "image": "shopify://shop_images/Lowkey.png",
             "product": "lowkey",
             "x_pos": 51,
             "y_pos": 66,
@@ -343,7 +343,7 @@
         "0d806d52-70d4-4323-a181-5c56be1e9565": {
           "type": "image_with_product_card",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Rich.png",
+            "image": "shopify://shop_images/Rich.png",
             "product": "rich",
             "x_pos": 34,
             "y_pos": 83,
@@ -357,7 +357,7 @@
         "0af2009f-cf0e-4193-89f8-068fee057a47": {
           "type": "image_with_product_card",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Chloe.png",
+            "image": "shopify://shop_images/Chloe.png",
             "product": "chloe",
             "x_pos": 33,
             "y_pos": 75,
@@ -371,7 +371,7 @@
         "1646294267d4b6aea4-4": {
           "type": "image_with_product_card",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Milly.png",
+            "image": "shopify://shop_images/Milly.png",
             "product": "milly",
             "x_pos": 38,
             "y_pos": 60,
@@ -385,7 +385,7 @@
         "1646294267d4b6aea4-5": {
           "type": "image_with_product_card",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Envy.png",
+            "image": "shopify://shop_images/Envy.png",
             "product": "envy",
             "x_pos": 34,
             "y_pos": 85,
@@ -431,12 +431,12 @@
           }
         },
         "e2786029-b04d-424a-a1ca-2d8af70a1196": {
-          "type": "shopify:\/\/apps\/judge-me-product-reviews\/blocks\/featured_carousel\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "type": "shopify://apps/judge-me-product-reviews/blocks/featured_carousel/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
           "settings": {
             "maxwidth": 3000,
             "show_header": false,
             "enable_link": false,
-            "all_reviews_link": "pages\/reviews"
+            "all_reviews_link": "pages/reviews"
           }
         }
       },
@@ -527,7 +527,7 @@
           }
         },
         "fe3a309d-1708-484e-9940-928411a056a8": {
-          "type": "shopify:\/\/apps\/instafeed\/blocks\/app-block\/c447db20-095d-4a10-9725-b5977662c9d5",
+          "type": "shopify://apps/instafeed/blocks/app-block/c447db20-095d-4a10-9725-b5977662c9d5",
           "settings": {
             "heading_font": "helvetica_n4",
             "heading_size": 20,

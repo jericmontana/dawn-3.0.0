@@ -1,7 +1,7 @@
 {{ 'component-slider.css' | asset_url | stylesheet_tag }}
 {{ 'component-slideshow.css' | asset_url | stylesheet_tag }}
 
-{{'section-announcement-bar-7923216.css' | asset_url | stylesheet_tag }}
+{{ 'section-announcement-bar-7923216.css' | asset_url | stylesheet_tag }}
 
 {% assign use_as_default_padding = section.settings.use_as_default_padding %}
 {%- style -%}
@@ -21,7 +21,7 @@
 
     {% case section.settings.color_scheme %}
         {% when 'accent-2' %}
-        .section--announcement-bar-{{section.id}}{
+        .section--announcement-bar-{{ section.id }}{
           --color-btn-bg: var(--color-base-solid-button-labels);
           --color-btn-lbl: var(--color-base-accent-1);
 
@@ -31,7 +31,7 @@
     {% endcase %}
 
 {%- endstyle -%}
-<div class="section section--announcement-bar section--announcement-bar-{{section.id}} color-{{ section.settings.color_scheme }}">
+<div class="section section--announcement-bar section--announcement-bar-{{ section.id }} color-{{ section.settings.color_scheme }}">
   <div class="section-{{ section.id }}-padding">
     <div class="page-width">
       <slideshow-component class="section__slider">
@@ -51,7 +51,7 @@
             tabindex="-1">
               <div class="section__announcement">
                 <div class="section__announcement-text">
-                  <p>{{block.settings.text | escape }}</p>
+                  <p>{{ block.settings.text | escape }}</p>
                 </div>
 
                 {% if block.settings.show_btn %}
@@ -105,30 +105,30 @@
 {
   "name": "🔰 Annoucement Bar",
   "max_blocks": 12,
-  "settings":[
+  "settings": [
     {
       "type": "select",
       "id": "color_scheme",
       "options": [
         {
-        "value": "accent-1",
-        "label": "Accent 1"
+          "value": "accent-1",
+          "label": "Accent 1"
         },
         {
-        "value": "accent-2",
-        "label": "Accent 2"
+          "value": "accent-2",
+          "label": "Accent 2"
         },
         {
-        "value": "background-1",
-        "label": "Background 1"
+          "value": "background-1",
+          "label": "Background 1"
         },
         {
-        "value": "background-2",
-        "label": "Background 2"
+          "value": "background-2",
+          "label": "Background 2"
         },
         {
-        "value": "inverse",
-        "label": "Inverse"
+          "value": "inverse",
+          "label": "Inverse"
         }
       ],
       "default": "background-1",
@@ -174,7 +174,7 @@
       "unit": "px",
       "label": "Padding Top",
       "default": 36,
-      "info":"Default Value is 36"
+      "info": "Default Value is 36"
     },
     {
       "type": "range",
@@ -185,7 +185,7 @@
       "unit": "px",
       "label": "Padding Bottom",
       "default": 36,
-      "info":"Default Value is 36"
+      "info": "Default Value is 36"
     }
   ],
   "blocks": [
@@ -221,21 +221,21 @@
           "label": "Button Action",
           "options": [
             {
-            "value": "redirect-link",
-            "label": "Redirect to a link"
+              "value": "redirect-link",
+              "label": "Redirect to a link"
             },
             {
-            "value": "open-popup",
-            "label": "Open a popup"
+              "value": "open-popup",
+              "label": "Open a popup"
             }
           ],
           "default": "open-popup"
         },
         {
-          "type":"text",
-          "id":"btn_label",
-          "label":"Label",
-          "default":"Shop Now"
+          "type": "text",
+          "id": "btn_label",
+          "label": "Label",
+          "default": "Shop Now"
         },
         {
           "type": "url",
@@ -249,20 +249,20 @@
           "label": "Hover Effect",
           "options": [
             {
-            "value": "lighten",
-            "label": "Lighten Effect"
+              "value": "lighten",
+              "label": "Lighten Effect"
             },
             {
-            "value": "color-switch",
-            "label": "Color Switch Effect"
+              "value": "color-switch",
+              "label": "Color Switch Effect"
             },
             {
-            "value": "slide",
-            "label": "Slide Effect"
+              "value": "slide",
+              "label": "Slide Effect"
             },
             {
-            "value": "shine",
-            "label": "Shine Effect"
+              "value": "shine",
+              "label": "Shine Effect"
             }
           ],
           "default": "shine"
@@ -273,16 +273,16 @@
           "label": "Button Icon",
           "options": [
             {
-            "value": "none",
-            "label": "None"
+              "value": "none",
+              "label": "None"
             },
             {
-            "value": "arrow",
-            "label": "Arrow"
+              "value": "arrow",
+              "label": "Arrow"
             },
             {
-            "value": "send",
-            "label": "Send"
+              "value": "send",
+              "label": "Send"
             }
           ],
           "default": "send"
