@@ -67,6 +67,11 @@
   font-weight: 600;
   color: #323232;
 }
+@media screen and (min-width: 750px) and (max-width: 989px) {
+  .section--image-banner-slideshow .section__info-up .slogan {
+    font-size: calc(var(--font-heading-scale) * 1.3rem);
+  }
+}
 @media screen and (max-width: 749px) {
   .section--image-banner-slideshow .section__info-up .slogan {
     font-size: calc(var(--font-heading-scale) * 1.8rem);
