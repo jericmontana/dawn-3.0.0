@@ -160,7 +160,7 @@
           "w_btn_link": "shopify:\/\/pages\/wishlist",
           "r_btn_label": "Reviews",
           "r_btn_link": "shopify:\/\/pages\/reviews",
-          "s_btn_action": "redirect-link",
+          "s_btn_action": "open-popup",
           "s_btn_label": "Get 10% Off",
           "s_btn_link": "shopify:\/\/pages\/vip-club"
         }
