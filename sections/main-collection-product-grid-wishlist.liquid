@@ -8,6 +8,7 @@
 
 <div id="ProductGridContainer">
   {%- if  collections["all"].products.size != 0 -%}
+    {%- paginate collection.products by 20 -%}
     <div class="collection page-width">
 
       <ul id="product-grid" data-id="{{ section.id }}"
@@ -26,6 +27,11 @@
           </li>
         {%- endfor -%}
       </ul>
+      {%- if paginate.pages > 1 -%}
+        {% render 'pagination', paginate: paginate, anchor: '' %}
+      {%- endif -%}
+    </div>
+    {%- endpaginate -%}
   {%- endif -%}
 
   {{ collections["all"].products.size }}
