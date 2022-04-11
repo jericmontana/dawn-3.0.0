@@ -31,49 +31,49 @@
           "type": "accordion",
           "settings": {
             "title": "Are AVACLUXE Products sold at any other retailers?",
-            "accordion_content": "<p>Yes AVACLUXE is <strong>also available at DOLLD.<\/strong><\/p>"
+            "accordion_content": "<p>Yes AVACLUXE is <strong>also available at DOLLD.</strong></p>"
           }
         },
         "1647026021b2e62b4e-2": {
           "type": "accordion",
           "settings": {
             "title": "How often do restock?",
-            "accordion_content": "<p>We aim for <strong>monthly restocks.<\/strong><\/p>"
+            "accordion_content": "<p>We aim for <strong>monthly restocks.</strong></p>"
           }
         },
         "1647026021b2e62b4e-3": {
           "type": "accordion",
           "settings": {
             "title": "I placed an order. When will my package arrive?",
-            "accordion_content": "<p>All packages <strong>ship via USPS<\/strong>.<\/p><p>The <strong>processing time for orders is 3-5 business days. <\/strong>After that, <strong>delivery time within the United States is 3-6 days, and 10-15 business days internationally.<\/strong> Please <strong>keep in mind that during holidays or limited edition launches, this time may vary.<\/strong> Thank you for your patience.<\/p><p>Please refer to our shipping policy.<\/p>"
+            "accordion_content": "<p>All packages <strong>ship via USPS</strong>.</p><p>The <strong>processing time for orders is 3-5 business days. </strong>After that, <strong>delivery time within the United States is 3-6 days, and 10-15 business days internationally.</strong> Please <strong>keep in mind that during holidays or limited edition launches, this time may vary.</strong> Thank you for your patience.</p><p>Please refer to our shipping policy.</p>"
           }
         },
         "371d79de-6922-47df-9098-810ca502e350": {
           "type": "accordion",
           "settings": {
             "title": "How can I get in touch with customer service team?",
-            "accordion_content": "<p>Please email <strong>avacluxe@gmail.com<\/strong> any concerns.<\/p>"
+            "accordion_content": "<p>Please email <strong>avacluxe@gmail.com</strong> any concerns.</p>"
           }
         },
         "7258c48d-dc7b-497e-98ae-7bcdaa313926": {
           "type": "accordion",
           "settings": {
             "title": "How long does it take for customer service to contact me back?",
-            "accordion_content": "<p>Please allow <strong>48 hours<\/strong> for our customer service team to reach back to you. <strong>Times vary during sales and major holidays. <\/strong><\/p>"
+            "accordion_content": "<p>Please allow <strong>48 hours</strong> for our customer service team to reach back to you. <strong>Times vary during sales and major holidays. </strong></p>"
           }
         },
         "f8c5eaa2-0048-464c-aed7-708e8d28e704": {
           "type": "accordion",
           "settings": {
             "title": "Do you offer returns?",
-            "accordion_content": "<p><strong>We do not accept returns, exchanges or refunds.<\/strong> All sales are final. Please note, AvaCLuxe reserves the right to refuse all returns.<\/p>"
+            "accordion_content": "<p><strong>We do not accept returns, exchanges or refunds.</strong> All sales are final. Please note, AvaCLuxe reserves the right to refuse all returns.</p>"
           }
         },
         "d8277af3-9601-429f-9687-a48c044f21ae": {
           "type": "accordion",
           "settings": {
             "title": "Can I change my order once I've placed it?",
-            "accordion_content": "<p>No, once an order is placed it's final.<\/p>"
+            "accordion_content": "<p>No, once an order is placed it's final.</p>"
           }
         }
       },
@@ -110,7 +110,7 @@
           "settings": {
             "apply_general_settings_btn": true,
             "btn_label": "Shop Now",
-            "btn_link": "shopify:\/\/collections\/all",
+            "btn_link": "shopify://collections/all",
             "btn_size": "default",
             "hover_effect": "shine",
             "icon_type": "arrow",
