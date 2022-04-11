@@ -580,6 +580,11 @@
         "bg_color_top": "#ffffff",
         "padding_top": 36
       }
+    },
+    "pagefly-home": {
+      "type": "pagefly-home",
+      "settings": {
+      }
     }
   },
   "order": [
@@ -594,6 +599,7 @@
     "1646313626697ca18a",
     "164904944832e938ee",
     "1646904089b7a2f60f",
-    "1646848339941da1e7"
+    "1646848339941da1e7",
+    "pagefly-home"
   ]
 }
