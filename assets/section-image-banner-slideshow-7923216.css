@@ -76,7 +76,12 @@
   max-width: 168px;
   margin-top: 10px;
 }
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 750px) and (max-width: 989px) {
+  .section--image-banner-slideshow .section__info-up .slogan img {
+    max-width: 300px;
+  }
+}
+@media screen and (min-width: 990px) {
   .section--image-banner-slideshow .section__info-up .slogan img {
     max-width: 500px;
   }
