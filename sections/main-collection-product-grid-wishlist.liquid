@@ -13,11 +13,7 @@
       <ul id="product-grid" data-id="{{ section.id }}"
         class="grid grid--2-col grid--4-col-desktop product-grid">
         {%- for product in collections["all"].products -%}
-          {% assign lazy_load = false %}
-          {%- if forloop.index > 2 -%}
-            {%- assign lazy_load = true -%}
-          {%- endif -%}
-
+          {% assign lazy_load = true %}
           <li class="grid__item {{ 'grid__item--' | append: product.handle | handleize }}">
             {% render 'card-product',
               card_product: product,
