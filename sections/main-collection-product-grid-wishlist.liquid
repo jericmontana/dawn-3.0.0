@@ -10,11 +10,8 @@
   {%- if  collections["all"].products.size != 0 -%}
     <div class="collection page-width">
 
-      <ul id="product-grid" data-id="{{ section.id }}" class="
-        grid grid--2-col product-grid
-        {% if collection['all'].products_count < 4 %} grid--{{ collection['all'].products_count }}-col-tablet
-          grid--{{ collection['all'].products_count }}-col-desktop
-        {% endif %}">
+      <ul id="product-grid" data-id="{{ section.id }}"
+        class="grid grid--2-col grid--4-col-desktop product-grid">
         {%- for product in collections["all"].products -%}
           {% assign lazy_load = false %}
           {%- if forloop.index > 2 -%}
