@@ -11,7 +11,7 @@
     <div class="collection page-width">
 
       <ul id="product-grid" data-id="{{ section.id }}"
-        class="grid grid--2-col grid--4-col-desktop product-grid">
+        class="grid grid--2-col grid--6-col-desktop product-grid">
         {%- for product in collections["all"].products -%}
           {% assign lazy_load = true %}
           <li class="grid__item {{ 'grid__item--' | append: product.handle | handleize }}">
