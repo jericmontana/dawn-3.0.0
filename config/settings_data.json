@@ -157,12 +157,12 @@
         "type": "tab-7923216",
         "settings": {
           "w_btn_label": "Wishlist",
-          "w_btn_link": "shopify:\/\/pages\/faqs",
+          "w_btn_link": "shopify:\/\/pages\/wishlist",
           "r_btn_label": "Reviews",
-          "r_btn_link": "shopify:\/\/pages\/lash-guide",
-          "s_btn_action": "open-popup",
+          "r_btn_link": "shopify:\/\/pages\/reviews",
+          "s_btn_action": "redirect-link",
           "s_btn_label": "Get 10% Off",
-          "s_btn_link": "shopify:\/\/pages\/privacy-policy"
+          "s_btn_link": "shopify:\/\/pages\/vip-club"
         }
       }
     },
