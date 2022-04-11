@@ -123,6 +123,11 @@
   margin: 0;
   font-size: 1.4rem;
 }
+@media screen and (min-width: 750px) and (max-width: 989px) {
+  .section--image-banner-slideshow .section__info-bottom .section__info-bottom--text p {
+    font-size: 1rem;
+  }
+}
 @media screen and (max-width: 749px) {
   .section--image-banner-slideshow .section__info-bottom .section__info-bottom--text p {
     font-size: 0.6rem;
