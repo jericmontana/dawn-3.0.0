@@ -61,7 +61,7 @@
           {% else %}
             {% assign featured_collection_image = featured_collection.featured_image %}
           {% endif %}
-          <a {% if featured_collection != blank %}href="{{ featured_collection.url }}" title="{{ featured_collection.title }}" {% endif %}>
+          <a class="full-unstyled-link" {% if featured_collection != blank %}href="{{ featured_collection.url }}" title="{{ featured_collection.title }}" {% endif %}>
             <div class="section__collection">
 
               <div class="section__collection--image">
