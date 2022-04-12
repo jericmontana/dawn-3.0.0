@@ -1,5 +1,6 @@
 .section--collection-list-v2 .grid__item {
   padding: 1rem;
+  position: relative;
 }
 .section--collection-list-v2 .grid__item a {
   color: var(--color-foreground);
@@ -15,7 +16,6 @@
 }
 .section--collection-list-v2 .section__collection .section__collection--image {
   position: relative;
-  min-height: 300px;
 }
 .section--collection-list-v2 .section__collection .section__collection--image img {
   height: 100%;
