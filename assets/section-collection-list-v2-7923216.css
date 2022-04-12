@@ -1,3 +1,6 @@
+.section--collection-list-v2 .grid {
+  position: relative;
+}
 .section--collection-list-v2 .grid__item {
   padding: 1rem;
   position: relative;
