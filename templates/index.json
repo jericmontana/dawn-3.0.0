@@ -26,6 +26,7 @@
     },
     "16458763677060d6c8": {
       "type": "image-banner",
+      "disabled": true,
       "settings": {
         "heading": "<p>lash-game <strong>with<\/strong> AVACLUXE.<\/p>",
         "heading_center": false,
@@ -91,6 +92,7 @@
     },
     "16461507015bd670f1": {
       "type": "collection-list-7923216",
+      "disabled": true,
       "blocks": {
         "1646150701cd4490fc-0": {
           "type": "heading",
