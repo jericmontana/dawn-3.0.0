@@ -4512,6 +4512,7 @@ modal-dialog.popupmodal--thankyou .popupmodal--thankyou__toggle {
   color: rgb(var(--color-btn-lbl));
   border: 2px solid rgb(var(--color-btn-bg));
   padding: 0.7rem 1rem;
+  max-height: 45px;
 }
 .section__tab--button:not(:last-child) {
   margin-bottom: 1rem;
