@@ -26,7 +26,6 @@
     },
     "16458763677060d6c8": {
       "type": "image-banner",
-      "disabled": true,
       "settings": {
         "heading": "<p>lash-game <strong>with<\/strong> AVACLUXE.<\/p>",
         "heading_center": false,
@@ -92,7 +91,6 @@
     },
     "16461507015bd670f1": {
       "type": "collection-list-7923216",
-      "disabled": true,
       "blocks": {
         "1646150701cd4490fc-0": {
           "type": "heading",
@@ -580,12 +578,6 @@
         "bg_color_top": "#ffffff",
         "padding_top": 36
       }
-    },
-    "pagefly-home": {
-      "type": "pagefly-home",
-      "disabled": true,
-      "settings": {
-      }
     }
   },
   "order": [
@@ -600,7 +592,6 @@
     "1646313626697ca18a",
     "164904944832e938ee",
     "1646904089b7a2f60f",
-    "1646848339941da1e7",
-    "pagefly-home"
+    "1646848339941da1e7"
   ]
 }
