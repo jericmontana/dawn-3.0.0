@@ -54,9 +54,9 @@
         <li class="breadcrumbs__item">
           {{ blog.title | link_to: blog.url }}
         </li>
-        <li class="breadcrumbs__item">
+        {% comment %} <li class="breadcrumbs__item">
           <a class="breadcrumbs__link" href="{{ article.url }}" aria-current="page">{{ article.title }}</a>
-        </li>
+        </li> {% endcomment %}
       {%- else -%}
         <li class="breadcrumbs__item">
           <a class="breadcrumbs__link" href="{{ request.path }}" aria-current="page">{{ page_title }}</a>
