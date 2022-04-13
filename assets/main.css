@@ -3211,7 +3211,7 @@ html {
 }
 @media screen and (max-width: 749px) {
   .section__header--title {
-    font-size: calc(var(--font-heading-scale) * 1.7rem);
+    font-size: calc(var(--font-heading-scale) * 2rem);
   }
 }
 .section__header--subtitle {
@@ -3235,7 +3235,7 @@ html {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-size: 15px;
+  font-size: 15px !important;
   margin: 0px;
   margin-bottom: 1rem;
   color: rgba(var(--color-foreground), 0.75);
@@ -3248,7 +3248,7 @@ html {
   margin-left: 1rem;
 }
 .section__header--article-info .share-button__button {
-  font-size: 15px;
+  font-size: 15px !important;
   color: rgba(var(--color-foreground), 0.75);
 }
 .section__header--article .section__header--title {
