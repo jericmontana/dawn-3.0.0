@@ -50,7 +50,7 @@
                       {% assign dynamic_title = article.title %}
                       {% assign article_date = article.published_at | time_tag: format: 'date' %}
                 {% endcase %}
-                <div class="section__header center">
+                <div class="section__header {% if template_name == 'article' %}section__header--article{% endif %} center">
                     {% if block.settings.title != blank %}
                         <h1 class="h1 section__header--title {% if block.settings.title_uppercase %}uppercase{% endif %}">{{ block.settings.title | escape }}</h1>
                     {% else %}

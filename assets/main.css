@@ -3251,6 +3251,9 @@ html {
   font-size: 15px;
   color: rgba(var(--color-foreground), 0.75);
 }
+.section__header--article .section__header--title {
+  text-transform: capitalize !important;
+}
 
 .section__button {
   margin-top: 25px;
