@@ -31,11 +31,12 @@
         {% render 'pagination', paginate: paginate, anchor: '' %}
       {%- endif -%}
     </div>
+
+    {{ collections["all"].products.size }}
+    {{ paginate.pages }}
     {%- endpaginate -%}
   {%- endif -%}
-
-  {{ collections["all"].products.size }}
-  {{ paginate.pages }}
+  
 </div>
 
 {% schema %}
