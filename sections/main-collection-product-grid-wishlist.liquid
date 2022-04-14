@@ -9,32 +9,28 @@
 <div id="ProductGridContainer">
   {%- if  collections["all"].products.size != 0 -%}
     {%- paginate collections["all"].products by 50 -%}
-      {% assign wishlist_pages = paginate.pages | minus: 1 %}
-    {%- endpaginate -%}
-    {{ wishlist_pages }}
     <div class="collection page-width">
       <ul id="product-grid" data-id="{{ section.id }}"
         class="grid grid--2-col grid--6-col-desktop product-grid">
-        {%- for wishlist_page in (1..wishlist_pages) -%}
-          {%- for product in collections["all"].products -%}
-            {% assign lazy_load = true %}
-            <li class="grid__item {{ 'grid__item--' | append: product.handle | handleize }}">
-              {% render 'card-product',
-                card_product: product,
-                media_aspect_ratio: section.settings.image_ratio,
-                show_secondary_image: section.settings.show_secondary_image,
-                show_vendor: section.settings.show_vendor,
-                show_rating: section.settings.show_rating,
-                lazy_load: lazy_load
-              %}
-            </li>
-          {%- endfor -%}
+        {%- for product in collections["all"].products -%}
+          {% assign lazy_load = true %}
+          <li class="grid__item {{ 'grid__item--' | append: product.handle | handleize }}">
+            {% render 'card-product',
+              card_product: product,
+              media_aspect_ratio: section.settings.image_ratio,
+              show_secondary_image: section.settings.show_secondary_image,
+              show_vendor: section.settings.show_vendor,
+              show_rating: section.settings.show_rating,
+              lazy_load: lazy_load
+            %}
+          </li>
         {%- endfor -%}
       </ul>
       {% comment %} {%- if paginate.pages > 1 -%}
         {% render 'pagination', paginate: paginate, anchor: '' %}
       {%- endif -%} {% endcomment %}
     </div>
+    {%- endpaginate -%}
   {%- endif -%}
   
 </div>
