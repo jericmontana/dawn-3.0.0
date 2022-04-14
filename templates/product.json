@@ -545,6 +545,15 @@
         "padding_bottom": 0
       }
     },
+    "wishlist_reference": {
+      "type": "main-product-wishlist",
+      "settings": {
+        "image_ratio": "square",
+        "show_secondary_image": true,
+        "show_vendor": true,
+        "show_rating": false
+      }
+    },
     "wave": {
       "type": "wave",
       "settings": {
@@ -564,6 +573,7 @@
     "16473869788a0fd14c",
     "16473868467db45e69",
     "faq",
+    "wishlist_reference",
     "wave"
   ]
 }
