@@ -16,7 +16,7 @@
       <ul id="product-grid" data-id="{{ section.id }}"
         class="grid grid--2-col grid--6-col-desktop product-grid">
         {%- for wishlist_page in (0..wishlist_pages) -%}
-          {% assign wishlist_offset = wishlist_page | times: 50 %}
+          {% assign wishlist_offset = wishlist_page | times: 30 %}
           {%- for product in collections["all"].products offset: wishlist_offset -%}
             {% assign lazy_load = true %}
             <li class="grid__item {{ 'grid__item--' | append: product.handle | handleize }}">
