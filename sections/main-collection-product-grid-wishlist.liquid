@@ -15,7 +15,7 @@
     <div class="collection page-width">
       <ul id="product-grid" data-id="{{ section.id }}"
         class="grid grid--2-col grid--6-col-desktop product-grid">
-        {%- for wishlist_page in wishlist_pages -%}
+        {%- for wishlist_page in (1..wishlist_pages) -%}
           {{wishlist_page}}
         {%- endfor -%}
         {%- for product in collections["all"].products -%}
