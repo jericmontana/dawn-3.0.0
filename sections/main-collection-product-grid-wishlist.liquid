@@ -8,7 +8,7 @@
 
 <div id="ProductGridContainer">
   {%- if  collections["all"].products.size != 0 -%}
-    {%- paginate collections["all"].products by 24 -%}
+    {%- paginate collections["all"].products by 50 -%}
     <div class="collection page-width">
 
       <ul id="product-grid" data-id="{{ section.id }}"
@@ -35,6 +35,7 @@
   {%- endif -%}
 
   {{ collections["all"].products.size }}
+  {{ paginate.pages }}
 </div>
 
 {% schema %}
