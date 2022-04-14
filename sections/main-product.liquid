@@ -310,6 +310,17 @@
                 </button>
               </quantity-input>
             </div>
+
+            <div>
+              <input class="date-time__input"
+                type="datetime-local" 
+                id="Meeting-Time-{{ section.id }}"
+                name="properties[Date and Time]"
+                value="2018-06-12T19:30"
+                min="2018-06-07T00:00" max="2018-06-14T00:00"
+                form="{{ product_form_id }}"
+              >
+            </div>
           {%- when 'popup' -%}
               <modal-opener class="product-popup-modal__opener no-js-hidden" data-modal="#PopupModal-{{ block.id }}" {{ block.shopify_attributes }}>
                 <button id="ProductPopup-{{ block.id }}" class="product-popup-modal__button link" type="button" aria-haspopup="dialog">{{ block.settings.text | default: block.settings.page.title }}</button>
