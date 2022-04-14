@@ -8,7 +8,7 @@
 
 <div id="ProductGridContainer">
   {%- if  collections["all"].products.size != 0 -%}
-    {%- paginate collections["all"].products by 100 -%}
+    {%- paginate collections["all"].products by 50 -%}
       {% assign wishlist_pages = paginate.pages | minus: 1 %}
     {%- endpaginate -%}
     {{ wishlist_pages }}
