@@ -1,6 +1,7 @@
 <!doctype html>
 <html class="no-js" lang="{{ request.locale.iso_code }}">
   <head>
+    <meta name="google-site-verification" content="p2o1-KAoyQWh_PTvLtsRe4x__41jnKyVdaFHfr2MXTQ">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -189,7 +190,9 @@
       }
     {% endstyle %}
 
-    {{ 'main.css' | asset_url | stylesheet_tag }}
+    <link rel="stylesheet" href="{{ 'main.css' | asset_url }}" media="print" onload="this.media='all'">
+
+    {% comment %} {{ 'main.css' | asset_url | stylesheet_tag }} {% endcomment %}
 
     {%- unless settings.type_body_font.system? -%}
       <link rel="preload" as="font" href="{{ settings.type_body_font | font_url }}" type="font/woff2" crossorigin>
@@ -265,5 +268,9 @@
     <script src="{{ 'vendor-wishlist.js' | asset_url }}" defer="defer"></script>
     <script src="{{ 'vendor-bigpicture.js' | asset_url }}" defer="defer"></script>
     <script src="{{ 'main.js' | asset_url }}" defer="defer"></script>
-  </body>
+
+<!-- Restock Alerts Snippet Start -->
+{% render 'restock-alerts' %}
+<!-- Restock Alerts Snippet End -->
+</body>
 </html>

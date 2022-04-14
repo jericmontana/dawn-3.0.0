@@ -1,5 +1,15 @@
 {{ 'section-blog-post.css' | asset_url | stylesheet_tag }}
 
+{%- style -%}
+  .article-template__content a{
+    color: rgb({{ settings.bg_color.red }},{{ settings.bg_color.green }},{{ settings.bg_color.blue }}) !important;
+    font-weight: 600 !important;
+  }
+  .article-template__content ul, .article-template__content ol{
+    list-style: decimal !important;
+  }
+{%- endstyle -%}
+
 <article class="article-template" itemscope itemtype="http://schema.org/BlogPosting">
   {%- for block in section.blocks -%}
     {%- case block.type -%}
