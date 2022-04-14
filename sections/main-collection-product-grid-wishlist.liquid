@@ -34,7 +34,7 @@
 
     {{ collections["all"].products.size }}
     <script>
-      localStorage.setItem("wishlist_pages", "{{ paginate.pages }}");
+      localStorage.setItem("wishlist_pages", {{ paginate.pages }});
     </script>
     {%- endpaginate -%}
   {%- endif -%}
