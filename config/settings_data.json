@@ -85,7 +85,7 @@
           "footer-3"
         ],
         "settings": {
-          "color_scheme": "accent-2",
+          "color_scheme": "background-2",
           "show_social": true,
           "enable_country_selector": false,
           "enable_language_selector": false,
@@ -156,10 +156,10 @@
         "type": "tab-7923216",
         "settings": {
           "w_btn_label": "Wishlist",
-          "w_btn_link": "shopify:\/\/pages\/wishlist",
+          "w_btn_link": "",
           "r_btn_label": "Reviews",
-          "r_btn_link": "shopify:\/\/pages\/reviews",
-          "s_btn_action": "open-popup",
+          "r_btn_link": "",
+          "s_btn_action": "redirect-link",
           "s_btn_label": "Get 10% Off",
           "s_btn_link": "shopify:\/\/pages\/vip-club"
         }
