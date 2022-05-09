@@ -4,10 +4,10 @@
     "colors_accent_2": "#e22120",
     "colors_text": "#121212",
     "colors_outline_button_labels": "#121212",
-    "social_twitter_link": "https:\/\/twitter.com\/AvaCLuxe",
-    "social_facebook_link": "https:\/\/www.facebook.com\/avacluxe",
-    "social_instagram_link": "https:\/\/www.instagram.com\/AvaCLuxe\/",
-    "social_youtube_link": "https:\/\/www.youtube.com\/channel\/UC5Kx_HN72_cUpucD50iNaSQ",
+    "social_twitter_link": "https:\/\/twitter.com\/shopify",
+    "social_facebook_link": "https:\/\/facebook.com\/shopify",
+    "social_instagram_link": "http:\/\/instagram.com\/shopify",
+    "social_youtube_link": "",
     "favicon": "shopify:\/\/shop_images\/output-onlinepngtools_3_1.png",
     "fg_color": "#FFFFFF",
     "bg_color": "#ff7bcc",
@@ -51,7 +51,7 @@
           "footer-0": {
             "type": "image",
             "settings": {
-              "use_custom_snippet": true,
+              "use_custom_snippet": false,
               "image_width": 100,
               "alignment": "center"
             }
@@ -60,14 +60,14 @@
             "type": "link_list",
             "settings": {
               "heading": "Quick Links",
-              "menu": ""
+              "menu": "main-menu-fo"
             }
           },
           "footer-2": {
             "type": "link_list",
             "settings": {
               "heading": "Customer Service",
-              "menu": ""
+              "menu": "footer"
             }
           },
           "footer-3": {
