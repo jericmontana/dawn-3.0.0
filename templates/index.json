@@ -1,5 +1,9 @@
 {
   "sections": {
+    "hero":{
+      "type": "hero-7923216",
+      "settings":{}
+    },
     "1646848339941da1e7": {
       "type": "wave",
       "settings": {
@@ -10,6 +14,7 @@
     }
   },
   "order": [
+    "hero",
     "1646848339941da1e7"
   ]
 }
