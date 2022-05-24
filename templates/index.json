@@ -22,6 +22,24 @@
       ],
       "settings":{}
     },
+    "product_benefits": {
+      "type": "image-with-text-7923216",
+      "blocks":{
+        "header": {
+          "type": "header",
+          "settings": {}
+        },
+        "image": {
+          "type": "image",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "header",
+        "image"
+      ],
+      "settings":{}
+    },
     "1646848339941da1e7": {
       "type": "wave",
       "settings": {
@@ -34,6 +52,7 @@
   "order": [
     "hero",
     "featured_collection",
+    "product_benefits",
     "1646848339941da1e7"
   ]
 }
