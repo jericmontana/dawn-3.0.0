@@ -17,8 +17,7 @@
   {%- endif -%}
 {%- endstyle -%}
 
-<div class="image-with-text image-with-text--{{ section.id }}">
-    <div class="section__bg" style="background-color: fuchsia"></div>
+<div class="image-with-text image-with-text--{{ section.id }} color-{{ section.settings.color_scheme }}">
     <div class="section__container">
         <div class="page-width">
           <div class="grid grid--1-col grid--2-col-desktop {% if section.settings.image_first %}image-first{% endif %}">
