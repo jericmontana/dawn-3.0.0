@@ -4,6 +4,24 @@
       "type": "hero-7923216",
       "settings":{}
     },
+    "featured_collection": {
+      "type": "featured-collection-7923216",
+      "blocks":{
+        "header": {
+          "type": "header",
+          "settings": {}
+        },
+        "featured_collection": {
+          "type": "fcollection",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "header",
+        "featured_collection"
+      ],
+      "settings":{}
+    },
     "1646848339941da1e7": {
       "type": "wave",
       "settings": {
@@ -15,6 +33,7 @@
   },
   "order": [
     "hero",
+    "featured_collection",
     "1646848339941da1e7"
   ]
 }

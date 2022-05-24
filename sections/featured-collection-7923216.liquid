@@ -2,65 +2,26 @@
 {{ 'component-price.css' | asset_url | stylesheet_tag }}
 {{ 'section-featured-collection.css' | asset_url | stylesheet_tag }}
 
-<link rel="stylesheet" href="{{ 'component-slider.css' | asset_url }}" media="print" onload="this.media='all'">
-
-<noscript>{{ 'component-slider.css' | asset_url | stylesheet_tag }}</noscript>
-
-
 {% assign use_as_default_padding = section.settings.use_as_default_padding %}
-{% assign use_as_default_bg = section.settings.use_as_default_bg %}
 {%- style -%}
   {%- if use_as_default_padding -%}
-    .section--featured-collection .section-{{ section.id }}-padding {
+    .featured-collection--{{ section.id }} .section__container {
       padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px !important;
       padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px !important;
     }
 
     @media screen and (min-width: 750px) {
-      .section--featured-collection .section-{{ section.id }}-padding {
+      .featured-collection--{{ section.id }} .section__container {
         padding-top: {{ section.settings.padding_top }}px !important;
         padding-bottom: {{ section.settings.padding_bottom }}px !important;
       }
     }
   {%- endif -%}
-
-  {%- if  use_as_default_bg -%}
-    .section--featured-collection .section-{{ section.id }}-bg-contaier {
-      --color-foreground: {{ section.settings.fg_color.red }},{{ section.settings.fg_color.green }},{{ section.settings.fg_color.blue }};
-      --color-background: {{ section.settings.bg_color.red }},{{ section.settings.bg_color.green }},{{ section.settings.bg_color.blue }};
-      background-image: url('{{ section.settings.bg_image | image_url }}');
-      background-color: {{ section.settings.bg_color }};
-      background-blend-mode: {{ section.settings.bg_blend }};
-    }
-  {%- endif -%}
-
-  {% case section.settings.color_scheme %}
-      {% when 'background-1' %}
-      .section--featured-collection-{{ section.id }} .section__header--title{
-          color: rgb({{ settings.colors_accent_2.red }}, {{ settings.colors_accent_2.green }}, {{ settings.colors_accent_2.blue }});
-      }
-      .section--featured-collection-{{ section.id }}  .full-unstyled-link{
-          color: rgb({{ settings.colors_accent_2.red }}, {{ settings.colors_accent_2.green }}, {{ settings.colors_accent_2.blue }});
-      }
-      .section--featured-collection-{{ section.id }} .price-item{
-          color: rgb({{ settings.colors_accent_2.red }}, {{ settings.colors_accent_2.green }}, {{ settings.colors_accent_2.blue }});
-      } 
-
-      .section--featured-collection-{{ section.id }} .price__sale .price-item--regular{
-          color: rgba({{ settings.colors_accent_2.red }}, {{ settings.colors_accent_2.green }}, {{ settings.colors_accent_2.blue }},0.75);
-      } 
-
-      .section--featured-collection-{{ section.id }} .loading-overlay__spinner circle{
-          stroke: rgba(255,255,255,0.75);
-      } 
-      
-  {% endcase %}
-
 {%- endstyle -%}
 
-<div class="section section--featured-collection section--featured-collection-{{ section.id }} {% unless use_as_default_bg %}color-{{ section.settings.color_scheme }}{% endunless %}">
-  <div class="section__bg-container section-{{ section.id }}-bg-contaier section-{{ section.id }}-padding">
-    <div class="page-width {% if section.settings.round_corner_background %}page-width--round-corner{% endif %}">
+<div class="featured-collection featured-collection--{{ section.id }}">
+  <div class="section__container">
+    <div class="page-width">
 
       {% comment %} For Section Header {% endcomment %}
       {%- assign header = section.blocks | where: 'type', 'header' -%}
@@ -74,104 +35,68 @@
         {%- endif -%}
       {%- endfor -%}
 
-      {% comment %} For Slider Component {% endcomment %}
-      {%- assign slider = section.blocks | where: 'type', 'slider' -%}
-      {%- for block in slider -%}
+      {% comment %} For Collection Component {% endcomment %}
+      {%- assign fcollection = section.blocks | where: 'type', 'fcollection' -%}
+      {%- for block in fcollection -%}
         {%- liquid
           assign products_to_display = block.settings.collection.all_products_count
 
           if block.settings.collection.all_products_count > block.settings.products_to_show
             assign products_to_display = block.settings.products_to_show
           endif
-
-          assign slider_mode = block.settings.slider
-          case slider_mode
-            when 'everywhere'
-              assign slider_class = "slider slider--everywhere slider--tablet"
-
-            when 'medium-down'
-              assign slider_class = "slider slider--tablet"
-          endcase
-
         -%}
 
         {% capture grid_device_class %}
           grid--{{ block.settings.columns_mobile }}-col grid--{{ block.settings.columns_desktop }}-col-desktop grid--{{ block.settings.columns_tablet }}-col-tablet
         {% endcapture %}
         
-        <div class="section__slider">
-          <slider-component>
-            <ul id="Slider-{{ section.id }}"
-                class="grid {{ grid_device_class | strip }} gridproduct-grid contains-card{% if settings.card_style == 'standard' %} contains-card--standard{% endif %} {% if products_to_display > 2 and slider_mode != 'slide-me-not' %}{{ slider_class | strip }}{% endif %}"
-                role="list">
-                {%- for product in block.settings.collection.products limit: block.settings.products_to_show -%}
-                <li id="Slide-{{ section.id }}-{{ forloop.index }}" class="grid__item grid__item--featured-collection {% if block.settings.collection.all_products_count > 2 and slider_mode != 'slide-me-not' and block.settings.products_to_show > 2 %} slider__slide{% endif %}">
-                    {% render 'card-product',
-                    card_product: product,
-                    media_aspect_ratio: block.settings.image_ratio,
-                    show_secondary_image: block.settings.show_secondary_image,
-                    show_vendor: block.settings.show_vendor,
-                    show_rating: block.settings.show_rating
-                    %}
+        
+        <div class="fcollection">
+          <ul class="grid {{ grid_device_class | strip }}">
+            {%- for product in block.settings.collection.products limit: products_to_display -%}
+            <li class="grid__item grid__item--featured-collection">
+              <div class="fcollection-wrapper">
+                {% render 'card-product',
+                card_product: product,
+                media_aspect_ratio: block.settings.image_ratio,
+                show_secondary_image: block.settings.show_secondary_image,
+                show_vendor: block.settings.show_vendor,
+                show_rating: block.settings.show_rating
+                %}
 
-                    {% if block.settings.show_add_to_cart_button %}
-                      {% render 'button-add-to-cart', product: product %}
-                    {% endif %}
-                </li>
-                {%- else -%}
-                {%- for i in (1..4) -%}
-                    <li class="grid__item">
-                    {% render 'card-product', show_vendor: block.settings.show_vendor %}
-                    </li>
-                {%- endfor -%}
-                {%- endfor -%}
-            </ul>
-  
-            {%- if products_to_display > 2 and slider_mode != 'slide-me-not' -%}
-            <div class="slider-buttons no-js-hidden">
-              <button type="button" class="slider-button slider-button--prev" name="previous" aria-label="{{ 'general.slider.previous_slide' | t }}">{% render 'icon-caret' %}</button>
-              <button type="button" class="slider-button slider-button--next" name="next" aria-label="{{ 'general.slider.next_slide' | t }}">{% render 'icon-caret' %}</button>
-            </div>
-            {%- endif -%}
-          </slider-component>
-        </div>
-      {%- endfor -%}
-
-      {% comment %} For Button {% endcomment %}
-      {%- assign button = section.blocks | where: 'type', 'button' -%}
-      {%- for block in button -%}
-        <div class="section__button center">
-          {% render 'button',
-            btn_label: block.settings.btn_label,
-            btn_link: block.settings.btn_link,
-            btn_size: block.settings.btn_size,
-            hover_effect: block.settings.hover_effect,
-            icon_type: block.settings.icon_type,
-            shadow_effect: block.settings.shadow_effect,
-            auto_width: block.settings.auto_width
-          %}
-        </div>
+                {% comment %} For Featured Product Button {% endcomment %}
+                <div class="fcollection__button">
+                  {%- render 'button',
+                    btn_label: block.settings.btn_label,
+                    btn_link: product.url,
+                    btn_size: "default",
+                    hover_effect: "lighten",
+                    icon_type: "none",
+                    round_corner: section.settings.round_corner,
+                    shadow_effect: section.settings.shadow_effect,
+                    auto_width: section.settings.auto_width
+                  -%}
+                </div>
+              <div>
+            </li>
+            {%- else -%}
+            {%- for i in (1..4) -%}
+              <li class="grid__item">
+              {% render 'card-product', show_vendor: block.settings.show_vendor %}
+              </li>
+            {%- endfor -%}
+            {%- endfor -%}
+          </ul>
+        <div>
       {%- endfor -%}
     </div>
   </div>
 </div>
-{% comment %} For Add To Cart {% endcomment %}
-<script src="{{ 'product-form.js' | asset_url }}" defer="defer"></script>
 {% schema %}
 {
-  "name": "🔰 Featured Collection",
+  "name": "🍊 Featured Collection",
   "tag": "section",
   "settings": [
-    {
-      "type": "checkbox",
-      "id": "round_corner_background",
-      "label": "Round Corner Background",
-      "default": false
-    },
-    {
-      "type": "header",
-      "content": "Default Background"
-    },
     {
       "type": "select",
       "id": "color_scheme",
@@ -200,81 +125,6 @@
       "default": "background-1",
       "label": "Color Scheme",
       "info": "To change the card color scheme, update your theme settings."
-    },
-    {
-      "type": "header",
-      "content": "Custom Color Scheme"
-    },
-    {
-      "type": "checkbox",
-      "id": "use_as_default_bg",
-      "label": "Set as default",
-      "default": false
-    },
-    {
-      "type": "color",
-      "id": "fg_color",
-      "label": "Foreground Color",
-      "default": "#121212"
-    },
-    {
-      "type": "color",
-      "id": "bg_color",
-      "label": "Background Color",
-      "default": "#ffffff"
-    },
-    {
-      "type": "image_picker",
-      "id": "bg_image",
-      "label": "Background Image"
-    },
-    {
-      "type": "select",
-      "id": "bg_blend",
-      "label": "Blend Mode",
-      "options": [
-        {
-          "value": "normal",
-          "label": "Normal"
-        },
-        {
-          "value": "multiply",
-          "label": "Multiply"
-        },
-        {
-          "value": "screen",
-          "label": "Screen"
-        },
-        {
-          "value": "overlay",
-          "label": "Overlay"
-        },
-        {
-          "value": "darken",
-          "label": "Darken"
-        },
-        {
-          "value": "lighten",
-          "label": "Lighten"
-        },
-        {
-          "value": "color-dodge",
-          "label": "Color Dodge"
-        },
-        {
-          "value": "saturation",
-          "label": "Saturation"
-        },
-        {
-          "value": "color",
-          "label": "Color"
-        },
-        {
-          "value": "luminosity",
-          "label": "Luminosity"
-        }
-      ],
-      "default": "normal"
     },
     {
       "type": "header",
@@ -340,13 +190,13 @@
       ]
     },
     {
-      "type": "slider",
+      "type": "fcollection",
       "name": "Collection",
       "limit": 1,
       "settings": [
         {
           "type": "header",
-          "content": "Slider Settings"
+          "content": "Collection Settings"
         },
         {
           "type": "collection",
@@ -361,12 +211,6 @@
           "step": 1,
           "default": 4,
           "label": "Products to show"
-        },
-        {
-          "type": "checkbox",
-          "id": "show_add_to_cart_button",
-          "label": "Show Add To Cart Button",
-          "default": false
         },
         {
           "type": "header",
@@ -403,26 +247,6 @@
           "info": "Default Value is 2"
         },
         {
-          "type": "select",
-          "id": "slider",
-          "label": "Slider",
-          "options": [
-            {
-              "value": "slide-me-not",
-              "label": "None"
-            },
-            {
-              "value": "everywhere",
-              "label": "Everywhere"
-            },
-            {
-              "value": "medium-down",
-              "label": "Medium Down"
-            }
-          ],
-          "default": "slide-me-not"
-        },
-        {
           "type": "header",
           "content": "Product Card"
         },
@@ -449,7 +273,7 @@
         {
           "type": "checkbox",
           "id": "show_secondary_image",
-          "default": false,
+          "default": true,
           "label": "Show second image on hover"
         },
         {
@@ -464,113 +288,48 @@
           "default": false,
           "label": "Show product rating",
           "info": "To display a rating, add a product rating app. [Learn more](https://help.shopify.com/en/manual/online-store/themes/theme-structure/theme-features#featured-collection-show-product-rating)"
-        }
-      ]
-    },
-    {
-      "type": "button",
-      "name": "Button",
-      "limit": 1,
-      "settings": [
-        {
-          "type": "text",
-          "id": "btn_label",
-          "label": "Label",
-          "default": "View All"
         },
         {
-          "type": "url",
-          "id": "btn_link",
-          "label": "Link",
-          "default": "/collections/all"
+          "type": "header",
+          "content": "Button Settings"
         },
         {
-          "type": "select",
-          "id": "btn_size",
-          "label": "Button Size",
-          "options": [
-            {
-              "value": "default",
-              "label": "Default"
-            },
-            {
-              "value": "medium",
-              "label": "Medium"
-            },
-            {
-              "value": "large",
-              "label": "Large"
-            }
-          ],
-          "default": "default"
-        },
-        {
-          "type": "select",
-          "id": "hover_effect",
-          "label": "Hover Effect",
-          "options": [
-            {
-              "value": "lighten",
-              "label": "Lighten Effect"
-            },
-            {
-              "value": "color-switch",
-              "label": "Color Switch Effect"
-            },
-            {
-              "value": "slide",
-              "label": "Slide Effect"
-            },
-            {
-              "value": "shine",
-              "label": "Shine Effect"
-            }
-          ],
-          "default": "shine"
-        },
-        {
-          "type": "select",
-          "id": "icon_type",
-          "label": "Button Icon",
-          "options": [
-            {
-              "value": "none",
-              "label": "None"
-            },
-            {
-              "value": "arrow",
-              "label": "Arrow"
-            }
-          ],
-          "default": "arrow"
+          "type":"text",
+          "id":"btn_label",
+          "label":"Label",
+          "default":"View Details"
         },
         {
           "type": "checkbox",
-          "id": "shadow_effect",
-          "label": "Enable Shadow Effect",
-          "default": true
-        },
-        {
-          "type": "checkbox",
-          "id": "auto_width",
-          "label": "Enable Auto Width",
+          "id": "round_corner",
+          "label": "Rounded Corner",
           "default": false
+        },
+        {
+            "type": "checkbox",
+            "id": "shadow_effect",
+            "label": "Enable Shadow Effect",
+            "default": true
+        },
+        {
+            "type": "checkbox",
+            "id": "auto_width",
+            "label": "Enable Auto Width",
+            "default": false
         }
       ]
     }
   ],
   "presets": [
     {
-      "name": "🔰 Featured Collection",
+      "name": "🍊 Featured Collection",
+      "category": "a",
       "blocks": [
         {
           "type": "header"
         },
         {
-          "type": "slider"
-        },
-        {
-          "type": "button"
+          "type": "fcollection"
         }
       ]
     }
