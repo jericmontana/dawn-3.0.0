@@ -1,43 +1,24 @@
-{{ 'video-section.css' | asset_url | stylesheet_tag }}
 {{ 'section-gallery-7923216.css' | asset_url | stylesheet_tag }}
 
 {% assign use_as_default_padding = section.settings.use_as_default_padding %}
 {%- style -%}
     {%- if use_as_default_padding -%}
-        .section--gallery .section-{{ section.id }}-padding {
-            padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px !important;
-            padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px !important;
-        }
+      .gallery-{{ section.id }} .section__container {
+        padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px !important;
+        padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px !important;
+      }
 
-        @media screen and (min-width: 750px) {
-            .section--gallery .section-{{ section.id }}-padding {
-                padding-top: {{ section.settings.padding_top }}px !important;
-                padding-bottom: {{ section.settings.padding_bottom }}px !important;
-            }
+      @media screen and (min-width: 750px) {
+        .gallery-{{ section.id }} .section__container{
+          padding-top: {{ section.settings.padding_top }}px !important;
+          padding-bottom: {{ section.settings.padding_bottom }}px !important;
         }
+      }
     {%- endif -%}
-
-    {% case section.settings.color_scheme %}
-        {% when 'background-1' %}
-        .section--gallery-{{ section.id }} .section__header--title{
-            color: rgb({{ settings.colors_accent_2.red }}, {{ settings.colors_accent_2.green }}, {{ settings.colors_accent_2.blue }});
-        }
-
-        .section--gallery-{{ section.id }} .gallery--wrapper{
-            background-color: #FFECF8;
-            border-radius: 2rem;
-        }
-
-        .section--gallery-{{ section.id }} .gallery--info h2{
-            color: rgb({{ settings.colors_accent_2.red }}, {{ settings.colors_accent_2.green }}, {{ settings.colors_accent_2.blue }});
-        }
-
-    {% endcase %}
-
 {%- endstyle -%}
 
-<div class="section section--gallery section--gallery-{{ section.id }} color-{{ section.settings.color_scheme }}">
-    <div class="section__bg-container section-{{ section.id }}-bg-contaier section-{{ section.id }}-padding">
+<div class="gallery gallery-{{ section.id }} color-{{ section.settings.color_scheme }}">
+    <div class="section__container">
         <div class="page-width">
             
             {%- assign header = section.blocks | where: 'type', 'heading' -%}
@@ -63,30 +44,29 @@
                                 </div>
                                 {%- endunless -%}
                                 <div class="gallery--video">
-                                    {% comment %} For Info {% endcomment %}
+                                  {% comment %} For Info {% endcomment %}
                                 {% unless block.settings.image == blank %}
-                                    <img
-                                        srcset="{%- if block.settings.image.width >= 375 -%}{{ block.settings.image | image_url: width: 375 }} 375w,{%- endif -%}
-                                        {%- if block.settings.image.width >= 550 -%}{{ block.settings.image | image_url: width: 550 }} 550w,{%- endif -%}
-                                        {%- if block.settings.image.width >= 750 -%}{{ block.settings.image | image_url: width: 750 }} 750w,{%- endif -%}
-                                        {%- if block.settings.image.width >= 1100 -%}{{ block.settings.image | image_url: width: 1100 }} 1100w,{%- endif -%}
-                                        {%- if block.settings.image.width >= 1500 -%}{{ block.settings.image | image_url: width: 1500 }} 1500w,{%- endif -%}
-                                        {%- if block.settings.image.width >= 1780 -%}{{ block.settings.image | image_url: width: 1780 }} 1780w,{%- endif -%}
-                                        {%- if block.settings.image.width >= 2000 -%}{{ block.settings.image | image_url: width: 2000 }} 2000w,{%- endif -%}
-                                        {%- if block.settings.image.width >= 3000 -%}{{ block.settings.image | image_url: width: 3000 }} 3000w,{%- endif -%}
-                                        {%- if block.settings.image.width >= 3840 -%}{{ block.settings.image | image_url: width: 3840 }} 3840w,{%- endif -%}
-                                        {{ block.settings.image | image_url }} {{ block.settings.image.width }}w"
-                                        sizes= "(min-width: 750px) 50vw, 100vw"
-                                        src="{{ block.settings.image | image_url }}"
-                                        alt="{% unless block.settings.image.alt == blank %}{{ block.settings.image.alt }}{% else %}{{ section.settings.title | append: ' - ' | append: shop.name }}{% endunless %}"
-                                        title="{% unless block.settings.image.alt == blank %}{{ block.settings.image.alt }}{% else %}{{ section.settings.title | append: ' - ' | append: shop.name }}{% endunless %}"
-                                        loading="lazy"
-                                        width="{{ block.settings.image.width }}"
-                                        height="{{ block.settings.image.height }}"
-                                    >
+                                  <img
+                                      srcset="{%- if block.settings.image.width >= 375 -%}{{ block.settings.image | image_url: width: 375 }} 375w,{%- endif -%}
+                                      {%- if block.settings.image.width >= 550 -%}{{ block.settings.image | image_url: width: 550 }} 550w,{%- endif -%}
+                                      {%- if block.settings.image.width >= 750 -%}{{ block.settings.image | image_url: width: 750 }} 750w,{%- endif -%}
+                                      {%- if block.settings.image.width >= 1100 -%}{{ block.settings.image | image_url: width: 1100 }} 1100w,{%- endif -%}
+                                      {%- if block.settings.image.width >= 1500 -%}{{ block.settings.image | image_url: width: 1500 }} 1500w,{%- endif -%}
+                                      {%- if block.settings.image.width >= 1780 -%}{{ block.settings.image | image_url: width: 1780 }} 1780w,{%- endif -%}
+                                      {%- if block.settings.image.width >= 2000 -%}{{ block.settings.image | image_url: width: 2000 }} 2000w,{%- endif -%}
+                                      {%- if block.settings.image.width >= 3000 -%}{{ block.settings.image | image_url: width: 3000 }} 3000w,{%- endif -%}
+                                      {%- if block.settings.image.width >= 3840 -%}{{ block.settings.image | image_url: width: 3840 }} 3840w,{%- endif -%}
+                                      {{ block.settings.image | image_url }} {{ block.settings.image.width }}w"
+                                      sizes= "(min-width: 750px) 50vw, 100vw"
+                                      src="{{ block.settings.image | image_url }}"
+                                      alt="{% unless block.settings.image.alt == blank %}{{ block.settings.image.alt }}{% else %}{{ section.settings.title | append: ' - ' | append: shop.name }}{% endunless %}"
+                                      title="{% unless block.settings.image.alt == blank %}{{ block.settings.image.alt }}{% else %}{{ section.settings.title | append: ' - ' | append: shop.name }}{% endunless %}"
+                                      loading="lazy"
+                                      width="{{ block.settings.image.width }}"
+                                      height="{{ block.settings.image.height }}"
+                                  >
                                 {% else %}
-                                    {% capture current %}{% cycle 1, 2, 3, 4, 5, 6 %}{% endcapture %}
-                                    {{ 'collection-' | append: current | placeholder_svg_tag: 'placeholder-svg' }}
+                                  {% render 'no-image' %}
                                 {% endunless %}
                                     {% render 'video-popup-7923216', video_id: block.settings.video_id, video_type: block.settings.video_type %}
                                 </div>
@@ -139,7 +119,7 @@
 
 {% schema %}
 {
-  "name": "🔰 Gallery",
+  "name": "🍊 Gallery",
   "tag": "section",
   "settings": [
     {
@@ -291,11 +271,14 @@
   ],
   "presets": [
     {
-      "name": "🔰 Gallery",
-      "category": "Custom Section",
+      "name": "🍊 Gallery",
+      "category": "a",
       "blocks": [
         {
           "type": "heading"
+        },
+        {
+          "type": "video"
         },
         {
           "type": "video"
