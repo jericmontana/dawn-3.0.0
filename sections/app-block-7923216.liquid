@@ -3,52 +3,43 @@
 {% assign use_as_default_padding = section.settings.use_as_default_padding %}
 {%- style -%}
     {%- if use_as_default_padding -%}
-        .section--app-block .section-{{ section.id }}-padding {
-            padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px !important;
-            padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px !important;
+        .app-block-{{ section.id }} .section__container {
+          padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px !important;
+          padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px !important;
         }
 
         @media screen and (min-width: 750px) {
-            .section--app-block .section-{{ section.id }}-padding {
-                padding-top: {{ section.settings.padding_top }}px !important;
-                padding-bottom: {{ section.settings.padding_bottom }}px !important;
-            }
+          .app-block-{{ section.id }} .section__container {
+            padding-top: {{ section.settings.padding_top }}px !important;
+            padding-bottom: {{ section.settings.padding_bottom }}px !important;
+          }
         }
     {%- endif -%}
-
-    {% case section.settings.color_scheme %}
-        {% when 'background-1' %}
-        .section--app-block-{{ section.id }} .section__header--title{
-            color: rgb({{ settings.colors_accent_2.red }}, {{ settings.colors_accent_2.green }}, {{ settings.colors_accent_2.blue }});
-        }
-    {% endcase %}
-
 {%- endstyle -%}
 
-<div class="section section--app-block section--app-block-{{ section.id }} color-{{ section.settings.color_scheme }}">
-    <div class="section__bg-container section-{{ section.id }}-bg-contaier section-{{ section.id }}-padding">
-        <div class="page-width {% if section.settings.round_corner_background %}page-width--round-corner{% endif %}">
+<div class="app-block app-block-{{ section.id }} color-{{ section.settings.color_scheme }}">
+  <div class="section__container">
+      <div class="page-width">
+          {%- assign header = section.blocks | where: 'type', 'heading' -%}
+          {%- for block in header -%}
+              {%- if block.settings.title != blank or block.settings.subtitle != blank -%}
+              {%- render 'section-header',
+                title: block.settings.title,
+                subtitle: block.settings.subtitle,
+                uppercase: block.settings.title_uppercase
+              -%}
+              {%- endif -%}
+          {%- endfor -%}
+          
+          {%- assign app = section.blocks | where: 'type', '@app' -%}
+          {%- for block in app -%}
+              {%- if block.type == '@app' -%}
+                {%- render block -%}
+              {%- endif -%}
+          {%- endfor -%}
 
-            {%- assign header = section.blocks | where: 'type', 'heading' -%}
-            {%- for block in header -%}
-                {%- if block.settings.title != blank or block.settings.subtitle != blank -%}
-                {%- render 'section-header',
-                    title: block.settings.title,
-                    subtitle: block.settings.subtitle,
-                    uppercase: block.settings.title_uppercase
-                -%}
-                {%- endif -%}
-            {%- endfor -%}
-            
-            {%- assign app = section.blocks | where: 'type', '@app' -%}
-            {%- for block in app -%}
-                {%- if block.type == '@app' -%}
-                    {%- render block -%}
-                {%- endif -%}
-            {%- endfor -%}
-
-        </div>
-    </div>
+      </div>
+  </div>
 </div>
 
 {% schema %}

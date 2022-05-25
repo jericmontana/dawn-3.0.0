@@ -91,6 +91,19 @@
       ],
       "settings":{}
     },
+    "review": {
+      "type": "app-block-7923216",
+      "blocks":{
+        "header": {
+          "type": "heading",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "header"
+      ],
+      "settings":{}
+    },
     "1646848339941da1e7": {
       "type": "wave",
       "settings": {
@@ -106,6 +119,7 @@
     "product_benefits",
     "usp",
     "gallery",
+    "review",
     "1646848339941da1e7"
   ]
 }
