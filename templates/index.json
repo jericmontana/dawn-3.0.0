@@ -104,6 +104,24 @@
       ],
       "settings":{}
     },
+    "email_signup": {
+      "type": "signup-7923216",
+      "blocks": {
+        "header": {
+          "type": "header",
+          "settings": {}
+        },
+        "form": {
+          "type": "form",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "header",
+        "form"
+      ],
+      "settings":{}
+    },
     "1646848339941da1e7": {
       "type": "wave",
       "settings": {
@@ -120,6 +138,7 @@
     "usp",
     "gallery",
     "review",
+    "email_signup",
     "1646848339941da1e7"
   ]
 }

@@ -1446,11 +1446,6 @@
     "name": "🔰 Thankyou Popup",
     "settings": [
       {
-        "type": "image_picker",
-        "id": "ty_image",
-        "label": "Image"
-      },
-      {
         "type": "text",
         "id": "ty_title",
         "label": "Title",
