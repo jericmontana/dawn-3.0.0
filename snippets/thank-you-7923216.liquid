@@ -1,75 +1,48 @@
-<div class="hidden">
-    <modal-opener class="popupmodal--thankyou__opener-{{ section.id }}" data-modal="#PopupModal-{{ section.id }}">
-        <button id="TYPopup-{{ section.id }}" type="button" aria-haspopup="dialog"></button>
-    </modal-opener>
-</div>
+<modal-opener class="hidden popupmodal--thankyou__opener-{{ section.id }}" data-modal="#PopupModal-{{ section.id }}">
+    <button id="TYPopup-{{ section.id }}" type="button" aria-haspopup="dialog"></button>
+</modal-opener>
 <modal-dialog id="PopupModal-{{ section.id }}" class="popupmodal--thankyou">
     <div role="dialog" aria-modal="true" class="popupmodal--thankyou__content" tabindex="-1" style="{% unless settings.ty_bg_image == blank %}background-image: url('{{ settings.ty_bg_image | image_url }}');{% endunless %}
                     {% unless settings.ty_bg_color == blank %}background-color: {{ settings.ty_bg_color }};{% endunless %}
                     background-blend-mode: {{ settings.ty_bg_blend }};">
         <button id="ModalClose-{{ section.id }}" type="button" class="popupmodal--thankyou__toggle" aria-label="{{ 'accessibility.close' | t }}">{% render 'icon-close' %}</button>
         <div class="popupmodal--thankyou__content-info">
-            <div class="{%- if settings.ty_image != blank -%}grid grid--1-col grid--2-col-desktop small{%- endif -%}">
-                {%- if settings.ty_image != blank -%}
-                <div class="grid__item popupmodal--thankyou__image">
-                    <img
-                    srcset="{%- if settings.ty_image.width >= 165 -%}{{ settings.ty_image | image_url: width: 165 }} 165w,{%- endif -%}
-                        {%- if settings.ty_image.width >= 330 -%}{{ settings.ty_image | image_url: width: 330 }} 330w,{%- endif -%}
-                        {%- if settings.ty_image.width >= 535 -%}{{ settings.ty_image | image_url: width: 535 }} 535w,{%- endif -%}
-                        {%- if settings.ty_image.width >= 750 -%}{{ settings.ty_image | image_url: width: 750 }} 750w,{%- endif -%}
-                        {%- if settings.ty_image.width >= 1000 -%}{{ settings.ty_image | image_url: width: 1000 }} 1000w,{%- endif -%}
-                        {%- if settings.ty_image.width >= 1500 -%}{{ settings.ty_image | image_url: width: 1500 }} 1500w,{%- endif -%}
-                        {%- if settings.ty_image.width >= 3000 -%}{{ settings.ty_image | image_url: width: 3000 }} 3000w,{%- endif -%}
-                        {{ settings.ty_image | image_url }} {{ settings.ty_image.width }}w"
-                    sizes="(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 | divided_by: 2 }}px, (min-width: 750px) calc((100vw - 130px) / 2), calc((100vw - 50px) / 2)"
-                    src="{{ settings.ty_image | image_url }}"
-                    alt="{{ settings.ty_image.alt }}"
-                    title="{{ settings.ty_image.alt }}"
-                    height="{{ settings.ty_image.height }}"
-                    width="{{ settings.ty_image.width }}"
-                    loading="lazy"
-                    class="motion-reduce"
-                    >
+            <div class="popupmodal--thankyou__copy">
+                
+                <div class="popupmodal--thankyou__text center">
+                    <h2 class="h1">{{ settings.ty_title }}</h2>
+
+                    <div>
+                        {{ settings.ty_richtext }}
+                    </div>
+
+                    <p id="popupmodal--thankyou__discount-code-{{ section.id }}" class="popupmodal--thankyou__discount-code h2">{{ settings.ty_discount_code }}</p>
                 </div>
-                {%- endif -%}
 
-                <div class="{% if settings.ty_image != blank %}grid__item{% endif %} popupmodal--thankyou__copy">
-                    
-                    <div class="popupmodal--thankyou__text center">
-                        <h2 class="h1">{{ settings.ty_title }}</h2>
+                <div class="popupmodal--thankyou__button">
 
-                        <div>
-                            {{ settings.ty_richtext }}
-                        </div>
-
-                        <p id="popupmodal--thankyou__discount-code-{{ section.id }}" class="popupmodal--thankyou__discount-code h2">{{ settings.ty_discount_code }}</p>
+                    <div role="button" class="btn btn--default btn-he--bs btn--round-corner btn--copy" data-targettext="popupmodal--thankyou__discount-code-{{ section.id }}" data-tooltip="✔">
+                        <span>copy</span>
                     </div>
 
-                    <div class="popupmodal--thankyou__button">
+                    {% render 'button',
+                        btn_label: settings.ty_btn_label,
+                        btn_link: settings.ty_btn_link,
+                        btn_size: "default",
+                        hover_effect: "lighten",
+                        icon_type: "none",
+                        round_corner: true,
+                        shadow_effect: true,
+                        auto_width: false
+                    %}
 
-                        <div role="button" class="btn btn--default btn-he--bs btn--round-corner btn--copy" data-targettext="popupmodal--thankyou__discount-code-{{ section.id }}" data-tooltip="✔">
-                            <span>copy</span>
-                        </div>
-
-                        {% render 'button',
-                            btn_label: settings.ty_btn_label,
-                            btn_link: settings.ty_btn_link,
-                            btn_size: "default",
-                            hover_effect: "lighten",
-                            icon_type: "none",
-                            round_corner: true,
-                            shadow_effect: true,
-                            auto_width: false
-                        %}
-
-                    </div>
                 </div>
             </div>
         </div>
     </div>
 </modal-dialog>
 <script>
-document.addEventListener('DOMContentLoaded', () => {
-    document.querySelector(`#${localStorage.getItem('activated-ty-modalpopup')}`).click();
-})
-</script>
+    document.addEventListener('DOMContentLoaded', () => {
+        document.querySelector(`#${localStorage.getItem('activated-ty-modalpopup')}`).click();
+    })
+</script> 

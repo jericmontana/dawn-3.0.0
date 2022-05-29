@@ -9,3 +9,7 @@ ImgLazyLoading:
 
 TemplateLength:
   enabled: false
+
+NestedSnippet:
+  enabled: true
+  max_nesting_level: 3
