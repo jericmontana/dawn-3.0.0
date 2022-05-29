@@ -20,6 +20,7 @@
 {% endcomment %}
 
 {% form 'customer' %}
+    <input type="hidden" name="contact[tags]" value="newsletter">
     {%- if display_name_input -%}
     <div class="field field--input field--input-name">
         <input 
