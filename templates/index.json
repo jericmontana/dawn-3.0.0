@@ -1,63 +1,74 @@
 {
   "sections": {
-    "hero":{
+    "hero": {
       "type": "hero-7923216",
-      "settings":{}
+      "settings": {
+      }
     },
     "featured_collection": {
       "type": "featured-collection-7923216",
-      "blocks":{
+      "blocks": {
         "header": {
           "type": "header",
-          "settings": {}
+          "settings": {
+          }
         },
         "featured_collection": {
           "type": "fcollection",
-          "settings": {}
+          "settings": {
+          }
         }
       },
       "block_order": [
         "header",
         "featured_collection"
       ],
-      "settings":{}
+      "settings": {
+      }
     },
     "product_benefits": {
       "type": "image-with-text-7923216",
-      "blocks":{
+      "blocks": {
         "header": {
           "type": "header",
-          "settings": {}
+          "settings": {
+          }
         },
         "image": {
           "type": "image",
-          "settings": {}
+          "settings": {
+          }
         }
       },
       "block_order": [
         "header",
         "image"
       ],
-      "settings":{}
+      "settings": {
+      }
     },
     "usp": {
       "type": "logo-with-text-7923216",
-      "blocks":{
+      "blocks": {
         "header": {
           "type": "header",
-          "settings": {}
+          "settings": {
+          }
         },
         "image_with_text_1": {
           "type": "image_with_text",
-          "settings": {}
+          "settings": {
+          }
         },
         "image_with_text_2": {
           "type": "image_with_text",
-          "settings": {}
+          "settings": {
+          }
         },
         "image_with_text_3": {
           "type": "image_with_text",
-          "settings": {}
+          "settings": {
+          }
         }
       },
       "block_order": [
@@ -66,22 +77,26 @@
         "image_with_text_2",
         "image_with_text_3"
       ],
-      "settings":{}
+      "settings": {
+      }
     },
     "gallery": {
       "type": "gallery-7923216",
-      "blocks":{
+      "blocks": {
         "header": {
           "type": "heading",
-          "settings": {}
+          "settings": {
+          }
         },
         "video_1": {
           "type": "video",
-          "settings": {}
+          "settings": {
+          }
         },
         "video_2": {
           "type": "video",
-          "settings": {}
+          "settings": {
+          }
         }
       },
       "block_order": [
@@ -89,38 +104,44 @@
         "video_1",
         "video_2"
       ],
-      "settings":{}
+      "settings": {
+      }
     },
     "review": {
       "type": "app-block-7923216",
-      "blocks":{
+      "blocks": {
         "header": {
           "type": "heading",
-          "settings": {}
+          "settings": {
+          }
         }
       },
       "block_order": [
         "header"
       ],
-      "settings":{}
+      "settings": {
+      }
     },
     "email_signup": {
       "type": "signup-7923216",
       "blocks": {
         "header": {
           "type": "header",
-          "settings": {}
+          "settings": {
+          }
         },
         "form": {
           "type": "form",
-          "settings": {}
+          "settings": {
+          }
         }
       },
       "block_order": [
         "header",
         "form"
       ],
-      "settings":{}
+      "settings": {
+      }
     },
     "1646848339941da1e7": {
       "type": "wave",

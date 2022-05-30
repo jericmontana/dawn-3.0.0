@@ -56,137 +56,137 @@
 </div>
 
 {% schema %}
+{
+  "name": "🍊 Signup",
+  "tag": "section",
+  "settings": [
     {
-        "name": "🍊 Signup",
-        "tag": "section",
-        "settings": [
-            {
-                "type": "select",
-                "id": "color_scheme",
-                "options": [
-                    {
-                    "value": "accent-1",
-                    "label": "Accent 1"
-                    },
-                    {
-                    "value": "accent-2",
-                    "label": "Accent 2"
-                    },
-                    {
-                    "value": "background-1",
-                    "label": "Background 1"
-                    },
-                    {
-                    "value": "background-2",
-                    "label": "Background 2"
-                    },
-                    {
-                    "value": "inverse",
-                    "label": "Inverse"
-                    }
-                ],
-                "default": "background-1",
-                "label": "Color Scheme",
-                "info": "To change the card color scheme, update your theme settings."
-            },
-            {
-                "type": "header",
-                "content": "Section Padding"
-            },
-            {
-                "type": "checkbox",
-                "id": "use_as_default_padding",
-                "label": "Set as default",
-                "default": false
-            },
-            {
-                "type": "range",
-                "id": "padding_top",
-                "min": 0,
-                "max": 100,
-                "step": 4,
-                "unit": "px",
-                "label": "Padding Top",
-                "default": 36,
-                "info": "Default Value is 36"
-            },
-            {
-                "type": "range",
-                "id": "padding_bottom",
-                "min": 0,
-                "max": 100,
-                "step": 4,
-                "unit": "px",
-                "label": "Padding Bottom",
-                "default": 36,
-                "info": "Default Value is 36"
-            }
-        ],
-        "blocks": [
-            {
-                "type": "header",
-                "name": "Header",
-                "limit": 1,
-                "settings": [
-                    {
-                        "type": "richtext",
-                        "id": "title",
-                        "label": "Title",
-                        "default": "<p>Join Oru VIP Club</p>"
-                    },
-                    {
-                        "type": "richtext",
-                        "id": "subtitle",
-                        "label": "Subtitle",
-                        "default": "<p>Mus mauris vitae ultricies leo. Ac feugiat sed lectus vestibulum lacus laoreet non curabitur.</p>"
-                    }
-                ]
-            },
-            {
-                "type": "form",
-                "name": "Form",
-                "limit": 1,
-                "settings": [
-                    {
-                        "type": "text",
-                        "id": "name_label",
-                        "label": "Name Input Label",
-                        "default": "Name..."
-                    },
-                    {
-                        "type": "checkbox",
-                        "id": "display_name_input",
-                        "label": "Display Name Input",
-                        "default": true
-                    },
-                    {
-                        "type": "text",
-                        "id": "email_label",
-                        "label": "Email Input Label",
-                        "default": "Email..."
-                    },
-                    {
-                        "type": "text",
-                        "id": "btn_label",
-                        "label": "Button Label",
-                        "default": "Subscribe"
-                    }
-                ]
-            }
-        ],
-        "presets": [
-            {
-                "name": "🍊 Signup",
-                "category": "a",
-                "blocks": [
-                    {
-                        "type": "header"
-                    },
-                    {
-                        "type": "form"
-                    }
-                ]
-            }
-        ]
+      "type": "select",
+      "id": "color_scheme",
+      "options": [
+        {
+          "value": "accent-1",
+          "label": "Accent 1"
+        },
+        {
+          "value": "accent-2",
+          "label": "Accent 2"
+        },
+        {
+          "value": "background-1",
+          "label": "Background 1"
+        },
+        {
+          "value": "background-2",
+          "label": "Background 2"
+        },
+        {
+          "value": "inverse",
+          "label": "Inverse"
+        }
+      ],
+      "default": "background-1",
+      "label": "Color Scheme",
+      "info": "To change the card color scheme, update your theme settings."
+    },
+    {
+      "type": "header",
+      "content": "Section Padding"
+    },
+    {
+      "type": "checkbox",
+      "id": "use_as_default_padding",
+      "label": "Set as default",
+      "default": false
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Padding Top",
+      "default": 36,
+      "info": "Default Value is 36"
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Padding Bottom",
+      "default": 36,
+      "info": "Default Value is 36"
     }
+  ],
+  "blocks": [
+    {
+      "type": "header",
+      "name": "Header",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "richtext",
+          "id": "title",
+          "label": "Title",
+          "default": "<p>Join Oru VIP Club</p>"
+        },
+        {
+          "type": "richtext",
+          "id": "subtitle",
+          "label": "Subtitle",
+          "default": "<p>Mus mauris vitae ultricies leo. Ac feugiat sed lectus vestibulum lacus laoreet non curabitur.</p>"
+        }
+      ]
+    },
+    {
+      "type": "form",
+      "name": "Form",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "text",
+          "id": "name_label",
+          "label": "Name Input Label",
+          "default": "Name..."
+        },
+        {
+          "type": "checkbox",
+          "id": "display_name_input",
+          "label": "Display Name Input",
+          "default": true
+        },
+        {
+          "type": "text",
+          "id": "email_label",
+          "label": "Email Input Label",
+          "default": "Email..."
+        },
+        {
+          "type": "text",
+          "id": "btn_label",
+          "label": "Button Label",
+          "default": "Subscribe"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "🍊 Signup",
+      "category": "a",
+      "blocks": [
+        {
+          "type": "header"
+        },
+        {
+          "type": "form"
+        }
+      ]
+    }
+  ]
+}
 {% endschema %}
