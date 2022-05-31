@@ -27,22 +27,28 @@
       }
     },
     "product_benefits": {
-      "type": "image-with-text-7923216",
+      "type": "multiple-image-with-text-7923216",
       "blocks": {
-        "header": {
-          "type": "header",
+        "image_with_text_1": {
+          "type": "image_with_text",
           "settings": {
           }
         },
-        "image": {
-          "type": "image",
+        "image_with_text_2": {
+          "type": "image_with_text",
+          "settings": {
+          }
+        },
+        "image_with_text_3": {
+          "type": "image_with_text",
           "settings": {
           }
         }
       },
       "block_order": [
-        "header",
-        "image"
+        "image_with_text_1",
+        "image_with_text_2",
+        "image_with_text_3"
       ],
       "settings": {
       }
