@@ -168,7 +168,7 @@
 {%- else -%}
 <a class="btn {{ btn_size_class }} btn--signup btn--signup-link {% if round_corner %}btn--round-corner{% endif %} {% if btn_link != blank %}{{ btn_he_class }}{% else %}btn--disbaled{% endif %} {% if shadow_effect %}btn-bs{% endif %} {% if auto_width %}btn-auto-width{% endif %}" {% if btn_link != blank %} href="{{ btn_link }}" title="{{ link_title }}" {% endif %} role="button">
 {%- endif -%}
-    {{ btn_label | escape }}
+    {{ btn_label | escape | default: 'Get 10% OFF!' }}
     {% render 'icon-button', icon_type: icon_type %}
     {% if hover_effect == 'shine' %}
     <span></span>

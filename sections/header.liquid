@@ -89,6 +89,9 @@
     .header .section__search .search-form__field-wrapper .field__input{
         border-color: rgb({{ settings.colors_accent_2.red }}, {{ settings.colors_accent_2.green }}, {{ settings.colors_accent_2.blue }}) !important;
     }
+    .header__icons .icon {
+      color: rgb(var(--color-base-accent-2));
+    }
   {% endcase %}
 {%- endstyle -%}
 
@@ -425,6 +428,17 @@
             </li>
           {%- endfor -%}
         </ul>
+        {%- render 'button-signup-7923216',
+          btn_action: 'open-popup',
+          btn_label: section.settings.btn_label,
+          btn_link: section.settings.btn_link,
+          btn_size: 'default',
+          hover_effect: 'lighten',
+          icon_type: 'none',
+          round_corner: false,
+          shadow_effect: false,
+          auto_width: false
+      -%}
       </nav>
     {%- endif -%}
 
