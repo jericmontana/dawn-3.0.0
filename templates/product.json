@@ -3,27 +3,6 @@
     "main": {
       "type": "main-product",
       "blocks": {
-        "title": {
-          "type": "title",
-          "settings": {
-          }
-        },
-        "805fb50f-3e5f-4272-9b05-4a75bb375e1e": {
-          "type": "shopify://apps/judge-me-product-reviews/blocks/preview_badge/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
-          "settings": {
-          }
-        },
-        "price": {
-          "type": "price",
-          "settings": {
-          }
-        },
-        "variant_picker": {
-          "type": "variant_picker",
-          "settings": {
-            "picker_type": "button"
-          }
-        },
         "quantity_selector": {
           "type": "quantity_selector",
           "settings": {
@@ -34,28 +13,18 @@
           "settings": {
             "show_dynamic_checkout": false
           }
-        },
-        "b6e55219-193b-43de-a589-16941fc78044": {
-          "type": "wishlist_button",
-          "settings": {
-          }
         }
       },
       "block_order": [
-        "title",
-        "805fb50f-3e5f-4272-9b05-4a75bb375e1e",
-        "price",
-        "variant_picker",
         "quantity_selector",
-        "buy_buttons",
-        "b6e55219-193b-43de-a589-16941fc78044"
+        "buy_buttons"
       ],
       "settings": {
         "enable_sticky_info": true,
-        "gallery_layout": "stacked",
+        "gallery_layout": "thumbnail_slider",
         "media_size": "medium",
         "mobile_thumbnails": "show",
-        "hide_variants": true,
+        "hide_variants": false,
         "enable_video_looping": false,
         "padding_top": 36,
         "padding_bottom": 12
