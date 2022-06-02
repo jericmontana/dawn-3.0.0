@@ -30,6 +30,39 @@
         "padding_bottom": 12
       }
     },
+    "product_benefits": {
+      "type": "image-with-textblock-7923216",
+      "blocks":{
+        "header": {
+          "type": "header",
+          "settings": {}
+        },
+        "image": {
+          "type": "image",
+          "settings": {}
+        },
+        "richtext_1": {
+          "type": "richtext",
+          "settings": {}
+        },
+        "richtext_2": {
+          "type": "richtext",
+          "settings": {}
+        },
+        "richtext_3": {
+          "type": "richtext",
+          "settings": {}
+        }
+      },
+      "block_order":[
+        "header",
+        "image",
+        "richtext_1",
+        "richtext_2",
+        "richtext_3"
+      ],
+      "settings": {}
+    },
     "wishlist_reference": {
       "type": "main-product-wishlist",
       "settings": {
@@ -50,6 +83,7 @@
   },
   "order": [
     "main",
+    "product_benefits",
     "wishlist_reference",
     "wave"
   ]
