@@ -63,6 +63,39 @@
       ],
       "settings": {}
     },
+    "before_after":{
+      "type":"image-slider-7923216",
+      "blocks":{
+        "header": {
+          "type": "header",
+          "settings": {}
+        },
+        "slider": {
+          "type": "slider",
+          "settings": {}
+        },
+        "image_1": {
+          "type": "image",
+          "settings": {}
+        },
+        "image_2": {
+          "type": "image",
+          "settings": {}
+        },
+        "image_3": {
+          "type": "image",
+          "settings": {}
+        }
+      },
+      "block_order":[
+        "header",
+        "slider",
+        "image_1",
+        "image_2",
+        "image_3"
+      ],
+      "settings": {}
+    },
     "wishlist_reference": {
       "type": "main-product-wishlist",
       "settings": {
@@ -84,6 +117,7 @@
   "order": [
     "main",
     "product_benefits",
+    "before_after",
     "wishlist_reference",
     "wave"
   ]
