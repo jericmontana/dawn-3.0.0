@@ -96,6 +96,44 @@
       ],
       "settings": {}
     },
+    "image_accordion": {
+      "type":"image-with-accordion-7923216",
+      "blocks":{
+        "header": {
+          "type": "header",
+          "settings": {}
+        },
+        "accordion_1": {
+          "type": "accordion",
+          "settings": {}
+        },
+        "accordion_2": {
+          "type": "accordion",
+          "settings": {}
+        },
+        "accordion_3": {
+          "type": "accordion",
+          "settings": {}
+        },
+        "accordion_4": {
+          "type": "accordion",
+          "settings": {}
+        },
+        "image": {
+          "type": "image",
+          "settings": {}
+        }
+      },
+      "block_order":[
+        "header",
+        "accordion_1",
+        "accordion_2",
+        "accordion_3",
+        "accordion_4",
+        "image"
+      ],
+      "settings": {}
+    },
     "wishlist_reference": {
       "type": "main-product-wishlist",
       "settings": {
@@ -118,6 +156,7 @@
     "main",
     "product_benefits",
     "before_after",
+    "image_accordion",
     "wishlist_reference",
     "wave"
   ]
