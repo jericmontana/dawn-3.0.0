@@ -67,20 +67,11 @@
       ],
       "settings": {
       }
-    },
-    "wave": {
-      "type": "wave",
-      "settings": {
-        "color_scheme": "accent-2",
-        "bg_color_top": "#ffffff",
-        "padding_top": 36
-      }
     }
   },
   "order": [
     "page_banner",
     "164702602169907f6d",
-    "shopnow_banner",
-    "wave"
+    "shopnow_banner"
   ]
 }

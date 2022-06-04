@@ -163,14 +163,6 @@
       ],
       "settings": {
       }
-    },
-    "1646848339941da1e7": {
-      "type": "wave",
-      "settings": {
-        "color_scheme": "accent-2",
-        "bg_color_top": "#a72727",
-        "padding_top": 36
-      }
     }
   },
   "order": [
@@ -181,7 +173,6 @@
     "gallery",
     "review",
     "email_signup",
-    "instafeed",
-    "1646848339941da1e7"
+    "instafeed"
   ]
 }

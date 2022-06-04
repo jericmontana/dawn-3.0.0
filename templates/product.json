@@ -134,6 +134,54 @@
       ],
       "settings": {}
     },
+    "gallery": {
+      "type": "gallery-7923216",
+      "blocks": {
+        "header": {
+          "type": "heading",
+          "settings": {
+          }
+        },
+        "video_1": {
+          "type": "video",
+          "settings": {
+          }
+        },
+        "video_2": {
+          "type": "video",
+          "settings": {
+          }
+        },
+        "video_3": {
+          "type": "video",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "header",
+        "video_1",
+        "video_2",
+        "video_3"
+      ],
+      "settings": {
+      }
+    },
+    "review": {
+      "type": "app-block-7923216",
+      "blocks": {
+        "header": {
+          "type": "heading",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "header"
+      ],
+      "settings": {
+      }
+    },
     "wishlist_reference": {
       "type": "main-product-wishlist",
       "settings": {
@@ -141,6 +189,42 @@
         "show_secondary_image": true,
         "show_vendor": true,
         "show_rating": false
+      }
+    },
+    "email_signup": {
+      "type": "signup-7923216",
+      "blocks": {
+        "header": {
+          "type": "header",
+          "settings": {
+          }
+        },
+        "form": {
+          "type": "form",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "header",
+        "form"
+      ],
+      "settings": {
+      }
+    },
+    "instafeed": {
+      "type": "app-block-7923216",
+      "blocks": {
+        "header": {
+          "type": "heading",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "header"
+      ],
+      "settings": {
       }
     },
     "wave": {
@@ -157,6 +241,10 @@
     "product_benefits",
     "before_after",
     "image_accordion",
+    "gallery",
+    "review",
+    "email_signup",
+    "instafeed",
     "wishlist_reference",
     "wave"
   ]

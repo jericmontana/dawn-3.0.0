@@ -17,7 +17,7 @@
     {%- endif -%}
 {%- endstyle -%}
 
-<div class="gallery gallery-{{ section.id }} color-{{ section.settings.color_scheme }}">
+<div class="gallery gallery-{{ section.id }} color-background-1">
     <div class="section__container">
         <div class="page-width">
             
@@ -31,9 +31,14 @@
                 -%}
                 {%- endif -%}
             {%- endfor -%}
+
+            {% capture grid_device_class %}
+                grid--1-col grid--{{ section.settings.columns_desktop }}-col-desktop grid--{{ section.settings.columns_tablet }}-col-tablet
+            {% endcapture %}
+
              <div class="section__gallery--content">
                 <div class="section__gallery--content-videos">
-                    <ul class="grid grid--1-col grid--2-col-desktop grid--2-col-tablet">
+                    <ul class="grid {{ grid_device_class | strip }}">
                     {%- assign block_videos = section.blocks | where: "type", "video" -%}
                     {%- for block in block_videos -%}
                         <li class="grid__item">
@@ -123,33 +128,28 @@
   "tag": "section",
   "settings": [
     {
-      "type": "select",
-      "id": "color_scheme",
-      "options": [
-        {
-          "value": "accent-1",
-          "label": "Accent 1"
-        },
-        {
-          "value": "accent-2",
-          "label": "Accent 2"
-        },
-        {
-          "value": "background-1",
-          "label": "Background 1"
-        },
-        {
-          "value": "background-2",
-          "label": "Background 2"
-        },
-        {
-          "value": "inverse",
-          "label": "Inverse"
-        }
-      ],
-      "default": "background-1",
-      "label": "Color Scheme",
-      "info": "To change the card color scheme, update your theme settings."
+      "type": "header",
+      "content": "Grid Settings"
+    },
+    {
+      "type": "range",
+      "id": "columns_desktop",
+      "min": 2,
+      "max": 5,
+      "step": 1,
+      "default": 3,
+      "label": "Columns on Desktop",
+      "info": "Default Value is 3"
+    },
+    {
+      "type": "range",
+      "id": "columns_tablet",
+      "min": 1,
+      "max": 3,
+      "step": 1,
+      "default": 2,
+      "label": "Columns on Tablet",
+      "info": "Default Value is 3"
     },
     {
       "type": "header",

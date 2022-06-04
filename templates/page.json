@@ -6,18 +6,9 @@
         "padding_top": 28,
         "padding_bottom": 28
       }
-    },
-    "wave": {
-      "type": "wave",
-      "settings": {
-        "color_scheme": "accent-2",
-        "bg_color_top": "#ffffff",
-        "padding_top": 36
-      }
     }
   },
   "order": [
-    "main",
-    "wave"
+    "main"
   ]
 }
