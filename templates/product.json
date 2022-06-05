@@ -3,21 +3,38 @@
     "main": {
       "type": "main-product",
       "blocks": {
-        "quantity_selector": {
-          "type": "quantity_selector",
+        "text_featured_review": {
+          "type": "text_featured_review",
           "settings": {
           }
         },
-        "buy_buttons": {
-          "type": "buy_buttons",
+        "richtext_copy": {
+          "type": "richtext_copy",
           "settings": {
-            "show_dynamic_checkout": false
+          }
+        },
+        "popup": {
+          "type": "popup",
+          "settings": {
+          }
+        },
+        "custom_variant_picker": {
+          "type": "custom_variant_picker",
+          "settings": {
+          }
+        },
+        "quantity_add_to_cart": {
+          "type": "quantity_add_to_cart",
+          "settings": {
           }
         }
       },
       "block_order": [
-        "quantity_selector",
-        "buy_buttons"
+        "text_featured_review",
+        "richtext_copy",
+        "popup",
+        "custom_variant_picker",
+        "quantity_add_to_cart"
       ],
       "settings": {
         "enable_sticky_info": true,

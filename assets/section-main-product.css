@@ -1,3 +1,4 @@
+//Main
 .product {
   margin: 0;
 }
@@ -174,19 +175,19 @@ fieldset.product-form__input .form__label {
   margin-bottom: 0.2rem;
 }
 
-.product-form__input input[type='radio'] {
+/* .product-form__input input[type='radio'] {
   clip: rect(0, 0, 0, 0);
   overflow: hidden;
   position: absolute;
   height: 1px;
   width: 1px;
-}
+} */
 
 .product-form__input input[type='radio'] + label {
-  border: var(--variant-pills-border-width) solid rgba(var(--color-foreground), var(--variant-pills-border-opacity));
-  background-color: rgb(var(--color-background));
-  color: rgba(var(--color-foreground));
-  border-radius: var(--variant-pills-radius);
+  /* border: var(--variant-pills-border-width) solid rgba(var(--color-foreground), var(--variant-pills-border-opacity)); */
+  /* background-color: rgb(var(--color-background)); */
+  /* color: rgba(var(--color-foreground)); */
+  /* border-radius: var(--variant-pills-radius); */
   color: rgb(var(--color-foreground));
   display: inline-block;
   margin: 0.7rem 0.5rem 0.2rem 0;
