@@ -1,0 +1,27 @@
+@import 'abstract/mixin';
+.hero{
+    position: relative;
+    overflow: hidden;
+
+    @include device('desktop'){
+        &{
+            padding-top: 3rem;
+            padding-bottom: 3rem;
+        }
+    }
+
+    .section__button{
+        justify-content: flex-start;
+    }
+
+    .section__bg{
+        background-position: right center;
+        background-size: contain;
+    }
+
+    @include device('mobile'){
+        .section__bg{
+            display: none !important;
+        }
+    }
+}

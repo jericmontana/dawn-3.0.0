@@ -1,0 +1,50 @@
+@import 'abstract/mixin';
+
+.section--shopnow-banner{
+
+    .grid{
+        margin: 0!important;
+    }
+
+    .grid__item{
+        display: flex;
+        align-items: center;
+    }
+    .section__header{
+        margin-bottom: 0;
+
+        text-align: center;
+
+        @include device('tablet-up'){
+            &{
+                text-align: left;
+            }
+        }
+    }
+
+    .section__button{
+        margin-top: 1rem;
+        width: 100%;
+
+        @include device('tablet-up'){
+            &{
+                justify-content: flex-end;
+                margin-top: 0;
+            }
+        }
+    }
+
+    &-wrapper{
+        padding: 3rem 1.5rem;
+        box-shadow: 6px 8px 22px -2px rgb(0 0 0 / 74%);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        min-height: 210px;
+        @include device('tablet-up'){
+            &{
+                padding: 4rem 5rem;
+            }
+        }
+    }
+}

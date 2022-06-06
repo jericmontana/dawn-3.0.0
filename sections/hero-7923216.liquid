@@ -16,8 +16,12 @@
     {%- endif -%}
 {%- endstyle -%}
 
+{%- liquid
+  assign background_url = section.settings.bg_image | image_url
+-%}
+
 <div class="hero hero--{{ section.id }}">
-    <div class="section__bg" style="background-color: teal"></div>
+    <div class="section__bg" {%- if section.settings.image -%}style="background-image: url({{ background_url }})"{%- endif -%}></div>
     <div class="section__container">
         <div class="page-width">
             <div class="grid grid--1-col grid--2-col-desktop grid--2-col-tablet">
@@ -42,7 +46,7 @@
                     </div>
                 </div>
                 <div class="grid__item">
-                    <div class="hero__image">
+                    <div class="hero__image medium-hide large-up-hide">
                     {%- if section.settings.image != blank -%}
                         <img
                             srcset="{%- if section.settings.image.width >= 165 -%}{{ section.settings.image | image_url: width: 165 }} 165w,{%- endif -%}
@@ -86,6 +90,11 @@
       "id": "subtitle",
       "label": "Subtitle",
       "default": "<p>Nullam viverra cras magnis dapibus iaculis quis aliquet auctor imperdiet lectus felis venenatis</p>"
+    },
+    {
+      "type": "image_picker",
+      "id": "bg_image",
+      "label": "BG Image"
     },
     {
       "type": "image_picker",

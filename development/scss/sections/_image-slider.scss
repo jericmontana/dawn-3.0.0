@@ -1,0 +1,42 @@
+@import 'abstract/mixin';
+
+.image-slider{
+    position: relative;
+    overflow: hidden;
+
+    .grid__item{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .section__image{
+        overflow: hidden;
+        ul{
+            padding-left: 1rem;
+            padding-right: 1rem;
+            margin-left: -0.9rem;
+            margin-right: -0.9rem;
+        }
+    }
+
+    &--image{
+        flex: 1;
+        position: relative;
+        width: 100%;
+        max-width: 250px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        @include device('mobile'){
+            &{
+                max-width: 98%;
+            }
+        }
+
+        img{
+            object-fit: cover;
+        }
+    }
+}

@@ -1,0 +1,113 @@
+@import 'abstract/mixin';
+
+.multiple-image-with-text{
+    position: relative;
+    overflow: hidden;
+
+    .grid__item{
+        display: flex;
+
+        &>div{
+            flex: 1;
+        }
+    }
+
+    .section__information{
+        display: grid;
+        padding: 0rem;
+
+        & .tabcontent:not(:first-of-type){
+            display: none;
+        }
+
+        .tabcontent{
+            grid-area: 1/1;
+        }
+
+        h2{
+            margin-top: 0rem;
+        }
+
+        @include device('desktop'){
+            &{
+                padding: 2rem;
+            }
+        }
+
+        @include device('mobile'){
+            &{
+                padding-top: 2rem;
+            }
+        }
+    }
+
+    .section__image{
+        position: relative;
+        display: grid;
+        padding: 0rem;
+
+        & .tabcontent:not(:first-of-type){
+            display: none;
+        }
+
+        .tabcontent{
+            grid-area: 1/1;
+        }
+
+
+        & div.image--wrapper{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+
+        img{
+            object-fit: cover;
+        }
+
+        @include device('desktop'){
+            &{
+                padding: 2rem;
+            }
+        }
+
+        .section__tab-controls{
+            position: absolute;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            top: 50%;
+            bottom: 50%;
+            padding: 0rem 1rem;
+        }
+
+        .tab-control{
+            width: 2.25rem;
+            height: 2.25rem;
+            color: rebeccapurple;
+            cursor: pointer;
+
+            &--prev{
+                visibility: hidden;
+                transform: rotate(90deg);
+            }
+            &--next{
+                transform: rotate(270deg);
+            }
+        }
+    }
+
+    
+
+    .image-first{
+        flex-direction: column-reverse;
+    }
+
+    @include device('desktop'){
+        .image-first{
+            flex-direction: row-reverse;
+        }
+    }
+}

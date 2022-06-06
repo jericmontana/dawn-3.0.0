@@ -1,1 +1,1 @@
-.hero{overflow:hidden;position:relative}.hero .section__button{-webkit-box-pack:start;-ms-flex-pack:start;justify-content:flex-start}
+.hero{overflow:hidden;position:relative}@media screen and (min-width:990px){.hero{padding-bottom:3rem;padding-top:3rem}}.hero .section__button{-webkit-box-pack:start;-ms-flex-pack:start;justify-content:flex-start}.hero .section__bg{background-position:100%;background-size:contain}@media screen and (max-width:749px){.hero .section__bg{display:none!important}}

@@ -1,0 +1,46 @@
+@import 'abstract/mixin';
+
+.image-with-textblock{
+    position: relative;
+    overflow: hidden;
+
+    .section__image{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0rem 1.4rem 0rem 1.4rem;
+
+        img{
+            object-fit: cover;
+        }
+    }
+
+    .section__richtext{
+        padding: 0rem 1.4rem 0rem 1.4rem;
+
+        h3{
+            margin-top: 0rem;
+            margin-bottom: 0rem; 
+            
+            text-transform: uppercase;
+            text-align: center;
+        }
+
+        p{
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+
+            text-align: center;
+        }
+    }
+
+
+    .image-first{
+        flex-direction: column-reverse;
+    }
+    @include device('desktop'){
+        .image-first{
+            flex-direction: row-reverse;
+        }
+    }
+}

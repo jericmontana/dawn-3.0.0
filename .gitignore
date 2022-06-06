@@ -15,7 +15,9 @@ node_modules
 package-lock.json
 package.json
 gulpfile.js
-development
+development/fonts
+development/img
+development/scssoutput
 test
 reference
 snippets/aaaedit.liquid
