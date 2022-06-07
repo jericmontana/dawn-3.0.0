@@ -1,4 +1,4 @@
-{{ 'section-hero-7923216.css' | asset_url | stylesheet_tag }}
+{% comment %} {{ 'section-hero-7923216.css' | asset_url | stylesheet_tag }} {% endcomment %}
 {% assign use_as_default_padding = section.settings.use_as_default_padding %}
 {%- style -%}
     {%- if use_as_default_padding -%}
@@ -16,32 +16,51 @@
     {%- endif -%}
 {%- endstyle -%}
 
-{%- liquid
-  assign background_url = section.settings.bg_image | image_url
--%}
 
-<div class="hero hero--{{ section.id }}">
-    <div class="section__bg" {%- if section.settings.image -%}style="background-image: url({{ background_url }})"{%- endif -%}></div>
+<div class="hero hero--{{ section.id }} section-with-bg">
+  {%- if section.settings.bg_image -%}
+    <div class="section__bg">
+      <img
+        class="small-hide"
+        srcset="{%- if section.settings.bg_image.width >= 375 -%}{{ section.settings.bg_image | image_url: width: 375 }} 375w,{%- endif -%}
+          {%- if section.settings.bg_image.width >= 550 -%}{{ section.settings.bg_image | image_url: width: 550 }} 550w,{%- endif -%}
+          {%- if section.settings.bg_image.width >= 750 -%}{{ section.settings.bg_image | image_url: width: 750 }} 750w,{%- endif -%}
+          {%- if section.settings.bg_image.width >= 1100 -%}{{ section.settings.bg_image | image_url: width: 1100 }} 1100w,{%- endif -%}
+          {%- if section.settings.bg_image.width >= 1500 -%}{{ section.settings.bg_image | image_url: width: 1500 }} 1500w,{%- endif -%}
+          {%- if section.settings.bg_image.width >= 1780 -%}{{ section.settings.bg_image | image_url: width: 1780 }} 1780w,{%- endif -%}
+          {%- if section.settings.bg_image.width >= 2000 -%}{{ section.settings.bg_image | image_url: width: 2000 }} 2000w,{%- endif -%}
+          {%- if section.settings.bg_image.width >= 3000 -%}{{ section.settings.bg_image | image_url: width: 3000 }} 3000w,{%- endif -%}
+          {%- if section.settings.bg_image.width >= 3840 -%}{{ section.settings.bg_image | image_url: width: 3840 }} 3840w,{%- endif -%}
+          {{ section.settings.bg_image | image_url }} {{ section.settings.bg_image.width }}w"
+        src="{{ section.settings.bg_image | image_url: width: 2000 }}"
+        sizes="(min-width: 990px) 2006px, ((min-width: 750px) and (max-width: 989px)) 1080px, (max-width: 749px) 800px"
+        alt="{{ section.settings.bg_image.alt | escape }}"
+        title="{{ section.settings.bg_image.alt | escape }}"
+        loading="lazy"
+        width="{{ section.settings.bg_image.width }}"
+        height="{{ section.settings.bg_image.height }}"
+        draggable="false"
+      >
+    </div>
+  {%- endif -%}
     <div class="section__container">
         <div class="page-width">
             <div class="grid grid--1-col grid--2-col-desktop grid--2-col-tablet">
                 <div class="grid__item">
                     <div class="hero__copy">
-                        <h2 class="title">{{ section.settings.title | escape }}</h2>
+                        <h2 class="title uppercase">{{ section.settings.title | escape }}</h2>
                         <div class="subtitle">{{ section.settings.subtitle }}</div>
 
-                        <div class="section__button">
-                            {%- render 'button',
-                                btn_label: section.settings.btn_label,
-                                btn_link: section.settings.btn_link,
-                                btn_size: "default",
-                                hover_effect: "lighten",
-                                icon_type: "none",
-                                round_corner: section.settings.round_corner,
-                                shadow_effect: section.settings.shadow_effect,
-                                auto_width: section.settings.auto_width
-                            -%}
-                        </div>
+                        {%- render 'button',
+                            btn_label: section.settings.btn_label,
+                            btn_link: section.settings.btn_link,
+                            btn_size: "default",
+                            hover_effect: "lighten",
+                            icon_type: "none",
+                            round_corner: section.settings.round_corner,
+                            shadow_effect: section.settings.shadow_effect,
+                            auto_width: section.settings.auto_width
+                        -%}
                     
                     </div>
                 </div>

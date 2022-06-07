@@ -19,7 +19,7 @@
 
 {%- assign image_with_text_blocks = section.blocks | where: 'type', 'image_with_text' -%}
 
-<div class="multiple-image-with-text multiple-image-with-text--{{ section.id }} color-{{ section.settings.color_scheme }}">
+<div class="multiple-image-with-text multiple-image-with-text--{{ section.id }} color-background-1 section-with-bg">
   <div class="section__bg" style="background-color: pink"></div>
   <div class="section__container">
     <div class="page-width">
@@ -92,35 +92,6 @@
   "name": "🍊 MIwT",
   "tag": "section",
   "settings": [
-    {
-      "type": "select",
-      "id": "color_scheme",
-      "options": [
-        {
-          "value": "accent-1",
-          "label": "Accent 1"
-        },
-        {
-          "value": "accent-2",
-          "label": "Accent 2"
-        },
-        {
-          "value": "background-1",
-          "label": "Background 1"
-        },
-        {
-          "value": "background-2",
-          "label": "Background 2"
-        },
-        {
-          "value": "inverse",
-          "label": "Inverse"
-        }
-      ],
-      "default": "background-1",
-      "label": "Color Scheme",
-      "info": "To change the card color scheme, update your theme settings."
-    },
     {
       "type": "checkbox",
       "id": "image_first",

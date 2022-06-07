@@ -2,26 +2,88 @@
 .hero{
     position: relative;
     overflow: hidden;
-
-    @include device('desktop'){
-        &{
-            padding-top: 3rem;
-            padding-bottom: 3rem;
-        }
-    }
+    
+    // If BG with image
+    padding: 0rem !important;
 
     .section__button{
         justify-content: flex-start;
     }
 
     .section__bg{
-        background-position: right center;
-        background-size: contain;
+        background-color: #F2DFD0;
     }
 
-    @include device('mobile'){
+    @include device('tablet-up'){
         .section__bg{
-            display: none !important;
+            height: max-content;
+        }
+    }
+
+
+    .section__container{
+        display: grid;
+
+        .page-width{
+            width: 100%;
+            grid-area: 1/1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            @include device('tablet-up'){
+                & {
+                    padding: 0 2rem;
+                }
+            }
+        }
+
+        .grid{
+            width: 100%;
+        }
+    }
+
+    .hero__copy{
+
+        @include device('tablet-up'){
+            &{
+                padding-right: 3rem;
+            }
+        }
+        .title{
+            --font-heading-scale: 1.4;
+            color: rgb(var(--color-base-accent-2));
+            margin: 0rem;
+            margin-bottom: 1rem;
+            font-weight: 600;
+            
+            @include device('tablet'){
+                &{
+                    --font-heading-scale: 1;
+                }
+            }
+        }
+
+        .subtitle{
+            color: rgb(var(--color-base-accent-2));
+            margin-bottom: 1rem;
+            line-height: calc(1 + .5/var(--font-body-scale));
+
+            p{
+                margin: 0rem;
+            }
+
+            p:not(:last-child){
+                margin-bottom: 1rem;
+            }
+        }
+
+        .btn{
+            margin-top: 1rem;
+
+            @include device('desktop'){
+                margin-top: 8rem;
+            }
         }
     }
 }
