@@ -1,0 +1,1 @@
+.featured-video{overflow:hidden;position:relative}.featured-video .section__header *{color:rgba(var(--color-base-accent-2))}.featured-video .grid__item{display:grid}.featured-video .grid__item deferred-media{grid-area:1/1}@media screen and (max-width:749px){.featured-video .grid__item:not(:last-of-type){margin-bottom:2rem}}

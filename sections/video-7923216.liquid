@@ -1,0 +1,248 @@
+{{ 'section-video-7923216.css' | asset_url | stylesheet_tag }}
+
+
+{%- assign header_blocks = section.blocks | where: 'type', 'header' -%}
+{%- assign video_blocks = section.blocks | where: 'type', 'video' -%}
+
+{% assign use_as_default_padding = section.settings.use_as_default_padding %}
+{%- style -%}
+  {%- if use_as_default_padding -%}
+    .featured-video--{{ section.id }} .section__container {
+      padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px !important;
+      padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px !important;
+    }
+
+    @media screen and (min-width: 750px) {
+      .featured-video--{{ section.id }} .section__container {
+        padding-top: {{ section.settings.padding_top }}px !important;
+        padding-bottom: {{ section.settings.padding_bottom }}px !important;
+      }
+    }
+  {%- endif -%}
+{%- endstyle -%}
+
+<div class="featured-video featured-video--{{ section.id }} section-with-bg">
+    <div class="section__bg" style="background-color: pink"></div>
+    <div class="section__container">
+      <div class="page-width">
+
+        {% comment %} For Section Header {% endcomment %}
+        {%- for header_block in header_blocks -%}
+        {% if header_block.settings.title != blank or header_block.settings.subtitle != blank %}
+            <div class="section__header center">
+                <h2 class="h2 {% if header_block.settings.uppercase %}uppercase{% endif %}">{{ header_block.settings.title | escape }}</h2>
+                <p class="h3">{{ header_block.settings.subtitle | escape }}</p>
+            </div>
+        {%- endif -%}
+        {%- endfor -%}
+
+        {% capture grid_device_class %}
+          grid--{{ section.settings.columns_mobile }}-col grid--{{ section.settings.columns_desktop }}-col-desktop grid--{{ section.settings.columns_tablet }}-col-tablet
+        {% endcapture %}
+        <ul class="grid {{ grid_device_class | strip }}">
+            {%- for video_block in video_blocks -%}
+            {%- assign item_number = forloop.index -%}
+            <li class="grid__item">
+                <deferred-media class="g-video">
+                    <button
+                        id="Deferred-Poster-Modal-{{ video_block.settings.video_url.id }}-{{ item_number }}"
+                        type="button"
+                      >
+                        {%- if video_block.settings.thumbnail != blank -%}
+                        {%- liquid
+                            if video_block.settings.thumbnail.alt == blank
+                                assign image_alt = video_block.settings.video_url.id
+                            else
+                                assign image_alt = video_block.settings.thumbnail.alt
+                            endif
+                        -%}
+                        <img
+                            srcset="{%- if video_block.settings.thumbnail.width >= 375 -%}{{ video_block.settings.thumbnail | image_url: width: 375 }} 375w,{%- endif -%}
+                            {%- if video_block.settings.thumbnail.width >= 750 -%}{{ video_block.settings.thumbnail | image_url: width: 750 }} 750w,{%- endif -%}
+                            {%- if video_block.settings.thumbnail.width >= 1100 -%}{{ video_block.settings.thumbnail | image_url: width: 1100 }} 1100w,{%- endif -%}
+                            {%- if video_block.settings.thumbnail.width >= 1500 -%}{{ video_block.settings.thumbnail | image_url: width: 1500 }} 1500w,{%- endif -%}
+                            {%- if video_block.settings.thumbnail.width >= 1780 -%}{{ video_block.settings.thumbnail | image_url: width: 1780 }} 1780w,{%- endif -%}
+                            {%- if video_block.settings.thumbnail.width >= 2000 -%}{{ video_block.settings.thumbnail | image_url: width: 2000 }} 2000w,{%- endif -%}
+                            {%- if video_block.settings.thumbnail.width >= 3000 -%}{{ video_block.settings.thumbnail | image_url: width: 3000 }} 3000w,{%- endif -%}
+                            {%- if video_block.settings.thumbnail.width >= 3840 -%}{{ video_block.settings.thumbnail | image_url: width: 3840 }} 3840w,{%- endif -%}
+                            {{ video_block.settings.thumbnail | image_url }} {{ video_block.settings.thumbnail.width }}w"
+                            src="{{ video_block.settings.thumbnail | image_url: width: 1920 }}"
+                            sizes="(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 }}px, (min-width: 750px) calc(100vw - 10rem), 100vw"
+                            alt="{{ image_alt | escape }}"
+                            loading="lazy"
+                            width="{{ video_block.settings.thumbnail.width }}"
+                            height="{{ video_block.settings.thumbnail.height }}"
+                        >
+                        {%- else -%}
+                            {% render 'no-image' %}
+                        {%- endif -%}
+                        <span class="">
+                            {%- render 'icon-play' -%}
+                        </span>
+                    </button>
+                    <template>
+                        {%- if video_block.settings.video_url.type == 'youtube' -%}
+                            <iframe src="https://www.youtube.com/embed/{{ video_block.settings.video_url.id }}?enablejsapi=1&&autoplay=1" class="js-youtube" allow="autoplay; encrypted-media" allowfullscreen title="{{ video_block.settings.description | strip_html | escape }}"></iframe>
+                        {%- else -%}
+                            <iframe src="https://player.vimeo.com/video/{{ video_block.settings.video_url.id }}" class="js-vimeo" allow="autoplay; encrypted-media" allowfullscreen title="{{ video_block.settings.description | strip_html | escape }}"></iframe>
+                        {%- endif -%}
+                    </template>
+                </deferred-media>
+            </li>
+            {%- endfor -%}
+        </ul>
+
+      </div>
+    </div>
+</div>
+
+{% schema %}
+{
+  "name": "🍊 Video",
+  "tag": "section",
+  "settings": [
+    {
+        "type": "header",
+        "content": "Grid Settings"
+    },
+    {
+        "type": "range",
+        "id": "columns_desktop",
+        "min": 1,
+        "max": 3,
+        "step": 1,
+        "default": 2,
+        "label": "Columns on Desktop",
+        "info": "Default Value is 3"
+    },
+    {
+        "type": "range",
+        "id": "columns_tablet",
+        "min": 1,
+        "max": 3,
+        "step": 1,
+        "default": 2,
+        "label": "Columns on Tablet",
+        "info": "Default Value is 2"
+    },
+    {
+        "type": "range",
+        "id": "columns_mobile",
+        "min": 1,
+        "max": 3,
+        "step": 1,
+        "default": 1,
+        "label": "Columns on Mobile",
+        "info": "Default Value is 1"
+    },
+    {
+      "type": "header",
+      "content": "Section Padding"
+    },
+    {
+      "type": "checkbox",
+      "id": "use_as_default_padding",
+      "label": "Set as default",
+      "default": false
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Padding Top",
+      "default": 36,
+      "info": "Default Value is 36"
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Padding Bottom",
+      "default": 36,
+      "info": "Default Value is 36"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "header",
+      "name": "Header",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "header",
+          "content": "Header Settings"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title",
+          "default": "Video"
+        },
+        {
+          "type": "checkbox",
+          "id": "title_uppercase",
+          "label": "Uppercase",
+          "default": false
+        },
+        {
+          "type": "textarea",
+          "id": "subtitle",
+          "label": "Subtitle",
+          "default": "Mus mauris vitae ultricies leo. Ac feugiat sed lectus vestibulum lacus laoreet non curabitur."
+        }
+      ]
+    },
+    {
+        "type": "video",
+        "name": "Video",
+        "settings":[
+            {
+                "type": "video_url",
+                "id": "video_url",
+                "accept": [
+                    "youtube",
+                    "vimeo"
+                ],
+                "default": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+                "label": "Video URL",
+                "info": "e.g.: https://www.youtube.com/watch?v=_9VUPq3SxOc"
+            },
+            {
+                "type": "text",
+                "id": "description",
+                "label": "Description",
+                "info": "Helpful for SEO"
+            },
+            {
+                "type": "image_picker",
+                "id": "thumbnail",
+                "label": "Thumbnail"
+            }
+        ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "🍊 Video",
+      "category": "a",
+      "blocks": [
+        {
+          "type": "header"
+        },
+        {
+            "type": "video"
+        },
+        {
+            "type": "video"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

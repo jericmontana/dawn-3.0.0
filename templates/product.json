@@ -151,35 +151,26 @@
       ],
       "settings": {}
     },
-    "gallery": {
-      "type": "gallery-7923216",
+    "video": {
+      "type": "video-7923216",
       "blocks": {
         "header": {
-          "type": "heading",
-          "settings": {
-          }
+          "type": "header",
+          "settings": {}
         },
         "video_1": {
           "type": "video",
-          "settings": {
-          }
+          "settings": {}
         },
         "video_2": {
           "type": "video",
-          "settings": {
-          }
-        },
-        "video_3": {
-          "type": "video",
-          "settings": {
-          }
+          "settings": {}
         }
       },
       "block_order": [
         "header",
         "video_1",
-        "video_2",
-        "video_3"
+        "video_2"
       ],
       "settings": {
       }
@@ -258,7 +249,7 @@
     "product_benefits",
     "before_after",
     "image_accordion",
-    "gallery",
+    "video",
     "review",
     "email_signup",
     "instafeed",

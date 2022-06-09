@@ -1,0 +1,25 @@
+@import 'abstract/mixin';
+.featured-video{
+    position: relative;
+    overflow: hidden;
+
+    .section__header{
+        & *{
+            color: rgba(var(--color-base-accent-2));
+        }
+    }
+
+    .grid__item{
+        display: grid;
+
+        deferred-media{
+            grid-area: 1/1;
+        }
+        
+        @include device('mobile'){
+            &:not(:last-of-type){
+                margin-bottom: 2rem;
+            }
+        }
+    }
+}

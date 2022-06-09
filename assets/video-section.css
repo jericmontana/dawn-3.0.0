@@ -16,7 +16,9 @@
 }
 
 .video-section__media iframe {
-  background-color: rgba(var(--color-foreground), 0.03);
+  // background-color: rgba(var(--color-foreground), 0.03);
+  background: rgb(var(--color-base-accent-2),0.35) url("loader.gif") no-repeat center center !important;
+  background-blend-mode: screen;
   border: 0;
 }
 
