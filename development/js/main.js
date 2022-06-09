@@ -1122,9 +1122,16 @@ const tabularMultiple = () => {
 
       const targetContent = document.querySelectorAll('.' + e.dataset.tabcontentclass + `-${counter}`);
       const targetContentClass = document.querySelectorAll('.' + e.dataset.tabcontentclass);
+      const gcard = document.querySelector('.' + e.dataset.gcard);
 
       targetContentClass.forEach(e => e.style.display = 'none');
       targetContent.forEach(e => e.style.display = 'block');
+
+      if(gcard){
+        gcard.classList.toggle('g-card--has-second-image');
+        gcard.classList.toggle('g-card--switch-image');
+      }
+
     }))
   }
 
@@ -1144,9 +1151,16 @@ const tabularMultiple = () => {
       
       const targetContent = document.querySelectorAll('.' + e.dataset.tabcontentclass + `-${counter}`);
       const targetContentClass = document.querySelectorAll('.' + e.dataset.tabcontentclass);
+      const gcard = document.querySelector('.' + e.dataset.gcard);
 
       targetContentClass.forEach(e => e.style.display = 'none');
       targetContent.forEach(e => e.style.display = 'block');
+
+      if(gcard){
+        gcard.classList.toggle('g-card--has-second-image');
+        gcard.classList.toggle('g-card--switch-image');
+      }
+
     }))
   }
 }

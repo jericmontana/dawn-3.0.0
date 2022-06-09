@@ -19,7 +19,7 @@
   {%- endif -%}
 {%- endstyle -%}
 
-<div class="featured-collection featured-collection--{{ section.id }} color-{{ section.settings.color_scheme }}">
+<div class="featured-collection featured-collection--{{ section.id }}">
   <div class="section__container">
     <div class="page-width">
 
@@ -27,11 +27,10 @@
       {%- assign header = section.blocks | where: 'type', 'header' -%}
       {%- for block in header -%}
         {% if block.settings.title != blank or block.settings.subtitle != blank %}
-          {%- render 'section-header',
-            title: block.settings.title,
-            subtitle: block.settings.subtitle,
-            uppercase: block.settings.title_uppercase
-          -%}
+          <div class="section__header center">
+            <h2 class="h2 {% if block.settings.uppercase %}uppercase{% endif %}">{{ block.settings.title | escape }}</h2>
+            <p class="h3">{{ block.settings.subtitle | escape }}</p>
+          </div>
         {%- endif -%}
       {%- endfor -%}
 
@@ -49,45 +48,21 @@
         {% capture grid_device_class %}
           grid--{{ block.settings.columns_mobile }}-col grid--{{ block.settings.columns_desktop }}-col-desktop grid--{{ block.settings.columns_tablet }}-col-tablet
         {% endcapture %}
-        
-        
-        <div class="fcollection">
-          <ul class="grid {{ grid_device_class | strip }}">
-            {%- for product in block.settings.collection.products limit: products_to_display -%}
-            <li class="grid__item grid__item--featured-collection">
-              <div class="fcollection-wrapper">
-                {% render 'card-product',
-                card_product: product,
-                media_aspect_ratio: block.settings.image_ratio,
-                show_secondary_image: block.settings.show_secondary_image,
-                show_vendor: block.settings.show_vendor,
-                show_rating: block.settings.show_rating
-                %}
 
-                {% comment %} For Featured Product Button {% endcomment %}
-                <div class="fcollection__button">
-                  {%- render 'button',
-                    btn_label: block.settings.btn_label,
-                    btn_link: product.url,
-                    btn_size: "default",
-                    hover_effect: "lighten",
-                    icon_type: "none",
-                    round_corner: section.settings.round_corner,
-                    shadow_effect: section.settings.shadow_effect,
-                    auto_width: section.settings.auto_width
-                  -%}
-                </div>
-              <div>
+        <ul class="grid {{ grid_device_class | strip }}">
+          {%- for product in block.settings.collection.products limit: products_to_display -%}
+            {%- assign item_number = forloop.index -%}
+          <li class="grid__item">
+              {%- render 'card-product-7923216', product: product, item_number: item_number -%}
+          </li>
+          {%- else -%}
+          {%- for i in (1..4) -%}
+            <li class="grid__item">
+            {% render 'card-product', show_vendor: block.settings.show_vendor %}
             </li>
-            {%- else -%}
-            {%- for i in (1..4) -%}
-              <li class="grid__item">
-              {% render 'card-product', show_vendor: block.settings.show_vendor %}
-              </li>
-            {%- endfor -%}
-            {%- endfor -%}
-          </ul>
-        <div>
+          {%- endfor -%}
+          {%- endfor -%}
+        </ul>
       {%- endfor -%}
     </div>
   </div>
@@ -97,35 +72,6 @@
   "name": "🍊 Featured Collection",
   "tag": "section",
   "settings": [
-    {
-      "type": "select",
-      "id": "color_scheme",
-      "options": [
-        {
-          "value": "accent-1",
-          "label": "Accent 1"
-        },
-        {
-          "value": "accent-2",
-          "label": "Accent 2"
-        },
-        {
-          "value": "background-1",
-          "label": "Background 1"
-        },
-        {
-          "value": "background-2",
-          "label": "Background 2"
-        },
-        {
-          "value": "inverse",
-          "label": "Inverse"
-        }
-      ],
-      "default": "background-1",
-      "label": "Color Scheme",
-      "info": "To change the card color scheme, update your theme settings."
-    },
     {
       "type": "header",
       "content": "Section Padding"

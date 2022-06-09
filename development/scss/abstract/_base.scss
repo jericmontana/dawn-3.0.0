@@ -105,24 +105,31 @@ html {
 
     margin-bottom: 20px;
 
-    &--title{
-        // font-size: 28px;
-        font-weight: 700;
-        margin: 0px;
+    // for title
+    h2{
+        font-weight: 500;
+        margin: 0rem;
         margin-bottom: 1rem;
-        color: rgb(var(--color-foreground));
-        
-        @include device('mobile'){
-            font-size: calc(var(--font-heading-scale) * 2rem);
-        }
     }
 
-    &--subtitle{
-        font-size: 17px;
-        margin: 0px;
-        margin-bottom: 1rem;
-        color: rgba(var(--color-foreground), 0.75);
-    }
+    // &--title{
+    //     // font-size: 28px;
+    //     font-weight: 700;
+    //     margin: 0px;
+    //     margin-bottom: 1rem;
+    //     color: rgb(var(--color-foreground));
+        
+    //     @include device('mobile'){
+    //         font-size: calc(var(--font-heading-scale) * 2rem);
+    //     }
+    // }
+
+    // &--subtitle{
+    //     font-size: 17px;
+    //     margin: 0px;
+    //     margin-bottom: 1rem;
+    //     color: rgba(var(--color-foreground), 0.75);
+    // }
     
     @include device('tablet-up'){
     

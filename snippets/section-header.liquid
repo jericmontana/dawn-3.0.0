@@ -10,10 +10,6 @@
 {% endcomment %}
 
 <div class="section__header center">
-    {% unless title == blank %}
-    <h2 class="h2 section__header--title {% if uppercase %}uppercase{% endif %}">{{ title | escape }}</h2>
-    {% endunless %}
-    {% unless subtitle == blank %}
-    <p class="section__header--subtitle">{{ subtitle | escape }}</p>
-    {% endunless %}
+    <h2 class="h2 {% if uppercase %}uppercase{% endif %}">{{ title | escape }}</h2>
+    <p class="h3">{{ subtitle | escape }}</p>
 </div>

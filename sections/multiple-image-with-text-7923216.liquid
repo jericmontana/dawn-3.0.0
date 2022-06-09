@@ -61,7 +61,7 @@
                     draggable="false"
                   >
                 {%- else -%}
-                  {%- render 'no-image'-%}
+                  {%- render 'no-image' -%}
                 {%- endif -%}
                 </div>
               </div>
@@ -71,13 +71,13 @@
                 data-maxblock="{{ image_with_text_blocks | size }}"
                 data-tabcontentclass='tabcontent-{{ section.id }}'
                 data-tabnext ='tab-control--next-{{ section.id }}'>
-                {%- render 'icon-caret'-%}
+                {%- render 'icon-caret' -%}
               </div>
               <div class="tab-control tab-control--next tab-control--next-{{ section.id }}"
                 data-maxblock="{{ image_with_text_blocks | size }}"
                 data-tabcontentclass='tabcontent-{{ section.id }}'
                 data-tabprev='tab-control--prev-{{ section.id }}'>
-                {%- render 'icon-caret'-%}
+                {%- render 'icon-caret' -%}
               </div>
             </div>
           </div>

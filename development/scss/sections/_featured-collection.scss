@@ -4,65 +4,11 @@
     position: relative;
     overflow: hidden;
 
-    .grid__item--featured-collection{
-        position: relative;
-        padding: 1rem 2rem;
-        display: flex;
-    }
+    .grid__item{
+        display: grid;
 
-    .fcollection-wrapper{
-        flex-grow: 1;
-    }
-    
-    // .section__slider .slider-button{
-    //     margin-bottom: 8rem;
-    // }
-
-    .card-wrapper{
-        height: auto;
-    }
-
-    .card-information{
-        *{
-            text-align: center;
+        &+div{
+            grid-area: 1/1;
         }
-
-        p{
-            margin-top: 0.7rem;
-            margin-bottom: 0.7rem;
-        }
-
-        .price{
-            span{
-                display: inline-block;
-            }
-        }
-    }
-
-    .full-unstyled-link{
-        text-align: center;
-        text-transform: uppercase;
-        font-weight: 600;
-    }
-
-    // .product-form__submit.button{
-    //     width: auto;
-    //     margin-left: auto;
-    //     margin-right: auto;
-    // }
-
-    // .product-form__buttons{
-    //     @include device('desktop'){
-    //         &{
-    //             margin-bottom: 2rem;
-    //         }
-    //     }
-    // }
-
-    .fcollection__button{
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
     }
 }
