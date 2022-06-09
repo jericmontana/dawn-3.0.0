@@ -16,6 +16,21 @@
         display: grid;
         padding: 0rem;
 
+        .information--wrapper{
+            p{
+                margin: 0;
+                line-height: calc(1 + 0.5 / var(--font-body-scale));
+                
+                &:not(:first-child){
+                    margin-top: 1rem;
+                }
+
+                &:last-child{
+                    margin-bottom: 1rem;
+                }
+            }
+        }
+        
         & .tabcontent:not(:first-of-type){
             display: none;
         }
@@ -26,6 +41,7 @@
 
         h2{
             margin-top: 0rem;
+            margin-bottom: 1.14rem;
         }
 
         @include device('desktop'){
@@ -64,6 +80,7 @@
 
         img{
             object-fit: cover;
+            object-position: center center;
         }
 
         @include device('desktop'){
@@ -84,10 +101,14 @@
         }
 
         .tab-control{
-            width: 2.25rem;
-            height: 2.25rem;
-            color: rebeccapurple;
+            width: 3rem;
+            height: 3rem;
+            color: rgb(var(--color-base-accent-2));
             cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0.4rem;
 
             &--prev{
                 visibility: hidden;
@@ -95,6 +116,10 @@
             }
             &--next{
                 transform: rotate(270deg);
+            }
+
+            svg{
+                pointer-events: none;
             }
         }
     }

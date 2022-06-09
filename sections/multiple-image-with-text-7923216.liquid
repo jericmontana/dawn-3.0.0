@@ -20,7 +20,6 @@
 {%- assign image_with_text_blocks = section.blocks | where: 'type', 'image_with_text' -%}
 
 <div class="multiple-image-with-text multiple-image-with-text--{{ section.id }} color-background-1 section-with-bg">
-  <div class="section__bg" style="background-color: pink"></div>
   <div class="section__container">
     <div class="page-width">
       <div class="grid grid--1-col grid--2-col-desktop {% if section.settings.image_first %}image-first{% endif %}">
@@ -70,13 +69,15 @@
               <div class="tab-control tab-control--prev tab-control--prev-{{ section.id }}"
                 data-maxblock="{{ image_with_text_blocks | size }}"
                 data-tabcontentclass='tabcontent-{{ section.id }}'
-                data-tabnext ='tab-control--next-{{ section.id }}'>
+                data-tabnext ='tab-control--next-{{ section.id }}'
+                role="button">
                 {%- render 'icon-caret' -%}
               </div>
               <div class="tab-control tab-control--next tab-control--next-{{ section.id }}"
                 data-maxblock="{{ image_with_text_blocks | size }}"
                 data-tabcontentclass='tabcontent-{{ section.id }}'
-                data-tabprev='tab-control--prev-{{ section.id }}'>
+                data-tabprev='tab-control--prev-{{ section.id }}'
+                role="button">
                 {%- render 'icon-caret' -%}
               </div>
             </div>
