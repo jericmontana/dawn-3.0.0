@@ -21,16 +21,12 @@
     grid--{{ section.settings.columns_mobile }}-col grid--{{ section.settings.columns_desktop }}-col-desktop grid--{{ section.settings.columns_tablet }}-col-tablet
 {% endcapture %}
 
-<div class="logo-with-text logo-with-text-{{ section.id }} color-{{ section.settings.color_scheme }}">
-  <div class="section__bg" style="background-color: #f8f8f8"></div>
+<div class="logo-with-text logo-with-text-{{ section.id }} color-background-1 section-with-bg">
+  <div class="section__bg" style="background-color: rgb(var(--color-section-bg))"></div>
   <div class="section__container">
     <div class="page-width">
 
-      {% comment %} For Section Header Support {% endcomment %}
-      {%- assign header_support = section.blocks | where: 'type', 'header_support' -%}
-
       {% comment %} For Section Header {% endcomment %}
-      {%- if header_support.size < 1 -%}
       {%- assign header = section.blocks | where: 'type', 'header' -%}
       {%- for block in header -%}
         {%- if block.settings.title != blank or block.settings.subtitle != blank -%}
@@ -41,71 +37,58 @@
         -%}
         {%- endif -%}
       {%- endfor -%}
-      {%- endif -%}
 
-      {% comment %} For Section Header Support {% endcomment %}
-      {%- for block in header_support -%}
-        {%- if block.settings.title_support != blank -%}
-        <div class="section__header center">
-          <h2 class="section__header--title">{{ block.settings.title_support }}</h2>
-        </div>
-        {%- endif -%}
-      {%- endfor -%}
-      
       {% comment %} For Section Logo With Text {% endcomment %}
       {%- assign image_with_text_blocks = section.blocks | where: 'type', 'image_with_text' -%}
       {%- if image_with_text_blocks -%}
-        <div class="section__logo-and-text">
-          <ul class="grid {{ grid_device_class }}">
-            {%- for image_with_text_block in image_with_text_blocks -%}
-              <li class="grid__item" title="{{ image_with_text_block.settings.logo_svg }}">
-                <div class="section__logo-and-text--wrapper">
-                  <div class="section__logo">
-                    <div class="logo">
-                      {%- if image_with_text_block.settings.image == blank -%}
-                        {% render 'no-image' %}
-                      {%- else -%}
-                        {%- liquid
-                          if image_with_text_block.settings.image.alt == blank
-                            assign image_alt = image_with_text_block.settings.title
-                            assign image_title = image_with_text_block.settings.title
-                          else
-                            assign image_alt = image_with_text_block.settings.image.alt
-                          endif
-                        -%}
-                        <img
-                          srcset="{%- if image_with_text_block.settings.image.width >= 165 -%}{{ image_with_text_block.settings.image | image_url: width: 165 }} 165w,{%- endif -%}
-                          {%- if image_with_text_block.settings.image.width >= 360 -%}{{ image_with_text_block.settings.image | image_url: width: 360 }} 360w,{%- endif -%}
-                          {%- if image_with_text_block.settings.image.width >= 533 -%}{{ image_with_text_block.settings.image | image_url: width: 533 }} 533w,{%- endif -%}
-                          {%- if image_with_text_block.settings.image.width >= 720 -%}{{ image_with_text_block.settings.image | image_url: width: 720 }} 720w,{%- endif -%}
-                          {%- if image_with_text_block.settings.image.width >= 940 -%}{{ image_with_text_block.settings.image | image_url: width: 940 }} 940w,{%- endif -%}
-                          {%- if image_with_text_block.settings.image.width >= 1066 -%}{{ image_with_text_block.settings.image | image_url: width: 1066 }} 1066w,{%- endif -%}
-                          {{ image_with_text_block.settings.image | image_url }} {{ image_with_text_block.settings.image.width }}w"
-                          src="{{ image_with_text_block.settings.image | image_url: width: 165 }}"
-                          sizes="(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 130 | divided_by: 4 }}px, (min-width: 990px) calc((100vw - 130px) / 4), (min-width: 750px) calc((100vw - 120px) / 3), calc((100vw - 35px) / 2)"
-                          alt="{{ image_alt | escape }}"
-                          title="{{ image_title | escape }}"
-                          class="motion-reduce"
-                          loading="lazy"
-                          width="{{ image_with_text_block.settings.image.width }}"
-                          height="{{ image_with_text_block.settings.image.height }}"
-                        >
-                      {%- endif -%}
-                    </div>
-                  </div>
-                  <div class="section__text">
-                    <div class="section__text--title">
-                      <h3 class="h2">{{ image_with_text_block.settings.title }}</h3>
-                    </div>
-                    <div class="section__text--description">
-                      {{ image_with_text_block.settings.description }}
-                    </div>
+        <ul class="grid {{ grid_device_class }}">
+          {%- for image_with_text_block in image_with_text_blocks -%}
+            <li class="grid__item" title="{{ image_with_text_block.settings.logo_svg }}">
+              <div class="logo-and-text--wrapper">
+                <div class="section__logo">
+                  <div class="logo">
+                    {%- if image_with_text_block.settings.image == blank -%}
+                      {% render 'no-image' %}
+                    {%- else -%}
+                      {%- liquid
+                        if image_with_text_block.settings.image.alt == blank
+                          assign image_alt = image_with_text_block.settings.title
+                        else
+                          assign image_alt = image_with_text_block.settings.image.alt
+                        endif
+                      -%}
+                      <img
+                        srcset="{%- if image_with_text_block.settings.image.width >= 165 -%}{{ image_with_text_block.settings.image | image_url: width: 165 }} 165w,{%- endif -%}
+                        {%- if image_with_text_block.settings.image.width >= 360 -%}{{ image_with_text_block.settings.image | image_url: width: 360 }} 360w,{%- endif -%}
+                        {%- if image_with_text_block.settings.image.width >= 533 -%}{{ image_with_text_block.settings.image | image_url: width: 533 }} 533w,{%- endif -%}
+                        {%- if image_with_text_block.settings.image.width >= 720 -%}{{ image_with_text_block.settings.image | image_url: width: 720 }} 720w,{%- endif -%}
+                        {%- if image_with_text_block.settings.image.width >= 940 -%}{{ image_with_text_block.settings.image | image_url: width: 940 }} 940w,{%- endif -%}
+                        {%- if image_with_text_block.settings.image.width >= 1066 -%}{{ image_with_text_block.settings.image | image_url: width: 1066 }} 1066w,{%- endif -%}
+                        {{ image_with_text_block.settings.image | image_url }} {{ image_with_text_block.settings.image.width }}w"
+                        src="{{ image_with_text_block.settings.image | image_url: width: 165 }}"
+                        sizes="(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 130 | divided_by: 4 }}px, (min-width: 990px) calc((100vw - 130px) / 4), (min-width: 750px) calc((100vw - 120px) / 3), calc((100vw - 35px) / 2)"
+                        alt="{{ image_alt | strip_html | escape }}"
+                        title="{{ image_alt | strip_html | escape }}"
+                        class="motion-reduce"
+                        loading="lazy"
+                        width="{{ image_with_text_block.settings.image.width }}"
+                        height="{{ image_with_text_block.settings.image.height }}"
+                      >
+                    {%- endif -%}
                   </div>
                 </div>
-              </li>
-            {%- endfor -%}
-          </ul>
-        </div>
+                <div class="section__text">
+                  <div class="section__text--title">
+                    <h3 class="h3">{{ image_with_text_block.settings.title }}</h3>
+                  </div>
+                  <div class="section__text--description">
+                    {{ image_with_text_block.settings.description }}
+                  </div>
+                </div>
+              </div>
+            </li>
+          {%- endfor -%}
+        </ul>
       {%- endif -%}
     </div>
   </div>
@@ -239,20 +222,6 @@
           "id": "subtitle",
           "label": "Subtitle",
           "default": "Mus mauris vitae ultricies leo. Ac feugiat sed lectus vestibulum lacus laoreet non curabitur."
-        }
-      ]
-    },
-    {
-      "type": "header_support",
-      "name": "Support Title",
-      "limit": 1,
-      "settings": [
-        {
-          "type": "richtext",
-          "id": "title_support",
-          "label": "Title Support",
-          "default": "<p>Consectetur letius torquent nunc lacus volutpat</p>",
-          "info": "Header Block will be disregarded."
         }
       ]
     },

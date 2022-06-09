@@ -11,7 +11,7 @@
     }
 
     .section__bg{
-        background-color: #F2DFD0;
+        background-color: rgb(var(--color-section-bg));
     }
 
     @include device('tablet-up'){
