@@ -2,6 +2,45 @@
 .signup{
     position: relative;
     overflow: hidden;
+    display: grid;
+
+    .section__container{
+        grid-area: 1/1;
+        display: grid;
+    }
+
+    .page-width{
+        grid-area: 1/1;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+    
+    .section__header{
+        margin-bottom: 4rem;
+        width: 100%;
+
+        *{
+            color: rgb(var(--color-base-accent-2));
+        }
+
+        p{
+            margin: 0rem;
+        }
+
+        //for title
+        h2{
+            --font-heading-scale: 1.4;
+            margin-bottom: 2rem;
+            p{
+                text-transform: uppercase;
+                font-weight: 700;
+            }
+        }
+    }
+
 
     .section__form{
         width: 100%;
@@ -12,6 +51,8 @@
             justify-content: center;
             align-items: center;
             flex-direction: column;
+            width: 100%;
+            margin-bottom: 2rem;
         }
 
         .field--input-button{
@@ -21,20 +62,38 @@
         }
 
         .btn--default{
-            padding: 1.4rem 1rem;
+            padding: 1.6rem 1rem;
+            max-width: 100%;
+            background-color: rgb(var(--color-btn-bg-2));
+            color: rgb(var(--color-btn-bg));
+            font-weight: 700;
         }
 
         .field{
             margin-bottom: 1rem;
+
+            &:not(.field--input-button){
+                border: 2px solid rgb(var(--color-base-accent-2));
+            }
+
+            &:not(.field--input-button) *{
+                background-color: rgb(var(--color-section-bg));
+            }
+
+            &::before, &::after{
+                display: none;
+            }
+            
+        }
+
+        .field__input:focus{
+            box-shadow: 0 0 0 calc(0.1rem + var(--inputs-border-width)) rgba(var(--color-base-accent-2));
         }
 
     }
 
     @include device('tablet-up'){
-        
         .section__form{
-            max-width: 60%;
-
             .field-wrapper{
                 justify-content: space-between;
                 flex-direction: row;
@@ -46,9 +105,40 @@
             .field{
                 margin-bottom: 0rem;
             }
+        }
+    }
+
+    @include device('tablet'){
+        .section__header{
+            h2{
+                --font-heading-scale: 1;
+            }
+        }
+
+        .section__form{
+            .field{
+                &:not(.field--input-button){
+                    max-width: 180px;
+                }
+            }
 
             .btn--default{
-                max-width: 150px;
+                max-width: 160px;
+            }
+        }
+    }
+
+    @include device('desktop'){
+        .section__form{
+
+            .field{
+                &:not(.field--input-button){
+                    max-width: 220px;
+                }
+            }
+
+            .btn--default{
+                max-width: 180px;
             }
         }
     }

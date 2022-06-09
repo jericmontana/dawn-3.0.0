@@ -23,17 +23,40 @@
     assign form_blocks = section.blocks | where: 'type', 'form'
 -%}
 
-<div class="signup signup--{{ section.id }} color-scheme--{{ section.settings.color_scheme }}">
+<div class="signup signup--{{ section.id }} section-with-bg">
+    {% if section.settings.bg_image != blank %}
+      <div class="section__bg" style="background-color: rgb(var(--color-section-bg))">
+        <img
+          class="small-hide"
+          srcset="{%- if section.settings.bg_image.width >= 375 -%}{{ section.settings.bg_image | image_url: width: 375 }} 375w,{%- endif -%}
+            {%- if section.settings.bg_image.width >= 550 -%}{{ section.settings.bg_image | image_url: width: 550 }} 550w,{%- endif -%}
+            {%- if section.settings.bg_image.width >= 750 -%}{{ section.settings.bg_image | image_url: width: 750 }} 750w,{%- endif -%}
+            {%- if section.settings.bg_image.width >= 1100 -%}{{ section.settings.bg_image | image_url: width: 1100 }} 1100w,{%- endif -%}
+            {%- if section.settings.bg_image.width >= 1500 -%}{{ section.settings.bg_image | image_url: width: 1500 }} 1500w,{%- endif -%}
+            {%- if section.settings.bg_image.width >= 1780 -%}{{ section.settings.bg_image | image_url: width: 1780 }} 1780w,{%- endif -%}
+            {%- if section.settings.bg_image.width >= 2000 -%}{{ section.settings.bg_image | image_url: width: 2000 }} 2000w,{%- endif -%}
+            {%- if section.settings.bg_image.width >= 3000 -%}{{ section.settings.bg_image | image_url: width: 3000 }} 3000w,{%- endif -%}
+            {%- if section.settings.bg_image.width >= 3840 -%}{{ section.settings.bg_image | image_url: width: 3840 }} 3840w,{%- endif -%}
+            {{ section.settings.bg_image | image_url }} {{ section.settings.bg_image.width }}w"
+          src="{{ section.settings.bg_image | image_url: width: 2000 }}"
+          sizes="(min-width: 990px) 2006px, ((min-width: 750px) and (max-width: 989px)) 1080px, (max-width: 749px) 800px"
+          alt="{{ section.settings.bg_image.alt | escape }}"
+          title="{{ section.settings.bg_image.alt | escape }}"
+          loading="lazy"
+          width="{{ section.settings.bg_image.width }}"
+          height="{{ section.settings.bg_image.height }}"
+          draggable="false"
+        >
+      </div>
+    {% endif %}
     <div class="section__container">
         <div class="page-width">
 
             {%- for header_block in header_blocks -%}
                 <div class="section__header">
-                    <div>
-                        <h2>
-                            {{ header_block.settings.title }}
-                        </h2>
-                    </div>
+                    <h2>
+                        {{ header_block.settings.title }}
+                    </h2>
                     <div>
                         {{ header_block.settings.subtitle }}
                     </div>
@@ -61,33 +84,9 @@
   "tag": "section",
   "settings": [
     {
-      "type": "select",
-      "id": "color_scheme",
-      "options": [
-        {
-          "value": "accent-1",
-          "label": "Accent 1"
-        },
-        {
-          "value": "accent-2",
-          "label": "Accent 2"
-        },
-        {
-          "value": "background-1",
-          "label": "Background 1"
-        },
-        {
-          "value": "background-2",
-          "label": "Background 2"
-        },
-        {
-          "value": "inverse",
-          "label": "Inverse"
-        }
-      ],
-      "default": "background-1",
-      "label": "Color Scheme",
-      "info": "To change the card color scheme, update your theme settings."
+      "type": "image_picker",
+      "id": "bg_image",
+      "label": "Section BG"
     },
     {
       "type": "header",
@@ -132,7 +131,7 @@
           "type": "richtext",
           "id": "title",
           "label": "Title",
-          "default": "<p>Join Oru VIP Club</p>"
+          "default": "<p>Join Our VIP Club</p>"
         },
         {
           "type": "richtext",

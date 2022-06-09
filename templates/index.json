@@ -10,7 +10,7 @@
         "btn_label": "Shop Now",
         "btn_link": "shopify:\/\/collections\/all",
         "round_corner": false,
-        "shadow_effect": true,
+        "shadow_effect": false,
         "auto_width": false,
         "use_as_default_padding": false,
         "padding_top": 36,

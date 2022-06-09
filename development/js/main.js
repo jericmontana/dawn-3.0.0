@@ -954,82 +954,82 @@ document.addEventListener('DOMContentLoaded', () => {
 /*############ Marking Unavailable End*/
 
 
-/*############ Video Popup Beg*/
-document.addEventListener('DOMContentLoaded', () => {
-    // Define constant arguments for video popup
-    const videoArgs = {
-        animationStart: function () {
-            // executed immediately before open animation starts
-            document.documentElement.style.overflowY = 'hidden'
-            document.body.style.overflowY = 'scroll'
-        },
-        onClose: function () {
-            // executed immediately after close animation finishes
-            document.documentElement.style.overflowY = 'auto'
-            document.body.style.overflowY = 'auto'
-        }
-    }
+// /*############ Video Popup Beg*/
+// document.addEventListener('DOMContentLoaded', () => {
+//     // Define constant arguments for video popup
+//     const videoArgs = {
+//         animationStart: function () {
+//             // executed immediately before open animation starts
+//             document.documentElement.style.overflowY = 'hidden'
+//             document.body.style.overflowY = 'scroll'
+//         },
+//         onClose: function () {
+//             // executed immediately after close animation finishes
+//             document.documentElement.style.overflowY = 'auto'
+//             document.body.style.overflowY = 'auto'
+//         }
+//     }
 
-    // Define the classes that represents video popup element
-    const videoPopup = document.querySelectorAll('.video-popup');
+//     // Define the classes that represents video popup element
+//     const videoPopup = document.querySelectorAll('.video-popup');
 
-    // Constant existence validation
-    if(videoPopup){
-        videoPopup.forEach(e => e.addEventListener('click', () => {
+//     // Constant existence validation
+//     if(videoPopup){
+//         videoPopup.forEach(e => e.addEventListener('click', () => {
 
-            const videoID = e.dataset.video;
-            const videoType = e.dataset.type;
+//             const videoID = e.dataset.video;
+//             const videoType = e.dataset.type;
 
-            if(videoType=='htmlvid'){
-                videoArgs['vidSrc'] = videoID
-                delete videoArgs['ytSrc']
-                delete videoArgs['vimeoSrc']
-            }else if(videoType=='vimeo'){
-                videoArgs['vimeoSrc'] = videoID
-                delete videoArgs['ytSrc']
-                delete videoArgs['vidSrc']
-            }
-            else if(videoType=='youtube'){
-                videoArgs['ytSrc'] = videoID
-                delete videoArgs['vimeoSrc']
-                delete videoArgs['vidSrc']
-            }
+//             if(videoType=='htmlvid'){
+//                 videoArgs['vidSrc'] = videoID
+//                 delete videoArgs['ytSrc']
+//                 delete videoArgs['vimeoSrc']
+//             }else if(videoType=='vimeo'){
+//                 videoArgs['vimeoSrc'] = videoID
+//                 delete videoArgs['ytSrc']
+//                 delete videoArgs['vidSrc']
+//             }
+//             else if(videoType=='youtube'){
+//                 videoArgs['ytSrc'] = videoID
+//                 delete videoArgs['vimeoSrc']
+//                 delete videoArgs['vidSrc']
+//             }
 
-            videoArgs['el'] = e;
+//             videoArgs['el'] = e;
             
-            BigPicture(videoArgs)
+//             BigPicture(videoArgs)
 
-        }))
+//         }))
 
-    }
-})
+//     }
+// })
 
-/*############ Video Popup End*/
+// /*############ Video Popup End*/
 
 
-/*############ Trigger Privy Popup Beg*/
-const signupPopupButtonTrigger = document.querySelectorAll('.btn--signup-popup');
-window.addEventListener('load', () => {
-  if(signupPopupButtonTrigger){
-    signupPopupButtonTrigger.forEach(e => {
-		try{
-			e.style.opacity='1';
-			e.addEventListener('click', () => {
-				// if(!document.querySelector('.privy-bar-tab-inner')){ 
-				// 	alert(`You have already signed up!`) ;
-				// };
-				// document.querySelector('.privy-bar-tab-inner').click();
+// /*############ Trigger Privy Popup Beg*/
+// const signupPopupButtonTrigger = document.querySelectorAll('.btn--signup-popup');
+// window.addEventListener('load', () => {
+//   if(signupPopupButtonTrigger){
+//     signupPopupButtonTrigger.forEach(e => {
+// 		try{
+// 			e.style.opacity='1';
+// 			e.addEventListener('click', () => {
+// 				// if(!document.querySelector('.privy-bar-tab-inner')){ 
+// 				// 	alert(`You have already signed up!`) ;
+// 				// };
+// 				// document.querySelector('.privy-bar-tab-inner').click();
 
-        Privy('show');
-			})
-		}
-		catch(error){
-			console.log(error);
-		}
-    })
-  }
-})
-/*############ Trigger Privy Popup End*/
+//         Privy('show');
+// 			})
+// 		}
+// 		catch(error){
+// 			console.log(error);
+// 		}
+//     })
+//   }
+// })
+// /*############ Trigger Privy Popup End*/
 
 // document.addEventListener('DOMContentLoaded', () => {
 //     const players = Array.from(document.querySelectorAll('.player')).map((p) => new Plyr(p));

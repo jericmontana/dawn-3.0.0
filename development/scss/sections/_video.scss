@@ -9,6 +9,14 @@
         }
     }
 
+    ul.grid{
+        @include device('mobile'){
+            &{
+                margin-bottom: 2rem;
+            }
+        }
+    }
+
     .grid__item{
         display: grid;
 
