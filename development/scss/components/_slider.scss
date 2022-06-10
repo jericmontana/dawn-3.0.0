@@ -288,48 +288,48 @@ slider-component {
 
 
 /* For Slider Buttons Section */
-.section .section__slider{
+// .section .section__slider{
 
-    div.slider, ul.slider{
-        position: relative;
-        padding-left: 2rem;
-        padding-right: 2rem;
-    }
+//     div.slider, ul.slider{
+//         position: relative;
+//         padding-left: 2rem;
+//         padding-right: 2rem;
+//     }
 
-    .slider-buttons {
-        position: absolute;
-        top: 0;
-        left: 0;
-        justify-content: space-between;
-        height: 100%;
-        width: calc(100% + 20px);
-        margin-left: -10px;
-        pointer-events: none;
-    }
+//     .slider-buttons {
+//         position: absolute;
+//         top: 0;
+//         left: 0;
+//         justify-content: space-between;
+//         height: 100%;
+//         width: calc(100% + 20px);
+//         margin-left: -10px;
+//         pointer-events: none;
+//     }
 
-    .slider-button{
-        position: relative;
-        height: 38px;
-        width: 38px;
-        border-radius: 50%;
-        z-index: 2;
-        pointer-events: auto;
-    }
+//     .slider-button{
+//         position: relative;
+//         height: 38px;
+//         width: 38px;
+//         border-radius: 50%;
+//         z-index: 2;
+//         pointer-events: auto;
+//     }
 
-    .slider-button:not(.slider-button[disabled]){
-        box-shadow: 0px 0px 14px -4px rgba(0,0,0,0.75);
-        background-color: rgb(var(--color-slider-control-bg));
-    }
+//     .slider-button:not(.slider-button[disabled]){
+//         box-shadow: 0px 0px 14px -4px rgba(0,0,0,0.75);
+//         background-color: rgb(var(--color-slider-control-bg));
+//     }
 
-    .slider-button .icon{
-        height: auto;
-        width: 75%;
-        color: rgb(var(--color-slider-control-icon));
-        stroke-width: 2;
-    }
+//     .slider-button .icon{
+//         height: auto;
+//         width: 75%;
+//         color: rgb(var(--color-slider-control-icon));
+//         stroke-width: 2;
+//     }
 
-    .slider-button[disabled]{
-        opacity: 0!important;
-        pointer-events: none!important;
-    }
-}
+//     .slider-button[disabled]{
+//         opacity: 0!important;
+//         pointer-events: none!important;
+//     }
+// }

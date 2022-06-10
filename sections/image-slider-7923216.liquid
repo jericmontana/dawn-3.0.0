@@ -4,13 +4,6 @@
 {%- assign slider_blocks = section.blocks | where: 'type', 'slider' -%}
 {%- assign image_blocks = section.blocks | where: 'type', 'image' -%}
 
-{% for block in slider_blocks %}
-{% if slider_mode != 'slide-me-not' %}
-<link rel="stylesheet" href="{{ 'component-slider.css' | asset_url }}" media="print" onload="this.media='all'">
-<noscript>{{ 'component-slider.css' | asset_url | stylesheet_tag }}</noscript>
-{% endif %}
-{% endfor %}
-
 {% assign use_as_default_padding = section.settings.use_as_default_padding %}
 {%- style -%}
   {%- if use_as_default_padding -%}
@@ -28,18 +21,14 @@
   {%- endif -%}
 {%- endstyle -%}
 
-<div class="image-slider image-slider--{{ section.id }} color-background-1">
+<div class="image-slider image-slider--{{ section.id }}">
     <div class="section__container">
         <div class="page-width">
 
             {%- for block in header_blocks -%}
             <div class="section__header">
-                {% unless block.settings.title == blank %}
-                <h2 class="h2 {% if block.settings.title_uppercase %}uppercase{% endif %}">{{ block.settings.title | escape }}</h2>
-                {% endunless %}
-                {% unless block.settings.subtitle == blank %}
+                <h2 class="h1 {% if block.settings.title_uppercase %}uppercase{% endif %}">{{ block.settings.title | escape }}</h2>
                 <p class="h3">{{ block.settings.subtitle | escape }}</p>
-                {% endunless %}
             </div>
             {%- endfor -%}
 
@@ -95,6 +84,7 @@
                                 loading="lazy"
                                 width="{{ image_block.settings.image.width }}"
                                 height="{{ image_block.settings.image.height }}"
+                                draggable="false"
                             >
                             {%- else -%}
                             {%- render 'no-image' -%}
