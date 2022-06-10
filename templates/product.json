@@ -234,14 +234,6 @@
       ],
       "settings": {
       }
-    },
-    "wave": {
-      "type": "wave",
-      "settings": {
-        "color_scheme": "accent-2",
-        "bg_color_top": "#ffffff",
-        "padding_top": 36
-      }
     }
   },
   "order": [
@@ -253,7 +245,6 @@
     "review",
     "email_signup",
     "instafeed",
-    "wishlist_reference",
-    "wave"
+    "wishlist_reference"
   ]
 }
