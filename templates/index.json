@@ -4,11 +4,11 @@
       "type": "hero-7923216",
       "settings": {
         "title": "Mus euismod fermentum nisl justo inceptos",
-        "subtitle": "<p>Nullam viverra cras magnis dapibus iaculis quis aliquet auctor imperdiet lectus felis venenatis<\/p>",
-        "bg_image": "shopify:\/\/shop_images\/Hero.jpg",
-        "image": "shopify:\/\/shop_images\/Cat.png",
+        "subtitle": "<p>Nullam viverra cras magnis dapibus iaculis quis aliquet auctor imperdiet lectus felis venenatis</p>",
+        "bg_image": "shopify://shop_images/Hero.jpg",
+        "image": "shopify://shop_images/Cat.png",
         "btn_label": "Shop Now",
-        "btn_link": "shopify:\/\/collections\/all",
+        "btn_link": "shopify://collections/all",
         "round_corner": false,
         "shadow_effect": false,
         "auto_width": false,
@@ -65,21 +65,21 @@
           "type": "image_with_text",
           "settings": {
             "title": "Tempor tempus auctor",
-            "richtext": "<p>Mi blandit molestie sapien dictumst eu ullamcorper suspendisse. Fames porta justo dui pulvinar ligula tortor feugiat.<\/p>"
+            "richtext": "<p>Mi blandit molestie sapien dictumst eu ullamcorper suspendisse. Fames porta justo dui pulvinar ligula tortor feugiat.</p>"
           }
         },
         "image_with_text_2": {
           "type": "image_with_text",
           "settings": {
             "title": "Tempor tempus auctor",
-            "richtext": "<p>Mi blandit molestie sapien dictumst eu ullamcorper suspendisse. Fames porta justo dui pulvinar ligula tortor feugiat.<\/p>"
+            "richtext": "<p>Mi blandit molestie sapien dictumst eu ullamcorper suspendisse. Fames porta justo dui pulvinar ligula tortor feugiat.</p>"
           }
         },
         "image_with_text_3": {
           "type": "image_with_text",
           "settings": {
             "title": "Tempor tempus auctor",
-            "richtext": "<p>Mi blandit molestie sapien dictumst eu ullamcorper suspendisse. Fames porta justo dui pulvinar ligula tortor feugiat.<\/p>"
+            "richtext": "<p>Mi blandit molestie sapien dictumst eu ullamcorper suspendisse. Fames porta justo dui pulvinar ligula tortor feugiat.</p>"
           }
         }
       },
@@ -109,22 +109,22 @@
         "image_with_text_1": {
           "type": "image_with_text",
           "settings": {
-            "title": "<p>Mus mauris vitae<\/p><p>ultricies leo<\/p",
-            "description": "<p>Consectetur letius torquent nunc lacus volutpat<\/p>"
+            "title": "<p>Mus mauris vitae</p><p>ultricies leo</p",
+            "description": "<p>Consectetur letius torquent nunc lacus volutpat</p>"
           }
         },
         "image_with_text_2": {
           "type": "image_with_text",
           "settings": {
-            "title": "<p>Mus mauris vitae<\/p><p>ultricies leo<\/p",
-            "description": "<p>Consectetur letius torquent nunc lacus volutpat<\/p>"
+            "title": "<p>Mus mauris vitae</p><p>ultricies leo</p",
+            "description": "<p>Consectetur letius torquent nunc lacus volutpat</p>"
           }
         },
         "image_with_text_3": {
           "type": "image_with_text",
           "settings": {
-            "title": "<p>Mus mauris vitae<\/p><p>ultricies leo<\/p",
-            "description": "<p>Consectetur letius torquent nunc lacus volutpat<\/p>"
+            "title": "<p>Mus mauris vitae</p><p>ultricies leo</p",
+            "description": "<p>Consectetur letius torquent nunc lacus volutpat</p>"
           }
         }
       },
@@ -149,15 +149,18 @@
       "blocks": {
         "header": {
           "type": "header",
-          "settings": {}
+          "settings": {
+          }
         },
         "video_1": {
           "type": "video",
-          "settings": {}
+          "settings": {
+          }
         },
         "video_2": {
           "type": "video",
-          "settings": {}
+          "settings": {
+          }
         }
       },
       "block_order": [
@@ -197,8 +200,8 @@
         "header": {
           "type": "header",
           "settings": {
-            "title": "<p>Join Oru VIP Club<\/p>",
-            "subtitle": "<p>Mus mauris vitae ultricies leo. Ac feugiat sed lectus vestibulum lacus laoreet non curabitur.<\/p>"
+            "title": "<p>Join Oru VIP Club</p>",
+            "subtitle": "<p>Mus mauris vitae ultricies leo. Ac feugiat sed lectus vestibulum lacus laoreet non curabitur.</p>"
           }
         },
         "form": {

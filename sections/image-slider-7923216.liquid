@@ -60,7 +60,7 @@
                         role="list">
                 {% endif %}
 
-                        {% for image_block in image_blocks%}
+                        {% for image_block in image_blocks %}
 
                         {% if slider_mode == 'slide-me-not' %}
                         <li class="grid__item">
@@ -151,109 +151,109 @@
   ],
   "blocks": [
     {
-        "type": "header",
-        "name": "Header",
-        "limit": 1,
-        "settings": [
-            {
-            "type": "header",
-            "content": "Header Settings"
-            },
-            {
-            "type": "text",
-            "id": "title",
-            "label": "Title",
-            "default": "Proin enim taciti dapibus"
-            },
-            {
-            "type": "checkbox",
-            "id": "title_uppercase",
-            "label": "Uppercase",
-            "default": false
-            },
-            {
-            "type": "textarea",
-            "id": "subtitle",
-            "label": "Subtitle",
-            "default": "Lacus in dui sollicitudin risus suspendisse sed placerat ad pharetra ipsum letius mattis vel"
-            }
-        ]
+      "type": "header",
+      "name": "Header",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "header",
+          "content": "Header Settings"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title",
+          "default": "Proin enim taciti dapibus"
+        },
+        {
+          "type": "checkbox",
+          "id": "title_uppercase",
+          "label": "Uppercase",
+          "default": false
+        },
+        {
+          "type": "textarea",
+          "id": "subtitle",
+          "label": "Subtitle",
+          "default": "Lacus in dui sollicitudin risus suspendisse sed placerat ad pharetra ipsum letius mattis vel"
+        }
+      ]
     },
     {
-        "type": "slider",
-        "name": "Slider",
-        "limit": 1,
-        "settings": [
+      "type": "slider",
+      "name": "Slider",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "header",
+          "content": "Slider Settings"
+        },
+        {
+          "type": "header",
+          "content": "Grid Settings"
+        },
+        {
+          "type": "range",
+          "id": "columns_desktop",
+          "min": 3,
+          "max": 6,
+          "step": 1,
+          "default": 3,
+          "label": "Columns on Desktop",
+          "info": "Default Value is 3"
+        },
+        {
+          "type": "range",
+          "id": "columns_tablet",
+          "min": 1,
+          "max": 3,
+          "step": 1,
+          "default": 3,
+          "label": "Columns on Tablet",
+          "info": "Default Value is 3"
+        },
+        {
+          "type": "range",
+          "id": "columns_mobile",
+          "min": 1,
+          "max": 3,
+          "step": 1,
+          "default": 1,
+          "label": "Columns on Mobile",
+          "info": "Default Value is 1"
+        },
+        {
+          "type": "select",
+          "id": "slider",
+          "label": "Slider",
+          "options": [
             {
-            "type": "header",
-            "content": "Slider Settings"
+              "value": "slide-me-not",
+              "label": "None"
             },
             {
-            "type": "header",
-            "content": "Grid Settings"
+              "value": "everywhere",
+              "label": "Everywhere"
             },
             {
-            "type": "range",
-            "id": "columns_desktop",
-            "min": 3,
-            "max": 6,
-            "step": 1,
-            "default": 3,
-            "label": "Columns on Desktop",
-            "info": "Default Value is 3"
-            },
-            {
-            "type": "range",
-            "id": "columns_tablet",
-            "min": 1,
-            "max": 3,
-            "step": 1,
-            "default": 3,
-            "label": "Columns on Tablet",
-            "info": "Default Value is 3"
-            },
-            {
-            "type": "range",
-            "id": "columns_mobile",
-            "min": 1,
-            "max": 3,
-            "step": 1,
-            "default": 1,
-            "label": "Columns on Mobile",
-            "info": "Default Value is 1"
-            },
-            {
-            "type": "select",
-            "id": "slider",
-            "label": "Slider",
-            "options": [
-                {
-                "value": "slide-me-not",
-                "label": "None"
-                },
-                {
-                "value": "everywhere",
-                "label": "Everywhere"
-                },
-                {
-                "value": "medium-down",
-                "label": "Medium Down"
-                }
-            ],
-            "default": "slide-me-not"
+              "value": "medium-down",
+              "label": "Medium Down"
             }
-        ]
+          ],
+          "default": "slide-me-not"
+        }
+      ]
     },
     {
-        "type": "image",
-        "name": "Image",
-        "settings": [
-            {
-                "type": "image_picker",
-                "id": "image",
-                "label": "Image"
-            }
-        ]
+      "type": "image",
+      "name": "Image",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        }
+      ]
     }
   ],
   "presets": [
@@ -262,19 +262,19 @@
       "category": "a",
       "blocks": [
         {
-            "type": "header"
+          "type": "header"
         },
         {
-            "type": "slider"
+          "type": "slider"
         },
         {
-            "type": "image"
+          "type": "image"
         },
         {
-            "type": "image"
+          "type": "image"
         },
         {
-            "type": "image"
+          "type": "image"
         }
       ]
     }
