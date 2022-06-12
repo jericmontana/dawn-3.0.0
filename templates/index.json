@@ -58,21 +58,24 @@
           "type": "image_with_text",
           "settings": {
             "title": "Tempor tempus auctor",
-            "richtext": "<p>Mi blandit molestie sapien dictumst eu ullamcorper suspendisse. Fames porta justo dui pulvinar ligula tortor feugiat.<\/p>"
+            "richtext": "<p>- Mi blandit molestie sapien dictumst eu ullamcorper suspendisse. Fames porta justo dui pulvinar ligula tortor feugiat.<\/p><p>- Mi blandit molestie sapien dictumst eu ullamcorper suspendisse. Fames porta justo dui pulvinar ligula tortor feugiat.<\/p><p>- Mi blandit molestie sapien dictumst eu ullamcorper suspendisse. Fames porta justo dui pulvinar ligula tortor feugiat.<\/p>",
+            "image": "shopify:\/\/shop_images\/OSWell1.png"
           }
         },
         "image_with_text_2": {
           "type": "image_with_text",
           "settings": {
-            "title": "Tempor tempus auctor",
-            "richtext": "<p>Mi blandit molestie sapien dictumst eu ullamcorper suspendisse. Fames porta justo dui pulvinar ligula tortor feugiat.<\/p>"
+            "title": "Mi blandit molestie",
+            "richtext": "<p>- Mi blandit molestie sapien dictumst eu ullamcorper suspendisse. Fames porta justo dui pulvinar ligula tortor feugiat.<\/p><p>- Mi blandit molestie sapien dictumst eu ullamcorper suspendisse. Fames porta justo dui pulvinar ligula tortor feugiat.<\/p>",
+            "image": "shopify:\/\/shop_images\/OSwell3.png"
           }
         },
         "image_with_text_3": {
           "type": "image_with_text",
           "settings": {
-            "title": "Tempor tempus auctor",
-            "richtext": "<p>Mi blandit molestie sapien dictumst eu ullamcorper suspendisse. Fames porta justo dui pulvinar ligula tortor feugiat.<\/p>"
+            "title": "Fames porta justo",
+            "richtext": "<p>- Mi blandit molestie sapien dictumst eu ullamcorper suspendisse. Fames porta justo dui pulvinar ligula tortor feugiat.<\/p><p>- Mi blandit molestie sapien dictumst eu ullamcorper suspendisse. Fames porta justo dui pulvinar ligula tortor feugiat.<\/p><p>- Mi blandit molestie sapien dictumst eu ullamcorper suspendisse. Fames porta justo dui pulvinar ligula tortor feugiat.<\/p><p>- Mi blandit molestie sapien dictumst eu ullamcorper suspendisse. Fames porta justo dui pulvinar ligula tortor feugiat.<\/p>",
+            "image": "shopify:\/\/shop_images\/OSWell2.png"
           }
         }
       },
