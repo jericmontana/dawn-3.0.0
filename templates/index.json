@@ -4,11 +4,11 @@
       "type": "hero-7923216",
       "settings": {
         "title": "Mus euismod fermentum nisl justo inceptos",
-        "subtitle": "<p>Nullam viverra cras magnis dapibus iaculis quis aliquet auctor imperdiet lectus felis venenatis</p>",
-        "bg_image": "shopify://shop_images/Hero.jpg",
-        "image": "shopify://shop_images/Cat.png",
+        "subtitle": "<p>Nullam viverra cras magnis dapibus iaculis quis aliquet auctor imperdiet lectus felis venenatis<\/p>",
+        "bg_image": "shopify:\/\/shop_images\/Hero.jpg",
+        "image": "shopify:\/\/shop_images\/Cat.png",
         "btn_label": "Shop Now",
-        "btn_link": "shopify://collections/all",
+        "btn_link": "shopify:\/\/collections\/all",
         "round_corner": false,
         "shadow_effect": false,
         "auto_width": false,
@@ -36,14 +36,8 @@
             "columns_desktop": 4,
             "columns_tablet": 3,
             "columns_mobile": 2,
-            "image_ratio": "adapt",
-            "show_secondary_image": true,
-            "show_vendor": false,
-            "show_rating": false,
-            "btn_label": "View Details",
-            "round_corner": false,
-            "shadow_effect": true,
-            "auto_width": false
+            "show_price": false,
+            "cta_viewproduct": true
           }
         }
       },
@@ -52,7 +46,6 @@
         "featured_collection"
       ],
       "settings": {
-        "color_scheme": "background-1",
         "use_as_default_padding": false,
         "padding_top": 36,
         "padding_bottom": 36
@@ -65,21 +58,21 @@
           "type": "image_with_text",
           "settings": {
             "title": "Tempor tempus auctor",
-            "richtext": "<p>Mi blandit molestie sapien dictumst eu ullamcorper suspendisse. Fames porta justo dui pulvinar ligula tortor feugiat.</p>"
+            "richtext": "<p>Mi blandit molestie sapien dictumst eu ullamcorper suspendisse. Fames porta justo dui pulvinar ligula tortor feugiat.<\/p>"
           }
         },
         "image_with_text_2": {
           "type": "image_with_text",
           "settings": {
             "title": "Tempor tempus auctor",
-            "richtext": "<p>Mi blandit molestie sapien dictumst eu ullamcorper suspendisse. Fames porta justo dui pulvinar ligula tortor feugiat.</p>"
+            "richtext": "<p>Mi blandit molestie sapien dictumst eu ullamcorper suspendisse. Fames porta justo dui pulvinar ligula tortor feugiat.<\/p>"
           }
         },
         "image_with_text_3": {
           "type": "image_with_text",
           "settings": {
             "title": "Tempor tempus auctor",
-            "richtext": "<p>Mi blandit molestie sapien dictumst eu ullamcorper suspendisse. Fames porta justo dui pulvinar ligula tortor feugiat.</p>"
+            "richtext": "<p>Mi blandit molestie sapien dictumst eu ullamcorper suspendisse. Fames porta justo dui pulvinar ligula tortor feugiat.<\/p>"
           }
         }
       },
@@ -109,22 +102,22 @@
         "image_with_text_1": {
           "type": "image_with_text",
           "settings": {
-            "title": "<p>Mus mauris vitae</p><p>ultricies leo</p",
-            "description": "<p>Consectetur letius torquent nunc lacus volutpat</p>"
+            "title": "<p>Mus mauris vitae<\/p><p>ultricies leo<\/p",
+            "description": "<p>Consectetur letius torquent nunc lacus volutpat<\/p>"
           }
         },
         "image_with_text_2": {
           "type": "image_with_text",
           "settings": {
-            "title": "<p>Mus mauris vitae</p><p>ultricies leo</p",
-            "description": "<p>Consectetur letius torquent nunc lacus volutpat</p>"
+            "title": "<p>Mus mauris vitae<\/p><p>ultricies leo<\/p",
+            "description": "<p>Consectetur letius torquent nunc lacus volutpat<\/p>"
           }
         },
         "image_with_text_3": {
           "type": "image_with_text",
           "settings": {
-            "title": "<p>Mus mauris vitae</p><p>ultricies leo</p",
-            "description": "<p>Consectetur letius torquent nunc lacus volutpat</p>"
+            "title": "<p>Mus mauris vitae<\/p><p>ultricies leo<\/p",
+            "description": "<p>Consectetur letius torquent nunc lacus volutpat<\/p>"
           }
         }
       },
@@ -150,16 +143,23 @@
         "header": {
           "type": "header",
           "settings": {
+            "title": "Video",
+            "title_uppercase": false,
+            "subtitle": "Mus mauris vitae ultricies leo. Ac feugiat sed lectus vestibulum lacus laoreet non curabitur."
           }
         },
         "video_1": {
           "type": "video",
           "settings": {
+            "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+            "description": ""
           }
         },
         "video_2": {
           "type": "video",
           "settings": {
+            "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+            "description": ""
           }
         }
       },
@@ -169,6 +169,12 @@
         "video_2"
       ],
       "settings": {
+        "columns_desktop": 2,
+        "columns_tablet": 2,
+        "columns_mobile": 1,
+        "use_as_default_padding": false,
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     },
     "review": {
@@ -200,8 +206,8 @@
         "header": {
           "type": "header",
           "settings": {
-            "title": "<p>Join Oru VIP Club</p>",
-            "subtitle": "<p>Mus mauris vitae ultricies leo. Ac feugiat sed lectus vestibulum lacus laoreet non curabitur.</p>"
+            "title": "<p>Join Oru VIP Club<\/p>",
+            "subtitle": "<p>Mus mauris vitae ultricies leo. Ac feugiat sed lectus vestibulum lacus laoreet non curabitur.<\/p>"
           }
         },
         "form": {
@@ -219,7 +225,6 @@
         "form"
       ],
       "settings": {
-        "color_scheme": "background-1",
         "use_as_default_padding": false,
         "padding_top": 36,
         "padding_bottom": 36
