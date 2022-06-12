@@ -149,23 +149,25 @@
         "header": {
           "type": "header",
           "settings": {
-            "title": "Video",
+            "title": "Mus mauris vitae ultricies leo.",
             "title_uppercase": false,
-            "subtitle": "Mus mauris vitae ultricies leo. Ac feugiat sed lectus vestibulum lacus laoreet non curabitur."
+            "subtitle": ""
           }
         },
         "video_1": {
           "type": "video",
           "settings": {
             "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
-            "description": ""
+            "description": "",
+            "thumbnail": "shopify:\/\/shop_images\/YT_Video_Thumbnail.png"
           }
         },
         "video_2": {
           "type": "video",
           "settings": {
             "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
-            "description": ""
+            "description": "",
+            "thumbnail": "shopify:\/\/shop_images\/YT_Video_Thumbnail.png"
           }
         }
       },
@@ -213,7 +215,7 @@
           "type": "header",
           "settings": {
             "title": "<p>Join Oru VIP Club<\/p>",
-            "subtitle": "<p>Mus mauris vitae ultricies leo. Ac feugiat sed lectus vestibulum lacus laoreet non curabitur.<\/p>"
+            "subtitle": "<p>Mus mauris vitae ultricies leo.<\/p><p>Ac feugiat sed lectus vestibulum lacus laoreet non curabitur.<\/p>"
           }
         },
         "form": {
@@ -231,6 +233,7 @@
         "form"
       ],
       "settings": {
+        "bg_image": "shopify:\/\/shop_images\/Newsletter.jpg",
         "use_as_default_padding": false,
         "padding_top": 36,
         "padding_bottom": 36
