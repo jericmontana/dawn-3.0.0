@@ -53,7 +53,15 @@
           {%- for product in block.settings.collection.products limit: products_to_display -%}
             {%- assign item_number = forloop.index -%}
           <li class="grid__item">
-              {%- render 'card-product-7923216', product: product, item_number: item_number -%}
+              {%- render 'card-product-7923216',
+                product: product,
+                item_number: item_number,
+                show_price: block.settings.show_price,
+                cta_viewproduct: block.settings.cta_viewproduct,
+                columns_desktop: block.settings.columns_desktop,
+                columns_tablet: block.settings.columns_tablet,
+                columns_mobile: block.settings.columns_mobile
+              -%}
           </li>
           {%- else -%}
           {%- for i in (1..4) -%}
@@ -165,8 +173,8 @@
         {
           "type": "range",
           "id": "columns_desktop",
-          "min": 4,
-          "max": 6,
+          "min": 3,
+          "max": 5,
           "step": 1,
           "default": 4,
           "label": "Columns on Desktop",
@@ -175,8 +183,8 @@
         {
           "type": "range",
           "id": "columns_tablet",
-          "min": 1,
-          "max": 3,
+          "min": 2,
+          "max": 5,
           "step": 1,
           "default": 3,
           "label": "Columns on Tablet",
@@ -197,71 +205,16 @@
           "content": "Product Card"
         },
         {
-          "type": "select",
-          "id": "image_ratio",
-          "options": [
-            {
-              "value": "adapt",
-              "label": "Adapt to Image"
-            },
-            {
-              "value": "portrait",
-              "label": "Portrait"
-            },
-            {
-              "value": "square",
-              "label": "Square"
-            }
-          ],
-          "default": "adapt",
-          "label": "Image Ratio"
-        },
-        {
           "type": "checkbox",
-          "id": "show_secondary_image",
-          "default": true,
-          "label": "Show second image on hover"
-        },
-        {
-          "type": "checkbox",
-          "id": "show_vendor",
-          "default": false,
-          "label": "Show vendor"
-        },
-        {
-          "type": "checkbox",
-          "id": "show_rating",
-          "default": false,
-          "label": "Show product rating",
-          "info": "To display a rating, add a product rating app. [Learn more](https://help.shopify.com/en/manual/online-store/themes/theme-structure/theme-features#featured-collection-show-product-rating)"
-        },
-        {
-          "type": "header",
-          "content": "Button Settings"
-        },
-        {
-          "type": "text",
-          "id": "btn_label",
-          "label": "Label",
-          "default": "View Details"
-        },
-        {
-          "type": "checkbox",
-          "id": "round_corner",
-          "label": "Rounded Corner",
-          "default": false
-        },
-        {
-          "type": "checkbox",
-          "id": "shadow_effect",
-          "label": "Enable Shadow Effect",
+          "id": "show_price",
+          "label": "Show Price",
           "default": true
         },
         {
           "type": "checkbox",
-          "id": "auto_width",
-          "label": "Enable Auto Width",
-          "default": false
+          "id": "cta_viewproduct",
+          "label": "View Button",
+          "default": true
         }
       ]
     }

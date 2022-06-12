@@ -34,6 +34,8 @@ html {
 
 
 /* Reusable Classes */
+
+$section_maxwidth: 1800px;
 .section {
     position: relative;
 // For Roundcorner Pagewidth
@@ -57,7 +59,7 @@ html {
     position: relative;
     padding-top: 3rem;
     width: 100%;
-    max-width: 2000px;
+    max-width: $section_maxwidth;
     margin: 0 auto;
 }
 
@@ -82,7 +84,7 @@ html {
     justify-content: center;
     align-items: center;
     width: 100%;
-    max-width: 2000px;
+    max-width: $section_maxwidth;
     margin: 0rem auto;
 
     img{
