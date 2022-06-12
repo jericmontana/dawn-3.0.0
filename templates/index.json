@@ -105,21 +105,24 @@
         "image_with_text_1": {
           "type": "image_with_text",
           "settings": {
-            "title": "<p>Mus mauris vitae<\/p><p>ultricies leo<\/p",
+            "image": "shopify:\/\/shop_images\/300k.png",
+            "title": "<p>300K +<\/p>",
             "description": "<p>Consectetur letius torquent nunc lacus volutpat<\/p>"
           }
         },
         "image_with_text_2": {
           "type": "image_with_text",
           "settings": {
-            "title": "<p>Mus mauris vitae<\/p><p>ultricies leo<\/p",
+            "image": "shopify:\/\/shop_images\/Made_in_Taiwan.png",
+            "title": "<p>Made in Taiwan<\/p>",
             "description": "<p>Consectetur letius torquent nunc lacus volutpat<\/p>"
           }
         },
         "image_with_text_3": {
           "type": "image_with_text",
           "settings": {
-            "title": "<p>Mus mauris vitae<\/p><p>ultricies leo<\/p",
+            "image": "shopify:\/\/shop_images\/Organic.png",
+            "title": "<p>100% Organic<\/p>",
             "description": "<p>Consectetur letius torquent nunc lacus volutpat<\/p>"
           }
         }
