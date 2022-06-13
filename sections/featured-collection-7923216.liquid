@@ -26,12 +26,11 @@
       {% comment %} For Section Header {% endcomment %}
       {%- assign header = section.blocks | where: 'type', 'header' -%}
       {%- for block in header -%}
-        {% if block.settings.title != blank or block.settings.subtitle != blank %}
-          <div class="section__header center">
-            <h2 class="h2 {% if block.settings.uppercase %}uppercase{% endif %}">{{ block.settings.title | escape }}</h2>
-            <p class="h3">{{ block.settings.subtitle | escape }}</p>
-          </div>
-        {%- endif -%}
+        {%- render 'section-header',
+          title: block.settings.title,
+          subtitle: block.settings.subtitle,
+          uppercase: block.settings.title_uppercase
+        -%}
       {%- endfor -%}
 
       {% comment %} For Collection Component {% endcomment %}

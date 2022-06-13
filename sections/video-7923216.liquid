@@ -26,13 +26,12 @@
       <div class="page-width">
 
         {% comment %} For Section Header {% endcomment %}
-        {%- for header_block in header_blocks -%}
-        {% if header_block.settings.title != blank or header_block.settings.subtitle != blank %}
-            <div class="section__header center">
-                <h2 class="h2 {% if header_block.settings.uppercase %}uppercase{% endif %}">{{ header_block.settings.title | escape }}</h2>
-                <p class="h3">{{ header_block.settings.subtitle | escape }}</p>
-            </div>
-        {%- endif -%}
+        {%- for block in header_blocks -%}
+          {%- render 'section-header',
+            title: block.settings.title,
+            subtitle: block.settings.subtitle,
+            uppercase: block.settings.title_uppercase
+          -%}
         {%- endfor -%}
 
         {% capture grid_device_class %}
