@@ -6,16 +6,21 @@
         "text_featured_review": {
           "type": "text_featured_review",
           "settings": {
+            "testimony": "<p>Ultricies litora accumsan hac finibus auctor ante. Molestie ornare primis eleifend pharetra pulvinar potenti risus magna consequat.<\/p>",
+            "customer_name": "<p>— cutomer name, ShopName verified customer<\/p>"
           }
         },
         "richtext_copy": {
           "type": "richtext_copy",
           "settings": {
+            "richtext": "<p>Tristique velit tincidunt eget conubia euismod sapien eleifend congue lobortis. Mus mollis platea velit quis ligula porttitor dapibus parturient rutrum si.<\/p>"
           }
         },
         "popup": {
           "type": "popup",
           "settings": {
+            "label": "Popup Label",
+            "richtext": "<p>Sem condimentum vestibulum imperdiet felis euismod elit est. Orci duis tellus sem ut tempus lobortis leo.<\/p>"
           }
         },
         "custom_variant_picker": {
@@ -53,26 +58,37 @@
         "header": {
           "type": "header",
           "settings": {
+            "title": "Nisi nibh tortor euismod",
+            "title_uppercase": false,
+            "subtitle": ""
           }
         },
         "image": {
           "type": "image",
           "settings": {
+            "image": "shopify:\/\/shop_images\/Before_and_After.png",
+            "image_first": false
           }
         },
         "richtext_1": {
           "type": "richtext",
           "settings": {
+            "title": "<p>Nullam si a erat<\/p>",
+            "description": "<p>Hendrerit parturient tellus duis netus nibh lorem velit ullamcorper bibendum sociosqu primis convallis sollicitudin<\/p>"
           }
         },
         "richtext_2": {
           "type": "richtext",
           "settings": {
+            "title": "<p>Nullam si a erat<\/p>",
+            "description": "<p>Hendrerit parturient tellus duis netus nibh lorem velit ullamcorper bibendum sociosqu primis convallis sollicitudin<\/p>"
           }
         },
         "richtext_3": {
           "type": "richtext",
           "settings": {
+            "title": "<p>Nullam si a erat<\/p>",
+            "description": "<p>Hendrerit parturient tellus duis netus nibh lorem velit ullamcorper bibendum sociosqu primis convallis sollicitudin<\/p>"
           }
         }
       },
@@ -84,6 +100,9 @@
         "richtext_3"
       ],
       "settings": {
+        "use_as_default_padding": false,
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     },
     "before_after": {
@@ -92,11 +111,18 @@
         "header": {
           "type": "header",
           "settings": {
+            "title": "Proin enim taciti dapibus",
+            "title_uppercase": false,
+            "subtitle": "Lacus in dui sollicitudin risus suspendisse sed placerat ad pharetra ipsum letius mattis vel"
           }
         },
         "slider": {
           "type": "slider",
           "settings": {
+            "columns_desktop": 3,
+            "columns_tablet": 3,
+            "columns_mobile": 1,
+            "slider": "slide-me-not"
           }
         },
         "image_1": {
@@ -123,6 +149,9 @@
         "image_3"
       ],
       "settings": {
+        "use_as_default_padding": false,
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     },
     "image_accordion": {
@@ -131,26 +160,37 @@
         "header": {
           "type": "header",
           "settings": {
+            "title": "Image with Accordion",
+            "title_uppercase": false,
+            "subtitle": "Mus mauris vitae ultricies leo. Ac feugiat sed lectus vestibulum lacus laoreet non curabitur."
           }
         },
         "accordion_1": {
           "type": "accordion",
           "settings": {
+            "title": "Consectetuer aptent lorem ut",
+            "content": "<p>Adipiscing mus sociosqu facilisi cursus torquent class nulla maecenas vehicula aptent congue.<\/p><p>Fringilla penatibus purus scelerisque condimentum gravida dis efficitur himenaeos.<\/p>"
           }
         },
         "accordion_2": {
           "type": "accordion",
           "settings": {
+            "title": "Consectetuer aptent lorem ut",
+            "content": "<p>Adipiscing mus sociosqu facilisi cursus torquent class nulla maecenas vehicula aptent congue.<\/p><p>Fringilla penatibus purus scelerisque condimentum gravida dis efficitur himenaeos.<\/p>"
           }
         },
         "accordion_3": {
           "type": "accordion",
           "settings": {
+            "title": "Consectetuer aptent lorem ut",
+            "content": "<p>Adipiscing mus sociosqu facilisi cursus torquent class nulla maecenas vehicula aptent congue.<\/p><p>Fringilla penatibus purus scelerisque condimentum gravida dis efficitur himenaeos.<\/p>"
           }
         },
         "accordion_4": {
           "type": "accordion",
           "settings": {
+            "title": "Consectetuer aptent lorem ut",
+            "content": "<p>Adipiscing mus sociosqu facilisi cursus torquent class nulla maecenas vehicula aptent congue.<\/p><p>Fringilla penatibus purus scelerisque condimentum gravida dis efficitur himenaeos.<\/p>"
           }
         },
         "image": {
@@ -168,6 +208,9 @@
         "image"
       ],
       "settings": {
+        "use_as_default_padding": false,
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     },
     "video": {
@@ -176,16 +219,23 @@
         "header": {
           "type": "header",
           "settings": {
+            "title": "Video",
+            "title_uppercase": false,
+            "subtitle": "Mus mauris vitae ultricies leo. Ac feugiat sed lectus vestibulum lacus laoreet non curabitur."
           }
         },
         "video_1": {
           "type": "video",
           "settings": {
+            "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+            "description": ""
           }
         },
         "video_2": {
           "type": "video",
           "settings": {
+            "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+            "description": ""
           }
         }
       },
@@ -195,6 +245,12 @@
         "video_2"
       ],
       "settings": {
+        "columns_desktop": 2,
+        "columns_tablet": 2,
+        "columns_mobile": 1,
+        "use_as_default_padding": false,
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     },
     "review": {
@@ -203,6 +259,9 @@
         "header": {
           "type": "heading",
           "settings": {
+            "title": "App Block",
+            "title_uppercase": false,
+            "subtitle": "Mus mauris vitae ultricies leo. Ac feugiat sed lectus vestibulum lacus laoreet non curabitur."
           }
         }
       },
@@ -210,6 +269,64 @@
         "header"
       ],
       "settings": {
+        "round_corner_background": false,
+        "color_scheme": "background-1",
+        "use_as_default_padding": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "email_signup": {
+      "type": "signup-7923216",
+      "blocks": {
+        "header": {
+          "type": "header",
+          "settings": {
+            "title": "<p>Join Our VIP Club<\/p>",
+            "subtitle": "<p>Mus mauris vitae ultricies leo. Ac feugiat sed lectus vestibulum lacus laoreet non curabitur.<\/p>"
+          }
+        },
+        "form": {
+          "type": "form",
+          "settings": {
+            "name_label": "Name...",
+            "display_name_input": true,
+            "email_label": "Email...",
+            "btn_label": "Subscribe"
+          }
+        }
+      },
+      "block_order": [
+        "header",
+        "form"
+      ],
+      "settings": {
+        "use_as_default_padding": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "instafeed": {
+      "type": "app-block-7923216",
+      "blocks": {
+        "header": {
+          "type": "heading",
+          "settings": {
+            "title": "App Block",
+            "title_uppercase": false,
+            "subtitle": "Mus mauris vitae ultricies leo. Ac feugiat sed lectus vestibulum lacus laoreet non curabitur."
+          }
+        }
+      },
+      "block_order": [
+        "header"
+      ],
+      "settings": {
+        "round_corner_background": false,
+        "color_scheme": "background-1",
+        "use_as_default_padding": false,
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     },
     "wishlist_reference": {
@@ -219,42 +336,6 @@
         "show_secondary_image": true,
         "show_vendor": true,
         "show_rating": false
-      }
-    },
-    "email_signup": {
-      "type": "signup-7923216",
-      "blocks": {
-        "header": {
-          "type": "header",
-          "settings": {
-          }
-        },
-        "form": {
-          "type": "form",
-          "settings": {
-          }
-        }
-      },
-      "block_order": [
-        "header",
-        "form"
-      ],
-      "settings": {
-      }
-    },
-    "instafeed": {
-      "type": "app-block-7923216",
-      "blocks": {
-        "header": {
-          "type": "heading",
-          "settings": {
-          }
-        }
-      },
-      "block_order": [
-        "header"
-      ],
-      "settings": {
       }
     }
   },
