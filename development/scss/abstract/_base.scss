@@ -216,6 +216,13 @@ $section_maxwidth: 1800px;
 .grecaptcha-badge {
     visibility: hidden;
 }
+// For Empty Content
+.no-content{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 /* For Empty Image */
 .no-image{
