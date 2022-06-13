@@ -20,7 +20,7 @@
 <div class="hero hero--{{ section.id }} section-with-bg">
   {%- if section.settings.bg_image -%}
     {% capture image_sizes %}
-      (min-width: 1800px) 1800px, ((min-width: 990px) and (max-width: 1799px)) calc(100vw + 50px), ((min-width: 750px) and (max-width: 989px)) 100vw, (max-width: 749px) 100vw
+      (min-width: 1800px) 1800px, ((min-width: 990px) and (max-width: 1799px)) 100vw, ((min-width: 750px) and (max-width: 989px)) 100vw, (max-width: 749px) 100vw
     {% endcapture %}
     <div class="section__bg">
       <img
@@ -69,19 +69,20 @@
                 </div>
                 <div class="grid__item">
                     <div class="hero__image medium-hide large-up-hide">
+                    {% capture image_sizes_second %}
+                      (min-width: 990px) 600px, ((min-width: 361px) and (max-width: 989px)) 600px, (max-width: 360px) 360px
+                    {% endcapture %}
                     {%- if section.settings.image != blank -%}
-                      {% capture image_sizes_second %}
-                        (min-width: 990px) calc(1200px / 2), ((min-width: 750px) and (max-width: 989px)) 100vw, (max-width: 749px) 100vw
-                      {% endcapture %}
                         <img
                             srcset="{%- if section.settings.image.width >= 165 -%}{{ section.settings.image | image_url: width: 165 }} 165w,{%- endif -%}
                             {%- if section.settings.image.width >= 360 -%}{{ section.settings.image | image_url: width: 360 }} 360w,{%- endif -%}
                             {%- if section.settings.image.width >= 535 -%}{{ section.settings.image | image_url: width: 535 }} 535w,{%- endif -%}
+                            {%- if section.settings.image.width >= 600 -%}{{ section.settings.image | image_url: width: 600 }} 600w,{%- endif -%}
                             {%- if section.settings.image.width >= 800 -%}{{ section.settings.image | image_url: width: 800 }} 800w,{%- endif -%}
                             {%- if section.settings.image.width >= 1070 -%}{{ section.settings.image | image_url: width: 1070 }} 1070w,{%- endif -%}
                             {%- if section.settings.image.width >= 1500 -%}{{ section.settings.image | image_url: width: 1500 }} 1500w,{%- endif -%}
                             {{ section.settings.image | image_url }} {{ section.settings.image.width }}w"
-                            src="{{ section.settings.image | image_url }}"
+                            src="{{ section.settings.image | image_url: width: 600 }}"
                             sizes="{{ image_sizes_second | strip }}"
                             alt="{{ section.settings.image.alt | escape }}"
                             title="{{ section.settings.image.alt | escape }}"
