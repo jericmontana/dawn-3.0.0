@@ -111,9 +111,9 @@
         "header": {
           "type": "header",
           "settings": {
-            "title": "Proin enim taciti dapibus",
-            "title_uppercase": false,
-            "subtitle": "Lacus in dui sollicitudin risus suspendisse sed placerat ad pharetra ipsum letius mattis vel"
+            "title": "Before and After",
+            "title_uppercase": true,
+            "subtitle": ""
           }
         },
         "slider": {
@@ -122,7 +122,7 @@
             "columns_desktop": 3,
             "columns_tablet": 3,
             "columns_mobile": 1,
-            "slider": "slide-me-not"
+            "slider": "everywhere"
           }
         },
         "image_1": {
@@ -139,6 +139,16 @@
           "type": "image",
           "settings": {
           }
+        },
+        "d70e3bf6-30e2-4e92-b7b2-ccfc948d47bd": {
+          "type": "image",
+          "settings": {
+          }
+        },
+        "bd25b9ba-c9fd-4ac7-8262-fad706fe55b8": {
+          "type": "image",
+          "settings": {
+          }
         }
       },
       "block_order": [
@@ -146,7 +156,9 @@
         "slider",
         "image_1",
         "image_2",
-        "image_3"
+        "image_3",
+        "d70e3bf6-30e2-4e92-b7b2-ccfc948d47bd",
+        "bd25b9ba-c9fd-4ac7-8262-fad706fe55b8"
       ],
       "settings": {
         "use_as_default_padding": false,
