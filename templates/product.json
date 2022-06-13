@@ -232,33 +232,44 @@
         "header": {
           "type": "header",
           "settings": {
-            "title": "Video",
+            "title": "Product Related Videos",
             "title_uppercase": false,
-            "subtitle": "Mus mauris vitae ultricies leo. Ac feugiat sed lectus vestibulum lacus laoreet non curabitur."
+            "subtitle": ""
           }
         },
         "video_1": {
           "type": "video",
           "settings": {
             "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
-            "description": ""
+            "description": "",
+            "thumbnail": "shopify:\/\/shop_images\/YT_Video_Thumbnail.png"
           }
         },
         "video_2": {
           "type": "video",
           "settings": {
             "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
-            "description": ""
+            "description": "",
+            "thumbnail": "shopify:\/\/shop_images\/YT_Video_Thumbnail.png"
+          }
+        },
+        "b8e11e89-074c-4646-baf8-e17fc6492206": {
+          "type": "video",
+          "settings": {
+            "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+            "description": "",
+            "thumbnail": "shopify:\/\/shop_images\/YT_Video_Thumbnail.png"
           }
         }
       },
       "block_order": [
         "header",
         "video_1",
-        "video_2"
+        "video_2",
+        "b8e11e89-074c-4646-baf8-e17fc6492206"
       ],
       "settings": {
-        "columns_desktop": 2,
+        "columns_desktop": 3,
         "columns_tablet": 2,
         "columns_mobile": 1,
         "use_as_default_padding": false,
