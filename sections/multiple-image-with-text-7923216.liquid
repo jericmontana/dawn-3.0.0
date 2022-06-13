@@ -38,6 +38,9 @@
 
         <div class="grid__item grid__item--image">
           <div class="section__image">
+            {% capture image_sizes %}
+              (min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 | divided_by: 2 }}px, (min-width: 750px) calc((100vw - 130px) / 2), calc((100vw - 50px) / 2)
+            {% endcapture %}
             {%- for block in image_with_text_blocks -%}
               <div class="tabcontent tabcontent-{{ section.id }} tabcontent-{{ section.id }}-{{ forloop.index }}">
                 <div class="image--wrapper">
@@ -58,7 +61,7 @@
                     {%- if block.settings.image.width >= 1500 -%}{{ block.settings.image | image_url: width: 1500 }} 1500w,{%- endif -%}
                     {{ block.settings.image | image_url }} {{ block.settings.image.width }}w"
                     src="{{ block.settings.image | image_url }}"
-                    sizes="(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 | divided_by: 2 }}px, (min-width: 750px) calc((100vw - 130px) / 2), calc((100vw - 50px) / 2)"
+                    sizes="{{ image_sizes | strip }}"
                     alt="{{ image_alt | strip_html | escape }}"
                     title="{{ image_alt | strip_html | escape }}"
                     loading="lazy"

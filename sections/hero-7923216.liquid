@@ -70,7 +70,7 @@
                 <div class="grid__item">
                     <div class="hero__image medium-hide large-up-hide">
                     {% capture image_sizes_second %}
-                      (min-width: 990px) 600px, ((min-width: 361px) and (max-width: 989px)) 600px, (max-width: 360px) 360px
+                      (min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 | divided_by: 2 }}px, (min-width: 750px) calc((100vw - 130px) / 2), calc((100vw - 50px) / 2)
                     {% endcapture %}
                     {%- if section.settings.image != blank -%}
                         <img
