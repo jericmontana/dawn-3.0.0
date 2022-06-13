@@ -52,18 +52,19 @@
                 -%}
 
                 {% capture image_sizes %}
-                    (min-width: 990px) calc(1200px / {{ columns_desktop }}), ((min-width: 750px) and (max-width: 989px)) calc(990px / {{ columns_tablet }}), (max-width: 749px) calc(100vw / {{ columns_mobile }})
+                    (min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 130 | divided_by: columns_desktop }}px, (min-width: 990px) calc((100vw - 130px) / {{ columns_desktop }}), (min-width: 750px) calc((100vw - 120px) / {{ columns_tablet }}), calc((100vw - 35px) / {{ columns_mobile}})"
                 {% endcapture %}
 
                 <img
                     srcset="{%- if product.featured_media.width >= 165 -%}{{ product.featured_media | image_url: width: 165 }} 165w,{%- endif -%}
+                    {%- if product.featured_media.width >= 180 -%}{{ product.featured_media | image_url: width: 180 }} 180w,{%- endif -%}
                     {%- if product.featured_media.width >= 360 -%}{{ product.featured_media | image_url: width: 360 }} 360w,{%- endif -%}
                     {%- if product.featured_media.width >= 533 -%}{{ product.featured_media | image_url: width: 533 }} 533w,{%- endif -%}
                     {%- if product.featured_media.width >= 720 -%}{{ product.featured_media | image_url: width: 720 }} 720w,{%- endif -%}
                     {%- if product.featured_media.width >= 940 -%}{{ product.featured_media | image_url: width: 940 }} 940w,{%- endif -%}
                     {%- if product.featured_media.width >= 1066 -%}{{ product.featured_media | image_url: width: 1066 }} 1066w,{%- endif -%}
                     {{ product.featured_media | image_url }} {{ product.featured_media.width }}w"
-                    src="{{ product.featured_media | image_url }}"
+                    src="{{ product.featured_media | image_url: width: 533 }}"
                     sizes="{{ image_sizes | strip }}"
                     alt="{{ image_alt | escape }}"
                     title="{{ image_alt | escape }}"
@@ -92,7 +93,7 @@
                     {%- if product.media[1].width >= 940 -%}{{ product.media[1] | image_url: width: 940 }} 940w,{%- endif -%}
                     {%- if product.media[1].width >= 1066 -%}{{ product.media[1] | image_url: width: 1066 }} 1066w,{%- endif -%}
                     {{ product.media[1] | image_url }} {{ product.media[1].width }}w"
-                src="{{ product.media[1] | image_url: width: 720 }}"
+                src="{{ product.media[1] | image_url: width: 533 }}"
                 sizes="{{ image_sizes | strip }}"
                 alt="{{ image_alt | escape }}"
                 title="{{ image_title | escape }}"
