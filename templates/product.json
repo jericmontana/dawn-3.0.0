@@ -306,8 +306,8 @@
         "header": {
           "type": "header",
           "settings": {
-            "title": "<p>Join Our VIP Club<\/p>",
-            "subtitle": "<p>Mus mauris vitae ultricies leo. Ac feugiat sed lectus vestibulum lacus laoreet non curabitur.<\/p>"
+            "title": "<p>Join Our VIP Club<\/p><p>And Get 10% OFF<\/p>",
+            "subtitle": "<p>Mus mauris vitae ultricies leo.<\/p><p>Ac feugiat sed lectus vestibulum lacus laoreet non curabitur.<\/p>"
           }
         },
         "form": {
@@ -325,6 +325,7 @@
         "form"
       ],
       "settings": {
+        "bg_image": "shopify:\/\/shop_images\/Newsletter.jpg",
         "use_as_default_padding": false,
         "padding_top": 36,
         "padding_bottom": 36
