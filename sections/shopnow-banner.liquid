@@ -1,28 +1,19 @@
 {{ 'section-shopnow-banner.css' | asset_url | stylesheet_tag }}
 
-<div class="section section--shopnow-banner {% if page.template_suffix == 'wishlist' %}wishlist-empty{% endif %}" style="background-color: {{ section.settings.bg_color }}">
-    <div class="section__bg-container">
-
+<div class="shopnow-banner shopnow-banner--{{ section.id }} {% if page.template_suffix == 'wishlist' %}wishlist-empty{% endif %}">
+    <div class="section__container">
         <div class="page-width">
 
-            <div class="section--shopnow-banner-wrapper grid grid--gapless grid--1-col grid--2-col-desktop grid--2-col-tablet"
-                style="{% unless settings.banner_bg_image == blank %}background-image: url('{{ settings.banner_bg_image | image_url }}');{% endunless %}
-                    {% unless settings.banner_bg_color == blank %}background-color: {{ settings.banner_bg_color }};{% endunless %}
-                    background-blend-mode: {{ settings.banner_bg_blend }};">
-                
-                
+            <div class="grid grid--gapless grid--1-col grid--2-col-desktop grid--2-col-tablet"
+                style="{% unless settings.banner_bg_image == blank %}background-image: url('{{ settings.banner_bg_image | image_url }}');{% endunless %}{% unless settings.banner_bg_color == blank %}background-color: {{ settings.banner_bg_color }};{% endunless %}background-blend-mode: {{ settings.banner_bg_blend }};">
                 {%- assign header = section.blocks | where: 'type', 'header' -%}
                 {%- for block in header -%}
                 {%- if block.settings.apply_general_settings_header -%}
                     {% if settings.title != blank or settings.subtitle != blank %}
                     <div class="grid__item">
                         <div class="section__header">
-                            {% unless settings.title == blank %}
-                            <h2 class="section__header--title h1{% if settings.title_uppercase %}uppercase{% endif %}">{{ settings.title | escape }}</h2>
-                            {% endunless %}
-                            {% unless settings.subtitle == blank %}
-                            <p class="section__header--subtitle">{{ settings.subtitle | escape }}</p>
-                            {% endunless %}
+                            <h2 class="h1{% if settings.title_uppercase %}uppercase{% endif %}">{{ settings.title | escape }}</h2>
+                            <p class="h3">{{ settings.subtitle | escape }}</p>
                         </div>
                     </div>
                     {% endif %}
@@ -30,12 +21,8 @@
                     {% if block.settings.title != blank or block.settings.subtitle != blank %}
                     <div class="grid__item">
                         <div class="section__header">
-                            {% unless block.settings.title == blank %}
-                            <h2 class="section__header--title {% if block.settings.title_uppercase %}uppercase{% endif %}">{{ block.settings.title | escape }}</h2>
-                            {% endunless %}
-                            {% unless block.settings.subtitle == blank %}
-                            <p class="section__header--subtitle">{{ block.settings.subtitle | escape }}</p>
-                            {% endunless %}
+                            <h2 class="h1 {% if block.settings.title_uppercase %}uppercase{% endif %}">{{ block.settings.title | escape }}</h2>
+                            <p class="h3">{{ block.settings.subtitle | escape }}</p>
                         </div>
                     </div>
                     {% endif %}

@@ -85,6 +85,7 @@
                 -%}
                 <img
                 srcset="{%- if product.media[1].width >= 165 -%}{{ product.media[1] | image_url: width: 165 }} 165w,{%- endif -%}
+                    {%- if product.media[1].width >= 180 -%}{{ product.media[1] | image_url: width: 180 }} 180w,{%- endif -%}
                     {%- if product.media[1].width >= 360 -%}{{ product.media[1] | image_url: width: 360 }} 360w,{%- endif -%}
                     {%- if product.media[1].width >= 533 -%}{{ product.media[1] | image_url: width: 533 }} 533w,{%- endif -%}
                     {%- if product.media[1].width >= 720 -%}{{ product.media[1] | image_url: width: 720 }} 720w,{%- endif -%}

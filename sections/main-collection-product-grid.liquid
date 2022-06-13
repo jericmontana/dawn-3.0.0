@@ -1,11 +1,11 @@
 {{ 'template-collection.css' | asset_url | stylesheet_tag }}
-{{ 'component-loading-overlay.css' | asset_url | stylesheet_tag }}
+{% comment %} {{ 'component-loading-overlay.css' | asset_url | stylesheet_tag }} {% endcomment %}
 {{ 'component-card.css' | asset_url | stylesheet_tag }}
-{{ 'component-price.css' | asset_url | stylesheet_tag }}
+{% comment %} {{ 'component-price.css' | asset_url | stylesheet_tag }} {% endcomment %}
 
-<link rel="preload" href="{{ 'component-rte.css' | asset_url }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
+{% comment %} <link rel="preload" href="{{ 'component-rte.css' | asset_url }}" as="style" onload="this.onload=null;this.rel='stylesheet'"> {% endcomment %}
 
-<noscript>{{ 'component-rte.css' | asset_url | stylesheet_tag }}</noscript>
+{% comment %} <noscript>{{ 'component-rte.css' | asset_url | stylesheet_tag }}</noscript> {% endcomment %}
 
 {%- style -%}
   .section-{{ section.id }}-padding {
