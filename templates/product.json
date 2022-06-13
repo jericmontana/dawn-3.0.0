@@ -173,8 +173,8 @@
           "type": "header",
           "settings": {
             "title": "Image with Accordion",
-            "title_uppercase": false,
-            "subtitle": "Mus mauris vitae ultricies leo. Ac feugiat sed lectus vestibulum lacus laoreet non curabitur."
+            "title_uppercase": true,
+            "subtitle": ""
           }
         },
         "accordion_1": {
@@ -220,6 +220,7 @@
         "image"
       ],
       "settings": {
+        "bg_image": "shopify:\/\/shop_images\/Accordion.jpg",
         "use_as_default_padding": false,
         "padding_top": 36,
         "padding_bottom": 36
