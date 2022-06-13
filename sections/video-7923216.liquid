@@ -38,6 +38,11 @@
           grid--{{ section.settings.columns_mobile }}-col grid--{{ section.settings.columns_desktop }}-col-desktop grid--{{ section.settings.columns_tablet }}-col-tablet
         {% endcapture %}
         <ul class="grid {{ grid_device_class | strip }}">
+
+            {% capture image_sizes %}
+              (min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 | divided_by: section.settings.columns_desktop }}px, (min-width: 990px) calc((100vw - 100px) / {{ section.settings.columns_desktop }}), (min-width: 750px) calc((100vw - 100px) / {{ section.settings.columns_tablet }}), calc((100vw - 30px) / 1)"
+            {% endcapture %}
+
             {%- for video_block in video_blocks -%}
             {%- assign item_number = forloop.index -%}
             <li class="grid__item">
@@ -55,7 +60,10 @@
                             endif
                         -%}
                         <img
-                            srcset="{%- if video_block.settings.thumbnail.width >= 375 -%}{{ video_block.settings.thumbnail | image_url: width: 375 }} 375w,{%- endif -%}
+                            srcset="{%- if video_block.settings.thumbnail.width >= 310 -%}{{ video_block.settings.thumbnail | image_url: width: 310 }} 310w,{%- endif -%}
+                            {%- if video_block.settings.thumbnail.width >= 330 -%}{{ video_block.settings.thumbnail | image_url: width: 330 }} 330w,{%- endif -%}
+                            {%- if video_block.settings.thumbnail.width >= 360 -%}{{ video_block.settings.thumbnail | image_url: width: 360 }} 360w,{%- endif -%}
+                            {%- if video_block.settings.thumbnail.width >= 375 -%}{{ video_block.settings.thumbnail | image_url: width: 375 }} 375w,{%- endif -%}
                             {%- if video_block.settings.thumbnail.width >= 750 -%}{{ video_block.settings.thumbnail | image_url: width: 750 }} 750w,{%- endif -%}
                             {%- if video_block.settings.thumbnail.width >= 1100 -%}{{ video_block.settings.thumbnail | image_url: width: 1100 }} 1100w,{%- endif -%}
                             {%- if video_block.settings.thumbnail.width >= 1500 -%}{{ video_block.settings.thumbnail | image_url: width: 1500 }} 1500w,{%- endif -%}
@@ -65,7 +73,7 @@
                             {%- if video_block.settings.thumbnail.width >= 3840 -%}{{ video_block.settings.thumbnail | image_url: width: 3840 }} 3840w,{%- endif -%}
                             {{ video_block.settings.thumbnail | image_url }} {{ video_block.settings.thumbnail.width }}w"
                             src="{{ video_block.settings.thumbnail | image_url: width: 1920 }}"
-                            sizes="(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 }}px, (min-width: 750px) calc(100vw - 10rem), 100vw"
+                            sizes="{{ image_sizes | strip }}"
                             alt="{{ image_alt | escape }}"
                             loading="lazy"
                             width="{{ video_block.settings.thumbnail.width }}"

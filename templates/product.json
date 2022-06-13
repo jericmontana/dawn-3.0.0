@@ -278,26 +278,24 @@
       }
     },
     "review": {
-      "type": "app-block-7923216",
+      "type": "review-product-7923216",
       "blocks": {
         "header": {
-          "type": "heading",
+          "type": "header",
           "settings": {
-            "title": "REVIEWS",
-            "title_uppercase": false,
-            "subtitle": "Mus mauris vitae ultricies leo. Ac feugiat sed lectus vestibulum lacus laoreet non curabitur."
+          }
+        },
+        "review": {
+          "type": "review",
+          "settings": {
           }
         }
       },
       "block_order": [
-        "header"
+        "header",
+        "review"
       ],
       "settings": {
-        "round_corner_background": false,
-        "color_scheme": "background-1",
-        "use_as_default_padding": false,
-        "padding_top": 36,
-        "padding_bottom": 36
       }
     },
     "email_signup": {

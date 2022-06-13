@@ -22,7 +22,7 @@
     }
 
     
-    .jdgm-widget-actions-wrapper, .jdgm-all-reviews__footer{
+    .jdgm-all-reviews__footer{
         display: none!important;
     }
 
@@ -42,5 +42,10 @@
             color: rgb(var(--color-base-accent-2));
             text-align: center;
         }
+    }
+}
+.review:not(.review-product){
+    .jdgm-widget-actions-wrapper{
+        display: none!important;
     }
 }

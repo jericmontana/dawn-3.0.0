@@ -52,7 +52,7 @@
                 -%}
 
                 {% capture image_sizes %}
-                    (min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 130 | divided_by: columns_desktop }}px, (min-width: 990px) calc((100vw - 130px) / {{ columns_desktop }}), (min-width: 750px) calc((100vw - 120px) / {{ columns_tablet }}), calc((100vw - 35px) / {{ columns_mobile}})"
+                    (min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 130 | divided_by: columns_desktop }}px, (min-width: 990px) calc((100vw - 130px) / {{ columns_desktop }}), (min-width: 750px) calc((100vw - 120px) / {{ columns_tablet }}), calc((100vw - 35px) / {{ columns_mobile}})
                 {% endcapture %}
 
                 <img
