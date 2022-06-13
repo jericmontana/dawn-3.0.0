@@ -10,9 +10,10 @@
     "social_youtube_link": "",
     "favicon": "shopify:\/\/shop_images\/output-onlinepngtools_3_1.png",
     "fg_color": "#FFFFFF",
-    "bg_color": "#a72727",
+    "bg_color": "#0b5394",
     "use_as_default_padding": true,
-    "padding_top": 36,
+    "padding_top": 16,
+    "padding_bottom": 4,
     "subtitle": "Aliquet vulputate malesuada pede habitant primis neque hendrerit ligula duis.",
     "banner_bg_color": "#ffffff",
     "banner_bg_blend": "luminosity",
@@ -161,6 +162,24 @@
           "s_btn_action": "redirect-link",
           "s_btn_label": "Get 10% Off",
           "s_btn_link": "shopify:\/\/pages\/vip-club"
+        }
+      },
+      "announcement-bar": {
+        "type": "announcement-bar",
+        "blocks": {
+          "announcement-bar-0": {
+            "type": "announcement",
+            "settings": {
+              "text": "Welcome to our store",
+              "color_scheme": "accent-1",
+              "link": ""
+            }
+          }
+        },
+        "block_order": [
+          "announcement-bar-0"
+        ],
+        "settings": {
         }
       }
     },
