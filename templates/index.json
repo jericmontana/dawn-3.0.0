@@ -155,8 +155,7 @@
         },
         "slider": {
           "type": "slider",
-          "settings":{
-
+          "settings": {
           }
         },
         "video_1": {
