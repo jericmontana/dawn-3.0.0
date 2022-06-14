@@ -237,6 +237,12 @@
             "subtitle": ""
           }
         },
+        "slider": {
+          "type": "slider",
+          "settings":{
+
+          }
+        },
         "video_1": {
           "type": "video",
           "settings": {
@@ -264,14 +270,12 @@
       },
       "block_order": [
         "header",
+        "slider",
         "video_1",
         "video_2",
         "b8e11e89-074c-4646-baf8-e17fc6492206"
       ],
       "settings": {
-        "columns_desktop": 3,
-        "columns_tablet": 2,
-        "columns_mobile": 1,
         "use_as_default_padding": false,
         "padding_top": 36,
         "padding_bottom": 36

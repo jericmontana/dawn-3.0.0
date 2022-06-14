@@ -2,6 +2,7 @@
 
 
 {%- assign header_blocks = section.blocks | where: 'type', 'header' -%}
+{%- assign slider_blocks = section.blocks | where: 'type', 'slider' -%}
 {%- assign video_blocks = section.blocks | where: 'type', 'video' -%}
 
 {% assign use_as_default_padding = section.settings.use_as_default_padding %}
@@ -34,18 +35,44 @@
           -%}
         {%- endfor -%}
 
-        {% capture grid_device_class %}
-          grid--{{ section.settings.columns_mobile }}-col grid--{{ section.settings.columns_desktop }}-col-desktop grid--{{ section.settings.columns_tablet }}-col-tablet
-        {% endcapture %}
-        <ul class="grid {{ grid_device_class | strip }}">
+        {%- for block in slider_blocks -%}
+          {%- liquid
 
+          assign slider_mode = block.settings.slider
+          case slider_mode
+              when 'everywhere'
+              assign slider_class = "slider slider--everywhere"
+
+              when 'medium-down'
+              assign slider_class = "slider slider--tablet"
+          endcase
+
+          -%}
+
+          {% capture grid_device_class %}
+            grid--{{ block.settings.columns_mobile }}-col grid--{{ block.settings.columns_desktop }}-col-desktop grid--{{ block.settings.columns_tablet }}-col-tablet
+          {% endcapture %}
+
+          {% if slider_mode == 'slide-me-not' %}
+          <ul class="grid {{ grid_device_class | strip }}" role="list">
+          {% else %}
+          <slider-component>
+              <ul id="Slider-{{ section.id }}"
+                  class="grid {{ grid_device_class | strip }} {{ slider_class | strip }}"
+                  role="list">
+          {% endif %}
             {% capture image_sizes %}
               (min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 | divided_by: section.settings.columns_desktop }}px, (min-width: 990px) calc((100vw - 100px) / {{ section.settings.columns_desktop }}), (min-width: 750px) calc((100vw - 100px) / {{ section.settings.columns_tablet }}), calc((100vw - 30px) / 1)"
             {% endcapture %}
 
             {%- for video_block in video_blocks -%}
             {%- assign item_number = forloop.index -%}
-            <li class="grid__item">
+
+            {% if slider_mode == 'slide-me-not' %}
+              <li class="grid__item">
+            {% else %}
+              <li id="Slide-{{ section.id }}-{{ forloop.index }}" class="grid__item slider__slide">
+            {% endif %}
                 <deferred-media class="g-video">
                     <button
                         id="Deferred-Poster-Modal-{{ video_block.settings.video_url.id }}-{{ item_number }}"
@@ -96,7 +123,18 @@
                 </deferred-media>
             </li>
             {%- endfor -%}
-        </ul>
+          </ul>
+          {%- if slider_mode != 'slide-me-not' -%}
+          <div class="slider-buttons no-js-hidden">
+              <button type="button" class="slider-button slider-button--prev" name="previous" aria-label="{{ 'general.slider.previous_slide' | t }}">{% render 'icon-caret' %}</button>
+              <button type="button" class="slider-button slider-button--next" name="next" aria-label="{{ 'general.slider.next_slide' | t }}">{% render 'icon-caret' %}</button>
+          </div>
+          {%- endif -%}
+
+          {% unless slider_mode == 'slide-me-not' %}
+            </slider-component>
+          {% endunless  %}
+        {%- endfor -%}
 
       </div>
     </div>
@@ -107,40 +145,6 @@
   "name": "🍊 Video",
   "tag": "section",
   "settings": [
-    {
-      "type": "header",
-      "content": "Grid Settings"
-    },
-    {
-      "type": "range",
-      "id": "columns_desktop",
-      "min": 1,
-      "max": 3,
-      "step": 1,
-      "default": 2,
-      "label": "Columns on Desktop",
-      "info": "Default Value is 3"
-    },
-    {
-      "type": "range",
-      "id": "columns_tablet",
-      "min": 1,
-      "max": 3,
-      "step": 1,
-      "default": 2,
-      "label": "Columns on Tablet",
-      "info": "Default Value is 2"
-    },
-    {
-      "type": "range",
-      "id": "columns_mobile",
-      "min": 1,
-      "max": 3,
-      "step": 1,
-      "default": 1,
-      "label": "Columns on Mobile",
-      "info": "Default Value is 1"
-    },
     {
       "type": "header",
       "content": "Section Padding"
@@ -201,6 +205,71 @@
           "id": "subtitle",
           "label": "Subtitle",
           "default": "Mus mauris vitae ultricies leo. Ac feugiat sed lectus vestibulum lacus laoreet non curabitur."
+        }
+      ]
+    },
+    {
+      "type": "slider",
+      "name": "Slider",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "header",
+          "content": "Slider Settings"
+        },
+        {
+          "type": "header",
+          "content": "Grid Settings"
+        },
+        {
+          "type": "range",
+          "id": "columns_desktop",
+          "min": 1,
+          "max": 3,
+          "step": 1,
+          "default": 2,
+          "label": "Columns on Desktop",
+          "info": "Default Value is 3"
+        },
+        {
+          "type": "range",
+          "id": "columns_tablet",
+          "min": 1,
+          "max": 3,
+          "step": 1,
+          "default": 2,
+          "label": "Columns on Tablet",
+          "info": "Default Value is 2"
+        },
+        {
+          "type": "range",
+          "id": "columns_mobile",
+          "min": 1,
+          "max": 3,
+          "step": 1,
+          "default": 1,
+          "label": "Columns on Mobile",
+          "info": "Default Value is 1"
+        },
+        {
+          "type": "select",
+          "id": "slider",
+          "label": "Slider",
+          "options": [
+            {
+              "value": "slide-me-not",
+              "label": "None"
+            },
+            {
+              "value": "everywhere",
+              "label": "Everywhere"
+            },
+            {
+              "value": "medium-down",
+              "label": "Medium Down"
+            }
+          ],
+          "default": "slide-me-not"
         }
       ]
     },
