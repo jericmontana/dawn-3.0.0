@@ -238,4 +238,22 @@
             }
         }
     }
+
+    // For Specific Styling
+    .g-card__info{
+        .g-card--title{
+            --font-heading-scale: 1.1;
+            text-align: center;
+            text-transform: uppercase;
+        }
+    }
+
+    .g-card__cta{
+        .btn--default{
+            color: rgb(var(--color-btn-bg));
+            background-color: rgb(var(--color-btn-bg-2));
+            border-color: rgb(var(--color-btn-bg-2));
+        }
+    }
+        
 }

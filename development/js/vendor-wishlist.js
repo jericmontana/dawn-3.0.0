@@ -33,7 +33,10 @@ document.addEventListener('shopify-wishlist:init-product-grid', (event) => {
       wishlistContainerUl.classList.toggle('hidden');
     }
   }
+  // For Second Image
+  tabularMultiple();
 });
+
 
 // document.addEventListener('shopify-wishlist:init-buttons', (event) => {
 //   // console.log('[Shopify Wishlist] Wishlist Buttons Loaded ✅', event.detail.wishlist);

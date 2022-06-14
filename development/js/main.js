@@ -1166,17 +1166,17 @@ const tabularMultiple = () => {
 }
 
 
-// For Adding Lines
-document.addEventListener('DOMContentLoaded', () => {
-    const lineButton = document.querySelector('.btn-lines');
-    const bodyTag = document.querySelector('body');
+// // For Adding Lines
+// document.addEventListener('DOMContentLoaded', () => {
+//     const lineButton = document.querySelector('.btn-lines');
+//     const bodyTag = document.querySelector('body');
 
-    // bodyTag.classList.toggle('lined');
+//     // bodyTag.classList.toggle('lined');
     
-    if(!lineButton) return;
-    lineButton.addEventListener('click', () => {
-        bodyTag.classList.toggle('lined');
-    })
-})
+//     if(!lineButton) return;
+//     lineButton.addEventListener('click', () => {
+//         bodyTag.classList.toggle('lined');
+//     })
+// })
 
 
