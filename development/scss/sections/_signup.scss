@@ -108,6 +108,12 @@
         }
     }
 
+    .section__header{
+        & *{
+            text-align: left;
+        }
+    }
+
     @include device('tablet'){
         .section__header{
             h2{

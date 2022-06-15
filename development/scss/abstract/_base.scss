@@ -116,32 +116,6 @@ $section_maxwidth: 1800px;
         margin-bottom: 1rem;
     }
 
-    // &--title{
-    //     // font-size: 28px;
-    //     font-weight: 700;
-    //     margin: 0px;
-    //     margin-bottom: 1rem;
-    //     color: rgb(var(--color-foreground));
-        
-    //     @include device('mobile'){
-    //         font-size: calc(var(--font-heading-scale) * 2rem);
-    //     }
-    // }
-
-    // &--subtitle{
-    //     font-size: 17px;
-    //     margin: 0px;
-    //     margin-bottom: 1rem;
-    //     color: rgba(var(--color-foreground), 0.75);
-    // }
-    
-    @include device('tablet-up'){
-    
-        // &--title{
-        //     font-size: 38px;
-        // }
-    
-    }
 
     @include device('desktop'){
     
@@ -149,6 +123,12 @@ $section_maxwidth: 1800px;
             margin-bottom: 30px;
         }
     
+    }
+
+    // For Specific Styling
+    & *{
+        color: rgb(var(--color-base-accent-2));
+        text-align: center;
     }
 
     // for Banner

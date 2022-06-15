@@ -35,14 +35,6 @@
     .jdgm-histogram__bar-content{
         background-color: rgba(var(--color-base-accent-2), 0.75) !important;
     }
-
-    // For Specific Styling
-    .section__header{
-        & *{
-            color: rgb(var(--color-base-accent-2));
-            text-align: center;
-        }
-    }
 }
 .review:not(.review-product){
     .jdgm-widget-actions-wrapper{
