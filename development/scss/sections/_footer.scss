@@ -68,6 +68,12 @@ footer.footer{
         flex-direction: column;
         position: relative;
 
+        img{
+            object-fit: cover;
+            object-position: center center;
+            margin-bottom: 2rem;
+        }
+
         svg{
             max-width: 70%;
         }

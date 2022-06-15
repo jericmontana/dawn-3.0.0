@@ -39,6 +39,22 @@
             background-color: rgb(var(--color-btn-lbl));
             border: 2px solid rgb(var(--color-btn-lbl));
           }
+      {% when 'background-2' %}
+        .footer{
+          background-color: rgb(var(--color-btn-bg-2));
+          border: 1rem solid rgb(var(--color-base-accent-2)) !important;
+          border-left: none !important;
+          border-right: none !important;
+          border-bottom: none !important;
+        }
+        .footer *{
+          color: rgb(var(--color-base-accent-2))!important;
+        }
+        .footer .newsletter-form__field-wrapper .btn{
+            color: rgb(var(--color-btn-lbl))!important;
+            background-color: rgb(var(--color-btn-bg));
+            border: 2px solid rgb(var(--color-btn-bg));
+        }
   {% endcase %}
 {%- endstyle -%}
 
@@ -134,8 +150,7 @@
                   {%- endif -%}
                 {%- when 'image' -%}
                   <div class="footer-block__details-content footer-block-image {{ block.settings.alignment }}">
-                    {%- unless block.settings.use_custom_snippet -%}
-                      {%- if block.settings.image != blank -%}
+                    {%- if block.settings.image != blank -%}
                       {%- assign image_size = block.settings.image_width -%}
                         {%- assign image_size_scale_by_two = block.settings.image_width | times: 2 -%}
                         <img
@@ -151,11 +166,7 @@
                       {%- else -%}
                         {{ 'image' | placeholder_svg_tag: 'placeholder-svg placeholder' }}
                       {%- endif -%}
-                    {%- else -%}
-                      {%- render 'logo-footer' -%}
-                    {%- endunless -%}
-                    
-                    
+
                     {%- if section.settings.show_social -%}
                         <ul class="footer__list-social list-unstyled list-social small-hide" role="list">
                           {%- if settings.social_twitter_link != blank -%}
@@ -550,12 +561,6 @@
       "type": "image",
       "name": "Image",
       "settings": [
-        {
-          "type": "checkbox",
-          "id": "use_custom_snippet",
-          "label": "Use Custom Snippet",
-          "default": true
-        },
         {
           "type": "image_picker",
           "id": "image",
