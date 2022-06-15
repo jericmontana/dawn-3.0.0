@@ -1,30 +1,35 @@
 {% assign use_as_default_padding = settings.use_as_default_padding %}
 {%- style -%}
     {%- if use_as_default_padding -%}
-        .section--page-banner .section-{{ section.id }}-padding {
-            padding-top: {{ settings.padding_top | times: 0.75 | round: 0 }}px !important;
-            padding-bottom: {{ settings.padding_bottom | times: 0.75 | round: 0 }}px !important;
-        }
+      .page-banner--{{ section.id }} .section__container {
+        padding-top: {{ settings.padding_top | times: 0.75 | round: 0 }}px !important;
+        padding-bottom: {{ settings.padding_bottom | times: 0.75 | round: 0 }}px !important;
+      }
 
-        @media screen and (min-width: 750px) {
-            .section--page-banner .section-{{ section.id }}-padding {
-                padding-top: {{ settings.padding_top }}px !important;
-                padding-bottom: {{ settings.padding_bottom }}px !important;
-            }
+      @media screen and (min-width: 750px) {
+        .page-banner--{{ section.id }} .section__container {
+          padding-top: {{ settings.padding_top }}px !important;
+          padding-bottom: {{ settings.padding_bottom }}px !important;
         }
+      }
     {%- endif -%}
 
-    .section--page-banner .section-{{ section.id }}-bg-contaier {
+    .page-banner .section__bg {
         --color-foreground: {{ settings.fg_color.red }},{{ settings.fg_color.green }},{{ settings.fg_color.blue }};
         --color-background: {{ settings.bg_color.red }},{{ settings.bg_color.green }},{{ settings.bg_color.blue }};
         {% if settings.bg_image != blank %}background-image: url('{{ settings.bg_image | image_url }}');{% endif %}
         background-color: {{ settings.bg_color }};
         background-blend-mode: {{ settings.bg_blend }};
     }
+    .page-banner .section__container {
+        --color-foreground: {{ settings.fg_color.red }},{{ settings.fg_color.green }},{{ settings.fg_color.blue }};
+        --color-background: {{ settings.bg_color.red }},{{ settings.bg_color.green }},{{ settings.bg_color.blue }};
+    }
 {%- endstyle -%}
 
-<div class="section section--page-banner section--page-banner-{{ section.id }}">
-    <div class="section__bg-container section-{{ section.id }}-bg-contaier section-{{ section.id }}-padding">
+<div class="page-banner page-banner--{{ section.id }} section-with-bg">
+    <div class="section__bg"></div>
+    <div class="section__container">
         <div class="page-width">
 
             {%- assign breadcrumb = section.blocks | where: 'type', 'breadcrumb' -%}
@@ -52,14 +57,11 @@
                 {% endcase %}
                 <div class="section__header {% if template_name == 'article' %}section__header--article{% endif %} center">
                     {% if block.settings.title != blank %}
-                        <h1 class="h1 section__header--title {% if block.settings.title_uppercase %}uppercase{% endif %}">{{ block.settings.title | escape }}</h1>
+                        <h1 class="h1 {% if block.settings.title_uppercase %}uppercase{% endif %}">{{ block.settings.title | escape }}</h1>
                     {% else %}
-                        <h1 class="h1 section__header--title {% if block.settings.title_uppercase %}uppercase{% endif %}">{{ dynamic_title }}</h1>
+                        <h1 class="h1 {% if block.settings.title_uppercase %}uppercase{% endif %}">{{ dynamic_title }}</h1>
                     {% endif %}
-
-                    {% unless block.settings.subtitle == blank %}
-                        <p class="section__header--subtitle">{{ block.settings.subtitle | escape }}</p>
-                    {% endunless %}
+                        <p class="h3">{{ block.settings.subtitle | escape }}</p>
 
                     {% if template_name == 'article' %}
                       <div class="section__header--article-info">
@@ -113,7 +115,7 @@
 
 {% schema %}
 {
-  "name": "🔰 Page Banner",
+  "name": "🍊 Page Banner",
   "tag": "section",
   "settings": [
 
@@ -155,7 +157,8 @@
   ],
   "presets": [
     {
-      "name": "🔰 Page Banner",
+      "name": "🍊 Page Banner",
+      "category": "a",
       "blocks": [
         {
           "type": "heading"
