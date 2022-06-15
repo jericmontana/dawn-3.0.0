@@ -109,7 +109,19 @@
   </symbol>
 </svg>
 <{% if section.settings.enable_sticky_header %}sticky-header{% else %}div{% endif %} class="header-wrapper color-{{ section.settings.color_scheme }} gradient{% if section.settings.show_line_separator %} header-wrapper--border-bottom{% endif %}">
-  {% comment %} <div class="btn btn--default btn--xs btn--round-corner btn-lines" style="margin: 1rem auto">Line</div> {% endcomment %}
+  {% comment %} For Displaying Lines {% endcomment %}
+  {% comment %} <div class="btn btn--default btn--xs btn--round-corner btn-lines" style="margin: 1rem auto">Line</div>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const lineButton = document.querySelector('.btn-lines');
+      const bodyTag = document.querySelector('body');
+      if(!lineButton) return;
+      lineButton.addEventListener('click', () => {
+          bodyTag.classList.toggle('lined');
+      })
+    })
+  </script> {% endcomment %}
+
   <header class="header header--{{ section.settings.logo_position }} page-width{% if section.settings.menu != blank %} header--has-menu{% endif %}">  
     {%- if section.settings.menu != blank -%}
       <header-drawer data-breakpoint="tablet">
@@ -184,6 +196,22 @@
                         {%- endif -%}
                       </li>
                     {%- endfor -%}
+                    {% comment %} For Signup Button {% endcomment %}
+                    <li>
+                      <div class="menu-drawer__menu-item list-menu__item">
+                        {%- render 'button-signup-7923216',
+                          btn_action: 'open-popup',
+                          btn_label: section.settings.btn_label,
+                          btn_link: section.settings.btn_link,
+                          btn_size: 'default',
+                          hover_effect: 'lighten',
+                          icon_type: 'none',
+                          round_corner: false,
+                          shadow_effect: false,
+                          auto_width: false
+                        -%}
+                      </div>
+                    </li>
                   </ul>
                 </nav>
                 <div class="menu-drawer__utility-links">
@@ -438,7 +466,7 @@
           round_corner: false,
           shadow_effect: false,
           auto_width: false
-      -%}
+        -%}
       </nav>
     {%- endif -%}
 
