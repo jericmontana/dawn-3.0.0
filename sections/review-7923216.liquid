@@ -60,7 +60,7 @@
                       </div>
                     {%- else -%}
                       <div id='judgeme_product_reviews' class='jdgm-widget jdgm-review-widget' data-product-title='{{ product.title | escape }}' data-id='{{ product.id }}'
-                        data-from-snippet='{% if concierge_install != nil  %}{{ concierge_install }}{% else %}true{% endif %}'
+                        data-from-snippet='{% if concierge_install != nil %}{{ concierge_install }}{% else %}true{% endif %}'
                         data-auto-install='{% if auto_install != nil %}{{ auto_install }}{% else %}false{% endif %}'>
                           {{ product.metafields.judgeme.widget }}
                       </div>
@@ -142,23 +142,23 @@
       ]
     },
     {
-        "type": "review",
-        "name": "Review",
-        "limit": 1,
-        "settings": [
-          {
-            "type": "checkbox",
-            "id": "all_products",
-            "label": "All Products",
-            "default": true
-          },
-          {
-            "type": "product",
-            "id": "product",
-            "label": "Select Product"
-          }
-        ]
-      }
+      "type": "review",
+      "name": "Review",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "checkbox",
+          "id": "all_products",
+          "label": "All Products",
+          "default": true
+        },
+        {
+          "type": "product",
+          "id": "product",
+          "label": "Select Product"
+        }
+      ]
+    }
   ],
   "presets": [
     {
@@ -169,7 +169,7 @@
           "type": "header"
         },
         {
-            "type": "review"
+          "type": "review"
         }
       ]
     }

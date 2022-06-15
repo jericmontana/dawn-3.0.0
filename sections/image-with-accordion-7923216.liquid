@@ -22,7 +22,6 @@
 {%- assign image_blocks = section.blocks | where: 'type', 'image' -%}
 
 {%- liquid
-    assign background_url = section.settings.image | image_url
 -%}
 
 <div class="image-with-accordion image-with-accordion--{{ section.id }} {% if section.settings.bg_image != blank %}section-with-bg{% endif %}">
