@@ -6,21 +6,21 @@
         "text_featured_review": {
           "type": "text_featured_review",
           "settings": {
-            "testimony": "<p>Ultricies litora accumsan hac finibus auctor ante. Molestie ornare primis eleifend pharetra pulvinar potenti risus magna consequat.</p>",
-            "customer_name": "<p>— cutomer name, ShopName verified customer</p>"
+            "testimony": "<p>Ultricies litora accumsan hac finibus auctor ante. Molestie ornare primis eleifend pharetra pulvinar potenti risus magna consequat.<\/p>",
+            "customer_name": "<p>— cutomer name, ShopName verified customer<\/p>"
           }
         },
         "richtext_copy": {
           "type": "richtext_copy",
           "settings": {
-            "richtext": "<p>Tristique velit tincidunt eget conubia euismod sapien eleifend congue lobortis. Mus mollis platea velit quis ligula porttitor dapibus parturient rutrum si.</p>"
+            "richtext": "<p>Tristique velit tincidunt eget conubia euismod sapien eleifend congue lobortis. Mus mollis platea velit quis ligula porttitor dapibus parturient rutrum si.<\/p>"
           }
         },
         "popup": {
           "type": "popup",
           "settings": {
             "label": "Popup Label",
-            "richtext": "<p>Sem condimentum vestibulum imperdiet felis euismod elit est. Orci duis tellus sem ut tempus lobortis leo.</p>"
+            "richtext": "<p>Sem condimentum vestibulum imperdiet felis euismod elit est. Orci duis tellus sem ut tempus lobortis leo.<\/p>"
           }
         },
         "custom_variant_picker": {
@@ -66,29 +66,29 @@
         "image": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/Before_and_After.png",
+            "image": "shopify:\/\/shop_images\/Before_and_After.png",
             "image_first": false
           }
         },
         "richtext_1": {
           "type": "richtext",
           "settings": {
-            "title": "<p>Nullam si a erat</p>",
-            "description": "<p>Hendrerit parturient tellus duis netus nibh lorem velit ullamcorper bibendum sociosqu primis convallis sollicitudin</p>"
+            "title": "<p>Nullam si a erat<\/p>",
+            "description": "<p>Hendrerit parturient tellus duis netus nibh lorem velit ullamcorper bibendum sociosqu primis convallis sollicitudin<\/p>"
           }
         },
         "richtext_2": {
           "type": "richtext",
           "settings": {
-            "title": "<p>Nullam si a erat</p>",
-            "description": "<p>Hendrerit parturient tellus duis netus nibh lorem velit ullamcorper bibendum sociosqu primis convallis sollicitudin</p>"
+            "title": "<p>Nullam si a erat<\/p>",
+            "description": "<p>Hendrerit parturient tellus duis netus nibh lorem velit ullamcorper bibendum sociosqu primis convallis sollicitudin<\/p>"
           }
         },
         "richtext_3": {
           "type": "richtext",
           "settings": {
-            "title": "<p>Nullam si a erat</p>",
-            "description": "<p>Hendrerit parturient tellus duis netus nibh lorem velit ullamcorper bibendum sociosqu primis convallis sollicitudin</p>"
+            "title": "<p>Nullam si a erat<\/p>",
+            "description": "<p>Hendrerit parturient tellus duis netus nibh lorem velit ullamcorper bibendum sociosqu primis convallis sollicitudin<\/p>"
           }
         }
       },
@@ -181,28 +181,28 @@
           "type": "accordion",
           "settings": {
             "title": "Consectetuer aptent lorem ut",
-            "content": "<p>Adipiscing mus sociosqu facilisi cursus torquent class nulla maecenas vehicula aptent congue.</p><p>Fringilla penatibus purus scelerisque condimentum gravida dis efficitur himenaeos.</p>"
+            "content": "<p>Adipiscing mus sociosqu facilisi cursus torquent class nulla maecenas vehicula aptent congue.<\/p><p>Fringilla penatibus purus scelerisque condimentum gravida dis efficitur himenaeos.<\/p>"
           }
         },
         "accordion_2": {
           "type": "accordion",
           "settings": {
             "title": "Consectetuer aptent lorem ut",
-            "content": "<p>Adipiscing mus sociosqu facilisi cursus torquent class nulla maecenas vehicula aptent congue.</p><p>Fringilla penatibus purus scelerisque condimentum gravida dis efficitur himenaeos.</p>"
+            "content": "<p>Adipiscing mus sociosqu facilisi cursus torquent class nulla maecenas vehicula aptent congue.<\/p><p>Fringilla penatibus purus scelerisque condimentum gravida dis efficitur himenaeos.<\/p>"
           }
         },
         "accordion_3": {
           "type": "accordion",
           "settings": {
             "title": "Consectetuer aptent lorem ut",
-            "content": "<p>Adipiscing mus sociosqu facilisi cursus torquent class nulla maecenas vehicula aptent congue.</p><p>Fringilla penatibus purus scelerisque condimentum gravida dis efficitur himenaeos.</p>"
+            "content": "<p>Adipiscing mus sociosqu facilisi cursus torquent class nulla maecenas vehicula aptent congue.<\/p><p>Fringilla penatibus purus scelerisque condimentum gravida dis efficitur himenaeos.<\/p>"
           }
         },
         "accordion_4": {
           "type": "accordion",
           "settings": {
             "title": "Consectetuer aptent lorem ut",
-            "content": "<p>Adipiscing mus sociosqu facilisi cursus torquent class nulla maecenas vehicula aptent congue.</p><p>Fringilla penatibus purus scelerisque condimentum gravida dis efficitur himenaeos.</p>"
+            "content": "<p>Adipiscing mus sociosqu facilisi cursus torquent class nulla maecenas vehicula aptent congue.<\/p><p>Fringilla penatibus purus scelerisque condimentum gravida dis efficitur himenaeos.<\/p>"
           }
         },
         "image": {
@@ -220,7 +220,7 @@
         "image"
       ],
       "settings": {
-        "bg_image": "shopify://shop_images/Accordion.jpg",
+        "bg_image": "shopify:\/\/shop_images\/Accordion.jpg",
         "use_as_default_padding": false,
         "padding_top": 36,
         "padding_bottom": 36
@@ -229,11 +229,11 @@
     "video": {
       "type": "video-7923216",
       "blocks": {
-        "header": {
+        "3379703c-d9c4-4f9c-bc47-312e6d9899b5": {
           "type": "header",
           "settings": {
-            "title": "Product Related Videos",
-            "title_uppercase": false,
+            "title": "Products Related Video",
+            "title_uppercase": true,
             "subtitle": ""
           }
         },
@@ -249,38 +249,38 @@
         "video_1": {
           "type": "video",
           "settings": {
-            "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+            "video_url": "https:\/\/www.youtube.com\/watch?v=CrIPy11VWl8",
             "description": "",
-            "thumbnail": "shopify://shop_images/YT_Video_Thumbnail.png"
+            "thumbnail": "shopify:\/\/shop_images\/Lavin_Galicha.jpg"
           }
         },
         "video_2": {
           "type": "video",
           "settings": {
-            "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+            "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
             "description": "",
-            "thumbnail": "shopify://shop_images/YT_Video_Thumbnail.png"
+            "thumbnail": "shopify:\/\/shop_images\/YT_Video_Thumbnail.png"
           }
         },
         "b8e11e89-074c-4646-baf8-e17fc6492206": {
           "type": "video",
           "settings": {
-            "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+            "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
             "description": "",
-            "thumbnail": "shopify://shop_images/YT_Video_Thumbnail.png"
+            "thumbnail": "shopify:\/\/shop_images\/YT_Video_Thumbnail.png"
           }
         },
         "4fd237cc-7caa-465f-8558-ce1b1fa3eda2": {
           "type": "video",
           "settings": {
-            "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+            "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
             "description": "",
-            "thumbnail": "shopify://shop_images/YT_Video_Thumbnail.png"
+            "thumbnail": "shopify:\/\/shop_images\/YT_Video_Thumbnail.png"
           }
         }
       },
       "block_order": [
-        "header",
+        "3379703c-d9c4-4f9c-bc47-312e6d9899b5",
         "slider",
         "video_1",
         "video_2",
@@ -290,6 +290,44 @@
       "settings": {
         "use_as_default_padding": false,
         "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "16554533030d0f81f2": {
+      "type": "video-7923216",
+      "blocks": {
+        "c712a137-05e1-4057-9d66-26d085ebbb2e": {
+          "type": "slider",
+          "settings": {
+            "columns_desktop": 2,
+            "columns_tablet": 2,
+            "columns_mobile": 1,
+            "slider": "slide-me-not"
+          }
+        },
+        "1655453302316422ed-1": {
+          "type": "video",
+          "settings": {
+            "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+            "description": ""
+          }
+        },
+        "1655453302316422ed-2": {
+          "type": "video",
+          "settings": {
+            "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+            "description": ""
+          }
+        }
+      },
+      "block_order": [
+        "c712a137-05e1-4057-9d66-26d085ebbb2e",
+        "1655453302316422ed-1",
+        "1655453302316422ed-2"
+      ],
+      "settings": {
+        "use_as_default_padding": true,
+        "padding_top": 0,
         "padding_bottom": 36
       }
     },
@@ -326,8 +364,8 @@
         "header": {
           "type": "header",
           "settings": {
-            "title": "<p>Join Our VIP Club</p><p>And Get 10% OFF</p>",
-            "subtitle": "<p>Mus mauris vitae ultricies leo.</p><p>Ac feugiat sed lectus vestibulum lacus laoreet non curabitur.</p>"
+            "title": "<p>Join Our VIP Club<\/p><p>And Get 10% OFF<\/p>",
+            "subtitle": "<p>Mus mauris vitae ultricies leo.<\/p><p>Ac feugiat sed lectus vestibulum lacus laoreet non curabitur.<\/p>"
           }
         },
         "form": {
@@ -345,7 +383,7 @@
         "form"
       ],
       "settings": {
-        "bg_image": "shopify://shop_images/Newsletter.jpg",
+        "bg_image": "shopify:\/\/shop_images\/Newsletter.jpg",
         "use_as_default_padding": false,
         "padding_top": 36,
         "padding_bottom": 36
@@ -390,6 +428,7 @@
     "before_after",
     "image_accordion",
     "video",
+    "16554533030d0f81f2",
     "review",
     "email_signup",
     "instafeed",
