@@ -305,6 +305,14 @@
             "slider": "slide-me-not"
           }
         },
+        "1655453302316422ed-2": {
+          "type": "video",
+          "settings": {
+            "video_url": "https:\/\/www.youtube.com\/watch?v=ts6AJv_cZxs",
+            "description": "",
+            "thumbnail": "shopify:\/\/shop_images\/Jea_Chan.jpg"
+          }
+        },
         "1655453302316422ed-1": {
           "type": "video",
           "settings": {
@@ -312,19 +320,12 @@
             "description": "",
             "thumbnail": "shopify:\/\/shop_images\/Alyza_Montero.jpg"
           }
-        },
-        "1655453302316422ed-2": {
-          "type": "video",
-          "settings": {
-            "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
-            "description": ""
-          }
         }
       },
       "block_order": [
         "c712a137-05e1-4057-9d66-26d085ebbb2e",
-        "1655453302316422ed-1",
-        "1655453302316422ed-2"
+        "1655453302316422ed-2",
+        "1655453302316422ed-1"
       ],
       "settings": {
         "use_as_default_padding": true,
