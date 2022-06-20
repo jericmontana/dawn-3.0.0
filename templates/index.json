@@ -14,8 +14,9 @@
         "image_2": {
           "type": "image",
           "settings": {
-            "product": "",
-            "color_dot": ""
+            "image": "shopify:\/\/shop_images\/Collagen_Maxx.png",
+            "product": "meow",
+            "color_dot": "#a60041"
           }
         },
         "image_3": {
