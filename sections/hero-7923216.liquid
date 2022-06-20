@@ -16,88 +16,98 @@
     {%- endif -%}
 {%- endstyle -%}
 
+{%- assign image_blocks = section.blocks | where: 'type', 'image' -%}
 
 <div class="hero hero--{{ section.id }} section-with-bg">
-  {%- if section.settings.bg_image -%}
-    {% capture image_sizes %}
-      (min-width: 1800px) 1800px, ((min-width: 990px) and (max-width: 1799px)) 100vw, ((min-width: 750px) and (max-width: 989px)) 100vw, (max-width: 749px) 100vw
-    {% endcapture %}
-    <div class="section__bg">
-      <img
-        class="small-hide"
-        srcset="{%- if section.settings.bg_image.width >= 375 -%}{{ section.settings.bg_image | image_url: width: 375 }} 375w,{%- endif -%}
-          {%- if section.settings.bg_image.width >= 550 -%}{{ section.settings.bg_image | image_url: width: 550 }} 550w,{%- endif -%}
-          {%- if section.settings.bg_image.width >= 750 -%}{{ section.settings.bg_image | image_url: width: 750 }} 750w,{%- endif -%}
-          {%- if section.settings.bg_image.width >= 990 -%}{{ section.settings.bg_image | image_url: width: 990 }} 990w,{%- endif -%}
-          {%- if section.settings.bg_image.width >= 1100 -%}{{ section.settings.bg_image | image_url: width: 1100 }} 1100w,{%- endif -%}
-          {%- if section.settings.bg_image.width >= 1500 -%}{{ section.settings.bg_image | image_url: width: 1500 }} 1500w,{%- endif -%}
-          {%- if section.settings.bg_image.width >= 1780 -%}{{ section.settings.bg_image | image_url: width: 1780 }} 1780w,{%- endif -%}
-          {%- if section.settings.bg_image.width >= 1800 -%}{{ section.settings.bg_image | image_url: width: 1800 }} 1800w,{%- endif -%}
-          {%- if section.settings.bg_image.width >= 2000 -%}{{ section.settings.bg_image | image_url: width: 2000 }} 2000w,{%- endif -%}
-          {{ section.settings.bg_image | image_url }} {{ section.settings.bg_image.width }}w"
-        src="{{ section.settings.bg_image | image_url: width: 1800 }}"
-        sizes="{{ image_sizes | strip }}"
-        alt="{{ section.settings.bg_image.alt | escape }}"
-        title="{{ section.settings.bg_image.alt | escape }}"
-        loading="lazy"
-        width="{{ section.settings.bg_image.width }}"
-        height="{{ section.settings.bg_image.height }}"
-        draggable="false"
-      >
-    </div>
-  {%- endif -%}
-    <div class="section__container">
-        <div class="page-width">
-            <div class="grid grid--1-col grid--2-col-desktop grid--2-col-tablet">
-                <div class="grid__item">
-                    <div class="hero__copy">
-                        <h2 class="title uppercase">{{ section.settings.title | escape }}</h2>
-                        <div class="subtitle">{{ section.settings.subtitle }}</div>
+  <div class="section__bg"></div>
+  <div class="section__container">
+    <div class="page-width">
+      <div class="grid grid--1-col grid--2-col-desktop grid--2-col-tablet">
+          <div class="grid__item grid__item--copy">
+            <div class="hero__copy">
+              <h2 class="title uppercase">{{ section.settings.title | escape }}</h2>
+              <div class="subtitle">{{ section.settings.subtitle }}</div>
 
-                        {%- render 'button',
-                            btn_label: section.settings.btn_label,
-                            btn_link: section.settings.btn_link,
-                            btn_size: "default",
-                            hover_effect: "lighten",
-                            icon_type: "none",
-                            round_corner: section.settings.round_corner,
-                            shadow_effect: section.settings.shadow_effect,
-                            auto_width: section.settings.auto_width
-                        -%}
-                    
-                    </div>
+              <div class="hero__button">
+                {%- for image_block in image_blocks -%}
+                  {%- assign for_loop_index = forloop.index -%}
+                  {%- assign product = image_block.settings.product -%}
+                  <div class="tabcontent tabcontent-{{ section.id }} tabcontent-{{ section.id }}-{{ for_loop_index }}">
+                    <div class="button--wrapper">
+                      {%- render 'button',
+                        btn_label: section.settings.btn_label,
+                        btn_link: product.url,
+                        btn_size: "default",
+                        hover_effect: "lighten",
+                        icon_type: "none",
+                        round_corner: section.settings.round_corner,
+                        shadow_effect: section.settings.shadow_effect,
+                        auto_width: section.settings.auto_width
+                      -%}
+                  </div>
                 </div>
-                <div class="grid__item">
-                    <div class="hero__image medium-hide large-up-hide">
-                    {% capture image_sizes_second %}
-                      (min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 | divided_by: 2 }}px, (min-width: 750px) calc((100vw - 130px) / 2), calc((100vw - 50px) / 2)
-                    {% endcapture %}
-                    {%- if section.settings.image != blank -%}
-                        <img
-                            srcset="{%- if section.settings.image.width >= 165 -%}{{ section.settings.image | image_url: width: 165 }} 165w,{%- endif -%}
-                            {%- if section.settings.image.width >= 360 -%}{{ section.settings.image | image_url: width: 360 }} 360w,{%- endif -%}
-                            {%- if section.settings.image.width >= 535 -%}{{ section.settings.image | image_url: width: 535 }} 535w,{%- endif -%}
-                            {%- if section.settings.image.width >= 600 -%}{{ section.settings.image | image_url: width: 600 }} 600w,{%- endif -%}
-                            {%- if section.settings.image.width >= 800 -%}{{ section.settings.image | image_url: width: 800 }} 800w,{%- endif -%}
-                            {%- if section.settings.image.width >= 1070 -%}{{ section.settings.image | image_url: width: 1070 }} 1070w,{%- endif -%}
-                            {%- if section.settings.image.width >= 1500 -%}{{ section.settings.image | image_url: width: 1500 }} 1500w,{%- endif -%}
-                            {{ section.settings.image | image_url }} {{ section.settings.image.width }}w"
-                            src="{{ section.settings.image | image_url: width: 600 }}"
-                            sizes="{{ image_sizes_second | strip }}"
-                            alt="{{ section.settings.image.alt | escape }}"
-                            title="{{ section.settings.image.alt | escape }}"
-                            loading="lazy"
-                            width="{{ section.settings.image.width }}"
-                            height="{{ section.settings.image.height }}"
-                        >
-                    {%- else -%}
-                        {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
-                    {%- endif -%}
-                    </div>
-                </div>
+                {%- endfor -%}
+              </div>
             </div>
-        </div>
+          </div>
+          <div class="grid__item grid__item--image">
+            <div class="hero__image">
+              {% capture image_sizes %}
+                (min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 | divided_by: 2 }}px, (min-width: 750px) calc((100vw - 130px) / 2), calc((100vw - 50px))
+              {% endcapture %}
+              {%- for image_block in image_blocks -%}
+              {%- assign for_loop_index = forloop.index -%}
+              <div class="tabcontent tabcontent-{{ section.id }} tabcontent-{{ section.id }}-{{ for_loop_index }}">
+                <div class="image--wrapper">
+                {%- if image_block.settings.image != blank -%}
+                  {%- liquid
+                    if image_block.settings.image.alt == blank
+                      assign image_alt = image_block.settings.product.title
+                    else
+                      assign image_alt = block.settings.image.alt
+                    endif
+                  -%}
+                  <img
+                    srcset="{%- if image_block.settings.image.width >= 165 -%}{{ image_block.settings.image | image_url: width: 165 }} 165w,{%- endif -%}
+                    {%- if image_block.settings.image.width >= 360 -%}{{ image_block.settings.image | image_url: width: 360 }} 360w,{%- endif -%}
+                    {%- if image_block.settings.image.width >= 535 -%}{{ image_block.settings.image | image_url: width: 535 }} 535w,{%- endif -%}
+                    {%- if image_block.settings.image.width >= 600 -%}{{ image_block.settings.image | image_url: width: 600 }} 600w,{%- endif -%}
+                    {%- if image_block.settings.image.width >= 800 -%}{{ image_block.settings.image | image_url: width: 800 }} 800w,{%- endif -%}
+                    {%- if image_block.settings.image.width >= 1070 -%}{{ image_block.settings.image | image_url: width: 1070 }} 1070w,{%- endif -%}
+                    {%- if image_block.settings.image.width >= 1500 -%}{{ image_block.settings.image | image_url: width: 1500 }} 1500w,{%- endif -%}
+                    {{ image_block.settings.image | image_url }} {{ image_block.settings.image.width }}w"
+                    src="{{ image_block.settings.image | image_url: width: 600 }}"
+                    sizes="{{ image_sizes | strip }}"
+                    alt="{{ image_alt | escape }}"
+                    title="{{ image_alt | escape }}"
+                    width="{{ image_block.settings.image.width }}"
+                    height="{{ image_block.settings.image.height }}"
+                    draggable="false"
+                  >
+                {%- else -%}
+                  {%- render 'no-image' -%}
+                {%- endif -%}
+                </div>
+              </div>
+              {%- endfor -%}
+            </div>
+            <div class="hero__controls">
+              {%- for image_block in image_blocks -%}
+              {%- assign for_loop_index = forloop.index -%}
+                <div class="tab-control tab-control--single tab-control--single-{{ section.id }} {% if forloop.first %}active{% endif %}"
+                  data-tabcontrolclass='tab-control--single-{{ section.id }}'
+                  data-tabcontentclass='tabcontent-{{ section.id }}'
+                  data-tabtargetclass='tabcontent-{{ section.id }}-{{ for_loop_index }}'
+                  role="button"
+                  style="background-color: {{ image_block.settings.color_dot }}"
+                  title="{{ image_block.settings.product.title | escape }}">
+                </div>
+              {%- endfor-%}
+            </div>
+          </div>
+      </div>
     </div>
+  </div>
 </div>
 
 {% schema %}
@@ -116,16 +126,6 @@
       "id": "subtitle",
       "label": "Subtitle",
       "default": "<p>Nullam viverra cras magnis dapibus iaculis quis aliquet auctor imperdiet lectus felis venenatis</p>"
-    },
-    {
-      "type": "image_picker",
-      "id": "bg_image",
-      "label": "BG Image"
-    },
-    {
-      "type": "image_picker",
-      "id": "image",
-      "label": "Image"
     },
     {
       "type": "header",
@@ -194,10 +194,44 @@
       "info": "Default Value is 36"
     }
   ],
+  "blocks":[
+    {
+      "type": "image",
+      "name": "Image",
+      "settings":[
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "product",
+          "id": "product",
+          "label": "Product"
+        },
+        {
+          "type": "color",
+          "id": "color_dot",
+          "label": "Dot Color"
+        }
+      ]
+    }
+  ],
   "presets": [
     {
       "name": "🍊 Hero",
-      "category": "a"
+      "category": "a",
+      "blocks": [
+        {
+          "type": "image"
+        },
+        {
+          "type": "image"
+        },
+        {
+          "type": "image"
+        }
+      ]
     }
   ]
 }

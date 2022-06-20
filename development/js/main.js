@@ -1163,6 +1163,35 @@ const tabularMultiple = () => {
 
     }))
   }
+
+   // For Single Tab Targeting
+   const tabControlSingle = document.querySelectorAll('.tab-control--single');
+   if(tabControlSingle){
+    tabControlSingle.forEach(e => e.addEventListener('click', () => {
+      
+      
+
+      const controlClass = document.querySelectorAll('.' + e.dataset.tabcontrolclass);
+      const contentClass = document.querySelectorAll('.' + e.dataset.tabcontentclass);
+      const targetContentClass = document.querySelectorAll('.' + e.dataset.tabtargetclass);
+
+      if(controlClass){
+        controlClass.forEach(e => e.classList.remove('active'));
+      }
+
+      e.classList.add('active');
+      
+      if(contentClass){
+        contentClass.forEach(e => e.style.display = 'none');
+      }
+      if(targetContentClass){
+        targetContentClass.forEach(e => e.style.display = 'block');
+      }
+      
+    }))
+   }
+
+
 }
 
 

@@ -14,11 +14,11 @@
         background-color: rgb(var(--color-section-bg));
     }
 
-    @include device('tablet-up'){
-        .section__bg{
-            height: max-content;
-        }
-    }
+    // @include device('tablet'){
+    //     .section__bg{
+    //         height: max-content;
+    //     }
+    // }
 
 
     .section__container{
@@ -41,9 +41,29 @@
         .grid{
             width: 100%;
         }
+
+        .grid__item--image{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+
+            @include device('mobile'){
+                &{
+                    flex-direction: column;
+                }
+            }
+        }
+
+        .grid__item--copy{
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+        }
     }
 
     .hero__copy{
+        width: 100%;
 
         @include device('tablet-up'){
             &{
@@ -83,6 +103,82 @@
 
             @include device('desktop'){
                 margin-top: 8rem;
+            }
+        }
+    }
+
+    .hero__button{
+        display: grid;
+
+        .tabcontent{
+            grid-area: 1/1;
+        }
+
+        .tabcontent:not(:first-of-type){
+            display: none;
+        }
+    }
+
+    .hero__image{
+        display: grid;
+
+        .tabcontent{
+            grid-area: 1/1;
+        }
+
+        .tabcontent:not(:first-of-type){
+            display: none;
+        }
+
+        .image--wrapper{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            img{
+                object-fit: cover;
+            }
+        }
+
+    }
+
+    .hero__controls{
+        padding: 1rem;
+
+        @include device('mobile'){
+            &{
+                width: 100%;
+                max-width: fit-content;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: row;
+                margin-bottom: 2rem;
+            }
+        }
+
+        .tab-control{
+            display: block !important;
+            cursor: pointer;
+            width: 2rem;
+            height: 2rem;
+            border-radius: 50%;
+            background-color: rgb(var(--color-base-accent-2));
+
+            &:not(:last-of-type) {
+                margin-right: 1.4rem;
+            }
+
+            @include device('tablet-up'){
+                &:not(:last-of-type) {
+                    margin-bottom: 1.4rem;
+                }
+            }
+
+
+            &.active{
+                border: 3px solid rgb(var(--color-base-accent-2), 0.38);
+                transform: scale(1.14);
             }
         }
     }
