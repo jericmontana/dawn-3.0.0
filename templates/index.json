@@ -22,8 +22,9 @@
         "image_3": {
           "type": "image",
           "settings": {
+            "image": "shopify:\/\/shop_images\/Total_Flux.png",
             "product": "",
-            "color_dot": ""
+            "color_dot": "#8f280b"
           }
         }
       },
