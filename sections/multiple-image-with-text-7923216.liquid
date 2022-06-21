@@ -41,6 +41,26 @@
             {% capture image_sizes %}
               (min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 | divided_by: 2 }}px, (min-width: 750px) calc((100vw - 130px) / 2), calc((100vw - 50px) / 2)
             {% endcapture %}
+           
+            {%- if section.settings.image_bg != blank -%}
+            <img
+              srcset="{%- if section.settings.image_bg.width >= 165 -%}{{ section.settings.image_bg | image_url: width: 165 }} 165w,{%- endif -%}
+              {%- if section.settings.image_bg.width >= 360 -%}{{ section.settings.image_bg | image_url: width: 360 }} 360w,{%- endif -%}
+              {%- if section.settings.image_bg.width >= 535 -%}{{ section.settings.image_bg | image_url: width: 535 }} 535w,{%- endif -%}
+              {%- if section.settings.image_bg.width >= 750 -%}{{ section.settings.image_bg | image_url: width: 750 }} 750w,{%- endif -%}
+              {%- if section.settings.image_bg.width >= 1070 -%}{{ section.settings.image_bg | image_url: width: 1070 }} 1070w,{%- endif -%}
+              {%- if section.settings.image_bg.width >= 1500 -%}{{ section.settings.image_bg | image_url: width: 1500 }} 1500w,{%- endif -%}
+              {{ section.settings.image_bg | image_url }} {{ section.settings.image_bg.width }}w"
+              src="{{ section.settings.image_bg | image_url }}"
+              sizes="{{ image_sizes | strip }}"
+              alt="{{ image_alt | strip_html | escape }}"
+              title="{{ image_alt | strip_html | escape }}"
+              loading="lazy"
+              width="{{ section.settings.image_bg.width }}"
+              height="{{ section.settings.image_bg.height }}"
+              draggable="false"
+            >
+            {%- endif -%}
             {%- for block in image_with_text_blocks -%}
               <div class="tabcontent tabcontent-{{ section.id }} tabcontent-{{ section.id }}-{{ forloop.index }}">
                 <div class="image--wrapper">
@@ -109,6 +129,11 @@
       "label": "Image First",
       "default": true,
       "info": "Desktop Only"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_bg",
+      "label": "Images BG"
     },
     {
       "type": "header",
