@@ -284,7 +284,7 @@
         "form"
       ],
       "settings": {
-        "bg_image": "shopify:\/\/shop_images\/Newsletter.jpg",
+        "bg_image": "shopify:\/\/shop_images\/Newsletter_BG.jpg",
         "use_as_default_padding": false,
         "padding_top": 36,
         "padding_bottom": 36
