@@ -37,10 +37,19 @@
             z-index: 3;
 
             .slider-button{
-                height: 100%;
                 pointer-events: all;
+                padding: 0.14rem;
+                margin: 0.1rem;
+                
+                color: rgb(var(--color-base-accent-2));
+                background-color: rgba(var(--color-base-accent-2),0.14);
+
+                &[disabled='disabled']{
+                    color: rgba(var(--color-base-accent-2),0.5);
+                }
+                
                 svg{
-                    height: 1.14rem;
+                    height: 0.9rem;
                     width: auto;
                 }
             }
@@ -62,7 +71,7 @@
     .grid__item{
         display: grid;
 
-        deferred-media{
+        .g-video{
             grid-area: 1/1;
         }
         

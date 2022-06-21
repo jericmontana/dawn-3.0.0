@@ -101,11 +101,11 @@ slider-component {
   margin-bottom: 1rem;
 }
 
-@media (prefers-reduced-motion) {
-  .slider--everywhere {
-    scroll-behavior: auto;
-  }
-}
+// @media (prefers-reduced-motion) {
+//   .slider--everywhere {
+//     scroll-behavior: auto;
+//   }
+// }
 
 .slider.slider--everywhere .slider__slide {
   margin-bottom: 0;
