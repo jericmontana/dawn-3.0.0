@@ -187,20 +187,13 @@
         "slider": {
           "type": "slider",
           "settings": {
-            "columns_desktop": 3,
+            "columns_desktop": 2,
             "columns_tablet": 2,
             "columns_mobile": 1,
             "slider": "slide-me-not"
           }
         },
         "video_1": {
-          "type": "video",
-          "settings": {
-            "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
-            "description": ""
-          }
-        },
-        "video_2": {
           "type": "video",
           "settings": {
             "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
@@ -219,7 +212,6 @@
         "header",
         "slider",
         "video_1",
-        "video_2",
         "d245a7c9-8dcb-440f-8f62-3be11a04005c"
       ],
       "settings": {
