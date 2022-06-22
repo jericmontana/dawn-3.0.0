@@ -60,7 +60,7 @@
             "type": "link_list",
             "settings": {
               "heading": "Quick Links",
-              "menu": ""
+              "menu": "main-menu"
             }
           },
           "footer-2": {
