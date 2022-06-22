@@ -255,8 +255,8 @@
         "header": {
           "type": "header",
           "settings": {
-            "title": "<p>Join Oru VIP Club<\/p>",
-            "subtitle": "<p>Mus mauris vitae ultricies leo.<\/p><p>Ac feugiat sed lectus vestibulum lacus laoreet non curabitur.<\/p>"
+            "title": "<p><strong>JOIN OSWELL'S VIP CLUB & GET 10% OFF<\/strong><\/p><p><strong>ON YOUR FIRST PURCHASE.<\/strong><\/p>",
+            "subtitle": "<p>You'll also be the first one to get notified of<\/p><p>our promotions and new drops.<\/p>"
           }
         },
         "form": {
@@ -274,6 +274,7 @@
         "form"
       ],
       "settings": {
+        "bg_image": "shopify:\/\/shop_images\/Newsletter_BG.jpg",
         "use_as_default_padding": false,
         "padding_top": 36,
         "padding_bottom": 36
@@ -285,9 +286,9 @@
         "header": {
           "type": "heading",
           "settings": {
-            "title": "App Block",
-            "title_uppercase": false,
-            "subtitle": "Mus mauris vitae ultricies leo. Ac feugiat sed lectus vestibulum lacus laoreet non curabitur."
+            "title": "Feeling fresh with Oswell's products?",
+            "title_uppercase": true,
+            "subtitle": "Tag @oswellph #oswellph for  a chance to be featured"
           }
         }
       },
