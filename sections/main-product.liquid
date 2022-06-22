@@ -241,7 +241,7 @@
             {% assign product_option_size = product.options_with_values | size %}
             {%- if product_option_size > 1 -%}
               {%- unless product.has_only_default_variant -%}
-                {% render 'variant-picker', picker_type:'button' %}
+                {% render 'variant-picker', picker_type: 'button' %}
               {%- endunless -%}
             {%- else -%}
               <div class="custom-variant-picker">

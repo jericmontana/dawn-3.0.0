@@ -102,7 +102,7 @@
                   style="background-color: {{ image_block.settings.color_dot }}"
                   title="{{ image_block.settings.product.title | escape }}">
                 </div>
-              {%- endfor-%}
+              {%- endfor -%}
             </div>
           </div>
       </div>
@@ -194,11 +194,11 @@
       "info": "Default Value is 36"
     }
   ],
-  "blocks":[
+  "blocks": [
     {
       "type": "image",
       "name": "Image",
-      "settings":[
+      "settings": [
         {
           "type": "image_picker",
           "id": "image",

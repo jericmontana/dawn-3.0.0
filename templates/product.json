@@ -6,21 +6,21 @@
         "text_featured_review": {
           "type": "text_featured_review",
           "settings": {
-            "testimony": "<p>Ultricies litora accumsan hac finibus auctor ante. Molestie ornare primis eleifend pharetra pulvinar potenti risus magna consequat.<\/p>",
-            "customer_name": "<p>— cutomer name, ShopName verified customer<\/p>"
+            "testimony": "<p>Ultricies litora accumsan hac finibus auctor ante. Molestie ornare primis eleifend pharetra pulvinar potenti risus magna consequat.</p>",
+            "customer_name": "<p>— cutomer name, ShopName verified customer</p>"
           }
         },
         "richtext_copy": {
           "type": "richtext_copy",
           "settings": {
-            "richtext": "<p>Tristique velit tincidunt eget conubia euismod sapien eleifend congue lobortis. Mus mollis platea velit quis ligula porttitor dapibus parturient rutrum si.<\/p>"
+            "richtext": "<p>Tristique velit tincidunt eget conubia euismod sapien eleifend congue lobortis. Mus mollis platea velit quis ligula porttitor dapibus parturient rutrum si.</p>"
           }
         },
         "popup": {
           "type": "popup",
           "settings": {
             "label": "Popup Label",
-            "richtext": "<p>Sem condimentum vestibulum imperdiet felis euismod elit est. Orci duis tellus sem ut tempus lobortis leo.<\/p>"
+            "richtext": "<p>Sem condimentum vestibulum imperdiet felis euismod elit est. Orci duis tellus sem ut tempus lobortis leo.</p>"
           }
         },
         "custom_variant_picker": {
@@ -67,29 +67,29 @@
         "image": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Before_and_After.png",
+            "image": "shopify://shop_images/Before_and_After.png",
             "image_first": false
           }
         },
         "richtext_1": {
           "type": "richtext",
           "settings": {
-            "title": "<p>Nullam si a erat<\/p>",
-            "description": "<p>Hendrerit parturient tellus duis netus nibh lorem velit ullamcorper bibendum sociosqu primis convallis sollicitudin<\/p>"
+            "title": "<p>Nullam si a erat</p>",
+            "description": "<p>Hendrerit parturient tellus duis netus nibh lorem velit ullamcorper bibendum sociosqu primis convallis sollicitudin</p>"
           }
         },
         "richtext_2": {
           "type": "richtext",
           "settings": {
-            "title": "<p>Nullam si a erat<\/p>",
-            "description": "<p>Hendrerit parturient tellus duis netus nibh lorem velit ullamcorper bibendum sociosqu primis convallis sollicitudin<\/p>"
+            "title": "<p>Nullam si a erat</p>",
+            "description": "<p>Hendrerit parturient tellus duis netus nibh lorem velit ullamcorper bibendum sociosqu primis convallis sollicitudin</p>"
           }
         },
         "richtext_3": {
           "type": "richtext",
           "settings": {
-            "title": "<p>Nullam si a erat<\/p>",
-            "description": "<p>Hendrerit parturient tellus duis netus nibh lorem velit ullamcorper bibendum sociosqu primis convallis sollicitudin<\/p>"
+            "title": "<p>Nullam si a erat</p>",
+            "description": "<p>Hendrerit parturient tellus duis netus nibh lorem velit ullamcorper bibendum sociosqu primis convallis sollicitudin</p>"
           }
         }
       },
@@ -182,28 +182,28 @@
           "type": "accordion",
           "settings": {
             "title": "Consectetuer aptent lorem ut",
-            "content": "<p>Adipiscing mus sociosqu facilisi cursus torquent class nulla maecenas vehicula aptent congue.<\/p><p>Fringilla penatibus purus scelerisque condimentum gravida dis efficitur himenaeos.<\/p>"
+            "content": "<p>Adipiscing mus sociosqu facilisi cursus torquent class nulla maecenas vehicula aptent congue.</p><p>Fringilla penatibus purus scelerisque condimentum gravida dis efficitur himenaeos.</p>"
           }
         },
         "accordion_2": {
           "type": "accordion",
           "settings": {
             "title": "Consectetuer aptent lorem ut",
-            "content": "<p>Adipiscing mus sociosqu facilisi cursus torquent class nulla maecenas vehicula aptent congue.<\/p><p>Fringilla penatibus purus scelerisque condimentum gravida dis efficitur himenaeos.<\/p>"
+            "content": "<p>Adipiscing mus sociosqu facilisi cursus torquent class nulla maecenas vehicula aptent congue.</p><p>Fringilla penatibus purus scelerisque condimentum gravida dis efficitur himenaeos.</p>"
           }
         },
         "accordion_3": {
           "type": "accordion",
           "settings": {
             "title": "Consectetuer aptent lorem ut",
-            "content": "<p>Adipiscing mus sociosqu facilisi cursus torquent class nulla maecenas vehicula aptent congue.<\/p><p>Fringilla penatibus purus scelerisque condimentum gravida dis efficitur himenaeos.<\/p>"
+            "content": "<p>Adipiscing mus sociosqu facilisi cursus torquent class nulla maecenas vehicula aptent congue.</p><p>Fringilla penatibus purus scelerisque condimentum gravida dis efficitur himenaeos.</p>"
           }
         },
         "accordion_4": {
           "type": "accordion",
           "settings": {
             "title": "Consectetuer aptent lorem ut",
-            "content": "<p>Adipiscing mus sociosqu facilisi cursus torquent class nulla maecenas vehicula aptent congue.<\/p><p>Fringilla penatibus purus scelerisque condimentum gravida dis efficitur himenaeos.<\/p>"
+            "content": "<p>Adipiscing mus sociosqu facilisi cursus torquent class nulla maecenas vehicula aptent congue.</p><p>Fringilla penatibus purus scelerisque condimentum gravida dis efficitur himenaeos.</p>"
           }
         },
         "image": {
@@ -221,7 +221,7 @@
         "image"
       ],
       "settings": {
-        "bg_image": "shopify:\/\/shop_images\/Accordion.jpg",
+        "bg_image": "shopify://shop_images/Accordion.jpg",
         "use_as_default_padding": false,
         "padding_top": 36,
         "padding_bottom": 36
@@ -250,33 +250,33 @@
         "video_1": {
           "type": "video",
           "settings": {
-            "video_url": "https:\/\/www.youtube.com\/watch?v=CrIPy11VWl8",
+            "video_url": "https://www.youtube.com/watch?v=CrIPy11VWl8",
             "description": "",
-            "thumbnail": "shopify:\/\/shop_images\/Lavin_Galicha.jpg"
+            "thumbnail": "shopify://shop_images/Lavin_Galicha.jpg"
           }
         },
         "video_2": {
           "type": "video",
           "settings": {
-            "video_url": "https:\/\/www.youtube.com\/watch?v=y8zU3XsjWP4",
+            "video_url": "https://www.youtube.com/watch?v=y8zU3XsjWP4",
             "description": "",
-            "thumbnail": "shopify:\/\/shop_images\/Roanne_Barroga.jpg"
+            "thumbnail": "shopify://shop_images/Roanne_Barroga.jpg"
           }
         },
         "b8e11e89-074c-4646-baf8-e17fc6492206": {
           "type": "video",
           "settings": {
-            "video_url": "https:\/\/www.youtube.com\/watch?v=EE6ZMwj6yLk",
+            "video_url": "https://www.youtube.com/watch?v=EE6ZMwj6yLk",
             "description": "",
-            "thumbnail": "shopify:\/\/shop_images\/MamaLeys.jpg"
+            "thumbnail": "shopify://shop_images/MamaLeys.jpg"
           }
         },
         "4fd237cc-7caa-465f-8558-ce1b1fa3eda2": {
           "type": "video",
           "settings": {
-            "video_url": "https:\/\/www.youtube.com\/watch?v=_ML0QhRO3R8",
+            "video_url": "https://www.youtube.com/watch?v=_ML0QhRO3R8",
             "description": "",
-            "thumbnail": "shopify:\/\/shop_images\/Sushie_Rojas.jpg"
+            "thumbnail": "shopify://shop_images/Sushie_Rojas.jpg"
           }
         }
       },
@@ -309,17 +309,17 @@
         "1655453302316422ed-2": {
           "type": "video",
           "settings": {
-            "video_url": "https:\/\/www.youtube.com\/watch?v=ts6AJv_cZxs",
+            "video_url": "https://www.youtube.com/watch?v=ts6AJv_cZxs",
             "description": "",
-            "thumbnail": "shopify:\/\/shop_images\/Jea_Chan.jpg"
+            "thumbnail": "shopify://shop_images/Jea_Chan.jpg"
           }
         },
         "1655453302316422ed-1": {
           "type": "video",
           "settings": {
-            "video_url": "https:\/\/www.youtube.com\/watch?v=spViBEkDPPk",
+            "video_url": "https://www.youtube.com/watch?v=spViBEkDPPk",
             "description": "",
-            "thumbnail": "shopify:\/\/shop_images\/Alyza_Montero.jpg"
+            "thumbnail": "shopify://shop_images/Alyza_Montero.jpg"
           }
         }
       },
@@ -367,8 +367,8 @@
         "header": {
           "type": "header",
           "settings": {
-            "title": "<p>Join Our VIP Club<\/p><p>And Get 10% OFF<\/p>",
-            "subtitle": "<p>Mus mauris vitae ultricies leo.<\/p><p>Ac feugiat sed lectus vestibulum lacus laoreet non curabitur.<\/p>"
+            "title": "<p>Join Our VIP Club</p><p>And Get 10% OFF</p>",
+            "subtitle": "<p>Mus mauris vitae ultricies leo.</p><p>Ac feugiat sed lectus vestibulum lacus laoreet non curabitur.</p>"
           }
         },
         "form": {
@@ -386,7 +386,7 @@
         "form"
       ],
       "settings": {
-        "bg_image": "shopify:\/\/shop_images\/Newsletter.jpg",
+        "bg_image": "shopify://shop_images/Newsletter.jpg",
         "use_as_default_padding": false,
         "padding_top": 36,
         "padding_bottom": 36

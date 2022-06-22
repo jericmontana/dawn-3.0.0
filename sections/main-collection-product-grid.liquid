@@ -56,11 +56,6 @@
               grid--{{ collection.products_count }}-col-desktop
             {% endif %}">
             {%- for product in collection.products -%}
-              {% assign lazy_load = false %}
-              {%- if forloop.index > 2 -%}
-                
-              {%- endif -%}
-
               {%- assign item_number = forloop.index -%}
 
               <li class="grid__item">

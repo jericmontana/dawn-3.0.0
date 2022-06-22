@@ -4,11 +4,11 @@
     "colors_accent_2": "#0B5394",
     "colors_text": "#121212",
     "colors_outline_button_labels": "#121212",
-    "social_twitter_link": "https:\/\/twitter.com\/shopify",
-    "social_facebook_link": "https:\/\/facebook.com\/shopify",
-    "social_instagram_link": "http:\/\/instagram.com\/shopify",
+    "social_twitter_link": "https://twitter.com/shopify",
+    "social_facebook_link": "https://facebook.com/shopify",
+    "social_instagram_link": "http://instagram.com/shopify",
     "social_youtube_link": "",
-    "favicon": "shopify:\/\/shop_images\/output-onlinepngtools_3_1.png",
+    "favicon": "shopify://shop_images/output-onlinepngtools_3_1.png",
     "fg_color": "#0b5394",
     "bg_color": "#cfe2f3",
     "use_as_default_padding": true,
@@ -20,13 +20,13 @@
     "banner_btn_label": "Shop Now",
     "banner_hover_effect": "shine",
     "banner_icon_type": "none",
-    "wave_desktop_image": "shopify:\/\/shop_images\/Wave_2880x250_e34c55cd-59dc-486c-b379-2d2b33b535ed.png",
-    "wave_mobile_image": "shopify:\/\/shop_images\/Wave_1080x94_4ab1ae6d-17e1-47d7-875a-e7e8bae1f34d.png",
+    "wave_desktop_image": "shopify://shop_images/Wave_2880x250_e34c55cd-59dc-486c-b379-2d2b33b535ed.png",
+    "wave_mobile_image": "shopify://shop_images/Wave_1080x94_4ab1ae6d-17e1-47d7-875a-e7e8bae1f34d.png",
     "ty_discount_code": "AVACLUXE10-OFF",
     "ty_bg_color": "#a72727",
-    "ty_bg_image": "shopify:\/\/shop_images\/Marble_White.png",
+    "ty_bg_image": "shopify://shop_images/Marble_White.png",
     "ty_bg_blend": "luminosity",
-    "checkout_logo_image": "shopify:\/\/shop_images\/E3DAEC60-BACD-4863-A537-8653D6752B9D_0fd7b8ff-361d-4cea-977f-b6781e49bb65.png",
+    "checkout_logo_image": "shopify://shop_images/E3DAEC60-BACD-4863-A537-8653D6752B9D_0fd7b8ff-361d-4cea-977f-b6781e49bb65.png",
     "checkout_logo_position": "center",
     "checkout_logo_size": "small",
     "checkout_sidebar_background_color": "#ff66c4",
@@ -73,7 +73,7 @@
             "type": "email_signup",
             "settings": {
               "heading": "Join The VIP List",
-              "subtext": "<p>Be the first one to know about our latest promotions and exclusive offers and get a 10% discount on your first purchase.<\/p>"
+              "subtext": "<p>Be the first one to know about our latest promotions and exclusive offers and get a 10% discount on your first purchase.</p>"
             }
           }
         },
@@ -115,7 +115,7 @@
               "round_corner": false,
               "btn_action": "open-popup",
               "btn_label": "Shop Now",
-              "btn_link": "shopify:\/\/collections\/all",
+              "btn_link": "shopify://collections/all",
               "hover_effect": "shine",
               "icon_type": "send",
               "shadow_effect": true,
@@ -130,7 +130,7 @@
               "round_corner": true,
               "btn_action": "open-popup",
               "btn_label": "Subscribe",
-              "btn_link": "shopify:\/\/pages\/lash-guide",
+              "btn_link": "shopify://pages/lash-guide",
               "hover_effect": "shine",
               "icon_type": "send",
               "shadow_effect": true,
@@ -160,7 +160,7 @@
           "r_btn_link": "",
           "s_btn_action": "redirect-link",
           "s_btn_label": "Get 10% Off",
-          "s_btn_link": "shopify:\/\/pages\/vip-club"
+          "s_btn_link": "shopify://pages/vip-club"
         }
       },
       "announcement-bar": {
@@ -187,13 +187,13 @@
     ],
     "blocks": {
       "14060646107696862457": {
-        "type": "shopify:\/\/apps\/judge-me-product-reviews\/blocks\/judgeme_core\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+        "type": "shopify://apps/judge-me-product-reviews/blocks/judgeme_core/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
         "disabled": false,
         "settings": {
         }
       },
       "12120936241911852800": {
-        "type": "shopify:\/\/apps\/judge-me-product-reviews\/blocks\/reviews_tab\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+        "type": "shopify://apps/judge-me-product-reviews/blocks/reviews_tab/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
         "disabled": true,
         "settings": {
           "position": "right"
