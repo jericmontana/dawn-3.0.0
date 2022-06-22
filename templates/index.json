@@ -83,20 +83,20 @@
     "product_benefits": {
       "type": "multiple-image-with-text-7923216",
       "blocks": {
-        "image_with_text_1": {
-          "type": "image_with_text",
-          "settings": {
-            "title": "Tempor tempus auctor",
-            "richtext": "<p>- Mi blandit molestie sapien dictumst eu ullamcorper suspendisse. Fames porta justo dui pulvinar ligula tortor feugiat.<\/p><p>- Mi blandit molestie sapien dictumst eu ullamcorper suspendisse. Fames porta justo dui pulvinar ligula tortor feugiat.<\/p><p>- Mi blandit molestie sapien dictumst eu ullamcorper suspendisse. Fames porta justo dui pulvinar ligula tortor feugiat.<\/p>",
-            "image": "shopify:\/\/shop_images\/OSWell1.png"
-          }
-        },
         "image_with_text_2": {
           "type": "image_with_text",
           "settings": {
             "title": "Mi blandit molestie",
             "richtext": "<p>- Mi blandit molestie sapien dictumst eu ullamcorper suspendisse. Fames porta justo dui pulvinar ligula tortor feugiat.<\/p><p>- Mi blandit molestie sapien dictumst eu ullamcorper suspendisse. Fames porta justo dui pulvinar ligula tortor feugiat.<\/p>",
-            "image": "shopify:\/\/shop_images\/OSwell3.png"
+            "image": "shopify:\/\/shop_images\/Gluta_Maxx_31c7878b-bd91-48ab-8df9-20b50dfd96d5.png"
+          }
+        },
+        "image_with_text_1": {
+          "type": "image_with_text",
+          "settings": {
+            "title": "Tempor tempus auctor",
+            "richtext": "<p>- Mi blandit molestie sapien dictumst eu ullamcorper suspendisse. Fames porta justo dui pulvinar ligula tortor feugiat.<\/p><p>- Mi blandit molestie sapien dictumst eu ullamcorper suspendisse. Fames porta justo dui pulvinar ligula tortor feugiat.<\/p><p>- Mi blandit molestie sapien dictumst eu ullamcorper suspendisse. Fames porta justo dui pulvinar ligula tortor feugiat.<\/p>",
+            "image": "shopify:\/\/shop_images\/Total_Flux_a9808354-802c-4048-93c8-b2e42b77b758.png"
           }
         },
         "image_with_text_3": {
@@ -104,17 +104,18 @@
           "settings": {
             "title": "Fames porta justo",
             "richtext": "<p>- Mi blandit molestie sapien dictumst eu ullamcorper suspendisse. Fames porta justo dui pulvinar ligula tortor feugiat.<\/p><p>- Mi blandit molestie sapien dictumst eu ullamcorper suspendisse. Fames porta justo dui pulvinar ligula tortor feugiat.<\/p><p>- Mi blandit molestie sapien dictumst eu ullamcorper suspendisse. Fames porta justo dui pulvinar ligula tortor feugiat.<\/p><p>- Mi blandit molestie sapien dictumst eu ullamcorper suspendisse. Fames porta justo dui pulvinar ligula tortor feugiat.<\/p>",
-            "image": "shopify:\/\/shop_images\/OSWell2.png"
+            "image": "shopify:\/\/shop_images\/Collagen_Maxx_34d61855-b46d-4a47-a743-128d22a0abe4.png"
           }
         }
       },
       "block_order": [
-        "image_with_text_1",
         "image_with_text_2",
+        "image_with_text_1",
         "image_with_text_3"
       ],
       "settings": {
         "image_first": true,
+        "image_bg": "shopify:\/\/shop_images\/Product_Benefits.jpg",
         "use_as_default_padding": false,
         "padding_top": 36,
         "padding_bottom": 36
