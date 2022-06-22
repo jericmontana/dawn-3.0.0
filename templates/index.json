@@ -87,15 +87,16 @@
           "type": "image_with_text",
           "settings": {
             "title": "COLLAGEN MAXX: BRINGS OUT YOUR HEALTHIEST GLOW.",
-            "richtext": "<p>✔ Collagen, Kiwi Extract, Fibersol-2, Vitamin C, and Vegetable and Fruit Extract in every tablet.<\/p><p>✔ Reveals your most radiant, most beautiful, most youthful skin ever.<\/p><p>✔ Look fresh and glowing by taking 1-2 Collagen Maxx tablets everyday.<\/p><p>✔ Moisturized, soft, and smooth skin.<\/p><p>✔ Reduced wrinkles, fine lines, eye bags, and other signs of skin aging.<\/p><p>✔ Less acne breakouts, faded dark spots, and even skin tone.<\/p><p>✔ Stronger nails and healthier hair.<\/p><p>✔ Better sleep. Better mood. Better metabolism.<\/p>",
+            "richtext": "<p>✔ Collagen, Kiwi Extract, Fibersol-2, Vitamin C, and Vegetable and Fruit Extract in every tablet.<\/p><p>✔ Reveals your most radiant, most beautiful, most youthful skin ever.<\/p><p>✔ Look fresh and glowing by taking 1-2 Collagen Maxx tablets everyday.<\/p><p>✔ Moisturized, soft, and smooth skin.<\/p><p>✔ Reduced wrinkles, fine lines, eye bags, and other signs of skin aging.<\/p><p>✔ Less acne breakouts, faded dark spots, and even skin tone.<\/p><p>✔ Stronger nails and healthier hair.<\/p><p>✔ Better sleep. Better mood. Better metabolism.<\/p><p><strong>See visible results in as fast as 1 week!<\/strong><\/p>",
             "image": "shopify:\/\/shop_images\/Collagen_Maxx_Product_Benefits.png"
           }
         },
         "image_with_text_1": {
           "type": "image_with_text",
           "settings": {
-            "title": "Tempor tempus auctor",
-            "richtext": "<p>- Mi blandit molestie sapien dictumst eu ullamcorper suspendisse. Fames porta justo dui pulvinar ligula tortor feugiat.<\/p><p>- Mi blandit molestie sapien dictumst eu ullamcorper suspendisse. Fames porta justo dui pulvinar ligula tortor feugiat.<\/p><p>- Mi blandit molestie sapien dictumst eu ullamcorper suspendisse. Fames porta justo dui pulvinar ligula tortor feugiat.<\/p>"
+            "title": "GLUTA MAXX: TAKE YOUR DAILY DOSE OF GLUTATHIONE LIKE CANDY!",
+            "richtext": "<p>✔ Fun, easy-to-take glutathione tablets in chewable form.<\/p><p>✔ Achieve that fair skin you’ve always wanted.<\/p><p>✔ Brightens, repairs, and protects the skin.<\/p><p>✔ Reduces bumps, dark spots, and blemishes.<\/p><p>✔ Improves hydration and protects the skin from UV damage.<\/p><p>✔ Less wrinkles, fine lines, and other signs of skin aging.<\/p><p>✔ Rich in antioxidants, vitamins, and minerals to take care of you from the inside out.<\/p><p><strong>See visible results in as fast as 1 week!<\/strong><\/p>",
+            "image": "shopify:\/\/shop_images\/Gluta_Maxx_Product_Benefits.png"
           }
         },
         "image_with_text_3": {
@@ -113,6 +114,7 @@
       ],
       "settings": {
         "image_first": true,
+        "image_bg": "shopify:\/\/shop_images\/Product_Benefits_BG.jpg",
         "use_as_default_padding": false,
         "padding_top": 36,
         "padding_bottom": 36
