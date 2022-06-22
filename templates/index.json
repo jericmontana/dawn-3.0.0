@@ -127,30 +127,33 @@
         "header": {
           "type": "header",
           "settings": {
-            "title": "Why Choose Us",
-            "title_uppercase": false,
-            "subtitle": "Mus mauris vitae ultricies leo. Ac feugiat sed lectus vestibulum lacus laoreet non curabitur."
+            "title": "WHY CHOOSE OSWELL?",
+            "title_uppercase": true,
+            "subtitle": ""
           }
         },
         "image_with_text_1": {
           "type": "image_with_text",
           "settings": {
-            "title": "<p>300K +<\/p>",
-            "description": "<p>Consectetur letius torquent nunc lacus volutpat<\/p>"
+            "image": "shopify:\/\/shop_images\/300k.jpg",
+            "title": "<p>bottles were sold<\/p><p>since 2020<\/p>",
+            "description": ""
           }
         },
         "image_with_text_2": {
           "type": "image_with_text",
           "settings": {
-            "title": "<p>Made in Taiwan<\/p>",
-            "description": "<p>Consectetur letius torquent nunc lacus volutpat<\/p>"
+            "image": "shopify:\/\/shop_images\/Made_in_Taiwan.jpg",
+            "title": "<p>made in<\/p><p>Taiwan<\/p>",
+            "description": ""
           }
         },
         "image_with_text_3": {
           "type": "image_with_text",
           "settings": {
-            "title": "<p>100% Organic<\/p>",
-            "description": "<p>Consectetur letius torquent nunc lacus volutpat<\/p>"
+            "image": "shopify:\/\/shop_images\/Organic.jpg",
+            "title": "<p>100% organic<\/p><p>ingredients<\/p>",
+            "description": ""
           }
         }
       },
