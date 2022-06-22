@@ -1,0 +1,441 @@
+{
+    "sections": {
+      "main": {
+        "type": "main-product",
+        "blocks": {
+          "text_featured_review": {
+            "type": "text_featured_review",
+            "settings": {
+              "testimony": "<p>Ultricies litora accumsan hac finibus auctor ante. Molestie ornare primis eleifend pharetra pulvinar potenti risus magna consequat.<\/p>",
+              "customer_name": "<p>— cutomer name, ShopName verified customer<\/p>"
+            }
+          },
+          "richtext_copy": {
+            "type": "richtext_copy",
+            "settings": {
+              "richtext": "<p>Tristique velit tincidunt eget conubia euismod sapien eleifend congue lobortis. Mus mollis platea velit quis ligula porttitor dapibus parturient rutrum si.<\/p>"
+            }
+          },
+          "popup": {
+            "type": "popup",
+            "settings": {
+              "label": "Popup Label",
+              "richtext": "<p>Sem condimentum vestibulum imperdiet felis euismod elit est. Orci duis tellus sem ut tempus lobortis leo.<\/p>"
+            }
+          },
+          "custom_variant_picker": {
+            "type": "custom_variant_picker",
+            "settings": {
+            }
+          },
+          "quantity_add_to_cart": {
+            "type": "quantity_add_to_cart",
+            "settings": {
+            }
+          }
+        },
+        "block_order": [
+          "text_featured_review",
+          "richtext_copy",
+          "popup",
+          "custom_variant_picker",
+          "quantity_add_to_cart",
+          "image"
+        ],
+        "settings": {
+          "enable_sticky_info": true,
+          "gallery_layout": "thumbnail_slider",
+          "media_size": "medium",
+          "mobile_thumbnails": "show",
+          "hide_variants": false,
+          "enable_video_looping": false,
+          "padding_top": 36,
+          "padding_bottom": 12
+        }
+      },
+      "product_benefits": {
+        "type": "image-with-textblock-7923216",
+        "blocks": {
+          "header": {
+            "type": "header",
+            "settings": {
+              "title": "Nisi nibh tortor euismod",
+              "title_uppercase": false,
+              "subtitle": ""
+            }
+          },
+          "image": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Before_and_After.png",
+              "image_first": false
+            }
+          },
+          "richtext_1": {
+            "type": "richtext",
+            "settings": {
+              "title": "<p>Nullam si a erat<\/p>",
+              "description": "<p>Hendrerit parturient tellus duis netus nibh lorem velit ullamcorper bibendum sociosqu primis convallis sollicitudin<\/p>"
+            }
+          },
+          "richtext_2": {
+            "type": "richtext",
+            "settings": {
+              "title": "<p>Nullam si a erat<\/p>",
+              "description": "<p>Hendrerit parturient tellus duis netus nibh lorem velit ullamcorper bibendum sociosqu primis convallis sollicitudin<\/p>"
+            }
+          },
+          "richtext_3": {
+            "type": "richtext",
+            "settings": {
+              "title": "<p>Nullam si a erat<\/p>",
+              "description": "<p>Hendrerit parturient tellus duis netus nibh lorem velit ullamcorper bibendum sociosqu primis convallis sollicitudin<\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "header",
+          "image",
+          "richtext_1",
+          "richtext_2",
+          "richtext_3"
+        ],
+        "settings": {
+          "use_as_default_padding": false,
+          "padding_top": 36,
+          "padding_bottom": 36
+        }
+      },
+      "before_after": {
+        "type": "image-slider-7923216",
+        "blocks": {
+          "header": {
+            "type": "header",
+            "settings": {
+              "title": "Before and After",
+              "title_uppercase": true,
+              "subtitle": ""
+            }
+          },
+          "slider": {
+            "type": "slider",
+            "settings": {
+              "columns_desktop": 3,
+              "columns_tablet": 3,
+              "columns_mobile": 1,
+              "slider": "everywhere"
+            }
+          },
+          "image_1": {
+            "type": "image",
+            "settings": {
+            }
+          },
+          "image_2": {
+            "type": "image",
+            "settings": {
+            }
+          },
+          "image_3": {
+            "type": "image",
+            "settings": {
+            }
+          },
+          "d70e3bf6-30e2-4e92-b7b2-ccfc948d47bd": {
+            "type": "image",
+            "settings": {
+            }
+          },
+          "bd25b9ba-c9fd-4ac7-8262-fad706fe55b8": {
+            "type": "image",
+            "settings": {
+            }
+          }
+        },
+        "block_order": [
+          "header",
+          "slider",
+          "image_1",
+          "image_2",
+          "image_3",
+          "d70e3bf6-30e2-4e92-b7b2-ccfc948d47bd",
+          "bd25b9ba-c9fd-4ac7-8262-fad706fe55b8"
+        ],
+        "settings": {
+          "use_as_default_padding": false,
+          "padding_top": 36,
+          "padding_bottom": 36
+        }
+      },
+      "image_accordion": {
+        "type": "image-with-accordion-7923216",
+        "blocks": {
+          "header": {
+            "type": "header",
+            "settings": {
+              "title": "Image with Accordion",
+              "title_uppercase": true,
+              "subtitle": ""
+            }
+          },
+          "accordion_1": {
+            "type": "accordion",
+            "settings": {
+              "title": "Consectetuer aptent lorem ut",
+              "content": "<p>Adipiscing mus sociosqu facilisi cursus torquent class nulla maecenas vehicula aptent congue.<\/p><p>Fringilla penatibus purus scelerisque condimentum gravida dis efficitur himenaeos.<\/p>"
+            }
+          },
+          "accordion_2": {
+            "type": "accordion",
+            "settings": {
+              "title": "Consectetuer aptent lorem ut",
+              "content": "<p>Adipiscing mus sociosqu facilisi cursus torquent class nulla maecenas vehicula aptent congue.<\/p><p>Fringilla penatibus purus scelerisque condimentum gravida dis efficitur himenaeos.<\/p>"
+            }
+          },
+          "accordion_3": {
+            "type": "accordion",
+            "settings": {
+              "title": "Consectetuer aptent lorem ut",
+              "content": "<p>Adipiscing mus sociosqu facilisi cursus torquent class nulla maecenas vehicula aptent congue.<\/p><p>Fringilla penatibus purus scelerisque condimentum gravida dis efficitur himenaeos.<\/p>"
+            }
+          },
+          "accordion_4": {
+            "type": "accordion",
+            "settings": {
+              "title": "Consectetuer aptent lorem ut",
+              "content": "<p>Adipiscing mus sociosqu facilisi cursus torquent class nulla maecenas vehicula aptent congue.<\/p><p>Fringilla penatibus purus scelerisque condimentum gravida dis efficitur himenaeos.<\/p>"
+            }
+          },
+          "image": {
+            "type": "image",
+            "settings": {
+            }
+          }
+        },
+        "block_order": [
+          "header",
+          "accordion_1",
+          "accordion_2",
+          "accordion_3",
+          "accordion_4",
+          "image"
+        ],
+        "settings": {
+          "bg_image": "shopify:\/\/shop_images\/Accordion.jpg",
+          "use_as_default_padding": false,
+          "padding_top": 36,
+          "padding_bottom": 36
+        }
+      },
+      "video": {
+        "type": "video-7923216",
+        "blocks": {
+          "3379703c-d9c4-4f9c-bc47-312e6d9899b5": {
+            "type": "header",
+            "settings": {
+              "title": "Products Related Video",
+              "title_uppercase": true,
+              "subtitle": ""
+            }
+          },
+          "slider": {
+            "type": "slider",
+            "settings": {
+              "columns_desktop": 3,
+              "columns_tablet": 2,
+              "columns_mobile": 1,
+              "slider": "everywhere"
+            }
+          },
+          "video_1": {
+            "type": "video",
+            "settings": {
+              "video_url": "https:\/\/www.youtube.com\/watch?v=CrIPy11VWl8",
+              "description": "",
+              "thumbnail": "shopify:\/\/shop_images\/Lavin_Galicha.jpg"
+            }
+          },
+          "video_2": {
+            "type": "video",
+            "settings": {
+              "video_url": "https:\/\/www.youtube.com\/watch?v=y8zU3XsjWP4",
+              "description": "",
+              "thumbnail": "shopify:\/\/shop_images\/Roanne_Barroga.jpg"
+            }
+          },
+          "b8e11e89-074c-4646-baf8-e17fc6492206": {
+            "type": "video",
+            "settings": {
+              "video_url": "https:\/\/www.youtube.com\/watch?v=EE6ZMwj6yLk",
+              "description": "",
+              "thumbnail": "shopify:\/\/shop_images\/MamaLeys.jpg"
+            }
+          },
+          "4fd237cc-7caa-465f-8558-ce1b1fa3eda2": {
+            "type": "video",
+            "settings": {
+              "video_url": "https:\/\/www.youtube.com\/watch?v=_ML0QhRO3R8",
+              "description": "",
+              "thumbnail": "shopify:\/\/shop_images\/Sushie_Rojas.jpg"
+            }
+          }
+        },
+        "block_order": [
+          "3379703c-d9c4-4f9c-bc47-312e6d9899b5",
+          "slider",
+          "video_1",
+          "video_2",
+          "b8e11e89-074c-4646-baf8-e17fc6492206",
+          "4fd237cc-7caa-465f-8558-ce1b1fa3eda2"
+        ],
+        "settings": {
+          "use_as_default_padding": false,
+          "padding_top": 36,
+          "padding_bottom": 36
+        }
+      },
+      "16554533030d0f81f2": {
+        "type": "video-7923216",
+        "blocks": {
+          "c712a137-05e1-4057-9d66-26d085ebbb2e": {
+            "type": "slider",
+            "settings": {
+              "columns_desktop": 2,
+              "columns_tablet": 2,
+              "columns_mobile": 1,
+              "slider": "slide-me-not"
+            }
+          },
+          "1655453302316422ed-2": {
+            "type": "video",
+            "settings": {
+              "video_url": "https:\/\/www.youtube.com\/watch?v=ts6AJv_cZxs",
+              "description": "",
+              "thumbnail": "shopify:\/\/shop_images\/Jea_Chan.jpg"
+            }
+          },
+          "1655453302316422ed-1": {
+            "type": "video",
+            "settings": {
+              "video_url": "https:\/\/www.youtube.com\/watch?v=spViBEkDPPk",
+              "description": "",
+              "thumbnail": "shopify:\/\/shop_images\/Alyza_Montero.jpg"
+            }
+          }
+        },
+        "block_order": [
+          "c712a137-05e1-4057-9d66-26d085ebbb2e",
+          "1655453302316422ed-2",
+          "1655453302316422ed-1"
+        ],
+        "settings": {
+          "use_as_default_padding": true,
+          "padding_top": 0,
+          "padding_bottom": 36
+        }
+      },
+      "review": {
+        "type": "review-product-7923216",
+        "blocks": {
+          "header": {
+            "type": "header",
+            "settings": {
+              "title": "Proin enim taciti dapibus",
+              "title_uppercase": false,
+              "subtitle": "Lacus in dui sollicitudin risus suspendisse sed placerat ad pharetra ipsum letius mattis vel"
+            }
+          },
+          "review": {
+            "type": "review",
+            "settings": {
+            }
+          }
+        },
+        "block_order": [
+          "header",
+          "review"
+        ],
+        "settings": {
+          "use_as_default_padding": false,
+          "padding_top": 36,
+          "padding_bottom": 36
+        }
+      },
+      "email_signup": {
+        "type": "signup-7923216",
+        "blocks": {
+          "header": {
+            "type": "header",
+            "settings": {
+              "title": "<p>Join Our VIP Club<\/p><p>And Get 10% OFF<\/p>",
+              "subtitle": "<p>Mus mauris vitae ultricies leo.<\/p><p>Ac feugiat sed lectus vestibulum lacus laoreet non curabitur.<\/p>"
+            }
+          },
+          "form": {
+            "type": "form",
+            "settings": {
+              "name_label": "Name...",
+              "display_name_input": true,
+              "email_label": "Email...",
+              "btn_label": "Subscribe"
+            }
+          }
+        },
+        "block_order": [
+          "header",
+          "form"
+        ],
+        "settings": {
+          "bg_image": "shopify:\/\/shop_images\/Newsletter.jpg",
+          "use_as_default_padding": false,
+          "padding_top": 36,
+          "padding_bottom": 36
+        }
+      },
+      "instafeed": {
+        "type": "app-block-7923216",
+        "blocks": {
+          "header": {
+            "type": "heading",
+            "settings": {
+              "title": "App Block",
+              "title_uppercase": false,
+              "subtitle": "Mus mauris vitae ultricies leo. Ac feugiat sed lectus vestibulum lacus laoreet non curabitur."
+            }
+          }
+        },
+        "block_order": [
+          "header"
+        ],
+        "settings": {
+          "round_corner_background": false,
+          "color_scheme": "background-1",
+          "use_as_default_padding": false,
+          "padding_top": 36,
+          "padding_bottom": 36
+        }
+      },
+      "wishlist_reference": {
+        "type": "main-product-wishlist",
+        "settings": {
+          "image_ratio": "square",
+          "show_secondary_image": true,
+          "show_vendor": true,
+          "show_rating": false
+        }
+      }
+    },
+    "order": [
+      "main",
+      "product_benefits",
+      "before_after",
+      "image_accordion",
+      "video",
+      "16554533030d0f81f2",
+      "review",
+      "email_signup",
+      "instafeed",
+      "wishlist_reference"
+    ]
+  }
+  
