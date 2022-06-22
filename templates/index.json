@@ -86,8 +86,9 @@
         "image_with_text_2": {
           "type": "image_with_text",
           "settings": {
-            "title": "Mi blandit molestie",
-            "richtext": "<p>- Mi blandit molestie sapien dictumst eu ullamcorper suspendisse. Fames porta justo dui pulvinar ligula tortor feugiat.<\/p><p>- Mi blandit molestie sapien dictumst eu ullamcorper suspendisse. Fames porta justo dui pulvinar ligula tortor feugiat.<\/p>"
+            "title": "COLLAGEN MAXX: BRINGS OUT YOUR HEALTHIEST GLOW.",
+            "richtext": "<p>✔ Collagen, Kiwi Extract, Fibersol-2, Vitamin C, and Vegetable and Fruit Extract in every tablet.<\/p><p>✔ Reveals your most radiant, most beautiful, most youthful skin ever.<\/p><p>✔ Look fresh and glowing by taking 1-2 Collagen Maxx tablets everyday.<\/p><p>✔ Moisturized, soft, and smooth skin.<\/p><p>✔ Reduced wrinkles, fine lines, eye bags, and other signs of skin aging.<\/p><p>✔ Less acne breakouts, faded dark spots, and even skin tone.<\/p><p>✔ Stronger nails and healthier hair.<\/p><p>✔ Better sleep. Better mood. Better metabolism.<\/p>",
+            "image": "shopify:\/\/shop_images\/Collagen_Maxx_Product_Benefits.png"
           }
         },
         "image_with_text_1": {
