@@ -8,6 +8,13 @@
     &+*{
         grid-area: 1/1;
     }
+    
+    .section__bg{
+        background-repeat: no-repeat;
+        background-position: left center;
+        background-size: cover;
+        background-attachment: fixed;
+    }
 
     .grid__item{
         display: grid;

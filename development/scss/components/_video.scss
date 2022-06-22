@@ -79,12 +79,12 @@
 // }
 
 .g-video{
-  display: grid;
+  display: grid !important;
   justify-content: center;
   align-items: center;
   position: relative;
   overflow: hidden;
-  
+
   &>*{
       grid-area: 1/1;
   }
@@ -98,7 +98,7 @@
   }
 
   button{
-    display: grid;
+    display: grid !important;
     justify-content: center;
     align-items: center;
     cursor: pointer;
@@ -125,7 +125,7 @@
         left: 0;
         right: 0;
         bottom: 0;
-        display: flex;
+        display: flex !important;
         justify-content: center;
         align-items: center;
         width: 100%;

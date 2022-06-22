@@ -222,96 +222,106 @@
           {%- case block.type -%}
           {%- when 'text_featured_review'-%}
             <div class="featured-review">
-              <div>
+              <div class="featured-review--testimonial {{ block.settings.size | escape }} {% if block.settings.uppercase %}uppercase{% endif %} {% if block.settings.justify %}justify{% endif %}">
                 {{ block.settings.testimony }}
               </div>
-              <div>
+              <div class="featured-review--name">
                 {{ block.settings.customer_name }}
               </div>
             </div>
           {%- when 'richtext_copy'-%}
-            <div class='richtext-copy'>
+            <div class='richtext-copy {{ block.settings.size | escape }} {% if block.settings.uppercase %}uppercase{% endif %} {% if block.settings.justify %}justify{% endif %}'>
               {{ block.settings.richtext }}
             </div>
           {%- when 'popup' -%}
             <modal-opener class="product-popup-modal__opener no-js-hidden" data-modal="#PopupModal-{{ block.id }}" {{ block.shopify_attributes }}>
-              <button id="ProductPopup-{{ block.id }}" class="product-popup-modal__button link" type="button" aria-haspopup="dialog">{{ block.settings.label | escape }}</button>
+              <button id="ProductPopup-{{ block.id }}" class="product-popup-modal__button link {% if block.settings.uppercase %}uppercase{% endif %}" type="button" aria-haspopup="dialog">{{ block.settings.label | escape }}</button>
             </modal-opener>
           {%- when 'custom_variant_picker' -%}
-            <div class="custom-variant-picker">
-            {%- unless product.has_only_default_variant -%}
-              {% comment %} {%- for variant in product.variants -%}
+            {% assign product_option_size = product.options_with_values | size %}
+            {%- if product_option_size > 1 -%}
+              {%- unless product.has_only_default_variant -%}
+                {% render 'variant-picker', picker_type:'button' %}
+              {%- endunless -%}
+            {%- else -%}
+              <div class="custom-variant-picker">
+              {%- unless product.has_only_default_variant -%}
+                {% comment %} {%- for variant in product.variants -%}
 
-                <h1>{{ variant.compare_at_price | money_with_currency }}</h1>
-                <h1>{{ variant.price | money_with_currency }}</h1>
-                <h1>{{ variant.title }}</h1>
-                {%- if variant.compare_at_price -%}
-                <h1>{{ variant.compare_at_price | minus: variant.price | money }}</h1>
-                {%- endif -%}
-              {%- endfor -%} {% endcomment %}
-              <variant-radios class="no-js-hidden" data-section="{{ section.id }}" data-url="{{ product.url }}" {{ block.shopify_attributes }}>
-                {%- for option in product.options_with_values -%}
-                    <fieldset class="js product-form__input">
-                      {%- for variant in product.variants -%}
-                        {%- liquid
-                          assign value = variant.title
+                  <h1>{{ variant.compare_at_price | money_with_currency }}</h1>
+                  <h1>{{ variant.price | money_with_currency }}</h1>
+                  <h1>{{ variant.title }}</h1>
+                  {%- if variant.compare_at_price -%}
+                  <h1>{{ variant.compare_at_price | minus: variant.price | money }}</h1>
+                  {%- endif -%}
+                {%- endfor -%} {% endcomment %}
+                
+                  
+                <variant-radios class="no-js-hidden" data-section="{{ section.id }}" data-url="{{ product.url }}" {{ block.shopify_attributes }}>
+                  {%- for option in product.options_with_values -%}
+                      <fieldset class="js product-form__input">
+                        {%- for variant in product.variants -%}
+                          {%- liquid
+                            assign value = variant.title
 
-                          if variant.compare_at_price
-                          assign save_price = variant.compare_at_price | minus: variant.price
-                          endif
+                            if variant.compare_at_price
+                            assign save_price = variant.compare_at_price | minus: variant.price
+                            endif
 
-                        -%}
-                        <div class="custom-variant">
-                          <input type="radio" id="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}"
-                                name="{{ option.name }}"
-                                value="{{ value | escape }}"
-                                form="{{ product_form_id }}"
-                                {% if option.selected_value == value %}checked{% endif %}
-                          >
-                          <label for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}">
-                            <div class="custom-variant--label-wrapper">
-                              <div class="custom-price">
-                                <p>{%- if settings.currency_code_enabled -%}{{ variant.compare_at_price | money_with_currency }}{%- else -%}{{ variant.compare_at_price | money }}{%- endif -%}</p>
-                                <p>{%- if settings.currency_code_enabled -%}{%- if variant.compare_at_price -%}NOW {{ variant.price | money_with_currency }}{%- else -%}{{ variant.price | money_with_currency }}{%- endif -%}{%- else -%}{%- if variant.compare_at_price -%}NOW {{ variant.price | money }}{%- else -%}{{ variant.price | money }}{%- endif -%}{%- endif -%}</p>
-                              </div>
-                              <div class="custom-value">
-                                <p>{{ value | escape }}</p>
-                                {%- unless forloop.first -%}
-                                  <p class="save-price">{%- if settings.currency_code_enabled -%}{%- if variant.compare_at_price -%}SAVE {{ save_price | money_with_currency }}{%- endif -%}{%- else -%}{%- if variant.compare_at_price -%}SAVE {{ save_price | money }}{%- endif -%}{%- endif -%}<p>
-                                {%- endunless -%}
-                              </div>
-                            </div>
-                          </label>
-                        </div>
-                      {%- endfor -%}
-                      {% comment %} {%- for value in option.values -%}
-                        <div class="custom-variant">
-                          <input type="radio" id="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}"
-                                name="{{ option.name }}"
-                                value="{{ value | escape }}"
-                                form="{{ product_form_id }}"
-                                {% if option.selected_value == value %}checked{% endif %}
-                          >
-                          <label for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}">
-                            <div class="custom-variant--label-wrapper">
-                              <div>
-                                <div class="no-js-hidden" id="price-{{ section.id }}-{{ value }}" role="status" {{ block.shopify_attributes }}>
-                                  {%- render 'price', product: product, use_variant: true, show_badges: false, price_class: 'price--large' -%}
+                          -%}
+                          <div class="custom-variant">
+                            <input type="radio" id="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}"
+                                  name="{{ option.name }}"
+                                  value="{{ value | escape }}"
+                                  form="{{ product_form_id }}"
+                                  {% if option.selected_value == value %}checked{% endif %}
+                            >
+                            <label for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}">
+                              <div class="custom-variant--label-wrapper">
+                                <div class="custom-price">
+                                  <p>{%- if settings.currency_code_enabled -%}{{ variant.compare_at_price | money_with_currency }}{%- else -%}{{ variant.compare_at_price | money }}{%- endif -%}</p>
+                                  <p>{%- if settings.currency_code_enabled -%}{%- if variant.compare_at_price -%}NOW {{ variant.price | money_with_currency }}{%- else -%}{{ variant.price | money_with_currency }}{%- endif -%}{%- else -%}{%- if variant.compare_at_price -%}NOW {{ variant.price | money }}{%- else -%}{{ variant.price | money }}{%- endif -%}{%- endif -%}</p>
+                                </div>
+                                <div class="custom-value">
+                                  <p>{{ value | escape }}</p>
+                                  {%- unless forloop.first -%}
+                                    <p class="save-price">{%- if settings.currency_code_enabled -%}{%- if variant.compare_at_price -%}SAVE {{ save_price | money_with_currency }}{%- endif -%}{%- else -%}{%- if variant.compare_at_price -%}SAVE {{ save_price | money }}{%- endif -%}{%- endif -%}<p>
+                                  {%- endunless -%}
                                 </div>
                               </div>
-                              <span>{{ value }}</span>
-                            </div>
-                          </label>
-                        </div>
-                      {%- endfor -%} {% endcomment %}
-                    </fieldset>
-                {%- endfor -%}
-                <script type="application/json">
-                  {{ product.variants | json }}
-                </script>
-              </variant-radios>
-            </div>
-            {%- endunless -%}
+                            </label>
+                          </div>
+                        {%- endfor -%}
+                        {% comment %} {%- for value in option.values -%}
+                          <div class="custom-variant">
+                            <input type="radio" id="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}"
+                                  name="{{ option.name }}"
+                                  value="{{ value | escape }}"
+                                  form="{{ product_form_id }}"
+                                  {% if option.selected_value == value %}checked{% endif %}
+                            >
+                            <label for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}">
+                              <div class="custom-variant--label-wrapper">
+                                <div>
+                                  <div class="no-js-hidden" id="price-{{ section.id }}-{{ value }}" role="status" {{ block.shopify_attributes }}>
+                                    {%- render 'price', product: product, use_variant: true, show_badges: false, price_class: 'price--large' -%}
+                                  </div>
+                                </div>
+                                <span>{{ value }}</span>
+                              </div>
+                            </label>
+                          </div>
+                        {%- endfor -%} {% endcomment %}
+                      </fieldset>
+                  {%- endfor -%}
+                  <script type="application/json">
+                    {{ product.variants | json }}
+                  </script>
+                </variant-radios>
+                <div>
+              </div>
+              {%- endunless -%}
+            {%- endif -%}
 
             <noscript class="product-form__noscript-wrapper-{{ section.id }}">
               <div class="product-form__input{% if product.has_only_default_variant %} hidden{% endif %}">
@@ -417,6 +427,43 @@
               </div>
             </div>
             <script src="{{ 'pickup-availability.js' | asset_url }}" defer="defer"></script>
+          {%- when 'image' -%}
+            <div class="product__image" {% if block.settings.color_bg != nil %}style="background-color: {{ block.settings.color_bg }}"{% endif %}>
+              <h2 class="{{ block.settings.size | escape }} {% if block.settings.uppercase %}uppercase{% endif %}">{{ block.settings.title }}</h2>
+
+              {%- if block.settings.image != blank -%}
+                {% capture image_sizes %}
+                  (min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 | divided_by: 2 }}px, (min-width: 750px) calc((100vw) / 2), calc(100vw)
+                {% endcapture %}
+                {%- liquid
+                  if block.settings.image.alt == blank
+                    assign image_alt = block.settings.title
+                  else
+                    assign image_alt = block.settings.image.alt
+                  endif
+                -%}
+                <div class="image-wrapper">
+                  <img
+                    srcset="{%- if block.settings.image.width >= 165 -%}{{ block.settings.image | image_url: width: 165 }} 165w,{%- endif -%}
+                    {%- if block.settings.image.width >= 360 -%}{{ block.settings.image | image_url: width: 360 }} 360w,{%- endif -%}
+                    {%- if block.settings.image.width >= 535 -%}{{ block.settings.image | image_url: width: 535 }} 535w,{%- endif -%}
+                    {%- if block.settings.image.width >= 600 -%}{{ block.settings.image | image_url: width: 600 }} 600w,{%- endif -%}
+                    {%- if block.settings.image.width >= 800 -%}{{ block.settings.image | image_url: width: 800 }} 800w,{%- endif -%}
+                    {%- if block.settings.image.width >= 1070 -%}{{ block.settings.image | image_url: width: 1070 }} 1070w,{%- endif -%}
+                    {%- if block.settings.image.width >= 1500 -%}{{ block.settings.image | image_url: width: 1500 }} 1500w,{%- endif -%}
+                    {{ block.settings.image | image_url }} {{ block.settings.image.width }}w"
+                    src="{{ block.settings.image | image_url: width: 600 }}"
+                    sizes="{{ image_sizes | strip }}"
+                    alt="{{ image_alt | escape }}"
+                    title="{{ image_alt | escape }}"
+                    width="{{ block.settings.image.width }}"
+                    height="{{ block.settings.image.height }}"
+                    draggable="false"
+                  >
+                </div>
+
+              {%- endif -%}
+            </div>
           {%- when '@app' -%}
             {% render block %}
           {%- when 'text' -%}
@@ -713,8 +760,38 @@
       <div role="dialog" aria-label="{{ block.settings.text }}" aria-modal="true" class="product-popup-modal__content" tabindex="-1">
         <button id="ModalClose-{{ block.id }}" type="button" class="product-popup-modal__toggle" aria-label="{{ 'accessibility.close' | t }}">{% render 'icon-close' %}</button>
         <div class="product-popup-modal__content-info">
-          <div>
-            {{ block.settings.richtext }}
+          <div class="content--wrapper">
+            {%- if block.settings.image -%}
+              {%- liquid
+                if block.settings.image.alt == blank
+                  assign image_alt = block.settings.label
+                else
+                  assign image_alt = block.settings.image.alt
+                endif
+              -%}
+              {% capture image_sizes %}
+                (min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 | divided_by: 2 }}px, (min-width: 750px) calc((100vw - 130px) / 2), calc((100vw - 50px))
+              {% endcapture %}
+              <img
+                srcset="{%- if block.settings.image.width >= 165 -%}{{ block.settings.image | image_url: width: 165 }} 165w,{%- endif -%}
+                {%- if block.settings.image.width >= 360 -%}{{ block.settings.image | image_url: width: 360 }} 360w,{%- endif -%}
+                {%- if block.settings.image.width >= 535 -%}{{ block.settings.image | image_url: width: 535 }} 535w,{%- endif -%}
+                {%- if block.settings.image.width >= 600 -%}{{ block.settings.image | image_url: width: 600 }} 600w,{%- endif -%}
+                {%- if block.settings.image.width >= 800 -%}{{ block.settings.image | image_url: width: 800 }} 800w,{%- endif -%}
+                {%- if block.settings.image.width >= 1070 -%}{{ block.settings.image | image_url: width: 1070 }} 1070w,{%- endif -%}
+                {%- if block.settings.image.width >= 1500 -%}{{ block.settings.image | image_url: width: 1500 }} 1500w,{%- endif -%}
+                {{ block.settings.image | image_url }} {{ block.settings.image.width }}w"
+                src="{{ block.settings.image | image_url: width: 600 }}"
+                sizes="{{ image_sizes | strip }}"
+                alt="{{ image_alt | escape }}"
+                title="{{ image_alt | escape }}"
+                width="{{ block.settings.image.width }}"
+                height="{{ block.settings.image.height }}"
+                draggable="false"
+              >
+            {%- else -%}
+              {%- render 'no-image' -%}
+            {%- endif -%}
           </div>
         </div>
       </div>
@@ -887,6 +964,38 @@
           "default": "<p>Ultricies litora accumsan hac finibus auctor ante. Molestie ornare primis eleifend pharetra pulvinar potenti risus magna consequat.</p>"
         },
         {
+          "type": "checkbox",
+          "id": "uppercase",
+          "label": "Uppercase",
+          "default": false
+        },
+        {
+          "type": "checkbox",
+          "id": "justify",
+          "label": "Justify",
+          "default": false
+        },
+        {
+          "type": "select",
+          "id": "size",
+          "label": "Fontsize",
+          "options": [
+            {
+              "value": "h1",
+              "label": "H1"
+            },
+            {
+              "value": "h2",
+              "label": "H2"
+            },
+            {
+              "value": "h3",
+              "label": "H3"
+            }
+          ],
+          "default": "h2"
+        },
+        {
           "type": "richtext",
           "id": "customer_name",
           "label": "Name",
@@ -903,6 +1012,38 @@
           "id": "richtext",
           "label": "Richtext",
           "default": "<p>Tristique velit tincidunt eget conubia euismod sapien eleifend congue lobortis. Mus mollis platea velit quis ligula porttitor dapibus parturient rutrum si.</p>"
+        },
+        {
+          "type": "checkbox",
+          "id": "uppercase",
+          "label": "Uppercase",
+          "default": false
+        },
+        {
+          "type": "checkbox",
+          "id": "justify",
+          "label": "Justify",
+          "default": false
+        },
+        {
+          "type": "select",
+          "id": "size",
+          "label": "Fontsize",
+          "options": [
+            {
+              "value": "h1",
+              "label": "H1"
+            },
+            {
+              "value": "h2",
+              "label": "H2"
+            },
+            {
+              "value": "h3",
+              "label": "H3"
+            }
+          ],
+          "default": "h2"
         }
       ]
     },
@@ -917,14 +1058,19 @@
           "label": "Label"
         },
         {
+          "type": "checkbox",
+          "id": "uppercase",
+          "label": "Uppercase",
+          "default": false
+        },
+        {
           "type": "header",
           "content": "Popup Content"
         },
         {
-          "type": "richtext",
-          "id": "richtext",
-          "label": "Richtext",
-          "default": "<p>Sem condimentum vestibulum imperdiet felis euismod elit est. Orci duis tellus sem ut tempus lobortis leo.</p>"
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
         }
       ]
     },
@@ -942,6 +1088,58 @@
       "limit": 1,
       "settings": [
 
+      ]
+    },
+    {
+      "type": "image",
+      "name": "Image",
+      "settings": [
+        {
+          "type": "richtext",
+          "id": "title",
+          "label": "Title",
+          "default": "<p>Image</p>"
+        },
+        {
+          "type": "checkbox",
+          "id": "uppercase",
+          "label": "Uppercase",
+          "default": false
+        },
+        {
+          "type": "select",
+          "id": "size",
+          "label": "Fontsize",
+          "options": [
+            {
+              "value": "h1",
+              "label": "H1"
+            },
+            {
+              "value": "h2",
+              "label": "H2"
+            },
+            {
+              "value": "h3",
+              "label": "H3"
+            },
+            {
+              "value": "h4",
+              "label": "H4"
+            }
+          ],
+          "default": "h3"
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "color",
+          "id": "color_bg",
+          "label": "BG Color"
+        }
       ]
     },
     {

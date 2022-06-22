@@ -87,6 +87,10 @@ $section_maxwidth: 1800px;
     max-width: $section_maxwidth;
     margin: 0rem auto;
 
+    // background-repeat: no-repeat;
+    // background-position: bottom;
+    // background-size: cover;
+
     img{
         object-fit: cover;
     }

@@ -1531,3 +1531,59 @@ modal-opener.product-popup-modal__opener{
     margin: 0rem;
   }
 }
+
+.featured-review{
+  & *{
+    color: rgb(var(--color-base-accent-2));
+  }
+
+  &--testimonial{
+    p{
+      margin: 0rem;
+    }
+  }
+
+  &--name{
+    p{
+      margin: 0rem;
+    }
+  }
+}
+
+.richtext-copy{
+  *{
+    color: rgb(var(--color-base-accent-2));
+  }
+}
+
+// For Popup Button
+.product-popup-modal__button{
+  color: rgb(var(--color-base-accent-2));
+}
+
+// For Image
+.product__image{
+  padding: 1rem;
+  margin-top: 2rem;
+
+  *{
+    text-align: center;
+    margin: 0rem;
+  }
+  
+  h2{
+    margin-bottom: 0.5rem;
+  }
+
+  .image-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img{
+      width: 100%;
+      object-fit: cover;
+      object-position: center center;
+    }
+  }
+}

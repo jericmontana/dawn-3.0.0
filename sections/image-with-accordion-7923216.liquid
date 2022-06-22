@@ -26,8 +26,8 @@
 
 <div class="image-with-accordion image-with-accordion--{{ section.id }} {% if section.settings.bg_image != blank %}section-with-bg{% endif %}">
   {% if section.settings.bg_image != blank %}
-    <div class="section__bg" style="background-color: rgb(var(--color-section-bg))">
-      <img
+    <div class="section__bg" style="background-color: rgb(var(--color-section-bg)); background-image: url('{{ section.settings.bg_image | image_url: width: 2000 }}')">
+      {% comment %} <img
         class="small-hide"
         srcset="{%- if section.settings.bg_image.width >= 375 -%}{{ section.settings.bg_image | image_url: width: 375 }} 375w,{%- endif -%}
           {%- if section.settings.bg_image.width >= 550 -%}{{ section.settings.bg_image | image_url: width: 550 }} 550w,{%- endif -%}
@@ -47,7 +47,7 @@
         width="{{ section.settings.bg_image.width }}"
         height="{{ section.settings.bg_image.height }}"
         draggable="false"
-      >
+      > {% endcomment %}
     </div>
   {% endif %}
   <div class="section__container">

@@ -39,7 +39,8 @@
         "richtext_copy",
         "popup",
         "custom_variant_picker",
-        "quantity_add_to_cart"
+        "quantity_add_to_cart",
+        "image"
       ],
       "settings": {
         "enable_sticky_info": true,
