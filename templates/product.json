@@ -99,7 +99,7 @@
           "type": "header",
           "settings": {
             "title": "THE COLLAGEN MAXX TRANSFORMATION",
-            "title_uppercase": false,
+            "title_uppercase": true,
             "subtitle": ""
           }
         },
@@ -232,10 +232,15 @@
     "image_accordion": {
       "type": "image-with-accordion-7923216",
       "blocks": {
+        "image": {
+          "type": "image",
+          "settings": {
+          }
+        },
         "header": {
           "type": "header",
           "settings": {
-            "title": "Image with Accordion",
+            "title": "NUTRITIONIST-APPROVED INGREDIENTS IN EVERY COLLAGEN MAXX BOTTLE",
             "title_uppercase": true,
             "subtitle": ""
           }
@@ -243,49 +248,53 @@
         "accordion_1": {
           "type": "accordion",
           "settings": {
-            "title": "Consectetuer aptent lorem ut",
-            "content": "<p>Adipiscing mus sociosqu facilisi cursus torquent class nulla maecenas vehicula aptent congue.<\/p><p>Fringilla penatibus purus scelerisque condimentum gravida dis efficitur himenaeos.<\/p>"
+            "title": "PATENTED FISH COLLAGEN",
+            "content": "<p>Keeps skin smooth, supple, and free from signs of skin aging.<\/p>"
           }
         },
         "accordion_2": {
           "type": "accordion",
           "settings": {
-            "title": "Consectetuer aptent lorem ut",
-            "content": "<p>Adipiscing mus sociosqu facilisi cursus torquent class nulla maecenas vehicula aptent congue.<\/p><p>Fringilla penatibus purus scelerisque condimentum gravida dis efficitur himenaeos.<\/p>"
+            "title": "PATENTED KIWI EXTRACT",
+            "content": "<p>With anti-inflammatory properties to help fight and clear acne.<\/p>"
           }
         },
         "accordion_3": {
           "type": "accordion",
           "settings": {
-            "title": "Consectetuer aptent lorem ut",
-            "content": "<p>Adipiscing mus sociosqu facilisi cursus torquent class nulla maecenas vehicula aptent congue.<\/p><p>Fringilla penatibus purus scelerisque condimentum gravida dis efficitur himenaeos.<\/p>"
+            "title": "PATENTED FIBERSOL-2",
+            "content": "<p>Improves metabolism, helps in weight management, and promotes healthy digestion.<\/p>"
           }
         },
         "accordion_4": {
           "type": "accordion",
           "settings": {
-            "title": "Consectetuer aptent lorem ut",
-            "content": "<p>Adipiscing mus sociosqu facilisi cursus torquent class nulla maecenas vehicula aptent congue.<\/p><p>Fringilla penatibus purus scelerisque condimentum gravida dis efficitur himenaeos.<\/p>"
+            "title": "VITAMIN C",
+            "content": "<p>Lightens dark spots, slows down skin aging, promotes collagen production, and helps strengthen your immunity.<\/p>"
           }
         },
-        "image": {
-          "type": "image",
+        "b74ed3ea-e042-484b-be51-197f9bdd5c03": {
+          "type": "accordion",
           "settings": {
+            "title": "VEGETABLE AND FRUIT EXTRACT",
+            "content": "<p>With antioxidants, vitamins, and minerals to repair the skin and protect it from further damage.<\/p>"
           }
         }
       },
       "block_order": [
+        "image",
         "header",
         "accordion_1",
         "accordion_2",
         "accordion_3",
         "accordion_4",
-        "image"
+        "b74ed3ea-e042-484b-be51-197f9bdd5c03"
       ],
       "settings": {
-        "use_as_default_padding": false,
-        "padding_top": 36,
-        "padding_bottom": 36
+        "bg_image": "shopify:\/\/shop_images\/Collagen_Maxx_FAQ.jpg",
+        "use_as_default_padding": true,
+        "padding_top": 40,
+        "padding_bottom": 40
       }
     },
     "video": {
