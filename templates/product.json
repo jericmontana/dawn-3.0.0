@@ -7,19 +7,26 @@
           "type": "text_featured_review",
           "settings": {
             "testimony": "<p>Ultricies litora accumsan hac finibus auctor ante. Molestie ornare primis eleifend pharetra pulvinar potenti risus magna consequat.<\/p>",
+            "uppercase": false,
+            "justify": false,
+            "size": "h2",
             "customer_name": "<p>— cutomer name, ShopName verified customer<\/p>"
           }
         },
         "richtext_copy": {
           "type": "richtext_copy",
           "settings": {
-            "richtext": "<p>Tristique velit tincidunt eget conubia euismod sapien eleifend congue lobortis. Mus mollis platea velit quis ligula porttitor dapibus parturient rutrum si.<\/p>"
+            "richtext": "<p>Tristique velit tincidunt eget conubia euismod sapien eleifend congue lobortis. Mus mollis platea velit quis ligula porttitor dapibus parturient rutrum si.<\/p>",
+            "uppercase": false,
+            "justify": false,
+            "size": "h2"
           }
         },
         "popup": {
           "type": "popup",
           "settings": {
-            "label": "Popup Label"
+            "label": "Popup Label",
+            "uppercase": false
           }
         },
         "custom_variant_picker": {
@@ -31,6 +38,36 @@
           "type": "quantity_add_to_cart",
           "settings": {
           }
+        },
+        "b878cc72-6d6a-4395-9b48-18fef3fb65b7": {
+          "type": "image",
+          "settings": {
+            "title": "",
+            "uppercase": false,
+            "size": "h3",
+            "image": "shopify:\/\/shop_images\/In_Stock.png",
+            "color_bg": "#ebebeb"
+          }
+        },
+        "02fc9b09-e76b-4edb-9d6e-bcdfebe59e38": {
+          "type": "image",
+          "settings": {
+            "title": "",
+            "uppercase": false,
+            "size": "h3",
+            "image": "shopify:\/\/shop_images\/USP.png",
+            "color_bg": ""
+          }
+        },
+        "ee307615-7259-41eb-a24e-66115d2347f7": {
+          "type": "image",
+          "settings": {
+            "title": "<p>secure payment with<\/p>",
+            "uppercase": true,
+            "size": "h3",
+            "image": "shopify:\/\/shop_images\/Secure_Payment.png",
+            "color_bg": "#ebebeb"
+          }
         }
       },
       "block_order": [
@@ -38,7 +75,10 @@
         "richtext_copy",
         "popup",
         "custom_variant_picker",
-        "quantity_add_to_cart"
+        "quantity_add_to_cart",
+        "b878cc72-6d6a-4395-9b48-18fef3fb65b7",
+        "02fc9b09-e76b-4edb-9d6e-bcdfebe59e38",
+        "ee307615-7259-41eb-a24e-66115d2347f7"
       ],
       "settings": {
         "enable_sticky_info": true,
@@ -65,7 +105,6 @@
         "image": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Before_and_After.png",
             "image_first": false
           }
         },
@@ -219,7 +258,6 @@
         "image"
       ],
       "settings": {
-        "bg_image": "shopify:\/\/shop_images\/Accordion.jpg",
         "use_as_default_padding": false,
         "padding_top": 36,
         "padding_bottom": 36
@@ -384,7 +422,6 @@
         "form"
       ],
       "settings": {
-        "bg_image": "shopify:\/\/shop_images\/Newsletter.jpg",
         "use_as_default_padding": false,
         "padding_top": 36,
         "padding_bottom": 36
