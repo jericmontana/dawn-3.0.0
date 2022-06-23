@@ -16,8 +16,8 @@
         "richtext_copy": {
           "type": "richtext_copy",
           "settings": {
-            "richtext": "<p>Tristique velit tincidunt eget conubia euismod sapien eleifend congue lobortis. Mus mollis platea velit quis ligula porttitor dapibus parturient rutrum si.<\/p>",
-            "uppercase": false,
+            "richtext": "<p>COLLAGEN MAXX: Daily beauty supplement for that radiant, youthful, natural rosy glow you’ve always wanted.<\/p>",
+            "uppercase": true,
             "justify": false,
             "size": "h2"
           }
