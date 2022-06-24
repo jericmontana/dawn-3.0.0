@@ -283,10 +283,19 @@
             "title_uppercase": true,
             "subtitle": "Tag @oswellph #oswellph for  a chance to be featured"
           }
+        },
+        "f9c0e8fd-5da6-43b5-96de-1035bd1e0aa5": {
+          "type": "shopify:\/\/apps\/instafeed-instagram-feed\/blocks\/app-block\/c447db20-095d-4a10-9725-b5977662c9d5",
+          "settings": {
+            "heading_size": 20,
+            "feed_width": 100,
+            "html_area": ""
+          }
         }
       },
       "block_order": [
-        "header"
+        "header",
+        "f9c0e8fd-5da6-43b5-96de-1035bd1e0aa5"
       ],
       "settings": {
         "round_corner_background": false,
