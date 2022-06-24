@@ -4,10 +4,10 @@
     "colors_accent_2": "#0B5394",
     "colors_text": "#121212",
     "colors_outline_button_labels": "#121212",
-    "social_twitter_link": "https:\/\/twitter.com\/shopify",
-    "social_facebook_link": "https:\/\/facebook.com\/shopify",
-    "social_instagram_link": "http:\/\/instagram.com\/shopify",
-    "social_youtube_link": "",
+    "social_twitter_link": "",
+    "social_facebook_link": "https:\/\/www.facebook.com\/oswellph",
+    "social_instagram_link": "https:\/\/www.instagram.com\/oswell.inc.ph\/",
+    "social_youtube_link": "https:\/\/www.youtube.com\/channel\/UClfvbBkua6NxJsWQ4-iM90g",
     "favicon": "shopify:\/\/shop_images\/output-onlinepngtools_3_1.png",
     "fg_color": "#0b5394",
     "bg_color": "#cfe2f3",
@@ -37,7 +37,7 @@
         "type": "header",
         "settings": {
           "color_scheme": "background-1",
-          "logo": "shopify:\/\/shop_images\/155499001_210765060780327_7642670746680058521_n_472da84c-19de-41c2-ba20-2ba92f99cff9.jpg",
+          "logo": "shopify:\/\/shop_images\/Oswell_Logo.png",
           "logo_width": 100,
           "logo_position": "middle-left",
           "menu": "main-menu-1",
@@ -52,6 +52,7 @@
           "footer-0": {
             "type": "image",
             "settings": {
+              "image": "shopify:\/\/shop_images\/Oswell_Logo.png",
               "image_width": 100,
               "alignment": "center"
             }
