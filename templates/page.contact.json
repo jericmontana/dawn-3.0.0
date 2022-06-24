@@ -8,7 +8,7 @@
           "settings": {
             "title": "",
             "title_uppercase": true,
-            "subtitle": "If you have any concern, questions, comments and suggestions, please send as a direct message through [email] or you can also fill out the form below :"
+            "subtitle": "If you have any concern, questions, comments and suggestions, please send as a direct message through oswell.inform@gmail.com or you can also fill out the form below :"
           }
         },
         "16469786612d2c6734-1": {
@@ -50,7 +50,7 @@
           "settings": {
             "apply_general_settings_btn": true,
             "btn_label": "Shop Now",
-            "btn_link": "shopify://collections/all",
+            "btn_link": "shopify:\/\/collections\/all",
             "btn_size": "default",
             "hover_effect": "shine",
             "icon_type": "arrow",
