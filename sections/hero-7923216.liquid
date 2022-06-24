@@ -75,7 +75,7 @@
 
                     <a class="btn {{ btn_size_class }} {% if round_corner %}btn--round-corner{% endif %} {% if btn_link != blank %}{{ btn_he_class }}{% else %}btn--disbaled{% endif %} {% if shadow_effect %}btn-bs{% endif %} {% if auto_width %}btn-auto-width{% endif %}"
                         {% if btn_link != blank %}href="{{ btn_link }}" title="{{ link_title }}"{% endif %}
-                        style="background-color: {{ image_block.settings.color_dot }}"
+                        style="background-color: {{ image_block.settings.color_dot }}; border-color: {{ image_block.settings.color_dot }}"
                         role="button">
                         {{ btn_label | escape }}
                         {% render 'icon-button', icon_type: icon_type %}
