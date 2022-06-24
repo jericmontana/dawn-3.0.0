@@ -1587,3 +1587,17 @@ modal-opener.product-popup-modal__opener{
     }
   }
 }
+
+//For popup Content
+.content--wrapper {
+  max-height: 450px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  img{
+    width: auto!important;
+    max-width: auto!important;
+  }
+}
