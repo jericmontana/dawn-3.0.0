@@ -106,6 +106,7 @@
         "image": {
           "type": "image",
           "settings": {
+            "image": "shopify:\/\/shop_images\/Collagen_Max_Product_Benefits.jpg",
             "image_first": false
           }
         },
