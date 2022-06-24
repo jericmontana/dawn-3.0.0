@@ -179,7 +179,7 @@
         "header": {
           "type": "header",
           "settings": {
-            "title": "Mus mauris vitae ultricies leo.",
+            "title": "WHAT THEY SAY",
             "title_uppercase": false,
             "subtitle": ""
           }
@@ -225,14 +225,6 @@
     "review": {
       "type": "review-7923216",
       "blocks": {
-        "96dd6a48-6239-4afc-94cf-2875cf23995d": {
-          "type": "header",
-          "settings": {
-            "title": "Let our customers speak for us",
-            "title_uppercase": false,
-            "subtitle": "Lacus in dui sollicitudin risus suspendisse sed placerat ad pharetra ipsum letius mattis vel"
-          }
-        },
         "review": {
           "type": "review",
           "settings": {
@@ -242,7 +234,6 @@
         }
       },
       "block_order": [
-        "96dd6a48-6239-4afc-94cf-2875cf23995d",
         "review"
       ],
       "settings": {
