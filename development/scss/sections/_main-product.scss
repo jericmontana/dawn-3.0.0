@@ -1599,5 +1599,7 @@ modal-opener.product-popup-modal__opener{
   img{
     width: auto!important;
     max-width: auto!important;
+    height: 100%;
+    max-height: 450px;
   }
 }
