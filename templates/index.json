@@ -116,7 +116,7 @@
       "settings": {
         "image_first": true,
         "image_bg": "shopify:\/\/shop_images\/Product_Benefits_BG.jpg",
-        "use_as_default_padding": false,
+        "use_as_default_padding": true,
         "padding_top": 36,
         "padding_bottom": 36
       }
@@ -300,7 +300,7 @@
       "settings": {
         "round_corner_background": false,
         "color_scheme": "background-1",
-        "use_as_default_padding": false,
+        "use_as_default_padding": true,
         "padding_top": 36,
         "padding_bottom": 36
       }
