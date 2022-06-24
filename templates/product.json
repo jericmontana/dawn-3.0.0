@@ -234,6 +234,7 @@
         "image": {
           "type": "image",
           "settings": {
+            "image": "shopify:\/\/shop_images\/Collagen_Maxx_Ingredients.png"
           }
         },
         "header": {
@@ -291,9 +292,9 @@
       ],
       "settings": {
         "bg_image": "shopify:\/\/shop_images\/Collagen_Maxx_FAQ_2.png",
-        "use_as_default_padding": true,
-        "padding_top": 40,
-        "padding_bottom": 40
+        "use_as_default_padding": false,
+        "padding_top": 80,
+        "padding_bottom": 80
       }
     },
     "video": {
