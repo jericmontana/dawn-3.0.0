@@ -66,7 +66,7 @@
                             {%- if block.settings.image.width >= 1500 -%}{{ block.settings.image | image_url: width: 1500 }} 1500w,{%- endif -%}
                             {{ block.settings.image | image_url }} {{ block.settings.image.width }}w"
                             src="{{ block.settings.image | image_url }}"
-                            sizes="(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 | divided_by: 2 }}px, (min-width: 750px) calc((100vw - 130px) / 2), calc((100vw - 50px) / 2)"
+                            sizes="(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 | divided_by: 2 }}px, (min-width: 750px) calc((100vw - 130px) / 2), (max-width: 749px) calc(100vw - 50px)"
                             alt="{{ block.settings.image.alt | escape }}"
                             title="{{ block.settings.image.alt | escape }}"
                             loading="lazy"
