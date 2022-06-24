@@ -174,15 +174,15 @@
         "header": {
           "type": "header",
           "settings": {
-            "title": "Before and After",
+            "title": "REAL COLLAGEN MAXX USERS",
             "title_uppercase": true,
-            "subtitle": ""
+            "subtitle": "Real visible results."
           }
         },
         "slider": {
           "type": "slider",
           "settings": {
-            "columns_desktop": 3,
+            "columns_desktop": 4,
             "columns_tablet": 3,
             "columns_mobile": 1,
             "slider": "everywhere"
@@ -191,26 +191,25 @@
         "image_1": {
           "type": "image",
           "settings": {
+            "image": "shopify:\/\/shop_images\/Ara_G.jpg"
           }
         },
         "image_2": {
           "type": "image",
           "settings": {
+            "image": "shopify:\/\/shop_images\/Justin.jpg"
           }
         },
         "image_3": {
           "type": "image",
           "settings": {
+            "image": "shopify:\/\/shop_images\/Roanne.jpg"
           }
         },
         "d70e3bf6-30e2-4e92-b7b2-ccfc948d47bd": {
           "type": "image",
           "settings": {
-          }
-        },
-        "bd25b9ba-c9fd-4ac7-8262-fad706fe55b8": {
-          "type": "image",
-          "settings": {
+            "image": "shopify:\/\/shop_images\/Lavin.jpg"
           }
         }
       },
@@ -220,8 +219,7 @@
         "image_1",
         "image_2",
         "image_3",
-        "d70e3bf6-30e2-4e92-b7b2-ccfc948d47bd",
-        "bd25b9ba-c9fd-4ac7-8262-fad706fe55b8"
+        "d70e3bf6-30e2-4e92-b7b2-ccfc948d47bd"
       ],
       "settings": {
         "use_as_default_padding": false,
