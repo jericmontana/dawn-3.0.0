@@ -34,16 +34,55 @@
                   {%- assign product = image_block.settings.product -%}
                   <div class="tabcontent tabcontent-{{ section.id }} tabcontent-{{ section.id }}-{{ for_loop_index }}">
                     <div class="button--wrapper">
-                      {%- render 'button',
-                        btn_label: section.settings.btn_label,
-                        btn_link: product.url,
-                        btn_size: "default",
-                        hover_effect: "lighten",
-                        icon_type: "none",
-                        round_corner: section.settings.round_corner,
-                        shadow_effect: section.settings.shadow_effect,
-                        auto_width: section.settings.auto_width
+                      {%- liquid
+                        assign btn_label = section.settings.btn_label
+                        assign btn_link =  product.url
+                        assign btn_size = "default"
+                        assign hover_effect = "lighten"
+                        assign icon_type = "none"
+                        assign round_corner = section.settings.round_corner
+                        assign shadow_effect = section.settings.shadow_effect
+                        assign auto_width = section.settings.auto_width
                       -%}
+                    
+                    {%- liquid
+                        if btn_link contains 'collections'
+                            assign link_title = btn_link | split: '/' | last | append: ' collections' | strip
+                        else
+                            assign link_title = btn_link | split: '/' | last | strip
+                        endif
+                    -%}
+
+                    {% case btn_size %}
+                      {% when "default" %}
+                          {%- assign btn_size_class = "btn--default" -%}
+                      {% when "medium" %}
+                          {%- assign btn_size_class = "btn--medium" -%}
+                      {% when "large" %}
+                          {%- assign btn_size_class = "btn--large" -%}
+                    {% endcase %}
+                  
+                    {% case hover_effect %}
+                        {% when "lighten" %}
+                            {%- assign btn_he_class = "btn-he--lighten" -%}
+                        {% when "color-switch" %}
+                            {%- assign btn_he_class = "btn-he--color-switch" -%}
+                        {% when "slide" %}
+                            {%- assign btn_he_class = "btn-he--slide" -%}
+                        {% when "shine" %}
+                            {%- assign btn_he_class = "btn-he--shine" -%}
+                    {% endcase %}
+
+                    <a class="btn {{ btn_size_class }} {% if round_corner %}btn--round-corner{% endif %} {% if btn_link != blank %}{{ btn_he_class }}{% else %}btn--disbaled{% endif %} {% if shadow_effect %}btn-bs{% endif %} {% if auto_width %}btn-auto-width{% endif %}"
+                        {% if btn_link != blank %}href="{{ btn_link }}" title="{{ link_title }}"{% endif %}
+                        style="background-color: {{ image_block.settings.color_dot }}"
+                        role="button">
+                        {{ btn_label | escape }}
+                        {% render 'icon-button', icon_type: icon_type %}
+                        {% if hover_effect == 'shine' %}
+                        <span></span>
+                        {% endif %}
+                    </a>
                   </div>
                 </div>
                 {%- endfor -%}
