@@ -406,14 +406,6 @@
     "review": {
       "type": "review-product-7923216",
       "blocks": {
-        "header": {
-          "type": "header",
-          "settings": {
-            "title": "Proin enim taciti dapibus",
-            "title_uppercase": false,
-            "subtitle": "Lacus in dui sollicitudin risus suspendisse sed placerat ad pharetra ipsum letius mattis vel"
-          }
-        },
         "review": {
           "type": "review",
           "settings": {
@@ -421,7 +413,6 @@
         }
       },
       "block_order": [
-        "header",
         "review"
       ],
       "settings": {
