@@ -290,7 +290,7 @@
         "b74ed3ea-e042-484b-be51-197f9bdd5c03"
       ],
       "settings": {
-        "bg_image": "shopify:\/\/shop_images\/Collagen_Maxx_FAQ.jpg",
+        "bg_image": "shopify:\/\/shop_images\/Collagen_Maxx_FAQ_2.png",
         "use_as_default_padding": true,
         "padding_top": 40,
         "padding_bottom": 40
@@ -446,7 +446,6 @@
         "form"
       ],
       "settings": {
-        "bg_image": "shopify:\/\/shop_images\/Newsletter_BG.jpg",
         "use_as_default_padding": false,
         "padding_top": 36,
         "padding_bottom": 36
