@@ -19,7 +19,7 @@
     @include device('mobile'){
         .section__bg{
             background: none !important;
-            background-color: rgb(var(--color-section-bg));
+            background-color: rgb(var(--color-section-bg)) !important;
         }
     }
 
