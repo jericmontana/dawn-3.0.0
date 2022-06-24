@@ -170,9 +170,9 @@
           "announcement-bar-0": {
             "type": "announcement",
             "settings": {
-              "text": "Welcome to our store",
-              "uppercase": false,
-              "size": "h4",
+              "text": "COD AVAILABLE | FREE SHIPPING ON ALL ORDERS NATIONWIDE",
+              "uppercase": true,
+              "size": "h3",
               "color_scheme": "accent-1",
               "link": ""
             }
