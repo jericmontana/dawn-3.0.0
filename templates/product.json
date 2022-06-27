@@ -6,17 +6,17 @@
         "text_featured_review": {
           "type": "text_featured_review",
           "settings": {
-            "testimony": "<p>\"Sobrang ganda ng product, kahit bagong gising and fresh pa ding tignan. \"<\/p>",
+            "testimony": "<p>\"Sobrang ganda ng product, kahit bagong gising and fresh pa ding tignan. \"</p>",
             "uppercase": false,
             "justify": false,
             "size": "h2",
-            "customer_name": "<p>— Rose, OSwell verified customer<\/p>"
+            "customer_name": "<p>— Rose, OSwell verified customer</p>"
           }
         },
         "richtext_copy": {
           "type": "richtext_copy",
           "settings": {
-            "richtext": "<p>COLLAGEN MAXX: Daily beauty supplement for that radiant, youthful, natural rosy glow you’ve always wanted.<\/p><p>Packed with nutritionist-approved ingredients with skin and wellness benefits:<\/p><p>✔ Collagen<\/p><p>✔ Vitamin C<\/p><p>✔ Kiwi Seed Extract<\/p><p>✔ Vegetable and Fruit Extract<\/p><p>✔ Fibersol-2<\/p>",
+            "richtext": "<p>COLLAGEN MAXX: Daily beauty supplement for that radiant, youthful, natural rosy glow you’ve always wanted.</p><p>Packed with nutritionist-approved ingredients with skin and wellness benefits:</p><p>✔ Collagen</p><p>✔ Vitamin C</p><p>✔ Kiwi Seed Extract</p><p>✔ Vegetable and Fruit Extract</p><p>✔ Fibersol-2</p>",
             "uppercase": false,
             "justify": false,
             "size": "h2"
@@ -27,7 +27,7 @@
           "settings": {
             "label": "Nutrition Facts",
             "uppercase": true,
-            "image": "shopify:\/\/shop_images\/Collagen_Maxx_Nutrition_Facts.jpg"
+            "image": "shopify://shop_images/Collagen_Maxx_Nutrition_Facts.jpg"
           }
         },
         "custom_variant_picker": {
@@ -46,7 +46,7 @@
             "title": "",
             "uppercase": false,
             "size": "h3",
-            "image": "shopify:\/\/shop_images\/In_Stock.png",
+            "image": "shopify://shop_images/In_Stock.png",
             "color_bg": "#ebebeb"
           }
         },
@@ -56,17 +56,17 @@
             "title": "",
             "uppercase": false,
             "size": "h3",
-            "image": "shopify:\/\/shop_images\/USP.png",
+            "image": "shopify://shop_images/USP.png",
             "color_bg": ""
           }
         },
         "ee307615-7259-41eb-a24e-66115d2347f7": {
           "type": "image",
           "settings": {
-            "title": "<p>secure payment with<\/p>",
+            "title": "<p>secure payment with</p>",
             "uppercase": true,
             "size": "h3",
-            "image": "shopify:\/\/shop_images\/Secure_Payment.png",
+            "image": "shopify://shop_images/Secure_Payment.png",
             "color_bg": "#ebebeb"
           }
         }
@@ -106,50 +106,50 @@
         "image": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Collagen_Max_Product_Benefits.jpg",
+            "image": "shopify://shop_images/Collagen_Max_Product_Benefits.jpg",
             "image_first": false
           }
         },
         "richtext_1": {
           "type": "richtext",
           "settings": {
-            "title": "<p>NOT JUST LIGHTER SKIN. CLEARER AND YOUNGER-LOOKING SKIN.<\/p>",
-            "description": "<p>Experience a healthy glow in as early as 1 week of taking Collagen Maxx!<\/p>"
+            "title": "<p>NOT JUST LIGHTER SKIN. CLEARER AND YOUNGER-LOOKING SKIN.</p>",
+            "description": "<p>Experience a healthy glow in as early as 1 week of taking Collagen Maxx!</p>"
           }
         },
         "richtext_2": {
           "type": "richtext",
           "settings": {
-            "title": "<p>SMOOTHER, SOFTER, AND NATURAL ROSY COMPLEXION.<\/p>",
-            "description": "<p>Packed with a powerful combination of skin-loving and skin-caring ingredients to reveal your youthful glow.<\/p>"
+            "title": "<p>SMOOTHER, SOFTER, AND NATURAL ROSY COMPLEXION.</p>",
+            "description": "<p>Packed with a powerful combination of skin-loving and skin-caring ingredients to reveal your youthful glow.</p>"
           }
         },
         "richtext_3": {
           "type": "richtext",
           "settings": {
-            "title": "<p>REDUCED APPEARANCE OF WRINKLES AND FINE LINES.<\/p>",
-            "description": "<p>Collagen improves skin’s elasticity, provides deep hydration, and fights signs of skin aging.<\/p>"
+            "title": "<p>REDUCED APPEARANCE OF WRINKLES AND FINE LINES.</p>",
+            "description": "<p>Collagen improves skin’s elasticity, provides deep hydration, and fights signs of skin aging.</p>"
           }
         },
         "684b30b4-42ef-4b84-989b-66ac1afbc9da": {
           "type": "richtext",
           "settings": {
-            "title": "<p>NO MORE DRY AND CRACKED SKIN.<\/p>",
-            "description": "<p>Dull and flaky skin? Let’s make it soft and radiant.<\/p>"
+            "title": "<p>NO MORE DRY AND CRACKED SKIN.</p>",
+            "description": "<p>Dull and flaky skin? Let’s make it soft and radiant.</p>"
           }
         },
         "9e97ad02-819d-4ac7-8fd5-fd3e679e452a": {
           "type": "richtext",
           "settings": {
-            "title": "<p>SAY GOODBYE TO BREAKOUTS AND DARK SPOTS.<\/p>",
-            "description": "<p>Enjoy your most beautiful skin ever – acne-free, smaller pores, and even skin tone.<\/p>"
+            "title": "<p>SAY GOODBYE TO BREAKOUTS AND DARK SPOTS.</p>",
+            "description": "<p>Enjoy your most beautiful skin ever – acne-free, smaller pores, and even skin tone.</p>"
           }
         },
         "84337068-5d95-4efd-a655-14a23e8b6890": {
           "type": "richtext",
           "settings": {
-            "title": "<p>COLLAGEN MAXX TAKES CARE OF YOUR BODY, TOO!<\/p>",
-            "description": "<p>Happy customers reported improved metabolism, better sleep, healthier hair and stronger nails.<\/p>"
+            "title": "<p>COLLAGEN MAXX TAKES CARE OF YOUR BODY, TOO!</p>",
+            "description": "<p>Happy customers reported improved metabolism, better sleep, healthier hair and stronger nails.</p>"
           }
         }
       },
@@ -192,25 +192,25 @@
         "image_1": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Ara_G.jpg"
+            "image": "shopify://shop_images/Ara_G.jpg"
           }
         },
         "image_2": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Justin.jpg"
+            "image": "shopify://shop_images/Justin.jpg"
           }
         },
         "image_3": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Roanne.jpg"
+            "image": "shopify://shop_images/Roanne.jpg"
           }
         },
         "d70e3bf6-30e2-4e92-b7b2-ccfc948d47bd": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Lavin.jpg"
+            "image": "shopify://shop_images/Lavin.jpg"
           }
         }
       },
@@ -234,7 +234,7 @@
         "image": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Collagen_Maxx_Ingredients.png"
+            "image": "shopify://shop_images/Collagen_Maxx_Ingredients.png"
           }
         },
         "header": {
@@ -249,35 +249,35 @@
           "type": "accordion",
           "settings": {
             "title": "PATENTED FISH COLLAGEN",
-            "content": "<p>Keeps skin smooth, supple, and free from signs of skin aging.<\/p>"
+            "content": "<p>Keeps skin smooth, supple, and free from signs of skin aging.</p>"
           }
         },
         "accordion_2": {
           "type": "accordion",
           "settings": {
             "title": "PATENTED KIWI EXTRACT",
-            "content": "<p>With anti-inflammatory properties to help fight and clear acne.<\/p>"
+            "content": "<p>With anti-inflammatory properties to help fight and clear acne.</p>"
           }
         },
         "accordion_3": {
           "type": "accordion",
           "settings": {
             "title": "PATENTED FIBERSOL-2",
-            "content": "<p>Improves metabolism, helps in weight management, and promotes healthy digestion.<\/p>"
+            "content": "<p>Improves metabolism, helps in weight management, and promotes healthy digestion.</p>"
           }
         },
         "accordion_4": {
           "type": "accordion",
           "settings": {
             "title": "VITAMIN C",
-            "content": "<p>Lightens dark spots, slows down skin aging, promotes collagen production, and helps strengthen your immunity.<\/p>"
+            "content": "<p>Lightens dark spots, slows down skin aging, promotes collagen production, and helps strengthen your immunity.</p>"
           }
         },
         "b74ed3ea-e042-484b-be51-197f9bdd5c03": {
           "type": "accordion",
           "settings": {
             "title": "VEGETABLE AND FRUIT EXTRACT",
-            "content": "<p>With antioxidants, vitamins, and minerals to repair the skin and protect it from further damage.<\/p>"
+            "content": "<p>With antioxidants, vitamins, and minerals to repair the skin and protect it from further damage.</p>"
           }
         }
       },
@@ -291,7 +291,7 @@
         "b74ed3ea-e042-484b-be51-197f9bdd5c03"
       ],
       "settings": {
-        "bg_image": "shopify:\/\/shop_images\/Collagen_Maxx_FAQ_2.png",
+        "bg_image": "shopify://shop_images/Collagen_Maxx_FAQ_2.png",
         "use_as_default_padding": false,
         "padding_top": 80,
         "padding_bottom": 80
@@ -320,33 +320,33 @@
         "video_1": {
           "type": "video",
           "settings": {
-            "video_url": "https:\/\/www.youtube.com\/watch?v=CrIPy11VWl8",
+            "video_url": "https://www.youtube.com/watch?v=CrIPy11VWl8",
             "description": "",
-            "thumbnail": "shopify:\/\/shop_images\/Lavin_Galicha.jpg"
+            "thumbnail": "shopify://shop_images/Lavin_Galicha.jpg"
           }
         },
         "video_2": {
           "type": "video",
           "settings": {
-            "video_url": "https:\/\/www.youtube.com\/watch?v=y8zU3XsjWP4",
+            "video_url": "https://www.youtube.com/watch?v=y8zU3XsjWP4",
             "description": "",
-            "thumbnail": "shopify:\/\/shop_images\/Roanne_Barroga.jpg"
+            "thumbnail": "shopify://shop_images/Roanne_Barroga.jpg"
           }
         },
         "b8e11e89-074c-4646-baf8-e17fc6492206": {
           "type": "video",
           "settings": {
-            "video_url": "https:\/\/www.youtube.com\/watch?v=EE6ZMwj6yLk",
+            "video_url": "https://www.youtube.com/watch?v=EE6ZMwj6yLk",
             "description": "",
-            "thumbnail": "shopify:\/\/shop_images\/MamaLeys.jpg"
+            "thumbnail": "shopify://shop_images/MamaLeys.jpg"
           }
         },
         "4fd237cc-7caa-465f-8558-ce1b1fa3eda2": {
           "type": "video",
           "settings": {
-            "video_url": "https:\/\/www.youtube.com\/watch?v=_ML0QhRO3R8",
+            "video_url": "https://www.youtube.com/watch?v=_ML0QhRO3R8",
             "description": "",
-            "thumbnail": "shopify:\/\/shop_images\/Sushie_Rojas.jpg"
+            "thumbnail": "shopify://shop_images/Sushie_Rojas.jpg"
           }
         }
       },
@@ -379,17 +379,17 @@
         "1655453302316422ed-2": {
           "type": "video",
           "settings": {
-            "video_url": "https:\/\/www.youtube.com\/watch?v=ts6AJv_cZxs",
+            "video_url": "https://www.youtube.com/watch?v=ts6AJv_cZxs",
             "description": "",
-            "thumbnail": "shopify:\/\/shop_images\/Jea_Chan.jpg"
+            "thumbnail": "shopify://shop_images/Jea_Chan.jpg"
           }
         },
         "1655453302316422ed-1": {
           "type": "video",
           "settings": {
-            "video_url": "https:\/\/www.youtube.com\/watch?v=spViBEkDPPk",
+            "video_url": "https://www.youtube.com/watch?v=spViBEkDPPk",
             "description": "",
-            "thumbnail": "shopify:\/\/shop_images\/Alyza_Montero.jpg"
+            "thumbnail": "shopify://shop_images/Alyza_Montero.jpg"
           }
         }
       },
@@ -428,8 +428,8 @@
         "header": {
           "type": "header",
           "settings": {
-            "title": "<p><strong>JOIN OSWELL'S VIP CLUB & GET 10% OFF<\/strong><\/p><p><strong>ON YOUR FIRST PURCHASE.<\/strong><\/p>",
-            "subtitle": "<p>You'll also be the first one to get notified of<\/p><p>our promotions and new drops.<\/p>"
+            "title": "<p><strong>JOIN OSWELL'S VIP CLUB & GET 10% OFF</strong></p><p><strong>ON YOUR FIRST PURCHASE.</strong></p>",
+            "subtitle": "<p>You'll also be the first one to get notified of</p><p>our promotions and new drops.</p>"
           }
         },
         "form": {
@@ -447,7 +447,7 @@
         "form"
       ],
       "settings": {
-        "bg_image": "shopify:\/\/shop_images\/NewsLetter.png",
+        "bg_image": "shopify://shop_images/NewsLetter.png",
         "use_as_default_padding": false,
         "padding_top": 36,
         "padding_bottom": 36
@@ -465,7 +465,7 @@
           }
         },
         "026390d0-a6f9-4686-b5c0-99b2ff06cf1c": {
-          "type": "shopify:\/\/apps\/instafeed-instagram-feed\/blocks\/app-block\/c447db20-095d-4a10-9725-b5977662c9d5",
+          "type": "shopify://apps/instafeed-instagram-feed/blocks/app-block/c447db20-095d-4a10-9725-b5977662c9d5",
           "settings": {
             "heading_size": 20,
             "feed_width": 100,

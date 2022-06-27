@@ -6,7 +6,7 @@
         "image_1": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Gluta_Maxx.png",
+            "image": "shopify://shop_images/Gluta_Maxx.png",
             "product": "oswell-gluta-maxx",
             "color_dot": "#d26c91"
           }
@@ -14,7 +14,7 @@
         "image_2": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Collagen_Maxx.png",
+            "image": "shopify://shop_images/Collagen_Maxx.png",
             "product": "oswell-collagen-maxx",
             "color_dot": "#a60041"
           }
@@ -22,7 +22,7 @@
         "image_3": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Total_Flux.png",
+            "image": "shopify://shop_images/Total_Flux.png",
             "product": "oswell-total-flux",
             "color_dot": "#8f280b"
           }
@@ -35,9 +35,9 @@
       ],
       "settings": {
         "title": "Enrich your skin and body from within.",
-        "subtitle": "<p>Best-selling daily self-care supplements from Taiwan now in the Philippines!<\/p>",
+        "subtitle": "<p>Best-selling daily self-care supplements from Taiwan now in the Philippines!</p>",
         "btn_label": "View Product",
-        "btn_link": "shopify:\/\/collections\/all",
+        "btn_link": "shopify://collections/all",
         "round_corner": false,
         "shadow_effect": false,
         "auto_width": false,
@@ -87,24 +87,24 @@
           "type": "image_with_text",
           "settings": {
             "title": "COLLAGEN MAXX: BRINGS OUT YOUR HEALTHIEST GLOW.",
-            "richtext": "<p>✔ Collagen, Kiwi Extract, Fibersol-2, Vitamin C, and Vegetable and Fruit Extract in every tablet.<\/p><p>✔ Reveals your most radiant, most beautiful, most youthful skin ever.<\/p><p>✔ Look fresh and glowing by taking 1-2 Collagen Maxx tablets everyday.<\/p><p>✔ Moisturized, soft, and smooth skin.<\/p><p>✔ Reduced wrinkles, fine lines, eye bags, and other signs of skin aging.<\/p><p>✔ Less acne breakouts, faded dark spots, and even skin tone.<\/p><p>✔ Stronger nails and healthier hair.<\/p><p>✔ Better sleep. Better mood. Better metabolism.<\/p><p><strong>See visible results in as fast as 1 week!<\/strong><\/p>",
-            "image": "shopify:\/\/shop_images\/Collagen_Maxx_Product_Benefits.png"
+            "richtext": "<p>✔ Collagen, Kiwi Extract, Fibersol-2, Vitamin C, and Vegetable and Fruit Extract in every tablet.</p><p>✔ Reveals your most radiant, most beautiful, most youthful skin ever.</p><p>✔ Look fresh and glowing by taking 1-2 Collagen Maxx tablets everyday.</p><p>✔ Moisturized, soft, and smooth skin.</p><p>✔ Reduced wrinkles, fine lines, eye bags, and other signs of skin aging.</p><p>✔ Less acne breakouts, faded dark spots, and even skin tone.</p><p>✔ Stronger nails and healthier hair.</p><p>✔ Better sleep. Better mood. Better metabolism.</p><p><strong>See visible results in as fast as 1 week!</strong></p>",
+            "image": "shopify://shop_images/Collagen_Maxx_Product_Benefits.png"
           }
         },
         "image_with_text_1": {
           "type": "image_with_text",
           "settings": {
             "title": "GLUTA MAXX: TAKE YOUR DAILY DOSE OF GLUTATHIONE LIKE CANDY!",
-            "richtext": "<p>✔ Fun, easy-to-take glutathione tablets in chewable form.<\/p><p>✔ Achieve that fair skin you’ve always wanted.<\/p><p>✔ Brightens, repairs, and protects the skin.<\/p><p>✔ Reduces bumps, dark spots, and blemishes.<\/p><p>✔ Improves hydration and protects the skin from UV damage.<\/p><p>✔ Less wrinkles, fine lines, and other signs of skin aging.<\/p><p>✔ Rich in antioxidants, vitamins, and minerals to take care of you from the inside out.<\/p><p><strong>See visible results in as fast as 1 week!<\/strong><\/p>",
-            "image": "shopify:\/\/shop_images\/Gluta_Maxx_Product_Benefits.png"
+            "richtext": "<p>✔ Fun, easy-to-take glutathione tablets in chewable form.</p><p>✔ Achieve that fair skin you’ve always wanted.</p><p>✔ Brightens, repairs, and protects the skin.</p><p>✔ Reduces bumps, dark spots, and blemishes.</p><p>✔ Improves hydration and protects the skin from UV damage.</p><p>✔ Less wrinkles, fine lines, and other signs of skin aging.</p><p>✔ Rich in antioxidants, vitamins, and minerals to take care of you from the inside out.</p><p><strong>See visible results in as fast as 1 week!</strong></p>",
+            "image": "shopify://shop_images/Gluta_Maxx_Product_Benefits.png"
           }
         },
         "image_with_text_3": {
           "type": "image_with_text",
           "settings": {
             "title": "TOTAL FLUX: YOUR DAILY 5-in-1 HEALTH SUPPLEMENT",
-            "richtext": "<p>✔ Helps fight these health problems:<\/p><p>-Hemorrhoid<\/p><p>-Diabetes<\/p><p>-High Blood Pressure \/ Cardiovascular<\/p><p>- Constipation<\/p><p>- Insomnia<\/p><p>- Leucorrhea<\/p><p>- Menopause<\/p><p>✔ Regulates blood circulation.<\/p><p>✔ Improves metabolism.<\/p><p>✔ Regulates cholesterol level.<\/p><p>✔ Helps eliminate body toxins.<\/p><p>✔ Improves blood vessel elasticity.<\/p><p>✔ Helps reduce inflammation.<\/p>",
-            "image": "shopify:\/\/shop_images\/Total_Flux_Product_Benefits.png"
+            "richtext": "<p>✔ Helps fight these health problems:</p><p>-Hemorrhoid</p><p>-Diabetes</p><p>-High Blood Pressure / Cardiovascular</p><p>- Constipation</p><p>- Insomnia</p><p>- Leucorrhea</p><p>- Menopause</p><p>✔ Regulates blood circulation.</p><p>✔ Improves metabolism.</p><p>✔ Regulates cholesterol level.</p><p>✔ Helps eliminate body toxins.</p><p>✔ Improves blood vessel elasticity.</p><p>✔ Helps reduce inflammation.</p>",
+            "image": "shopify://shop_images/Total_Flux_Product_Benefits.png"
           }
         }
       },
@@ -115,7 +115,7 @@
       ],
       "settings": {
         "image_first": true,
-        "image_bg": "shopify:\/\/shop_images\/Product_Benefits_BG.jpg",
+        "image_bg": "shopify://shop_images/Product_Benefits_BG.jpg",
         "use_as_default_padding": true,
         "padding_top": 36,
         "padding_bottom": 36
@@ -135,24 +135,24 @@
         "image_with_text_1": {
           "type": "image_with_text",
           "settings": {
-            "image": "shopify:\/\/shop_images\/300k.jpg",
-            "title": "<p>bottles were sold<\/p><p>since 2020<\/p>",
+            "image": "shopify://shop_images/300k.jpg",
+            "title": "<p>bottles were sold</p><p>since 2020</p>",
             "description": ""
           }
         },
         "image_with_text_2": {
           "type": "image_with_text",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Made_in_Taiwan.jpg",
-            "title": "<p>made in<\/p><p>Taiwan<\/p>",
+            "image": "shopify://shop_images/Made_in_Taiwan.jpg",
+            "title": "<p>made in</p><p>Taiwan</p>",
             "description": ""
           }
         },
         "image_with_text_3": {
           "type": "image_with_text",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Organic.jpg",
-            "title": "<p>100% organic<\/p><p>ingredients<\/p>",
+            "image": "shopify://shop_images/Organic.jpg",
+            "title": "<p>100% organic</p><p>ingredients</p>",
             "description": ""
           }
         }
@@ -196,17 +196,17 @@
         "video_1": {
           "type": "video",
           "settings": {
-            "video_url": "https:\/\/www.youtube.com\/watch?v=ts6AJv_cZxs",
+            "video_url": "https://www.youtube.com/watch?v=ts6AJv_cZxs",
             "description": "Affordable & Effective Collagen Supplement | Oswell Collagen Max (Patented Fish Collagen) Jea Chan",
-            "thumbnail": "shopify:\/\/shop_images\/Jea_Chan.jpg"
+            "thumbnail": "shopify://shop_images/Jea_Chan.jpg"
           }
         },
         "d245a7c9-8dcb-440f-8f62-3be11a04005c": {
           "type": "video",
           "settings": {
-            "video_url": "https:\/\/www.youtube.com\/watch?v=spViBEkDPPk",
+            "video_url": "https://www.youtube.com/watch?v=spViBEkDPPk",
             "description": "7 DAYS USING COLLAGEN MAXX",
-            "thumbnail": "shopify:\/\/shop_images\/Alyza_Montero.jpg"
+            "thumbnail": "shopify://shop_images/Alyza_Montero.jpg"
           }
         }
       },
@@ -248,8 +248,8 @@
         "header": {
           "type": "header",
           "settings": {
-            "title": "<p><strong>JOIN OSWELL'S VIP CLUB & GET 10% OFF<\/strong><\/p><p><strong>ON YOUR FIRST PURCHASE.<\/strong><\/p>",
-            "subtitle": "<p>You'll also be the first one to get notified of<\/p><p>our promotions and new drops.<\/p>"
+            "title": "<p><strong>JOIN OSWELL'S VIP CLUB & GET 10% OFF</strong></p><p><strong>ON YOUR FIRST PURCHASE.</strong></p>",
+            "subtitle": "<p>You'll also be the first one to get notified of</p><p>our promotions and new drops.</p>"
           }
         },
         "form": {
@@ -267,7 +267,7 @@
         "form"
       ],
       "settings": {
-        "bg_image": "shopify:\/\/shop_images\/NewsLetter.png",
+        "bg_image": "shopify://shop_images/NewsLetter.png",
         "use_as_default_padding": false,
         "padding_top": 36,
         "padding_bottom": 36
@@ -285,7 +285,7 @@
           }
         },
         "f9c0e8fd-5da6-43b5-96de-1035bd1e0aa5": {
-          "type": "shopify:\/\/apps\/instafeed-instagram-feed\/blocks\/app-block\/c447db20-095d-4a10-9725-b5977662c9d5",
+          "type": "shopify://apps/instafeed-instagram-feed/blocks/app-block/c447db20-095d-4a10-9725-b5977662c9d5",
           "settings": {
             "heading_size": 20,
             "feed_width": 100,
