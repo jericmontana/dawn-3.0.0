@@ -15,6 +15,12 @@
             }
         }
     {%- endif -%}
+    
+    {%- if section.settings.columns_mobile == 1 -%}
+      .section__text--title{
+        --font-heading-scale: 0.6 !important;
+      }
+    {%- endif -%}
 {%- endstyle -%}
 
 {% capture grid_device_class %}
