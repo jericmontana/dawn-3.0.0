@@ -6,8 +6,8 @@
 
     .section__review{
         position: relative;
-        max-height: 600px;
-        overflow-y: scroll;
+        // max-height: 600px;
+        // overflow-y: scroll;
         overflow-x: hidden;
         scrollbar-color: rgb(var(--color-base-accent-2)) rgba(var(--color-base-accent-2), 0.5);
         scrollbar-width: thin;
