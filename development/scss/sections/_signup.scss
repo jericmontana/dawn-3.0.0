@@ -111,8 +111,15 @@
     .section__header{
         & *{
             text-align: left;
+
+            @include device('mobile'){
+                &{
+                    text-align: center;
+                }
+            }
         }
     }
+    
 
     @include device('tablet'){
         .section__header{
