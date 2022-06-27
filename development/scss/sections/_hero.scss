@@ -72,7 +72,6 @@
         }
         .title{
             --font-heading-scale: 1.4;
-            color: rgb(var(--color-base-accent-2));
             margin: 0rem;
             margin-bottom: 1rem;
             font-weight: 600;
@@ -85,7 +84,6 @@
         }
 
         .subtitle{
-            color: rgb(var(--color-base-accent-2));
             margin-bottom: 1rem;
             line-height: calc(1 + .5/var(--font-body-scale));
 
