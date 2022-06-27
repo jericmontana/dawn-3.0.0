@@ -20,7 +20,7 @@
             p{
                 margin: 0;
                 line-height: calc(1 + 0.5 / var(--font-body-scale));
-                color: rgba(var(--color-base-accent-2),0.75);
+                // color: rgba(var(--color-base-accent-2),0.75);
                 
                 &:not(:first-child){
                     margin-top: 1rem;
@@ -43,7 +43,7 @@
         h2{
             margin-top: 0rem;
             margin-bottom: 1.14rem;
-            color: rgb(var(--color-base-accent-2));
+            // color: rgb(var(--color-base-accent-2));
         }
 
         @include device('desktop'){
