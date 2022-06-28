@@ -307,42 +307,42 @@
         "slider": {
           "type": "slider",
           "settings": {
-            "columns_desktop": 3,
+            "columns_desktop": 2,
             "columns_tablet": 2,
             "columns_mobile": 1,
-            "slider": "everywhere"
+            "slider": "slide-me-not"
           }
         },
         "video_1": {
           "type": "video",
           "settings": {
-            "video_url": "https:\/\/www.youtube.com\/watch?v=CrIPy11VWl8",
-            "description": "",
-            "thumbnail": "shopify:\/\/shop_images\/Lavin_Galicha.jpg"
+            "video_url": "https:\/\/www.youtube.com\/watch?v=ugh1HBPnAnY",
+            "description": "HOW TO HAVE BRIGHTER\/WHITER & YOUTHFUL SKIN \/ ANOTHER BEAUTY SECRET REVEALED | ARA G.",
+            "thumbnail": "shopify:\/\/shop_images\/Ara_G.jpg"
           }
         },
         "video_2": {
           "type": "video",
           "settings": {
-            "video_url": "https:\/\/www.youtube.com\/watch?v=y8zU3XsjWP4",
-            "description": "",
-            "thumbnail": "shopify:\/\/shop_images\/Roanne_Barroga.jpg"
+            "video_url": "https:\/\/www.youtube.com\/watch?v=n_qvKjV4mLs",
+            "description": "SUPER MURA AND EFFECTIVE NA CHEWABLE GLUTA MAXX",
+            "thumbnail": "shopify:\/\/shop_images\/Kristy_Halili.jpg"
           }
         },
         "b8e11e89-074c-4646-baf8-e17fc6492206": {
           "type": "video",
           "settings": {
-            "video_url": "https:\/\/www.youtube.com\/watch?v=EE6ZMwj6yLk",
-            "description": "",
-            "thumbnail": "shopify:\/\/shop_images\/MamaLeys.jpg"
+            "video_url": "https:\/\/www.youtube.com\/watch?v=RhXvDlEI8bI",
+            "description": "Mura pero Effective Glutathione Tablet, 2weeks lng kita na Ang results| Oswell Glutamaxx | Jea Chan",
+            "thumbnail": "shopify:\/\/shop_images\/Jea_Chan_1ce7a23d-43c4-4b6e-93d1-721a79bd7f22.jpg"
           }
         },
         "4fd237cc-7caa-465f-8558-ce1b1fa3eda2": {
           "type": "video",
           "settings": {
-            "video_url": "https:\/\/www.youtube.com\/watch?v=_ML0QhRO3R8",
-            "description": "",
-            "thumbnail": "shopify:\/\/shop_images\/Sushie_Rojas.jpg"
+            "video_url": "https:\/\/www.youtube.com\/watch?v=DDP1Vs2Hj9Y",
+            "description": "OSwell GLUTA MAXX Honest Review | AlexOnly",
+            "thumbnail": "shopify:\/\/shop_images\/Alex_Only.jpg"
           }
         }
       },
@@ -357,46 +357,6 @@
       "settings": {
         "use_as_default_padding": false,
         "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "16554533030d0f81f2": {
-      "type": "video-7923216",
-      "blocks": {
-        "c712a137-05e1-4057-9d66-26d085ebbb2e": {
-          "type": "slider",
-          "settings": {
-            "columns_desktop": 2,
-            "columns_tablet": 2,
-            "columns_mobile": 1,
-            "slider": "slide-me-not"
-          }
-        },
-        "1655453302316422ed-2": {
-          "type": "video",
-          "settings": {
-            "video_url": "https:\/\/www.youtube.com\/watch?v=ts6AJv_cZxs",
-            "description": "",
-            "thumbnail": "shopify:\/\/shop_images\/Jea_Chan.jpg"
-          }
-        },
-        "1655453302316422ed-1": {
-          "type": "video",
-          "settings": {
-            "video_url": "https:\/\/www.youtube.com\/watch?v=spViBEkDPPk",
-            "description": "",
-            "thumbnail": "shopify:\/\/shop_images\/Alyza_Montero.jpg"
-          }
-        }
-      },
-      "block_order": [
-        "c712a137-05e1-4057-9d66-26d085ebbb2e",
-        "1655453302316422ed-2",
-        "1655453302316422ed-1"
-      ],
-      "settings": {
-        "use_as_default_padding": true,
-        "padding_top": 0,
         "padding_bottom": 36
       }
     },
@@ -497,7 +457,6 @@
     "before_after",
     "image_accordion",
     "video",
-    "16554533030d0f81f2",
     "review",
     "email_signup",
     "instafeed",
