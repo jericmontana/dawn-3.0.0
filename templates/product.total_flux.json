@@ -305,7 +305,7 @@
         "slider": {
           "type": "slider",
           "settings": {
-            "columns_desktop": 3,
+            "columns_desktop": 2,
             "columns_tablet": 2,
             "columns_mobile": 1,
             "slider": "slide-me-not"
