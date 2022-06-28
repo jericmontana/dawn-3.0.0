@@ -22,8 +22,10 @@
         margin-bottom: 4rem;
         width: 100%;
 
-        *{
-            color: rgb(var(--color-base-accent-2));
+        @include device('tablet-up'){
+            & *{
+                color: rgba(var(--color-base-accent-2));
+            } 
         }
 
         p{

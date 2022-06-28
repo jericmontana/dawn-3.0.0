@@ -3,11 +3,11 @@
     position: relative;
     overflow: hidden;
 
-    .section__header{
-        & *{
-            color: rgba(var(--color-base-accent-2));
-        }
-    }
+    // .section__header{
+    //     & *{
+    //         color: rgba(var(--color-base-accent-2));
+    //     }
+    // }
 
     slider-component{
         position: relative;

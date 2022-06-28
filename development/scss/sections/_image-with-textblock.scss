@@ -12,11 +12,11 @@
         }
     }
 
-    .section__header{
-        * {
-            color: rgb(var(--color-base-accent-2));
-        }
-    }
+    // .section__header{
+    //     * {
+    //         color: rgb(var(--color-base-accent-2));
+    //     }
+    // }
 
     .section__image{
         display: flex;
@@ -39,9 +39,9 @@
     .section__richtext{
         padding: 0rem 1.4rem 0rem 1.4rem;
 
-        * {
-            color: rgb(var(--color-base-accent-2));
-        }
+        // * {
+        //     color: rgb(var(--color-base-accent-2));
+        // }
 
         .richtext--block{
             &:not(:first-of-type){
