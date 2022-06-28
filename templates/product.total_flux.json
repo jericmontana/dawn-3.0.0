@@ -99,13 +99,14 @@
         "header": {
           "type": "header",
           "settings": {
-            "title": "THE COLLAGEN MAXX TRANSFORMATION",
+            "title": "ONE SUPPLEMENT FOR YOUR HEALTH CONCERNS",
             "title_uppercase": true,
             "subtitle": ""
           }
         },
         "image": {
           "type": "image",
+          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/Collagen_Max_Product_Benefits.jpg",
             "image_first": false
@@ -114,43 +115,36 @@
         "richtext_1": {
           "type": "richtext",
           "settings": {
-            "title": "<p>NOT JUST LIGHTER SKIN. CLEARER AND YOUNGER-LOOKING SKIN.<\/p>",
-            "description": "<p>Experience a healthy glow in as early as 1 week of taking Collagen Maxx!<\/p>"
+            "title": "<p>NO TO CONSTIPATION. YES TO BETTER BOWEL MOVEMENT.<\/p>",
+            "description": "<p>Patented Fibersol-2 improves metabolism and helps improve digestion.<\/p>"
           }
         },
         "richtext_2": {
           "type": "richtext",
           "settings": {
-            "title": "<p>SMOOTHER, SOFTER, AND NATURAL ROSY COMPLEXION.<\/p>",
-            "description": "<p>Packed with a powerful combination of skin-loving and skin-caring ingredients to reveal your youthful glow.<\/p>"
+            "title": "<p>KEEP YOUR HEART AND OTHER ORGANS HEALTHY WITH TOTAL FLUX.<\/p>",
+            "description": "<p>With Citrus Bioflavonoid that helps regulate blood circulation, allowing blood and oxygen to flow properly and all body parts to function well.<\/p>"
           }
         },
         "richtext_3": {
           "type": "richtext",
           "settings": {
-            "title": "<p>REDUCED APPEARANCE OF WRINKLES AND FINE LINES.<\/p>",
-            "description": "<p>Collagen improves skin’s elasticity, provides deep hydration, and fights signs of skin aging.<\/p>"
+            "title": "<p>A HEALTHY AND NATURAL WAY TO DETOX.<\/p>",
+            "description": "<p>Total Flux contains Brazilian Enzyme that helps flush out body toxins.<\/p>"
           }
         },
         "684b30b4-42ef-4b84-989b-66ac1afbc9da": {
           "type": "richtext",
           "settings": {
-            "title": "<p>NO MORE DRY AND CRACKED SKIN.<\/p>",
-            "description": "<p>Dull and flaky skin? Let’s make it soft and radiant.<\/p>"
+            "title": "<p>REDUCED INFLAMMATION AND LOWER RISK OF SERIOUS HEALTH PROBLEMS.<\/p>",
+            "description": "<p>With Grape Seed that lessens inflammation, oxidative stress, and free radical damage.<\/p>"
           }
         },
         "9e97ad02-819d-4ac7-8fd5-fd3e679e452a": {
           "type": "richtext",
           "settings": {
-            "title": "<p>SAY GOODBYE TO BREAKOUTS AND DARK SPOTS.<\/p>",
-            "description": "<p>Enjoy your most beautiful skin ever – acne-free, smaller pores, and even skin tone.<\/p>"
-          }
-        },
-        "84337068-5d95-4efd-a655-14a23e8b6890": {
-          "type": "richtext",
-          "settings": {
-            "title": "<p>COLLAGEN MAXX TAKES CARE OF YOUR BODY, TOO!<\/p>",
-            "description": "<p>Happy customers reported improved metabolism, better sleep, healthier hair and stronger nails.<\/p>"
+            "title": "<p>SAFE AND EFFECTIVE. <\/p>",
+            "description": "<p>FDA-approved and made with all-natural, effective ingredients to address your health concerns.<\/p>"
           }
         }
       },
@@ -161,8 +155,7 @@
         "richtext_2",
         "richtext_3",
         "684b30b4-42ef-4b84-989b-66ac1afbc9da",
-        "9e97ad02-819d-4ac7-8fd5-fd3e679e452a",
-        "84337068-5d95-4efd-a655-14a23e8b6890"
+        "9e97ad02-819d-4ac7-8fd5-fd3e679e452a"
       ],
       "settings": {
         "use_as_default_padding": false,
