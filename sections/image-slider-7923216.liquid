@@ -26,10 +26,11 @@
         <div class="page-width">
 
             {%- for block in header_blocks -%}
-            <div class="section__header">
-                <h2 class="h1 {% if block.settings.title_uppercase %}uppercase{% endif %}">{{ block.settings.title | escape }}</h2>
-                <p class="h3">{{ block.settings.subtitle | escape }}</p>
-            </div>
+              {%- render 'section-header',
+                title: block.settings.title,
+                subtitle: block.settings.subtitle,
+                uppercase: block.settings.title_uppercase
+              -%}
             {%- endfor -%}
 
             {%- for block in slider_blocks -%}
