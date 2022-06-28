@@ -1,0 +1,511 @@
+{
+    "sections": {
+      "main": {
+        "type": "main-product",
+        "blocks": {
+          "text_featured_review": {
+            "type": "text_featured_review",
+            "settings": {
+              "testimony": "<p>\"Sobrang ganda ng product, kahit bagong gising and fresh pa ding tignan. \"<\/p>",
+              "uppercase": false,
+              "justify": false,
+              "size": "h2",
+              "customer_name": "<p>— Rose, OSwell verified customer<\/p>"
+            }
+          },
+          "richtext_copy": {
+            "type": "richtext_copy",
+            "settings": {
+              "richtext": "<p>COLLAGEN MAXX: Daily beauty supplement for that radiant, youthful, natural rosy glow you’ve always wanted.<\/p><p>Packed with nutritionist-approved ingredients with skin and wellness benefits:<\/p><p>- Collagen<\/p><p>- Vitamin C<\/p><p>- Kiwi Seed Extract<\/p><p>- Vegetable and Fruit Extract<\/p><p>- Fibersol-2<\/p>",
+              "uppercase": false,
+              "justify": false,
+              "size": "h3"
+            }
+          },
+          "popup": {
+            "type": "popup",
+            "settings": {
+              "label": "Nutrition Facts",
+              "uppercase": true,
+              "image": "shopify:\/\/shop_images\/Collagen_Maxx_Nutrition_Facts.jpg"
+            }
+          },
+          "custom_variant_picker": {
+            "type": "custom_variant_picker",
+            "settings": {
+            }
+          },
+          "quantity_add_to_cart": {
+            "type": "quantity_add_to_cart",
+            "settings": {
+            }
+          },
+          "b878cc72-6d6a-4395-9b48-18fef3fb65b7": {
+            "type": "image",
+            "settings": {
+              "title": "",
+              "uppercase": false,
+              "size": "h3",
+              "image": "shopify:\/\/shop_images\/In_Stock.png",
+              "color_bg": "#ebebeb"
+            }
+          },
+          "02fc9b09-e76b-4edb-9d6e-bcdfebe59e38": {
+            "type": "image",
+            "settings": {
+              "title": "",
+              "uppercase": false,
+              "size": "h3",
+              "image": "shopify:\/\/shop_images\/USP.png",
+              "color_bg": ""
+            }
+          },
+          "ee307615-7259-41eb-a24e-66115d2347f7": {
+            "type": "image",
+            "settings": {
+              "title": "<p>secure payment with<\/p>",
+              "uppercase": true,
+              "size": "h3",
+              "image": "shopify:\/\/shop_images\/Secure_Payment.png",
+              "color_bg": "#ebebeb"
+            }
+          }
+        },
+        "block_order": [
+          "text_featured_review",
+          "richtext_copy",
+          "popup",
+          "custom_variant_picker",
+          "quantity_add_to_cart",
+          "b878cc72-6d6a-4395-9b48-18fef3fb65b7",
+          "02fc9b09-e76b-4edb-9d6e-bcdfebe59e38",
+          "ee307615-7259-41eb-a24e-66115d2347f7"
+        ],
+        "settings": {
+          "enable_sticky_info": true,
+          "gallery_layout": "thumbnail_slider",
+          "media_size": "medium",
+          "mobile_thumbnails": "show",
+          "hide_variants": false,
+          "enable_video_looping": false,
+          "padding_top": 36,
+          "padding_bottom": 12
+        }
+      },
+      "product_benefits": {
+        "type": "image-with-textblock-7923216",
+        "blocks": {
+          "header": {
+            "type": "header",
+            "settings": {
+              "title": "THE COLLAGEN MAXX TRANSFORMATION",
+              "title_uppercase": true,
+              "subtitle": ""
+            }
+          },
+          "image": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Collagen_Max_Product_Benefits.jpg",
+              "image_first": false
+            }
+          },
+          "richtext_1": {
+            "type": "richtext",
+            "settings": {
+              "title": "<p>NOT JUST LIGHTER SKIN. CLEARER AND YOUNGER-LOOKING SKIN.<\/p>",
+              "description": "<p>Experience a healthy glow in as early as 1 week of taking Collagen Maxx!<\/p>"
+            }
+          },
+          "richtext_2": {
+            "type": "richtext",
+            "settings": {
+              "title": "<p>SMOOTHER, SOFTER, AND NATURAL ROSY COMPLEXION.<\/p>",
+              "description": "<p>Packed with a powerful combination of skin-loving and skin-caring ingredients to reveal your youthful glow.<\/p>"
+            }
+          },
+          "richtext_3": {
+            "type": "richtext",
+            "settings": {
+              "title": "<p>REDUCED APPEARANCE OF WRINKLES AND FINE LINES.<\/p>",
+              "description": "<p>Collagen improves skin’s elasticity, provides deep hydration, and fights signs of skin aging.<\/p>"
+            }
+          },
+          "684b30b4-42ef-4b84-989b-66ac1afbc9da": {
+            "type": "richtext",
+            "settings": {
+              "title": "<p>NO MORE DRY AND CRACKED SKIN.<\/p>",
+              "description": "<p>Dull and flaky skin? Let’s make it soft and radiant.<\/p>"
+            }
+          },
+          "9e97ad02-819d-4ac7-8fd5-fd3e679e452a": {
+            "type": "richtext",
+            "settings": {
+              "title": "<p>SAY GOODBYE TO BREAKOUTS AND DARK SPOTS.<\/p>",
+              "description": "<p>Enjoy your most beautiful skin ever – acne-free, smaller pores, and even skin tone.<\/p>"
+            }
+          },
+          "84337068-5d95-4efd-a655-14a23e8b6890": {
+            "type": "richtext",
+            "settings": {
+              "title": "<p>COLLAGEN MAXX TAKES CARE OF YOUR BODY, TOO!<\/p>",
+              "description": "<p>Happy customers reported improved metabolism, better sleep, healthier hair and stronger nails.<\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "header",
+          "image",
+          "richtext_1",
+          "richtext_2",
+          "richtext_3",
+          "684b30b4-42ef-4b84-989b-66ac1afbc9da",
+          "9e97ad02-819d-4ac7-8fd5-fd3e679e452a",
+          "84337068-5d95-4efd-a655-14a23e8b6890"
+        ],
+        "settings": {
+          "use_as_default_padding": false,
+          "padding_top": 36,
+          "padding_bottom": 36
+        }
+      },
+      "before_after": {
+        "type": "image-slider-7923216",
+        "blocks": {
+          "header": {
+            "type": "header",
+            "settings": {
+              "title": "REAL COLLAGEN MAXX USERS",
+              "title_uppercase": true,
+              "subtitle": "Real visible results."
+            }
+          },
+          "slider": {
+            "type": "slider",
+            "settings": {
+              "columns_desktop": 4,
+              "columns_tablet": 3,
+              "columns_mobile": 1,
+              "slider": "everywhere"
+            }
+          },
+          "image_2": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Ara_Influencer.jpg"
+            }
+          },
+          "d70e3bf6-30e2-4e92-b7b2-ccfc948d47bd": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Alyza_Influencer.jpg"
+            }
+          },
+          "image_1": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Gavin_Influencer.jpg"
+            }
+          },
+          "image_3": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/LA_Influencer.jpg"
+            }
+          }
+        },
+        "block_order": [
+          "header",
+          "slider",
+          "image_2",
+          "d70e3bf6-30e2-4e92-b7b2-ccfc948d47bd",
+          "image_1",
+          "image_3"
+        ],
+        "settings": {
+          "use_as_default_padding": false,
+          "padding_top": 36,
+          "padding_bottom": 36
+        }
+      },
+      "image_accordion": {
+        "type": "image-with-accordion-7923216",
+        "blocks": {
+          "image": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Collagen_Maxx_Ingredients.png"
+            }
+          },
+          "header": {
+            "type": "header",
+            "settings": {
+              "title": "NUTRITIONIST-APPROVED INGREDIENTS IN EVERY COLLAGEN MAXX BOTTLE",
+              "title_uppercase": true,
+              "subtitle": ""
+            }
+          },
+          "accordion_1": {
+            "type": "accordion",
+            "settings": {
+              "title": "PATENTED FISH COLLAGEN",
+              "content": "<p>Keeps skin smooth, supple, and free from signs of skin aging.<\/p>"
+            }
+          },
+          "accordion_2": {
+            "type": "accordion",
+            "settings": {
+              "title": "PATENTED KIWI EXTRACT",
+              "content": "<p>With anti-inflammatory properties to help fight and clear acne.<\/p>"
+            }
+          },
+          "accordion_3": {
+            "type": "accordion",
+            "settings": {
+              "title": "PATENTED FIBERSOL-2",
+              "content": "<p>Improves metabolism, helps in weight management, and promotes healthy digestion.<\/p>"
+            }
+          },
+          "accordion_4": {
+            "type": "accordion",
+            "settings": {
+              "title": "VITAMIN C",
+              "content": "<p>Lightens dark spots, slows down skin aging, promotes collagen production, and helps strengthen your immunity.<\/p>"
+            }
+          },
+          "b74ed3ea-e042-484b-be51-197f9bdd5c03": {
+            "type": "accordion",
+            "settings": {
+              "title": "VEGETABLE AND FRUIT EXTRACT",
+              "content": "<p>With antioxidants, vitamins, and minerals to repair the skin and protect it from further damage.<\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "image",
+          "header",
+          "accordion_1",
+          "accordion_2",
+          "accordion_3",
+          "accordion_4",
+          "b74ed3ea-e042-484b-be51-197f9bdd5c03"
+        ],
+        "settings": {
+          "bg_image": "shopify:\/\/shop_images\/Collagen_Maxx_FAQ_2.png",
+          "use_as_default_padding": false,
+          "padding_top": 80,
+          "padding_bottom": 80
+        }
+      },
+      "video": {
+        "type": "video-7923216",
+        "blocks": {
+          "3379703c-d9c4-4f9c-bc47-312e6d9899b5": {
+            "type": "header",
+            "settings": {
+              "title": "ONE BOTTLE LASTS UP TO 3 MONTHS!",
+              "title_uppercase": true,
+              "subtitle": "Take 1-2 tablets everyday and experience transformations like these."
+            }
+          },
+          "slider": {
+            "type": "slider",
+            "settings": {
+              "columns_desktop": 3,
+              "columns_tablet": 2,
+              "columns_mobile": 1,
+              "slider": "everywhere"
+            }
+          },
+          "video_1": {
+            "type": "video",
+            "settings": {
+              "video_url": "https:\/\/www.youtube.com\/watch?v=CrIPy11VWl8",
+              "description": "",
+              "thumbnail": "shopify:\/\/shop_images\/Lavin_Galicha.jpg"
+            }
+          },
+          "video_2": {
+            "type": "video",
+            "settings": {
+              "video_url": "https:\/\/www.youtube.com\/watch?v=y8zU3XsjWP4",
+              "description": "",
+              "thumbnail": "shopify:\/\/shop_images\/Roanne_Barroga.jpg"
+            }
+          },
+          "b8e11e89-074c-4646-baf8-e17fc6492206": {
+            "type": "video",
+            "settings": {
+              "video_url": "https:\/\/www.youtube.com\/watch?v=EE6ZMwj6yLk",
+              "description": "",
+              "thumbnail": "shopify:\/\/shop_images\/MamaLeys.jpg"
+            }
+          },
+          "4fd237cc-7caa-465f-8558-ce1b1fa3eda2": {
+            "type": "video",
+            "settings": {
+              "video_url": "https:\/\/www.youtube.com\/watch?v=_ML0QhRO3R8",
+              "description": "",
+              "thumbnail": "shopify:\/\/shop_images\/Sushie_Rojas.jpg"
+            }
+          }
+        },
+        "block_order": [
+          "3379703c-d9c4-4f9c-bc47-312e6d9899b5",
+          "slider",
+          "video_1",
+          "video_2",
+          "b8e11e89-074c-4646-baf8-e17fc6492206",
+          "4fd237cc-7caa-465f-8558-ce1b1fa3eda2"
+        ],
+        "settings": {
+          "use_as_default_padding": false,
+          "padding_top": 36,
+          "padding_bottom": 36
+        }
+      },
+      "16554533030d0f81f2": {
+        "type": "video-7923216",
+        "blocks": {
+          "c712a137-05e1-4057-9d66-26d085ebbb2e": {
+            "type": "slider",
+            "settings": {
+              "columns_desktop": 2,
+              "columns_tablet": 2,
+              "columns_mobile": 1,
+              "slider": "slide-me-not"
+            }
+          },
+          "1655453302316422ed-2": {
+            "type": "video",
+            "settings": {
+              "video_url": "https:\/\/www.youtube.com\/watch?v=ts6AJv_cZxs",
+              "description": "",
+              "thumbnail": "shopify:\/\/shop_images\/Jea_Chan.jpg"
+            }
+          },
+          "1655453302316422ed-1": {
+            "type": "video",
+            "settings": {
+              "video_url": "https:\/\/www.youtube.com\/watch?v=spViBEkDPPk",
+              "description": "",
+              "thumbnail": "shopify:\/\/shop_images\/Alyza_Montero.jpg"
+            }
+          }
+        },
+        "block_order": [
+          "c712a137-05e1-4057-9d66-26d085ebbb2e",
+          "1655453302316422ed-2",
+          "1655453302316422ed-1"
+        ],
+        "settings": {
+          "use_as_default_padding": true,
+          "padding_top": 0,
+          "padding_bottom": 36
+        }
+      },
+      "review": {
+        "type": "review-product-7923216",
+        "blocks": {
+          "review": {
+            "type": "review",
+            "settings": {
+            }
+          }
+        },
+        "block_order": [
+          "review"
+        ],
+        "settings": {
+          "use_as_default_padding": false,
+          "padding_top": 36,
+          "padding_bottom": 36
+        }
+      },
+      "email_signup": {
+        "type": "signup-7923216",
+        "blocks": {
+          "header": {
+            "type": "header",
+            "settings": {
+              "title": "<p><strong>JOIN OSWELL'S VIP CLUB & GET 10% OFF<\/strong><\/p><p><strong>ON YOUR FIRST PURCHASE.<\/strong><\/p>",
+              "subtitle": "<p>You'll also be the first one to get notified of<\/p><p>our promotions and new drops.<\/p>"
+            }
+          },
+          "form": {
+            "type": "form",
+            "settings": {
+              "name_label": "Name...",
+              "display_name_input": true,
+              "email_label": "Email...",
+              "btn_label": "Subscribe"
+            }
+          }
+        },
+        "block_order": [
+          "header",
+          "form"
+        ],
+        "settings": {
+          "bg_image": "shopify:\/\/shop_images\/NewsLetter.png",
+          "use_as_default_padding": false,
+          "padding_top": 36,
+          "padding_bottom": 36
+        }
+      },
+      "instafeed": {
+        "type": "app-block-7923216",
+        "blocks": {
+          "header": {
+            "type": "heading",
+            "settings": {
+              "title": "Feeling fresh with Oswell's products?",
+              "title_uppercase": false,
+              "subtitle": "Tag @oswellph #oswellph for a chance to be featured"
+            }
+          },
+          "026390d0-a6f9-4686-b5c0-99b2ff06cf1c": {
+            "type": "shopify:\/\/apps\/instafeed-instagram-feed\/blocks\/app-block\/c447db20-095d-4a10-9725-b5977662c9d5",
+            "settings": {
+              "heading_size": 20,
+              "feed_width": 100,
+              "html_area": ""
+            }
+          }
+        },
+        "block_order": [
+          "header",
+          "026390d0-a6f9-4686-b5c0-99b2ff06cf1c"
+        ],
+        "settings": {
+          "round_corner_background": false,
+          "color_scheme": "background-1",
+          "use_as_default_padding": true,
+          "padding_top": 36,
+          "padding_bottom": 36
+        }
+      },
+      "wishlist_reference": {
+        "type": "main-product-wishlist",
+        "settings": {
+          "image_ratio": "square",
+          "show_secondary_image": true,
+          "show_vendor": true,
+          "show_rating": false
+        }
+      }
+    },
+    "order": [
+      "main",
+      "product_benefits",
+      "before_after",
+      "image_accordion",
+      "video",
+      "16554533030d0f81f2",
+      "review",
+      "email_signup",
+      "instafeed",
+      "wishlist_reference"
+    ]
+  }
+  
