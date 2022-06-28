@@ -25,18 +25,21 @@
 <div class="image-with-textblock image-with-textblock--{{ section.id }}">
   <div class="section__container">
     <div class="page-width">
+
       {%- for block in header_blocks -%}
-      <div class="section__header center">
-          <h2 class="h1 {% if block.settings.title_uppercase %}uppercase{% endif %}">{{ block.settings.title | escape }}</h2>
-          <p class="h3">{{ block.settings.subtitle | escape }}</p>
-      </div>
+        {%- render 'section-header',
+          title: block.settings.title,
+          subtitle: block.settings.subtitle,
+          uppercase: block.settings.title_uppercase
+        -%}
       {%- endfor -%}
+
       <div class="grid grid--1-col grid--2-col-desktop {% for block in image_blocks %}{% if block.settings.image_first %}image-first{% endif %}{% endfor %}">
           <div class="grid__item">
               <div class="section__richtext">
               {%- for block in richtext_blocks -%}
                   <div class="richtext--block center">
-                      <h3 class="h2 uppercase">{{ block.settings.title }}</h3>
+                      <h3 class="uppercase">{{ block.settings.title }}</h3>
                       <div class="richtext-description">
                           {{ block.settings.description }}
                       </div>
