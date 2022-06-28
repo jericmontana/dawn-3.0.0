@@ -1510,6 +1510,12 @@ modal-opener.product-popup-modal__opener{
     width: 100%;
   }
 
+  @include device('mobile'){
+    .product-form__buttons {
+      max-width: 100%;
+    }
+  }
+
   .product-form__buttons{
     button{
         border-radius: 0rem;
@@ -1533,9 +1539,9 @@ modal-opener.product-popup-modal__opener{
 }
 
 .featured-review{
-  & *{
-    color: rgb(var(--color-base-accent-2));
-  }
+  // & *{
+  //   color: rgb(var(--color-base-accent-2));
+  // }
 
   &--testimonial{
     p{
@@ -1550,11 +1556,11 @@ modal-opener.product-popup-modal__opener{
   }
 }
 
-.richtext-copy{
-  *{
-    color: rgb(var(--color-base-accent-2));
-  }
-}
+// .richtext-copy{
+//   *{
+//     color: rgb(var(--color-base-accent-2));
+//   }
+// }
 
 // For Popup Button
 .product-popup-modal__button{
