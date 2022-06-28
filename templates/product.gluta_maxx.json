@@ -98,7 +98,7 @@
         "header": {
           "type": "header",
           "settings": {
-            "title": "THE COLLAGEN MAXX TRANSFORMATION",
+            "title": "GLOW TO THE MAX WITH GLUTA MAXX",
             "title_uppercase": true,
             "subtitle": ""
           }
@@ -106,50 +106,43 @@
         "image": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Collagen_Max_Product_Benefits.jpg",
+            "image": "shopify:\/\/shop_images\/Gluta_Maxx_Product_Benefits.jpg",
             "image_first": false
           }
         },
         "richtext_1": {
           "type": "richtext",
           "settings": {
-            "title": "<p>NOT JUST LIGHTER SKIN. CLEARER AND YOUNGER-LOOKING SKIN.<\/p>",
-            "description": "<p>Experience a healthy glow in as early as 1 week of taking Collagen Maxx!<\/p>"
+            "title": "<p>FAIR, RADIANT, AND CLEAR SKIN.<\/p>",
+            "description": "<p>See the results in as fast as 7 days!<\/p>"
           }
         },
         "richtext_2": {
           "type": "richtext",
           "settings": {
-            "title": "<p>SMOOTHER, SOFTER, AND NATURAL ROSY COMPLEXION.<\/p>",
-            "description": "<p>Packed with a powerful combination of skin-loving and skin-caring ingredients to reveal your youthful glow.<\/p>"
+            "title": "<p>MOISTURIZED, SMOOTH, AND GLOWING SKIN.<\/p>",
+            "description": "<p>Don’t aim for lighter skin. Boost your confidence with healthier, younger-looking skin.<\/p>"
           }
         },
         "richtext_3": {
           "type": "richtext",
           "settings": {
-            "title": "<p>REDUCED APPEARANCE OF WRINKLES AND FINE LINES.<\/p>",
-            "description": "<p>Collagen improves skin’s elasticity, provides deep hydration, and fights signs of skin aging.<\/p>"
+            "title": "<p>NO MORE BREAKOUTS AND DARK SPOTS.<\/p>",
+            "description": "<p>A must-have for acne-free, blemish-free, worry-free glowing skin.<\/p>"
           }
         },
         "684b30b4-42ef-4b84-989b-66ac1afbc9da": {
           "type": "richtext",
           "settings": {
-            "title": "<p>NO MORE DRY AND CRACKED SKIN.<\/p>",
-            "description": "<p>Dull and flaky skin? Let’s make it soft and radiant.<\/p>"
+            "title": "<p>LESS WRINKLES, FINE LINES, SAGGY SKIN, AND OTHER SIGNS OF SKIN AGING.<\/p>",
+            "description": "<p>Aside from Glutathione, Gluta Maxx contains Grape Seed Extract and Vitamin C to delay skin aging and fight its early signs.<\/p>"
           }
         },
         "9e97ad02-819d-4ac7-8fd5-fd3e679e452a": {
           "type": "richtext",
           "settings": {
-            "title": "<p>SAY GOODBYE TO BREAKOUTS AND DARK SPOTS.<\/p>",
-            "description": "<p>Enjoy your most beautiful skin ever – acne-free, smaller pores, and even skin tone.<\/p>"
-          }
-        },
-        "84337068-5d95-4efd-a655-14a23e8b6890": {
-          "type": "richtext",
-          "settings": {
-            "title": "<p>COLLAGEN MAXX TAKES CARE OF YOUR BODY, TOO!<\/p>",
-            "description": "<p>Happy customers reported improved metabolism, better sleep, healthier hair and stronger nails.<\/p>"
+            "title": "<p>DULL AND TIRED-LOOKING SKIN NO MORE!<\/p>",
+            "description": "<p>Look fresh, blooming, and pretty even on your busiest days. No makeup needed!<\/p>"
           }
         }
       },
@@ -160,8 +153,7 @@
         "richtext_2",
         "richtext_3",
         "684b30b4-42ef-4b84-989b-66ac1afbc9da",
-        "9e97ad02-819d-4ac7-8fd5-fd3e679e452a",
-        "84337068-5d95-4efd-a655-14a23e8b6890"
+        "9e97ad02-819d-4ac7-8fd5-fd3e679e452a"
       ],
       "settings": {
         "use_as_default_padding": false,
