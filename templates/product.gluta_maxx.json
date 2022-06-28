@@ -184,21 +184,37 @@
         "image_2": {
           "type": "image",
           "settings": {
-          }
-        },
-        "d70e3bf6-30e2-4e92-b7b2-ccfc948d47bd": {
-          "type": "image",
-          "settings": {
-          }
-        },
-        "image_1": {
-          "type": "image",
-          "settings": {
+            "image": "shopify:\/\/shop_images\/Louie_Influencer.jpg"
           }
         },
         "image_3": {
           "type": "image",
           "settings": {
+            "image": "shopify:\/\/shop_images\/Abby_Influencer.jpg"
+          }
+        },
+        "d70e3bf6-30e2-4e92-b7b2-ccfc948d47bd": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Jam_Influencer.jpg"
+          }
+        },
+        "4e67d4ae-7fe0-4945-b311-5c3a8a7065c5": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Kristy_Influencer.jpg"
+          }
+        },
+        "image_1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Argie_Influencer.jpg"
+          }
+        },
+        "b842a14d-3286-43e4-85e8-b4ef6e5a361a": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Welynoor.jpg"
           }
         }
       },
@@ -206,9 +222,11 @@
         "header",
         "slider",
         "image_2",
+        "image_3",
         "d70e3bf6-30e2-4e92-b7b2-ccfc948d47bd",
+        "4e67d4ae-7fe0-4945-b311-5c3a8a7065c5",
         "image_1",
-        "image_3"
+        "b842a14d-3286-43e4-85e8-b4ef6e5a361a"
       ],
       "settings": {
         "use_as_default_padding": false,
