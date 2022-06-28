@@ -167,9 +167,9 @@
         "header": {
           "type": "header",
           "settings": {
-            "title": "REAL COLLAGEN MAXX USERS",
+            "title": "LOOKING FOR SOME GLUTA MAXX TRANSFORMATIONS?",
             "title_uppercase": true,
-            "subtitle": "Real visible results."
+            "subtitle": "Experience results like these in as early as 7 days!"
           }
         },
         "slider": {
@@ -184,25 +184,21 @@
         "image_2": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Ara_Influencer.jpg"
           }
         },
         "d70e3bf6-30e2-4e92-b7b2-ccfc948d47bd": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Alyza_Influencer.jpg"
           }
         },
         "image_1": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Gavin_Influencer.jpg"
           }
         },
         "image_3": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/LA_Influencer.jpg"
           }
         }
       },
