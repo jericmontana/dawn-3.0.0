@@ -169,9 +169,9 @@
         "header": {
           "type": "header",
           "settings": {
-            "title": "REAL COLLAGEN MAXX USERS",
+            "title": "REAL TOTAL FLUX USERS WITH REAL RESULTS.",
             "title_uppercase": true,
-            "subtitle": "Real visible results."
+            "subtitle": "Take 1 tablet everyday and experience the amazing benefits"
           }
         },
         "slider": {
@@ -186,25 +186,25 @@
         "image_2": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Ara_Influencer.jpg"
-          }
-        },
-        "d70e3bf6-30e2-4e92-b7b2-ccfc948d47bd": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Alyza_Influencer.jpg"
+            "image": "shopify:\/\/shop_images\/Jea_Influencer.jpg"
           }
         },
         "image_1": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Gavin_Influencer.jpg"
+            "image": "shopify:\/\/shop_images\/Jongie.jpg"
+          }
+        },
+        "d70e3bf6-30e2-4e92-b7b2-ccfc948d47bd": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Sheryl_Influencer.jpg"
           }
         },
         "image_3": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/LA_Influencer.jpg"
+            "image": "shopify:\/\/shop_images\/Anthony.jpg"
           }
         }
       },
@@ -212,8 +212,8 @@
         "header",
         "slider",
         "image_2",
-        "d70e3bf6-30e2-4e92-b7b2-ccfc948d47bd",
         "image_1",
+        "d70e3bf6-30e2-4e92-b7b2-ccfc948d47bd",
         "image_3"
       ],
       "settings": {
