@@ -68,9 +68,9 @@
       <media-gallery id="MediaGallery-{{ section.id }}" role="region" {% if section.settings.enable_sticky_info %}class="product__media-gallery"{% endif %} aria-label="{{ 'products.product.media.gallery_viewer' | t }}" data-desktop-layout="{{ section.settings.gallery_layout }}">
         <div id="GalleryStatus-{{ section.id }}" class="visually-hidden" role="status"></div>
         <slider-component id="GalleryViewer-{{ section.id }}" class="slider-mobile-gutter">
-          {% comment %} <a class="skip-to-content-link button visually-hidden" href="#ProductInfo-{{ section.id }}">
+          <a class="skip-to-content-link button visually-hidden" href="#ProductInfo-{{ section.id }}">
             {{ "accessibility.skip_to_product_info" | t }}
-          </a> {% endcomment %}
+          </a>
           <ul id="Slider-Gallery-{{ section.id }}" class="product__media-list grid grid--peek list-unstyled slider slider--mobile" role="list">
             {%- liquid
               assign variant_images = product.images | where: 'attached_to_variant?', true | map: 'src'
@@ -946,6 +946,7 @@
 {% schema %}
 {
   "name": "t:sections.main-product.name",
+  "tag": "section",
   "class": "section",
   "blocks": [
     {
