@@ -25,7 +25,7 @@
     "banner_icon_type": "none",
     "wave_desktop_image": "shopify:\/\/shop_images\/Wave_2880x250_e34c55cd-59dc-486c-b379-2d2b33b535ed.png",
     "wave_mobile_image": "shopify:\/\/shop_images\/Wave_1080x94_4ab1ae6d-17e1-47d7-875a-e7e8bae1f34d.png",
-    "ty_discount_code": "CODE",
+    "ty_discount_code": "OSWELL100P",
     "ty_bg_color": "#f2dfd0",
     "ty_bg_image": "shopify:\/\/shop_images\/Marble_White.png",
     "ty_bg_blend": "luminosity",
@@ -77,8 +77,8 @@
           "footer-3": {
             "type": "email_signup",
             "settings": {
-              "heading": "Join The VIP List",
-              "subtext": "<p>Be the first one to know about our latest promotions and exclusive offers and get a 10% discount on your first purchase.<\/p>"
+              "heading": "Join OSwell VIP List",
+              "subtext": "<p>Be the first one to know about our latest promotions and exclusive offers and get a discount on your first purchase.<\/p>"
             }
           }
         },
