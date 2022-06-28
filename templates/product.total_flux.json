@@ -5,7 +5,6 @@
       "blocks": {
         "text_featured_review": {
           "type": "text_featured_review",
-          "disabled": true,
           "settings": {
             "testimony": "<p>\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ille, ut dixi, vitiose. Duo Reges: constructio interrete. Haec para\/doca illi, nos admirabilia dicamus. Nam quid possumus facere melius?\"<\/p>",
             "uppercase": false,
