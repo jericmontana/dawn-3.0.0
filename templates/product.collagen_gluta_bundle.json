@@ -373,6 +373,35 @@
         "padding_bottom": 36
       }
     },
+    "1656487884c1068a50": {
+      "type": "video-7923216",
+      "blocks": {
+        "1656487884135e3318-1": {
+          "type": "video",
+          "settings": {
+            "video_url": "https:\/\/www.youtube.com\/watch?v=ugh1HBPnAnY",
+            "description": "HOW TO HAVE BRIGHTER\/WHITER & YOUTHFUL SKIN \/ ANOTHER BEAUTY SECRET REVEALED | ARA G.",
+            "thumbnail": "shopify:\/\/shop_images\/Ara_G.jpg"
+          }
+        },
+        "1656487884135e3318-2": {
+          "type": "video",
+          "settings": {
+            "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+            "description": ""
+          }
+        }
+      },
+      "block_order": [
+        "1656487884135e3318-1",
+        "1656487884135e3318-2"
+      ],
+      "settings": {
+        "use_as_default_padding": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "review": {
       "type": "review-product-7923216",
       "blocks": {
@@ -470,6 +499,7 @@
     "1656487107c28dbcd8",
     "image_accordion",
     "video",
+    "1656487884c1068a50",
     "review",
     "email_signup",
     "instafeed",
