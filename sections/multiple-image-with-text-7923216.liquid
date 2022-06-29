@@ -29,7 +29,9 @@
               <div class="tabcontent tabcontent-{{ section.id }} tabcontent-{{ section.id }}-{{ forloop.index }}">
                 <div class="information--wrapper">
                   <h2 class="uppercase">{{ block.settings.title | escape }}</h2>
-                  {{ block.settings.richtext }}
+                  <div class="information--p">
+                   {{ block.settings.richtext }}
+                  </div>
                 </div>
               </div>
             {%- endfor -%}
@@ -39,7 +41,7 @@
         <div class="grid__item grid__item--image">
           <div class="section__image">
             {% capture image_sizes %}
-              (min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 | divided_by: 2 }}px, (min-width: 750px) calc((100vw - 130px) / 2), (max-width: 750px) calc(100vw - 30px)
+              (min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 | divided_by: 2 }}px, (min-width: 750px) calc(100vw - 80px), (max-width: 749px) calc(100vw - 30px)
             {% endcapture %}
            
             {%- if section.settings.image_bg != blank -%}

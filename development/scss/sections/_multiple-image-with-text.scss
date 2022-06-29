@@ -14,12 +14,24 @@
 
     .section__information{
         display: grid;
-        padding: 0rem;
+        padding: 0rem 1rem;
 
         .information--wrapper{
             p{
                 margin: 0;
-                line-height: calc(1 + 0.5 / var(--font-body-scale));
+                line-height: calc(1 + 0.7 / var(--font-body-scale));
+
+                @include device('desktop'){
+                    &{
+                        font-size: 2rem;
+                    }
+                }
+
+                @include device('tablet'){
+                    &{
+                        font-size: 1.8rem;
+                    }
+                }
                 // color: rgba(var(--color-base-accent-2),0.75);
                 
                 &:not(:first-child){
@@ -46,9 +58,9 @@
             // color: rgb(var(--color-base-accent-2));
         }
 
-        @include device('desktop'){
+        @include device('tablet-up'){
             &{
-                padding: 2rem;
+                padding: 1rem;
             }
         }
 
@@ -93,9 +105,9 @@
             object-position: center center;
         }
 
-        @include device('desktop'){
+        @include device('tablet-up'){
             &{
-                padding: 2rem;
+                padding: 1rem;
             }
         }
 
@@ -119,8 +131,8 @@
             justify-content: center;
             align-items: center;
             padding: 0.4rem;
-            margin-left: -2rem;
-            margin-right: -2rem;
+            margin-left: -1rem;
+            margin-right: -1rem;
 
             &--prev{
                 visibility: hidden;
