@@ -92,6 +92,51 @@
         "padding_bottom": 12
       }
     },
+    "16564836534d6759a5": {
+      "type": "multiple-image-with-text-7923216",
+      "blocks": {
+        "1656483653cce4be52-0": {
+          "type": "image_with_text",
+          "settings": {
+            "title": "Tempor tempus auctor",
+            "richtext": "<p>Mi blandit molestie sapien dictumst eu ullamcorper suspendisse. Fames porta justo dui pulvinar ligula tortor feugiat.<\/p>"
+          }
+        },
+        "1656483653cce4be52-1": {
+          "type": "image_with_text",
+          "settings": {
+            "title": "Tempor tempus auctor",
+            "richtext": "<p>Mi blandit molestie sapien dictumst eu ullamcorper suspendisse. Fames porta justo dui pulvinar ligula tortor feugiat.<\/p>"
+          }
+        },
+        "1656483653cce4be52-2": {
+          "type": "image_with_text",
+          "settings": {
+            "title": "Tempor tempus auctor",
+            "richtext": "<p>Mi blandit molestie sapien dictumst eu ullamcorper suspendisse. Fames porta justo dui pulvinar ligula tortor feugiat.<\/p>"
+          }
+        },
+        "aba341dc-3548-4c6b-80d2-1b270044279c": {
+          "type": "image_with_text",
+          "settings": {
+            "title": "Tempor tempus auctor",
+            "richtext": "<p>Mi blandit molestie sapien dictumst eu ullamcorper suspendisse. Fames porta justo dui pulvinar ligula tortor feugiat.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "1656483653cce4be52-0",
+        "1656483653cce4be52-1",
+        "1656483653cce4be52-2",
+        "aba341dc-3548-4c6b-80d2-1b270044279c"
+      ],
+      "settings": {
+        "image_first": true,
+        "use_as_default_padding": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "product_benefits": {
       "type": "image-with-textblock-7923216",
       "blocks": {
@@ -664,6 +709,7 @@
   },
   "order": [
     "main",
+    "16564836534d6759a5",
     "product_benefits",
     "before_after",
     "165648319120f7a115",
