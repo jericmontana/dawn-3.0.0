@@ -92,41 +92,78 @@
         "padding_bottom": 12
       }
     },
-    "16564836534d6759a5": {
-      "type": "multiple-image-with-text-7923216",
+    "product_benefits": {
+      "type": "image-with-textblock-7923216",
       "blocks": {
-        "1656483653cce4be52-1": {
-          "type": "image_with_text",
+        "header": {
+          "type": "header",
           "settings": {
-            "title": "Tempor tempus auctor",
-            "richtext": "<p>Mi blandit molestie sapien dictumst eu ullamcorper suspendisse. Fames porta justo dui pulvinar ligula tortor feugiat.<\/p>",
-            "image": "shopify:\/\/shop_images\/Gluta_Maxx_Product_Benefits.jpg"
+            "title": "THE COLLAGEN MAXX TRANSFORMATION",
+            "title_uppercase": true,
+            "subtitle": ""
           }
         },
-        "1656483653cce4be52-0": {
-          "type": "image_with_text",
+        "image": {
+          "type": "image",
           "settings": {
-            "title": "Tempor tempus auctor",
-            "richtext": "<p>Mi blandit molestie sapien dictumst eu ullamcorper suspendisse. Fames porta justo dui pulvinar ligula tortor feugiat.<\/p>",
-            "image": "shopify:\/\/shop_images\/Total_Flux_Product_Benefits.jpg"
+            "image": "shopify:\/\/shop_images\/Collagen_Max_Product_Benefits.jpg",
+            "image_first": false
           }
         },
-        "1656483653cce4be52-2": {
-          "type": "image_with_text",
+        "richtext_1": {
+          "type": "richtext",
           "settings": {
-            "title": "Tempor tempus auctor",
-            "richtext": "<p>Mi blandit molestie sapien dictumst eu ullamcorper suspendisse. Fames porta justo dui pulvinar ligula tortor feugiat.<\/p>",
-            "image": "shopify:\/\/shop_images\/Collagen_Max_Product_Benefits.jpg"
+            "title": "<p>NOT JUST LIGHTER SKIN. CLEARER AND YOUNGER-LOOKING SKIN.<\/p>",
+            "description": "<p>Experience a healthy glow in as early as 1 week of taking Collagen Maxx!<\/p>"
+          }
+        },
+        "richtext_2": {
+          "type": "richtext",
+          "settings": {
+            "title": "<p>SMOOTHER, SOFTER, AND NATURAL ROSY COMPLEXION.<\/p>",
+            "description": "<p>Packed with a powerful combination of skin-loving and skin-caring ingredients to reveal your youthful glow.<\/p>"
+          }
+        },
+        "richtext_3": {
+          "type": "richtext",
+          "settings": {
+            "title": "<p>REDUCED APPEARANCE OF WRINKLES AND FINE LINES.<\/p>",
+            "description": "<p>Collagen improves skin’s elasticity, provides deep hydration, and fights signs of skin aging.<\/p>"
+          }
+        },
+        "684b30b4-42ef-4b84-989b-66ac1afbc9da": {
+          "type": "richtext",
+          "settings": {
+            "title": "<p>NO MORE DRY AND CRACKED SKIN.<\/p>",
+            "description": "<p>Dull and flaky skin? Let’s make it soft and radiant.<\/p>"
+          }
+        },
+        "9e97ad02-819d-4ac7-8fd5-fd3e679e452a": {
+          "type": "richtext",
+          "settings": {
+            "title": "<p>SAY GOODBYE TO BREAKOUTS AND DARK SPOTS.<\/p>",
+            "description": "<p>Enjoy your most beautiful skin ever – acne-free, smaller pores, and even skin tone.<\/p>"
+          }
+        },
+        "84337068-5d95-4efd-a655-14a23e8b6890": {
+          "type": "richtext",
+          "settings": {
+            "title": "<p>COLLAGEN MAXX TAKES CARE OF YOUR BODY, TOO!<\/p>",
+            "description": "<p>Happy customers reported improved metabolism, better sleep, healthier hair and stronger nails.<\/p>"
           }
         }
       },
       "block_order": [
-        "1656483653cce4be52-1",
-        "1656483653cce4be52-0",
-        "1656483653cce4be52-2"
+        "header",
+        "image",
+        "richtext_1",
+        "richtext_2",
+        "richtext_3",
+        "684b30b4-42ef-4b84-989b-66ac1afbc9da",
+        "9e97ad02-819d-4ac7-8fd5-fd3e679e452a",
+        "84337068-5d95-4efd-a655-14a23e8b6890"
       ],
       "settings": {
-        "image_first": true,
         "use_as_default_padding": false,
         "padding_top": 36,
         "padding_bottom": 36
@@ -627,7 +664,7 @@
   },
   "order": [
     "main",
-    "16564836534d6759a5",
+    "product_benefits",
     "before_after",
     "165648319120f7a115",
     "image_accordion",
