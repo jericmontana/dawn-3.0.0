@@ -321,9 +321,9 @@
         "3379703c-d9c4-4f9c-bc47-312e6d9899b5": {
           "type": "header",
           "settings": {
-            "title": "ONE BOTTLE LASTS UP TO 3 MONTHS!",
+            "title": "",
             "title_uppercase": true,
-            "subtitle": "Take 1-2 tablets everyday and experience transformations like these."
+            "subtitle": ""
           }
         },
         "slider": {
@@ -332,7 +332,7 @@
             "columns_desktop": 3,
             "columns_tablet": 2,
             "columns_mobile": 1,
-            "slider": "slide-me-not"
+            "slider": "medium-down"
           }
         },
         "video_1": {
