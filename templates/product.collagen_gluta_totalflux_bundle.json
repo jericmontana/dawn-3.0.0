@@ -314,7 +314,7 @@
             "columns_desktop": 3,
             "columns_tablet": 2,
             "columns_mobile": 1,
-            "slider": "medium-down"
+            "slider": "everywhere"
           }
         },
         "1656489451ab27c64e-2": {
@@ -334,6 +334,11 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/Total_Flux_Customer_Feedback_9.jpg"
           }
+        },
+        "207b5ff4-05e9-4ee5-93b9-1bbbb62e6c05": {
+          "type": "image",
+          "settings": {
+          }
         }
       },
       "block_order": [
@@ -341,7 +346,8 @@
         "1656489451ab27c64e-1",
         "1656489451ab27c64e-2",
         "1656489451ab27c64e-3",
-        "1656489451ab27c64e-4"
+        "1656489451ab27c64e-4",
+        "207b5ff4-05e9-4ee5-93b9-1bbbb62e6c05"
       ],
       "settings": {
         "use_as_default_padding": false,
