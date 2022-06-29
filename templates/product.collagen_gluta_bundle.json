@@ -376,6 +376,23 @@
     "1656487884c1068a50": {
       "type": "video-7923216",
       "blocks": {
+        "48e2022d-0f48-4eb7-ba49-f020fc68fa02": {
+          "type": "header",
+          "settings": {
+            "title": "",
+            "title_uppercase": false,
+            "subtitle": ""
+          }
+        },
+        "d3c3b80f-bcf0-4140-a1b2-3ddd1cd23cda": {
+          "type": "slider",
+          "settings": {
+            "columns_desktop": 3,
+            "columns_tablet": 2,
+            "columns_mobile": 1,
+            "slider": "medium-down"
+          }
+        },
         "1656487884135e3318-1": {
           "type": "video",
           "settings": {
@@ -390,11 +407,21 @@
             "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
             "description": ""
           }
+        },
+        "434ac343-1edf-4894-bc5c-ba2cd41a9a14": {
+          "type": "video",
+          "settings": {
+            "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+            "description": ""
+          }
         }
       },
       "block_order": [
+        "48e2022d-0f48-4eb7-ba49-f020fc68fa02",
+        "d3c3b80f-bcf0-4140-a1b2-3ddd1cd23cda",
         "1656487884135e3318-1",
-        "1656487884135e3318-2"
+        "1656487884135e3318-2",
+        "434ac343-1edf-4894-bc5c-ba2cd41a9a14"
       ],
       "settings": {
         "use_as_default_padding": false,
