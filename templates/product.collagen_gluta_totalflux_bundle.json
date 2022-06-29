@@ -238,16 +238,16 @@
           "settings": {
             "title": "REAL TOTAL FLUX USERS WITH REAL RESULTS.",
             "title_uppercase": true,
-            "subtitle": "Take 1-2 tablets everyday and experience transformations like these."
+            "subtitle": "Take 1 tablet everyday and experience the amazing benefits"
           }
         },
         "slider": {
           "type": "slider",
           "settings": {
-            "columns_desktop": 3,
+            "columns_desktop": 2,
             "columns_tablet": 2,
             "columns_mobile": 1,
-            "slider": "everywhere"
+            "slider": "slide-me-not"
           }
         },
         "video_1": {
