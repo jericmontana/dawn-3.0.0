@@ -332,7 +332,7 @@
             "columns_desktop": 3,
             "columns_tablet": 2,
             "columns_mobile": 1,
-            "slider": "everywhere"
+            "slider": "slide-me-not"
           }
         },
         "video_1": {
@@ -346,25 +346,17 @@
         "video_2": {
           "type": "video",
           "settings": {
-            "video_url": "https:\/\/www.youtube.com\/watch?v=y8zU3XsjWP4",
-            "description": "",
-            "thumbnail": "shopify:\/\/shop_images\/Roanne_Barroga.jpg"
-          }
-        },
-        "b8e11e89-074c-4646-baf8-e17fc6492206": {
-          "type": "video",
-          "settings": {
-            "video_url": "https:\/\/www.youtube.com\/watch?v=EE6ZMwj6yLk",
-            "description": "",
-            "thumbnail": "shopify:\/\/shop_images\/MamaLeys.jpg"
+            "video_url": "https:\/\/www.youtube.com\/watch?v=spViBEkDPPk",
+            "description": "7 DAYS USING COLLAGEN MAXX",
+            "thumbnail": "shopify:\/\/shop_images\/Alyza_Montero.jpg"
           }
         },
         "4fd237cc-7caa-465f-8558-ce1b1fa3eda2": {
           "type": "video",
           "settings": {
-            "video_url": "https:\/\/www.youtube.com\/watch?v=_ML0QhRO3R8",
-            "description": "",
-            "thumbnail": "shopify:\/\/shop_images\/Sushie_Rojas.jpg"
+            "video_url": "https:\/\/www.youtube.com\/watch?v=y8zU3XsjWP4",
+            "description": "VLOGMAS DAY 4: FIRST TIME KO MAG COLLAGEN | OSWELL COLLAGEN MAXX | Roanne Barroga",
+            "thumbnail": "shopify:\/\/shop_images\/Roanne_Barroga.jpg"
           }
         }
       },
@@ -373,52 +365,11 @@
         "slider",
         "video_1",
         "video_2",
-        "b8e11e89-074c-4646-baf8-e17fc6492206",
         "4fd237cc-7caa-465f-8558-ce1b1fa3eda2"
       ],
       "settings": {
         "use_as_default_padding": false,
         "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "16554533030d0f81f2": {
-      "type": "video-7923216",
-      "blocks": {
-        "c712a137-05e1-4057-9d66-26d085ebbb2e": {
-          "type": "slider",
-          "settings": {
-            "columns_desktop": 2,
-            "columns_tablet": 2,
-            "columns_mobile": 1,
-            "slider": "slide-me-not"
-          }
-        },
-        "1655453302316422ed-2": {
-          "type": "video",
-          "settings": {
-            "video_url": "https:\/\/www.youtube.com\/watch?v=ts6AJv_cZxs",
-            "description": "",
-            "thumbnail": "shopify:\/\/shop_images\/Jea_Chan.jpg"
-          }
-        },
-        "1655453302316422ed-1": {
-          "type": "video",
-          "settings": {
-            "video_url": "https:\/\/www.youtube.com\/watch?v=spViBEkDPPk",
-            "description": "",
-            "thumbnail": "shopify:\/\/shop_images\/Alyza_Montero.jpg"
-          }
-        }
-      },
-      "block_order": [
-        "c712a137-05e1-4057-9d66-26d085ebbb2e",
-        "1655453302316422ed-2",
-        "1655453302316422ed-1"
-      ],
-      "settings": {
-        "use_as_default_padding": true,
-        "padding_top": 0,
         "padding_bottom": 36
       }
     },
@@ -519,7 +470,6 @@
     "1656487107c28dbcd8",
     "image_accordion",
     "video",
-    "16554533030d0f81f2",
     "review",
     "email_signup",
     "instafeed",
