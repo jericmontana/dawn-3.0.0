@@ -175,9 +175,9 @@
         "header": {
           "type": "header",
           "settings": {
-            "title": "REAL COLLAGEN MAXX USERS",
+            "title": "REAL USERS. Real visible results.",
             "title_uppercase": true,
-            "subtitle": "Real visible results."
+            "subtitle": ""
           }
         },
         "slider": {
@@ -207,10 +207,28 @@
             "image": "shopify:\/\/shop_images\/Gavin_Influencer.jpg"
           }
         },
-        "image_3": {
+        "bd23d8c6-0594-4c7f-87ba-eaf4c699194d": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/LA_Influencer.jpg"
+            "image": "shopify:\/\/shop_images\/Jam_Influencer.jpg"
+          }
+        },
+        "aabb454f-6e5c-4aca-9b16-8ff48e53b70b": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Abby_Influencer.jpg"
+          }
+        },
+        "5214eefc-86b2-4969-8109-00aa2c340c6a": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Sheryl_Influencer.jpg"
+          }
+        },
+        "82b5ec1d-df6d-4d81-80c5-31dcc65d8bc4": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Anthony.jpg"
           }
         }
       },
@@ -220,7 +238,10 @@
         "image_2",
         "d70e3bf6-30e2-4e92-b7b2-ccfc948d47bd",
         "image_1",
-        "image_3"
+        "bd23d8c6-0594-4c7f-87ba-eaf4c699194d",
+        "aabb454f-6e5c-4aca-9b16-8ff48e53b70b",
+        "5214eefc-86b2-4969-8109-00aa2c340c6a",
+        "82b5ec1d-df6d-4d81-80c5-31dcc65d8bc4"
       ],
       "settings": {
         "use_as_default_padding": false,
