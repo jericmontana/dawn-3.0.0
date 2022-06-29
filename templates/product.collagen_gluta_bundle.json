@@ -169,6 +169,55 @@
         "padding_bottom": 36
       }
     },
+    "16565149904fe98c8f": {
+      "type": "image-slider-7923216",
+      "blocks": {
+        "1656514990f1226b79-0": {
+          "type": "header",
+          "settings": {
+            "title": "Proin enim taciti dapibus",
+            "title_uppercase": false,
+            "subtitle": ""
+          }
+        },
+        "1656514990f1226b79-1": {
+          "type": "slider",
+          "settings": {
+            "columns_desktop": 3,
+            "columns_tablet": 3,
+            "columns_mobile": 1,
+            "slider": "slide-me-not"
+          }
+        },
+        "1656514990f1226b79-2": {
+          "type": "image",
+          "settings": {
+          }
+        },
+        "1656514990f1226b79-3": {
+          "type": "image",
+          "settings": {
+          }
+        },
+        "1656514990f1226b79-4": {
+          "type": "image",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "1656514990f1226b79-0",
+        "1656514990f1226b79-1",
+        "1656514990f1226b79-2",
+        "1656514990f1226b79-3",
+        "1656514990f1226b79-4"
+      ],
+      "settings": {
+        "use_as_default_padding": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "1656487107c28dbcd8": {
       "type": "image-with-accordion-7923216",
       "blocks": {
@@ -525,6 +574,7 @@
   "order": [
     "main",
     "product_benefits",
+    "16565149904fe98c8f",
     "1656487107c28dbcd8",
     "image_accordion",
     "video",
