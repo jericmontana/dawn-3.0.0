@@ -311,7 +311,7 @@
         "1656489451ab27c64e-1": {
           "type": "slider",
           "settings": {
-            "columns_desktop": 3,
+            "columns_desktop": 2,
             "columns_tablet": 2,
             "columns_mobile": 1,
             "slider": "everywhere"
