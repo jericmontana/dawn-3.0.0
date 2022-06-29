@@ -98,7 +98,7 @@
         "header": {
           "type": "header",
           "settings": {
-            "title": "THE COLLAGEN MAXX TRANSFORMATION",
+            "title": "GET YOUR GLOW TO THE MAX",
             "title_uppercase": true,
             "subtitle": ""
           }
@@ -114,7 +114,7 @@
           "type": "richtext",
           "settings": {
             "title": "<p>NOT JUST LIGHTER SKIN. CLEARER AND YOUNGER-LOOKING SKIN.<\/p>",
-            "description": "<p>Experience a healthy glow in as early as 1 week of taking Collagen Maxx!<\/p>"
+            "description": "<p>Experience a healthy glow in as early as 7 days!<\/p>"
           }
         },
         "richtext_2": {
@@ -128,7 +128,7 @@
           "type": "richtext",
           "settings": {
             "title": "<p>REDUCED APPEARANCE OF WRINKLES AND FINE LINES.<\/p>",
-            "description": "<p>Collagen improves skin’s elasticity, provides deep hydration, and fights signs of skin aging.<\/p>"
+            "description": "<p>Improves skin’s elasticity, provides deep hydration, and fights signs of skin aging.<\/p>"
           }
         },
         "684b30b4-42ef-4b84-989b-66ac1afbc9da": {
@@ -148,8 +148,8 @@
         "84337068-5d95-4efd-a655-14a23e8b6890": {
           "type": "richtext",
           "settings": {
-            "title": "<p>COLLAGEN MAXX TAKES CARE OF YOUR BODY, TOO!<\/p>",
-            "description": "<p>Happy customers reported improved metabolism, better sleep, healthier hair and stronger nails.<\/p>"
+            "title": "<p>DULL AND TIRED-LOOKING SKIN NO MORE!<\/p>",
+            "description": "<p>Look fresh, blooming, and pretty even on your busiest days. No makeup needed!<\/p>"
           }
         }
       },
