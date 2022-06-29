@@ -26,10 +26,22 @@
     },
     "164702602169907f6d": {
       "type": "accordion-with-image-7923216",
+      "blocks": {
+        "d9245294-5758-46a8-bd7b-9a25e741c8aa": {
+          "type": "accordion",
+          "settings": {
+            "title": "Magnis tempor parturient vitae vel ac proin consectetuer fermentum fringilla porttitor?",
+            "accordion_content": "<p>Sociosqu volutpat vel tristique quam lorem fusce hac quisque iaculis orci ornare nascetur nostra odio malesuada eu mollis rutrum faucibus urna tellus class blandit interdum pharetra tincidunt adipiscing laoreet leo.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "d9245294-5758-46a8-bd7b-9a25e741c8aa"
+      ],
       "settings": {
         "color_scheme": "background-1",
-        "accordion_default_color": false,
-        "accordion_color": "",
+        "accordion_default_color": true,
+        "accordion_color": "#0b5394",
         "use_as_default_padding": true,
         "padding_top": 80,
         "padding_bottom": 80
@@ -52,7 +64,7 @@
           "settings": {
             "apply_general_settings_btn": true,
             "btn_label": "Shop Now",
-            "btn_link": "shopify://collections/all",
+            "btn_link": "shopify:\/\/collections\/all",
             "btn_size": "default",
             "hover_effect": "shine",
             "icon_type": "arrow",
