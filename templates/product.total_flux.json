@@ -105,9 +105,8 @@
         },
         "image": {
           "type": "image",
-          "disabled": true,
           "settings": {
-            "image": "shopify:\/\/shop_images\/Collagen_Max_Product_Benefits.jpg",
+            "image": "shopify:\/\/shop_images\/Total_Flux_Product_Benefits.jpg",
             "image_first": false
           }
         },
