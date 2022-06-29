@@ -115,7 +115,8 @@
           "type": "image_with_text",
           "settings": {
             "title": "Tempor tempus auctor",
-            "richtext": "<p>Mi blandit molestie sapien dictumst eu ullamcorper suspendisse. Fames porta justo dui pulvinar ligula tortor feugiat.<\/p>"
+            "richtext": "<p>Mi blandit molestie sapien dictumst eu ullamcorper suspendisse. Fames porta justo dui pulvinar ligula tortor feugiat.<\/p>",
+            "image": "shopify:\/\/shop_images\/Collagen_Max_Product_Benefits.jpg"
           }
         }
       },
