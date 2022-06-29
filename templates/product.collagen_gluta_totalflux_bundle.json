@@ -371,16 +371,25 @@
         "165649334205e64b0e-2": {
           "type": "image",
           "settings": {
+            "image": "shopify:\/\/shop_images\/Total_Flux_Customer_Feedback_1.jpg"
           }
         },
         "165649334205e64b0e-3": {
           "type": "image",
           "settings": {
+            "image": "shopify:\/\/shop_images\/Total_Flux_Customer_Feedback_3.jpg"
           }
         },
         "165649334205e64b0e-4": {
           "type": "image",
           "settings": {
+            "image": "shopify:\/\/shop_images\/Total_Flux_Customer_Feedback_2.jpg"
+          }
+        },
+        "99930b23-32d5-4be3-941e-6c3703a407b5": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Total_Flux_Customer_Feedback_8.jpg"
           }
         }
       },
@@ -388,11 +397,12 @@
         "165649334205e64b0e-1",
         "165649334205e64b0e-2",
         "165649334205e64b0e-3",
-        "165649334205e64b0e-4"
+        "165649334205e64b0e-4",
+        "99930b23-32d5-4be3-941e-6c3703a407b5"
       ],
       "settings": {
-        "use_as_default_padding": false,
-        "padding_top": 36,
+        "use_as_default_padding": true,
+        "padding_top": 0,
         "padding_bottom": 36
       }
     },
