@@ -58,16 +58,18 @@
     &--image{
         position: relative;
         width: 100%;
-        max-width: 250px;
+        // max-width: 250px;
         display: flex;
         justify-content: center;
         align-items: center;
+        padding-left: 1rem;
+        padding-right: 1rem;
 
-        @include device('mobile'){
-            &{
-                max-width: 98%;
-            }
-        }
+        // @include device('mobile'){
+        //     &{
+        //         max-width: 98%;
+        //     }
+        // }
 
         img{
             object-fit: cover;
