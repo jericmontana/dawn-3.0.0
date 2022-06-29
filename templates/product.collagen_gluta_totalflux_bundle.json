@@ -356,6 +356,46 @@
         "padding_bottom": 36
       }
     },
+    "16564933439b6a9b71": {
+      "type": "image-slider-7923216",
+      "blocks": {
+        "165649334205e64b0e-1": {
+          "type": "slider",
+          "settings": {
+            "columns_desktop": 2,
+            "columns_tablet": 2,
+            "columns_mobile": 1,
+            "slider": "everywhere"
+          }
+        },
+        "165649334205e64b0e-2": {
+          "type": "image",
+          "settings": {
+          }
+        },
+        "165649334205e64b0e-3": {
+          "type": "image",
+          "settings": {
+          }
+        },
+        "165649334205e64b0e-4": {
+          "type": "image",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "165649334205e64b0e-1",
+        "165649334205e64b0e-2",
+        "165649334205e64b0e-3",
+        "165649334205e64b0e-4"
+      ],
+      "settings": {
+        "use_as_default_padding": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "review": {
       "type": "review-product-7923216",
       "blocks": {
@@ -453,6 +493,7 @@
     "1656483316235d7ffb",
     "video",
     "1656489451d7e532ef",
+    "16564933439b6a9b71",
     "review",
     "email_signup",
     "instafeed",
