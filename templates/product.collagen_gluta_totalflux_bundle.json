@@ -303,9 +303,9 @@
         "1656489451ab27c64e-0": {
           "type": "header",
           "settings": {
-            "title": "Proin enim taciti dapibus",
-            "title_uppercase": false,
-            "subtitle": "Lacus in dui sollicitudin risus suspendisse sed placerat ad pharetra ipsum letius mattis vel"
+            "title": "Customer Feedback",
+            "title_uppercase": true,
+            "subtitle": ""
           }
         },
         "1656489451ab27c64e-1": {
