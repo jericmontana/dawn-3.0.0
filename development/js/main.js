@@ -1007,29 +1007,29 @@ document.addEventListener('DOMContentLoaded', () => {
 // /*############ Video Popup End*/
 
 
-// /*############ Trigger Privy Popup Beg*/
-// const signupPopupButtonTrigger = document.querySelectorAll('.btn--signup-popup');
-// window.addEventListener('load', () => {
-//   if(signupPopupButtonTrigger){
-//     signupPopupButtonTrigger.forEach(e => {
-// 		try{
-// 			e.style.opacity='1';
-// 			e.addEventListener('click', () => {
-// 				// if(!document.querySelector('.privy-bar-tab-inner')){ 
-// 				// 	alert(`You have already signed up!`) ;
-// 				// };
-// 				// document.querySelector('.privy-bar-tab-inner').click();
+/*############ Trigger Privy Popup Beg*/
+const signupPopupButtonTrigger = document.querySelectorAll('.btn--signup-popup');
+window.addEventListener('load', () => {
+  if(signupPopupButtonTrigger){
+    signupPopupButtonTrigger.forEach(e => {
+		try{
+			e.style.opacity='1';
+			e.addEventListener('click', () => {
+				// if(!document.querySelector('.privy-bar-tab-inner')){ 
+				// 	alert(`You have already signed up!`) ;
+				// };
+				// document.querySelector('.privy-bar-tab-inner').click();
 
-//         Privy('show');
-// 			})
-// 		}
-// 		catch(error){
-// 			console.log(error);
-// 		}
-//     })
-//   }
-// })
-// /*############ Trigger Privy Popup End*/
+        Privy('show');
+			})
+		}
+		catch(error){
+			console.log(error);
+		}
+    })
+  }
+})
+/*############ Trigger Privy Popup End*/
 
 // document.addEventListener('DOMContentLoaded', () => {
 //     const players = Array.from(document.querySelectorAll('.player')).map((p) => new Plyr(p));
