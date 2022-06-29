@@ -169,60 +169,78 @@
         "padding_bottom": 36
       }
     },
-    "before_after": {
-      "type": "image-slider-7923216",
+    "1656487107c28dbcd8": {
+      "type": "image-with-accordion-7923216",
       "blocks": {
-        "header": {
+        "1656487107acc1f155-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Gluta_Maxx_Ingredients.png"
+          }
+        },
+        "1656487107acc1f155-1": {
           "type": "header",
           "settings": {
-            "title": "REAL COLLAGEN MAXX USERS",
+            "title": "NUTRITIONIST-APPROVED INGREDIENTS IN EVERY GLUTA MAXX BOTTLE",
             "title_uppercase": true,
-            "subtitle": "Real visible results."
+            "subtitle": ""
           }
         },
-        "slider": {
-          "type": "slider",
+        "52b0a312-0396-4469-8d0b-babedd3ab642": {
+          "type": "accordion",
           "settings": {
-            "columns_desktop": 4,
-            "columns_tablet": 3,
-            "columns_mobile": 1,
-            "slider": "everywhere"
+            "title": "GLUTATHIONE",
+            "content": "<p>Reduces oxidative stress to reveal a lighter, smoother, and younger-looking skin.<\/p>"
           }
         },
-        "image_2": {
-          "type": "image",
+        "79708be1-ab8f-4031-b39c-d6ce48d8f9ab": {
+          "type": "accordion",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Ara_Influencer.jpg"
+            "title": "GRAPE SEED EXTRACT",
+            "content": "<p>Lightens acne marks and dark spots, reveals an even skin tone, and delays skin aging.<\/p>"
           }
         },
-        "d70e3bf6-30e2-4e92-b7b2-ccfc948d47bd": {
-          "type": "image",
+        "ebb530a2-a9c9-4faa-b659-d946154d5aa1": {
+          "type": "accordion",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Alyza_Influencer.jpg"
+            "title": "ACEROLA EXTRACT",
+            "content": "<p>Boosts immunity, reduces skin blemishes, and improves skin elasticity.<\/p>"
           }
         },
-        "image_1": {
-          "type": "image",
+        "8bded53b-d625-44dc-b26d-7b0feacd3417": {
+          "type": "accordion",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Gavin_Influencer.jpg"
+            "title": "CAMU CAMU EXTRACT",
+            "content": "<p>Rich in Vitamin C and antioxidants that help reduce fine lines, wrinkles, and other signs of skin aging.<\/p>"
           }
         },
-        "image_3": {
-          "type": "image",
+        "54559191-990d-48f4-bd43-115b7c4f51bc": {
+          "type": "accordion",
           "settings": {
-            "image": "shopify:\/\/shop_images\/LA_Influencer.jpg"
+            "title": "PATENTED RED ALGAE EXTRACT",
+            "content": "<p>Brightens and treats uneven skin tone, hydrates the skin, and improves the skin barrier.<\/p>"
+          }
+        },
+        "543f6e27-4e0f-4d0c-907a-d7010cb2f528": {
+          "type": "accordion",
+          "settings": {
+            "title": "ROSELLA EXTRACT",
+            "content": "<p>Hydrates the skin, reduces wrinkles, minimizes pores, and reveals a brighter complexion.<\/p>"
           }
         }
       },
       "block_order": [
-        "header",
-        "slider",
-        "image_2",
-        "d70e3bf6-30e2-4e92-b7b2-ccfc948d47bd",
-        "image_1",
-        "image_3"
+        "1656487107acc1f155-0",
+        "1656487107acc1f155-1",
+        "52b0a312-0396-4469-8d0b-babedd3ab642",
+        "79708be1-ab8f-4031-b39c-d6ce48d8f9ab",
+        "ebb530a2-a9c9-4faa-b659-d946154d5aa1",
+        "8bded53b-d625-44dc-b26d-7b0feacd3417",
+        "54559191-990d-48f4-bd43-115b7c4f51bc",
+        "543f6e27-4e0f-4d0c-907a-d7010cb2f528"
       ],
       "settings": {
+        "bg_image": "shopify:\/\/shop_images\/Gluta_Maxx_FAQ_3.png",
         "use_as_default_padding": false,
         "padding_top": 36,
         "padding_bottom": 36
@@ -498,7 +516,7 @@
   "order": [
     "main",
     "product_benefits",
-    "before_after",
+    "1656487107c28dbcd8",
     "image_accordion",
     "video",
     "16554533030d0f81f2",
