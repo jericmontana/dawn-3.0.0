@@ -330,15 +330,63 @@
         "1656483191357d8279-1": {
           "type": "header",
           "settings": {
-            "title": "Image with Accordion",
-            "title_uppercase": false,
-            "subtitle": "Mus mauris vitae ultricies leo. Ac feugiat sed lectus vestibulum lacus laoreet non curabitur."
+            "title": "NUTRITIONIST-APPROVED INGREDIENTS IN EVERY GLUTA MAXX BOTTLE",
+            "title_uppercase": true,
+            "subtitle": ""
+          }
+        },
+        "3ebceeb6-dc36-4ec1-af04-9f2ce1a1f37b": {
+          "type": "accordion",
+          "settings": {
+            "title": "GLUTATHIONE",
+            "content": "<p>Reduces oxidative stress to reveal a lighter, smoother, and younger-looking skin.<\/p>"
+          }
+        },
+        "6fcdf4e6-3dda-4702-94ff-20fae320c7e9": {
+          "type": "accordion",
+          "settings": {
+            "title": "GRAPE SEED EXTRACT",
+            "content": "<p>Lightens acne marks and dark spots, reveals an even skin tone, and delays skin aging.<\/p>"
+          }
+        },
+        "55cb65ee-4c9c-4d7d-a9a5-5764947ada87": {
+          "type": "accordion",
+          "settings": {
+            "title": "ACEROLA EXTRACT",
+            "content": "<p>Boosts immunity, reduces skin blemishes, and improves skin elasticity.<\/p>"
+          }
+        },
+        "b4bcb598-8f4a-47e3-8499-d1d6f2f2a105": {
+          "type": "accordion",
+          "settings": {
+            "title": "CAMU CAMU EXTRACT",
+            "content": "<p>Rich in Vitamin C and antioxidants that help reduce fine lines, wrinkles, and other signs of skin aging.<\/p>"
+          }
+        },
+        "14926b0c-4188-48ef-93d6-c4e0cc353c24": {
+          "type": "accordion",
+          "settings": {
+            "title": "PATENTED RED ALGAE EXTRACT",
+            "content": "<p>Brightens and treats uneven skin tone, hydrates the skin, and improves the skin barrier.<\/p>"
+          }
+        },
+        "2d7fa25b-d478-4565-91d8-e6ae84879911": {
+          "type": "accordion",
+          "settings": {
+            "title": "ROSELLA EXTRACT",
+            "content": "<p>Hydrates the skin, reduces wrinkles, minimizes pores, and reveals a brighter complexion.<\/p>"
           }
         }
       },
       "block_order": [
         "1656483191357d8279-0",
-        "1656483191357d8279-1"
+        "1656483191357d8279-1",
+        "3ebceeb6-dc36-4ec1-af04-9f2ce1a1f37b",
+        "6fcdf4e6-3dda-4702-94ff-20fae320c7e9",
+        "55cb65ee-4c9c-4d7d-a9a5-5764947ada87",
+        "b4bcb598-8f4a-47e3-8499-d1d6f2f2a105",
+        "14926b0c-4188-48ef-93d6-c4e0cc353c24",
+        "2d7fa25b-d478-4565-91d8-e6ae84879911"
       ],
       "settings": {
         "bg_image": "shopify:\/\/shop_images\/Gluta_Maxx_FAQ_3.png",
