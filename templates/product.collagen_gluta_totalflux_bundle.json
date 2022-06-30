@@ -646,6 +646,43 @@
         "padding_bottom": 36
       }
     },
+    "16565999533f1ee02b": {
+      "type": "video-7923216",
+      "blocks": {
+        "1656599953f9a03a7f-0": {
+          "type": "header",
+          "settings": {
+            "title": "Video",
+            "title_uppercase": false,
+            "subtitle": "Mus mauris vitae ultricies leo. Ac feugiat sed lectus vestibulum lacus laoreet non curabitur."
+          }
+        },
+        "1656599953f9a03a7f-1": {
+          "type": "video",
+          "settings": {
+            "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+            "description": ""
+          }
+        },
+        "1656599953f9a03a7f-2": {
+          "type": "video",
+          "settings": {
+            "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+            "description": ""
+          }
+        }
+      },
+      "block_order": [
+        "1656599953f9a03a7f-0",
+        "1656599953f9a03a7f-1",
+        "1656599953f9a03a7f-2"
+      ],
+      "settings": {
+        "use_as_default_padding": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "review": {
       "type": "review-product-7923216",
       "blocks": {
@@ -747,6 +784,7 @@
     "video",
     "1656489451d7e532ef",
     "16564933439b6a9b71",
+    "16565999533f1ee02b",
     "review",
     "email_signup",
     "instafeed",
