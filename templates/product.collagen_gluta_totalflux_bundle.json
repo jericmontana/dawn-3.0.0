@@ -545,7 +545,7 @@
             "columns_desktop": 2,
             "columns_tablet": 2,
             "columns_mobile": 1,
-            "slider": "slide-me-not"
+            "slider": "everywhere"
           }
         },
         "video_1": {
@@ -598,14 +598,6 @@
     "1656489451d7e532ef": {
       "type": "image-slider-7923216",
       "blocks": {
-        "1656489451ab27c64e-0": {
-          "type": "header",
-          "settings": {
-            "title": "Customer Feedback",
-            "title_uppercase": true,
-            "subtitle": ""
-          }
-        },
         "1656489451ab27c64e-1": {
           "type": "slider",
           "settings": {
@@ -641,7 +633,6 @@
         }
       },
       "block_order": [
-        "1656489451ab27c64e-0",
         "1656489451ab27c64e-1",
         "1656489451ab27c64e-2",
         "1656489451ab27c64e-3",
@@ -650,7 +641,7 @@
       ],
       "settings": {
         "use_as_default_padding": true,
-        "padding_top": 36,
+        "padding_top": 0,
         "padding_bottom": 0
       }
     },
