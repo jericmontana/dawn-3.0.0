@@ -27,7 +27,7 @@
     <div class="page-width">
       {%- for block in header_blocks -%}
       <div class="section__header center">
-          <h2 class="{% if block.settings.title_uppercase %}uppercase{% endif %}">{{ block.settings.title | escape }}</h2>
+          <h2 class="h1 {% if block.settings.title_uppercase %}uppercase{% endif %}">{{ block.settings.title | escape }}</h2>
           <p class="h3">{{ block.settings.subtitle | escape }}</p>
       </div>
       {%- endfor -%}
@@ -36,7 +36,7 @@
               <div class="section__richtext">
               {%- for block in richtext_blocks -%}
                   <div class="richtext--block center">
-                      <h3 class="uppercase">{{ block.settings.title }}</h3>
+                      <h3 class="h2 uppercase">{{ block.settings.title }}</h3>
                       <div class="richtext-description">
                           {{ block.settings.description }}
                       </div>
