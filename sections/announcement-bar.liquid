@@ -9,7 +9,7 @@
               <p class="announcement-bar__message {{ block.settings.size | escape }} {% if block.settings.uppercase %}uppercase{% endif %}">
                 {{ block.settings.text | escape }}
                 {%- if block.settings.link != blank -%}
-                  {% render 'icon-arrow' %}
+                  <span>Shop Now</span>
                 {%- endif -%}
               </p>
           {%- if block.settings.link != blank -%}

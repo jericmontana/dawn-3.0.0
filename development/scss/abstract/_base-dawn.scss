@@ -2147,6 +2147,13 @@ input[type='checkbox'] {
   letter-spacing: 0.1rem;
 }
 
+.announcement-bar__message span{
+  text-decoration: underline;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-left: 1rem;
+}
+
 /* section-header */
 #shopify-section-header {
   z-index: 3;
