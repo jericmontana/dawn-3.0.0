@@ -757,8 +757,48 @@
         "165660051310a8158e-2"
       ],
       "settings": {
-        "use_as_default_padding": false,
+        "use_as_default_padding": true,
         "padding_top": 36,
+        "padding_bottom": 0
+      }
+    },
+    "16566008840cdab0a2": {
+      "type": "video-7923216",
+      "blocks": {
+        "094d8593-513b-4949-8459-498fc1c530fd": {
+          "type": "slider",
+          "settings": {
+            "columns_desktop": 2,
+            "columns_tablet": 2,
+            "columns_mobile": 1,
+            "slider": "slide-me-not"
+          }
+        },
+        "16566008844c3e337b-2": {
+          "type": "video",
+          "settings": {
+            "video_url": "https:\/\/www.youtube.com\/watch?v=ts6AJv_cZxs",
+            "description": "Affordable & Effective Collagen Supplement | Oswell Collagen Max (Patented Fish Collagen) Jea Chan",
+            "thumbnail": "shopify:\/\/shop_images\/Jea_Chan.jpg"
+          }
+        },
+        "16566008844c3e337b-1": {
+          "type": "video",
+          "settings": {
+            "video_url": "https:\/\/www.youtube.com\/watch?v=spViBEkDPPk",
+            "description": "7 DAYS USING COLLAGEN MAXX",
+            "thumbnail": "shopify:\/\/shop_images\/Alyza_Montero.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "094d8593-513b-4949-8459-498fc1c530fd",
+        "16566008844c3e337b-2",
+        "16566008844c3e337b-1"
+      ],
+      "settings": {
+        "use_as_default_padding": true,
+        "padding_top": 0,
         "padding_bottom": 36
       }
     },
@@ -865,6 +905,7 @@
     "1656489451d7e532ef",
     "16564933439b6a9b71",
     "1656600513c7ba3194",
+    "16566008840cdab0a2",
     "review",
     "email_signup",
     "instafeed",
