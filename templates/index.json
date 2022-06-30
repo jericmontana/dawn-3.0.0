@@ -60,7 +60,7 @@
         "featured_collection": {
           "type": "fcollection",
           "settings": {
-            "collection": "food-supplement",
+            "collection": "best-seller",
             "products_to_show": 4,
             "columns_desktop": 4,
             "columns_tablet": 3,
