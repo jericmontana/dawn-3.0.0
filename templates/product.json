@@ -40,13 +40,6 @@
           "settings": {
           }
         },
-        "11cead08-08ef-4ad8-acf0-976ace33e5fc": {
-          "type": "link",
-          "settings": {
-            "link": "",
-            "label": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-          }
-        },
         "b878cc72-6d6a-4395-9b48-18fef3fb65b7": {
           "type": "image",
           "settings": {
@@ -84,7 +77,6 @@
         "popup",
         "custom_variant_picker",
         "quantity_add_to_cart",
-        "11cead08-08ef-4ad8-acf0-976ace33e5fc",
         "b878cc72-6d6a-4395-9b48-18fef3fb65b7",
         "02fc9b09-e76b-4edb-9d6e-bcdfebe59e38",
         "ee307615-7259-41eb-a24e-66115d2347f7"
