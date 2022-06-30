@@ -113,36 +113,43 @@
         "richtext_1": {
           "type": "richtext",
           "settings": {
-            "title": "<p>NO TO CONSTIPATION. YES TO BETTER BOWEL MOVEMENT.<\/p>",
-            "description": "<p>Patented Fibersol-2 improves metabolism and helps improve digestion.<\/p>"
+            "title": "<p>LIGHTER, CLEARER, AND YOUNGER-LOOKING COMPLEXION.<\/p>",
+            "description": "<p>Experience a beautiful, healthy glow in as early as 7 days!<\/p>"
           }
         },
         "richtext_2": {
           "type": "richtext",
           "settings": {
-            "title": "<p>KEEP YOUR HEART AND OTHER ORGANS HEALTHY WITH TOTAL FLUX.<\/p>",
-            "description": "<p>With Citrus Bioflavonoid that helps regulate blood circulation, allowing blood and oxygen to flow properly and all body parts to function well.<\/p>"
+            "title": "<p>SOFT, SMOOTH, AND HYDRATED SKIN.<\/p>",
+            "description": "<p>With skin-loving and skin-caring ingredients to reveal your youthful glow.<\/p>"
           }
         },
         "richtext_3": {
+          "type": "richtext",
+          "settings": {
+            "title": "<p>REDUCED APPEARANCE OF WRINKLES, FINE LINES, AND OTHER SIGNS OF SKIN AGING.<\/p>",
+            "description": "<p>Also, acne-free, smaller pores, and even skin tone.<\/p>"
+          }
+        },
+        "684b30b4-42ef-4b84-989b-66ac1afbc9da": {
           "type": "richtext",
           "settings": {
             "title": "<p>A HEALTHY AND NATURAL WAY TO DETOX.<\/p>",
             "description": "<p>Total Flux contains Brazilian Enzyme that helps flush out body toxins.<\/p>"
           }
         },
-        "684b30b4-42ef-4b84-989b-66ac1afbc9da": {
-          "type": "richtext",
-          "settings": {
-            "title": "<p>REDUCED INFLAMMATION AND LOWER RISK OF SERIOUS HEALTH PROBLEMS.<\/p>",
-            "description": "<p>With Grape Seed that lessens inflammation, oxidative stress, and free radical damage.<\/p>"
-          }
-        },
         "9e97ad02-819d-4ac7-8fd5-fd3e679e452a": {
           "type": "richtext",
           "settings": {
-            "title": "<p>SAFE AND EFFECTIVE.<\/p>",
-            "description": "<p>FDA-approved and made with all-natural, effective ingredients to address your health concerns.<\/p>"
+            "title": "<p>NO TO CONSTIPATION. YES TO BETTER BOWEL MOVEMENT.<\/p>",
+            "description": "<p>Patented Fibersol-2 in Total Flux improves metabolism and helps improve digestion.<\/p>"
+          }
+        },
+        "571d1889-7339-4272-afdb-74753401fa02": {
+          "type": "richtext",
+          "settings": {
+            "title": "<p>REDUCED INFLAMMATION AND LOWER RISK OF SERIOUS HEALTH PROBLEMS.<\/p>",
+            "description": "<p>Total Flux contains Grape Seed that lessens inflammation, oxidative stress, and free radical damage.<\/p>"
           }
         }
       },
@@ -153,7 +160,8 @@
         "richtext_2",
         "richtext_3",
         "684b30b4-42ef-4b84-989b-66ac1afbc9da",
-        "9e97ad02-819d-4ac7-8fd5-fd3e679e452a"
+        "9e97ad02-819d-4ac7-8fd5-fd3e679e452a",
+        "571d1889-7339-4272-afdb-74753401fa02"
       ],
       "settings": {
         "use_as_default_padding": true,
