@@ -255,7 +255,7 @@
         "16564833162d2b3d4c-0": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Total_Flux_Ingredients.png"
+            "image": "shopify:\/\/shop_images\/Section_BG_Total_Flux.png"
           }
         },
         "16564833162d2b3d4c-1": {
@@ -312,9 +312,9 @@
         "73c8a321-036e-406b-9a21-047f27f9efdb"
       ],
       "settings": {
-        "bg_image": "shopify:\/\/shop_images\/Total_Flux_FAQ_3.png",
+        "bg_image": "shopify:\/\/shop_images\/Section_BG_Total_Flux.png",
         "image_first": true,
-        "bg_color": "",
+        "bg_color": "#f2dfd0",
         "use_as_default_padding": false,
         "padding_top": 36,
         "padding_bottom": 36
