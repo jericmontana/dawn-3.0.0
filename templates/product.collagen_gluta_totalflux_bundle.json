@@ -169,6 +169,55 @@
         "padding_bottom": 36
       }
     },
+    "1656598998034f0a16": {
+      "type": "image-slider-7923216",
+      "blocks": {
+        "165659899813da14e3-0": {
+          "type": "header",
+          "settings": {
+            "title": "Proin enim taciti dapibus",
+            "title_uppercase": false,
+            "subtitle": ""
+          }
+        },
+        "165659899813da14e3-1": {
+          "type": "slider",
+          "settings": {
+            "columns_desktop": 3,
+            "columns_tablet": 3,
+            "columns_mobile": 1,
+            "slider": "slide-me-not"
+          }
+        },
+        "165659899813da14e3-2": {
+          "type": "image",
+          "settings": {
+          }
+        },
+        "165659899813da14e3-3": {
+          "type": "image",
+          "settings": {
+          }
+        },
+        "165659899813da14e3-4": {
+          "type": "image",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "165659899813da14e3-0",
+        "165659899813da14e3-1",
+        "165659899813da14e3-2",
+        "165659899813da14e3-3",
+        "165659899813da14e3-4"
+      ],
+      "settings": {
+        "use_as_default_padding": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "1656483316235d7ffb": {
       "type": "image-with-accordion-7923216",
       "blocks": {
@@ -233,6 +282,8 @@
       ],
       "settings": {
         "bg_image": "shopify:\/\/shop_images\/Total_Flux_FAQ_3.png",
+        "image_first": true,
+        "bg_color": "",
         "use_as_default_padding": false,
         "padding_top": 36,
         "padding_bottom": 36
@@ -508,6 +559,7 @@
   "order": [
     "main",
     "product_benefits",
+    "1656598998034f0a16",
     "1656483316235d7ffb",
     "video",
     "1656489451d7e532ef",
