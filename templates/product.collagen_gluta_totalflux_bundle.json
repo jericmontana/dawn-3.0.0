@@ -6,7 +6,7 @@
         "text_featured_review": {
           "type": "text_featured_review",
           "settings": {
-            "testimony": "<p>\"Noon akala ko may osteoporosis ako kasi sumasakit ang knees ko at lumbar sa ngayon nagte-take ako ng Total Flux, wala ng sakit. Sabi ng therapist ko pag naubos ko na, order ako ulit. Thank you, maraming food supplement na akong natake pero bilib ako sa Total Flux\"<\/p>",
+            "testimony": "<p>\"Laki ng naitulong ni Total Flux sakin. It helps to normalize my vaginal discharge na naging common concern ko from past months.\"<\/p>",
             "uppercase": false,
             "justify": false,
             "size": "h2",
@@ -16,7 +16,7 @@
         "richtext_copy": {
           "type": "richtext_copy",
           "settings": {
-            "richtext": "<p><strong>COLLAGEN MAXX, GLUTA MAXX, & TOTAL FLUX BUNDLE:<\/strong> Your daily beauty and health trio for beautiful skin and strong body.<\/p>",
+            "richtext": "<p>Your daily beauty and health trio for beautiful skin and strong body.<\/p>",
             "uppercase": false,
             "justify": false,
             "size": "h3"
@@ -98,7 +98,7 @@
         "header": {
           "type": "header",
           "settings": {
-            "title": "TOTAL FLUX: ONE SUPPLEMENT FOR YOUR HEALTH CONCERNS",
+            "title": "ALL THESE BEAUTY AND HEALTH BENEFITS",
             "title_uppercase": true,
             "subtitle": ""
           }
@@ -156,8 +156,8 @@
         "9e97ad02-819d-4ac7-8fd5-fd3e679e452a"
       ],
       "settings": {
-        "use_as_default_padding": false,
-        "padding_top": 36,
+        "use_as_default_padding": true,
+        "padding_top": 52,
         "padding_bottom": 36
       }
     },
