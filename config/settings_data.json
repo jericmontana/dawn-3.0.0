@@ -174,8 +174,8 @@
           "announcement-bar-0": {
             "type": "announcement",
             "settings": {
-              "text": "COD AVAILABLE | FREE SHIPPING ON ALL ORDERS NATIONWIDE",
-              "uppercase": true,
+              "text": "COD AVAILABLE | FREE Shipping on all orders nationwide",
+              "uppercase": false,
               "size": "h3",
               "color_scheme": "accent-1",
               "link": "shopify:\/\/collections"
