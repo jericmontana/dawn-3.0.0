@@ -240,7 +240,7 @@
         "image": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Gluta_Maxx_Ingredients.png"
+            "image": "shopify:\/\/shop_images\/Section_BG_Gluta_Maxx.png"
           }
         },
         "header": {
@@ -305,7 +305,9 @@
         "d54a6248-93dc-4e7f-a7ac-a113ba5e4d24"
       ],
       "settings": {
-        "bg_image": "shopify:\/\/shop_images\/Gluta_Maxx_FAQ_3.png",
+        "bg_image": "shopify:\/\/shop_images\/Section_BG_Gluta_Maxx.png",
+        "image_first": true,
+        "bg_color": "#f2dfd0",
         "use_as_default_padding": false,
         "padding_top": 80,
         "padding_bottom": 80
