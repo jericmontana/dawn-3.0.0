@@ -1513,7 +1513,8 @@ modal-opener.product-popup-modal__opener{
 
   @include device('mobile'){
     .product-form__buttons {
-      max-width: 100%;
+      width: 100% !important;
+      max-width: 100% !important;
     }
   }
 

@@ -8,26 +8,74 @@
     &+*{
         grid-area: 1/1;
     }
+
     
     .section__bg{
         background-repeat: no-repeat;
         background-position: left center;
         background-size: cover;
         background-attachment: fixed;
-    }
+        display: flex !important;
+        justify-content: flex-end;
+        align-items: center;
+        
 
-    @include device('mobile'){
-        .section__bg{
-            background: none !important;
-            background-color: rgb(var(--color-section-bg)) !important;
+        img{
+            width: auto;
+            height: 100%;
+            max-height: 480px;
+            object-fit: cover;
+            object-position: center center;
+        }
+
+        @include device('desktop'){
+            padding: 2rem;
         }
     }
+
+    .section__bg.section__bg-reverse{
+        justify-content: flex-start!important;
+        
+    }
+
 
     .grid__item{
         display: grid;
 
         &+*{
             grid-area: 1/1;
+        }
+    }
+
+    .section__image{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img{
+            width: auto;
+            height: 100%;
+            max-height: 480px;
+            object-fit: cover;
+            object-position: center center;
+        }
+    }
+
+   
+    @include device('tablet-up'){
+        .image-first{
+            flex-direction: row-reverse;
+        }
+    }
+
+    @include device('mobile'){
+        // Ensures that image is always on the top at mobile devices
+        .grid{
+            flex-direction: column-reverse !important;
+        }
+
+        .image-first{
+            flex-direction: column-reverse !important;
         }
     }
 
@@ -78,14 +126,47 @@
         & *{
             color: rgb(var(--color-base-accent-2));
         }
+
+        @include device('mobile'){
+            & *{
+                text-align: center;
+            }
+        }
     }
+
     .section__copy{
+        @include device('desktop'){
+            &{
+                padding-right: 6rem;
+            }
+        }
+    }
+
+    .image-first .section__copy{
         @include device('desktop'){
             &{
                 padding-left: 6rem;
             }
         }
     }
+
+    .section__copy{
+        @include device('tablet'){
+            &{
+                padding-right: 2rem;
+            }
+        }
+    }
+
+    .image-first .section__copy{
+        @include device('tablet'){
+            &{
+                padding-left: 2rem;
+            }
+        }
+    }
+
+
    .summary__title{
         background-color: transparent;
    }
