@@ -94,6 +94,7 @@
     },
     "product_benefits": {
       "type": "image-with-textblock-7923216",
+      "disabled": true,
       "blocks": {
         "header": {
           "type": "header",
@@ -166,6 +167,52 @@
       "settings": {
         "use_as_default_padding": true,
         "padding_top": 52,
+        "padding_bottom": 36
+      }
+    },
+    "1656607550db489601": {
+      "type": "multiple-image-with-richtext-7923216",
+      "blocks": {
+        "1656607550440e2dde-0": {
+          "type": "header",
+          "settings": {
+            "title": "ALL THESE BEAUTY AND HEALTH BENEFITS",
+            "title_uppercase": true,
+            "subtitle": ""
+          }
+        },
+        "1656607550440e2dde-1": {
+          "type": "image_with_text",
+          "settings": {
+            "richtext": "<p><strong>NOT JUST LIGHTER SKIN. CLEARER AND YOUNGER-LOOKING SKIN.<\/strong><\/p><p>Experience a healthy glow in as early as 1 week of taking Collagen Maxx!<\/p><p><strong>SMOOTHER, SOFTER, AND NATURAL ROSY COMPLEXION. <\/strong><\/p><p>Packed with a powerful combination of skin-loving and skin-caring ingredients to reveal your youthful glow.<\/p><p><strong>REDUCED APPEARANCE OF WRINKLES AND FINE LINES.<\/strong><\/p><p>Collagen improves skin’s elasticity, provides deep hydration, and fights signs of skin aging.<\/p><p><strong>NO MORE DRY AND CRACKED SKIN.<\/strong><\/p><p>Dull and flaky skin? Let’s make it soft and radiant.<\/p><p><strong>SAY GOODBYE TO BREAKOUTS AND DARK SPOTS.<\/strong><\/p><p>Enjoy your most beautiful skin ever – acne-free, smaller pores, and even skin tone. <\/p><p><strong>COLLAGEN MAXX TAKES CARE OF YOUR BODY, TOO<\/strong>!<\/p><p>Happy customers reported improved metabolism, better sleep, healthier hair and stronger nails.<\/p>",
+            "image": "shopify:\/\/shop_images\/Collagen_Max_Product_Benefits.jpg"
+          }
+        },
+        "1656607550440e2dde-2": {
+          "type": "image_with_text",
+          "settings": {
+            "richtext": "<p><strong>PATENTED RED VINE LEAF<\/strong><\/p><p>Improves blood vessel elasticity and helps maintain healthy circulation.<\/p><p><strong>PATENTED GRAPE SEED <\/strong><\/p><p>Reduces inflammation and helps lower the risk of heart disease, diabetes, and other serious health problems.<\/p><p><strong>PATENTED FIBERSOL-2<\/strong><\/p><p>Improves metabolism, regulates bowel movement, and improves digestive health.<\/p><p><strong>CITRUS BIOFLAVONOIDS<\/strong><\/p><p>Regulates blood circulation, boosts metabolism, and fights oxidative stress.<\/p><p><strong>BRAZILIAN ENZYME<\/strong><\/p><p>Helps in the proper decomposition and flushing out of body toxins.<\/p>",
+            "image": "shopify:\/\/shop_images\/Total_Flux_Product_Benefits.jpg"
+          }
+        },
+        "1656607550440e2dde-3": {
+          "type": "image_with_text",
+          "settings": {
+            "richtext": "<p><strong>GLUTATHIONE<\/strong><\/p><p>Reduces oxidative stress to reveal a lighter, smoother, and younger-looking skin.<\/p><p><strong>GRAPE SEED EXTRACT<\/strong><\/p><p>Lightens acne marks and dark spots, reveals an even skin tone, and delays skin aging.<\/p><p><strong>ACEROLA EXTRACT<\/strong><\/p><p>Boosts immunity, reduces skin blemishes, and improves skin elasticity.<\/p><p><strong>CAMU CAMU EXTRACT<\/strong><\/p><p>Rich in Vitamin C and antioxidants that help reduce fine lines, wrinkles, and other signs of skin aging.<\/p><p><strong>PATENTED RED ALGAE EXTRACT<\/strong><\/p><p>Brightens and treats uneven skin tone, hydrates the skin, and improves the skin barrier.<\/p><p><strong>ROSELLA EXTRACT<\/strong><\/p><p>Hydrates the skin, reduces wrinkles, minimizes pores, and reveals a brighter complexion.<\/p>",
+            "image": "shopify:\/\/shop_images\/Gluta_Maxx_Product_Benefits.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "1656607550440e2dde-0",
+        "1656607550440e2dde-1",
+        "1656607550440e2dde-2",
+        "1656607550440e2dde-3"
+      ],
+      "settings": {
+        "image_first": false,
+        "use_as_default_padding": false,
+        "padding_top": 36,
         "padding_bottom": 36
       }
     },
@@ -385,7 +432,7 @@
       "settings": {
         "bg_image": "shopify:\/\/shop_images\/Section_BG_Collagen_Maxx.png",
         "image_first": false,
-        "bg_color": "#FFFFFF",
+        "bg_color": "#ffffff",
         "use_as_default_padding": false,
         "padding_top": 36,
         "padding_bottom": 36
@@ -896,6 +943,7 @@
   "order": [
     "main",
     "product_benefits",
+    "1656607550db489601",
     "1656598998034f0a16",
     "1656483316235d7ffb",
     "1656599107c20c1db8",
