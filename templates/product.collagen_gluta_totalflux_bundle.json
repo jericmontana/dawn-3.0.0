@@ -320,6 +320,77 @@
         "padding_bottom": 36
       }
     },
+    "1656599107c20c1db8": {
+      "type": "image-with-accordion-7923216",
+      "blocks": {
+        "16565991071de66e27-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Section_BG_Collagen_Maxx.png"
+          }
+        },
+        "16565991071de66e27-1": {
+          "type": "header",
+          "settings": {
+            "title": "NUTRITIONIST-APPROVED INGREDIENTS IN EVERY COLLAGEN MAXX BOTTLE",
+            "title_uppercase": true,
+            "subtitle": ""
+          }
+        },
+        "a78498ae-b91f-4e39-8eb5-2ed831f7893c": {
+          "type": "accordion",
+          "settings": {
+            "title": "PATENTED FISH COLLAGEN",
+            "content": "<p>Keeps skin smooth, supple, and free from signs of skin aging.<\/p>"
+          }
+        },
+        "910f4545-a6f2-4915-9ef6-628732fa8cfe": {
+          "type": "accordion",
+          "settings": {
+            "title": "PATENTED KIWI EXTRACT",
+            "content": "<p>With anti-inflammatory properties to help fight and clear acne.<\/p>"
+          }
+        },
+        "ff59a346-100d-4d73-b9d3-f4773507fecb": {
+          "type": "accordion",
+          "settings": {
+            "title": "PATENTED FIBERSOL-2",
+            "content": "<p>Improves metabolism, helps in weight management, and promotes healthy digestion.<\/p>"
+          }
+        },
+        "915bc507-b4dd-46fc-a600-7d8cabcc75fa": {
+          "type": "accordion",
+          "settings": {
+            "title": "VITAMIN C",
+            "content": "<p>Lightens dark spots, slows down skin aging, promotes collagen production, and helps strengthen your immunity.<\/p>"
+          }
+        },
+        "e6fc7664-a91a-49c8-9ce5-f45ef8b4751c": {
+          "type": "accordion",
+          "settings": {
+            "title": "VEGETABLE AND FRUIT EXTRACT",
+            "content": "<p>With antioxidants, vitamins, and minerals to repair the skin and protect it from further damage.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "16565991071de66e27-0",
+        "16565991071de66e27-1",
+        "a78498ae-b91f-4e39-8eb5-2ed831f7893c",
+        "910f4545-a6f2-4915-9ef6-628732fa8cfe",
+        "ff59a346-100d-4d73-b9d3-f4773507fecb",
+        "915bc507-b4dd-46fc-a600-7d8cabcc75fa",
+        "e6fc7664-a91a-49c8-9ce5-f45ef8b4751c"
+      ],
+      "settings": {
+        "bg_image": "shopify:\/\/shop_images\/Section_BG_Collagen_Maxx.png",
+        "image_first": false,
+        "bg_color": "#FFFFFF",
+        "use_as_default_padding": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "video": {
       "type": "video-7923216",
       "blocks": {
@@ -592,6 +663,7 @@
     "product_benefits",
     "1656598998034f0a16",
     "1656483316235d7ffb",
+    "1656599107c20c1db8",
     "video",
     "1656489451d7e532ef",
     "16564933439b6a9b71",
