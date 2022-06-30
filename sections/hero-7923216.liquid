@@ -130,7 +130,7 @@
               </div>
               {%- endfor -%}
             </div>
-            <div class="hero__controls">
+            {% comment %} <div class="hero__controls medium-hide large-up-hide">
               {%- for image_block in image_blocks -%}
               {%- assign for_loop_index = forloop.index -%}
                 <div class="tab-control tab-control--single tab-control--single-{{ section.id }} {% if forloop.first %}active{% endif %}"
@@ -142,8 +142,21 @@
                   title="{{ image_block.settings.product.title | escape }}">
                 </div>
               {%- endfor -%}
-            </div>
+            </div> {% endcomment %}
           </div>
+      </div>
+      <div class="hero__controls">
+        {%- for image_block in image_blocks -%}
+        {%- assign for_loop_index = forloop.index -%}
+          <div class="tab-control tab-control--single tab-control--single-{{ section.id }} {% if forloop.first %}active{% endif %}"
+            data-tabcontrolclass='tab-control--single-{{ section.id }}'
+            data-tabcontentclass='tabcontent-{{ section.id }}'
+            data-tabtargetclass='tabcontent-{{ section.id }}-{{ for_loop_index }}'
+            role="button"
+            style="background-color: {{ image_block.settings.color_dot }}"
+            title="{{ image_block.settings.product.title | escape }}">
+          </div>
+        {%- endfor -%}
       </div>
     </div>
   </div>
