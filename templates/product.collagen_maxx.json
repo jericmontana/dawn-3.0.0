@@ -40,13 +40,6 @@
           "settings": {
           }
         },
-        "f0460c20-897c-456b-8797-f59f632b15e3": {
-          "type": "link",
-          "settings": {
-            "link": "shopify:\/\/products\/collagen-maxx-gluta-maxx",
-            "label": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-          }
-        },
         "b878cc72-6d6a-4395-9b48-18fef3fb65b7": {
           "type": "image",
           "settings": {
@@ -84,7 +77,6 @@
         "popup",
         "custom_variant_picker",
         "quantity_add_to_cart",
-        "f0460c20-897c-456b-8797-f59f632b15e3",
         "b878cc72-6d6a-4395-9b48-18fef3fb65b7",
         "02fc9b09-e76b-4edb-9d6e-bcdfebe59e38",
         "ee307615-7259-41eb-a24e-66115d2347f7"
@@ -172,8 +164,8 @@
         "84337068-5d95-4efd-a655-14a23e8b6890"
       ],
       "settings": {
-        "use_as_default_padding": false,
-        "padding_top": 36,
+        "use_as_default_padding": true,
+        "padding_top": 52,
         "padding_bottom": 36
       }
     },
