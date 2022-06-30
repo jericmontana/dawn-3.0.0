@@ -28,8 +28,8 @@
             {%- for block in image_with_text_blocks -%}
               <div class="tabcontent tabcontent-{{ section.id }} tabcontent-{{ section.id }}-{{ forloop.index }}">
                 <div class="information--wrapper">
-                  <h2 class="uppercase">{{ block.settings.title | escape }}</h2>
-                  <div class="information--p">
+                  <h2 class="h1 uppercase">{{ block.settings.title | escape }}</h2>
+                  <div class="h3 information--p">
                    {{ block.settings.richtext }}
                   </div>
                 </div>
