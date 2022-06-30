@@ -156,8 +156,8 @@
         "9e97ad02-819d-4ac7-8fd5-fd3e679e452a"
       ],
       "settings": {
-        "use_as_default_padding": false,
-        "padding_top": 36,
+        "use_as_default_padding": true,
+        "padding_top": 52,
         "padding_bottom": 36
       }
     },
