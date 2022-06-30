@@ -1370,13 +1370,14 @@ modal-opener.product-popup-modal__opener{
     display: flex;
     justify-content: center;
     align-items: center;
+    text-decoration: underline;
     // padding: 1.8rem 1.5rem;
     // color: rgb(var(--color-background));
     // background-color: rgba(var(--color-foreground),0.7);
-    &::after{
-        content: '\276f';
-        padding-left: 1rem;
-    }
+    // &::after{
+    //     content: '\276f';
+    //     padding-left: 1rem;
+    // }
 }
 
 .product__title{
