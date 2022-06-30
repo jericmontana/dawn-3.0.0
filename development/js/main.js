@@ -1107,7 +1107,8 @@ const tabularMultiple = () => {
   const tabControlNext = document.querySelectorAll('.tab-control--next');
 
   if(tabControlNext){
-    tabControlNext.forEach(e => e.addEventListener('click', () => {
+    tabControlNext.forEach(e => e.addEventListener('click', (event) => {
+      event.preventDefault();
       const maxBlock = e.dataset.maxblock * 1;
 
       if( counter < maxBlock ){
@@ -1136,7 +1137,8 @@ const tabularMultiple = () => {
   }
 
   if(tabControlPrev){
-    tabControlPrev.forEach(e => e.addEventListener('click', () => {
+    tabControlPrev.forEach(e => e.addEventListener('click', (event) => {
+      event.preventDefault();
 
       if( counter > 1 ){
         counter--;
