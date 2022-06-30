@@ -175,33 +175,60 @@
         "165659899813da14e3-0": {
           "type": "header",
           "settings": {
-            "title": "Proin enim taciti dapibus",
-            "title_uppercase": false,
+            "title": "Experience transformations like these",
+            "title_uppercase": true,
             "subtitle": ""
           }
         },
         "165659899813da14e3-1": {
           "type": "slider",
           "settings": {
-            "columns_desktop": 3,
+            "columns_desktop": 4,
             "columns_tablet": 3,
             "columns_mobile": 1,
-            "slider": "slide-me-not"
+            "slider": "everywhere"
           }
         },
         "165659899813da14e3-2": {
           "type": "image",
           "settings": {
+            "image": "shopify:\/\/shop_images\/Alyza_Influencer.jpg"
           }
         },
         "165659899813da14e3-3": {
           "type": "image",
           "settings": {
+            "image": "shopify:\/\/shop_images\/Sheryl_Influencer.jpg"
           }
         },
         "165659899813da14e3-4": {
           "type": "image",
           "settings": {
+            "image": "shopify:\/\/shop_images\/Louie_Influencer.jpg"
+          }
+        },
+        "1ed651fd-5d3c-4a3f-ad25-cb4515b4a2b4": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Jam_Influencer.jpg"
+          }
+        },
+        "7e16659a-f7af-4274-9026-ab3e0025942d": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Ara_Influencer.jpg"
+          }
+        },
+        "5372fca2-697a-47b0-9ced-b5d606330164": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Gavin_Influencer.jpg"
+          }
+        },
+        "593560a7-bfd0-4730-8b05-e8402993fa8c": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Jea_Influencer.jpg"
           }
         }
       },
@@ -210,7 +237,11 @@
         "165659899813da14e3-1",
         "165659899813da14e3-2",
         "165659899813da14e3-3",
-        "165659899813da14e3-4"
+        "165659899813da14e3-4",
+        "1ed651fd-5d3c-4a3f-ad25-cb4515b4a2b4",
+        "7e16659a-f7af-4274-9026-ab3e0025942d",
+        "5372fca2-697a-47b0-9ced-b5d606330164",
+        "593560a7-bfd0-4730-8b05-e8402993fa8c"
       ],
       "settings": {
         "use_as_default_padding": false,
