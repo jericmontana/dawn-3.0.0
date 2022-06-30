@@ -234,7 +234,7 @@
         "image": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Collagen_Maxx_Ingredients.png"
+            "image": "shopify:\/\/shop_images\/Section_BG_Collagen_Maxx.png"
           }
         },
         "header": {
@@ -291,7 +291,9 @@
         "b74ed3ea-e042-484b-be51-197f9bdd5c03"
       ],
       "settings": {
-        "bg_image": "shopify:\/\/shop_images\/Collagen_Maxx_FAQ_3.png",
+        "bg_image": "shopify:\/\/shop_images\/Section_BG_Collagen_Maxx.png",
+        "image_first": true,
+        "bg_color": "#f2dfd0",
         "use_as_default_padding": false,
         "padding_top": 80,
         "padding_bottom": 80
