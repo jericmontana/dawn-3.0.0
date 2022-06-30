@@ -470,6 +470,64 @@
         "padding_bottom": 36
       }
     },
+    "16565999533f1ee02b": {
+      "type": "video-7923216",
+      "blocks": {
+        "1656599953f9a03a7f-0": {
+          "type": "header",
+          "settings": {
+            "title": "ONE BOTTLE LASTS UP TO 2 MONTHS!",
+            "title_uppercase": true,
+            "subtitle": "Take 1-2 tablets everyday and experience glowing results like these."
+          }
+        },
+        "d530df31-56e9-432b-8cdc-c5a41bf37f97": {
+          "type": "slider",
+          "settings": {
+            "columns_desktop": 3,
+            "columns_tablet": 2,
+            "columns_mobile": 1,
+            "slider": "everywhere"
+          }
+        },
+        "1656599953f9a03a7f-1": {
+          "type": "video",
+          "settings": {
+            "video_url": "https:\/\/www.youtube.com\/watch?v=ugh1HBPnAnY",
+            "description": "HOW TO HAVE BRIGHTER\/WHITER & YOUTHFUL SKIN \/ ANOTHER BEAUTY SECRET REVEALED | ARA G.",
+            "thumbnail": "shopify:\/\/shop_images\/Ara_G.jpg"
+          }
+        },
+        "1656599953f9a03a7f-2": {
+          "type": "video",
+          "settings": {
+            "video_url": "https:\/\/www.youtube.com\/watch?v=n_qvKjV4mLs",
+            "description": "SUPER MURA AND EFFECTIVE NA CHEWABLE GLUTA MAXX",
+            "thumbnail": "shopify:\/\/shop_images\/Kristy_Halili.jpg"
+          }
+        },
+        "7112cfa6-6fe0-4889-be26-6b3193ab83bb": {
+          "type": "video",
+          "settings": {
+            "video_url": "https:\/\/www.youtube.com\/watch?v=DDP1Vs2Hj9Y",
+            "description": "OSwell GLUTA MAXX Honest Review | AlexOnly",
+            "thumbnail": "shopify:\/\/shop_images\/Alex_Only.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "1656599953f9a03a7f-0",
+        "d530df31-56e9-432b-8cdc-c5a41bf37f97",
+        "1656599953f9a03a7f-1",
+        "1656599953f9a03a7f-2",
+        "7112cfa6-6fe0-4889-be26-6b3193ab83bb"
+      ],
+      "settings": {
+        "use_as_default_padding": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "video": {
       "type": "video-7923216",
       "blocks": {
@@ -646,64 +704,6 @@
         "padding_bottom": 36
       }
     },
-    "16565999533f1ee02b": {
-      "type": "video-7923216",
-      "blocks": {
-        "1656599953f9a03a7f-0": {
-          "type": "header",
-          "settings": {
-            "title": "ONE BOTTLE LASTS UP TO 2 MONTHS!",
-            "title_uppercase": true,
-            "subtitle": "Take 1-2 tablets everyday and experience glowing results like these."
-          }
-        },
-        "d530df31-56e9-432b-8cdc-c5a41bf37f97": {
-          "type": "slider",
-          "settings": {
-            "columns_desktop": 3,
-            "columns_tablet": 2,
-            "columns_mobile": 1,
-            "slider": "everywhere"
-          }
-        },
-        "1656599953f9a03a7f-1": {
-          "type": "video",
-          "settings": {
-            "video_url": "https:\/\/www.youtube.com\/watch?v=ugh1HBPnAnY",
-            "description": "HOW TO HAVE BRIGHTER\/WHITER & YOUTHFUL SKIN \/ ANOTHER BEAUTY SECRET REVEALED | ARA G.",
-            "thumbnail": "shopify:\/\/shop_images\/Ara_G.jpg"
-          }
-        },
-        "1656599953f9a03a7f-2": {
-          "type": "video",
-          "settings": {
-            "video_url": "https:\/\/www.youtube.com\/watch?v=n_qvKjV4mLs",
-            "description": "SUPER MURA AND EFFECTIVE NA CHEWABLE GLUTA MAXX",
-            "thumbnail": "shopify:\/\/shop_images\/Kristy_Halili.jpg"
-          }
-        },
-        "7112cfa6-6fe0-4889-be26-6b3193ab83bb": {
-          "type": "video",
-          "settings": {
-            "video_url": "https:\/\/www.youtube.com\/watch?v=DDP1Vs2Hj9Y",
-            "description": "OSwell GLUTA MAXX Honest Review | AlexOnly",
-            "thumbnail": "shopify:\/\/shop_images\/Alex_Only.jpg"
-          }
-        }
-      },
-      "block_order": [
-        "1656599953f9a03a7f-0",
-        "d530df31-56e9-432b-8cdc-c5a41bf37f97",
-        "1656599953f9a03a7f-1",
-        "1656599953f9a03a7f-2",
-        "7112cfa6-6fe0-4889-be26-6b3193ab83bb"
-      ],
-      "settings": {
-        "use_as_default_padding": false,
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
     "review": {
       "type": "review-product-7923216",
       "blocks": {
@@ -802,10 +802,10 @@
     "1656483316235d7ffb",
     "1656599107c20c1db8",
     "1656599384102481f5",
+    "16565999533f1ee02b",
     "video",
     "1656489451d7e532ef",
     "16564933439b6a9b71",
-    "16565999533f1ee02b",
     "review",
     "email_signup",
     "instafeed",
