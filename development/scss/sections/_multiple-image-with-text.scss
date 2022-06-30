@@ -19,7 +19,7 @@
         .information--wrapper{
             p{
                 margin: 0;
-                line-height: calc(1 + 0.7 / var(--font-body-scale));
+                line-height: calc(1 + 0.6 / var(--font-body-scale));
 
                 @include device('desktop'){
                     &{
