@@ -29,11 +29,11 @@
 
             p{
                 margin: 0;
-                line-height: calc(1 + 0.6 / var(--font-body-scale));
+                line-height: calc(1 + 0.5 / var(--font-body-scale));
 
                 @include device('desktop'){
                     &{
-                        font-size: 2rem;
+                        font-size: 1.95rem;
                     }
                 }
 
