@@ -147,6 +147,7 @@
             justify-content: center;
             align-items: center;
             padding: 0.4rem;
+            overflow: hidden;
 
             &--prev{
                 visibility: hidden;
@@ -181,6 +182,12 @@
     @include device('desktop'){
         .image-first{
             flex-direction: row-reverse;
+        }
+    }
+
+    @include device('mobile'){
+        .grid{
+            flex-direction: column-reverse !important;
         }
     }
 }
