@@ -138,8 +138,8 @@
         }
 
         .tab-control{
-            width: 3rem;
-            height: 3rem;
+            width: 4rem;
+            height: 4rem;
             color: #ffffff;
             background-color: rgba(var(--color-base-accent-1),0.75);
             cursor: pointer;
@@ -150,14 +150,24 @@
 
             &--prev{
                 visibility: hidden;
-                transform: rotate(90deg);
             }
-            &--next{
-                transform: rotate(270deg);
-            }
+            
 
             svg{
                 pointer-events: none;
+            }
+
+            span{
+                pointer-events: none;
+                font-size: 6rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: -1.4rem 0rem 0rem 0rem !important;
+                line-height: 1;
+                height: 4rem;
+                width: 4rem;
+                color: #ffffff;
             }
         }
     }
