@@ -77,6 +77,10 @@
             margin: 0rem;
             margin-bottom: 1rem;
             font-weight: 600;
+
+            p{
+                margin: 0rem;
+            }
             
             @include device('tablet'){
                 &{
@@ -106,6 +110,19 @@
                 margin-top: 8rem;
             }
         }
+
+        .hero__header{
+            display: grid;
+
+            .tabcontent{
+                grid-area: 1/1;
+            }
+    
+            .tabcontent:not(:first-of-type){
+                display: none;
+            }
+            
+        }
     }
 
     .hero__button{
@@ -117,6 +134,16 @@
 
         .tabcontent:not(:first-of-type){
             display: none;
+        }
+
+        @include device('mobile'){
+            &{
+                width: 100%;
+
+                .btn--default{
+                    max-width: 300px;
+                }
+            }
         }
     }
 

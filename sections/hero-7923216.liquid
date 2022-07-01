@@ -25,8 +25,17 @@
       <div class="grid grid--1-col grid--2-col-desktop grid--2-col-tablet">
           <div class="grid__item grid__item--copy">
             <div class="hero__copy">
-              <h2 class="title uppercase">{{ section.settings.title | escape }}</h2>
-              <div class="subtitle">{{ section.settings.subtitle }}</div>
+              <div class="hero__header">
+                {%- for image_block in image_blocks -%}
+                  {%- assign for_loop_index = forloop.index -%}
+                  <div class="tabcontent tabcontent-{{ section.id }} tabcontent-{{ section.id }}-{{ for_loop_index }}">
+                    <div class="header--wrapper">
+                      <h2 class="title uppercase">{{ image_block.settings.title }}</h2>
+                      <div class="subtitle">{{ image_block.settings.subtitle }}</div>
+                    </div>
+                  </div>
+                {%- endfor -%}
+              </div>
 
               <div class="hero__button">
                 {%- for image_block in image_blocks -%}
@@ -168,18 +177,6 @@
   "tag": "section",
   "settings": [
     {
-      "type": "text",
-      "id": "title",
-      "label": "Title",
-      "default": "Mus euismod fermentum nisl justo inceptos"
-    },
-    {
-      "type": "richtext",
-      "id": "subtitle",
-      "label": "Subtitle",
-      "default": "<p>Nullam viverra cras magnis dapibus iaculis quis aliquet auctor imperdiet lectus felis venenatis</p>"
-    },
-    {
       "type": "header",
       "content": "Button Settings"
     },
@@ -251,6 +248,18 @@
       "type": "image",
       "name": "Image",
       "settings": [
+        {
+          "type": "richtext",
+          "id": "title",
+          "label": "Title",
+          "default": "<p>Lorem ipsum dolor sit amet, consectetur</p><p>adipiscing elit.</p>"
+        },
+        {
+          "type": "richtext",
+          "id": "subtitle",
+          "label": "Subtitle",
+          "default": "<p>Landjaeger ground round tongue qui in, labore fatback</p><p>brisket prosciutto esse.</p>"
+        },
         {
           "type": "image_picker",
           "id": "image",
