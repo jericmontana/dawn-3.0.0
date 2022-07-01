@@ -16,7 +16,16 @@
         "richtext_copy": {
           "type": "richtext_copy",
           "settings": {
-            "richtext": "<p>GLUTA MAXX: Daily glutathione tablets made chewy and yummy!<\/p><p>Glutathione supplements in chewable form.<\/p><p>A combination of nutritionist-approved ingredients in every Gluta Maxx tablet:<\/p><p>- Glutathione<\/p><p>- Ascorbic Acid<\/p><p>- Grape Seed Extract with Resveratrol<\/p><p>…and more!<\/p>",
+            "richtext": "<p>GLUTA MAXX: Daily glutathione tablets made chewy and yummy!<\/p><p>Glutathione supplements in chewable form.<\/p>",
+            "uppercase": false,
+            "justify": false,
+            "size": "h3"
+          }
+        },
+        "c645f901-a6b8-48a7-8aba-86f4e7460b63": {
+          "type": "richtext_copy",
+          "settings": {
+            "richtext": "<p>A combination of nutritionist-approved ingredients in every Gluta Maxx tablet:<\/p><p>- Glutathione<\/p><p>- Ascorbic Acid<\/p><p>- Grape Seed Extract with Resveratrol<\/p><p>…and more!<\/p>",
             "uppercase": false,
             "justify": false,
             "size": "h3"
@@ -74,6 +83,7 @@
       "block_order": [
         "text_featured_review",
         "richtext_copy",
+        "c645f901-a6b8-48a7-8aba-86f4e7460b63",
         "popup",
         "custom_variant_picker",
         "quantity_add_to_cart",
