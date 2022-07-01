@@ -264,3 +264,11 @@
     }
         
 }
+
+.grid__item{
+    display: grid;
+
+    &+div{
+        grid-area: 1/1;
+    }
+}
