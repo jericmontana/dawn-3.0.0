@@ -29,12 +29,12 @@
     "ty_bg_color": "#f2dfd0",
     "ty_bg_image": "shopify:\/\/shop_images\/Marble_White.png",
     "ty_bg_blend": "luminosity",
-    "checkout_logo_image": "shopify:\/\/shop_images\/E3DAEC60-BACD-4863-A537-8653D6752B9D_0fd7b8ff-361d-4cea-977f-b6781e49bb65.png",
+    "checkout_logo_image": "shopify:\/\/shop_images\/Oswell_Logo.png",
     "checkout_logo_position": "center",
     "checkout_logo_size": "small",
-    "checkout_sidebar_background_color": "#ff66c4",
-    "checkout_accent_color": "#ff66c4",
-    "checkout_button_color": "#ff66c4",
+    "checkout_sidebar_background_color": "#0e5396",
+    "checkout_accent_color": "#0e5396",
+    "checkout_button_color": "#0e5396",
     "sections": {
       "header": {
         "type": "header",
