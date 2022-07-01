@@ -6,6 +6,8 @@
         "image_1": {
           "type": "image",
           "settings": {
+            "title": "<p>REVEAL YOUR GLOW TO THE MAX<\/p>",
+            "subtitle": "<p>Daily glutathione supplement in chewable tablets<\/p>",
             "image": "shopify:\/\/shop_images\/Gluta_Maxx.png",
             "product": "oswell-gluta-maxx",
             "color_dot": "#d26c91"
@@ -14,6 +16,8 @@
         "image_2": {
           "type": "image",
           "settings": {
+            "title": "<p>GET BRIGHTER, CLEARER, YOUNGER-LOOKING SKIN<\/p>",
+            "subtitle": "<p>Collagen + other skin-caring ingredients for your ultimate glow up<\/p>",
             "image": "shopify:\/\/shop_images\/Collagen_Maxx.png",
             "product": "oswell-collagen-maxx",
             "color_dot": "#a60041"
@@ -22,6 +26,8 @@
         "image_3": {
           "type": "image",
           "settings": {
+            "title": "<p>5-IN-1 DAILY HEALTH SUPPLEMENT<\/p>",
+            "subtitle": "<p>All-natural ingredients to fight your health problems<\/p>",
             "image": "shopify:\/\/shop_images\/Total_Flux.png",
             "product": "oswell-total-flux",
             "color_dot": "#8f280b"
@@ -34,8 +40,6 @@
         "image_3"
       ],
       "settings": {
-        "title": "Enrich your skin and body from within.",
-        "subtitle": "<p>Best-selling daily self-care supplements from Taiwan now in the Philippines!<\/p>",
         "btn_label": "View Product",
         "btn_link": "shopify:\/\/collections\/all",
         "round_corner": false,
