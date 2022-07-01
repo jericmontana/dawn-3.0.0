@@ -1018,7 +1018,7 @@ window.addEventListener('load', () => {
 				// if(!document.querySelector('.privy-bar-tab-inner')){ 
 				// 	alert(`You have already signed up!`) ;
 				// };
-				// document.querySelector('.privy-bar-tab-inner').click();
+				document.querySelector('.privy-bar-tab-inner').click();
 
         Privy('show');
 			})
