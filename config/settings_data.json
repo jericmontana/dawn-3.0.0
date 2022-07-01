@@ -71,7 +71,7 @@
             "type": "link_list",
             "settings": {
               "heading": "Customer Service",
-              "menu": "footer"
+              "menu": "customer-service-fo"
             }
           },
           "footer-3": {
