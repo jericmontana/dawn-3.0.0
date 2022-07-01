@@ -16,7 +16,16 @@
         "richtext_copy": {
           "type": "richtext_copy",
           "settings": {
-            "richtext": "<p>TOTAL FLUX: 5-in-1 supplement for better health.<\/p><p>All-natural ingredients to fight:<\/p><p>✔ Helps fight these health problems:<\/p><p>-Hemorrhoid<\/p><p>-Diabetes<\/p><p>-High Blood Pressure \/ Cardiovascular<\/p><p>- Constipation<\/p><p>- Insomnia<\/p><p>- Leucorrhea<\/p><p>- Menopause<\/p>",
+            "richtext": "<p>TOTAL FLUX: 5-in-1 supplement for better health.<\/p>",
+            "uppercase": false,
+            "justify": false,
+            "size": "h3"
+          }
+        },
+        "36bf693f-da80-47f7-bd46-bb2022f7dd07": {
+          "type": "richtext_copy",
+          "settings": {
+            "richtext": "<p>All-natural ingredients to fight:<\/p><p>✔ Helps fight these health problems:<\/p><p>-Hemorrhoid<\/p><p>-Diabetes<\/p><p>-High Blood Pressure \/ Cardiovascular<\/p><p>- Constipation<\/p><p>- Insomnia<\/p><p>- Leucorrhea<\/p><p>- Menopause<\/p>",
             "uppercase": false,
             "justify": false,
             "size": "h3"
@@ -74,6 +83,7 @@
       "block_order": [
         "text_featured_review",
         "richtext_copy",
+        "36bf693f-da80-47f7-bd46-bb2022f7dd07",
         "popup",
         "custom_variant_picker",
         "quantity_add_to_cart",
