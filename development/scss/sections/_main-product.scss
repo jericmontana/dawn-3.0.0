@@ -1558,11 +1558,15 @@ modal-opener.product-popup-modal__opener{
   }
 }
 
-// .richtext-copy{
-//   *{
-//     color: rgb(var(--color-base-accent-2));
-//   }
-// }
+.richtext-copy{
+  // *{
+  //   color: rgb(var(--color-base-accent-2));
+  // }
+
+  p{
+    margin: 0rem;
+  }
+}
 
 // For Popup Button
 .product-popup-modal__button{
