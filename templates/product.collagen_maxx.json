@@ -22,6 +22,15 @@
             "size": "h3"
           }
         },
+        "d32668e6-00a0-47ed-a923-2ec09487104d": {
+          "type": "richtext_copy",
+          "settings": {
+            "richtext": "<p>Packed with nutritionist-approved ingredients with skin and wellness benefits:<\/p><p>- Collagen<\/p><p>- Vitamin C<\/p><p>- Kiwi Seed Extract<\/p><p>- Vegetable and Fruit Extract<\/p><p>- Fibersol-2<\/p>",
+            "uppercase": false,
+            "justify": false,
+            "size": "h3"
+          }
+        },
         "popup": {
           "type": "popup",
           "settings": {
@@ -74,6 +83,7 @@
       "block_order": [
         "text_featured_review",
         "richtext_copy",
+        "d32668e6-00a0-47ed-a923-2ec09487104d",
         "popup",
         "custom_variant_picker",
         "quantity_add_to_cart",
