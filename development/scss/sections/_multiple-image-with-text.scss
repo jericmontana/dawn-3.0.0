@@ -17,6 +17,9 @@
         padding: 0rem 1rem;
 
         .information--wrapper{
+            h2{
+                font-weight: 700;
+            }
 
             @include device('mobile'){
                 & h2{
