@@ -16,7 +16,12 @@
         display: grid;
         padding: 0rem 1rem;
 
+
         .information--wrapper{
+            h2{
+                font-weight: 700;
+            }
+            
             strong{
                 text-transform: uppercase;
                 font-weight: bold !important;
