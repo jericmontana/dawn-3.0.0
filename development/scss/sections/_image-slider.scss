@@ -41,10 +41,19 @@
             pointer-events: none;
 
             .slider-button{
-                height: 100%;
                 pointer-events: all;
+                padding: 0.14rem;
+                margin: 0.1rem;
+                
+                color: #ffffff;
+                background-color: rgba(var(--color-base-accent-1),0.38);
+
+                &[disabled='disabled']{
+                    color: rgba(var(--color-base-accent-1),0.1);
+                }
+                
                 svg{
-                    height: 1.14rem;
+                    height: 0.9rem;
                     width: auto;
                 }
             }
