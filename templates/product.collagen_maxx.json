@@ -16,7 +16,7 @@
         "richtext_copy": {
           "type": "richtext_copy",
           "settings": {
-            "richtext": "<p>COLLAGEN MAXX: Daily beauty supplement for that radiant, youthful, natural rosy glow you’ve always wanted.<\/p><p><\/p><p>Packed with nutritionist-approved ingredients with skin and wellness benefits:<\/p><p>- Collagen<\/p><p>- Vitamin C<\/p><p>- Kiwi Seed Extract<\/p><p>- Vegetable and Fruit Extract<\/p><p>- Fibersol-2<\/p>",
+            "richtext": "<p>COLLAGEN MAXX: Daily beauty supplement for that radiant, youthful, natural rosy glow you’ve always wanted.<\/p>",
             "uppercase": false,
             "justify": false,
             "size": "h3"
