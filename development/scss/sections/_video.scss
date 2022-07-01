@@ -41,11 +41,11 @@
                 padding: 0.14rem;
                 margin: 0.1rem;
                 
-                color: rgb(var(--color-base-accent-2));
+                color: #ffffff;
                 background-color: rgba(var(--color-base-accent-1),0.38);
 
                 &[disabled='disabled']{
-                    color: rgba(var(--color-base-accent-2),0.5);
+                    color: rgba(var(--color-base-accent-1),0.1);
                 }
                 
                 svg{
