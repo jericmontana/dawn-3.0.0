@@ -162,6 +162,7 @@
     </div>
     <div class="g-card__info">
         <a href="{{ product.url }}" title="{{ product.title }}" class="full-unstyled-link"><h3 class="g-card--title">{{ product.title }}</h3></a>
+      {% render 'judgeme_widgets', widget_type: 'judgeme_preview_badge', jm_style: '', concierge_install: true, product: product %}
         {%- liquid 
             assign target = product
             assign compare_at_price = target.compare_at_price | money
