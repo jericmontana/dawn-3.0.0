@@ -43,7 +43,7 @@
           "logo": "shopify:\/\/shop_images\/Oswell_Logo.png",
           "logo_width": 100,
           "logo_position": "middle-left",
-          "menu": "main-menu-1",
+          "menu": "main-menu-fo",
           "show_line_separator": true,
           "enable_sticky_header": true,
           "margin_bottom": 0
