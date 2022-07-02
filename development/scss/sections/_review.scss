@@ -1,6 +1,10 @@
 @import 'abstract/mixin';
 
 .review{
+    *{
+        overflow-anchor: auto !important;
+    }
+    
     .section__review{
         // position: relative;
         // overflow-x: hidden;
