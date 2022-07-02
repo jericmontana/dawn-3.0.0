@@ -51,7 +51,6 @@
                   {%- else -%}
                     {%- liquid 
                       assign concierge_install = false
-                      assign auto_install = false
                       assign product = block.settings.product
                     -%}
                     {%- if product == blank -%}
