@@ -505,6 +505,22 @@
         "show_vendor": true,
         "show_rating": false
       }
+    },
+    "1656742707877868f8": {
+      "type": "apps",
+      "blocks": {
+        "e37e2520-647e-4e12-8860-bdb5672f7743": {
+          "type": "shopify:\/\/apps\/judge-me-product-reviews\/blocks\/review_widget\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "e37e2520-647e-4e12-8860-bdb5672f7743"
+      ],
+      "settings": {
+        "include_margins": true
+      }
     }
   },
   "order": [
@@ -517,6 +533,7 @@
     "review",
     "email_signup",
     "instafeed",
-    "wishlist_reference"
+    "wishlist_reference",
+    "1656742707877868f8"
   ]
 }
