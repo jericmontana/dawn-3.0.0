@@ -131,6 +131,7 @@
                     width="{{ image_block.settings.image.width }}"
                     height="{{ image_block.settings.image.height }}"
                     draggable="false"
+                    {% if for_loop_index > 1 %}loading="lazy"{% endif %}
                   >
                 {%- else -%}
                   {%- render 'no-image' -%}
