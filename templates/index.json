@@ -232,7 +232,7 @@
         "review": {
           "type": "review",
           "settings": {
-            "all_products": false,
+            "all_products": true,
             "product": "oswell-collagen-maxx"
           }
         }
