@@ -2,10 +2,11 @@
 
 .review{
     .section__review{
-        overflow-x: hidden;
-        scrollbar-color: rgb(var(--color-base-accent-2)) rgba(var(--color-base-accent-2), 0.5);
-        scrollbar-width: thin;
-        padding: 1rem;
+        position: relative;
+        // overflow-x: hidden;
+        // scrollbar-color: rgb(var(--color-base-accent-2)) rgba(var(--color-base-accent-2), 0.5);
+        // scrollbar-width: thin;
+        // padding: 1rem;
 
         @include device('mobile'){
             &{
