@@ -1,17 +1,10 @@
 @import 'abstract/mixin';
 
 .review{
-    position: relative;
-    overflow: hidden;
-
     .section__review{
-        position: relative;
-        // max-height: 600px;
-        // overflow-y: scroll;
         overflow-x: hidden;
         scrollbar-color: rgb(var(--color-base-accent-2)) rgba(var(--color-base-accent-2), 0.5);
         scrollbar-width: thin;
-        border: 1px solid rgba(var(--color-base-accent-2), 0.75);
         padding: 1rem;
 
         @include device('mobile'){
