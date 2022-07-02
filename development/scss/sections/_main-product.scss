@@ -29,7 +29,7 @@
   .product--thumbnail_slider .product__media-gallery,
   .product--stacked .product__info-container--sticky {
     display: block;
-    position: sticky;
+    position: sticky !important;
     top: 3rem;
     z-index: 2;
   }
