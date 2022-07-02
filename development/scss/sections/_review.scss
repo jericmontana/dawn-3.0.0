@@ -2,7 +2,7 @@
 
 .review{
     *{
-        overflow-anchor: auto !important;
+        overflow-anchor: none !important;
     }
     
     .section__review{
@@ -24,10 +24,10 @@
         display: none!important;
     }
 
-    article{
-        width: 100%;
-        border: none!important;
-    }
+    // article{
+    //     width: 100%;
+    //     border: none!important;
+    // }
 
     // For Color
     .jdgm-histogram__bar-content{
