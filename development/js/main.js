@@ -483,6 +483,7 @@ function getFocusableElements(container) {
       if (!button) return;
       button.addEventListener('click', () => {
         const modal = document.querySelector(this.getAttribute('data-modal'));
+        document.body.classList.remove(`overflow-hidden-tablet`);
         if (modal) modal.show(button);
       });
     }
