@@ -1038,29 +1038,33 @@ window.addEventListener('load', () => {
 // For Custom TY ModalPopup
 
 document.addEventListener('DOMContentLoaded', () => {
-    const submitButton = document.querySelectorAll('.field__button--with-ty');
-    if(submitButton){
-        submitButton.forEach(e => e.addEventListener('click', () => {
-            localStorage.setItem('activated-ty-modalpopup', `${e.dataset.targetopener}`);
-            // alert(localStorage.getItem('activated-ty-modalpopup'));
-        }))
-    }
-})
+  const submitButton = document.querySelectorAll('.field__button--with-ty');
+  if(submitButton){
+      submitButton.forEach(e => e.addEventListener('click', () => {
+          localStorage.setItem('activated-ty-modalpopup', `${e.dataset.targetopener}`);
+          // alert(localStorage.getItem('activated-ty-modalpopup'));
+      }))
+  }
 
-document.addEventListener('DOMContentLoaded', () => {
-    const buttonCopy = document.querySelectorAll('.btn--copy');
-    if(buttonCopy){
-        buttonCopy.forEach(e => e.addEventListener('click', () => {
-            const copyText =  document.getElementById(`${e.dataset.targettext}`);
-            navigator.clipboard.writeText(copyText.innerText);
-            e.classList.add('btn--copy__tooltip');
-            
-            setInterval(() => {
-                e.classList.remove('btn--copy__tooltip');
-            }, 3000);
+  const buttonCopy = document.querySelectorAll('.btn--copy');
+  if(buttonCopy){
+      buttonCopy.forEach(e => e.addEventListener('click', () => {
+          const copyText =  document.getElementById(`${e.dataset.targettext}`);
+          const targetButton = document.querySelector(`${e.dataset.button}`)
 
-        }))
-    }
+          navigator.clipboard.writeText(copyText.innerText);
+          e.classList.add('btn--copy__tooltip');
+          
+          setInterval(() => {
+              e.classList.remove('btn--copy__tooltip');
+          }, 2000);
+
+          setInterval(() => {
+            targetButton.classList.remove('hidden');
+          }, 800);
+          
+      }))
+  }
 })
 // For Copy to Clipboard
 // function myFunction() {

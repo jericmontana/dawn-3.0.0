@@ -200,17 +200,14 @@
                     {% comment %} For Signup Button {% endcomment %}
                     <li>
                       <div class="menu-drawer__menu-item list-menu__item">
-                        {%- render 'button-signup-7923216',
-                          btn_action: 'open-popup',
-                          btn_label: section.settings.btn_label,
-                          btn_link: section.settings.btn_link,
-                          btn_size: 'default',
-                          hover_effect: 'lighten',
-                          icon_type: 'none',
-                          round_corner: false,
-                          shadow_effect: false,
-                          auto_width: false
-                        -%}
+                        {% comment %} For Signup Button {% endcomment %}
+                          <div class="header__signupbutton">
+                            <modal-opener data-modal="#PopupModal-signup-{{ section.id }}">
+                              <button class="btn btn--default btn-he--lighten link focus-inset" type="button" aria-haspopup="dialog">
+                                {{ section.settings.label_signup_button_opener | escape }}
+                              </button>
+                            </modal-opener>
+                          </div>
                       </div>
                     </li>
                   </ul>
@@ -457,17 +454,16 @@
             </li>
           {%- endfor -%}
         </ul>
-        {%- render 'button-signup-7923216',
-          btn_action: 'open-popup',
-          btn_label: section.settings.btn_label,
-          btn_link: section.settings.btn_link,
-          btn_size: 'default',
-          hover_effect: 'lighten',
-          icon_type: 'none',
-          round_corner: false,
-          shadow_effect: false,
-          auto_width: false
-        -%}
+
+        {% comment %} For Signup Button {% endcomment %}
+        <div class="header__signupbutton">
+          <modal-opener data-modal="#PopupModal-signup-{{ section.id }}">
+            <button class="btn btn--default btn-he--lighten link focus-inset" type="button" aria-haspopup="dialog">
+              {{ section.settings.label_signup_button_opener | escape }}
+            </button>
+          </modal-opener>
+        </div>
+
       </nav>
     {%- endif -%}
 
@@ -592,6 +588,61 @@
 </{% if section.settings.enable_sticky_header %}sticky-header{% else %}div{% endif %}>
 
 {%- render 'cart-notification', color_scheme: section.settings.color_scheme -%}
+
+{% comment %} For Signup Modal {% endcomment %}
+<modal-dialog class="header-popup-modal header-popup-modal--signup" id="PopupModal-signup-{{ section.id }}">
+  <div role="dialog" aria-label="header-signup" aria-modal="true" tabindex="-1">
+    <div class="header-popup-modal__content center" style="background-color: {{ section.settings.color_signup_popup }}">
+        <button id="ModalClose-{{ section.id }}" type="button" class="header-popup-modal__toggle" aria-label="{{ 'accessibility.close' | t }}">{%- render 'heroicons', icon: 'close' -%}</button>
+        
+        <h2 class="signup-title uppercase">{{ section.settings.title_signup_popup | escape }}</h2>
+        <p class="signup-subtitle">{{ section.settings.subtitle_signup_popup | escape }}</p>
+
+        {% form 'customer', class: 'newsletter-form' %}
+          <input type="hidden" name="contact[tags]" value="Newsletter, Newsletter Header Popup">
+          <div class="field">
+              <input
+                  id="NewsletterForm--{{ section.id }}"
+                  type="email"
+                  name="contact[email]"
+                  class="field__input"
+                  value="{{ form.email }}"
+                  aria-required="true"
+                  autocorrect="off"
+                  autocapitalize="off"
+                  autocomplete="email"
+                  {% if form.errors %}
+                  autofocus
+                  aria-invalid="true"
+                  aria-describedby="Newsletter-error--{{ section.id }}"
+                  {% elsif form.posted_successfully? %}
+                  aria-describedby="Newsletter-success--{{ section.id }}"
+                  {% endif %}
+                  placeholder="{{ section.settings.placeholder | escape | default: 'Email Address'}}"
+                  required
+              >
+              <label class="field__label" for="NewsletterForm--{{ section.id }}">
+                  {{ section.settings.placeholder | escape | default: 'Email Address'}}
+              </label>
+          </div>
+
+          {%- if form.errors -%}
+              <small class="newsletter-form__message newsletter-form__message--error form__message" id="Newsletter-error--{{ section.id }}">{% render 'icon-error' %}{{ form.errors.translated_fields['email'] | capitalize }} {{ form.errors.messages['email'] }}</small>
+          {%- endif -%}
+
+          <button type="submit" data-targetopener="TYPopup-{{ section.id }}" class="field__button--with-ty btn btn--default btn-he--lighten btn-bs" name="commit" id="Subscribe">
+            {{ section.settings.label_signup_popup_button | escape }}
+          </button>
+
+          {%- if form.posted_successfully? -%}
+              {%- render 'thank-you-7923216' -%}                       
+          {%- endif -%}
+        {% endform %}
+
+        <p class="signup-disclaimer">*By completing this form you are signing up to receive our emails and can unsubscribe at any time.</p>
+    </div>
+  </div>
+</modal-dialog>
 
 {% javascript %}
   class StickyHeader extends HTMLElement {
@@ -829,10 +880,38 @@
       "default": 0
     },
     {
+      "type": "header",
+      "content": "Signup"
+    },
+    {
       "type": "text",
-      "id": "btn_label",
-      "label": "Button Label",
-      "default": "Get 100 Off"
+      "id": "label_signup_button_opener",
+      "label": "Button Opener",
+      "default": "Get 10% OFF"
+    },
+    {
+      "type": "text",
+      "id": "title_signup_popup",
+      "label": "Title",
+      "default": "Join Our VIP Club!"
+    },
+    {
+      "type": "textarea",
+      "id": "subtitle_signup_popup",
+      "label": "Subtitle",
+      "default": "Be the first one to know about our latest promotions and exclusive offers and get a discount on your first purchase."
+    },
+    {
+      "type": "text",
+      "id": "label_signup_popup_button",
+      "label": "Button Popup",
+      "default": "Subscribe"
+    },
+    {
+      "type": "color",
+      "id": "color_signup_popup",
+      "label": "Color Popup",
+      "default": "#F0F0F0"
     }
   ]
 }
