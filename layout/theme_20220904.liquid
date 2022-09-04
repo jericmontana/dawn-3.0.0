@@ -277,7 +277,13 @@
 <!-- **BEGIN** Hextom CTB Integration // Main Include - DO NOT MODIFY -->
     {% render 'hextom_ctb_main', product: product, customer: customer %}
     <!-- **END** Hextom CTB Integration // Main Include - DO NOT MODIFY -->
+<!-- ReStock Snippet Start -->
+{% if content_for_header contains 'https:\/\/cdn.hengam.io\/restock-alerts-sdk.js' %} 
 
+{% render 'restock-snippet' %}
+
+{% endif %}
+<!-- ReStock Snippet End -->
 
 </body>
 </html>
