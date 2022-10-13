@@ -19,6 +19,7 @@
         },
         "6a6b9549-a6a1-47c9-a8b4-8cbcb68fe286": {
           "type": "banner",
+          "disabled": true,
           "settings": {
             "image_desktop": "shopify:\/\/shop_images\/299861334_3259617437511738_801789486577405334_n.jpg",
             "header_text_first": "step up your",
