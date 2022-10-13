@@ -16,10 +16,22 @@
             "extra_info_image": "shopify:\/\/shop_images\/After_Pay.png",
             "extra_info_text": "<p>buy now.  gorgeous lashes now. <strong>pay later<\/strong>.<\/p>"
           }
+        },
+        "6a6b9549-a6a1-47c9-a8b4-8cbcb68fe286": {
+          "type": "banner",
+          "settings": {
+            "image_desktop": "shopify:\/\/shop_images\/299861334_3259617437511738_801789486577405334_n.jpg",
+            "header_text_first": "step up your",
+            "header_text_second": "with avacluxe.",
+            "btn_label": "Shop Now",
+            "btn_link": "shopify:\/\/collections\/all",
+            "extra_info_text": "<p>buy now.  gorgeous lashes now. pay later.<\/p>"
+          }
         }
       },
       "block_order": [
-        "c1adcbd1-4afb-4592-9b5d-552195871825"
+        "c1adcbd1-4afb-4592-9b5d-552195871825",
+        "6a6b9549-a6a1-47c9-a8b4-8cbcb68fe286"
       ],
       "settings": {
       }
