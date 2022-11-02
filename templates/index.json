@@ -5,6 +5,7 @@
       "blocks": {
         "c1adcbd1-4afb-4592-9b5d-552195871825": {
           "type": "banner",
+          "disabled": true,
           "settings": {
             "image_desktop": "shopify:\/\/shop_images\/Ava_Desktop_Banner_2680_x_1180_px.png",
             "image_mobile": "shopify:\/\/shop_images\/Ava_Mobile_Banner.png",
@@ -39,7 +40,6 @@
     },
     "16458763677060d6c8": {
       "type": "image-banner",
-      "disabled": true,
       "settings": {
         "heading": "<p>lash-game <strong>with<\/strong> AVACLUXE.<\/p>",
         "heading_center": false,
