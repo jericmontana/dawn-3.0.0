@@ -1,58 +1,5 @@
 {
   "sections": {
-    "a21d04d1-bf88-4461-b65c-2d7aaf00ec2e": {
-      "type": "slideshow",
-      "blocks": {
-        "template--14377140748369__a21d04d1-bf88-4461-b65c-2d7aaf00ec2e-1667603386ca6997af-0": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/1_79c63461-c757-44b1-bf37-2de657bf6ab0.png",
-            "heading": "",
-            "heading_size": "medium",
-            "subheading": "",
-            "button_label": "",
-            "link": "",
-            "button_style_secondary": false,
-            "box_align": "middle-center",
-            "show_text_box": true,
-            "text_alignment": "center",
-            "image_overlay_opacity": 0,
-            "color_scheme": "background-1",
-            "text_alignment_mobile": "center"
-          }
-        },
-        "ef6484c7-7fbf-49b5-9071-69218234a280": {
-          "type": "slide",
-          "settings": {
-            "heading": "Image slide",
-            "heading_size": "medium",
-            "subheading": "Tell your brand's story through images",
-            "button_label": "Button label",
-            "link": "",
-            "button_style_secondary": false,
-            "box_align": "middle-center",
-            "show_text_box": true,
-            "text_alignment": "center",
-            "image_overlay_opacity": 0,
-            "color_scheme": "background-1",
-            "text_alignment_mobile": "center"
-          }
-        }
-      },
-      "block_order": [
-        "template--14377140748369__a21d04d1-bf88-4461-b65c-2d7aaf00ec2e-1667603386ca6997af-0",
-        "ef6484c7-7fbf-49b5-9071-69218234a280"
-      ],
-      "settings": {
-        "layout": "full_bleed",
-        "slide_height": "adapt_image",
-        "slider_visual": "counter",
-        "auto_rotate": false,
-        "change_slides_speed": 5,
-        "show_text_below": true,
-        "accessibility_info": "Slideshow about our brand"
-      }
-    },
     "16458763677060d6c8": {
       "type": "image-banner",
       "settings": {
@@ -676,10 +623,30 @@
         "bg_color_top": "#ffffff",
         "padding_top": 36
       }
+    },
+    "5422a477-4d15-450d-970c-2440b4263e45": {
+      "type": "image-banner",
+      "settings": {
+        "heading": "<p>HOLIDAY <strong>with<\/strong>  STUNNING LASHES!<\/p>",
+        "heading_center": false,
+        "heading_base_fontsize": 1.1,
+        "subheading": "USE CODE: BOGO",
+        "kicker": "BUY ONE GET ONE FREE",
+        "image": "shopify:\/\/shop_images\/slay.png",
+        "bg_color": "",
+        "bg_blend": "normal",
+        "btn_label": "Shop Now",
+        "btn_link": "shopify:\/\/collections\/all",
+        "btn_size": "default",
+        "hover_effect": "shine",
+        "icon_type": "arrow",
+        "shadow_effect": true,
+        "round_corner": true,
+        "auto_width": false
+      }
     }
   },
   "order": [
-    "a21d04d1-bf88-4461-b65c-2d7aaf00ec2e",
     "16458763677060d6c8",
     "3570e041-b6bf-44fb-9ce4-2a9f2f9b504a",
     "16461506879c7fe7ec",
@@ -692,6 +659,7 @@
     "1646313626697ca18a",
     "164904944832e938ee",
     "1646904089b7a2f60f",
-    "1646848339941da1e7"
+    "1646848339941da1e7",
+    "5422a477-4d15-450d-970c-2440b4263e45"
   ]
 }
