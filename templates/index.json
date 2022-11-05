@@ -627,11 +627,11 @@
     "5422a477-4d15-450d-970c-2440b4263e45": {
       "type": "image-banner",
       "settings": {
-        "heading": "<p>HOLIDAY <strong>with<\/strong>  STUNNING LASHES!<\/p>",
+        "heading": "<p>HOLIDAY SZN <strong>with<\/strong>  STUNNING LASHES!<\/p>",
         "heading_center": false,
         "heading_base_fontsize": 1.1,
-        "subheading": "USE CODE: BOGO",
-        "kicker": "BUY ONE GET ONE FREE",
+        "subheading": "BUY ONE GET ONE FREE CODE: BOGO",
+        "kicker": "PREBLACK FRIDAY",
         "image": "shopify:\/\/shop_images\/slay.png",
         "bg_color": "",
         "bg_blend": "normal",
