@@ -2,7 +2,6 @@
   "sections": {
     "16458763677060d6c8": {
       "type": "image-banner",
-      "disabled": true,
       "settings": {
         "heading": "<p>lash-game <strong>with<\/strong> AVACLUXE.<\/p>",
         "heading_center": false,
@@ -17,27 +16,6 @@
         "btn_size": "default",
         "hover_effect": "shine",
         "icon_type": "none",
-        "shadow_effect": true,
-        "round_corner": true,
-        "auto_width": false
-      }
-    },
-    "5422a477-4d15-450d-970c-2440b4263e45": {
-      "type": "image-banner",
-      "settings": {
-        "heading": "<p>HOLIDAY SZN <strong>with<\/strong>  STUNNING LASHES!<\/p>",
-        "heading_center": false,
-        "heading_base_fontsize": 1.1,
-        "subheading": "BUY ONE GET ONE FREE CODE: BOGO",
-        "kicker": "PREBLACK FRIDAY",
-        "image": "shopify:\/\/shop_images\/slay.png",
-        "bg_color": "",
-        "bg_blend": "normal",
-        "btn_label": "Shop Now",
-        "btn_link": "shopify:\/\/collections\/all",
-        "btn_size": "default",
-        "hover_effect": "shine",
-        "icon_type": "arrow",
         "shadow_effect": true,
         "round_corner": true,
         "auto_width": false
@@ -61,6 +39,27 @@
         "swipe_on_mobile": false,
         "padding_top": 36,
         "padding_bottom": 36
+      }
+    },
+    "5422a477-4d15-450d-970c-2440b4263e45": {
+      "type": "image-banner",
+      "settings": {
+        "heading": "<p>HOLIDAY SZN <strong>with<\/strong>  STUNNING LASHES!<\/p>",
+        "heading_center": false,
+        "heading_base_fontsize": 1.1,
+        "subheading": "BUY ONE GET ONE FREE CODE: BOGO",
+        "kicker": "PREBLACK FRIDAY",
+        "image": "shopify:\/\/shop_images\/slay.png",
+        "bg_color": "",
+        "bg_blend": "normal",
+        "btn_label": "Shop Now",
+        "btn_link": "shopify:\/\/collections\/all",
+        "btn_size": "default",
+        "hover_effect": "shine",
+        "icon_type": "arrow",
+        "shadow_effect": true,
+        "round_corner": true,
+        "auto_width": false
       }
     },
     "16461506879c7fe7ec": {
@@ -649,8 +648,8 @@
   },
   "order": [
     "16458763677060d6c8",
-    "5422a477-4d15-450d-970c-2440b4263e45",
     "3570e041-b6bf-44fb-9ce4-2a9f2f9b504a",
+    "5422a477-4d15-450d-970c-2440b4263e45",
     "16461506879c7fe7ec",
     "16461507015bd670f1",
     "164851721519378996",
